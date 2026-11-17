@@ -1,0 +1,266 @@
+/* Styles for <FormulaHint /> — hover or tap/click any formula for a short
+ * plain-English explanation, responsive on both desktops and phones.
+ */
+
+/* ---------- Inline Formula Trigger ---------- */
+.inlineWrap {
+  position: relative;
+  display: inline-block;
+  vertical-align: baseline;
+}
+
+.inlineTrigger {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.25rem;
+  padding: 0.04rem 0.34rem;
+  margin: 0 0.04rem;
+  border: none;
+  border-bottom: 2px dotted var(--schwork-cyan);
+  border-radius: 6px;
+  background: var(--schwork-cyan-tint);
+  color: inherit;
+  font: inherit;
+  line-height: inherit;
+  cursor: help;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.inlineTrigger:hover,
+.inlineTrigger:focus-visible,
+.inlineTriggerActive {
+  background: rgba(200, 255, 0, 0.22);
+  border-bottom-color: var(--schwork-navy);
+  outline: none;
+}
+
+:global(html[data-theme='dark']) .inlineTrigger:hover,
+:global(html[data-theme='dark']) .inlineTrigger:focus-visible,
+:global(html[data-theme='dark']) .inlineTriggerActive {
+  background: rgba(200, 255, 0, 0.18);
+  border-bottom-color: var(--schwork-lime);
+}
+
+.inlineBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 15px;
+  height: 15px;
+  border-radius: 999px;
+  background: var(--schwork-navy);
+  color: var(--schwork-lime);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.65rem;
+  font-weight: 700;
+  line-height: 1;
+  flex-shrink: 0;
+  transform: translateY(-0.1em);
+}
+
+:global(html[data-theme='dark']) .inlineBadge {
+  background: var(--schwork-lime);
+  color: var(--schwork-navy);
+}
+
+/* ---------- Block (Display) Formula Wrapper ---------- */
+.blockWrap {
+  position: relative;
+  margin: 1rem 0;
+}
+
+.blockTrigger {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 1.5px solid var(--schwork-border);
+  border-radius: 12px;
+  background: var(--schwork-surface-alt);
+  color: inherit;
+  text-align: inherit;
+  cursor: pointer;
+  transition: border-color 0.16s ease, box-shadow 0.16s ease;
+}
+
+.blockTrigger:hover,
+.blockTrigger:focus-visible,
+.blockTriggerActive {
+  border-color: var(--schwork-cyan);
+  box-shadow: 0 0 0 3px rgba(43, 179, 192, 0.16);
+  outline: none;
+}
+
+:global(html[data-theme='dark']) .blockTrigger:hover,
+:global(html[data-theme='dark']) .blockTrigger:focus-visible,
+:global(html[data-theme='dark']) .blockTriggerActive {
+  border-color: var(--schwork-lime);
+  box-shadow: 0 0 0 3px rgba(200, 255, 0, 0.15);
+}
+
+/* Remove duplicate outer border/margin from KaTeX display box when inside blockTrigger */
+.blockMath :global(.katex-display) {
+  margin: 0;
+  border: none;
+  background: transparent;
+  padding: 1.05rem 0.9rem 0.95rem;
+}
+
+.blockPromptBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.4rem 0.85rem;
+  border-bottom: 1px dashed var(--schwork-border);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--schwork-text-muted);
+}
+
+.blockPromptTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: var(--ifm-color-primary);
+}
+
+.blockTriggerActive .blockPromptTag {
+  color: var(--schwork-navy);
+  background: var(--schwork-lime);
+  padding: 0.1rem 0.45rem;
+  border-radius: 5px;
+}
+
+/* ---------- Popover / Alt-Text Explanation Card ---------- */
+.popover {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 10px);
+  z-index: 60;
+  width: min(320px, calc(100vw - 24px));
+  padding: 0.75rem 0.9rem;
+  border-radius: 12px;
+  background: #132238;
+  color: #eaf3f8;
+  border: 1.5px solid #2bb3c0;
+  box-shadow: 0 14px 34px rgba(7, 14, 24, 0.42);
+  text-align: left;
+  font-family: var(--ifm-font-family-base);
+  font-size: 0.88rem;
+  font-weight: 500;
+  line-height: 1.5;
+  white-space: normal;
+  transform: translateX(calc(-50% + var(--hint-shift-x, 0px)));
+  animation: hintFadeIn 0.14s ease-out;
+}
+
+.popoverBelow {
+  bottom: auto;
+  top: calc(100% + 10px);
+}
+
+/* Block popover stretches cleanly under/over the formula box so it never clips */
+.blockPopover {
+  position: relative;
+  left: auto;
+  top: auto;
+  bottom: auto;
+  width: 100%;
+  transform: none;
+  margin-top: 0.55rem;
+  border-color: var(--schwork-lime);
+}
+
+.popoverHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.35rem;
+}
+
+.popoverBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #132238;
+  background: #c8ff00;
+  padding: 0.14rem 0.5rem;
+  border-radius: 5px;
+}
+
+.closeBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  border: 1px solid rgba(43, 179, 192, 0.4);
+  background: #1a2d49;
+  color: #eaf3f8;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.closeBtn:hover {
+  border-color: #c8ff00;
+  color: #c8ff00;
+}
+
+.popoverText {
+  display: block;
+  color: #eaf3f8;
+}
+
+@keyframes hintFadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(calc(-50% + var(--hint-shift-x, 0px))) translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(calc(-50% + var(--hint-shift-x, 0px))) translateY(0);
+  }
+}
+
+/* On narrow phone screens, dock inline formula hints cleanly at the bottom of
+ * the viewport so long explanations are always 100% readable and never clipped. */
+@media (max-width: 640px) {
+  .popover:not(.blockPopover) {
+    position: fixed;
+    left: 0.75rem;
+    right: 0.75rem;
+    bottom: 0.9rem;
+    top: auto;
+    width: auto;
+    transform: none;
+    z-index: 950;
+    padding: 0.85rem 1rem;
+    box-shadow: 0 18px 42px rgba(5, 11, 20, 0.65);
+    animation: phoneSlideUp 0.16s ease-out;
+  }
+}
+
+@keyframes phoneSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .popover {
+    animation: none;
+  }
+}

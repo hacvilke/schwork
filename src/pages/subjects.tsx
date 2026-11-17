@@ -14,15 +14,16 @@ export default function SubjectsPage(): React.JSX.Element {
         <div className={styles.heroGridBg} aria-hidden="true" />
         <div className="container" style={{position: 'relative', zIndex: 1}}>
           <div className={styles.eyebrowRow}>
-            <span className={styles.clashPill}>Grades 10–11 · Jamaica</span>
+            <span className={styles.clashPill}>High School &amp; University · Jamaica</span>
             <span className={styles.cyanPill}>Syllabus-Structured Notes</span>
           </div>
           <h1 className={styles.heroTitle} style={{fontSize: 'clamp(1.85rem, 3.6vw, 2.7rem)'}}>
             Subjects
           </h1>
           <p className={styles.heroSubtitle} style={{marginBottom: 0}}>
-            Each subject has its own clean study sidebar with syllabus objectives,
-            worked examples, interactive visuals, and exam practice.
+            All Jamaican secondary school subjects plus our University study track —
+            each built one subject at a time with objectives, interactive visuals,
+            worked examples, and exam practice.
           </p>
         </div>
       </header>

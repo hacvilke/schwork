@@ -34,6 +34,53 @@
   font-size: 0.96rem;
 }
 
+.headerActions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.summaryBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.22rem 0.55rem;
+  border-radius: 6px;
+  border: 1px solid rgba(200, 255, 0, 0.55);
+  background: rgba(200, 255, 0, 0.14);
+  color: var(--schwork-lime);
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+}
+
+.summaryBtn:hover,
+.summaryBtn[aria-expanded='true'] {
+  background: var(--schwork-lime);
+  color: var(--schwork-navy);
+}
+
+.summaryBar {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  padding: 0.75rem 1.1rem;
+  background: #0d192b;
+  color: #eaf3f8;
+  border-bottom: 1px solid rgba(43, 179, 192, 0.35);
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.summaryIcon {
+  flex-shrink: 0;
+  color: var(--schwork-lime);
+  margin-top: 2px;
+}
+
 .badgeGiven {
   font-family: var(--ifm-font-family-monospace);
   font-size: 0.74rem;

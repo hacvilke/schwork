@@ -160,11 +160,12 @@ export default function Home(): React.JSX.Element {
             <div className={styles.sectionHeader}>
               <span className={styles.sectionKicker}>Subjects</span>
               <h2 className={styles.sectionTitle}>
-                Explore High School Subjects
+                All High School Subjects &amp; University
               </h2>
               <p className={styles.sectionDesc}>
-                Subjects are being added thoroughly from start to finish so every section
-                is complete and dependable for revision.
+                Browse every Jamaican high school subject plus our University track —
+                built thoroughly one subject at a time so every section is complete
+                and dependable for revision.
               </p>
             </div>
 

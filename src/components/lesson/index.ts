@@ -7,6 +7,7 @@
 export {default as SyllabusHeader} from './SyllabusHeader';
 export {default as ObjectivesBox} from './ObjectivesBox';
 export {default as FormulaCard} from './FormulaCard';
+export {default as FormulaHint} from './FormulaHint';
 export {default as WorkedExample} from './WorkedExample';
 export {default as QuickCheck} from './QuickCheck';
 export {default as InteractiveGraph} from './InteractiveGraph';

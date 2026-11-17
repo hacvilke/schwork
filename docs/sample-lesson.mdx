@@ -29,28 +29,54 @@ This sample page shows how lessons are laid out across **Schwork**: clear object
 
 ## 1. Key Formulas
 
-<FormulaCard title="The Quadratic Formula" onFormulaSheet={true}>
+Hover over or tap any highlighted formula below to pop up a short plain-English explanation.
 
-For any quadratic equation $ax^2 + bx + c = 0$ where $a \neq 0$:
+<FormulaCard
+  title="The Quadratic Formula"
+  onFormulaSheet={true}
+  summary="Finds the x-values (roots) where any quadratic equation equals zero, even when it won't factorise cleanly."
+>
+
+For any quadratic equation <FormulaHint label="Standard Form" short="a is the x² number (not 0), b is the x number, and c is the plain constant.">$ax^2 + bx + c = 0$</FormulaHint> where $a \neq 0$:
+
+<FormulaHint
+  block
+  label="Quadratic Formula"
+  short="Plug a, b, and c into this formula. The ± gives two answers (one using +, one using −) — those are the x-intercepts where the parabola hits the x-axis."
+>
 
 $$
 x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
 $$
 
-The discriminant $\Delta = b^2 - 4ac$ tells you how many real roots the equation has:
+</FormulaHint>
+
+The discriminant <FormulaHint label="Discriminant" short="The part inside the square root. Its sign tells you how many real roots exist without solving the whole equation.">$\Delta = b^2 - 4ac$</FormulaHint> tells you how many real roots the equation has:
 - $\Delta > 0$ — two distinct real roots
 - $\Delta = 0$ — one repeated real root (touches the $x$-axis)
 - $\Delta < 0$ — no real roots
 
 </FormulaCard>
 
-<FormulaCard title="Axis of Symmetry & Turning Point" onFormulaSheet={false}>
+<FormulaCard
+  title="Axis of Symmetry & Turning Point"
+  onFormulaSheet={false}
+  summary="Gives the exact vertical mirror line splitting a parabola in half — also the x-coordinate of its minimum or maximum point."
+>
 
 For $f(x) = ax^2 + bx + c$, the equation of the axis of symmetry is:
+
+<FormulaHint
+  block
+  label="Axis of Symmetry"
+  short="Divide −b by 2a to get the exact x-value of the parabola's turning point (vertex), then plug that x back into f(x) for the y-value."
+>
 
 $$
 x = -\frac{b}{2a}
 $$
+
+</FormulaHint>
 
 </FormulaCard>
 
@@ -153,7 +179,7 @@ $$
 
 **(b) Find the minimum point:**
 
-Use $x = -\dfrac{b}{2a}$ with $a = 1$ and $b = -2$:
+Use <FormulaHint label="Turning-Point x" short="Plug in a = 1 and b = −2 to jump straight to the x-coordinate of the bottom of the curve.">$x = -\dfrac{b}{2a}$</FormulaHint> with $a = 1$ and $b = -2$:
 
 $$
 x = -\frac{-2}{2(1)} = 1
