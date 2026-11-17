@@ -1,0 +1,202 @@
+---
+id: cash-book-and-petty-cash
+title: "3.3 Three-Column Cash Book, Contra Entries & Petty Cash Book"
+sidebar_label: "3.3 Cash Book & Petty Cash"
+sidebar_position: 3
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 3"
+  section="Three-Column Cash Book, Contra Entries (C), Bank Overdraft Interpretation & Petty Cash Book (Imprest System)"
+  code="POA-3.3"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="25 min"
+  difficulty="Core"
+/>
+
+<ObjectivesBox
+  id="poa-3-3"
+  objectives={[
+    'Explain why the Cash Book acts as BOTH a Book of Original Entry and a Ledger account.',
+    'Prepare and balance a Three-Column Cash Book (Discount, Cash, Bank) cleanly.',
+    'Record Contra Entries (C) accurately when moving money between Cash and Bank.',
+    'Interpret Cash and Bank closing balances — including recognising a Bank Overdraft.',
+    'Prepare and balance a Petty Cash Book using the Imprest System (float & reimbursement).',
+  ]}
+/>
+
+---
+
+## 1. The Three-Column Cash Book (Why It Is Special!)
+
+The **Cash Book** is unique: it is **both a Book of Original Entry AND a Ledger account** (combining the Cash Account and the Bank Account side by side so you don't need separate Cash and Bank T-accounts!).
+
+- **Left Side — Debit (Dr) = Money COMING IN (Receipts):**
+  - `Discount Allowed` *(memorandum column — never balanced off!)*
+  - `Cash (J\$)` *(notes & coins received)*
+  - `Bank (J\$)` *(cheques banked, card receipts, online transfers received)*
+- **Right Side — Credit (Cr) = Money GOING OUT (Payments):**
+  - `Discount Received` *(memorandum column — never balanced off!)*
+  - `Cash (J\$)` *(notes & coins paid out)*
+  - `Bank (J\$)` *(cheques written, standing orders, bank transfers paid)*
+
+---
+
+## 2. Contra Entries (`C`) — Moving Your Own Money!
+
+A **Contra Entry** happens when **both the Debit AND the Credit** of a transaction occur **inside the Cash Book itself** — you are simply shifting the business's own money between the **Cash Till** and the **Bank Account**. Mark **`C`** in the Folio column on both sides!
+
+| Contra Transaction | Debit Side (Money In) | Credit Side (Money Out) |
+| :--- | :--- | :--- |
+| **Paid cash from till into the bank** *(banking cash)* | **Dr Bank** — write `"Cash"` in Details, **`C`** in Folio | **Cr Cash** — write `"Bank"` in Details, **`C`** in Folio |
+| **Withdrew cash from bank for office use** | **Dr Cash** — write `"Bank"` in Details, **`C`** in Folio | **Cr Bank** — write `"Cash"` in Details, **`C`** in Folio |
+
+:::warning Classic Exam Pitfall!
+If the owner withdraws cash from the bank for **personal use**, that is **NOT** a contra entry — it is **Drawings** (`Cr Bank`, `Dr Drawings` in the General Ledger)!
+Also remember: if a business buys **Office Equipment (J\$36,000)** and pays **Office Equipment Repairs (J\$4,000)** on the same day, record them as **two separate lines** — do NOT lump capital expenditure and revenue repairs together!
+:::
+
+---
+
+## 3. Worked Example 1: Three-Column Cash Book (With Contra Entry & Bank Overdraft!)
+
+<WorkedExample
+  title="T. Bennett Traders — Three-Column Cash Book for June 2026"
+  marks={12}
+  problem={
+    <>
+      On <strong>1 June 2026</strong>, T. Bennett Traders had <strong>Cash J$12,000 (Dr)</strong> and{' '}
+      <strong>Bank J$45,000 (Dr)</strong>. Record these transactions in a Three-Column Cash Book and balance it at 30 June:
+      <br />
+      • June 1 — Restored Petty Cash imprest by cash <strong>J$4,500</strong>
+      <br />
+      • June 5 — Paid rent by cheque <strong>J$15,000</strong>
+      <br />
+      • June 8 — Cash sales <strong>J$22,000</strong>
+      <br />
+      • June 12 — Received cheque from debtor <strong>A. Shaw</strong> in full settlement of <strong>J$10,000</strong> less <strong>5% cash discount</strong>
+      <br />
+      • June 15 — Paid <strong>J$18,000</strong> cash from the till into the business bank account
+      <br />
+      • June 19 — Paid creditor <strong>M. Clarke</strong> by cheque in full settlement of <strong>J$20,000</strong> less <strong>2.5% cash discount</strong>
+      <br />
+      • June 24 — Owner took <strong>J$4,000</strong> cash for private use
+      <br />
+      • June 28 — Paid by cheque for new Office Equipment <strong>J$36,000</strong> and Office Equipment Repairs <strong>J$4,000</strong>
+    </>
+  }
+  examTip="NEVER try to balance the Discount columns! Simply total Discount Allowed (post Dr Discount Allowed in GL) and total Discount Received (post Cr Discount Received in GL). And notice that Cash can NEVER have a credit balance — you cannot spend more physical cash than you hold — whereas Bank CAN end with a credit balance (a Bank Overdraft)!"
+>
+
+**T. Bennett Traders — Three-Column Cash Book (June 2026)**
+
+**DEBIT SIDE (Receipts — Money In)**
+
+| Date | Details | F | Disc. Allowed (J\$) | Cash (J\$) | Bank (J\$) |
+| :--- | :--- | :---: | :---: | :---: | :---: |
+| June 1 | Balance b/d | | | 12,000 | 45,000 |
+| June 8 | Sales | GL | | 22,000 | |
+| June 12 | A. Shaw *(5% × 10,000 = 500)* | SL | 500 | | 9,500 |
+| June 15 | Cash *(cash banked)* | **C** | | | 18,000 |
+| June 30 | **Balance c/d** *(Bank Overdraft!)* | | | | **2,000** |
+| | **Totals** | | **500** | **34,000** | **74,500** |
+| **July 1** | **Balance b/d** *(Cash in Hand)* | | | **7,500** | |
+
+**CREDIT SIDE (Payments — Money Out)**
+
+| Date | Details | F | Disc. Received (J\$) | Cash (J\$) | Bank (J\$) |
+| :--- | :--- | :---: | :---: | :---: | :---: |
+| June 1 | Petty Cash *(imprest restored)* | PCB | | 4,500 | |
+| June 5 | Rent | GL | | | 15,000 |
+| June 15 | Bank *(cash banked)* | **C** | | 18,000 | |
+| June 19 | M. Clarke *(2.5% × 20,000 = 500)* | PL | 500 | | 19,500 |
+| June 24 | Drawings *(private use)* | GL | | 4,000 | |
+| June 28 | Office Equipment *(Capital Exp.)* | GL | | | 36,000 |
+| June 28 | Equipment Repairs *(Revenue Exp.)* | GL | | | 4,000 |
+| June 30 | **Balance c/d** *(Cash remaining)* | | | **7,500** | |
+| | **Totals** | | **500** | **34,000** | **74,500** |
+| **July 1** | **Balance b/d** *(Bank Overdraft)* | | | | **2,000** |
+
+**Interpreting the Closing Balances (Paper 2 Theory Marks!):**
+- **Cash `Balance b/d` = J\$7,500 (Dr):** T. Bennett has **J\$7,500 Cash in Hand** *(Current Asset)* on 1 July.
+- **Bank `Balance b/d` = J\$2,000 (Cr):** Cheques paid out (J\$74,500) exceeded bank deposits (J\$72,500) by **J\$2,000** — the business has a **Bank Overdraft of J\$2,000** *(Current Liability)*!
+
+</WorkedExample>
+
+---
+
+## 4. The Petty Cash Book & The Imprest System
+
+Instead of writing cheques or cluttering the main Cash Book for J\$500 taxi fares or J\$300 envelopes, a junior clerk keeps a small locked cash box controlled by the **Imprest System**:
+
+1. **Fixed Float (Imprest Amount):** At the start of every month, the petty cashier starts with the **exact same fixed sum** (say, **J\$6,000**).
+2. **Petty Cash Vouchers:** Every tiny payment is recorded in the **Total Paid** column AND sorted into an **Analysis Column** (e.g. *Stationery*, *Travelling*, *Cleaning*).
+3. **Reimbursement (Restoring the Imprest):** At month-end, the main cashier refunds the **exact amount spent**, bringing the float right back to **J\$6,000**!
+
+<WorkedExample
+  title="T. Bennett Traders — Petty Cash Book (Imprest Float = J$6,000)"
+  marks={7}
+  problem={
+    <>
+      T. Bennett maintains a monthly Petty Cash imprest float of <strong>J$6,000</strong>. On 1 June 2026,
+      the petty cashier had <strong>J$1,500</strong> left and received <strong>J$4,500</strong> cash from the main cashier to restore the float.
+      <br />
+      Payments in June: June 4 Envelopes &amp; pens <strong>J$1,200</strong>; June 11 Messenger taxi fare <strong>J$1,500</strong>;
+      June 18 Detergent &amp; broom <strong>J$1,100</strong>; June 25 Printer paper <strong>J$900</strong>.
+      <br />
+      Write up the Petty Cash Book, balance it at 30 June, and state the reimbursement needed on 1 July.
+    </>
+  }
+  examTip="Always double-check that the sum of all Analysis Column totals equals the Total Paid column! Here: 2,100 + 1,500 + 1,100 = 4,700 ✓."
+>
+
+| Receipts (J\$) | Date | Details | Voucher | Total Paid (J\$) | Stationery (J\$) | Travelling (J\$) | Cleaning (J\$) |
+| :---: | :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| 1,500 | June 1 | Balance b/d | | | | | |
+| 4,500 | June 1 | Cash *(imprest restored)* | | | | | |
+| | June 4 | Envelopes & pens | PCV 1 | 1,200 | 1,200 | | |
+| | June 11 | Messenger taxi fare | PCV 2 | 1,500 | | 1,500 | |
+| | June 18 | Detergent & broom | PCV 3 | 1,100 | | | 1,100 |
+| | June 25 | Printer paper | PCV 4 | 900 | 900 | | |
+| | | **Total Expenses** | | **4,700** | **2,100** | **1,500** | **1,100** |
+| | June 30 | **Balance c/d** | | **1,300** | | | |
+| **6,000** | | **Totals** | | **6,000** | | | |
+| **1,300** | **July 1** | **Balance b/d** | | | | | |
+| **4,700** | **July 1** | **Cash *(reimbursement)*** | | | | | |
+
+- **Cash left in the petty cash box at 30 June:** **J\$1,300** *(Current Asset)*
+- **Reimbursement on 1 July:** **J\$4,700** *(exact amount spent, restoring the float back to J\$6,000!)*
+
+</WorkedExample>
+
+---
+
+## 5. Practice Checks
+
+<QuickCheck
+  paper="Paper 1"
+  marks={1}
+  question="A business withdraws J$25,000 cash from its bank account to keep in the office cash till. How is this recorded in the Cash Book?"
+  options={[
+    'Debit Bank J$25,000; Credit Cash J$25,000 (Contra)',
+    'Debit Cash J$25,000; Credit Bank J$25,000 (Contra)',
+    'Debit Drawings J$25,000; Credit Bank J$25,000',
+    'Debit Cash J$25,000; Credit Capital J$25,000',
+  ]}
+  correctIndex={1}
+  explanation="Cash in the till increases (Dr Cash) while money in the Bank decreases (Cr Bank). Because both halves are inside the Cash Book, it is marked C for Contra."
+/>
+
+<QuickCheck
+  paper="Paper 1"
+  marks={1}
+  question="A Petty Cash Book operates on an imprest float of J$10,000. During April, J$7,350 was spent on small expenses. How much cash must the main cashier reimburse on 1 May?"
+  options={[
+    'J$2,650',
+    'J$7,350',
+    'J$10,000',
+    'J$17,350',
+  ]}
+  correctIndex={1}
+  explanation="Under the Imprest System, the cashier always reimburses the EXACT amount spent (J$7,350), which adds to the J$2,650 left in the box to restore the J$10,000 float."
+/>

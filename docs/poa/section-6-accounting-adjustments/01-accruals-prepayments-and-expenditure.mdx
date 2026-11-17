@@ -1,0 +1,165 @@
+---
+id: accruals-prepayments-and-expenditure
+title: "6.1 Capital vs Revenue Expenditure, Accruals & Prepayments"
+sidebar_label: "6.1 Expenditure, Accruals & Prepayments"
+sidebar_position: 1
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 6"
+  section="Capital vs Revenue Expenditure + Year-End Adjustments for Accrued & Prepaid Expenses and Revenues"
+  code="POA-6.1"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="20 min"
+  difficulty="Core"
+/>
+
+<ObjectivesBox
+  id="poa-6-1"
+  objectives={[
+    'Distinguish clearly between Capital Expenditure and Revenue Expenditure (and explain what happens if they are mixed up).',
+    'Explain why Accruals and Prepayments are required by the Accrual / Matching concept.',
+    'Prepare Journal entries and T-Accounts for Accrued Expenses, Prepaid Expenses, Accrued Revenue, and Prepaid Revenue.',
+    'Show the exact dual effect of Accruals and Prepayments in both the Profit & Loss Account and the Balance Sheet.',
+  ]}
+/>
+
+---
+
+## 1. Capital Expenditure vs Revenue Expenditure (Kid-Friendly Rule!)
+
+Whenever a business spends money, accountants ask one simple question: **"Does this build or upgrade a long-term Fixed Asset, or does it just keep the business running day to day?"**
+
+| Feature | **Capital Expenditure** | **Revenue Expenditure** |
+| :--- | :--- | :--- |
+| **Plain-English Meaning** | Spending to **buy, install, deliver, or permanently upgrade** a **Fixed Asset** that lasts **more than 1 year**. | Everyday spending to **run, maintain, or repair** the business and its assets during the **current year**. |
+| **Examples** | Buying a delivery van; **delivery/installation costs** of a new machine; building a shop extension; **installing air conditioning** in a truck; legal fees to buy land. | Buying petrol/fuel; **oil changes & tyre repairs**; repairing a broken photocopier; staff wages; rent; repainting office walls; electricity bills. |
+| **Where It Goes** | **Balance Sheet** *(increases Fixed Assets)* | **Profit & Loss Account** *(deducted as an Expense)* |
+| **What If You Mix Them Up?** | Recording Capital Expenditure as Revenue Expenditure **overstates expenses** and **understates Net Profit & Fixed Assets**! | Recording Revenue Expenditure as Capital Expenditure **understates expenses** and **overstates Net Profit & Fixed Assets**! |
+
+---
+
+## 2. Why Year-End Adjustments Matter (Accrual / Matching Concept)
+
+Under the **Accrual (Matching) Concept**, this year's **Trading and Profit & Loss Account** must match **every dollar of revenue earned this year** against **every dollar of expense actually used up this year** — whether cash has changed hands yet or not!
+
+### The Four Adjustment Cheat-Sheet (Memorise This!)
+
+| Adjustment Type | Plain-English Meaning | Effect on **Profit & Loss Account** | Where on the **Balance Sheet** |
+| :--- | :--- | :--- | :--- |
+| **1. Accrued Expense** *(Expense Owing)* | Used the service this year, **haven't paid yet** (e.g. unpaid December JPS bill). | **ADD** to that expense *(we owe it for this year!)* | **Current Liability** *(credit balance)* |
+| **2. Prepaid Expense** *(Paid in Advance)* | Already paid cash for **next year's** benefit (e.g. insurance covering next year). | **SUBTRACT** from that expense *(belongs to next year!)* | **Current Asset** *(debit balance)* |
+| **3. Accrued Revenue** *(Income Owing)* | Earned the income this year, **haven't received cash yet** (e.g. tenant owes rent). | **ADD** to that revenue *(earned this year!)* | **Current Asset** *(debit balance)* |
+| **4. Prepaid Revenue** *(Received in Advance)* | Customer paid us early for **next year's** service (e.g. rent received for next year). | **SUBTRACT** from that revenue *(not earned yet!)* | **Current Liability** *(credit balance)* |
+
+---
+
+## 3. Worked Example: Journal Entries & T-Accounts for Accruals & Prepayments
+
+<WorkedExample
+  title="Adjusting Electricity (Accrued) & Insurance (Prepaid) at 31 Dec 2025"
+  marks={8}
+  problem={
+    <>
+      During the year ended <strong>31 December 2025</strong>, a Jamaican shop paid:
+      <br />
+      (a) <strong>J$55,000</strong> by cheque for <strong>Electricity</strong>. On 31 December 2025, December’s electricity bill of <strong>J$5,000</strong> was still unpaid (accrued).
+      <br />
+      (b) <strong>J$28,000</strong> by cheque for <strong>Insurance</strong>, which includes <strong>J$4,000</strong> prepaid for January–February 2026.
+      <br />
+      Show the <strong>Electricity Account</strong>, the <strong>Insurance Account</strong>, and their treatment in the Final Accounts.
+    </>
+  }
+  examTip="Check the side of Balance b/d on 1 January! Accrued Expense = Current Liability → Credit Balance b/d. Prepaid Expense = Current Asset → Debit Balance b/d!"
+>
+
+### (a) Electricity Account *(Accrued Expense)*
+- **Journal Entry (Year-End):** `Dr Electricity J$5,000` / `Cr Accrued Electricity J$5,000`
+- **Transfer to Profit & Loss Account:** `55,000 + 5,000 =` **J\$60,000** *(Expense in P&L)*
+- **Balance Sheet (Current Liability):** Accrued Electricity = **J\$5,000**
+
+<TAccount
+  title="Electricity Account (Nominal — with Year-End Accrual)"
+  debit={[
+    { date: '2025', details: 'Bank (paid)', amount: '55,000' },
+    { date: 'Dec 31', details: 'Accrued c/d', amount: '5,000', isBalance: true },
+  ]}
+  credit={[
+    { date: 'Dec 31', details: 'Profit & Loss', amount: '60,000' },
+  ]}
+  total="60,000"
+  creditBroughtDown={{ date: '2026 Jan 1', details: 'Accrued b/d', amount: '5,000', isBalance: true }}
+  note="Credit Balance b/d of J$5,000 = Current Liability (Accrued Electricity) on the Balance Sheet!"
+/>
+
+### (b) Insurance Account *(Prepaid Expense)*
+- **Journal Entry (Year-End):** `Dr Prepaid Insurance J$4,000` / `Cr Insurance J$4,000`
+- **Transfer to Profit & Loss Account:** `28,000 − 4,000 =` **J\$24,000** *(Expense in P&L)*
+- **Balance Sheet (Current Asset):** Prepaid Insurance = **J\$4,000**
+
+<TAccount
+  title="Insurance Account (Nominal — with Year-End Prepayment)"
+  debit={[
+    { date: '2025', details: 'Bank (paid)', amount: '28,000' },
+  ]}
+  credit={[
+    { date: 'Dec 31', details: 'Profit & Loss', amount: '24,000' },
+    { date: 'Dec 31', details: 'Prepaid c/d', amount: '4,000', isBalance: true },
+  ]}
+  total="28,000"
+  debitBroughtDown={{ date: '2026 Jan 1', details: 'Prepaid b/d', amount: '4,000', isBalance: true }}
+  note="Debit Balance b/d of J$4,000 = Current Asset (Prepaid Insurance) on the Balance Sheet!"
+/>
+
+</WorkedExample>
+
+---
+
+## 4. Classwork Activity & Exam Check
+
+<ClassifyActivity
+  title="Classwork: Capital Expenditure or Revenue Expenditure?"
+  instruction="Decide whether each payment for a delivery truck or shop building is Capital Expenditure or Revenue Expenditure."
+  categories={['Capital Expenditure', 'Revenue Expenditure']}
+  items={[
+    {
+      prompt: 'Installing a brand-new air conditioning unit in the delivery van',
+      answer: 'Capital Expenditure',
+      explanation: 'Adding A/C permanently improves and adds value to the Fixed Asset beyond its original state — Capital Expenditure!',
+    },
+    {
+      prompt: 'Paying for an oil change and fixing a punctured tyre on the van',
+      answer: 'Revenue Expenditure',
+      explanation: 'Routine servicing and repairs simply keep the van running without upgrading it — Revenue Expenditure.',
+    },
+    {
+      prompt: 'Delivery and installation fee paid to set up new factory machinery',
+      answer: 'Capital Expenditure',
+      explanation: 'All initial costs needed to get a Fixed Asset delivered and ready for use are Capital Expenditure.',
+    },
+    {
+      prompt: 'Repainting the existing shop interior walls every two years',
+      answer: 'Revenue Expenditure',
+      explanation: 'Routine maintenance and redecoration is Revenue Expenditure (an expense in P&L).',
+    },
+    {
+      prompt: 'Building a new concrete storeroom extension onto the shop',
+      answer: 'Capital Expenditure',
+      explanation: 'An extension permanently increases the size and earning capacity of Premises — Capital Expenditure.',
+    },
+  ]}
+/>
+
+<QuickCheck
+  paper="Paper 1"
+  marks={1}
+  question="A guest house pays J$10,000 rent every month. By year-end, it has paid J$130,000 in cash for rent. How should the extra J$10,000 be treated?"
+  options={[
+    'Accrued Expense — Current Liability of J$10,000',
+    'Prepaid Expense — Current Asset of J$10,000',
+    'Accrued Revenue — Current Asset of J$10,000',
+    'Prepaid Revenue — Current Liability of J$10,000',
+  ]}
+  correctIndex={1}
+  explanation="Twelve months of rent equals J$120,000. Paying J$130,000 means J$10,000 was paid IN ADVANCE for next year — a Prepaid Expense (subtracted from Rent Expense in P&L, shown as a Current Asset on the Balance Sheet)."
+/>

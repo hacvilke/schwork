@@ -1,0 +1,208 @@
+/* Styles for <ClassifyActivity /> — interactive category classification & matching drill */
+
+.card {
+  position: relative;
+  overflow: hidden;
+  background: var(--schwork-surface);
+  border: 1.5px solid var(--schwork-border);
+  border-radius: 14px;
+  padding: 1.2rem 1.2rem 1.2rem 1.45rem;
+  margin: 1.6rem 0;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 5px;
+  background: var(--schwork-cyan);
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  margin-bottom: 0.55rem;
+}
+
+.titleWrap {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.title {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 1.02rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.headerRight {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.scoreBadge {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 0.24rem 0.65rem;
+  border-radius: 999px;
+  background: var(--schwork-navy);
+  color: var(--schwork-lime);
+}
+
+:global(html[data-theme='dark']) .scoreBadge {
+  background: #0b1524;
+  border: 1px solid rgba(200, 255, 0, 0.4);
+}
+
+.resetBtn {
+  min-height: 36px;
+  padding: 0.28rem 0.65rem;
+  border-radius: 8px;
+  border: 1.5px solid var(--schwork-border);
+  background: transparent;
+  color: var(--schwork-text);
+  font-family: var(--ifm-heading-font-family);
+  font-size: 0.8rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.32rem;
+  cursor: pointer;
+}
+
+.resetBtn:hover {
+  border-color: var(--schwork-cyan);
+}
+
+.subtitle {
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+  color: var(--schwork-text-muted);
+  line-height: 1.5;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.row {
+  padding: 0.9rem 0.95rem;
+  border-radius: 11px;
+  background: var(--schwork-surface-alt);
+  border: 1.5px solid var(--schwork-border);
+  transition: border-color 0.15s ease;
+}
+
+.rowCorrect {
+  border-color: #16a34a;
+  background: rgba(22, 163, 74, 0.08);
+}
+
+.rowWrong {
+  border-color: #dc2626;
+  background: rgba(220, 38, 38, 0.07);
+}
+
+.promptText {
+  margin: 0 0 0.7rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+.indexNum {
+  font-family: var(--ifm-font-family-monospace);
+  font-weight: 700;
+  color: var(--ifm-color-primary);
+  margin-right: 0.45rem;
+}
+
+.categoryRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.catBtn {
+  min-height: 40px;
+  padding: 0.38rem 0.78rem;
+  border-radius: 8px;
+  border: 1.5px solid var(--schwork-border);
+  background: var(--schwork-surface);
+  color: var(--schwork-text);
+  font-family: var(--ifm-heading-font-family);
+  font-size: 0.83rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.14s ease;
+}
+
+.catBtn:hover {
+  border-color: var(--schwork-cyan);
+}
+
+.catSelectedCorrect {
+  background: var(--schwork-lime);
+  border-color: #16a34a;
+  color: var(--schwork-navy);
+}
+
+.catSelectedWrong {
+  background: #dc2626;
+  border-color: #dc2626;
+  color: #ffffff;
+}
+
+.catAnswerHint {
+  border-color: #16a34a;
+  color: #15803d;
+}
+
+:global(html[data-theme='dark']) .catAnswerHint {
+  color: #86efac;
+}
+
+.explanation {
+  margin-top: 0.7rem;
+  padding-top: 0.65rem;
+  border-top: 1px dashed var(--schwork-border);
+  font-size: 0.88rem;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.45rem;
+}
+
+.iconCorrect {
+  color: #16a34a;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.iconWrong {
+  color: #dc2626;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+@media (max-width: 640px) {
+  .card {
+    padding: 1rem 1rem 1rem 1.25rem;
+  }
+
+  .catBtn {
+    min-height: 42px;
+    font-size: 0.81rem;
+  }
+}

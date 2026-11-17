@@ -1,0 +1,116 @@
+---
+id: stock-valuation-fifo-lifo-avco
+title: "10.2 Stock (Inventory) Valuation: FIFO, LIFO & AVCO"
+sidebar_label: "10.2 Stock Valuation (FIFO, LIFO, AVCO)"
+sidebar_position: 2
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 10"
+  section="Valuing Closing Stock Using FIFO, LIFO & Average Cost (AVCO) + Their Effect on Cost of Sales & Gross Profit"
+  code="POA-10.2"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="20 min"
+  difficulty="Core"
+/>
+
+<ObjectivesBox
+  id="poa-10-2"
+  objectives={[
+    'Explain clearly how FIFO (First In, First Out), LIFO (Last In, First Out), and AVCO (Weighted Average Cost) value Closing Stock.',
+    'Calculate the exact value of Closing Stock, Cost of Sales, and Gross Profit under all three methods.',
+    'Explain how rising prices affect Closing Stock and Gross Profit under FIFO vs AVCO vs LIFO.',
+    'State why international accounting standards (IAS 2) allow FIFO and AVCO but do not permit LIFO for published financial statements.',
+  ]}
+/>
+
+---
+
+## 1. Why Does Stock Valuation Method Matter?
+
+Suppose a hardware store buys bags of cement three times in March — first at **J\$10**, then prices rise to **J\$12**, and finally **J\$16**. At month-end, **80 bags are still left unsold** on the shelf. Which price tag do you attach to those 80 leftover bags?!
+
+Accountants have **three classic stock valuation methods**:
+
+| Method | Plain-English Meaning | Which Batches Are Still Left in **Closing Stock**? |
+| :--- | :--- | :--- |
+| **1. FIFO** *(First In, First Out)* | **Oldest stock is sold first** (just like milk or bread in a supermarket!). | The **NEWEST (most recent)** purchases! |
+| **2. LIFO** *(Last In, First Out)* | **Newest stock is sold first** (like a pile of sand where you scoop off the top!). | The **OLDEST (earliest)** purchases! |
+| **3. AVCO** *(Weighted Average Cost)* | Blends all purchase costs together into **one weighted average cost per unit**: $\frac{\text{Total Cost of Goods Available}}{\text{Total Units Available}}$. | Every leftover unit is valued at that **same average cost**! |
+
+*(Note: Under **IAS 2 — Inventories**, businesses use **FIFO** or **AVCO** for official financial statements; **LIFO** is still tested in school POA exams so you understand how valuation changes profit!)*
+
+---
+
+## 2. Worked Example: Same Business Valued All Three Ways (FIFO vs LIFO vs AVCO!)
+
+<WorkedExample
+  title="Comparing FIFO, LIFO & AVCO on Rising Prices (March 2026)"
+  marks={12}
+  problem={
+    <>
+      A trader had zero opening stock on 1 March 2026 and made the following purchases:
+      <br />
+      • March 1: <strong>100 units @ J$10</strong> = J$1,000
+      <br />
+      • March 10: <strong>150 units @ J$12</strong> = J$1,800
+      <br />
+      • March 22: <strong>50 units @ J$16</strong> = J$800
+      <br />
+      During March, <strong>220 units were sold at J$20 each</strong> (Total Sales = <strong>J$4,400</strong>).
+      <br />
+      Calculate <strong>Closing Stock</strong>, <strong>Cost of Sales</strong>, and <strong>Gross Profit</strong> using (a) FIFO, (b) LIFO, and (c) AVCO.
+    </>
+  }
+  examTip="Always find TWO totals first before picking a method: Total Units Available (100 + 150 + 50 = 300 units), Total Cost Available (1,000 + 1,800 + 800 = J$3,600), and Closing Stock Units (300 − 220 sold = 80 units left)!"
+>
+
+**Shared Starting Facts:**
+- Total Units Available = **300 units** | Total Cost Available = **J\$3,600**
+- Units Sold = **220 units** → **Closing Stock = 80 units** | Sales Revenue = **J\$4,400**
+
+### (a) FIFO *(First In, First Out → 80 leftover units are the NEWEST ones!)*
+- Start from the **bottom (latest purchase)** and count up to 80 units:
+  - 50 units from March 22 @ J\$16 = **J\$800**
+  - 30 units from March 10 @ J\$12 = **J\$360**
+- **Closing Stock (FIFO)** = $800 + 360 =$ **J\$1,160**
+- **Cost of Sales** = $3{,}600 - 1{,}160 =$ **J\$2,440** → **Gross Profit** = $4{,}400 - 2{,}440 =$ **J\$1,960**
+
+### (b) LIFO *(Last In, First Out → 80 leftover units are the OLDEST ones!)*
+- Start from the **top (earliest purchase)** and count down 80 units:
+  - 80 units from March 1 @ J\$10 = **J\$800**
+- **Closing Stock (LIFO)** = **J\$800**
+- **Cost of Sales** = $3{,}600 - 800 =$ **J\$2,800** → **Gross Profit** = $4{,}400 - 2{,}800 =$ **J\$1,600**
+
+### (c) AVCO *(Weighted Average Cost)*
+- Weighted Average Cost per unit = $\frac{3{,}600}{300} =$ **J\$12.00 per unit**
+- **Closing Stock (AVCO)** = $80 \times 12.00 =$ **J\$960**
+- **Cost of Sales** = $3{,}600 - 960 =$ **J\$2,640** → **Gross Profit** = $4{,}400 - 2{,}640 =$ **J\$1,760**
+
+### Side-by-Side Comparison *(During Rising Prices / Inflation!)*
+
+| Method | Closing Stock (J\$) | Cost of Sales (J\$) | Gross Profit (J\$) | Exam Pattern When Prices RISE |
+| :--- | :---: | :---: | :---: | :--- |
+| **FIFO** | **1,160** *(Highest)* | 2,440 *(Lowest)* | **1,960** *(Highest!)* | Highest Closing Stock → **Highest Profit** |
+| **AVCO** | **960** *(Middle)* | 2,640 *(Middle)* | **1,760** *(Middle)* | Smooths out price swings in the **Middle** |
+| **LIFO** | **800** *(Lowest)* | 2,800 *(Highest)* | **1,600** *(Lowest!)* | Lowest Closing Stock → **Lowest Profit** |
+
+</WorkedExample>
+
+---
+
+## 3. Quick Check
+
+<QuickCheck
+  paper="Paper 1"
+  marks={1}
+  question="During a period of steadily RISING purchase prices (inflation), which stock valuation method produces the HIGHEST Closing Stock and HIGHEST Gross Profit?"
+  options={[
+    'LIFO (Last In, First Out)',
+    'FIFO (First In, First Out)',
+    'AVCO (Average Cost)',
+    'All three methods give the exact same Gross Profit',
+  ]}
+  correctIndex={1}
+  explanation="Under FIFO, the older cheaper stock is sold first, leaving the newer more expensive stock in Closing Stock — which lowers Cost of Sales and produces the HIGHEST Gross Profit!"
+/>

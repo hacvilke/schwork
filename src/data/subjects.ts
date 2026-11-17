@@ -151,10 +151,11 @@ export const SUBJECTS: SubjectEntry[] = [
     name: 'Principles of Accounts (POA)',
     shortCode: 'POA',
     cluster: 'Business & Tech',
-    status: 'planned',
+    status: 'live',
     syllabusSections: 11,
     summary:
       'Double-entry bookkeeping, books of original entry, ledgers, trial balance, financial statements, partnerships, companies, payroll, and ratios.',
+    docPath: '/docs/poa',
   },
   {
     id: 'pob',

@@ -1,0 +1,306 @@
+---
+id: bank-reconciliation
+title: "7.1 Bank Statement, Updated Cash Book & Bank Reconciliation"
+sidebar_label: "7.1 Bank Reconciliation Statement"
+sidebar_position: 1
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 7"
+  section="Bank Statements vs Cash Book (Mirror-Image Dr/Cr Cross-Checking), Updating the Cash Book, Bank Reconciliation Statements & Overdrafts"
+  code="POA-7.1"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="26 min"
+  difficulty="Core"
+/>
+
+<ObjectivesBox
+  id="poa-7-1"
+  objectives={[
+    'Explain why the Cash Book (Bank column) and the Bank Statement are mirror images (Cash Book Dr matches Bank Statement Cr, and Cash Book Cr matches Bank Statement Dr).',
+    'Cross-check a Cash Book against a Bank Statement to separate Cash Book updates from Timing Differences.',
+    'Prepare an Updated (Adjusted) Cash Book — handling Standing Orders, Direct Debits, Bank Charges, Credit Transfers, Dishonoured Cheques, and Cash Book errors.',
+    'Construct a Bank Reconciliation Statement (both from Updated Cash Book → Bank Statement and the reverse, including Bank Overdraft cases).',
+  ]}
+/>
+
+---
+
+## 1. Why Are the Cash Book & Bank Statement Opposites? (The Mirror-Image Rule!)
+
+Every month, your bank (e.g. NCB, Scotiabank, JMMB) sends you a **Bank Statement** — a copy of **your account as it looks in the bank's books**.
+
+Here is the **#1 secret** every POA student MUST remember before ticking a single number:
+
+| In YOUR **Cash Book** *(Bank Column)* | Mirrors... | On the **Bank Statement** *(Bank's Books)* | Why? |
+| :--- | :---: | :--- | :--- |
+| **DEBIT (Dr) = Money IN** *(Deposits / Receipts)* | ↔ | **CREDIT (Cr) = Money IN** *(Lodgements / Deposits)* | To you, positive bank cash is an **Asset** (↑ Debit). To the bank, holding your cash is a **Liability** — the bank *owes you* that money (↑ Credit)! |
+| **CREDIT (Cr) = Money OUT** *(Cheques Paid / Withdrawals)* | ↔ | **DEBIT (Dr) = Money OUT** *(Payments / Cheques Cleared)* | Paying out reduces your Asset (↓ Credit) and reduces what the bank owes you (↓ Debit)! |
+| **Dr Balance** = Positive money in bank | ↔ | **Cr Balance** = Positive money in bank | Exact mirror image! |
+| **Cr Balance** = **Bank Overdraft** *(you owe the bank!)* | ↔ | **Dr Balance** = **Bank Overdraft** *(O/D)* | Exact mirror image! |
+
+:::tip Golden Cross-Ticking Rule ("Play Snap Across Opposites!")
+When given BOTH a Cash Book and a Bank Statement:
+1. Check every item on the **DEBIT side of the Cash Book** against the **CREDIT column of the Bank Statement** — put a tick (`✓`) next to every matching pair!
+2. Check every item on the **CREDIT side of the Cash Book** against the **DEBIT column of the Bank Statement** — put a tick (`✓`) next to every matching pair!
+3. Now look at whatever is **LEFT UNTICKED**:
+   - **Unticked on the Bank Statement** → The bank knows about it, **you didn't!** → Put it in the **UPDATED CASH BOOK** *(on the OPPOSITE side!)*
+   - **Unticked in the Cash Book** → You recorded it, **the bank hasn't processed it yet!** (*Timing Differences*) → Put it in the **BANK RECONCILIATION STATEMENT**!
+:::
+
+---
+
+## 2. Updated Cash Book Blueprint: Which `Balance b/d` Starts It & What Gets Ticked Off (`✓` vs `✗`)
+
+Students lose easy marks on Paper 2 by starting the Updated Cash Book with the wrong balance or dumping Unpresented Cheques into the Cash Book. Follow this exact **3-Rule Checklist**:
+
+### Rule A — Which `Balance b/d` Starts the Updated Cash Book?
+- **ALWAYS start with the UNADJUSTED CLOSING `Balance b/d`** from the end of the month in your **OLD Cash Book** *(e.g. `J\$42,000 Dr` at 31 October — NEVER the Bank Statement balance and NEVER the 1 October opening balance!)*
+- Put it on the **DEBIT side** if it is a positive bank balance (`Dr`), OR on the **CREDIT side** if your Cash Book shows a **Bank Overdraft** (`Cr`)!
+
+### Rule B — What Gets Ticked Off (`✓`) vs What Is Left Unticked (`✗`)?
+
+| Status After Cross-Ticking (Dr CB ↔ Cr BS, Cr CB ↔ Dr BS) | What Is Included? | Exact Action to Take |
+| :--- | :--- | :--- |
+| **`✓` Ticked on BOTH Cash Book & Bank Statement** | Opening balance (if matched), cleared cheques paid, cleared customer deposits & cash banked. | **Already agrees — leave alone!** Do NOT copy ticked items into the Updated Cash Book or Reconciliation! |
+| **`✗` Unticked on BANK STATEMENT *(Missing from Cash Book)*** | **Bank Statement Credit:** Credit Transfers, Direct Deposits, Dividends, Bank Interest Received.<br/>**Bank Statement Debit:** Standing Orders, Direct Debits, Bank Charges, Dishonoured Cheques (NSF). | **PUT INTO THE UPDATED CASH BOOK!** *(Flip sides: BS Credit → Updated CB **Debit**; BS Debit → Updated CB **Credit**!)* Also fix any **Cash Book amount error** using **the difference only**. |
+| **`✗` Unticked in CASH BOOK *(Missing from Bank Statement)*** | **Cash Book Credit:** Unpresented Cheques.<br/>**Cash Book Debit:** Late Lodgements (Uncredited Deposits). | **DO NOT put in the Updated Cash Book!** Copy ONLY these timing differences into the **Bank Reconciliation Statement**! |
+
+---
+
+## 3. Quick Reference: Every Unticked Item Sorted
+
+| Where Is the Unticked Item? | What It Is (Plain-English Meaning) | Exactly Where You Put It |
+| :--- | :--- | :--- |
+| **Bank Statement — CREDIT** *(not in Cash Book)* | **Credit Transfer / Direct Deposit** (customer paid straight into your bank), **Interest Received**, **Dividends Received** | **Step 1: DEBIT side of Updated Cash Book** *(increases bank balance)* |
+| **Bank Statement — DEBIT** *(not in Cash Book)* | **Standing Order** (fixed regular payment like rent/insurance), **Direct Debit** (variable utility bill like JPS/Flow), **Bank Charges**, **Dishonoured Cheque** (customer's cheque bounced — NSF!) | **Step 1: CREDIT side of Updated Cash Book** *(decreases bank balance)* |
+| **Cash Book Recording Error** | You wrote the wrong amount on a cheque or deposit in your Cash Book | **Step 1: Updated Cash Book** — adjust by the **DIFFERENCE ONLY** *(never the whole cheque!)* |
+| **Cash Book — CREDIT** *(not on Bank Statement)* | **Unpresented Cheques** — cheques you wrote to suppliers that they haven't cashed at the bank yet | **Step 2: Bank Reconciliation Statement** *(ADD when starting from Updated Cash Book)* |
+| **Cash Book — DEBIT** *(not on Bank Statement)* | **Late Lodgements / Uncredited Deposits** — cash/cheques you deposited near month-end that the bank hasn't credited yet | **Step 2: Bank Reconciliation Statement** *(SUBTRACT when starting from Updated Cash Book)* |
+
+---
+
+## 4. Worked Example 1: Full Cross-Ticking, Updated Cash Book & Reconciliation (*J. Henry Trading*)
+
+<WorkedExample
+  title="Step-by-Step Mirror-Image Cross-Check → Updated Cash Book → Bank Reconciliation"
+  marks={14}
+  problem={
+    <>
+      Compare <strong>J. Henry Trading’s Cash Book (Bank Column)</strong> with its{' '}
+      <strong>October 2026 Bank Statement</strong> below.
+      <br />
+      (a) Cross-tick matching items (Cash Book Dr ↔ Bank Statement Cr; Cash Book Cr ↔ Bank Statement Dr).
+      <br />
+      (b) Prepare the <strong>Updated Cash Book</strong> as at 31 October 2026.
+      <br />
+      (c) Prepare the <strong>Bank Reconciliation Statement</strong> as at 31 October 2026 (shown both ways!).
+    </>
+  }
+  examTip="Notice that ONLY the final Adjusted Cash Book Balance (J$24,000 Dr) goes onto the Balance Sheet under Current Assets — NEVER the unadjusted Cash Book balance or the Bank Statement balance!"
+>
+
+### Step 0 — Cross-Tick the Cash Book Against the Bank Statement
+
+**A. J. Henry Trading — Cash Book (Bank Column Only) for October 2026**
+
+| Dr Date | Receipts (Money IN) | J\$ | Match | Cr Date | Payments (Money OUT) | J\$ | Match |
+| :--- | :--- | :---: | :---: | :--- | :--- | :---: | :---: |
+| Oct 1 | Balance b/d | 42,000 | ✓ | Oct 3 | Rent (Chq #101) | 15,000 | ✓ |
+| Oct 5 | R. Campbell | 18,000 | ✓ | Oct 11 | K. Ellis (Chq #102) | 22,000 | ✓ |
+| Oct 14 | Cash Sales banked | 25,000 | ✓ | Oct 22 | JPS Electricity (Chq #103) | 9,000 | **✗ Unpresented** |
+| Oct 29 | D. Brooks | 14,000 | **✗ Late Lodgement** | Oct 28 | Kingston Supplies (Chq #104) | 11,000 | **✗ Unpresented** |
+| | | | | Oct 31 | *Balance c/d* | *42,000* | |
+| | **Total** | **99,000** | | | **Total** | **99,000** | |
+| **Nov 1** | **Balance b/d (unadjusted)** | **42,000** | | | | | |
+
+**B. Bank Statement for J. Henry Trading — October 2026** *(Mirror Image: Dr = Out, Cr = In!)*
+
+| Date | Details | Debit — Out (J\$) | Credit — In (J\$) | Balance (J\$) | Match |
+| :--- | :--- | :---: | :---: | :---: | :---: |
+| Oct 1 | Balance b/f | | | 42,000 Cr | ✓ |
+| Oct 4 | Cheque #101 | 15,000 | | 27,000 Cr | ✓ |
+| Oct 6 | Deposit — R. Campbell | | 18,000 | 45,000 Cr | ✓ |
+| Oct 12 | Cheque #102 | 22,000 | | 23,000 Cr | ✓ |
+| Oct 15 | Cash Deposit | | 25,000 | 48,000 Cr | ✓ |
+| Oct 18 | **Credit Transfer — A. Morgan** | | **12,000** | 60,000 Cr | **✗ → Dr Updated CB** |
+| Oct 21 | **Standing Order — Sagicor Insurance** | **6,500** | | 53,500 Cr | **✗ → Cr Updated CB** |
+| Oct 25 | **Dishonoured Cheque — R. Campbell** | **18,000** | | 35,500 Cr | **✗ → Cr Updated CB** |
+| Oct 27 | **Direct Debit — Flow Internet** | **4,500** | | 31,000 Cr | **✗ → Cr Updated CB** |
+| Oct 31 | **Bank Charges** | **1,000** | | **30,000 Cr** | **✗ → Cr Updated CB** |
+
+---
+
+### Step 1 — Update the Cash Book *(Enter Every Unticked Bank Statement Item on the OPPOSITE Side!)*
+
+<TAccount
+  title="J. Henry Trading — Updated Cash Book (Bank Column Only, 31 Oct 2026)"
+  debit={[
+    { date: 'Oct 31', details: 'Balance b/d (unadjusted)', amount: '42,000', isBalance: true },
+    { date: 'Oct 31', details: 'Credit Transfer (A. Morgan)', amount: '12,000' },
+  ]}
+  credit={[
+    { date: 'Oct 31', details: 'Standing Order (Sagicor Insurance)', amount: '6,500' },
+    { date: 'Oct 31', details: 'Dishonoured Cheque (R. Campbell)', amount: '18,000' },
+    { date: 'Oct 31', details: 'Direct Debit (Flow Internet)', amount: '4,500' },
+    { date: 'Oct 31', details: 'Bank Charges', amount: '1,000' },
+    { date: 'Oct 31', details: 'Balance c/d (Adjusted!)', amount: '24,000', isBalance: true },
+  ]}
+  total="54,000"
+  debitBroughtDown={{ date: 'Nov 1', details: 'Balance b/d (True Bank Asset)', amount: '24,000', isBalance: true }}
+  note="Unticked BS Credits (12,000) went to Cash Book DEBIT; unticked BS Debits (6,500 + 18,000 + 4,500 + 1,000 = 30,000) went to Cash Book CREDIT → True Adjusted Cash Book Balance = J$24,000 Dr!"
+/>
+
+---
+
+### Step 2 — Prepare the Bank Reconciliation Statement *(Using Unticked Cash Book Items Only!)*
+
+#### Layout A: Starting from Updated Cash Book Balance *(Most Common)*
+
+**J. Henry Trading — Bank Reconciliation Statement as at 31 October 2026**
+
+| Particulars | J\$ | J\$ |
+| :--- | :---: | :---: |
+| **Balance as per Updated Cash Book (Dr)** | | **24,000** |
+| **Add: Unpresented Cheques** | | |
+| &nbsp;&nbsp;Cheque #103 — JPS Electricity | 9,000 | |
+| &nbsp;&nbsp;Cheque #104 — Kingston Supplies | 11,000 | 20,000 |
+| | | 44,000 |
+| **Less: Late Lodgements (Uncredited Deposits)** | | |
+| &nbsp;&nbsp;Oct 29 Deposit — D. Brooks | | (14,000) |
+| **Balance as per Bank Statement (Cr)** | | **30,000** |
+
+#### Layout B: Reverse Layout *(Starting from Bank Statement Balance — Exact Opposite Signs!)*
+
+| Particulars | J\$ | J\$ |
+| :--- | :---: | :---: |
+| **Balance as per Bank Statement (Cr)** | | **30,000** |
+| **Add: Late Lodgements (Uncredited Deposits)** — D. Brooks | | 14,000 |
+| | | 44,000 |
+| **Less: Unpresented Cheques** *(9,000 + 11,000)* | | (20,000) |
+| **Balance as per Updated Cash Book (Dr)** | | **24,000** |
+
+*(Both layouts reconcile to the exact dollar!)*
+
+</WorkedExample>
+
+---
+
+## 5. Worked Example 2: Overdraft Reconciliation & Cash Book Cheque Error!
+
+Examiners repeatedly test **Bank Overdrafts** and **Cheque Amount Recording Errors** — here is the clean, foolproof negative-number method so you NEVER flip a sign!
+
+<WorkedExample
+  title="M. Gordon — Overdraft Updated Cash Book & Bank Reconciliation Statement"
+  marks={10}
+  problem={
+    <>
+      On 30 November 2026, <strong>M. Gordon’s</strong> Cash Book showed a <strong>Bank Overdraft (Credit balance) of J$15,000</strong>.
+      Checking the Bank Statement revealed:
+      <br />
+      1. Credit Transfer received from a debtor: <strong>J$9,500</strong>
+      <br />
+      2. Standing Order: <strong>J$2,500</strong> &nbsp;|&nbsp; Bank Charges: <strong>J$500</strong>
+      <br />
+      3. A cheque paid to supplier J. Brown for <strong>J$4,200</strong> was wrongly entered on the Credit side of the Cash Book as <strong>J$2,400</strong>.
+      <br />
+      4. Timing differences: Unpresented Cheques <strong>J$6,800</strong>; Late Lodgements <strong>J$3,500</strong>.
+      <br />
+      Prepare the <strong>Updated Cash Book</strong> and the <strong>Bank Reconciliation Statement</strong> to find the Bank Statement balance.
+    </>
+  }
+  examTip="CRITICAL EXAM ALERT on Error #3: NEVER record the full J$4,200 again! You already credited J$2,400, so credit ONLY the missing DIFFERENCE (4,200 − 2,400 = J$1,800) in the Updated Cash Book!"
+>
+
+### Step 1 — Updated Cash Book *(Notice Overdraft starts on the CREDIT side!)*
+
+<TAccount
+  title="M. Gordon — Updated Cash Book (Bank Column, 30 Nov 2026)"
+  debit={[
+    { date: 'Nov 30', details: 'Credit Transfer (Debtor)', amount: '9,500' },
+    { date: 'Nov 30', details: 'Balance c/d (Adjusted Overdraft)', amount: '10,300', isBalance: true },
+  ]}
+  credit={[
+    { date: 'Nov 30', details: 'Balance b/d (Overdraft)', amount: '15,000', isBalance: true },
+    { date: 'Nov 30', details: 'Standing Order', amount: '2,500' },
+    { date: 'Nov 30', details: 'Bank Charges', amount: '500' },
+    { date: 'Nov 30', details: 'J. Brown (error: 4,200 − 2,400)', amount: '1,800' },
+  ]}
+  total="19,800"
+  creditBroughtDown={{ date: 'Dec 1', details: 'Balance b/d (Overdraft)', amount: '10,300', isBalance: true }}
+  note="Adjusted Cash Book shows a Credit (Overdraft) balance of J$10,300 — treat it as NEGATIVE (-10,300) in the reconciliation!"
+/>
+
+### Step 2 — Bank Reconciliation Statement *(Using Signed Brackets — Same Rules Always Work!)*
+
+| Particulars | J\$ |
+| :--- | :---: |
+| **Overdraft as per Updated Cash Book (Cr)** *(negative!)* | **(10,300)** |
+| **Add:** Unpresented Cheques | +6,800 |
+| | (3,500) |
+| **Less:** Late Lodgements (Uncredited Deposits) | (3,500) |
+| **Overdraft as per Bank Statement (Dr)** | **(7,000)** |
+
+*(Quick Reverse Check from Bank Statement Overdraft: $-7{,}000 + 3{,}500 - 6{,}800 = -10{,}300$ ✓ — exact match!)*
+
+</WorkedExample>
+
+---
+
+## 6. Practice Activities
+
+<ClassifyActivity
+  title="Classwork: Updated Cash Book (Dr/Cr) or Bank Reconciliation Statement?"
+  instruction="Decide the exact place each item belongs when reconciling from the Cash Book."
+  categories={[
+    'Updated Cash Book — DEBIT',
+    'Updated Cash Book — CREDIT',
+    'Bank Reconciliation Statement',
+  ]}
+  items={[
+    {
+      prompt: 'Unpresented cheque issued to supplier K. Ellis (not yet cleared at bank)',
+      answer: 'Bank Reconciliation Statement',
+      explanation: 'Already recorded in the Cash Book — it is a timing difference shown on the Bank Reconciliation Statement.',
+    },
+    {
+      prompt: 'Monthly Standing Order for shop insurance appearing on Bank Statement Debit column',
+      answer: 'Updated Cash Book — CREDIT',
+      explanation: 'A Bank Statement Debit is money PAID OUT — record it on the opposite (CREDIT) side of the Updated Cash Book!',
+    },
+    {
+      prompt: 'Credit Transfer from customer M. Gayle appearing on Bank Statement Credit column',
+      answer: 'Updated Cash Book — DEBIT',
+      explanation: 'A Bank Statement Credit is money RECEIVED — record it on the opposite (DEBIT) side of the Updated Cash Book!',
+    },
+    {
+      prompt: 'Dishonoured cheque returned unpaid (NSF) on Bank Statement Debit column',
+      answer: 'Updated Cash Book — CREDIT',
+      explanation: 'A dishonoured cheque cancels a deposit you thought you received — CREDIT the Updated Cash Book!',
+    },
+    {
+      prompt: 'Late lodgement deposited at 4:30 pm on 31 October (not yet on Bank Statement)',
+      answer: 'Bank Reconciliation Statement',
+      explanation: 'Already debited in the Cash Book — it is a timing difference deducted on the Bank Reconciliation Statement.',
+    },
+    {
+      prompt: 'Bank Charges of J$1,200 listed in the Bank Statement Debit column',
+      answer: 'Updated Cash Book — CREDIT',
+      explanation: 'Bank charges reduce your bank balance — CREDIT the Updated Cash Book.',
+    },
+  ]}
+/>
+
+<QuickCheck
+  paper="Paper 1"
+  marks={1}
+  question="A business's Cash Book shows a Debit balance of J$40,000. On checking the Bank Statement, Bank Charges of J$500 were unrecorded, Unpresented Cheques totalled J$12,000, and Late Lodgements totalled J$7,500. What is the balance on the Bank Statement?"
+  options={[
+    'J$35,000 Cr',
+    'J$44,000 Cr',
+    'J$44,500 Cr',
+    'J$45,000 Cr',
+  ]}
+  correctIndex={1}
+  explanation="Step 1: Updated Cash Book = 40,000 − 500 (Bank Charges) = J$39,500 Dr. Step 2: Bank Statement = 39,500 + 12,000 (Unpresented Cheques) − 7,500 (Late Lodgements) = J$44,000 Cr!"
+/>

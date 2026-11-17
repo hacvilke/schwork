@@ -1,0 +1,188 @@
+/* Styles for <ExplainActivity /> — "Explain in Your Own Words" active-recall box */
+
+.card {
+  position: relative;
+  overflow: hidden;
+  background: var(--schwork-surface);
+  border: 1.5px solid var(--schwork-border);
+  border-radius: 14px;
+  padding: 1.2rem 1.2rem 1.2rem 1.45rem;
+  margin: 1.6rem 0;
+}
+
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 5px;
+  background: linear-gradient(180deg, var(--schwork-cyan), var(--schwork-lime));
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.65rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.74rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.22rem 0.6rem;
+  border-radius: 6px;
+  background: var(--schwork-navy);
+  color: var(--schwork-lime);
+}
+
+:global(html[data-theme='dark']) .badge {
+  background: #0b1524;
+  border: 1px solid rgba(200, 255, 0, 0.4);
+}
+
+.savedTag {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.74rem;
+  color: var(--schwork-text-muted);
+}
+
+.title {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 1.04rem;
+  font-weight: 700;
+  margin: 0 0 0.45rem;
+}
+
+.prompt {
+  font-size: 0.94rem;
+  color: var(--schwork-text-muted);
+  margin: 0 0 0.95rem;
+  line-height: 1.55;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.fieldLabel {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--ifm-heading-color);
+}
+
+.textarea {
+  width: 100%;
+  min-height: 76px;
+  padding: 0.65rem 0.8rem;
+  border-radius: 10px;
+  border: 1.5px solid var(--schwork-border);
+  background: var(--schwork-surface-alt);
+  color: var(--schwork-text);
+  font-family: var(--ifm-font-family-base);
+  font-size: 0.92rem;
+  line-height: 1.5;
+  resize: vertical;
+  transition: border-color 0.15s ease;
+}
+
+.textarea:focus {
+  outline: none;
+  border-color: var(--schwork-cyan);
+}
+
+.actions {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.primaryBtn {
+  min-height: 44px;
+  padding: 0.5rem 1rem;
+  border-radius: 9px;
+  border: none;
+  background: var(--schwork-lime);
+  color: var(--schwork-navy);
+  font-family: var(--ifm-heading-font-family);
+  font-size: 0.88rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.42rem;
+  cursor: pointer;
+}
+
+.primaryBtn:hover {
+  background: var(--schwork-lime-hover);
+}
+
+.secondaryBtn {
+  min-height: 44px;
+  padding: 0.5rem 0.9rem;
+  border-radius: 9px;
+  border: 1.5px solid var(--schwork-border);
+  background: transparent;
+  color: var(--schwork-text);
+  font-family: var(--ifm-heading-font-family);
+  font-size: 0.84rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+}
+
+.secondaryBtn:hover {
+  border-color: var(--schwork-cyan);
+}
+
+.guideBox {
+  margin-top: 1rem;
+  padding: 0.95rem 1rem;
+  border-radius: 11px;
+  background: var(--schwork-surface-alt);
+  border: 1.5px solid var(--schwork-cyan);
+}
+
+.guideHeading {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 0.9rem;
+  font-weight: 700;
+  margin: 0 0 0.55rem;
+  color: var(--ifm-color-primary);
+}
+
+.guideList {
+  margin: 0;
+  padding-left: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 640px) {
+  .card {
+    padding: 1rem 1rem 1rem 1.25rem;
+  }
+}
