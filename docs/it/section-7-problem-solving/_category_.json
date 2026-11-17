@@ -1,0 +1,9 @@
+{
+  "label": "Section 7: Problem-Solving & Design",
+  "position": 8,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "description": "Problem-solving steps, divide-and-conquer, IPO charts, variables & constants, data types, algorithms, arithmetic/relational/logical operators, truth tables, flowcharts, pseudocode, and trace tables."
+  }
+}

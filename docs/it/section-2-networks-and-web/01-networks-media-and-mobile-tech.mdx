@@ -1,0 +1,196 @@
+---
+id: networks-media-and-mobile-tech
+title: "2.1 Computer Networks, Transmission Media & Mobile Tech"
+sidebar_label: "2.1 Networks, Media & Mobile Tech"
+sidebar_position: 1
+---
+
+<SyllabusHeader
+  subject="Information Technology · Section 2"
+  section="Types of Networks (LAN, MAN, WAN, Mobile 2G–5G), Wireless Tech (Bluetooth, Wi-Fi, Hotspot), Intranet/Extranet/Internet, Wired & Wireless Media, Network Hardware & Mobile Applications"
+  code="IT-2.1"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="26 min"
+  difficulty="Core"
+/>
+
+<ObjectivesBox
+  id="it-2-1"
+  objectives={[
+    'Distinguish among Local Area Networks (LAN), Metropolitan Area Networks (MAN), Wide Area Networks (WAN), and Mobile Networks (2G to 5G).',
+    'Compare Wireless Network Technologies (Bluetooth, Wi-Fi, Hotspots) and Levels of Network Privacy (Intranet, Extranet, Internet).',
+    'Explain the functions and trade-offs of Wired Media (Twisted Pair, Coaxial, Fibre Optic), Wireless Media (Infrared, Microwave, Satellite), and Network Hardware (NIC, Switch, Router, Modem).',
+    'Assess the importance and suitability of mobile communication technologies in Education, Commerce, and Journalism.',
+  ]}
+/>
+
+---
+
+## 1. What Is a Computer Network & The Four Network Types?
+
+A **computer network** is two or more computers or devices connected together (by cables or wirelessly) to **share data, files, internet access, software, and hardware peripherals** (like one shared laser printer for a whole school lab!).
+
+### Four Major Network Types
+| Network Type | Geographic Coverage | Typical Ownership & Jamaican Example |
+| :--- | :--- | :--- |
+| **LAN** *(Local Area Network)* | **Small local area** — one room, home, office, or school campus. | Owned privately by one organisation — e.g. your **school's computer lab** sharing files and one printer via Ethernet & Wi-Fi! |
+| **MAN** *(Metropolitan Area Network)* | Spans a **whole city, town, or metropolitan area** (connecting multiple LANs). | Owned by a city government, university, or ISP — e.g. linking **hospital branches or UWI / UTech campuses across Kingston & St Andrew**! |
+| **WAN** *(Wide Area Network)* | Spans **countries, continents, or the entire globe** (connecting LANs & MANs via undersea fibre cables & satellites). | Owned collectively by telecoms & global networks — e.g. **the Internet**, or **NCB linking branches in Jamaica, Trinidad, and Barbados**! |
+| **Mobile (Cellular) Network** | Wide geographic coverage split into **radio "cells"** served by cell towers (Digicel, Flow). | A **radio-based common carrier** letting smartphones stay connected seamlessly while travelling in cars or buses! |
+
+### Overview of Mobile Network Generations (`2G` → Current `5G`)
+*(Syllabus note: You do NOT need to know radio engineering internals — just the practical evolution!)*
+- **2G (Second Generation):** Digital voice calls + **SMS text messaging** + very slow basic mobile data.
+- **3G (Third Generation):** Introduced real **mobile broadband internet**, email, GPS maps, and basic video calling on early smartphones.
+- **4G / LTE (Fourth Generation):** High-speed mobile broadband enabling **smooth HD video streaming (YouTube, Netflix), Zoom classes, online mobile gaming, and cloud apps**!
+- **5G (Fifth Generation — Current):** Ultra-fast multi-gigabit speeds, **ultra-low latency** (near-zero lag), and massive capacity for **IoT smart cities, remote robotic surgery, self-driving vehicles, and instant 4K live streaming**!
+
+### Short-Range Wireless Technologies
+- **Bluetooth:** Very short-range (~10 m), low-power wireless linking personal peripherals (**wireless earbuds, phone-to-car audio, wireless keyboard/mouse, portable speaker**).
+- **Wi-Fi (Wireless Fidelity):** Medium-range (~30–100 m indoors) high-speed wireless LAN connecting laptops, phones, and smart TVs to a router/access point!
+- **Hotspot:** A physical location or mobile phone feature sharing a Wi-Fi internet connection with nearby devices (e.g. airport/café public Wi-Fi, or **tethering** your laptop to your phone's 4G data!).
+
+---
+
+## 2. Levels of Network Privacy: Intranet vs Extranet vs Internet
+
+Paper 1 loves contrasting these three — pay close attention to **WHO is allowed inside!**
+
+| Network Level | Who Can Access It? | Practical Example |
+| :--- | :--- | :--- |
+| **Intranet** | **PRIVATE — Internal employees/members ONLY** inside one organisation (protected by firewall & staff logins). | A Jamaican bank's internal staff portal holding employee HR forms, policies, and internal memos — blocked from the outside public! |
+| **Extranet** | **SEMI-PRIVATE — Controlled extension of an Intranet** granting limited login access to **trusted external partners** (suppliers, distributors, registered customers). | GraceKennedy letting approved supermarkets log in to track wholesale shipments and invoices online — still closed to the general public! |
+| **Internet** | **PUBLIC — Worldwide network of networks** open to anyone on Earth with an ISP connection! | Public websites like Schwork, Wikipedia, YouTube, and Jamaican news outlets! |
+
+---
+
+## 3. Transmission Media (Wired vs Wireless)
+
+Data travels across networks through **transmission media** (channels):
+
+### A. Wired (Guided / Physical) Media
+| Wired Medium | Description | Speed & Distance | Security & Interference | Best Use |
+| :--- | :--- | :--- | :--- | :--- |
+| **Twisted Pair Cable** *(Ethernet — UTP / STP)* | Pairs of insulated copper wires twisted together to cancel out electrical interference. | Good (100 Mbps – 10 Gbps) over short runs (~100 m). | Cheap & easy to install; susceptible to electromagnetic interference (EMI) & eavesdropping if unshielded. | **Standard school & office LANs** (Ethernet patch cables), telephone lines. |
+| **Coaxial Cable** | Thick central copper core surrounded by insulation, braided metal shield, and outer jacket. | Moderate–High over medium distances. | Better shielded against EMI than UTP; stiffer and slightly pricier. | **Cable TV & broadband internet** (e.g. Flow home cable modem line), CCTV cameras. |
+| **Fibre-Optic Cable** | Hair-thin strands of pure glass/plastic carrying **pulses of light** instead of electricity! | **Fastest speeds & longest distances** (terabits/sec, km without boosting!). | **Immune to EMI & extremely hard to tap (highest security!)**; **most expensive** & fragile to splice! | **ISP internet backbones, undersea submarine cables linking Jamaica to the world, high-speed business/FTTH fibre!** |
+
+### B. Wireless (Unguided) Media
+| Wireless Medium | How It Travels | Strengths & Weaknesses | Real-World Use |
+| :--- | :--- | :--- | :--- |
+| **Infrared (IR)** | Short-range invisible light beam requiring **strict direct Line-of-Sight** — **cannot pass through walls!** | Very cheap & interference-free, **BUT** blocked by any solid object or person walking in front! | TV/AC/projector **remote controls**, short-range sensors. |
+| **Microwave** | High-frequency radio waves beamed between **Line-of-Sight towers** (up to ~50 km apart, limited by mountains/Earth's curvature!). | High bandwidth without laying cables across rivers/hills; affected by heavy tropical rainstorms! | Linking **mobile cell towers**, inter-parish telecom towers across Jamaican hills! |
+| **Satellite** | Microwave signals bounced from an earth station up to an **orbiting space satellite** and back down across huge areas! | Reaches **remote rural villages, ships at sea, planes, and disaster zones** where cables don't exist — **BUT** expensive and has noticeable signal delay (**latency**) & bad-weather fade! | **GPS navigation**, remote rural internet (e.g. Starlink), live international TV broadcasts, hurricane tracking! |
+
+---
+
+## 4. Basic Network Hardware Components (Know Every Box's Exact Job!)
+
+| Hardware Device | Exact Function in Plain English |
+| :--- | :--- |
+| **NIC (Network Interface Card / Network Adapter)** | Hardware chip/card built inside every computer or phone that **physically connects it to a network** (via Ethernet port or built-in Wi-Fi radio) and gives it a unique permanent hardware ID (**MAC address**)! |
+| **Switch** | Connects multiple devices **inside the SAME LAN** (e.g. 24 computers in your IT lab) and **intelligently forwards data frames ONLY to the exact destination device** (reducing network traffic collisions!). |
+| **Router** | Connects **TWO OR MORE DIFFERENT networks together** (e.g. your home LAN to the ISP's WAN / Internet!), reads **IP addresses**, and chooses the **best path** to forward data packets across the globe! |
+| **Modem** *(**Mo**dulator–**Dem**odulator)* | Converts **digital signals** from your computer into **analogue/transmission signals** (modulation) to travel over telephone/cable lines, and converts incoming signals back into **digital** (demodulation) for your devices! *(Home ISP boxes often combine Modem + Router + Wi-Fi Switch into one unit!)* |
+
+---
+
+## 5. Importance of Mobile Communication Technologies (3 Key Fields!)
+
+Mobile networks & smartphones have transformed daily life across Jamaica and the Caribbean:
+1. **Education:** Students attend live online classes (Google Classroom, Zoom), read free mobile study sites (like Schwork!) from home or rural areas, collaborate on group SBAs via WhatsApp/Docs, and access e-books anytime — bridging textbook shortages *(challenge: distraction & unequal data costs/digital divide)*.
+2. **Commerce (M-Commerce):** Small vendors accept cashless mobile payments (**Lynk**, mobile banking transfers, portable card readers), run Instagram/WhatsApp shops, receive instant bank fraud alerts, and manage delivery tracking on the road!
+3. **Journalism:** Reporters file breaking stories, HD photos, and live video broadcasts directly from hurricane scenes or sports meets using 4G/5G phones without heavy satellite vans — plus citizen journalists share real-time updates *(challenge: rapid spread of unverified fake news!)*.
+
+---
+
+## 6. Worked Example: Designing a School Network & Picking Transmission Media
+
+<WorkedExample
+  title="Upgrading a Jamaican High School Campus Network (Paper 2 Style)"
+  marks={8}
+  problem={
+    <>
+      A Jamaican high school has <strong>30 desktop computers in Lab A</strong>, a separate <strong>Administration Building 400 metres away</strong> across the campus field, and wants teachers to log into a private grading portal while allowing parents (with assigned passwords) to view ONLY their child’s attendance online.
+      <br />
+      (a) State the <strong>network device</strong> needed to connect all 30 desktops inside Lab A, and the device needed to connect the school’s network to the Internet.
+      <br />
+      (b) Recommend the <strong>best wired transmission medium</strong> to link Lab A and the Administration Building (400 m apart) and give <strong>TWO</strong> reasons.
+      <br />
+      (c) Identify whether the teachers-only grading portal is an <strong>Intranet</strong> or <strong>Extranet</strong>, and classify the parent-accessible attendance portal.
+    </>
+  }
+  examTip="Watch the distance clue: '400 metres away'! Standard Twisted Pair (Ethernet) degrades after ~100 metres — so Fibre-Optic cable is the clear winner for linking buildings across a campus!"
+>
+
+### (a) Network Hardware Devices
+- Connecting 30 desktops inside Lab A (same LAN): **Switch** *(plus each desktop requires a **NIC**!)*.
+- Connecting the school's LAN to the Internet (different network): **Router** *(working with a **Modem** from the ISP)*.
+
+### (b) Best Wired Medium Across 400 Metres: **Fibre-Optic Cable**
+1. **Long Distance Without Signal Loss:** Easily spans 400+ metres (far beyond Twisted Pair's ~100 m copper limit!).
+2. **Ultra-High Speed & Immune to Interference:** Carries light signals immune to electrical noise/lightning surges and very difficult to intercept!
+
+### (c) Intranet vs Extranet
+- **Teachers-only internal grading portal:** **Intranet** *(strictly private to internal school staff)*.
+- **Password-protected parent attendance portal:** **Extranet** *(grants controlled access to authorised external stakeholders — parents — while staying closed to the general public!)*.
+
+</WorkedExample>
+
+<ExtraPractice
+  title="Extra Practice: Networks, Media & Mobile Tech"
+  summary="1 Network Device & Privacy Drill · 2 Paper 1 Quick Checks"
+>
+
+<ClassifyActivity
+  title="Intranet, Extranet, or Internet?"
+  instruction="Classify each network based on who is authorised to access it."
+  categories={['Intranet', 'Extranet', 'Internet']}
+  items={[
+    {
+      prompt: 'A private hospital staff portal accessible only to doctors and nurses on duty',
+      answer: 'Intranet',
+      explanation: 'An Intranet is strictly private to internal employees of one organisation.',
+    },
+    {
+      prompt: 'A pharmaceutical distributor portal where approved external pharmacies log in to place restock orders',
+      answer: 'Extranet',
+      explanation: 'An Extranet extends controlled private access to trusted external business partners.',
+    },
+    {
+      prompt: 'Wikipedia and YouTube accessible publicly worldwide',
+      answer: 'Internet',
+      explanation: 'The Internet is the global public network accessible to anyone with an ISP connection.',
+    },
+  ]}
+/>
+
+<QuickCheck
+  paper="Paper 1"
+  marks={1}
+  question="Which transmission medium transmits data as pulses of light and is completely immune to electromagnetic interference (EMI)?"
+  options={[
+    'Twisted Pair (UTP)',
+    'Coaxial Cable',
+    'Fibre-Optic Cable',
+    'Microwave Radio',
+  ]}
+  correctIndex={2}
+  explanation="Fibre-optic cables transmit light signals through thin glass/plastic strands — making them ultra-fast and completely immune to electrical interference!"
+/>
+
+<QuickCheck
+  paper="Paper 1"
+  marks={1}
+  question="Which device modulates digital signals from a computer onto analogue telecom lines and demodulates incoming signals back into digital form?"
+  options={[
+    'Switch',
+    'Modem',
+    'NIC',
+    'Repeater',
+  ]}
+  correctIndex={1}
+  explanation="MODEM literally stands for Modulator–Demodulator — converting between digital computer signals and analogue/carrier transmission signals!"
+/>
+
+</ExtraPractice>

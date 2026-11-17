@@ -7,7 +7,7 @@ sidebar_position: 2
 
 <SyllabusHeader
   subject="Principles of Accounts · Section 6"
-  section="Causes of Depreciation, Straight-Line & Reducing Balance Methods, Provision for Depreciation T-Account & Balance Sheet Net Book Value"
+  section="Nature & Causes of Depreciation, Straight-Line vs Reducing Balance Methods, Provision for Depreciation T-Account & Balance Sheet Net Book Value"
   code="POA-6.2"
   papers={['Paper 1', 'Paper 2']}
   studyTime="25 min"
@@ -17,48 +17,60 @@ sidebar_position: 2
 <ObjectivesBox
   id="poa-6-2"
   objectives={[
-    'Define Depreciation in simple words and state the main causes of depreciation.',
-    'Calculate annual depreciation using both the Straight-Line Method and the Reducing Balance Method.',
-    'Prepare Journal entries and the Provision for Depreciation Account across multiple years.',
-    'Show the exact treatment of Depreciation in the Profit & Loss Account and Accumulated Depreciation / Net Book Value (NBV) on the Balance Sheet.',
+    'Define Depreciation clearly, explain which accounting concepts require it, and list the five causes of depreciation.',
+    'Identify the three factors needed to calculate depreciation (Cost, Useful Life, Disposal/Scrap Value) and compare Straight-Line vs Reducing Balance.',
+    'Calculate annual depreciation and Net Book Value accurately using both Straight-Line and Reducing Balance methods.',
+    'Prepare Journal entries, multi-year Provision for Depreciation T-Accounts, Profit & Loss extracts, and Balance Sheet extracts without falling into common exam traps.',
   ]}
 />
 
 ---
 
-## 1. What Is Depreciation? (Kid-Friendly Definition!)
+## 1. What Is Depreciation & Why Must We Record It?
 
-Imagine buying a brand-new delivery van today for **J\$500,000**. After driving it across Jamaica for 3 years, is it still worth J\$500,000? **No!** It has lost value through daily use, age, and newer models coming out.
+Imagine buying a brand-new delivery van today for **J\$500,000**. After driving it across Jamaica for three years, is it still worth J\$500,000? **Of course not!** Through daily mileage, rust, and newer models entering the market, its value drops steadily.
 
-**Depreciation** is simply **the gradual loss in value of a Fixed Asset over its useful working life** — or, in accounting terms, **spreading the cost of a Fixed Asset fairly as an expense across the years it helps the business earn income** *(applying the Matching & Prudence concepts!)*.
+**Depreciation** is **the systematic allocation (spreading) of the cost of a tangible Fixed Asset as an expense over its estimated useful working life** — reflecting the gradual loss in value of the asset as it helps the business earn revenue.
 
-*(Note: **Land** is the one Fixed Asset that normally does **NOT** depreciate because land does not wear out!)*
+*(Important facts: **Depreciation is a NON-CASH expense** — no cheque is written to anyone when you record depreciation! And **Freehold Land** is the one Fixed Asset that normally does **NOT** depreciate because land does not wear out!)*
 
-### Five Classic Causes of Depreciation (Exam Theory!)
-1. **Wear and Tear (Physical Deterioration):** Daily use, rust, friction, and weather slowly wearing down vans, machinery, and furniture.
-2. **Obsolescence:** Newer, faster technology makes old equipment outdated (e.g. an older office computer or point-of-sale machine).
-3. **Passage of Time (Effluxion of Time):** Assets with fixed time limits (like a 10-year lease or patent) lose value every year even if untouched.
-4. **Depletion:** Natural resources (bauxite mines, quarries, oil wells) lose value as minerals are extracted.
-5. **Inadequacy:** The business grows so big that a small machine can no longer keep up with demand.
+### Three Accounting Principles Behind Depreciation
+1. **Accrual & Matching Concept:** Because a delivery van helps earn sales for 5 years, charging 100% of its cost in Year 1 would crush Year 1 profit and inflate Years 2–5. Depreciation matches a fair slice of the asset's cost against each year's revenue!
+2. **Prudence (Conservatism) Concept:** Prevents Fixed Assets on the Balance Sheet from being overstated at outdated original purchase prices, and prevents Net Profit from being overstated!
+3. **Consistency Concept:** Once a business selects a depreciation method for an asset class (e.g. 20% Reducing Balance for Motor Vehicles), it must apply that **same method every year** so profit figures remain comparable.
+
+### Five Classic Causes of Depreciation (Memorise for Paper 1 & 2!)
+1. **Wear and Tear (Physical Deterioration):** Daily use, friction, weather, rust, and decay wearing down vehicles, machinery, and buildings.
+2. **Obsolescence:** Faster, newer technology or changing customer tastes make older equipment outdated long before it physically breaks (e.g. older office computers or cash registers).
+3. **Passage of Time (Effluxion of Time):** Assets with fixed legal lifespans (such as a 10-year lease or patent) automatically lose value every year even if sitting idle.
+4. **Depletion:** Wasting natural assets (bauxite mines, limestone quarries, oil wells, timber forests) lose value as resources are extracted.
+5. **Inadequacy:** A growing business outgrows a smaller machine or van that can no longer handle increased demand.
 
 ---
 
-## 2. Two Depreciation Methods & Net Book Value (Hover or Tap Any Formula!)
+## 2. The Three Factors & Two Syllabus Methods of Depreciation
+
+To calculate depreciation, accountants consider **three core factors**:
+1. **Original Historical Cost** *(purchase price + delivery + installation costs)*;
+2. **Estimated Useful Working Life** *(how many years the business expects to use the asset)*; and
+3. **Estimated Disposal / Scrap (Residual) Value** *(what the asset is expected to sell for at the end of its useful life)*.
+
+Hover or tap any formula below:
 
 <FormulaCard
   title="Depreciation & Net Book Value (NBV) Formulae"
   onFormulaSheet={false}
-  summary="Straight-Line charges the exact SAME dollar amount every year; Reducing Balance charges a percentage of the shrinking Net Book Value so depreciation is bigger in early years and smaller later!"
+  summary="Straight-Line charges the exact SAME dollar expense every year; Reducing Balance applies a fixed percentage to the shrinking Net Book Value each year!"
 >
 
 <FormulaHint
   block
   label="1. Straight-Line Method (Equal Instalment)"
-  short="Take the asset's original Cost, subtract what you expect to sell it for at the end (Disposal/Scrap Value), and divide evenly by the Number of Years it will last."
+  short="Subtract Disposal (Scrap) Value from Original Cost and divide evenly by the Useful Life in years — OR multiply Original Cost by the given % rate if stated as '% on cost'!"
 >
 
 $$
-\text{Annual Depreciation} = \frac{\text{Cost} - \text{Disposal (Scrap) Value}}{\text{Number of Years}}
+\text{Annual Depreciation} = \frac{\text{Cost} - \text{Disposal (Scrap) Value}}{\text{Estimated Useful Life (Years)}} \quad \text{or} \quad \text{Rate (\%)} \times \text{Original Cost}
 $$
 
 </FormulaHint>
@@ -66,11 +78,11 @@ $$
 <FormulaHint
   block
   label="2. Reducing Balance Method (Diminishing Balance)"
-  short="Multiply the given percentage by the current Net Book Value (what's left after previous years' depreciation) — so each year's charge gets smaller!"
+  short="Multiply the fixed % rate by the Net Book Value at the start of the year (Original Cost minus ALL previous depreciation) — so depreciation is largest in Year 1 and smaller each year after!"
 >
 
 $$
-\text{Annual Depreciation} = \text{Rate (\%)} \times \text{Net Book Value at Start of Year}
+\text{Annual Depreciation} = \text{Rate (\%)} \times \text{Net Book Value (NBV)}
 $$
 
 </FormulaHint>
@@ -78,29 +90,38 @@ $$
 <FormulaHint
   block
   label="3. Net Book Value (NBV)"
-  short="What the Fixed Asset is worth on the Balance Sheet today: Original Cost minus ALL depreciation charged so far (Provision for Depreciation)."
+  short="The written-down value of the Fixed Asset shown on the Balance Sheet: Original Cost minus TOTAL Accumulated Provision for Depreciation to date."
 >
 
 $$
-\text{Net Book Value (NBV)} = \text{Cost} - \text{Provision for Depreciation (Accumulated)}
+\text{Net Book Value (NBV)} = \text{Original Cost} - \text{Accumulated Provision for Depreciation}
 $$
 
 </FormulaHint>
 
 </FormulaCard>
 
-:::tip Why Do Businesses Pick One Method Over the Other?
-- **Straight-Line** suits assets that wear evenly every year (buildings, furniture, fixtures).
-- **Reducing Balance** suits assets that lose value quickly when new and need more repairs as they age (motor vehicles, computers, machinery) — high depreciation + low repairs early on balances low depreciation + higher repairs later!
-- Remember **Consistency**: once a business picks a method, it should stick with it year after year!
+### Comparing Straight-Line vs Reducing Balance (Paper 2 Theory!)
+
+| Feature | **Straight-Line Method** | **Reducing Balance Method** |
+| :--- | :--- | :--- |
+| **Annual Charge** | **Constant (equal)** every year. | **Highest in Year 1**, decreasing steadily each year. |
+| **Best Suited For** | Assets that provide steady, uniform benefit with low repair variation (e.g. Buildings, Furniture, Fixtures & Fittings, Leases). | Assets that lose market value rapidly when new AND require higher repair bills as they age (e.g. Motor Vehicles, Computers, Plant & Machinery). |
+| **Why Reducing Balance Balances Costs** | — | Early years have **high depreciation + low repairs**; later years have **low depreciation + higher repairs** → total yearly ownership cost stays smooth! |
+| **Can NBV Ever Hit J\$0?** | **Yes** (if scrap value = J\$0, hits J\$0 at end of final year). | **Never reaches J\$0** mathematically (always leaves a small residual balance). |
+
+:::warning CRITICAL Examiner Alert (May/June 2025 Subject Report!)
+The 2025 Subject Report flagged **TWO huge mistakes** that cost students marks every year:
+1. **In the Profit & Loss Account:** Put **ONLY THIS YEAR'S depreciation expense** (e.g. J\$90,000) under Expenses — **NEVER** put `Cost − Depreciation` (e.g. J\$410,000) in the P&L Account!
+2. **On the Balance Sheet:** Always subtract the **TOTAL ACCUMULATED Provision for Depreciation** (`Old Provision b/d + This Year's Depreciation`) from Original Cost to show **Net Book Value (NBV)** — NEVER subtract only this year's charge or only last year's opening provision!
 :::
 
 ---
 
-## 3. Worked Example 1: Straight-Line Method + Provision for Depreciation Account & Balance Sheet
+## 3. Worked Example 1: Straight-Line Method + Provision for Depreciation Account & Financial Statements
 
 <WorkedExample
-  title="Straight-Line Depreciation, Journal Entries, Provision T-Account & Balance Sheet"
+  title="Straight-Line Depreciation, Journal Entries, Provision T-Account & Financial Statement Extracts"
   marks={12}
   problem={
     <>
@@ -109,12 +130,12 @@ $$
       <strong>J$50,000</strong>. The business uses the <strong>Straight-Line Method</strong> and maintains a{' '}
       <strong>Provision for Depreciation Account</strong>.
       <br />
-      (a) Calculate annual depreciation and NBV for 2024 and 2025.
+      (a) Calculate annual depreciation and NBV for 2024, 2025, and 2026.
       <br />
-      (b) Show the <strong>General Journal</strong> entries, the <strong>Provision for Depreciation Account</strong> (2024–2025), the <strong>Profit &amp; Loss Extract</strong>, and the <strong>Balance Sheet Extract</strong>!
+      (b) Show the <strong>General Journal</strong> entry, the <strong>Provision for Depreciation T-Account</strong> (2024–2025), and the <strong>2025 Profit &amp; Loss and Balance Sheet Extracts</strong>!
     </>
   }
-  examTip="Huge Paper 2 Examiner Alert! On the Profit & Loss Account, record ONLY THIS YEAR'S depreciation expense (J$90,000 — NEVER subtract it from cost in the P&L!). On the Balance Sheet, subtract TOTAL ACCUMULATED Provision for Depreciation (J$180,000 in Year 2!) from Original Cost (J$500,000) to show NBV (J$320,000)!"
+  examTip="Notice that the Delivery Van Asset Account ITSELF stays untouched at original cost (J$500,000 Dr) — ALL accumulated depreciation is collected separately inside the Provision for Depreciation Account (Credit balance) so readers of the Balance Sheet can see Cost, Accumulated Depreciation, and NBV clearly!"
 >
 
 ### (a) Annual Depreciation & 3-Year Schedule
@@ -126,7 +147,7 @@ $$\text{Annual Depreciation} = \frac{500{,}000 - 50{,}000}{5} = \frac{450{,}000}
 | **Year 2 (2025)** | 500,000 | 90,000 | 180,000 | 320,000 |
 | **Year 3 (2026)** | 500,000 | 90,000 | 270,000 | 230,000 |
 
-### (b) General Journal Entry *(Repeated Each Year at 31 December)*
+### (b) General Journal Entry *(At Each 31 December)*
 
 | Date | Details | Dr (J\$) | Cr (J\$) |
 | :--- | :--- | :---: | :---: |
@@ -134,7 +155,7 @@ $$\text{Annual Depreciation} = \frac{500{,}000 - 50{,}000}{5} = \frac{450{,}000}
 | | &nbsp;&nbsp;&nbsp;&nbsp;Provision for Depreciation — Delivery Van | | 90,000 |
 | | *(Being annual straight-line depreciation charged on Delivery Van)* | | |
 
-### (c) Provision for Depreciation Account *(Shows How Depreciation Builds Up!)*
+### (c) Provision for Depreciation Account *(Year 1 & Year 2)*
 
 <TAccount
   title="Provision for Depreciation — Delivery Van (Year 1: 2024)"
@@ -146,7 +167,7 @@ $$\text{Annual Depreciation} = \frac{500{,}000 - 50{,}000}{5} = \frac{450{,}000}
   ]}
   total="90,000"
   creditBroughtDown={{ date: '2025 Jan 1', details: 'Balance b/d', amount: '90,000', isBalance: true }}
-  note="Year 1 ends with J$90,000 accumulated depreciation carried into Year 2."
+  note="Year 1 ends with J$90,000 accumulated depreciation carried down into Year 2."
 />
 
 <TAccount
@@ -166,7 +187,7 @@ $$\text{Annual Depreciation} = \frac{500{,}000 - 50{,}000}{5} = \frac{450{,}000}
 ### (d) Financial Statement Extracts (At End of Year 2 — 31 Dec 2025)
 
 **Profit & Loss Account Extract (for the year ended 31 December 2025):**
-- Under **Less: Expenses:** `Depreciation — Delivery Van: J$90,000` *(ONLY Year 2's charge!)*
+- Under **Less: Expenses:** `Depreciation — Delivery Van: J$90,000` *(ONLY Year 2's expense!)*
 
 **Balance Sheet Extract (as at 31 December 2025):**
 
@@ -191,20 +212,15 @@ $$\text{Annual Depreciation} = \frac{500{,}000 - 50{,}000}{5} = \frac{450{,}000}
       Calculate the annual depreciation charge, accumulated provision, and Net Book Value for <strong>2024, 2025, and 2026</strong>.
     </>
   }
-  examTip="With Reducing Balance, ALWAYS take the percentage of the NEW reduced Net Book Value — NEVER go back to original Cost in Year 2 or Year 3!"
+  examTip="If a Trial Balance already gives you Machinery Cost J$200,000 AND Provision for Depreciation (1 Jan) J$40,000, ALWAYS subtract the existing Provision FIRST to get NBV (200,000 − 40,000 = J$160,000) BEFORE multiplying by 20%!"
 >
 
 - **Year 1 (2024):**
-  - Depreciation = $20\% \times 200{,}000 =$ **J\$40,000**
-  - New NBV = $200{,}000 - 40{,}000 =$ **J\$160,000**
-- **Year 2 (2025):** *(Take 20% of the NEW reduced value J\$160,000!)*
-  - Depreciation = $20\% \times 160{,}000 =$ **J\$32,000**
-  - Accumulated Provision = $40{,}000 + 32{,}000 =$ **J\$72,000**
-  - New NBV = $160{,}000 - 32{,}000 =$ **J\$128,000**
+  - Depreciation = $20\% \times 200{,}000 =$ **J\$40,000** | New NBV = $200{,}000 - 40{,}000 =$ **J\$160,000**
+- **Year 2 (2025):** *(Take 20% of the NEW reduced NBV J\$160,000!)*
+  - Depreciation = $20\% \times 160{,}000 =$ **J\$32,000** | Accumulated Provision = $40{,}000 + 32{,}000 =$ **J\$72,000** | New NBV = **J\$128,000**
 - **Year 3 (2026):** *(Take 20% of J\$128,000!)*
-  - Depreciation = $20\% \times 128{,}000 =$ **J\$25,600**
-  - Accumulated Provision = $72{,}000 + 25{,}600 =$ **J\$97,600**
-  - New NBV = $128{,}000 - 25{,}600 =$ **J\$102,400** *(Check: $200{,}000 - 97{,}600 = 102{,}400$ ✓)*
+  - Depreciation = $20\% \times 128{,}000 =$ **J\$25,600** | Accumulated Provision = $72{,}000 + 25{,}600 =$ **J\$97,600** | New NBV = **J\$102,400** *(Check: $200{,}000 - 97{,}600 = 102{,}400$ ✓)*
 
 | Year | Cost (J\$) | Annual Depreciation to P&L (J\$) | Accumulated Provision (J\$) | Balance Sheet NBV (J\$) |
 | :---: | :---: | :---: | :---: | :---: |
@@ -214,9 +230,10 @@ $$\text{Annual Depreciation} = \frac{500{,}000 - 50{,}000}{5} = \frac{450{,}000}
 
 </WorkedExample>
 
----
-
-## 5. Practice Checks
+<ExtraPractice
+  title="Extra Practice: Depreciation & NBV"
+  summary="3 Paper 1 Quick Checks"
+>
 
 <QuickCheck
   paper="Paper 1"
@@ -245,3 +262,19 @@ $$\text{Annual Depreciation} = \frac{500{,}000 - 50{,}000}{5} = \frac{450{,}000}
   correctIndex={1}
   explanation="Year 1 dep = 10% × 100,000 = 10,000 → NBV = 90,000. Year 2 dep = 10% × 90,000 = 9,000 → NBV = 90,000 − 9,000 = J$81,000!"
 />
+
+<QuickCheck
+  paper="Paper 1"
+  marks={1}
+  question="A Trial Balance shows Machinery at Cost J$300,000 and Provision for Depreciation (1 Jan) J$60,000. Machinery is depreciated at 10% Reducing Balance. What is the Accumulated Provision for Depreciation on the Balance Sheet at 31 Dec?"
+  options={[
+    'J$24,000',
+    'J$30,000',
+    'J$84,000',
+    'J$90,000',
+  ]}
+  correctIndex={2}
+  explanation="Start NBV = 300,000 − 60,000 = J$240,000. This year's dep = 10% × 240,000 = J$24,000. Total Accumulated Provision on Balance Sheet = 60,000 + 24,000 = J$84,000!"
+/>
+
+</ExtraPractice>

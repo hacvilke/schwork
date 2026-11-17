@@ -1,0 +1,124 @@
+/* Styles for <ExtraPractice /> — collapsed-by-default optional practice drawer */
+
+.drawer {
+  margin: 2rem 0 1.4rem;
+  border: 1.5px solid var(--schwork-border);
+  border-radius: 14px;
+  background: var(--schwork-surface);
+  overflow: hidden;
+  box-shadow: 0 3px 14px rgba(19, 34, 56, 0.05);
+}
+
+.trigger {
+  width: 100%;
+  min-height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.85rem;
+  padding: 0.9rem 1.15rem;
+  background: var(--schwork-surface-alt);
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  color: inherit;
+  transition: background 0.16s ease;
+}
+
+.trigger:hover {
+  background: var(--schwork-cyan-tint);
+}
+
+.leftGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  min-width: 0;
+}
+
+.iconBadge {
+  flex-shrink: 0;
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--schwork-navy);
+  color: var(--schwork-lime);
+}
+
+:global(html[data-theme='dark']) .iconBadge {
+  background: #0b1524;
+  border: 1px solid rgba(43, 179, 192, 0.4);
+}
+
+.textGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.12rem;
+  min-width: 0;
+}
+
+.eyebrow {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ifm-color-primary);
+}
+
+.title {
+  font-family: var(--ifm-heading-font-family);
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.25;
+}
+
+.summary {
+  font-size: 0.84rem;
+  opacity: 0.78;
+}
+
+.actionPill {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.38rem 0.75rem;
+  border-radius: 999px;
+  background: var(--schwork-cyan-tint);
+  color: var(--ifm-color-primary);
+  font-family: var(--ifm-heading-font-family);
+  font-weight: 700;
+  font-size: 0.84rem;
+}
+
+.content {
+  padding: 0.5rem 1.15rem 1.2rem;
+  border-top: 1px solid var(--schwork-border);
+}
+
+.content > :first-child {
+  margin-top: 0.9rem;
+}
+
+.content > :last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 540px) {
+  .trigger {
+    padding: 0.85rem 0.9rem;
+  }
+
+  .content {
+    padding: 0.45rem 0.85rem 1rem;
+  }
+
+  .actionPill {
+    padding: 0.32rem 0.6rem;
+    font-size: 0.8rem;
+  }
+}

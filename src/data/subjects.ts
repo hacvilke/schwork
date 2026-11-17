@@ -182,10 +182,11 @@ export const SUBJECTS: SubjectEntry[] = [
     name: 'Information Technology',
     shortCode: 'IT',
     cluster: 'Business & Tech',
-    status: 'planned',
+    status: 'live',
     syllabusSections: 8,
     summary:
-      'Computer hardware & networks, data security, spreadsheets, databases, web basics, problem-solving algorithms, and Pascal/programming.',
+      'Computer fundamentals, networks & web technologies, cybersecurity & ICT impact, word-processing, spreadsheets, databases, problem-solving algorithms, and programming.',
+    docPath: '/docs/it',
   },
   {
     id: 'edpm',

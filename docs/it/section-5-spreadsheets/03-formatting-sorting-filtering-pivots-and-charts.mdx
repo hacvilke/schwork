@@ -1,0 +1,182 @@
+---
+id: formatting-sorting-filtering-pivots-and-charts
+title: "5.3 Formatting, Sorting, Filtering, Pivot Tables, Charts & Linking Sheets"
+sidebar_label: "5.3 Sort, Filter, Pivots & Charts"
+sidebar_position: 3
+---
+
+<SyllabusHeader
+  subject="Information Technology · Section 5"
+  section="Numeric Formatting, Primary & Secondary Sorting, Complex Filtering (AND vs OR), 1D/2D Pivot Tables & Frequency Distributions, Selecting & Labelling Charts & Multi-Worksheet Linking"
+  code="IT-5.3"
+  papers={['Paper 1', 'Paper 2', 'SBA']}
+  studyTime="25 min"
+  difficulty="Core"
+/>
+
+<ObjectivesBox
+  id="it-5-3"
+  objectives={[
+    'Format numeric spreadsheet data accurately (Currency, Accounting, Percentage, Comma, Decimal Places).',
+    'Sort records using BOTH Primary and Secondary sort fields in Ascending or Descending order.',
+    'Filter records using simple AutoFilter and Advanced Filter (multiple criteria: AND on the same row vs OR on separate rows).',
+    'Build 1D and 2D Pivot Tables, Frequency Distributions, Pivot Charts, well-labelled standard Charts (Column, Bar, Line, Pie), and formulas linking multiple worksheets!',
+  ]}
+/>
+
+---
+
+## 1. Numeric Formatting (Make Financial Data Readable!)
+
+Formatting changes **how a number looks on screen/print** WITHOUT altering the underlying numeric value used in formulas!
+
+| Format Type | Example Display (`12500.5`) | Best Exam / SBA Use |
+| :--- | :---: | :--- |
+| **Currency** | `J$12,500.50` | Money amounts where the currency symbol sits **right beside the first digit**. |
+| **Accounting** | `J$     12,500.50` | Formal financial columns — aligns **`J$` strictly on the left edge** and aligns decimal points neatly vertically (displays `0` as `-`)! |
+| **Percentage** | `15.0%` *(for `0.15`)* | Multiplies value by 100 and appends `%` (rates, mark-ups, attendance %, tax rates!). |
+| **Comma** | `12,500.50` | Inserts thousands commas and 2 decimal places **without** a currency symbol (populations, unit quantities!). |
+| **Decimal Places** | `12500.50` or `12501` | Controls rounding precision (e.g. `2 d.p.` for money, `0 d.p.` for whole students/items). |
+
+*(Quick visual bug fix: If a cell suddenly fills with **`#######`**, your formula is NOT broken — the **column is simply too narrow** to show the formatted number! Just widen the column!)*
+
+---
+
+## 2. Sorting Data: Primary Field & Secondary Field (Paper 2 Favourite!)
+
+**Sorting** rearranges rows into **Ascending** (`A → Z`, `0 → 9`, oldest → newest) or **Descending** (`Z → A`, `9 → 0`, highest → lowest) order — **ALWAYS select the entire table** (all columns!) so a student's name never gets separated from their score!
+
+### Multi-Level Sorting (Primary vs Secondary Key!)
+When ties exist in your first sort column, add a **Secondary Sort Field** to break the ties cleanly!
+- **Example:** Sort school exam results by **Primary Field:** `Class` *(Ascending: 10A, 10B)* → **Secondary Field:** `Score` *(Descending: 96, 88, 74 inside 10A; then 94, 81, 65 inside 10B!)*!
+- **Paper 2 Recognition Tip:** When given an already-sorted table and asked *"Identify the Primary and Secondary sort fields"*, look first for the column cleanly grouped into repeated blocks (`Parish` or `Department` = **Primary**), then check which column is sorted strictly *inside each repeated block* (`LastName` or `TotalSales` = **Secondary**)!
+
+---
+
+## 3. Filtering Data: AutoFilter vs Advanced Filter (`AND` vs `OR`!)
+
+**Filtering** temporarily **hides** rows that do not match your criteria (without deleting them!) so you view only matching records.
+- **Simple / AutoFilter:** Clicking column dropdown arrows to filter quickly (e.g. `Parish = "St James"` AND `Sales > 50000`).
+- **Advanced Filter (Complex Criteria Range — SBA & Paper 2 Essential!):** You set up a small **Criteria Range** above/below the table with matching column headings:
+  - **Conditions on the SAME ROW = `AND`** *(BOTH must be true!)*
+  - **Conditions on SEPARATE ROWS = `OR`** *(EITHER one can be true!)*
+
+| Example: `Parish = "Kingston" AND Sales >= 50000` *(Same Row!)* | Example: `Parish = "Kingston" OR Sales >= 50000` *(Different Rows!)* |
+| :--- | :--- |
+| `Parish` \| `Sales`<br/>`Kingston` \| `>=50000` | `Parish` \| `Sales`<br/>`Kingston` \| *(blank)*<br/>*(blank)* \| `>=50000` |
+
+---
+
+## 4. Pivot Tables, Frequency Distributions & Pivot Charts (Syllabus Obj 5.7!)
+
+A **Pivot Table** is Excel's superpower for **summarising hundreds of raw transaction rows instantly** into clean totals, counts, or averages without writing a single formula!
+- **One-Dimensional (1D) Pivot Table:** Groups data by **ONE category** in the `Rows` area + summarises a metric in `Values` (e.g. `Rows = Parish`, `Values = Sum of Sales` — OR **`Count of Students` by `Grade` = a Frequency Distribution** showing how many A's, B's, C's occurred!).
+- **Two-Dimensional (2D) Pivot Table:** Cross-tabulates **TWO categories** simultaneously using **BOTH `Rows` AND `Columns`** (e.g. `Rows = Parish`, `Columns = ProductType`, `Values = Sum of Sales`)!
+- **Pivot Chart:** A dynamic chart linked directly to a Pivot Table that updates automatically whenever you filter or rearrange the Pivot Table!
+
+---
+
+## 5. Choosing the Right Chart Type & Labelling It Properly! (Syllabus Obj 5.8!)
+
+Examiners deduct quick marks when students pick the wrong chart or leave off labels!
+
+| Chart Type | Best Used For | Example |
+| :--- | :--- | :--- |
+| **Column Chart** *(vertical bars)* | Comparing **discrete categories side-by-side** (especially few categories or short labels). | Total Sales across 5 Jamaican parishes (`Kingston, St James, Clarendon…`). |
+| **Bar Chart** *(horizontal bars)* | Comparing categories when **category names are long** or ranking many items cleanly. | Comparing 12 school club budgets cleanly without tilted text! |
+| **Line Graph** | Showing **trends / changes continuously OVER TIME**! | Monthly rainfall in Kingston (Jan–Dec) or company revenue growth from 2020–2026! |
+| **Pie Chart** | Showing **proportions / percentage parts of ONE WHOLE (100%)**! *(Never use for negative numbers or trends over time!)* | Percentage share of the school budget going to Labs (40%), Sports (25%), Library (20%), Maintenance (15%)! |
+
+**Mandatory Chart Labelling Checklist (Full Marks Every Time!):**
+1. **Clear, Specific Chart Title** (e.g. *"Monthly Sales Revenue (J\$) — Jan to Jun 2026"*, NOT just *"Chart 1"*!).
+2. **X-Axis & Y-Axis Labels with Units** (for Column, Bar & Line charts — e.g. `Month` and `Revenue (J$)`).
+3. **Data Labels** (exact numbers or `%` shown cleanly — essential on Pie Charts!).
+4. **Legend** (when showing multiple data series or pie slices).
+
+---
+
+## 6. Linking Multiple Worksheets (Syllabus Objective 5.9!)
+
+Real SBA workbooks hold separate sheets — e.g. `Term1`, `Term2`, and a `Summary` sheet! To pull or calculate a cell from another worksheet, write **`SheetName!CellAddress`** (wrap sheet names containing spaces in single quotes `'...'`!):
+- **Single-word sheet name:** `=Sales!F10` *(pulls cell `F10` from the `Sales` worksheet)*
+- **Sheet name with a space:** `='Term 1'!E15 + 'Term 2'!E15` *(adds Term 1 and Term 2 totals cleanly!)*
+- **Dynamic advantage:** Whenever any value changes on `'Term 1'`, the linked total on `Summary` updates automatically with zero copy-paste errors!
+
+---
+
+## 7. Worked Example: Sorting, Complex Filter & Linked Summary Sheet (Paper 2!)
+
+<WorkedExample
+  title="Analysing Multi-Sheet Parish Sales Data"
+  marks={8}
+  problem={
+    <>
+      An Excel workbook has two sheets: <strong><code>JanSales</code></strong> and <strong><code>Summary</code></strong>. Look at this sorted extract from <code>JanSales</code>:
+      <br />
+      <code>Row 2: Clarendon | Brown | 42,000</code>
+      <br />
+      <code>Row 3: Clarendon | Grant | 68,000</code>
+      <br />
+      <code>Row 4: Kingston | Campbell | 95,000</code>
+      <br />
+      <code>Row 5: Kingston | Reid | 51,000</code>
+      <br />
+      (a) Identify the <strong>Primary Sort Field</strong> (and order) and the <strong>Secondary Sort Field</strong> (and order) used above.
+      <br />
+      (b) State which <strong>chart type</strong> best shows each parish’s <strong>percentage share of total January sales</strong>, and name <strong>TWO</strong> mandatory chart elements to include.
+      <br />
+      (c) Cell <code>C10</code> on worksheet <code>JanSales</code> holds Total January Sales. Write the exact formula on worksheet <strong><code>Summary</code></strong> to add <code>JanSales!C10</code> and <code>FebSales!C10</code>!
+    </>
+  }
+  examTip="Check Row 2 vs Row 3 carefully! Clarendon's sales go 42,000 → 68,000 while Kingston's go 95,000 → 51,000 (NOT sorted by sales!) — but look at surnames inside each parish: Brown → Grant (A→Z) and Campbell → Reid (A→Z)! ALWAYS check EVERY group before naming the Secondary Sort Field!"
+>
+
+### (a) Identifying Primary & Secondary Sort Fields
+- **Primary Sort Field:** `Parish` — **Ascending** (`Clarendon` before `Kingston`, A → Z).
+- **Secondary Sort Field:** `Surname` — **Ascending** (`Brown → Grant` inside Clarendon; `Campbell → Reid` inside Kingston!).
+
+### (b) Best Chart Type & Labelling
+- **Chart Type:** **Pie Chart** *(best for showing percentage shares of one whole = 100%!)*.
+- **Two Mandatory Elements:** (1) A clear, specific **Chart Title** (e.g. *"Percentage Share of January Sales by Parish"*); (2) **Percentage Data Labels** and a **Legend**!
+
+### (c) Cross-Worksheet Formula on `Summary`
+```excel
+=JanSales!C10 + FebSales!C10
+```
+
+</WorkedExample>
+
+<ExtraPractice
+  title="Extra Practice: Sorting, Filtering, Pivots & Charts"
+  summary="2 Paper 1 Quick Checks"
+>
+
+<QuickCheck
+  paper="Paper 1"
+  marks={1}
+  question="In an Excel Advanced Filter Criteria Range, placing 'Kingston' under Parish and '>=50000' under Sales on TWO DIFFERENT ROWS creates which logical condition?"
+  options={[
+    'Parish = Kingston AND Sales >= 50000',
+    'Parish = Kingston OR Sales >= 50000',
+    'Parish <> Kingston AND Sales < 50000',
+    'A #REF! error',
+  ]}
+  correctIndex={1}
+  explanation="In an Advanced Filter criteria table, entries on the SAME row represent AND, while entries on SEPARATE rows represent OR!"
+/>
+
+<QuickCheck
+  paper="Paper 1"
+  marks={1}
+  question="Which chart type is MOST appropriate for displaying how Jamaica's monthly tourism arrivals rose and fell from January through December?"
+  options={[
+    'Pie Chart',
+    'Line Graph',
+    'Scatter Plot only',
+    '1D Frequency Table',
+  ]}
+  correctIndex={1}
+  explanation="A Line Graph is specifically designed to illustrate continuous trends and changes over time (Jan–Dec)!"
+/>
+
+</ExtraPractice>

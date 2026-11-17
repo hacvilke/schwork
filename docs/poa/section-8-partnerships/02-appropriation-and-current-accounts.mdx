@@ -7,39 +7,39 @@ sidebar_position: 2
 
 <SyllabusHeader
   subject="Principles of Accounts · Section 8"
-  section="Sharing Partnership Profits (Equal, Capital Ratio, Fixed Ratio), Appropriation Account, Partners' Current Accounts & Financed By Balance Sheet Section"
+  section="Profit-Sharing Methods, Partnership Appropriation Account, Partners' Current Accounts, Balance b/d Significance & Partnership Balance Sheet"
   code="POA-8.2"
   papers={['Paper 1', 'Paper 2']}
-  studyTime="24 min"
+  studyTime="25 min"
   difficulty="Core"
 />
 
 <ObjectivesBox
   id="poa-8-2"
   objectives={[
-    'Prepare a Partnership Profit & Loss Appropriation Account cleanly (Net Profit + Interest on Drawings − Interest on Capital − Partner Salaries = Residual Profit).',
-    'Share residual profit accurately using Fixed Ratios, Capital Ratios, Percentages, or Equally.',
-    'Prepare Partners’ Current Accounts (in columnar or single T-account form) and bring down closing balances.',
-    'Interpret a Credit vs Debit Balance b/d on a Partner’s Current Account and present the Financed By section of a Partnership Balance Sheet.',
+    'Divide residual profit (or residual loss) accurately using Fixed Ratios, Capital Ratios, Percentages, or Equally.',
+    'Prepare a Partnership Profit & Loss Appropriation Account cleanly — avoiding classic traps with Drawings and Partner Loans.',
+    'Prepare Partners’ Current Accounts (in columnar or single T-account format) and bring down closing balances accurately.',
+    'Explain the significance of a Credit vs Debit Balance b/d on a Partner’s Current Account and present the Financed By section of a Partnership Balance Sheet.',
   ]}
 />
 
 ---
 
-## 1. The Appropriation Account: How Partnerships Split Net Profit!
+## 1. How Partnerships Divide Net Profit (The Appropriation Account)
 
-A partnership prepares the **exact same Trading and Profit & Loss Account** as a sole trader to find **Net Profit**. Then, instead of handing all Net Profit to one owner, it adds one extra bottom section called the **Profit & Loss Appropriation Account** to divide that Net Profit fairly among the partners!
+A partnership prepares the **exact same Trading and Profit & Loss Account** as a Sole Trader to calculate **Net Profit**. However, instead of handing 100% of Net Profit to a single owner, the partnership adds a bottom section called the **Profit & Loss Appropriation Account** to distribute Net Profit fairly according to the Partnership Agreement!
 
 <FormulaCard
   title="Partnership Appropriation Flow"
   onFormulaSheet={false}
-  summary="Start with Net Profit, ADD Interest on Drawings (a penalty paid by partners to the firm), subtract Interest on Capital and Partner Salaries, and divide whatever Residual Profit remains!"
+  summary="Begin with Net Profit, ADD Interest on Drawings (charged to partners), subtract Interest on Capital and Partner Salaries, then split the remaining Residual Profit in the agreed ratio!"
 >
 
 <FormulaHint
   block
-  label="Residual Profit Shared Among Partners"
-  short="Interest on Drawings increases the profit pool to share; Interest on Capital and Partner Salaries are paid out of the pool first; the leftover Residual Profit is split in the profit-sharing ratio."
+  label="Residual Profit Available to Share"
+  short="Interest on Drawings increases the distributable pool; Interest on Capital and Partner Salaries are allocated first; whatever remains is Residual Profit (or Residual Loss!) shared in the profit-sharing ratio."
 >
 
 $$
@@ -50,18 +50,47 @@ $$
 
 </FormulaCard>
 
-:::warning Two Classic Exam Traps!
-1. **Drawings itself NEVER appears in the Appropriation Account!** Only **Interest on Drawings** goes in the Appropriation Account — actual Drawings goes straight to the **Debit side of each partner's Current Account**!
-2. **Partner Salaries** go in the **Appropriation Account** (NOT regular staff wages in P&L!), whereas **Interest on a Loan from a Partner** IS an **Expense in the Profit & Loss Account**!
-:::
+### Four Ways Partners Share Residual Profit (Syllabus Objective 8.6!)
+Suppose Residual Profit = **J\$120,000**, with Fixed Capitals Brown = **J\$200,000** and Reid = **J\$100,000**:
+1. **Equally (`1 : 1`):** Brown gets J\$60,000; Reid gets J\$60,000. *(Mandatory if NO Agreement exists!)*
+2. **Fixed Ratio (e.g. `3 : 2`):** Total parts = $3 + 2 = 5$ → Brown gets $\frac{3}{5} \times 120{,}000 =$ **J\$72,000**; Reid gets $\frac{2}{5} \times 120{,}000 =$ **J\$48,000**.
+3. **Capital Ratio (in proportion to Fixed Capitals):** Ratio = $200{,}000 : 100{,}000 = \mathbf{2 : 1}$ (3 parts) → Brown gets $\frac{2}{3} \times 120{,}000 =$ **J\$80,000**; Reid gets $\frac{1}{3} \times 120{,}000 =$ **J\$40,000**.
+4. **Fixed Percentage (e.g. `60% / 40%`):** Brown gets $60\% \times 120{,}000 =$ **J\$72,000**; Reid gets $40\% \times 120{,}000 =$ **J\$48,000**.
+
+### Watch Out for Three Classic Exam Traps!
+1. **Actual Drawings NEVER Enter the Appropriation Account!** Only **Interest on Drawings** goes into the Appropriation Account (`Add: Interest on Drawings`) — actual cash/goods **Drawings** go straight to the **Debit side of each partner's Current Account**!
+2. **Partner Salaries vs Staff Wages vs Partner Loan Interest:**
+   - **Staff Wages** → Expense in **Profit & Loss Account**.
+   - **Interest on a Loan FROM a Partner** → Finance Expense in **Profit & Loss Account** *(reduces Net Profit BEFORE Appropriation! If unpaid, credit Partner's Current Account or Accrued Loan Interest)*.
+   - **Partner's Salary** → Allocation in **Appropriation Account** *(never deducted in P&L!)*.
+3. **What If Interest on Capital + Salaries EXCEED Net Profit?** *(Residual Loss!)*
+   - Suppose Net Profit + Interest on Drawings = J\$50,000, while Interest on Capital + Salaries = J\$66,000 → that leaves a **Residual Loss of `(J$16,000)`**!
+   - Simply share that `(J$16,000)` loss in the agreed ratio (e.g. `3:2` → Brown `(9,600)`, Reid `(6,400)`) and post each partner's share of loss to the **DEBIT side of their Current Account**!
 
 ---
 
-## 2. Worked Example: Complete Appropriation Account, Current Accounts & Balance Sheet Extract
+## 2. How the Appropriation Account Connects to Partners' Current Accounts
+
+Notice the **exact mirror-image double entry** between the Appropriation Account and each Partner's Current Account:
+
+| Item | Effect in **Appropriation Account** | Side in **Partner's Current Account** | Why? |
+| :--- | :---: | :---: | :--- |
+| **Interest on Capital** | **Subtract** *(from profit pool)* | **CREDIT (Cr)** | Increases what the partnership owes the partner! |
+| **Partner Salary** *(if not already paid in cash!)* | **Subtract** *(from profit pool)* | **CREDIT (Cr)** | Increases what the partnership owes the partner! |
+| **Share of Residual Profit** | **Subtract** *(clears pool to 0)* | **CREDIT (Cr)** | Increases what the partnership owes the partner! |
+| **Share of Residual Loss** *(if any)* | **Add back** *(clears loss to 0)* | **DEBIT (Dr)** | Reduces the partner's balance! |
+| **Interest on Drawings** | **Add** *(to profit pool)* | **DEBIT (Dr)** | Penalty charged against the partner! |
+| **Drawings** *(Cash / Goods taken)* | **NOT IN APPROPRIATION!** | **DEBIT (Dr)** | Reduces what the partnership owes the partner! |
+
+*(Note on Paid Salary: If a question says "Reid already withdrew his salary in cash during the year", either debit Drawings & credit Salary in Current Account, or omit it from Current Account since he already took the cash — always read the wording carefully!)*
+
+---
+
+## 3. Worked Example: Complete Appropriation Account, Current Accounts & Balance Sheet Extract
 
 <WorkedExample
   title="Brown & Reid Partnership — Appropriation Account, Current Accounts & Balance Sheet (31 Dec 2025)"
-  marks={15}
+  marks={16}
   problem={
     <>
       <strong>Brown and Reid</strong> are in partnership sharing profits and losses in the ratio <strong>3 : 2</strong>.
@@ -75,12 +104,12 @@ $$
       <br />
       • Drawings during 2025: Brown <strong>J$40,000</strong>; Reid <strong>J$20,000</strong>
       <br />
-      • Partnership Agreement: <strong>10% Interest on Capital</strong>; <strong>5% Interest on Drawings</strong>; annual salary to Reid of <strong>J$36,000</strong>.
+      • Partnership Agreement: <strong>10% Interest on Capital</strong>; <strong>5% Interest on Drawings</strong>; annual salary to Reid of <strong>J$36,000</strong> (not yet withdrawn).
       <br />
       Prepare: (a) the Appropriation Account, (b) Partners’ Current Accounts, and (c) the Financed By section of the Balance Sheet.
     </>
   }
-  examTip="Always double-check opposite posting between the Appropriation Account and Current Accounts: items SUBTRACTED in the Appropriation Account (Interest on Capital, Salary, Share of Profit) are CREDITED to each partner's Current Account (increasing what the firm owes them), while Drawings and Interest on Drawings are DEBITED!"
+  examTip="Notice Reid's opening Current Account balance on 1 Jan was J$4,000 DEBIT (he started the year overdrawn!) — put it carefully on the DEBIT side of Reid's column while putting Brown's J$8,000 Credit on the CREDIT side of Brown's column!"
 >
 
 ### (a) Brown & Reid — Profit & Loss Appropriation Account for the year ended 31 December 2025
@@ -109,7 +138,7 @@ $$
 
 | Dr Date | Details | Brown (J\$) | Reid (J\$) | Cr Date | Details | Brown (J\$) | Reid (J\$) |
 | :--- | :--- | :---: | :---: | :--- | :--- | :---: | :---: |
-| Jan 1 | Balance b/d *(overdrawn!)* | — | 4,000 | Jan 1 | Balance b/d | 8,000 | — |
+| Jan 1 | Balance b/d *(overdrawn)* | — | 4,000 | Jan 1 | Balance b/d | 8,000 | — |
 | Dec 31 | Drawings | 40,000 | 20,000 | Dec 31 | Interest on Capital | 20,000 | 10,000 |
 | Dec 31 | Interest on Drawings | 2,000 | 1,000 | Dec 31 | Partner Salary | — | 36,000 |
 | Dec 31 | **Balance c/d** | **58,000** | **69,000** | Dec 31 | Share of Profit | 72,000 | 48,000 |
@@ -128,14 +157,15 @@ $$
 
 ---
 
-## 3. Interpreting Debit vs Credit Balances on a Current Account
+## 4. Significance of Credit vs Debit `Balance b/d` on Current Accounts (Obj 8.9!)
 
-- **Credit Balance b/d** *(e.g. Brown `J\$58,000 Cr`)*: **Healthy!** The partner left profits/salary in the business — the partnership owes the partner this money (**ADDED** on the Balance Sheet).
-- **Debit Balance b/d** *(e.g. Reid's opening `J\$4,000 Dr`)*: **Overdrawn!** The partner withdrew *more* cash than they earned — the partner owes the partnership money (**SUBTRACTED** in brackets `(4,000)` on the Balance Sheet!).
+- **Credit Balance `b/d`** *(e.g. Brown `J\$58,000 Cr`)*: **Healthy surplus!** The partner earned more (from Interest on Capital, Salary, and Profit Share) than they withdrew in Drawings. The partnership owes the partner this retained amount — **ADDED** to Capital in the Financed By section of the Balance Sheet!
+- **Debit Balance `b/d`** *(e.g. Reid's opening `J\$4,000 Dr`)*: **Overdrawn!** The partner withdrew *more* in Drawings (plus Interest on Drawings / Loss share) than their total earnings. The partner owes that money back to the partnership — shown **in brackets `(4,000)` and SUBTRACTED** in the Financed By section of the Balance Sheet!
 
----
-
-## 4. Quick Check
+<ExtraPractice
+  title="Extra Practice: Appropriation & Current Accounts"
+  summary="2 Paper 1 Quick Checks"
+>
 
 <QuickCheck
   paper="Paper 1"
@@ -150,3 +180,19 @@ $$
   correctIndex={1}
   explanation="A Current Account normally carries a Credit balance. A Debit balance means total Drawings + Interest on Drawings exceeded the partner's earnings — the partner is overdrawn!"
 />
+
+<QuickCheck
+  paper="Paper 1"
+  marks={1}
+  question="Which item is ADDED to Net Profit at the top of a Partnership Appropriation Account?"
+  options={[
+    'Interest on Capital',
+    'Partner Salary',
+    'Interest on Drawings',
+    'Cash Drawings taken by partners',
+  ]}
+  correctIndex={2}
+  explanation="Interest on Drawings is a penalty paid by partners back into the profit pool — so it is ADDED to Net Profit! (Cash Drawings themselves never enter the Appropriation Account.)"
+/>
+
+</ExtraPractice>

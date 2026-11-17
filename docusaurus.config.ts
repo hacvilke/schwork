@@ -159,6 +159,12 @@ const config: Config = {
           label: 'POA',
         },
         {
+          type: 'docSidebar',
+          sidebarId: 'itSidebar',
+          position: 'left',
+          label: 'IT',
+        },
+        {
           to: '/docs/sample-lesson',
           label: 'Sample Lesson',
           position: 'left',
@@ -189,6 +195,10 @@ const config: Config = {
               to: '/docs/poa',
             },
             {
+              label: 'Information Technology (IT)',
+              to: '/docs/it',
+            },
+            {
               label: 'Browse Subjects',
               to: '/subjects',
             },
@@ -213,7 +223,7 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.nightOwl,
-      additionalLanguages: ['bash', 'python', 'json', 'typescript'],
+      additionalLanguages: ['bash', 'python', 'json', 'typescript', 'pascal', 'c', 'visual-basic'],
     },
   } satisfies Preset.ThemeConfig,
 };

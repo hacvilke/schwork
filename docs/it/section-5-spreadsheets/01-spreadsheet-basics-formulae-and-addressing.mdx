@@ -1,0 +1,164 @@
+---
+id: spreadsheet-basics-formulae-and-addressing
+title: "5.1 Spreadsheet Basics, Formulae, Core Functions & Cell Addressing"
+sidebar_label: "5.1 Basics, Formulae & $ Addressing"
+sidebar_position: 1
+---
+
+<SyllabusHeader
+  subject="Information Technology · Section 5"
+  section="Purpose & Terminology, Arithmetic Formulae, Core Functions (SUM, AVERAGE, MAX, MIN, COUNT, COUNTA, DATE), Relative vs Absolute ($A$1) Addressing, Named Ranges & Copy/Move/Delete Effects"
+  code="IT-5.1"
+  papers={['Paper 1', 'Paper 2', 'SBA']}
+  studyTime="26 min"
+  difficulty="Core"
+/>
+
+<ObjectivesBox
+  id="it-5-1"
+  objectives={[
+    'Explain the purpose of a spreadsheet and use accurate terminology (workbook, worksheet, row, column, cell address, range, label, value, formula, function).',
+    'Construct arithmetic formulae using standard operators (+, -, *, /) and brackets following proper order of precedence.',
+    'Apply core pre-defined functions accurately: SUM, AVERAGE, MAX, MIN, COUNT, COUNTA, and DATE.',
+    'Master Relative Addressing, Absolute Addressing ($A$1), Mixed Addressing, Named Ranges, and predict exactly how Copy, Move, and Delete affect formulae!',
+  ]}
+/>
+
+---
+
+## 1. Purpose of a Spreadsheet & Core Terminology
+
+A **spreadsheet** (e.g. **Microsoft Excel**, **Google Sheets**, **LibreOffice Calc**) is an electronic grid of rows and columns designed to **capture, store, calculate, analyse, and chart numerical & financial data** — automatically recalculating every formula the instant any input number changes (*"What-If" analysis!*).
+
+### Core Spreadsheet Vocabulary
+- **Workbook:** The entire spreadsheet file (e.g. `SBA_Budget.xlsx`), which can hold multiple tabbed pages inside it.
+- **Worksheet:** A single grid page inside a workbook (e.g. `Sales`, `Payroll`, `Summary`).
+- **Column & Row:** Vertical **Columns** labelled by letters (`A, B, C … AA`); horizontal **Rows** labelled by numbers (`1, 2, 3 …`).
+- **Cell & Cell Address:** The intersection of one column and one row — named **Column letter FIRST, Row number SECOND** (e.g. `B4`, never `4B`!).
+- **Cell Range:** A rectangular block of adjacent cells separated by a **colon (`:`)** — e.g. `B2:B10` *(all cells from B2 down to B10)* or `A1:D5` *(a 2D block from top-left A1 to bottom-right D5)*.
+- **Label vs Value:**
+  - **Label:** Text headings or descriptions (`"Product"`, `"Kingston"`) — **left-aligned** by default, ignored in maths.
+  - **Value:** Raw numbers, currencies, dates, or percentages (`1500`, `15%`) — **right-aligned** by default, used in calculations!
+- **Formula vs Function:**
+  - **Formula:** Any user-written calculation ALWAYS starting with an **equals sign (`=`)** — e.g. `=(B2*C2)+D2`.
+  - **Function:** A **built-in pre-defined shortcut** inside a formula — e.g. `=SUM(B2:B10)` instead of typing `=B2+B3+B4+...+B10`!
+
+---
+
+## 2. Arithmetic Formulae & Core Pre-Defined Functions
+
+### Arithmetic Operators & Brackets (BODMAS / PEMDAS!)
+Spreadsheets use `*` for multiplication, `/` for division, `^` for powers, and `()` brackets to force exact calculation order!
+- **Classic Exam Trap:** Want the average of `B2`, `C2`, and `D2` using an arithmetic formula?
+  - ❌ `=B2+C2+D2/3` → **WRONG!** Divides *only* `D2` by 3!
+  - ✅ `=(B2+C2+D2)/3` → **CORRECT!** Brackets force addition FIRST!
+
+### Seven Essential Pre-Defined Functions (Syllabus Obj 5.3 Part 1!)
+
+| Function | Exact Syntax | What It Does | Watch-Out Exam Trap! |
+| :--- | :--- | :--- | :--- |
+| **`SUM`** | `=SUM(B2:B10)` | Adds all numeric values in the range. | Ignores text labels automatically. |
+| **`AVERAGE`** | `=AVERAGE(B2:B10)` | Calculates the arithmetic mean of numbers in the range. | **Ignores blank cells**, **BUT INCLUDES `0`** in the divisor! |
+| **`MAX`** | `=MAX(B2:B10)` | Returns the **highest (largest)** number in the range. | Great for `"Highest Sale"` or `"Top Score"`! |
+| **`MIN`** | `=MIN(B2:B10)` | Returns the **lowest (smallest)** number in the range. | Great for `"Lowest Score"` or `"Cheapest Price"`! |
+| **`COUNT`** | `=COUNT(A2:A10)` | Counts **ONLY cells containing NUMBERS** (or dates)! | **SKIPS text & blanks!** If `A2:A10` holds student names, `=COUNT(A2:A10)` returns **`0`**! |
+| **`COUNTA`** | `=COUNTA(A2:A10)` | Counts **ALL non-empty cells** (both **text AND numbers** — *"Count All"*!). | Use **`COUNTA`** to count how many students/items are listed in a **Name column**! |
+| **`DATE`** | `=DATE(2026, 11, 16)` | Builds a genuine numeric calendar date from `(Year, Month, Day)` so you can subtract dates cleanly! | Order is strictly **`(Year, Month, Day)`**! |
+
+---
+
+## 3. Replicating Formulae: Relative vs Absolute (`$`) Addressing & Named Ranges! (**#1 Paper 2 Skill!**)
+
+When you **replicate (copy / autofill)** a formula down a column or across a row, Excel adjusts cell references automatically — unless you **lock** them with a **dollar sign (`$`)**!
+
+| Addressing Type | Example | What Happens When Copied Down 1 Row (`Row 2 → Row 3`)? | What Happens When Copied Right 1 Col (`Col B → Col C`)? |
+| :--- | :---: | :--- | :--- |
+| **Relative Addressing** *(default)* | `=B2*C2` | Changes automatically to `=B3*C3`! | Changes automatically to `=C2*D2`! |
+| **Absolute Addressing** *(locks BOTH Col & Row!)* | `=B2*$E$1` | Becomes `=B3*$E$1` — **`$E$1` stays LOCKED!** | Becomes `=C2*$E$1` — **`$E$1` stays LOCKED!** |
+| **Mixed Addressing** *(locks Col OR Row)* | `=$B2` or `=B$2` | `$B2` → `$B3` *(Col B locked)*; `B$2` → `B$2` *(Row 2 locked!)* | `$B2` → `$B2` *(Col B locked)*; `B$2` → `C$2` *(Row 2 locked!)* |
+| **Named Range** *(human-friendly label!)* | `=B2*GCT_Rate` | Stays `=B3*GCT_Rate`! *(A **Named Range** behaves like an **Absolute Reference** automatically and makes formulae super readable!)* | Stays `=C2*GCT_Rate`! |
+
+> **Golden Exam Rule:** Whenever a single constant sits in **ONE header cell** (like a **15% GCT Tax Rate in `$B$1`**, a **USD Exchange Rate in `$E$2`**, or a **VLOOKUP table in `$G$2:$H$6`**), ALWAYS lock it with **`$`** (press `F4` in Excel!) BEFORE copying down! If you forget `$`, Row 3 multiplies by empty cell `B2` and produces **`0`** or **`#VALUE!`**!
+
+### Effect of Copy vs Move vs Insert/Delete on Formulae (Syllabus Obj 5.5 & 5.6!)
+1. **Copy (`Ctrl+C` → `Ctrl+V` / Fill Handle):** **Relative** references shift by how many rows/columns you moved; **Absolute (`$`)** references stay frozen!
+2. **Move (`Cut Ctrl+X` → `Paste Ctrl+V`):** References **INSIDE the moved formula DO NOT SHIFT** (it still points to its original cells!), AND any other formula pointing *to* the moved cell automatically updates to follow it!
+3. **Inserting a Row/Column inside a range** (e.g. inserting a row between Row 4 and Row 5 inside `=SUM(B2:B10)`): Automatically expands the formula cleanly to `=SUM(B2:B11)`!
+4. **Deleting a cell/row referenced directly by a formula** (e.g. deleting Row 1 where `$B$1` tax rate sat!): Breaks the formula and throws **`#REF!`** (Invalid Cell Reference error)!
+
+---
+
+## 4. Worked Example: Replicating Formulae with Absolute Addressing & Core Functions
+
+<WorkedExample
+  title="Kingston Hardware Ltd — GCT Invoice Sheet (Paper 2 Formula Question)"
+  marks={10}
+  problem={
+    <>
+      Examine this Excel worksheet where Cell <strong><code>B1</code></strong> stores Jamaica’s GCT tax rate of <strong><code>15%</code></strong> (0.15):
+      <br />
+      • Row 3 Headers: <code>A3: Item</code> | <code>B3: Qty</code> | <code>C3: UnitPrice</code> | <code>D3: Subtotal</code> | <code>E3: GCT</code> | <code>F3: Total</code>
+      <br />
+      • Rows 4–7 hold 4 hardware items (<code>Cement</code>, <code>Nails</code>, <code>Paint</code>, <code>Brushes</code>).
+      <br />
+      Write the <strong>EXACT spreadsheet formula</strong> for each cell below (ready to replicate cleanly down Rows 4–7):
+      <br />
+      (a) <code>D4</code> (Subtotal = Qty × UnitPrice)
+      <br />
+      (b) <code>E4</code> (GCT = Subtotal × GCT Rate in <code>B1</code> — MUST copy cleanly down to <code>E7</code>!)
+      <br />
+      (c) <code>F4</code> (Total = Subtotal + GCT)
+      <br />
+      (d) <code>F8</code> (Grand Total of all 4 items), <code>F9</code> (Highest item Total), and <code>A9</code> (Count of how many hardware items are listed in <code>A4:A7</code>).
+    </>
+  }
+  examTip="Notice part (d) counting item names in A4:A7! Because A4:A7 contains TEXT labels ('Cement', 'Nails'...), =COUNT(A4:A7) would return 0! You MUST use =COUNTA(A4:A7)!"
+>
+
+| Cell | Exact Formula | Why It Works Cleanly |
+| :---: | :--- | :--- |
+| **`D4`** | `=B4*C4` | Pure **relative addressing** — copying down to `D5:D7` becomes `=B5*C5`, `=B6*C6`, `=B7*C7`! |
+| **`E4`** | `=D4*$B$1` | `D4` is **relative** (changes to `D5`, `D6`, `D7`), while **`$B$1` is ABSOLUTE** (stays locked on the 15% GCT cell!). |
+| **`F4`** | `=D4+E4` | Relative addition of Subtotal + GCT for each row. |
+| **`F8`** | `=SUM(F4:F7)` | Adds all four item totals cleanly. |
+| **`F9`** | `=MAX(F4:F7)` | Returns the highest single item total. |
+| **`A9`** | `=COUNTA(A4:A7)` | Uses **`COUNTA`** (not `COUNT`) because `A4:A7` holds **text names**, returning **`4`**! |
+
+*(Check: If `E4` is replicated down to `E6`, what exact formula appears in `E6`? → **`=D6*$B$1`**!)*
+
+</WorkedExample>
+
+<ExtraPractice
+  title="Extra Practice: Spreadsheet Basics & Addressing"
+  summary="2 Paper 1 Quick Checks"
+>
+
+<QuickCheck
+  paper="Paper 1"
+  marks={1}
+  question="Cell C2 contains the formula =B2*$A$1. If this formula is copied (replicated) to cell C5, what formula will appear in C5?"
+  options={[
+    '=B5*$A$4',
+    '=B5*$A$1',
+    '=B2*$A$1',
+    '=E5*$A$1',
+  ]}
+  correctIndex={1}
+  explanation="Copying 3 rows down shifts relative reference B2 to B5, while absolute reference $A$1 remains completely locked on cell A1!"
+/>
+
+<QuickCheck
+  paper="Paper 1"
+  marks={1}
+  question="Cells A2:A6 contain the text names of 5 students, while B2:B6 contain their exam scores (with cell B4 left blank). What values are returned by =COUNT(A2:A6) and =COUNTA(A2:A6) respectively?"
+  options={[
+    '5 and 5',
+    '0 and 5',
+    '5 and 0',
+    '4 and 5',
+  ]}
+  correctIndex={1}
+  explanation="COUNT only counts numeric cells (so on a column of text names it returns 0!), whereas COUNTA counts ALL non-empty cells (text or numbers), returning 5!"
+/>
+
+</ExtraPractice>

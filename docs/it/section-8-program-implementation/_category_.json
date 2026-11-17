@@ -1,0 +1,9 @@
+{
+  "label": "Section 8: Program Implementation",
+  "position": 9,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "description": "Low-level vs high-level languages, translators, program implementation steps, syntax/logic/runtime errors, testing & debugging, side-by-side Pascal/Python/C/VBA code translation, and documentation."
+  }
+}

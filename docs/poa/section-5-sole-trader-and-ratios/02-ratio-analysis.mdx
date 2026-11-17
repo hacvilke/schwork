@@ -7,47 +7,52 @@ sidebar_position: 2
 
 <SyllabusHeader
   subject="Principles of Accounts · Section 5"
-  section="Accounting Ratios — Profitability Ratios (GP%, NP%, Average Stock, Stock Turnover, ROCE) & Liquidity Ratios (Working Capital, Current Ratio, Acid-Test Ratio)"
+  section="Accounting Ratios — Profitability & Stock Efficiency Ratios, Liquidity Ratios, Interpretation Benchmarks & Writing Business Recommendations"
   code="POA-5.2"
   papers={['Paper 1', 'Paper 2', 'SBA']}
-  studyTime="22 min"
+  studyTime="24 min"
   difficulty="Core"
 />
 
 <ObjectivesBox
   id="poa-5-2"
   objectives={[
-    'Calculate all five core Profitability & Efficiency ratios: Gross Profit Percentage, Net Profit Percentage, Average Stock, Rate of Stock Turnover, and Return on Capital Employed (ROCE).',
-    'Calculate all three Liquidity measures: Working Capital, Current (Working Capital) Ratio, and Acid-Test (Quick) Ratio.',
-    'Explain what each ratio reveals in plain English — including standard benchmarks (2:1 and 1:1).',
-    'Make practical business recommendations based on calculated ratios for Paper 2 reports.',
+    'Explain WHY businesses use ratios instead of raw dollar totals to compare performance across years or against competitors.',
+    'Calculate all core Profitability & Efficiency ratios: Gross Profit %, Net Profit %, Average Stock, Rate of Stock Turnover, and Return on Capital Employed (ROCE / ROI).',
+    'Calculate all Liquidity measures: Working Capital, Current Ratio, and Acid-Test (Quick) Ratio.',
+    'Interpret what each ratio signals (including diagnosing why a ratio improved or worsened) and write structured management recommendations.',
   ]}
 />
 
 ---
 
-## 1. Why Do Businesses Use Accounting Ratios?
+## 1. Why Ratios Beat Raw Dollar Figures!
 
-Raw dollar figures can trick you! Earning **J\$60,000** Net Profit sounds small next to a mega-chain earning **J\$600,000** — until you discover the small shop only invested J\$300,000 (a **20% return**!) while the mega-chain invested J\$12,000,000 (only a **5% return**!).
+Suppose Shop A earned **J\$60,000** Net Profit while Mega-Store B earned **J\$600,000** Net Profit. Which business performed better? You **cannot tell** from dollar totals alone!
+- If Shop A only invested **J\$300,000** of capital, it earned a brilliant **20% return**!
+- If Mega-Store B invested **J\$12,000,000**, it only earned **5%** — barely better than leaving money in a fixed bank deposit!
 
-**Accounting Ratios** turn financial statement numbers into clean percentages, multiples, and ratios so owners, banks, and investors can judge two big questions:
-1. **Profitability Ratios:** *"How well is the business earning profit and moving its stock?"*
-2. **Liquidity Ratios:** *"Can the business comfortably pay its short-term bills on time?"*
+**Accounting Ratios** turn financial statement data into standardised percentages, multiples, and ratios so managers, banks, and investors can:
+1. **Track trends over time** (e.g. comparing 2024 vs 2025 vs 2026 inside the same business);
+2. **Benchmark against rivals or industry averages** (e.g. comparing two Jamaican pharmacies); and
+3. **Spot hidden weaknesses early** (such as runaway expenses, slow-moving stock, or looming cash shortages!).
 
 ---
 
-## 2. Profitability & Stock Efficiency Ratios (Hover or Tap Any Formula!)
+## 2. Profitability & Stock Efficiency Ratios
+
+Hover or tap any formula below to see what it measures in plain English:
 
 <FormulaCard
-  title="Profitability & Stock Turnover Formulae"
+  title="Profitability & Stock Efficiency Formulae"
   onFormulaSheet={false}
-  summary="Always express GP%, NP%, and ROCE as percentages (%), Average Stock in dollars (J$), and Rate of Stock Turnover in 'times' per year!"
+  summary="Express GP%, NP%, and ROCE/ROI as percentages (%), Average Stock in dollars (J$), and Rate of Stock Turnover in 'times' per year!"
 >
 
 <FormulaHint
   block
-  label="1. Gross Profit Margin (Gross Profit Percentage)"
-  short="Shows how many cents of Gross Profit the business keeps out of every $1.00 of Net Sales before paying operating expenses."
+  label="1. Gross Profit Percentage (Gross Profit Margin)"
+  short="Shows how many cents of Gross Profit the firm keeps out of every $1.00 of Net Sales after paying for the goods sold."
 >
 
 $$
@@ -58,8 +63,8 @@ $$
 
 <FormulaHint
   block
-  label="2. Net Profit Margin (Net Profit Percentage)"
-  short="Shows how many cents of final Net Profit remain from every $1.00 of Net Sales after ALL operating expenses are paid."
+  label="2. Net Profit Percentage (Net Profit Margin)"
+  short="Shows how many cents of final Net Profit remain from every $1.00 of Net Sales after ALL operating expenses are deducted."
 >
 
 $$
@@ -71,7 +76,7 @@ $$
 <FormulaHint
   block
   label="3. Average Stock (Average Inventory)"
-  short="The midpoint stock held during the year — add Opening Stock and Closing Stock, then divide by 2."
+  short="The midpoint stock held during the accounting year — always add Opening Stock + Closing Stock and divide by 2."
 >
 
 $$
@@ -83,19 +88,19 @@ $$
 <FormulaHint
   block
   label="4. Rate of Stock Turnover (Inventory Turnover)"
-  short="How many TIMES in a year the business sells and replaces its average stock. Higher usually means brisk sales and fresh inventory!"
+  short="How many TIMES in a year the firm sells and replaces its average stock. Always uses COST OF SALES on top (never Sales!)."
 >
 
 $$
-\text{Rate of Stock Turnover} = \frac{\text{Cost of Sales}}{\text{Average Stock}} \quad (\text{in times})
+\text{Rate of Stock Turnover} = \frac{\text{Cost of Sales}}{\text{Average Stock}} \quad (\text{times})
 $$
 
 </FormulaHint>
 
 <FormulaHint
   block
-  label="5. Return on Capital Employed (ROCE / ROI)"
-  short="Measures the percentage return earned on every $100 of long-term capital invested in the business. Compare it to a bank deposit interest rate!"
+  label="5. Return on Capital Employed (ROCE / Return on Investment)"
+  short="Measures the percentage profit earned for every $100 of long-term capital invested in the business. Compare directly against bank interest rates!"
 >
 
 $$
@@ -106,25 +111,36 @@ $$
 
 </FormulaCard>
 
-:::tip Two Ways You May See ROCE / Capital Employed Calculated
-- **Standard Formula (Official Syllabus):** $\text{Capital Employed} = \text{Closing Capital} + \text{Long-Term Liabilities}$ *(which equals Total Assets − Current Liabilities)*.
-- **Average Capital Variation (Used in some classrooms):** When a question asks for Return on **Average Capital**, find $\text{Average Capital} = \frac{\text{Opening Capital} + \text{Closing Capital}}{2}$ first, then divide Net Profit by Average Capital and multiply by 100! Always show your formula clearly so examiners see your method.
-:::
+### How to Interpret Profitability & Stock Ratios (Paper 2 Insight!)
+
+- **Gross Profit Percentage (GP%) — What makes it rise or fall?**
+  - *Falls if:* the shop slashes selling prices, supplier purchase costs rise without adjusting retail prices, too many trade discounts are given, or **stock theft / spoilage** shrinks Closing Stock!
+  - *Improves if:* the shop negotiates cheaper bulk suppliers, reduces waste, or focuses on higher-margin goods.
+- **Comparing GP% vs NP% (The Expense Diagnostic!):**
+  - If **GP% stayed steady at 40%**, yet **NP% dropped from 18% down to 9%**, you immediately know the problem is **NOT** buying/selling — it is **out-of-control Operating Expenses** (soaring electricity, excessive wages, bad debts, or advertising waste)!
+- **Rate of Stock Turnover — Context Matters!**
+  - A **high turnover** (e.g. 12–20 times/year in a grocery or bakery) signals brisk sales, fresh perishable stock, and cash coming in fast.
+  - A **low turnover** (e.g. 2–3 times/year) is normal for luxury jewellery or furniture stores, but dangerous in a supermarket — it signals **overstocking, obsolete goods, poor marketing, or prices set too high**!
+- **ROCE / ROI (Tested on May/June 2025 Paper 02 Q4!):**
+  - **Capital Employed** = `Closing Capital + Long-Term Liabilities` (or `Total Assets − Current Liabilities`). *(Note: Some questions ask for Return on **Average Capital** = $\frac{\text{Opening Capital} + \text{Closing Capital}}{2}$ — always state your formula clearly!)*
+  - **Decision rule:** Compare ROCE against safe alternative investments (e.g. bank deposits or industry average rate). If a business earns **20% ROCE** while the industry average is **12%** and bank fixed deposits pay **5%**, the business is an attractive investment!
 
 ---
 
-## 3. Liquidity Ratios (Can You Pay Your Short-Term Bills?)
+## 3. Liquidity Ratios (Short-Term Survival & Solvency!)
+
+Even a profitable business can go bankrupt if it cannot pay its electricity bill, staff wages, and credit suppliers on time! **Liquidity ratios** test short-term bill-paying ability:
 
 <FormulaCard
   title="Liquidity Formulae (Working Capital, Current Ratio & Acid-Test)"
   onFormulaSheet={false}
-  summary="Liquidity ratios compare short-term resources against short-term debts. Current Ratio includes Stock; Acid-Test removes Stock because Stock takes longest to turn into cash!"
+  summary="Current Ratio tests ALL Current Assets against Current Liabilities (benchmark ≈ 2 : 1); Acid-Test strips out Closing Stock to test immediate cash readiness (benchmark ≈ 1 : 1)."
 >
 
 <FormulaHint
   block
   label="1. Working Capital (Net Current Assets)"
-  short="The dollar cushion left over after subtracting Current Liabilities from Current Assets."
+  short="The net dollar cushion available to run day-to-day operations after covering short-term debts."
 >
 
 $$
@@ -136,7 +152,7 @@ $$
 <FormulaHint
   block
   label="2. Current Ratio (Working Capital Ratio)"
-  short="Shows how many dollars of Current Assets exist for every $1 of Current Liabilities. Healthy benchmark: roughly 2 : 1."
+  short="How many dollars of Current Assets exist to cover every $1 of Current Liabilities. Healthy benchmark: roughly 2 : 1."
 >
 
 $$
@@ -148,7 +164,7 @@ $$
 <FormulaHint
   block
   label="3. Acid-Test Ratio (Quick Ratio)"
-  short="Stricter cash test! Removes Closing Stock (slowest to turn into cash) from Current Assets before dividing by Current Liabilities. Healthy benchmark: at least 1 : 1."
+  short="Stricter immediate-cash test! Removes Closing Stock (and Prepayments if given) because stock takes longest to convert to cash. Healthy benchmark: at least 1 : 1."
 >
 
 $$
@@ -159,18 +175,26 @@ $$
 
 </FormulaCard>
 
-*(Bonus efficiency ratios on the syllabus: **Debtors Collection Period** = $\frac{\text{Debtors}}{\text{Credit Sales}} \times 365\text{ days}$, and **Creditors Payment Period** = $\frac{\text{Creditors}}{\text{Credit Purchases}} \times 365\text{ days}$.)*
+### Diagnosing Liquidity Problems (Too Low vs Too High!)
+
+| Situation | Benchmark Warning | What It Means | Practical Management Recommendations |
+| :--- | :--- | :--- | :--- |
+| **Current Ratio < `1.5 : 1` or Acid-Test < `1 : 1`** | **Dangerously Low Liquidity** | Firm may struggle to pay creditors, wages, or bank overdraft on time — risk of insolvency! | Inject fresh owner capital or take a **long-term loan** (to pay off short-term debt), sell idle Fixed Assets, chase overdue debtors faster (offer cash discounts), cut owner Drawings, or clear slow-moving stock! |
+| **Current Ratio is fine (`2.4 : 1`), BUT Acid-Test is low (`0.6 : 1`)** | **Cash Trapped in Stock!** | Most of Current Assets is tied up in unsold Stock sitting on shelves rather than Debtors or Cash! | Run clearance promotions to turn excess stock into cash, tighten stock reordering levels, and avoid bulk over-purchasing. |
+| **Current Ratio > `3.5 : 1` and Acid-Test > `2.5 : 1`** | **Too High (Idle Resources!)** | Too much cash is sitting idle earning zero profit, or debtors are taking far too long to pay! | Invest excess cash into profitable expansion or interest-bearing accounts, settle creditors early to earn Discount Received, and monitor debtor credit control. |
+
+*(Additional credit-control ratios sometimes seen: **Debtors Collection Period** = $\frac{\text{Debtors}}{\text{Credit Sales}} \times 365\text{ days}$, and **Creditors Payment Period** = $\frac{\text{Creditors}}{\text{Credit Purchases}} \times 365\text{ days}$.)*
 
 ---
 
-## 4. Worked Example: Complete Ratio Analysis of *S. Morrison Hardware*
+## 4. Worked Example: Complete Ratio Analysis & Management Report
 
 <WorkedExample
-  title="Calculating & Interpreting All 8 Ratios (S. Morrison Hardware, 31 Dec 2025)"
-  marks={14}
+  title="Calculating & Evaluating All 8 Ratios (S. Morrison Hardware, 31 Dec 2025)"
+  marks={15}
   problem={
     <>
-      Using <strong>S. Morrison Hardware’s</strong> Trading &amp; P&amp;L figures from Lesson 5.1 plus its Balance Sheet balances at 31 Dec 2025:
+      Using <strong>S. Morrison Hardware’s</strong> Income Statement figures from Lesson 5.1 plus its Balance Sheet balances at 31 Dec 2025:
       <br />
       Net Sales <strong>J$400,000</strong> | Cost of Sales <strong>J$240,000</strong> | Gross Profit <strong>J$160,000</strong> | Net Profit <strong>J$60,000</strong>
       <br />
@@ -178,37 +202,39 @@ $$
       <br />
       Current Assets <strong>J$90,000</strong> *(Stock 42,000; Debtors 26,000; Bank 18,000; Cash 4,000)* | Current Liabilities <strong>J$40,000</strong>
       <br />
-      Opening Capital <strong>J$220,000</strong> | Closing Capital <strong>J$260,000</strong> | Long-Term Loan <strong>J$40,000</strong> *(Capital Employed = J$300,000)*
+      Closing Capital <strong>J$260,000</strong> | Long-Term Loan <strong>J$40,000</strong> *(Capital Employed = J$300,000)*
       <br />
-      Calculate all five Profitability/Stock ratios and all three Liquidity measures, and comment briefly on liquidity.
+      <strong>(a)</strong> Calculate all five Profitability/Stock ratios and all three Liquidity measures.
+      <br />
+      <strong>(b)</strong> Write a brief management evaluation commenting on profitability and liquidity, with two practical recommendations.
     </>
   }
-  examTip="Always include the right UNIT on your final answer! Percentages get '%', Stock Turnover gets 'times', Working Capital gets 'J$', and Current & Acid-Test Ratios are written in the form 'x : 1'!"
+  examTip="Never omit the UNIT on your final answer! Percentages get '%', Stock Turnover gets 'times', Working Capital gets 'J$', and Current & Acid-Test Ratios are written strictly as 'x : 1' (rounded cleanly to 2 decimal places when needed)."
 >
 
-### A. Profitability & Stock Ratios
-1. **Gross Profit Percentage:** $\frac{160{,}000}{400{,}000} \times 100 =$ **40.0%** *(earns 40 cents Gross Profit per J\$1 of sales)*
-2. **Net Profit Percentage:** $\frac{60{,}000}{400{,}000} \times 100 =$ **15.0%** *(operating expenses absorbed 25% of sales — watch expense control!)*
+### (a) Ratio Calculations
+1. **Gross Profit Percentage:** $\frac{160{,}000}{400{,}000} \times 100 =$ **40.0%**
+2. **Net Profit Percentage:** $\frac{60{,}000}{400{,}000} \times 100 =$ **15.0%**
 3. **Average Stock:** $\frac{38{,}000 + 42{,}000}{2} =$ **J\$40,000**
-4. **Rate of Stock Turnover:** $\frac{240{,}000}{40{,}000} =$ **6 times** *(sells and replaces its average stock 6 times per year — every 2 months!)*
-5. **Return on Capital Employed (ROCE):** $\frac{60{,}000}{300{,}000} \times 100 =$ **20.0%** *(far better than a typical 4–5% bank savings rate!)*
-   - *(Note: On Average Owner's Capital of $\frac{220{,}000 + 260{,}000}{2} = 240{,}000$, the return is $\frac{60{,}000}{240{,}000} \times 100 = 25.0\%$.)*
-
-### B. Liquidity Measures & Recommendations
+4. **Rate of Stock Turnover:** $\frac{240{,}000}{40{,}000} =$ **6 times**
+5. **Return on Capital Employed (ROCE):** $\frac{60{,}000}{300{,}000} \times 100 =$ **20.0%**
 6. **Working Capital:** J\$90,000 − J\$40,000 = **J\$50,000**
 7. **Current Ratio:** $\frac{90{,}000}{40{,}000} =$ **2.25 : 1**
 8. **Acid-Test (Quick) Ratio:** $\frac{90{,}000 - 42{,}000}{40{,}000} = \frac{48{,}000}{40{,}000} =$ **1.2 : 1**
 
-**Evaluation & Business Recommendations:**
-- **Strong Liquidity:** Both the Current Ratio (`2.25 : 1`, just above `2 : 1`) and Acid-Test Ratio (`1.2 : 1`, safely above `1 : 1`) show S. Morrison Hardware can easily pay creditors and bills on time without panic-selling stock.
-- **What if Current Ratio were TOO high (e.g. `4 : 1`)?** Excess idle cash sitting in a current account earns zero return — recommend investing surplus cash or expanding profitable product lines!
-- **What if Acid-Test were TOO low (e.g. `0.5 : 1`)?** Too much cash is trapped in slow-moving stock — recommend reducing excess stock, chasing overdue debtors faster, or injecting fresh capital.
+### (b) Management Evaluation & Recommendations *(Exam Report Style!)*
+- **Profitability Assessment:** The store earns a healthy **40.0% Gross Profit Margin** and a strong **20.0% ROCE** (far exceeding typical bank savings rates), moving its average stock a brisk **6 times per year** (roughly once every 2 months). However, operating expenses absorb **25% of sales** (`40% GP − 15% NP`), squeezing final Net Profit.
+- **Liquidity Assessment:** Short-term solvency is solid — Working Capital is **+J\$50,000**, the Current Ratio (**2.25 : 1**) sits just above the `2 : 1` benchmark, and the Acid-Test Ratio (**1.2 : 1**) sits safely above `1 : 1`, meaning the store can settle all creditors without panic-selling stock.
+- **Two Recommendations:**
+  1. **Review Operating Expenses** (especially Wages & Rent) to raise Net Profit Margin closer to 20% while keeping Gross Margin strong.
+  2. **Monitor Closing Stock Growth** (stock rose from J\$38,000 to J\$42,000) so stock does not start tying up liquid cash and pulling the Acid-Test Ratio below `1 : 1`.
 
 </WorkedExample>
 
----
-
-## 5. Practice Checks
+<ExtraPractice
+  title="Extra Practice: Ratio Analysis"
+  summary="1 True/False · 2 Paper 1 Quick Checks"
+>
 
 <TrueFalseQuiz
   title="True or False: Interpreting Ratios"
@@ -216,20 +242,17 @@ $$
     {
       statement: 'The Acid-Test (Quick) Ratio excludes Closing Stock because stock is the least liquid Current Asset.',
       answer: true,
-      explanation:
-        'Stock must still be sold (and often collected from debtors) before turning into cash, so the Acid-Test Ratio subtracts Closing Stock from Current Assets.',
+      explanation: 'Stock must still be sold (and often collected from debtors) before turning into cash, so Acid-Test subtracts Closing Stock from Current Assets.',
     },
     {
       statement: 'Rate of Stock Turnover is calculated by dividing Net Sales by Average Stock.',
       answer: false,
-      explanation:
-        'Watch this classic Paper 1 trap! Stock Turnover ALWAYS uses COST OF SALES (not Sales!) divided by Average Stock, because Stock is valued at cost price.',
+      explanation: 'Stock Turnover ALWAYS uses COST OF SALES (not Sales!) divided by Average Stock, because Stock is valued at cost price.',
     },
     {
       statement: 'A very high Current Ratio such as 4.5 : 1 could mean the business is holding too much idle cash or unsold stock.',
       answer: true,
-      explanation:
-        'Around 2 : 1 is healthy; an overly high Current Ratio suggests poor working capital management and idle resources that could earn a return.',
+      explanation: 'Around 2 : 1 is healthy; an overly high Current Ratio suggests idle cash or excess stock that is not earning a return.',
     },
   ]}
 />
@@ -247,3 +270,19 @@ $$
   correctIndex={1}
   explanation="Acid-Test Ratio = (Current Assets − Closing Stock) ÷ Current Liabilities = (120,000 − 45,000) ÷ 50,000 = 75,000 ÷ 50,000 = 1.5 : 1."
 />
+
+<QuickCheck
+  paper="Paper 1"
+  marks={1}
+  question="A business’s Gross Profit Margin remained at 35% for two years, but its Net Profit Margin fell from 16% to 8%. What is the most likely cause?"
+  options={[
+    'Supplier purchase prices rose sharply',
+    'Operating expenses increased significantly relative to sales',
+    'Closing Stock was overvalued',
+    'The owner invested extra cash capital',
+  ]}
+  correctIndex={1}
+  explanation="The gap between Gross Profit % and Net Profit % represents Operating Expenses as a % of Sales. If GP% stayed steady at 35% while NP% fell, Operating Expenses grew out of control!"
+/>
+
+</ExtraPractice>

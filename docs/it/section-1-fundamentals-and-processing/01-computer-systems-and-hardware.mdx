@@ -1,0 +1,236 @@
+---
+id: computer-systems-and-hardware
+title: "1.1 Computer Systems, Hardware, IPOS & Storage"
+sidebar_label: "1.1 Computer Systems & Storage"
+sidebar_position: 1
+---
+
+<SyllabusHeader
+  subject="Information Technology · Section 1"
+  section="Concept of IT, Major Types of Computer Systems, Hardware & IPOS Cycle, Primary Memory (RAM vs ROM), Secondary Storage, Storage Units & Cloud vs Local Storage"
+  code="IT-1.1"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="28 min"
+  difficulty="Foundational"
+/>
+
+<ObjectivesBox
+  id="it-1-1"
+  objectives={[
+    'Explain the concept and scope of Information Technology (IT).',
+    'Distinguish among the five major types of computer systems (Supercomputers, Mainframes, Desktops, Mobile Devices, Embedded Devices) in terms of processing speed, storage, and portability.',
+    'Explain the functions of the major hardware components (Input, CPU, Primary Memory, Secondary Storage, Output) and how they interrelate in the IPOS cycle.',
+    'Compare Secondary Storage devices, convert Units of Storage (bits, bytes, KB, MB, GB, TB), and evaluate Cloud Storage vs Local Storage.',
+  ]}
+/>
+
+---
+
+## 1. What Is Information Technology (IT)?
+
+**Information Technology (IT)** is the use of **computers, storage devices, networks, software, and electronic communications** to **collect, process, store, protect, retrieve, and share information** accurately and rapidly.
+
+In plain English: whenever a Jamaican supermarket scans your groceries at checkout, a bank sends a WhatsApp/SMS alert for an ATM withdrawal, or a school calculates report cards in Excel, **Information Technology** is turning raw facts into useful information!
+
+---
+
+## 2. Five Major Types of Computer Systems
+
+Paper 1 and Paper 2 frequently ask you to compare computers by **processing speed**, **storage capacity**, **cost**, and **portability**:
+
+| Computer Type | Processing Speed | Storage Capacity | Portability | Real-World Examples & Uses |
+| :--- | :--- | :--- | :--- | :--- |
+| **1. Supercomputer** | **Fastest on Earth** (quadrillions of calculations per second — *FLOPS*) | Massive specialised parallel storage | Not portable (room-sized) | **Cray** / modern supercomputers: hurricane & weather forecasting (e.g. Meteorological Service models), climate simulations, nuclear & medical research. |
+| **2. Mainframe** | **Extremely high** — handles thousands of simultaneous users & transactions reliably | Massive enterprise-grade storage (petabytes) | Not portable (server rooms) | **IBM zEnterprise**: national banks (NCB, Scotiabank), airline booking systems, Tax Administration Jamaica (TAJ), large insurance firms. |
+| **3. Desktop System** *(Microcomputer / PC)* | **Moderate to High** (upgradeable CPU, GPU, RAM) | High (500 GB – 4+ TB SSD/HDD) | Low (stationary on a desk) | School computer labs, accounting offices, graphic design studios, home gaming PCs. |
+| **4. Mobile Devices** | **Moderate** (optimised for low battery power) | Moderate (64 GB – 1 TB flash) | **Very High** (fits in backpack or pocket) | **Laptops, notebooks, netbooks, smartphones, tablets, handheld game consoles** — studying on the go, mobile banking, field reporting. |
+| **5. Embedded Devices** | **Low / Special-Purpose** (dedicated to ONE fixed task) | Very small built-in ROM/flash | Built directly inside another machine | Microcontrollers inside **microwaves, washing machines, car ignition/ABS braking systems, traffic lights, digital watches, answering machines, smart TVs**. |
+
+> **Exam Tip (Supercomputer vs Mainframe!):** Never confuse these two! A **Supercomputer** concentrates *all* its speed on **one giant complex scientific calculation** (like hurricane path modelling). A **Mainframe** excels at **high-volume transaction processing** — serving **thousands of everyday users simultaneously** (like processing 50,000 ATM withdrawals per minute!).
+
+---
+
+## 3. Major Hardware Components & The IPOS Cycle
+
+**Hardware** means all the physical, touchable electronic and mechanical parts of a computer system. Every computer — from a smartphone to a supercomputer — works through the **IPOS Cycle** (**I**nput → **P**rocessing → **O**utput → **S**torage):
+
+```text
+                       ┌──────────────────────────────────┐
+                       │   CENTRAL PROCESSING UNIT (CPU)  │
+                       │  ┌────────────┐  ┌────────────┐  │
+                       │  │Control Unit│  │    ALU     │  │
+                       │  │    (CU)    │  │(Math/Logic)│  │
+                       │  └────────────┘  └────────────┘  │
+                       └───────────▲────────────▲─────────┘
+                                   │            │
+ ┌──────────────┐      ┌───────────▼────────────▼─────────┐      ┌──────────────┐
+ │ INPUT DEVICES├─────►│    PRIMARY MEMORY (RAM & ROM)    ├─────►│OUTPUT DEVICES│
+ │(Keyb, Scanner│      │   (Fast working workspace!)      │      │(Monitor,Prnt)│
+ └──────────────┘      └────────────────▲─────────────────┘      └──────────────┘
+                                        │
+                       ┌────────────────▼─────────────────┐
+                       │        SECONDARY STORAGE         │
+                       │  (SSD, HDD, USB Flash, Optical)  │
+                       │    (Permanent long-term save)    │
+                       └──────────────────────────────────┘
+```
+
+### How Each Component Works
+1. **Input Devices:** Capture raw data & user instructions from the outside world and convert them into binary signals (`0`s and `1`s) the computer understands (e.g. keyboard, barcode scanner, microphone).
+2. **Central Processing Unit (CPU — the "Brain"):** Fetches, decodes, and executes instructions using three internal parts:
+   - **Control Unit (CU):** The "traffic director" — fetches instructions from memory, decodes them, and coordinates signals across all hardware components.
+   - **Arithmetic Logic Unit (ALU):** Performs all **arithmetic** (`+`, `-`, `*`, `/`) and **logical comparisons** (`>`, `<`, `=`, `AND`, `OR`).
+   - **Registers:** Ultra-fast tiny temporary storage slots directly inside the CPU holding the exact data/instruction being worked on right now.
+3. **Primary Memory (Main Memory):** Fast electronic memory directly accessed by the CPU — split into **RAM** and **ROM**:
+   - **RAM (Random Access Memory):** **Volatile** (*erased the instant power goes off!*), **Read/Write**, holds the Operating System, active programs, and unsaved documents currently being processed.
+   - **ROM (Read-Only Memory):** **Non-volatile** (*keeps data even when power is off!*), normally **Read-Only**, holds the permanent startup firmware (**BIOS / UEFI**) that boots the computer when you press the power button!
+4. **Secondary Storage (Backing Storage):** **Non-volatile** permanent storage with much larger capacity and lower cost per GB than RAM — stores your OS, software, photos, music, and SBA files long-term!
+5. **Output Devices:** Convert processed binary results back into human-understandable form (text/images on screen, printed paper, or sound).
+
+---
+
+## 4. Secondary Storage Devices & Units of Storage
+
+### Comparing Secondary Storage Media
+
+| Storage Medium | Technology | Access Type | Typical Capacity | Best Use & Key Pros/Cons |
+| :--- | :--- | :--- | :--- | :--- |
+| **Hard Disk Drive (HDD)** | Spinning magnetic platters + read/write head | Direct / Random | 500 GB – 16+ TB | Cheap per GB for big desktop files; moving parts can break if dropped. |
+| **Solid State Drive (SSD) / Flash Drive / Memory Card (SD)** | Solid-state flash chips *(no moving parts!)* | Direct / Random | 16 GB – 8 TB | **Blazing fast**, silent, shock-resistant, portable (USB flash & SD cards for phones/cameras); higher cost per GB than HDD. |
+| **Optical Discs (CD / DVD / Blu-Ray)** | Laser reads pits/lands on reflective disc | Direct | CD: ~700 MB; DVD: ~4.7 GB; Blu-Ray: 25–50 GB | Distributing software, movies, music, read-only archives; easily scratched and slower than flash. |
+| **Magnetic Tape** | Long coated ribbon wound on reels/cartridges | **Sequential ONLY** *(slow to rewind/fast-forward!)* | Huge (multiple TBs per cartridge) | **Cheap bulk off-site backup & long-term archiving** for banks & government agencies! |
+
+### Units of Storage (Know Every Step & Conversion!)
+
+Computers store everything in **binary digits (bits)**: `0` or `1`.
+
+<FormulaCard
+  title="Units of Storage Conversion Ladder"
+  onFormulaSheet={false}
+  summary="8 bits make 1 Byte (one typed character like 'A'); every larger unit multiplies by 1,024 (binary / exact exam standard) or 1,000 (decimal estimate)!"
+>
+
+<FormulaHint
+  block
+  label="Binary Storage Hierarchy (Exact Exam Standard: × 1,024)"
+  short="Bit → Byte (×8) → KB (×1,024) → MB (×1,024) → GB (×1,024) → TB (×1,024). Bigger unit to smaller unit = MULTIPLY; smaller to bigger = DIVIDE!"
+>
+
+$$
+\begin{aligned}
+1\text{ Byte (B)} &= 8\text{ bits} \\
+1\text{ Kilobyte (KB)} &= 1{,}024\text{ Bytes} \quad (\approx 1{,}000\text{ B}) \\
+1\text{ Megabyte (MB)} &= 1{,}024\text{ KB} \quad (\approx 1\text{ million B}) \\
+1\text{ Gigabyte (GB)} &= 1{,}024\text{ MB} \quad (\approx 1\text{ billion B}) \\
+1\text{ Terabyte (TB)} &= 1{,}024\text{ GB} \quad (\approx 1\text{ trillion B})
+\end{aligned}
+$$
+
+</FormulaHint>
+
+</FormulaCard>
+
+*(Quick Check on Paper 1 & 2: To convert **smaller → larger** [e.g. MB to GB], **DIVIDE** by 1,024 [or 1,000 if the question states decimal]. To convert **larger → smaller** [e.g. GB to MB], **MULTIPLY** by 1,024!)*
+
+---
+
+## 5. Cloud Storage vs Local Storage (Syllabus Objective 1.5!)
+
+- **Local Storage:** Saving files directly onto physical hardware in your possession (your laptop's SSD, desktop HDD, USB flash drive, or school server).
+- **Cloud Storage:** Saving files on remote internet-connected data-centre servers managed by a provider (e.g. **Google Drive**, **Microsoft OneDrive**, **iCloud**, **Dropbox**).
+
+| Criterion | Local Storage | Cloud Storage |
+| :--- | :--- | :--- |
+| **Capacity** | Fixed by the drive size you buy (upgrading requires buying a new drive). | **Highly scalable** — upgrade storage instantly online (though free tiers are capped, e.g. 15 GB). |
+| **Cost** | **One-time purchase cost** for the drive; no ongoing monthly subscription. | Often free for small space, then **ongoing monthly/annual subscription fees** for larger plans. |
+| **Accessibility** | Works **100% offline** with fast local transfer speeds — **BUT** you only access files if you have that physical device with you! | Accessible **anywhere in the world on any device** (phone, school lab, home PC) + easy real-time collaboration — **REQUIRES active internet**! |
+| **Security & Reliability** | Full physical control, **BUT** vulnerable to **fire, theft, laptop drops, or lost USB drives** if you don't back up! | Protected against house fire/lost laptop via automatic provider backups — **BUT** exposed to **account hacking, weak passwords, data breaches, or provider outages**! |
+
+---
+
+## 6. Worked Example: Storage Capacity Calculation & System Selection
+
+<WorkedExample
+  title="Calculating Flash Drive Capacity & Evaluating Storage Choices (Paper 2 Style)"
+  marks={8}
+  problem={
+    <>
+      (a) A student has an empty <strong>4 GB</strong> USB flash drive (use <strong>1 GB = 1,024 MB</strong>). How many high-resolution video clips of <strong>256 MB</strong> each can fit on the flash drive?
+      <br />
+      (b) A Jamaican media student backs up her SBA project on BOTH her laptop’s SSD (local storage) and Google Drive (cloud storage). Give <strong>TWO</strong> advantages of using Cloud Storage and <strong>ONE</strong> security risk she must guard against.
+    </>
+  }
+  examTip="Always show your conversion step FIRST (converting GB into MB so both numbers share the SAME unit!) before dividing — that earns full method marks even if you slip on arithmetic!"
+>
+
+### (a) Flash Drive Calculation
+1. **Convert Flash Drive Capacity from GB to MB:**
+   $$4\text{ GB} \times 1{,}024 = 4{,}096\text{ MB}$$
+2. **Divide Total Space by Size per Video Clip:**
+   $$\frac{4{,}096\text{ MB}}{256\text{ MB}} = \mathbf{16\text{ video clips}}$$
+
+### (b) Cloud Storage Evaluation
+- **Two Advantages of Cloud Storage:**
+  1. **Anytime / Anywhere Accessibility:** She can open and edit her SBA from home, the school lab, or her phone without carrying a USB flash drive.
+  2. **Protection Against Local Hardware Loss:** Even if her laptop is stolen or crashes, her files remain safely backed up on remote servers.
+- **One Security Risk:** Unauthorised access or account hacking (if she uses a weak password or stays logged in on a shared school computer) — mitigated by using a strong password and Two-Factor Authentication (2FA)!
+
+</WorkedExample>
+
+<ExtraPractice
+  title="Extra Practice: Computer Systems, IPOS & Storage"
+  summary="1 Storage Classification Drill · 2 Paper 1 Quick Checks"
+>
+
+<ClassifyActivity
+  title="Match Each Scenario to the Best Computer System Type"
+  instruction="Select the most appropriate computer system category for each real-world scenario."
+  categories={['Supercomputer', 'Mainframe', 'Embedded Device']}
+  items={[
+    {
+      prompt: 'Forecasting the path and wind speeds of a Category 4 Caribbean hurricane',
+      answer: 'Supercomputer',
+      explanation: 'Weather and hurricane simulation requires extreme mathematical speed on one massive scientific model.',
+    },
+    {
+      prompt: 'Processing 40,000 simultaneous ATM & debit card transactions across Jamaica for a commercial bank',
+      answer: 'Mainframe',
+      explanation: 'Mainframes specialise in reliable, high-volume transaction processing for thousands of concurrent users.',
+    },
+    {
+      prompt: 'Controlling cooking timers and power levels inside a microwave oven',
+      answer: 'Embedded Device',
+      explanation: 'A tiny special-purpose microcontroller built inside an appliance for one dedicated task is an embedded system.',
+    },
+  ]}
+/>
+
+<QuickCheck
+  paper="Paper 1"
+  marks={1}
+  question="Which memory component is VOLATILE (loses all stored contents immediately when electrical power is switched off)?"
+  options={[
+    'ROM (Read-Only Memory)',
+    'RAM (Random Access Memory)',
+    'Solid State Drive (SSD)',
+    'Blu-Ray Disc',
+  ]}
+  correctIndex={1}
+  explanation="RAM is volatile primary memory used as the CPU's active workspace — unsaved work in RAM disappears when power fails! ROM, SSDs, and optical discs are all non-volatile."
+/>
+
+<QuickCheck
+  paper="Paper 1"
+  marks={1}
+  question="Which secondary storage medium uses SEQUENTIAL access and is best suited for low-cost bulk archiving of institutional records?"
+  options={[
+    'USB Flash Drive',
+    'Solid State Drive',
+    'Magnetic Tape',
+    'DVD-ROM',
+  ]}
+  correctIndex={2}
+  explanation="Magnetic tape reads and writes data sequentially from start to end — making it slow for instant lookups, but extremely cheap and high-capacity for long-term off-site backups and archives."
+/>
+
+</ExtraPractice>
