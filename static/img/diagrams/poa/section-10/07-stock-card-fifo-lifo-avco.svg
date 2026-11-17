@@ -1,0 +1,108 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 480" width="920" height="480" role="img" aria-label="Perpetual Stock Ledger Card Anatomy showing Receipts, Issues, and Running Balance Columns plus Periodic Shortcut Check">
+  <defs>
+    <style>
+      .bg { fill: #F8F6F1; }
+      .card { fill: #FCFBF8; stroke: #CEDCD6; stroke-width: 2; rx: 12; }
+      .navy { fill: #1B365D; rx: 8; }
+      .sage { fill: #2E6359; rx: 8; }
+      .coral { fill: #C84E24; rx: 8; }
+      .hdr { fill: #EBF2EF; stroke: #CEDCD6; stroke-width: 1; }
+      .row { fill: #FCFBF8; stroke: #CEDCD6; stroke-width: 1; }
+      .row-hi { fill: #FEF3E2; stroke: #F5A352; stroke-width: 1.5; }
+      .title { font-family: system-ui, -apple-system, sans-serif; font-size: 21px; font-weight: 800; fill: #1B365D; }
+      .subtitle { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; fill: #4A5560; }
+      .w-title { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; font-weight: 800; fill: #FFFFFF; }
+      .w-sub { font-family: system-ui, -apple-system, sans-serif; font-size: 11.5px; fill: #EBF2EF; }
+      .th { font-family: system-ui, -apple-system, sans-serif; font-size: 11.5px; font-weight: 800; fill: #1B365D; }
+      .td { font-family: system-ui, -apple-system, sans-serif; font-size: 11.5px; fill: #222222; }
+      .td-b { font-family: system-ui, -apple-system, sans-serif; font-size: 11.5px; font-weight: 800; fill: #1B365D; }
+      .td-c { font-family: system-ui, -apple-system, sans-serif; font-size: 11.5px; font-weight: 800; fill: #C84E24; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="920" height="480"/>
+  <text x="460" y="34" text-anchor="middle" class="title">Perpetual Stock Ledger Card Anatomy (FIFO Example)</text>
+  <text x="460" y="54" text-anchor="middle" class="subtitle">Track every batch in chronological order — NEVER mix selling price into the Stock Card (record COST PRICES ONLY!)</text>
+
+  <!-- Main Stock Card Container -->
+  <rect class="card" x="24" y="72" width="872" height="278"/>
+
+  <!-- Section Headers -->
+  <rect class="navy" x="34" y="84" width="84" height="32"/>
+  <text x="76" y="105" text-anchor="middle" class="w-title">DATE</text>
+
+  <rect class="sage" x="122" y="84" width="218" height="32"/>
+  <text x="231" y="105" text-anchor="middle" class="w-title">RECEIPTS (Purchases IN)</text>
+
+  <rect class="coral" x="344" y="84" width="234" height="32"/>
+  <text x="461" y="105" text-anchor="middle" class="w-title">ISSUES (Sales / Factory OUT)</text>
+
+  <rect class="navy" x="582" y="84" width="302" height="32"/>
+  <text x="733" y="105" text-anchor="middle" class="w-title">RUNNING BALANCE ON HAND</text>
+
+  <!-- Sub-headers -->
+  <rect class="hdr" x="34" y="118" width="850" height="26"/>
+  <text x="76" y="135" text-anchor="middle" class="th">2026</text>
+  <text x="158" y="135" text-anchor="middle" class="th">Qty</text>
+  <text x="224" y="135" text-anchor="middle" class="th">Unit $</text>
+  <text x="300" y="135" text-anchor="middle" class="th">Total $</text>
+  <text x="382" y="135" text-anchor="middle" class="th">Qty</text>
+  <text x="454" y="135" text-anchor="middle" class="th">Unit $</text>
+  <text x="536" y="135" text-anchor="middle" class="th">COGS $</text>
+  <text x="733" y="135" text-anchor="middle" class="th">Remaining Layers (Qty × Cost = Total)</text>
+
+  <!-- Row 1: Jan 1 -->
+  <rect class="row" x="34" y="144" width="850" height="34"/>
+  <text x="76" y="165" text-anchor="middle" class="td-b">Jan 1</text>
+  <text x="158" y="165" text-anchor="middle" class="td">100</text>
+  <text x="224" y="165" text-anchor="middle" class="td">$10</text>
+  <text x="300" y="165" text-anchor="middle" class="td">$1,000</text>
+  <text x="461" y="165" text-anchor="middle" class="td">—</text>
+  <text x="600" y="165" class="td">100 @ $10 = $1,000</text>
+
+  <!-- Row 2: Jan 8 -->
+  <rect class="row" x="34" y="178" width="850" height="34"/>
+  <text x="76" y="199" text-anchor="middle" class="td-b">Jan 8</text>
+  <text x="158" y="199" text-anchor="middle" class="td">150</text>
+  <text x="224" y="199" text-anchor="middle" class="td">$12</text>
+  <text x="300" y="199" text-anchor="middle" class="td">$1,800</text>
+  <text x="461" y="199" text-anchor="middle" class="td">—</text>
+  <text x="600" y="199" class="td">100 @ $10 + 150 @ $12 = $2,800</text>
+
+  <!-- Row 3: Jan 12 Issue 180 FIFO -->
+  <rect class="row-hi" x="34" y="212" width="850" height="44"/>
+  <text x="76" y="238" text-anchor="middle" class="td-c">Jan 12</text>
+  <text x="231" y="238" text-anchor="middle" class="td">—</text>
+  <text x="382" y="230" text-anchor="middle" class="td-c">100</text>
+  <text x="454" y="230" text-anchor="middle" class="td-c">$10</text>
+  <text x="536" y="230" text-anchor="middle" class="td-c">$1,000</text>
+  <text x="382" y="248" text-anchor="middle" class="td-c">80</text>
+  <text x="454" y="248" text-anchor="middle" class="td-c">$12</text>
+  <text x="536" y="248" text-anchor="middle" class="td-c">$960</text>
+  <text x="600" y="238" class="td-b">70 @ $12 = $840  (Oldest batch gone!)</text>
+
+  <!-- Row 4: Jan 20 Purchase -->
+  <rect class="row" x="34" y="256" width="850" height="34"/>
+  <text x="76" y="277" text-anchor="middle" class="td-b">Jan 20</text>
+  <text x="158" y="277" text-anchor="middle" class="td">100</text>
+  <text x="224" y="277" text-anchor="middle" class="td">$14</text>
+  <text x="300" y="277" text-anchor="middle" class="td">$1,400</text>
+  <text x="461" y="277" text-anchor="middle" class="td">—</text>
+  <text x="600" y="277" class="td">70 @ $12 + 100 @ $14 = $2,240</text>
+
+  <!-- Row 5: Jan 28 Issue 50 FIFO -->
+  <rect class="row-hi" x="34" y="290" width="850" height="44"/>
+  <text x="76" y="316" text-anchor="middle" class="td-c">Jan 28</text>
+  <text x="231" y="316" text-anchor="middle" class="td">—</text>
+  <text x="382" y="316" text-anchor="middle" class="td-c">50</text>
+  <text x="454" y="316" text-anchor="middle" class="td-c">$12</text>
+  <text x="536" y="316" text-anchor="middle" class="td-c">$600</text>
+  <text x="600" y="309" class="td-b">20 @ $12 ($240) + 100 @ $14 ($1,400)</text>
+  <text x="600" y="326" class="td-c">CLOSING STOCK (120 units) = $1,640!</text>
+
+  <!-- Bottom Verification Equation Box -->
+  <rect class="navy" x="24" y="366" width="872" height="92"/>
+  <text x="460" y="392" text-anchor="middle" class="w-title">IRONCLAD RECONCILIATION PROOF (MUST HOLD FOR FIFO, LIFO, AND AVCO!)</text>
+  <text x="460" y="416" text-anchor="middle" class="w-sub">Total Cost of Goods Available ($1,000 + $1,800 + $1,400 = $4,200)  =  Total COGS ($1,960 + $600 = $2,560)  +  Closing Stock ($1,640)!</text>
+  <text x="460" y="440" text-anchor="middle" class="w-sub">Check Units Too:  350 Units Available  =  230 Units Sold  +  120 Units Closing Stock  ✓  (Never enter Selling Price in Issues column!)</text>
+</svg>

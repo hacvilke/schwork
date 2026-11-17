@@ -1,0 +1,247 @@
+---
+id: calculating-employees-gross-earnings
+title: "11.4 Calculating Employees' Earnings (Gross Pay, Overtime, Commission & Piece Rate)"
+sidebar_label: "11.4 Gross Pay & Overtime"
+sidebar_position: 4
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 11"
+  section="Accounting for the Entrepreneur — Payroll Accounting"
+  code="POA-S11-04"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="25 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+**Gross Pay** is an employee’s **total earnings BEFORE a single cent of tax, NIS, or voluntary deduction is removed**! Entrepreneurs compensate staff through **four core pay systems** — **Hourly Wages *(with `1.5×` & `2.0×` Overtime Tiers!)***, **Fixed Salaries**, **Piece-Rate Pay**, and **Basic Salary + Sales Commission**. Mastering how to split hours cleanly across tiers — and reading commission thresholds carefully — guarantees full marks on every payroll calculation!
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | **4 Remuneration Methods** (Hourly + Overtime `1.0×` / `1.5×` / `2.0×`, Fixed Salary, Piece-Rate Pay, Base + Sales Commission) and **Gross Pay** |
+| **Exam Focus** | **NEVER** multiplying ALL hours by `1.5×` *(split Basic `40` hrs first!)*, counting **GOOD units only** in Piece-Rate pay, and subtracting **sales thresholds** before applying commission `%` |
+| **Learning Outcome** | Calculate accurate Gross Earnings for hourly, overtime, salaried, piece-rate, and commissioned employees |
+
+<ObjectivesBox
+  id="poa-s11-04-obj"
+  objectives={[
+    'Define Gross Pay and distinguish clearly between Wages (hourly/output-based) and Salaries (fixed annual/monthly).',
+    'Calculate Regular Pay, Time-and-a-Half (1.5×) Overtime, and Double-Time (2.0×) Overtime accurately from hourly time records.',
+    'Calculate Gross Pay accurately under Fixed Salary, Piece-Rate (with quality rejections), and Base-Plus-Commission pay structures.',
+    'Evaluate the motivational advantages and control risks of each employee pay structure.',
+  ]}
+/>
+
+---
+
+## 1. The Four Employee Earnings Formulas
+
+<FormulaCard
+  title="Gross Pay Calculation Formulas (All 4 Pay Structures!)"
+  onFormulaSheet={false}
+  summary="Always separate Basic Hours, 1.5× Overtime Hours, and 2.0× Overtime Hours BEFORE multiplying!"
+>
+
+$$
+\textbf{1. Hourly + Overtime:}\quad \text{Gross Pay} = (\text{Basic Hrs} \times R) + (\text{OT}_{1.5} \times 1.5R) + (\text{OT}_{2.0} \times 2.0R)
+$$
+
+$$
+\textbf{2. Fixed Salary:}\quad \text{Monthly} = \frac{\text{Annual Salary}}{12} \qquad \text{or} \qquad \text{Weekly} = \frac{\text{Annual Salary}}{52}
+$$
+
+$$
+\textbf{3. Piece-Rate:}\quad \text{Gross Pay} = \text{Good Units Completed} \times \text{Rate per Unit}
+$$
+
+$$
+\textbf{4. Base + Commission:}\quad \text{Gross Pay} = \text{Basic Pay} + \left(\text{Commission \%} \times \text{Qualifying Sales}\right)
+$$
+
+</FormulaCard>
+
+### Wages vs. Salaries *(Quick Paper 1 Contrast)*
+- **Wages:** Typically paid **weekly or fortnightly** to factory, retail, or workshop staff based on **actual hours worked** (with overtime eligibility) or **units produced**.
+- **Salaries:** Typically stated as a **fixed annual sum** paid **monthly** (or bi-weekly) to managers, accountants, and office staff (generally not paid extra for minor overtime).
+
+---
+
+## 2. Diagram 1: Hourly Overtime Tiers & All Four Pay Structures
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-11/04-gross-pay-and-overtime-tiers.svg"
+  alt="Two-panel guide illustrating the 3-tier hourly overtime staircase (1.0x Basic, 1.5x Time-and-a-Half, 2.0x Double Time) alongside Fixed Salary, Piece-Rate Pay, and Basic plus Sales Commission."
+  caption="Diagram 1 (Static Reference): Watch the bottom navy trap warning — ALWAYS split a 50-hour week into 40 Basic + 6 at 1.5× + 4 at 2.0× before multiplying!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive Remuneration Trade-Off Explorer
+
+<InteractiveDiagram
+  title="Interactive Hub: Tap Each Pay System to Spot Its Exam Traps & Real-World Pros/Cons"
+  layout="hub"
+  centerLabel="Gross Pay"
+  centerSublabel="4 Pay Models"
+  instruction="Select any employee pay structure below to check its calculation rules and entrepreneurial trade-offs."
+  nodes={[
+    {
+      label: 'Hourly + Overtime Tiers (1.5× / 2×)',
+      tag: 'Split Hours FIRST!',
+      tone: 'warning',
+      detail: 'If standard workweek = 40 hrs @ $20/hr, and K. Grant works 50 hrs (46 Mon–Sat + 4 Sunday at double time): Basic = 40 hrs @ $20 ($800); 1.5× OT = 6 hrs @ $30 ($180); 2.0× OT = 4 hrs @ $40 ($160)!',
+      example: 'Total Gross = $800 + $180 + $160 = $1,140! Notice: 40 + 6 + 4 = 50 total hours accounted for cleanly!',
+      examTip: 'Classic mistake: calculating "50 × $20 + 6 × $30" (double-counting the 6 OT hours inside Basic!). ALWAYS cap Basic at 40 hours!',
+    },
+    {
+      label: 'Piece-Rate Pay (Output-Based)',
+      tag: 'Quality Check!',
+      tone: 'positive',
+      detail: 'Paying $6.00 per seat cover motivates high speed and directly rewards productive workers — yet rushing can trigger sloppy defects!',
+      example: 'D. Morgan sewed 160 seat covers, but 10 failed quality inspection → Pay ONLY for 150 GOOD units × $6.00 = $900!',
+      examTip: 'Always check whether the problem mentions rejected/defective units before multiplying piece-rate output!',
+    },
+    {
+      label: 'Base + Sales Commission',
+      tag: 'Threshold Trap!',
+      tone: 'warning',
+      detail: 'Read commission wording like a hawk! "5% on ALL sales" vs. "5% on sales ABOVE $2,000" produce completely different paychecks!',
+      example: 'On $10,000 sales: "5% on ALL sales" = $500 commission; "5% on sales ABOVE $2,000" = 5% × $8,000 = $400 commission!',
+      examTip: 'Underline the words "ABOVE / IN EXCESS OF" whenever you see a commission question!',
+    },
+    {
+      label: 'Fixed Salary (Monthly / Weekly)',
+      tag: 'Predictable Cost',
+      tone: 'neutral',
+      detail: 'Provides income security for managers/admin staff and makes monthly payroll budgeting simple and stable for the entrepreneur.',
+      example: 'Annual Salary $41,600 ÷ 52 weeks = $800.00/week (or $48,000 ÷ 12 = $4,000/month)!',
+      examTip: 'Check the pay period! Divide annual salary by 12 for monthly, 26 for fortnightly, or 52 for weekly payroll!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Calculating Weekly Gross Pay Across All 4 Pay Structures (Kingston Auto & Parts Workshop)"
+  marks={12}
+  problem={
+    <>
+      <p>
+        <strong>Scenario:</strong> Compute the <strong>Weekly Gross Pay</strong> for each of
+        <strong>Kingston Auto &amp; Parts Workshop’s</strong> four employees (standard workweek =
+        <strong>40 hours</strong>; weekday/Saturday overtime = <strong>1.5×</strong>; Sunday =
+        <strong>2.0×</strong>) and find the <strong>Total Weekly Gross Payroll</strong>:
+      </p>
+      <ol>
+        <li><strong>K. Grant (Senior Mechanic — Hourly + Overtime):</strong> Base rate <strong>$20.00/hr</strong>. Worked <strong>50 hours total</strong>: 40 regular weekday hours, 6 Saturday overtime hours (`1.5×`), and 4 Sunday emergency hours (`2.0×`).</li>
+        <li><strong>S. Campbell (Office Manager — Fixed Salary):</strong> Earns an annual salary of <strong>$41,600 per year</strong> (paid weekly across 52 weeks).</li>
+        <li><strong>D. Morgan (Seat Upholsterer — Piece-Rate):</strong> Paid <strong>$6.00 per approved seat cover</strong>. Produced <strong>160 covers</strong> this week, of which <strong>10 failed quality inspection</strong> and were rejected.</li>
+        <li><strong>R. Blake (Parts Sales Rep — Base + Commission):</strong> Earns a weekly basic pay of <strong>$500</strong> plus <strong>5% commission on weekly sales ABOVE $2,000</strong>. Weekly sales totaled <strong>$10,000</strong>.</li>
+      </ol>
+    </>
+  }
+>
+
+### Weekly Gross Pay Schedule — Kingston Auto & Parts Workshop *(12 marks)*
+
+1. **K. Grant *(Hourly + 2 Overtime Tiers — 4 marks)*:**
+   - Basic Pay: `40 hrs × $20.00` = **`$800.00`**
+   - Saturday OT (`1.5× = $30.00/hr`): `6 hrs × $30.00` = **`$180.00`**
+   - Sunday OT (`2.0× = $40.00/hr`): `4 hrs × $40.00` = **`$160.00`**
+   - **K. Grant Gross Pay:** `$800 + $180 + $160` = **`$1,140.00`** *(Check hours: `40 + 6 + 4 = 50` hrs ✓)*
+
+2. **S. Campbell *(Fixed Weekly Salary — 2 marks)*:**
+   - Annual Salary ÷ 52 weeks: `$41,600 ÷ 52` = **`$800.00`**
+
+3. **D. Morgan *(Piece-Rate Pay — 2.5 marks)*:**
+   - Good approved units only: `160 − 10 rejected` = **`150 good covers`**
+   - **D. Morgan Gross Pay:** `150 × $6.00` = **`$900.00`**
+
+4. **R. Blake *(Base + Threshold Commission — 2.5 marks)*:**
+   - Qualifying sales above `$2,000`: `$10,000 − $2,000` = **`$8,000`**
+   - Commission (`5% × $8,000`): **`$400.00`**
+   - **R. Blake Gross Pay:** `$500 base + $400 commission` = **`$900.00`**
+
+| Employee | Pay Method | Basic / Base ($) | Overtime / Commission ($) | **Gross Pay ($)** |
+| :--- | :--- | ---: | ---: | ---: |
+| K. Grant | Hourly + OT | 800.00 | 340.00 | **1,140.00** |
+| S. Campbell | Fixed Salary | 800.00 | — | **800.00** |
+| D. Morgan | Piece-Rate (`150 × $6`) | 900.00 | — | **900.00** |
+| R. Blake | Base + 5% Comm. | 500.00 | 400.00 | **900.00** |
+| **Total Weekly Gross Payroll** *(1 mark)* | | **$3,000.00** | **$740.00** | **$3,740.00** |
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Calculating Gross Pay & Overtime"
+  items={[
+    {
+      statement: 'Gross Pay represents an employee’s total take-home cash AFTER Income Tax (PAYE) and NIS have been deducted.',
+      answer: false,
+      explanation: 'That is NET PAY! GROSS PAY is total earnings BEFORE ANY deductions are removed!',
+    },
+    {
+      statement: 'If an employee’s basic rate is $16.00/hr and they work 45 hours (standard week = 40 hrs; overtime = 1.5×), their Gross Pay is $760.00.',
+      answer: true,
+      explanation: 'Basic (40 × $16 = $640) + OT (5 × $24 = $120) = $760.00 exact!',
+    },
+    {
+      statement: 'A potential downside of pure Piece-Rate pay is that workers may rush production, increasing defective goods unless quality inspection is enforced.',
+      answer: true,
+      explanation: 'Correct — which is why factories typically pay piece-rate strictly on GOOD units passing quality inspection!',
+    },
+    {
+      statement: 'If a salesperson earns $400 base plus 5% commission on sales ABOVE $3,000 and sells $9,000, their commission is $450.',
+      answer: false,
+      explanation: 'Subtract the $3,000 threshold first! Qualifying sales = $9,000 − $3,000 = $6,000 → 5% × $6,000 = $300 commission (Total Gross = $700)!',
+    },
+    {
+      statement: 'Double-time overtime (2.0×) is typically paid for work performed on Sundays or statutory Public Holidays.',
+      answer: true,
+      explanation: 'Spot on! Standard tiers are 1.0× Regular, 1.5× Weekday/Saturday OT, and 2.0× Sunday/Holiday OT.',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s11-04-project"
+  title="Mini-Project: Weekly Gross Earnings Schedule for SunCoast Apparel Workshop"
+  duration="20 mins"
+  scenario="Calculate the Weekly Gross Pay for all three employees at 'SunCoast Apparel Workshop' (standard workweek = 40 hrs; weekday/Sat OT = 1.5×; Sunday OT = 2.0×): (1) A. Foster (Cutter — Hourly @ $18.00/hr): worked 48 hrs total (40 regular + 5 Saturday @ 1.5× + 3 Sunday @ 2.0×); (2) M. Gayle (Seamstress — Piece-Rate @ $4.50 per good shirt): sewed 230 shirts, 10 rejected for crooked seams; (3) N. Lewis (Wholesale Rep — Base + Commission): $450 weekly base + 4% commission on ALL weekly sales of $12,000."
+  steps={[
+    'Show clear step-by-step workings for A. Foster (splitting 40, 5, and 3 hours!), M. Gayle (deducting rejected shirts!), and N. Lewis (note: "ALL weekly sales"!).',
+    'Assemble all three employees into a clean Weekly Gross Earnings Summary Table showing Total Weekly Gross Payroll.',
+    'Write 2 sentences advising the workshop owner which pay structure (Piece-Rate vs. Hourly) works better for custom bridal dresses vs. mass-produced school shirts, and why.',
+  ]}
+  deliverables={[
+    'Step-by-step Gross Pay workings for all 3 staff',
+    'Formatted Weekly Gross Payroll Summary Table',
+    '2-sentence Strategic Pay Structure Recommendation',
+  ]}
+  rubric={[
+    'A. Foster: (40 × $18 = $720) + (5 × $27 = $135) + (3 × $36 = $108) = $963.00 exact.',
+    'M. Gayle: (230 − 10 = 220 good shirts) × $4.50 = $990.00; N. Lewis: $450 + (4% × $12,000 = $480) = $930.00.',
+    'Total Weekly Gross Payroll = $963 + $990 + $930 = $2,883.00! Hourly suits intricate bridal dresses (protects craftsmanship), while Piece-Rate suits uniform mass-produced shirts!',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **Gross Pay** = Earnings **BEFORE** deductions (`Basic + OT + Commission + Bonus`).
+- **Always Split Hours First:** `Basic (40)` · `1.5× OT` · `2.0× OT`!
+- **Read Every Word:** Deduct **rejected units** in Piece-Rate &amp; check **"ALL sales" vs. "ABOVE threshold"** in Commission!
+:::

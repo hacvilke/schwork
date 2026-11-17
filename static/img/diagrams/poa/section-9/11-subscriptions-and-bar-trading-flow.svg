@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" role="img" aria-label="Anatomy of a Subscriptions T-Account and a Club Bar Trading / Dance Income-Generating Account feeding into Income and Expenditure">
+  <defs>
+    <style>
+      .title { font: 700 20px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .sub { font: 500 13px system-ui, -apple-system, sans-serif; fill: #4A5560; }
+      .hdr { font: 700 14px system-ui, -apple-system, sans-serif; fill: #FCFBF8; }
+      .h3 { font: 700 13px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .mono { font: 700 11.5px ui-monospace, SFMono-Regular, monospace; fill: #122440; }
+      .body { font: 500 12px system-ui, -apple-system, sans-serif; fill: #222222; }
+      .sage { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #2E6359; }
+      .coral { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #C84E24; }
+    </style>
+  </defs>
+
+  <rect width="920" height="460" rx="14" fill="#F8F6F1" stroke="#CEDCD6" stroke-width="1.5"/>
+  <text x="32" y="38" class="title">Club Income-Generating Accounts: Subscriptions A/c + Bar &amp; Dance Accounts</text>
+  <text x="32" y="58" class="sub">Remember: Subscriptions in ARREARS (Owing) = Current ASSET (Dr b/d)  ·  Subscriptions in ADVANCE (Prepaid) = Current LIABILITY (Cr b/d)!</text>
+
+  <!-- Left: Subscriptions T-Account -->
+  <rect x="32" y="78" width="440" height="302" rx="11" fill="#FCFBF8" stroke="#1B365D" stroke-width="1.8"/>
+  <rect x="32" y="78" width="440" height="36" rx="10" fill="#1B365D"/>
+  <text x="252" y="101" text-anchor="middle" class="hdr">Subscriptions Account (Revenue A/c — Master Map)</text>
+  <line x1="252" y1="114" x2="252" y2="332" stroke="#1B365D" stroke-width="1.5"/>
+
+  <text x="44" y="135" class="h3">Dr</text>
+  <text x="264" y="135" class="h3">Cr</text>
+  <line x1="42" y1="143" x2="460" y2="143" stroke="#CEDCD6"/>
+
+  <text x="44" y="164" class="sage">Jan 1 Bal b/d (Arrears)</text>
+  <text x="44" y="180" class="body">   [Opening Asset!]</text>
+  <text x="44" y="210" class="h3">Dec 31 Income &amp; Exp.</text>
+  <text x="44" y="226" class="sage">   [TRUE 2026 Earned!]</text>
+  <text x="44" y="260" class="coral">Dec 31 Bal c/d (Advance)</text>
+  <text x="44" y="276" class="body">   [Closing Liability!]</text>
+
+  <text x="264" y="164" class="coral">Jan 1 Bal b/d (Advance)</text>
+  <text x="264" y="180" class="body">   [Opening Liability!]</text>
+  <text x="264" y="210" class="mono">Bank / Cash Received</text>
+  <text x="264" y="226" class="body">   [From Receipts A/c]</text>
+  <text x="264" y="260" class="sage">Dec 31 Bal c/d (Arrears)</text>
+  <text x="264" y="276" class="body">   [Closing Asset!]</text>
+
+  <rect x="44" y="340" width="416" height="30" rx="6" fill="#EBF2EF"/>
+  <text x="252" y="360" text-anchor="middle" class="h3">Quick Check: Earned = Cash − Open Arr + Close Arr + Open Adv − Close Adv!</text>
+
+  <!-- Right Top: Bar Trading Account -->
+  <rect x="492" y="78" width="396" height="162" rx="11" fill="#FCFBF8" stroke="#2E6359" stroke-width="1.8"/>
+  <rect x="492" y="78" width="396" height="34" rx="10" fill="#2E6359"/>
+  <text x="690" y="100" text-anchor="middle" class="hdr">Bar / Refreshments Trading Account</text>
+  <text x="508" y="134" class="body">Bar Sales (Cash Receipts)</text>
+  <text x="508" y="154" class="body">Less: Cost of Bar Sales (Open Stock + Adjusted Bar</text>
+  <text x="520" y="170" class="body">Purchases [check Bar Creditors!] − Close Stock)</text>
+  <text x="508" y="192" class="body">Less: Direct Bar Expenses (Bar Steward Wages!)</text>
+  <text x="508" y="218" class="sage">= NET BAR PROFIT → Credit to Income &amp; Exp. A/c!</text>
+
+  <!-- Right Bottom: Fundraiser / Dance Account -->
+  <rect x="492" y="254" width="396" height="126" rx="11" fill="#FCFBF8" stroke="#C84E24" stroke-width="1.8"/>
+  <rect x="492" y="254" width="396" height="34" rx="10" fill="#C84E24"/>
+  <text x="690" y="276" text-anchor="middle" class="hdr">Annual Dinner / Dance / Raffle Account</text>
+  <text x="508" y="310" class="body">Dance Ticket Sales + Program Sponsorships</text>
+  <text x="508" y="330" class="body">Less: Band / DJ Fee, Hall Hire, Food &amp; Printing</text>
+  <text x="508" y="356" class="coral">= PROFIT (or LOSS) on Dance → Income &amp; Exp. A/c!</text>
+
+  <!-- Bottom Bar Creditors Tip -->
+  <rect x="32" y="398" width="856" height="44" rx="9" fill="#1B365D"/>
+  <text x="460" y="425" text-anchor="middle" style="font: 700 12.5px system-ui; fill: #FCFBF8;">Pro Tip: When Bar Suppliers have opening/closing balances: True Bar Purchases = Cash Paid to Suppliers − Opening Payables + Closing Payables!</text>
+</svg>

@@ -1,0 +1,258 @@
+---
+id: manufacturing-account-prime-cost-wip
+title: "10.2 Preparing a Manufacturing Account (Prime Cost, WIP & Cost of Production)"
+sidebar_label: "10.2 Manufacturing Account"
+sidebar_position: 2
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 10"
+  section="Manufacturing & Inventory Control — Manufacturing Accounts"
+  code="POA-S10-02"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="25 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+The **Manufacturing Account** answers ONE crystal-clear question for factory owners: **"Exactly how much did it cost us to manufacture the goods we completed this year?"** It follows a rock-solid **4-Stage Waterfall** — (1) **Raw Materials Consumed** → (2) **Prime Cost** → (3) **+ Factory Overheads** → (4) **+ Opening WIP − Closing WIP = Cost of Production**! Master this 4-stage vertical template and you unlock effortless marks on every single manufacturing question!
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | The **4-Stage Manufacturing Account** (`Raw Materials Consumed → Prime Cost → Factory Overheads → WIP Adjustment = Cost of Production`) and the **3 Factory Inventories** |
+| **Exam Focus** | **NEVER** putting **Finished Goods Inventory** inside the Manufacturing Account *(it goes ONLY to the Trading Account!)*, adjusting **Accruals/Prepayments** on factory expenses, and remembering **`+ Opening WIP − Closing WIP`** |
+| **Learning Outcome** | Construct a complete vertical Manufacturing Account incorporating raw material adjustments, shared overhead splits, factory depreciation, and Work-in-Progress |
+
+<ObjectivesBox
+  id="poa-s10-02-obj"
+  objectives={[
+    'State the purpose of a Manufacturing Account and distinguish the three types of factory inventory (Raw Materials, Work-in-Progress, Finished Goods).',
+    'Calculate Cost of Raw Materials Consumed and Prime Cost accurately.',
+    'Incorporate factory expense accruals, prepayments, shared apportionments, and factory machinery depreciation into Factory Overheads.',
+    'Apply the Work-in-Progress adjustment (+ Opening WIP − Closing WIP) to determine the exact Cost of Production.',
+  ]}
+/>
+
+---
+
+## 1. The 4-Stage Manufacturing Account Formula Sheet
+
+<FormulaCard
+  title="Four Exact Stages to Cost of Production"
+  onFormulaSheet={false}
+  summary="Memorize the order — Stage 1 feeds Stage 2, Stage 2 + Stage 3 feed Stage 4!"
+>
+
+$$
+\textbf{Stage 1:}\quad \text{Raw Materials Consumed} = \text{Open RM} + \text{RM Purchases} + \text{Carriage In} - \text{Returns Out} - \text{Close RM}
+$$
+
+$$
+\textbf{Stage 2:}\quad \text{Prime Cost} = \text{Raw Materials Consumed} + \text{Direct Labor} + \text{Direct Expenses}
+$$
+
+$$
+\textbf{Stage 3:}\quad \text{Total Factory Cost} = \text{Prime Cost} + \text{Total Factory Overheads}
+$$
+
+$$
+\textbf{Stage 4:}\quad \text{Cost of Production} = \text{Total Factory Cost} + \text{Opening WIP} - \text{Closing WIP}
+$$
+
+</FormulaCard>
+
+### Why Do We ADD Opening WIP and SUBTRACT Closing WIP?
+- **Work-in-Progress (WIP)** = partially completed items still sitting halfway down the assembly line *(e.g., chairs built last December that only needed varnishing in January)*.
+- **ADD Opening WIP (1 Jan):** Those half-built items from last year were **finished THIS year**, so their opening cost becomes part of THIS year’s completed goods!
+- **SUBTRACT Closing WIP (31 Dec):** Half-built items still unfinished on 31 December are **NOT completed yet**, so we strip their cost out and carry it forward into next year *(as a Current Asset on the Balance Sheet!)*!
+
+:::warning #1 Exam Trap — Keep Finished Goods OUT of the Manufacturing Account!
+A factory holds **THREE** inventories: (1) **Raw Materials**, (2) **Work-in-Progress**, and (3) **Finished Goods**.
+- **Raw Materials** → Stage 1 of Manufacturing Account!
+- **Work-in-Progress** → Stage 4 of Manufacturing Account!
+- **Finished Goods** → **NEVER inside Manufacturing Account!** Finished Goods belong strictly in the **Trading Section of the Income Statement**!
+:::
+
+---
+
+## 2. Diagram 1: The 4-Stage Manufacturing Account Waterfall
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-10/02-manufacturing-account-waterfall.svg"
+  alt="Four-stage vertical waterfall diagram of a Manufacturing Account showing Raw Materials Consumed, Prime Cost, Factory Overheads, and Work-in-Progress adjustment alongside the 3 Factory Inventories guide."
+  caption="Diagram 1 (Static Reference): Follow Stages 1 → 2 → 3 → 4 cleanly, and check the right panel so Finished Goods NEVER sneaks into your Manufacturing Account!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive Manufacturing Account Diagnostic
+
+<InteractiveDiagram
+  title="Interactive Flow: Check All 4 Stages Before Drafting Any Manufacturing Account"
+  layout="flow"
+  instruction="Click Steps 1 to 4 to verify the exact adjustments examiners plant inside every stage."
+  nodes={[
+    {
+      label: '1. Clean Raw Materials',
+      tag: 'Stage 1',
+      tone: 'neutral',
+      detail: 'Start with Opening Raw Materials ($14k), add RM Purchases ($98k) + Carriage Inwards on RM ($4k) − Returns Outwards of RM ($2k), and subtract Closing Raw Materials ($18k)!',
+      example: '$14,000 + ($98,000 + $4,000 − $2,000 = $100,000) − $18,000 = $96,000 Raw Materials Consumed!',
+      examTip: 'Always double-check if there is Returns Outwards of Raw Materials — forgetting to subtract it inflates Prime Cost and Cost of Production!',
+    },
+    {
+      label: '2. Lock In Prime Cost',
+      tag: 'Stage 2',
+      tone: 'positive',
+      detail: 'Add Direct Factory Wages (adjusted for any year-end accrual! E.g. $60k paid + $2k owing = $62,000) + Direct Patent Royalties ($4,000) right under Raw Materials Consumed!',
+      example: 'Prime Cost = $96,000 + $62,000 + $4,000 = $162,000!',
+      examTip: 'Always clearly label the bold line "PRIME COST" — examiners award a dedicated method mark just for labeling and totaling Prime Cost cleanly!',
+    },
+    {
+      label: '3. Apportion Factory Overheads',
+      tag: 'Stage 3',
+      tone: 'warning',
+      detail: 'List ONLY the factory slice of shared costs (3/4 Rent = $18k; 80% Power = $12k), adjust Prepaid Factory Insurance ($3.6k − $0.6k = $3k), add Indirect Wages ($18k) and Factory Machinery Depr. ($12k)!',
+      example: 'Total Factory Overheads = $18k + $18k + $12k + $3k + $12k = $63,000 → Total Factory Cost = $225,000!',
+      examTip: 'Never add Office Rent (1/4 = $6k) or Delivery Van Depreciation here — leave them strictly for the Income Statement!',
+    },
+    {
+      label: '4. Adjust WIP → Cost of Production',
+      tag: 'Stage 4',
+      tone: 'positive',
+      detail: 'ADD Opening Work-in-Progress ($11,000) and SUBTRACT Closing Work-in-Progress ($16,000) to arrive at Cost of Production ($220,000)!',
+      example: '$225,000 + $11,000 − $16,000 = $220,000 Cost of Production (transferred straight to Trading Account)!',
+      examTip: 'Ignore Finished Goods Opening ($20k) and Closing ($25k) inside the Manufacturing Account — they wait patiently for the Trading Account!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Preparing a Complete Manufacturing Account (IslandSpice Packaging Factory)"
+  marks={14}
+  problem={
+    <>
+      <p>
+        <strong>Scenario:</strong> The following figures were extracted from the books of
+        <strong> IslandSpice Packaging Factory</strong> for the year ended <strong>31 December 2026</strong>:
+      </p>
+      <ul>
+        <li><strong>Inventories (1 Jan 2026):</strong> Raw Materials `$14,000`; Work-in-Progress `$11,000`; Finished Goods `$20,000`.</li>
+        <li><strong>Inventories (31 Dec 2026):</strong> Raw Materials `$18,000`; Work-in-Progress `$16,000`; Finished Goods `$25,000`.</li>
+        <li><strong>Direct Costs:</strong> Purchases of Raw Materials `$98,000`; Carriage Inwards on Raw Materials `$4,000`; Returns Outwards of Raw Materials `$2,000`; Direct Manufacturing Wages paid `$60,000` *(with **`$2,000` still accrued** on 31 Dec!)*; Direct Patent Royalties `$4,000`.</li>
+        <li><strong>Indirect &amp; Shared Costs:</strong> Indirect Factory Wages `$18,000`; Total Premises Rent `$24,000` *(apportioned **`3/4` Factory, `1/4` Office**)*; Total Power &amp; Electricity `$15,000` *(apportioned **`80%` Factory, `20%` Office**)*; Factory Insurance paid `$3,600` *(includes **`$600` prepaid** for 2027!)*; Factory Machinery at Cost `$80,000` *(depreciated at **`15%` Straight-Line**)*; Office Salaries `$22,000`.</li>
+      </ul>
+      <p>
+        Prepare the <strong>Manufacturing Account</strong> of IslandSpice Packaging Factory for
+        the year ended <strong>31 December 2026</strong>, clearly showing <strong>Raw Materials
+        Consumed</strong>, <strong>Prime Cost</strong>, <strong>Factory Overheads</strong>, and
+        <strong>Cost of Production</strong>. <em>[14 marks]</em>
+      </p>
+    </>
+  }
+>
+
+### IslandSpice Packaging Factory — Manufacturing Account *(Year ended 31 December 2026)*
+*(Notice: Opening/Closing Finished Goods `$20k / $25k`, Office Salaries `$22k`, Office Rent `$6k`, and Office Power `$3k` are **deliberately excluded** — they belong strictly in the Income Statement!)*
+
+| Details | $ | $ | $ |
+| :--- | ---: | ---: | ---: |
+| **Cost of Raw Materials Consumed** | | | |
+| Opening Inventory of Raw Materials (1 Jan) | | | 14,000 |
+| Add: Purchases of Raw Materials | | 98,000 | |
+| Add: Carriage Inwards on Raw Materials | | 4,000 | |
+| | | 102,000 | |
+| Less: Returns Outwards of Raw Materials | | (2,000) | 100,000 |
+| *Cost of Raw Materials Available* | | | *114,000* |
+| Less: Closing Inventory of Raw Materials (31 Dec) | | | (18,000) |
+| **Cost of Raw Materials Consumed** | | | **96,000** |
+| **Add: Direct Labor &amp; Direct Expenses** | | | |
+| Direct Manufacturing Wages *(`$60,000 + $2,000 accrued`)* | | 62,000 | |
+| Direct Patent Royalties | | 4,000 | **66,000** |
+| **PRIME COST** | | | **162,000** |
+| **Add: Factory Overheads** | | | |
+| Indirect Factory Wages | | 18,000 | |
+| Factory Rent *(`3/4 × $24,000`)* | | 18,000 | |
+| Factory Power &amp; Electricity *(`80% × $15,000`)* | | 12,000 | |
+| Factory Insurance *(`$3,600 − $600 prepaid`)* | | 3,000 | |
+| Depreciation — Factory Machinery *(`15% × $80,000`)* | | 12,000 | **63,000** |
+| *Total Factory Cost Incurred* | | | *225,000* |
+| **Work-in-Progress Adjustment** | | | |
+| Add: Opening Work-in-Progress (1 Jan) | | 11,000 | |
+| | | 236,000 | |
+| Less: Closing Work-in-Progress (31 Dec) | | (16,000) | *(5,000)* |
+| **COST OF PRODUCTION *(Transferred to Trading A/c)*** | | | **$220,000** |
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: The Manufacturing Account"
+  items={[
+    {
+      statement: 'Opening and Closing Inventories of Finished Goods must be included at the bottom of the Manufacturing Account.',
+      answer: false,
+      explanation: 'NEVER! Finished Goods belong strictly in the TRADING section of the Income Statement — ONLY Raw Materials and Work-in-Progress appear inside the Manufacturing Account!',
+    },
+    {
+      statement: 'To calculate Cost of Production, you ADD Opening Work-in-Progress and SUBTRACT Closing Work-in-Progress.',
+      answer: true,
+      explanation: 'Correct — Opening WIP was completed during this year (+), while Closing WIP remains unfinished until next year (−)!',
+    },
+    {
+      statement: 'If Direct Manufacturing Wages paid are $45,000 and $3,000 of direct wages remain accrued on 31 December, $48,000 is charged inside Prime Cost.',
+      answer: true,
+      explanation: 'Yes — standard Accrual Concept! Charge full $48,000 in Prime Cost and record $3,000 Accrued Wages under Current Liabilities.',
+    },
+    {
+      statement: 'Returns Outwards of Raw Materials are added to Purchases of Raw Materials when computing Raw Materials Consumed.',
+      answer: false,
+      explanation: 'Returns Outwards are defective raw materials sent BACK to suppliers — they are SUBTRACTED from Raw Materials Purchases!',
+    },
+    {
+      statement: 'The final total of the Manufacturing Account (Cost of Production) transfers into the Trading Account just like "Purchases" in a sole trader’s business.',
+      answer: true,
+      explanation: 'Spot on! Cost of Production literally replaces Purchases inside a manufacturer’s Trading Account!',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s10-02-project"
+  title="Mini-Project: Manufacturing Account for BlueBay Furniture Workshop"
+  duration="20 mins"
+  scenario="Prepare the complete vertical Manufacturing Account for 'BlueBay Furniture Workshop' for the year ended 31 December 2026: Inventories (1 Jan) — Raw Materials $8,000; Work-in-Progress $7,000; Finished Goods $12,000. Inventories (31 Dec) — Raw Materials $11,000; Work-in-Progress $9,000; Finished Goods $15,000. Purchases of Raw Materials $54,000; Carriage Inwards on RM $2,000; Returns Outwards of RM $1,000; Direct Wages $34,000; Direct Design Royalty $4,000; Factory Supervisor Salary $12,000; Total Premises Rent $16,000 (75% Factory / 25% Office); Factory Power $5,000; Factory Machinery (Cost $50,000, depreciated at 10% Straight-Line); Office Admin $9,000."
+  steps={[
+    'Circle and set aside the distractor items that belong ONLY in the Income Statement (Finished Goods, 25% Office Rent, Office Admin).',
+    'Draft the 4-stage vertical Manufacturing Account showing clearly labeled subtotals for Raw Materials Consumed, Prime Cost, Factory Overheads, and Cost of Production.',
+    'Double-check every single sign: + Carriage Inwards, − Returns Outwards, − Closing RM, + Opening WIP, − Closing WIP!',
+  ]}
+  deliverables={[
+    'Formatted 3-column Manufacturing Account for BlueBay Furniture Workshop',
+    'Short note listing the 3 excluded Income Statement items',
+  ]}
+  rubric={[
+    'Raw Materials Consumed = $8,000 + $54,000 + $2,000 − $1,000 − $11,000 = $52,000.',
+    'Prime Cost = $52,000 + $34,000 + $4,000 = $90,000; Factory Overheads = $12,000 + $12,000 (75% Rent) + $5,000 + $5,000 (10% Depr.) = $34,000 → Total Factory Cost = $124,000.',
+    'WIP Adjustment (+$7,000 − $9,000 = −$2,000) → Exact Cost of Production = $122,000! (Finished Goods $12k/$15k, $4k Office Rent & $9k Office Admin excluded cleanly!)',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **4 Stages:** `Raw Materials Consumed → Prime Cost → + Factory Overheads → + Open WIP − Close WIP = Cost of Production`.
+- **NEVER** put **Finished Goods** or **Office/Selling Expenses** inside a Manufacturing Account!
+:::

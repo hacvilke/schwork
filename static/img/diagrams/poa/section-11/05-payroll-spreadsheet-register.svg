@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 470" width="920" height="470" role="img" aria-label="Payroll Spreadsheet Register Anatomy showing Excel Formulas across Gross Pay, Statutory Deductions, Voluntary Deductions, Total Deductions, and Net Pay">
+  <defs>
+    <style>
+      .bg { fill: #F8F6F1; }
+      .card { fill: #FCFBF8; stroke: #CEDCD6; stroke-width: 2; rx: 12; }
+      .navy { fill: #1B365D; rx: 6; }
+      .sage { fill: #2E6359; rx: 6; }
+      .coral { fill: #C84E24; rx: 6; }
+      .hdr { fill: #EBF2EF; stroke: #CEDCD6; stroke-width: 1; }
+      .row { fill: #FCFBF8; stroke: #CEDCD6; stroke-width: 1; }
+      .tot { fill: #FEF3E2; stroke: #F5A352; stroke-width: 1.5; }
+      .title { font-family: system-ui, -apple-system, sans-serif; font-size: 21px; font-weight: 800; fill: #1B365D; }
+      .subtitle { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; fill: #4A5560; }
+      .w-title { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; font-weight: 800; fill: #FFFFFF; }
+      .w-sub { font-family: system-ui, -apple-system, sans-serif; font-size: 11.5px; fill: #EBF2EF; }
+      .th { font-family: system-ui, -apple-system, sans-serif; font-size: 11px; font-weight: 800; fill: #1B365D; }
+      .td { font-family: system-ui, -apple-system, sans-serif; font-size: 11.5px; fill: #222222; }
+      .td-b { font-family: system-ui, -apple-system, sans-serif; font-size: 11.5px; font-weight: 800; fill: #1B365D; }
+      .td-c { font-family: system-ui, -apple-system, sans-serif; font-size: 11.5px; font-weight: 800; fill: #C84E24; }
+      .code { font-family: ui-monospace, SFMono-Regular, monospace; font-size: 11px; font-weight: 700; fill: #2E6359; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="920" height="470"/>
+  <text x="460" y="34" text-anchor="middle" class="title">Payroll Spreadsheet Register &amp; Exact Excel Formulas</text>
+  <text x="460" y="54" text-anchor="middle" class="subtitle">Cross-cast EVERY row AND sum EVERY column — Horizontal Net Pay MUST equal Vertical Gross − Vertical Total Deductions!</text>
+
+  <!-- Spreadsheet Grid Card -->
+  <rect class="card" x="20" y="72" width="880" height="270"/>
+
+  <!-- Column Letter Strip -->
+  <rect class="navy" x="30" y="82" width="860" height="26"/>
+  <text x="86" y="99" text-anchor="middle" class="w-title">A · Employee</text>
+  <text x="190" y="99" text-anchor="middle" class="w-title">B · Basic</text>
+  <text x="268" y="99" text-anchor="middle" class="w-title">C · OT</text>
+  <text x="352" y="99" text-anchor="middle" class="w-title">D · GROSS</text>
+  <text x="440" y="99" text-anchor="middle" class="w-title">E · PAYE</text>
+  <text x="518" y="99" text-anchor="middle" class="w-title">F · NIS</text>
+  <text x="606" y="99" text-anchor="middle" class="w-title">G · Vol.</text>
+  <text x="706" y="99" text-anchor="middle" class="w-title">H · TOT DED</text>
+  <text x="822" y="99" text-anchor="middle" class="w-title">I · NET PAY</text>
+
+  <!-- Formula Strip Row 2 -->
+  <rect class="hdr" x="30" y="108" width="860" height="28"/>
+  <text x="86" y="126" text-anchor="middle" class="th">Formula →</text>
+  <text x="190" y="126" text-anchor="middle" class="td">Input</text>
+  <text x="268" y="126" text-anchor="middle" class="td">Input</text>
+  <text x="352" y="126" text-anchor="middle" class="code">=B3+C3</text>
+  <text x="440" y="126" text-anchor="middle" class="code">Tax Rule</text>
+  <text x="518" y="126" text-anchor="middle" class="code">=D3*3%</text>
+  <text x="606" y="126" text-anchor="middle" class="td">Input</text>
+  <text x="706" y="126" text-anchor="middle" class="code">=SUM(E3:G3)</text>
+  <text x="822" y="126" text-anchor="middle" class="code">=D3-H3</text>
+
+  <!-- Employee Row 3: A. Brown -->
+  <rect class="row" x="30" y="136" width="860" height="38"/>
+  <text x="42" y="159" class="td-b">3 · A. Brown</text>
+  <text x="190" y="159" text-anchor="middle" class="td">$800</text>
+  <text x="268" y="159" text-anchor="middle" class="td">$200</text>
+  <text x="352" y="159" text-anchor="middle" class="td-b">$1,000</text>
+  <text x="440" y="159" text-anchor="middle" class="td">$120</text>
+  <text x="518" y="159" text-anchor="middle" class="td">$30</text>
+  <text x="606" y="159" text-anchor="middle" class="td">$50</text>
+  <text x="706" y="159" text-anchor="middle" class="td-c">$200</text>
+  <text x="822" y="159" text-anchor="middle" class="td-b">$800</text>
+
+  <!-- Employee Row 4: M. Clarke -->
+  <rect class="row" x="30" y="174" width="860" height="38"/>
+  <text x="42" y="197" class="td-b">4 · M. Clarke</text>
+  <text x="190" y="197" text-anchor="middle" class="td">$1,200</text>
+  <text x="268" y="197" text-anchor="middle" class="td">$0</text>
+  <text x="352" y="197" text-anchor="middle" class="td-b">$1,200</text>
+  <text x="440" y="197" text-anchor="middle" class="td">$180</text>
+  <text x="518" y="197" text-anchor="middle" class="td">$36</text>
+  <text x="606" y="197" text-anchor="middle" class="td">$84</text>
+  <text x="706" y="197" text-anchor="middle" class="td-c">$300</text>
+  <text x="822" y="197" text-anchor="middle" class="td-b">$900</text>
+
+  <!-- Employee Row 5: T. Reid -->
+  <rect class="row" x="30" y="212" width="860" height="38"/>
+  <text x="42" y="235" class="td-b">5 · T. Reid</text>
+  <text x="190" y="235" text-anchor="middle" class="td">$640</text>
+  <text x="268" y="235" text-anchor="middle" class="td">$160</text>
+  <text x="352" y="235" text-anchor="middle" class="td-b">$800</text>
+  <text x="440" y="235" text-anchor="middle" class="td">$60</text>
+  <text x="518" y="235" text-anchor="middle" class="td">$24</text>
+  <text x="606" y="235" text-anchor="middle" class="td">$16</text>
+  <text x="706" y="235" text-anchor="middle" class="td-c">$100</text>
+  <text x="822" y="235" text-anchor="middle" class="td-b">$700</text>
+
+  <!-- Totals Row 6 -->
+  <rect class="tot" x="30" y="250" width="860" height="42"/>
+  <text x="42" y="275" class="td-c">6 · TOTALS</text>
+  <text x="190" y="275" text-anchor="middle" class="td-b">$2,640</text>
+  <text x="268" y="275" text-anchor="middle" class="td-b">$360</text>
+  <text x="352" y="275" text-anchor="middle" class="td-b">$3,000</text>
+  <text x="440" y="275" text-anchor="middle" class="td-b">$360</text>
+  <text x="518" y="275" text-anchor="middle" class="td-b">$90</text>
+  <text x="606" y="275" text-anchor="middle" class="td-b">$150</text>
+  <text x="706" y="275" text-anchor="middle" class="td-c">$600</text>
+  <text x="822" y="275" text-anchor="middle" class="td-c">$2,400</text>
+
+  <!-- Cross-cast proof line -->
+  <text x="460" y="324" text-anchor="middle" class="td-b">CROSS-CAST PROOF:  Total Gross ($3,000)  −  Total Deductions ($360 + $90 + $150 = $600)  =  Total Net Pay ($2,400)  ✓</text>
+
+  <!-- Bottom Payroll Accounting Entry Card -->
+  <rect class="navy" x="20" y="358" width="880" height="94"/>
+  <text x="460" y="384" text-anchor="middle" class="w-title">GENERAL JOURNAL ENTRY FROM PAYROLL REGISTER TOTALS (ROW 6!)</text>
+  <text x="460" y="408" text-anchor="middle" class="w-sub">Dr Wages &amp; Salaries Expense (GROSS!)  $3,000   |   Cr PAYE Payable $360   ·   Cr NIS Payable $90   ·   Cr Voluntary Deductions Payable $150   ·   Cr Bank (NET PAY!) $2,400</text>
+  <text x="460" y="432" text-anchor="middle" class="w-sub">Golden Rule: Wages Expense in the Income Statement is ALWAYS GROSS PAY ($3,000) — NEVER Net Pay ($2,400)!</text>
+</svg>

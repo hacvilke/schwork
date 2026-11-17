@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" role="img" aria-label="Core features of a Partnership and the three main types of partners: General Active, Sleeping/Dormant, and Limited Partners">
+  <defs>
+    <style>
+      .title { font: 700 20px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .sub { font: 500 13px system-ui, -apple-system, sans-serif; fill: #4A5560; }
+      .hdr { font: 700 14px system-ui, -apple-system, sans-serif; fill: #FCFBF8; }
+      .h3 { font: 700 13px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .body { font: 500 12px system-ui, -apple-system, sans-serif; fill: #222222; }
+      .sage { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #2E6359; }
+      .coral { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #C84E24; }
+    </style>
+  </defs>
+
+  <rect width="920" height="460" rx="14" fill="#F8F6F1" stroke="#CEDCD6" stroke-width="1.5"/>
+  <text x="32" y="38" class="title">Anatomy of a Business Partnership: Core Features &amp; Partner Types</text>
+  <text x="32" y="58" class="sub">Definition: Two to twenty persons carrying on a business in common with a view to making a profit (higher limits for professionals like law/accounting).</text>
+
+  <!-- Top Row: 4 Core Features -->
+  <rect x="32" y="78" width="202" height="106" rx="10" fill="#FCFBF8" stroke="#1B365D" stroke-width="1.6"/>
+  <rect x="32" y="78" width="202" height="30" rx="9" fill="#1B365D"/>
+  <text x="133" y="98" text-anchor="middle" class="hdr">2 to 20 Owners</text>
+  <text x="46" y="128" class="body">Shared capital, skills,</text>
+  <text x="46" y="146" class="body">risks &amp; decision-making</text>
+  <text x="46" y="168" class="sage">Professions may exceed 20</text>
+
+  <rect x="250" y="78" width="202" height="106" rx="10" fill="#FCFBF8" stroke="#C84E24" stroke-width="1.6"/>
+  <rect x="250" y="78" width="202" height="30" rx="9" fill="#C84E24"/>
+  <text x="351" y="98" text-anchor="middle" class="hdr">Unlimited Liability</text>
+  <text x="264" y="128" class="body">General partners are</text>
+  <text x="264" y="146" class="body">personally liable (jointly</text>
+  <text x="264" y="168" class="coral">&amp; severally) for firm debts!</text>
+
+  <rect x="468" y="78" width="202" height="106" rx="10" fill="#FCFBF8" stroke="#2E6359" stroke-width="1.6"/>
+  <rect x="468" y="78" width="202" height="30" rx="9" fill="#2E6359"/>
+  <text x="569" y="98" text-anchor="middle" class="hdr">Mutual Agency</text>
+  <text x="482" y="128" class="body">Every general partner can</text>
+  <text x="482" y="146" class="body">sign business contracts</text>
+  <text x="482" y="168" class="sage">binding ALL partners!</text>
+
+  <rect x="686" y="78" width="202" height="106" rx="10" fill="#FCFBF8" stroke="#4E8577" stroke-width="1.6"/>
+  <rect x="686" y="78" width="202" height="30" rx="9" fill="#4E8577"/>
+  <text x="787" y="98" text-anchor="middle" class="hdr">Limited Life</text>
+  <text x="700" y="128" class="body">No separate legal entity;</text>
+  <text x="700" y="146" class="body">dissolves on death or</text>
+  <text x="700" y="168" class="h3">retirement (unless deeded)</text>
+
+  <!-- Bottom Row: 3 Main Types of Partners -->
+  <text x="32" y="216" class="h3">Three Main Types of Partners You Must Distinguish:</text>
+
+  <rect x="32" y="228" width="272" height="164" rx="11" fill="#FCFBF8" stroke="#1B365D" stroke-width="1.7"/>
+  <rect x="32" y="228" width="272" height="34" rx="10" fill="#1B365D"/>
+  <text x="168" y="250" text-anchor="middle" class="hdr">1. General (Active) Partner</text>
+  <text x="48" y="284" class="body">• Invests capital in the firm</text>
+  <text x="48" y="306" class="body">• Runs daily operations actively</text>
+  <text x="48" y="328" class="body">• Shares profits &amp; losses</text>
+  <text x="48" y="350" class="coral">• UNLIMITED Liability</text>
+  <text x="48" y="374" class="sage">Every partnership needs ≥ 1!</text>
+
+  <rect x="324" y="228" width="272" height="164" rx="11" fill="#FCFBF8" stroke="#4E8577" stroke-width="1.7"/>
+  <rect x="324" y="228" width="272" height="34" rx="10" fill="#4E8577"/>
+  <text x="460" y="250" text-anchor="middle" class="hdr">2. Sleeping (Dormant) Partner</text>
+  <text x="340" y="284" class="body">• Invests capital in the firm</text>
+  <text x="340" y="306" class="body">• Does NOT manage daily work</text>
+  <text x="340" y="328" class="body">• Shares agreed profits &amp; losses</text>
+  <text x="340" y="350" class="coral">• Still has UNLIMITED Liability!</text>
+  <text x="340" y="374" class="body">(Silent investor in general firm)</text>
+
+  <rect x="616" y="228" width="272" height="164" rx="11" fill="#FCFBF8" stroke="#2E6359" stroke-width="1.7"/>
+  <rect x="616" y="228" width="272" height="34" rx="10" fill="#2E6359"/>
+  <text x="752" y="250" text-anchor="middle" class="hdr">3. Limited Partner</text>
+  <text x="632" y="284" class="body">• Invests fixed agreed capital</text>
+  <text x="632" y="306" class="body">• CANNOT manage daily business</text>
+  <text x="632" y="328" class="body">• Must register under Limited Act</text>
+  <text x="632" y="350" class="sage">• LIMITED Liability (capital only!)</text>
+  <text x="632" y="374" class="body">(Protects personal home/savings)</text>
+
+  <!-- Bottom Key Distinction -->
+  <rect x="32" y="406" width="856" height="38" rx="8" fill="#EBF2EF" stroke="#4E8577"/>
+  <text x="460" y="430" text-anchor="middle" class="h3">Exam Trap: A Sleeping Partner has UNLIMITED liability — ONLY a registered Limited Partner has LIMITED liability!</text>
+</svg>

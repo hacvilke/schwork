@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 500" width="920" height="500" role="img" aria-label="Classification of Manufacturing Costs: Direct Costs forming Prime Cost versus Indirect Factory Overheads and Non-Manufacturing Office Expenses">
+  <defs>
+    <style>
+      .bg { fill: #F8F6F1; }
+      .card { fill: #FCFBF8; stroke: #CEDCD6; stroke-width: 2; rx: 12; }
+      .navy-box { fill: #1B365D; rx: 10; }
+      .sage-box { fill: #2E6359; rx: 10; }
+      .coral-box { fill: #C84E24; rx: 10; }
+      .amber-chip { fill: #FEF3E2; stroke: #F5A352; stroke-width: 1.5; rx: 8; }
+      .mint-chip { fill: #EBF2EF; stroke: #4E8577; stroke-width: 1.5; rx: 8; }
+      .title { font-family: system-ui, -apple-system, sans-serif; font-size: 21px; font-weight: 800; fill: #1B365D; }
+      .subtitle { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; fill: #4A5560; }
+      .box-title { font-family: system-ui, -apple-system, sans-serif; font-size: 15px; font-weight: 800; fill: #FFFFFF; }
+      .box-sub { font-family: system-ui, -apple-system, sans-serif; font-size: 11.5px; fill: #EBF2EF; }
+      .label { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; font-weight: 700; fill: #1B365D; }
+      .body { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; fill: #222222; }
+      .muted { font-family: system-ui, -apple-system, sans-serif; font-size: 11.5px; fill: #4A5560; }
+      .warn { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; font-weight: 700; fill: #C84E24; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="920" height="500"/>
+  <text x="460" y="34" text-anchor="middle" class="title">Direct Costs vs. Indirect Factory Overheads vs. Office Expenses</text>
+  <text x="460" y="54" text-anchor="middle" class="subtitle">Every cost inside a manufacturing business belongs in ONE exact home — never mix Factory Costs with Office/Selling Costs!</text>
+
+  <!-- Column 1: Direct Costs (Prime Cost) -->
+  <rect class="card" x="24" y="76" width="280" height="332"/>
+  <rect class="navy-box" x="36" y="88" width="256" height="52"/>
+  <text x="164" y="110" text-anchor="middle" class="box-title">1. DIRECT COSTS (PRIME COST)</text>
+  <text x="164" y="128" text-anchor="middle" class="box-sub">Traceable directly to EVERY unit made!</text>
+
+  <rect class="mint-chip" x="40" y="154" width="248" height="66"/>
+  <text x="54" y="174" class="label">Direct Materials Consumed</text>
+  <text x="54" y="192" class="body">Wood for furniture, flour for bread,</text>
+  <text x="54" y="208" class="muted">+ Carriage Inwards on Raw Materials!</text>
+
+  <rect class="mint-chip" x="40" y="232" width="248" height="66"/>
+  <text x="54" y="252" class="label">Direct Labor (Manufacturing Wages)</text>
+  <text x="54" y="270" class="body">Machine operators, bakers, seamstresses</text>
+  <text x="54" y="286" class="muted">hands-on building the product!</text>
+
+  <rect class="mint-chip" x="40" y="310" width="248" height="66"/>
+  <text x="54" y="330" class="label">Direct Expenses</text>
+  <text x="54" y="348" class="body">Royalties paid per unit manufactured,</text>
+  <text x="54" y="364" class="muted">hire of special mold for a single job!</text>
+
+  <text x="164" y="396" text-anchor="middle" class="label">→ Manufacturing Account (Top)</text>
+
+  <!-- Column 2: Indirect Factory Overheads -->
+  <rect class="card" x="320" y="76" width="280" height="332"/>
+  <rect class="sage-box" x="332" y="88" width="256" height="52"/>
+  <text x="460" y="110" text-anchor="middle" class="box-title">2. FACTORY OVERHEADS</text>
+  <text x="460" y="128" text-anchor="middle" class="box-sub">Indirect factory costs keeping plant running</text>
+
+  <rect class="mint-chip" x="336" y="154" width="248" height="66"/>
+  <text x="350" y="174" class="label">Indirect Materials</text>
+  <text x="350" y="192" class="body">Machine lubricating oil, glue, sandpaper,</text>
+  <text x="350" y="208" class="muted">cleaning supplies used on factory floor</text>
+
+  <rect class="mint-chip" x="336" y="232" width="248" height="66"/>
+  <text x="350" y="252" class="label">Indirect Labor</text>
+  <text x="350" y="270" class="body">Factory supervisor salary, maintenance</text>
+  <text x="350" y="286" class="muted">technicians, factory night security guard</text>
+
+  <rect class="mint-chip" x="336" y="310" width="248" height="66"/>
+  <text x="350" y="330" class="label">Other Indirect Factory Costs</text>
+  <text x="350" y="348" class="body">Factory rent, factory power, repairs &amp;</text>
+  <text x="350" y="364" class="muted">Depreciation of Factory Machinery!</text>
+
+  <text x="460" y="396" text-anchor="middle" class="label">→ Manufacturing Account (Middle)</text>
+
+  <!-- Column 3: Non-Manufacturing Costs -->
+  <rect class="card" x="616" y="76" width="280" height="332"/>
+  <rect class="coral-box" x="628" y="88" width="256" height="52"/>
+  <text x="756" y="110" text-anchor="middle" class="box-title">3. NON-FACTORY EXPENSES</text>
+  <text x="756" y="128" text-anchor="middle" class="box-sub">NEVER put inside Manufacturing Account!</text>
+
+  <rect class="amber-chip" x="632" y="154" width="248" height="66"/>
+  <text x="646" y="174" class="warn">Administration &amp; Office Costs</text>
+  <text x="646" y="192" class="body">Office salaries, office rent, stationery,</text>
+  <text x="646" y="208" class="muted">audit fees, Depr. of Office Computers</text>
+
+  <rect class="amber-chip" x="632" y="232" width="248" height="66"/>
+  <text x="646" y="252" class="warn">Selling &amp; Distribution Costs</text>
+  <text x="646" y="270" class="body">Advertising, sales commissions, Carriage</text>
+  <text x="646" y="286" class="muted">Outwards, Depr. of Delivery Vans!</text>
+
+  <rect class="amber-chip" x="632" y="310" width="248" height="66"/>
+  <text x="646" y="330" class="warn">Finance &amp; Bad Debt Costs</text>
+  <text x="646" y="348" class="body">Bank loan interest, discounts allowed,</text>
+  <text x="646" y="364" class="muted">bad debts written off &amp; doubtful debts</text>
+
+  <text x="756" y="396" text-anchor="middle" class="warn">→ Income Statement (P&amp;L) ONLY!</text>
+
+  <!-- Bottom Shared Cost Split Banner -->
+  <rect class="navy-box" x="24" y="424" width="872" height="60"/>
+  <text x="460" y="449" text-anchor="middle" class="box-title">SHARED COST APPORTIONMENT RULE (e.g. Rent / Insurance / Power Split 75% Factory : 25% Office)</text>
+  <text x="460" y="470" text-anchor="middle" class="box-sub">Factory Share (75%) → Manufacturing Account (Factory Overheads)   |   Office Share (25%) → Income Statement (Operating Expenses)!</text>
+</svg>

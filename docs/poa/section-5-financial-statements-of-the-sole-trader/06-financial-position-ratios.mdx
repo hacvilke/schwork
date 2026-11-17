@@ -1,0 +1,245 @@
+---
+id: financial-position-ratios
+title: "5.6 Calculating Ratios for Financial Position (Current Ratio, Acid Test, ROI)"
+sidebar_label: "5.6 Liquidity & Position Ratios"
+sidebar_position: 6
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 5"
+  section="Financial Statements of the Sole-Trader — Analysis"
+  code="POA-S5-06"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="25 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+Profitability ratios read the **Income Statement**, but they don’t tell you whether a business can pay its bills next week — or whether the owner’s investment is earning more than a plain bank savings account! **Financial Position Ratios** inspect the **Balance Sheet** to test **Liquidity** (**Current Ratio** and **Acid-Test / Quick Ratio**) and **Investment Return** (**Return on Investment / Return on Capital Employed**).
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | **Current Ratio (`X : 1`)**, **Acid-Test / Quick Ratio (`X : 1`)**, and **Return on Investment / Capital Employed (`%`)** |
+| **Exam Focus** | Subtracting **Closing Inventory** (and Prepayments) for the Acid-Test Ratio, expressing liquidity ratios strictly as **`X.XX : 1`**, and evaluating results against standard benchmarks |
+| **Learning Outcome** | Calculate and interpret Current Ratio, Acid-Test Ratio, and Return on Investment (ROI / ROCE) cleanly from any Balance Sheet |
+
+<ObjectivesBox
+  id="poa-s5-06-obj"
+  objectives={[
+    'Define liquidity and explain why banks, suppliers, and owners monitor liquidity ratios closely.',
+    'Calculate the Current Ratio and Acid-Test (Quick) Ratio accurately in standard "X : 1" format.',
+    'Explain why Closing Inventory (and Prepayments) are excluded from the Acid-Test Ratio.',
+    'Calculate Return on Investment (ROI) / Return on Capital Employed (ROCE) as a percentage and compare it against alternative investments.',
+  ]}
+/>
+
+---
+
+## 1. The Three Financial Position & Return Formulas
+
+<FormulaCard
+  title="Liquidity & Return Ratios (Memorize Exact Units!)"
+  onFormulaSheet={false}
+  summary="Liquidity ratios compare short-term assets to short-term debts (X : 1); ROI/ROCE measures profit generated per $100 invested (%)."
+>
+
+$$
+\text{Current Ratio} = \frac{\text{Current Assets}}{\text{Current Liabilities}} \quad \text{(expressed as } X : 1 \text{)}
+$$
+
+$$
+\text{Acid-Test (Quick) Ratio} = \frac{\text{Current Assets} - \text{Closing Inventory} - \text{Prepayments}}{\text{Current Liabilities}} \quad \text{(expressed as } X : 1 \text{)}
+$$
+
+*(Note: When there are no prepayments, the numerator is simply `Trade Receivables + Bank + Cash` = `Current Assets − Closing Inventory`!)*
+
+$$
+\text{Return on Investment (ROI)} = \frac{\text{Net Profit}}{\text{Capital Invested}} \times 100 \quad (\%)
+$$
+
+*(Note: For **Return on Capital Employed (ROCE)**, divide Net Profit by **Capital Employed** = `Capital + Non-Current Liabilities` = `Total Net Assets`, or Opening/Average Capital as directed by the question!)*
+
+</FormulaCard>
+
+### Standard Benchmarks You Must Know!
+
+| Ratio | Typical Healthy Benchmark | Too Low Warning | Too High Warning |
+| :--- | :---: | :--- | :--- |
+| **Current Ratio** | **`1.5 : 1` to `2 : 1`** | **Below `1 : 1`** — cannot cover short-term bills; Working Capital deficit! | **Above `3.5 : 1`** — excess idle cash, slow-moving stock, or uncollected debtors |
+| **Acid-Test (Quick) Ratio** | **`1 : 1`** *(roughly `0.9:1` to `1.2:1`)* | **Below `0.8 : 1`** — urgent cash crunch; relies too heavily on selling slow stock | **Well above `2 : 1`** — too much idle cash earning zero return |
+| **Return on Investment (ROI)** | **Higher than bank interest / rival firms** *(e.g. `12%–25%+`)* | **Below safe bank deposit rate (e.g. `< 5%`)** — owner takes business risk for less return than a safe bank account! | *(Higher is generally better — check debt risk!)* |
+
+---
+
+## 2. Diagram 1: Liquidity & Return on Investment Gauges
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-5/06-liquidity-and-roi-gauges.svg"
+  alt="Three diagnostic ratio cards showing Current Ratio (benchmark 1.5:1 to 2:1), Acid-Test Ratio excluding Stock (benchmark 1:1), and Return on Investment (compare vs bank interest rate), plus a unit discipline banner."
+  caption="Diagram 1 (Static Reference): Never mix up your answer units — write ': 1' for Current & Acid-Test Ratios and '%' for ROI / ROCE!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive Financial Position Ratios Explorer
+
+<InteractiveDiagram
+  title="Interactive Hub: Tap Each Ratio to See Real Balance Sheet Interpretations"
+  layout="hub"
+  centerLabel="Position KPIs"
+  centerSublabel="Balance Sheet Health"
+  instruction="Select any of the 4 key concepts below to inspect why banks and owners check them before lending or investing."
+  nodes={[
+    {
+      label: 'Current Ratio',
+      tag: 'CA ÷ CL',
+      tone: 'positive',
+      detail: 'Shows how many dollars of total Current Assets are available to cover every $1.00 of Current Liabilities due within the next 12 months.',
+      example: 'CA = $30,000; CL = $15,000 → Current Ratio = 30,000 ÷ 15,000 = 2.0 : 1 ($2 of short-term assets for every $1 of short-term debt!).',
+      examTip: 'ALWAYS write ": 1" at the end (e.g., "2.0 : 1" — never just write "2" or "200%"!).',
+    },
+    {
+      label: 'Acid-Test (Quick) Ratio',
+      tag: 'Strict Cash Test',
+      tone: 'warning',
+      detail: 'Excludes Closing Inventory (and Prepayments) because inventory must first be SOLD — and possibly collected from credit customers — before turning into cash to pay urgent bills!',
+      example: 'CA = $30,000 (of which Stock = $18,000); CL = $15,000 → Quick Assets = $12,000 → Acid-Test = 12,000 ÷ 15,000 = 0.8 : 1 (Warning: too much cash trapped in Stock!).',
+      examTip: 'Spotting a healthy Current Ratio (2.0 : 1) paired with a weak Acid-Test Ratio (0.6 : 1) ALWAYS proves the firm is OVER-STOCKED!',
+    },
+    {
+      label: 'Return on Investment (ROI)',
+      tag: 'NP ÷ Capital × 100',
+      tone: 'positive',
+      detail: 'Measures the percentage return generated on the owner’s capital invested in the business. Tells the owner whether running the business beats investing the same money safely elsewhere.',
+      example: 'Net Profit = $18,000; Opening Capital = $90,000 → ROI = (18,000 ÷ 90,000) × 100 = 20.0% — far stronger than a 5% bank deposit!',
+      examTip: 'Check the question wording carefully: use Opening Capital, Closing Capital, Average Capital, or Capital Employed exactly as specified (and state which base you used!).',
+    },
+    {
+      label: 'Why Liquidity ≠ Profitability',
+      tag: 'Big Picture',
+      tone: 'neutral',
+      detail: 'A firm can post a strong 25% ROI yet have a dangerous 0.5 : 1 Acid-Test Ratio if cash is tied up in unpaid receivables, huge unsold stock, or cash fixed-asset purchases!',
+      example: 'That is why banks examine BOTH Profitability (Section 5.5) AND Liquidity (Section 5.6) before approving any business loan.',
+      examTip: 'In Paper 2 essays, ALWAYS comment on BOTH profitability AND liquidity — never just one!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Computing Current Ratio, Acid-Test Ratio & Return on Investment From a Balance Sheet"
+  marks={12}
+  problem={
+    <>
+      <p>
+        <strong>Scenario:</strong> You are given the year-end financial summary of
+        <strong> CoralTech Supplies</strong> as at <strong>31 December 2026</strong>:
+      </p>
+      <ul>
+        <li><strong>Non-Current Assets (NBV):</strong> $70,000</li>
+        <li><strong>Current Assets:</strong> Closing Inventory $21,000; Trade Receivables $11,000; Bank $3,000; Cash $1,000</li>
+        <li><strong>Current Liabilities:</strong> Trade Payables $14,000; Accrued Expenses $2,000; Short-Term Bank Overdraft $4,000</li>
+        <li><strong>Opening Capital (1 Jan 2026):</strong> $66,000 &nbsp;|&nbsp; <strong>Net Profit for 2026:</strong> $16,500 &nbsp;|&nbsp; <strong>Drawings:</strong> $6,500 &nbsp;|&nbsp; <strong>5-Year Bank Loan:</strong> $10,000</li>
+      </ul>
+      <ol>
+        <li>Calculate Total Current Assets, Total Current Liabilities, and Working Capital. <em>[3 marks]</em></li>
+        <li>Calculate to 2 decimal places: (a) <strong>Current Ratio</strong>, (b) <strong>Acid-Test Ratio</strong>, (c) <strong>Return on Opening Capital (ROI)</strong>, and (d) <strong>Return on Capital Employed (ROCE)</strong>. <em>[6 marks]</em></li>
+        <li>Evaluate CoralTech’s short-term liquidity and investment return clearly. <em>[3 marks]</em></li>
+      </ol>
+    </>
+  }
+>
+
+**1. Current Totals & Working Capital (3 marks):**
+- `Total Current Assets` = `$21,000 + $11,000 + $3,000 + $1,000` = **$36,000** *(1 mark)*
+- `Total Current Liabilities` = `$14,000 + $2,000 + $4,000` = **$20,000** *(1 mark)*
+- `Working Capital` = `$36,000 − $20,000` = **$16,000** *(1 mark)*
+
+**2. Financial Position & Return Ratios (6 marks):**
+- **(a) Current Ratio:** `$36,000 ÷ $20,000` = **`1.80 : 1`** *(1.5 marks)*
+- **(b) Acid-Test (Quick) Ratio:** `($36,000 − $21,000) ÷ $20,000` = `$15,000 ÷ $20,000` = **`0.75 : 1`** *(1.5 marks)*
+- **(c) Return on Opening Capital (ROI):** `($16,500 ÷ $66,000) × 100` = **`25.00%`** *(1.5 marks)*
+- **(d) Return on Capital Employed (ROCE):**
+  - *Closing Capital* = `$66,000 + $16,500 − $6,500 = $76,000`
+  - *Capital Employed* = `$76,000 + $10,000 Loan = $86,000` *(= NCA $70,000 + WC $16,000 ✓)*
+  - `ROCE` = `($16,500 ÷ $86,000) × 100` = **`19.19%`** *(1.5 marks)*
+
+**3. Evaluation of Liquidity & Return (3 marks):**
+- **Liquidity:** On the surface, the **Current Ratio of `1.80 : 1`** looks comfortably inside the ideal `1.5:1–2:1` range *(1 mark)*. However, the **Acid-Test Ratio of `0.75 : 1`** sits **below the `1 : 1` safety mark** because **$21,000 (58% of all Current Assets!) is tied up in Closing Inventory** — CoralTech needs to sell stock faster or chase receivables to clear its $4,000 overdraft *(1 mark)*.
+- **Return on Investment:** Both **ROI (`25.0%`)** and **ROCE (`19.19%`)** are **very strong**, comfortably beating normal bank savings interest rates and rewarding the owner well for capital invested *(1 mark)*.
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Liquidity & Financial Position Ratios"
+  items={[
+    {
+      statement: 'Closing Inventory is subtracted from Current Assets when calculating the Acid-Test (Quick) Ratio.',
+      answer: true,
+      explanation: 'Inventory is the least liquid Current Asset because it must be sold first; excluding it tests immediate ability to pay short-term debts.',
+    },
+    {
+      statement: 'A Current Ratio of 0.70 : 1 indicates a strong, comfortable short-term liquidity position.',
+      answer: false,
+      explanation: 'A Current Ratio below 1 : 1 means Current Liabilities EXCEED Current Assets (negative Working Capital) — a serious liquidity danger sign!',
+    },
+    {
+      statement: 'If a business has a Current Ratio of 2.2 : 1 but an Acid-Test Ratio of 0.5 : 1, a very large portion of its Current Assets is tied up in Inventory.',
+      answer: true,
+      explanation: 'A big drop between Current Ratio and Acid-Test Ratio happens strictly because Closing Inventory (the excluded item) makes up most of Current Assets.',
+    },
+    {
+      statement: 'Return on Investment (ROI) is expressed as a ratio such as "2 : 1".',
+      answer: false,
+      explanation: 'ROI (and ROCE) are ALWAYS expressed as a PERCENTAGE (%) — e.g., 18.5%!',
+    },
+    {
+      statement: 'A Return on Investment of 3% is generally weak if a risk-free bank fixed deposit pays 6% interest.',
+      answer: true,
+      explanation: 'An entrepreneur takes far more risk than a bank depositor, so earning less than a safe bank deposit signals underperforming capital.',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s5-06-project"
+  title="Mini-Project: Bank Loan Officer’s Liquidity & ROI Credit Check"
+  duration="25 mins"
+  scenario="You are a bank credit analyst evaluating two businesses applying for a $15,000 expansion loan: Business Alpha has NCA $50,000, Inventory $18,000, Receivables $5,000, Cash $1,000, Current Liabilities $16,000, Opening Capital $54,000, and Net Profit $10,800. Business Beta has NCA $48,000, Inventory $6,000, Receivables $10,000, Bank/Cash $8,000, Current Liabilities $12,000, Opening Capital $56,000, and Net Profit $10,080. Decide which business is the safer borrower!"
+  steps={[
+    'Calculate Working Capital, Current Ratio, Acid-Test Ratio, and ROI (on Opening Capital) for BOTH Business Alpha and Business Beta.',
+    'Arrange all 4 metrics side-by-side in a clean Credit Analyst Scorecard comparing each figure against ideal benchmarks (Current 1.5–2:1, Acid 1:1, ROI vs. 5% bank rate).',
+    'Spot the hidden trap in Business Alpha (look closely at its Current Ratio vs. Acid-Test Ratio!).',
+    'Write a 3-sentence Loan Committee Recommendation approving one borrower and stating 2 conditions the other borrower must fix before re-applying.',
+  ]}
+  deliverables={[
+    'Side-by-side Credit Analyst Scorecard for Alpha and Beta',
+    'Hidden-Trap Diagnosis comparing Alpha’s Current vs. Acid-Test Ratio',
+    '3-sentence Loan Committee Recommendation',
+  ]}
+  rubric={[
+    'Business Alpha exact figures: CA $24,000; CL $16,000; WC $8,000; Current Ratio 1.50 : 1; Acid-Test 0.38 : 1 ($6,000 ÷ $16,000 — danger!); ROI 20.0%.',
+    'Business Beta exact figures: CA $24,000; CL $12,000; WC $12,000; Current Ratio 2.00 : 1; Acid-Test 1.50 : 1 ($18,000 ÷ $12,000 — very safe!); ROI 18.0%.',
+    'Recommendation sensibly favors Business Beta despite Alpha’s slightly higher ROI because Alpha’s Acid-Test (0.38:1) reveals severe cash illiquidity trapped in $18,000 of stock.',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **Current Ratio** = `CA ÷ CL` → write **`X.XX : 1`** (benchmark `1.5:1 – 2:1`).
+- **Acid-Test Ratio** = `(CA − Stock [− Prepayments]) ÷ CL` → write **`X.XX : 1`** (benchmark `1 : 1`).
+- **ROI / ROCE** = `(Net Profit ÷ Capital [or Capital Employed]) × 100` → write **`%`**!
+:::

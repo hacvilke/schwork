@@ -1,0 +1,231 @@
+---
+id: statement-of-revised-profit
+title: "7.4 Preparing a Statement of Revised Profit"
+sidebar_label: "7.4 Statement of Revised Profit"
+sidebar_position: 4
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 7"
+  section="Control Systems — Error Correction"
+  code="POA-S7-04"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="20 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+After you fix errors in the General Journal and clear the Suspense Account, the owner immediately asks: **"Wait — my Draft Income Statement said I earned $28,400 Net Profit! What is my REAL profit after fixing all these mistakes?"** You do NOT need to redraw the entire Income Statement from scratch! You simply prepare a **Statement of Revised (Corrected) Net Profit** — and one crystal-clear rule tells you in 2 seconds whether any error pushes profit **UP**, **DOWN**, or leaves it **UNCHANGED**!
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | **Statement of Revised Net Profit**, identifying **Nominal (Income Statement) accounts** vs. **Balance Sheet accounts**, and handling **Inventory valuation errors** |
+| **Exam Focus** | Using the **Nominal Account Cr (+Profit) / Dr (−Profit)** rule reliably, explicitly marking Balance-Sheet-only errors as **"No Effect"**, and never flipping the sign on **Opening vs. Closing Inventory** mistakes |
+| **Learning Outcome** | Prepare an accurate vertical Statement of Revised Net Profit starting from any Draft Net Profit and list of discovered errors |
+
+<ObjectivesBox
+  id="poa-s7-04-obj"
+  objectives={[
+    'Identify immediately which error corrections affect Net Profit and which have zero effect on Net Profit.',
+    'Apply the Nominal Account Rule (Credit Nominal = Add to Profit; Debit Nominal = Deduct from Profit) accurately.',
+    'Determine the exact profit impact of overstating or understating Opening Inventory and Closing Inventory.',
+    'Prepare a neat vertical Statement of Revised Net Profit starting from Draft Net Profit.',
+  ]}
+/>
+
+---
+
+## 1. The 2-Second Profit-Impact Filter
+
+Look straight at the **Correcting Journal Entry** you just wrote in Lesson 7.2/7.3:
+- **Does the entry touch a NOMINAL (Income Statement) account** *(Sales, Purchases, Returns, Carriage, Discount Allowed/Received, Rent, Wages, Repairs, Bad Debts, Depreciation, Other Income)*?
+  - If the correcting entry **CREDITS** that Nominal Account → **ADD to Draft Profit (`+`)**! *(Either Revenue went UP, or an Expense/Purchase went DOWN!)*
+  - If the correcting entry **DEBITS** that Nominal Account → **DEDUCT from Draft Profit (`−`)**! *(Either an Expense/Purchase went UP, or Revenue went DOWN!)*
+- **Does the entry touch ONLY Balance Sheet accounts** *(Debtors, Creditors, Bank, Cash, Machinery, Drawings, Capital, Loans, Suspense)*?
+  - → **NO EFFECT on Net Profit (`$0`)!** *(Always write `"No Effect"` in your workings so the examiner sees you checked it!)*
+
+### Watch Out for Inventory Valuation Errors! (Classic Exam Trap)
+
+| Inventory Mistake Discovered | Effect on COGS | Effect on Draft Profit | How to Fix Draft Profit |
+| :--- | :---: | :---: | :---: |
+| **Closing Inventory OVERVALUED** *(too high)* | COGS was too LOW | Profit was **TOO HIGH** | **DEDUCT (`−`)** from Draft Profit! |
+| **Closing Inventory UNDERVALUED** *(too low)* | COGS was too HIGH | Profit was **TOO LOW** | **ADD (`+`)** to Draft Profit! |
+| **Opening Inventory OVERVALUED** *(too high)* | COGS was too HIGH | Profit was **TOO LOW** | **ADD (`+`)** to Draft Profit! |
+| **Opening Inventory UNDERVALUED** *(too low)* | COGS was too LOW | Profit was **TOO HIGH** | **DEDUCT (`−`)** from Draft Profit! |
+
+---
+
+## 2. Diagram 1: The Instant "Does It Touch Profit?" Filter
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-7/04-revised-profit-impact-filter.svg"
+  alt="Three-column filter showing when correcting journal entries ADD to Draft Net Profit (Credit Nominal), DEDUCT from Draft Net Profit (Debit Nominal), or have ZERO effect (Balance Sheet accounts only)."
+  caption="Diagram 1 (Static Reference): Memorize the 3-word magic trick — Cr Nominal = +Profit | Dr Nominal = −Profit | Balance Sheet only = $0!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive Error-to-Profit Decision Hub
+
+<InteractiveDiagram
+  title="Interactive Hub: Tap Any Discovered Error to Trace Its Exact Effect on Draft Net Profit"
+  layout="hub"
+  centerLabel="Revised Profit"
+  centerSublabel="Nominal Filter"
+  instruction="Select any of the 4 tricky errors below to check WHY profit moves up, moves down, or stays unchanged."
+  nodes={[
+    {
+      label: 'Capital Exp. Put in Repairs',
+      tag: 'ADD (+Profit)',
+      tone: 'positive',
+      detail: 'Buying a $2,400 computer was wrongly debited to Office Expenses. Correcting entry: Dr Computers $2,400 / Cr Office Expenses $2,400.',
+      example: 'Because we CREDITED a Nominal Expense account (cutting overstated expenses!), we ADD +$2,400 back to Draft Net Profit!',
+      examTip: 'Removing Drawings wrongly put in Wages (Dr Drawings / Cr Wages) ALSO credits a Nominal account → ADD to Profit!',
+    },
+    {
+      label: 'Omitted Expense / Overcast Sales',
+      tag: 'DEDUCT (−Profit)',
+      tone: 'warning',
+      detail: 'Either an unpaid/unposted expense was missing (Dr Electricity / Cr Suspense) OR Sales were overstated (Dr Sales / Cr Suspense).',
+      example: 'In BOTH cases, the correcting entry DEBITS a Nominal Account → DEDUCT the amount from Draft Net Profit!',
+      examTip: 'Always double-check by intuition: "Adding a missing expense makes true profit LOWER!"',
+    },
+    {
+      label: 'Closing Stock Overvalued',
+      tag: 'DEDUCT (−Profit)',
+      tone: 'warning',
+      detail: 'Remember: COGS = Opening Stock + Purchases − Closing Stock! If Closing Stock was written $1,150 too high, COGS was $1,150 too low, making Draft Profit $1,150 too high!',
+      example: 'Fixing an overvalued Closing Inventory requires DEDUCTING $1,150 from Draft Net Profit (and lowering Closing Stock on the Balance Sheet!).',
+      examTip: 'Opening Stock works in the exact OPPOSITE direction to Closing Stock — test it with small numbers ($10) if unsure!',
+    },
+    {
+      label: 'Wrong Debtor / Two Expenses Swapped',
+      tag: 'NO EFFECT ($0)',
+      tone: 'neutral',
+      detail: 'Commission error between R. Singh & S. Singh touches only Current Assets. And putting Electricity ($300) into Water ($300) raises one expense +$300 and lowers another −$300 → net $0!',
+      example: 'Dr Water $300 / Cr Electricity $300 → −$300 and +$300 cancel out completely! Total Expenses and Net Profit stay 100% unchanged!',
+      examTip: 'Write "(No effect on Net Profit)" on a neat line or note — examiners love seeing you spot zero-impact traps!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Preparing a Complete Statement of Revised Net Profit"
+  marks={10}
+  problem={
+    <>
+      <p>
+        <strong>Scenario:</strong> <strong>PalmTree Distributors</strong> prepared a Draft Income
+        Statement for the year ended <strong>31 December 2026</strong> showing a
+        <strong> Draft Net Profit of $28,400</strong>. Before finalizing the accounts, six errors
+        were uncovered:
+      </p>
+      <ol>
+        <li>The Sales Book total was undercast by <strong>$900</strong>.</li>
+        <li>A new office computer costing <strong>$2,400</strong> was wrongly debited to <em>Office Expenses</em>.</li>
+        <li>Electricity Expense of <strong>$650</strong> paid by cheque was omitted from the Electricity Account.</li>
+        <li>The Purchases Book total was overcast by <strong>$500</strong>.</li>
+        <li>Closing Inventory on 31 December 2026 was <strong>overvalued by $1,150</strong>.</li>
+        <li>Cash of <strong>$700</strong> received from credit customer R. Singh was credited to S. Singh’s account.</li>
+      </ol>
+      <p>
+        Prepare the <strong>Statement of Revised Net Profit</strong> for PalmTree Distributors for
+        the year ended <strong>31 December 2026</strong>. <em>[10 marks]</em>
+      </p>
+    </>
+  }
+>
+
+**PalmTree Distributors**
+**Statement of Revised Net Profit for the year ended 31 December 2026** *(1 mark)*
+
+| Details | $ | $ |
+| :--- | ---: | ---: |
+| **Draft Net Profit as originally calculated** | | **28,400** |
+| **Add:** *(Items increasing profit)* | | |
+| 1. Sales Book undercast corrected *(`Cr Sales`)* | 900 | |
+| 2. New computer removed from Office Expenses *(`Cr Office Exp.`)* | 2,400 | |
+| 4. Purchases Book overcast corrected *(`Cr Purchases`)* | 500 | **3,800** |
+| | | **32,200** |
+| **Less:** *(Items decreasing profit)* | | |
+| 3. Omitted Electricity Expense added *(`Dr Electricity`)* | 650 | |
+| 5. Closing Inventory overvaluation corrected *(raises COGS)* | 1,150 | **(1,800)** |
+| **Revised (Corrected) Net Profit for the Year** | | **$30,400** |
+
+*Note on Error 6 (1 mark):* Posting $700 from R. Singh to S. Singh (`Dr S. Singh / Cr R. Singh`) involves ONLY personal accounts (Balance Sheet Trade Receivables) — **No effect on Net Profit**.
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Statement of Revised Profit"
+  items={[
+    {
+      statement: 'If a correcting journal entry CREDITS a Nominal Account (such as Sales, Purchases, or Repairs), the amount must be ADDED to Draft Net Profit.',
+      answer: true,
+      explanation: 'Yes! Crediting a Revenue raises income, and crediting an Expense/Purchase lowers costs — both increase Net Profit!',
+    },
+    {
+      statement: 'Correcting an Error of Commission where a $500 receipt from Debtor A was posted to Debtor B increases Draft Net Profit by $500.',
+      answer: false,
+      explanation: 'Neither Debtor A nor Debtor B is an Income Statement account — this error has ZERO effect on Net Profit!',
+    },
+    {
+      statement: 'If Closing Inventory was overvalued by $1,000, Draft Net Profit was overstated by $1,000 and $1,000 must be DEDUCTED.',
+      answer: true,
+      explanation: 'Overvalued Closing Stock subtracted too much from COGS, making Draft Profit $1,000 too high — deduct $1,000 to fix it!',
+    },
+    {
+      statement: 'If the owner’s personal Drawings of $600 were mistakenly debited to Wages Expense, correcting the error will INCREASE Net Profit by $600.',
+      answer: true,
+      explanation: 'Correcting entry is Dr Drawings $600 / Cr Wages $600 — removing $600 of fake Wages Expense boosts Net Profit by +$600!',
+    },
+    {
+      statement: 'Swapping two Operating Expenses (e.g. posting $400 of Electricity into Insurance) changes Net Profit by $400.',
+      answer: false,
+      explanation: 'Both Electricity and Insurance are Operating Expenses — increasing one by $400 and reducing the other by $400 leaves Total Expenses and Net Profit 100% unchanged!',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s7-04-project"
+  title="Mini-Project: Revised Profit Statement for BlueRidge Traders"
+  duration="20 mins"
+  scenario="BlueRidge Traders calculated a Draft Net Profit of $19,500 for 2026 before finding six errors: (1) Discount Allowed of $240 was omitted from the Discount Allowed Account; (2) Shop Repairs of $1,200 were wrongly debited to the Premises Account; (3) Discount Received of $360 was omitted from the Discount Received Account; (4) Opening Inventory on 1 January 2026 had been overvalued by $800; (5) Owner’s personal cash Drawings of $500 were wrongly debited to Wages Expense; (6) A $950 cheque paid to creditor Metro Ltd was debited to Motor Ltd."
+  steps={[
+    'For all 6 errors, tag each one as: ADD (+), DEDUCT (−), or NO EFFECT ($0) — pay special attention to Error 4 (OPENING Inventory, not Closing!).',
+    'Construct a cleanly ruled vertical Statement of Revised Net Profit for BlueRidge Traders for the year ended 31 December 2026.',
+    'Add a clear 1-line note explaining why Error 6 was excluded from the calculation.',
+    'Write a 2-sentence explanation proving WHY an overvalued Opening Inventory (Error 4) made Draft Profit TOO LOW.',
+  ]}
+  deliverables={[
+    '6-error Profit-Impact Tag Sheet',
+    'Formatted Statement of Revised Net Profit for BlueRidge Traders',
+    '1-line No-Effect note + 2-sentence Opening Inventory proof',
+  ]}
+  rubric={[
+    'Additions (+$1,660 total): Error 3 Discount Received (+$360), Error 4 Opening Inventory overvaluation (+$800), Error 5 Drawings removed from Wages (+$500).',
+    'Deductions (−$1,440 total): Error 1 Discount Allowed (−$240), Error 2 Repairs removed from Premises (−$1,200). Error 6 = No Effect.',
+    'Final Revised Net Profit = $19,500 + $1,660 − $1,440 = $19,720 exact!',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **Cr Nominal A/c** → **ADD (`+`)** to Draft Profit; **Dr Nominal A/c** → **DEDUCT (`−`)** from Draft Profit; **Balance Sheet only** → **No Effect (`$0`)**!
+- **Closing Stock overvalued** → **DEDUCT**; **Opening Stock overvalued** → **ADD**!
+:::

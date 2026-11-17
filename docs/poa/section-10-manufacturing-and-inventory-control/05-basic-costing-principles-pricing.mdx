@@ -1,0 +1,254 @@
+---
+id: basic-costing-principles-pricing
+title: "10.5 Applying Basic Costing Principles (Cost-Plus, Job & Absorption Costing)"
+sidebar_label: "10.5 Cost-Plus & Absorption"
+sidebar_position: 5
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 10"
+  section="Manufacturing & Inventory Control — Manufacturing Accounts"
+  code="POA-S10-05"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="25 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+When a customer walks into a print shop, custom furniture workshop, or bakery and asks for a **price quote BEFORE the job is even built**, how does the owner avoid quoting too low and losing money? By combining **Absorption Costing** *(computing an **Overhead Absorption Rate — OAR** so every custom job carries its fair slice of factory rent, electricity, and machinery depreciation!)* with **Cost-Plus Pricing** *(adding a target **Profit Mark-Up** or **Margin** onto Full Cost to set the Quoted Selling Price)*!
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | **Absorption Costing** (`OAR = Budgeted Factory Overheads ÷ Budgeted Labor/Machine Hours`), **Job / Batch Costing**, and **Cost-Plus Pricing** (`Mark-Up % on Cost` vs. `Margin % on Selling Price`) |
+| **Exam Focus** | Computing **OAR** accurately, absorbing overheads into a specific custom job, never confusing **Mark-Up** with **Margin**, and evaluating **pros &amp; cons of Cost-Plus Pricing** |
+| **Learning Outcome** | Apply absorption costing and cost-plus pricing principles to calculate full job costs and quote profitable selling prices |
+
+<ObjectivesBox
+  id="poa-s10-05-obj"
+  objectives={[
+    'Define Absorption Costing and Job/Batch Costing and explain why overheads must be absorbed into custom job quotes.',
+    'Calculate an Overhead Absorption Rate (OAR) based on Direct Labor Hours or Machine Hours.',
+    'Build a complete Job Cost Sheet to calculate Prime Cost, Absorbed Factory Overheads, and Total Full Cost.',
+    'Calculate Selling Price accurately using both Mark-Up (% on Cost) and Gross Profit Margin (% on Selling Price), and evaluate Cost-Plus Pricing.',
+  ]}
+/>
+
+---
+
+## 1. Absorption Costing & Cost-Plus Formulas
+
+<FormulaCard
+  title="OAR, Mark-Up & Margin Formulas (Exam Essentials!)"
+  onFormulaSheet={false}
+  summary="Check carefully whether the profit % is quoted on COST (Mark-Up) or on SELLING PRICE (Margin)!"
+>
+
+$$
+\textbf{Overhead Absorption Rate (OAR)} = \frac{\text{Budgeted Factory Overheads}}{\text{Budgeted Direct Labor Hours (or Machine Hours)}}
+$$
+
+$$
+\textbf{Cost-Plus Selling Price (Mark-Up on Cost)} = \text{Total Cost} \times \left(1 + \text{Mark-Up \%}\right)
+$$
+
+$$
+\textbf{Selling Price From Margin (\% of Sales)} = \frac{\text{Total Cost}}{1 - \text{Margin \%}}
+$$
+
+</FormulaCard>
+
+### Mark-Up vs. Margin Quick Conversion Check!
+Suppose **Total Job Cost = `$4,000`**:
+- **With `25%` MARK-UP *(25% of Cost)*:** Profit = `25% × $4,000 = $1,000` → **Selling Price = `$5,000`**! *(Notice: `$1,000 ÷ $5,000 = 20%` Margin!)*
+- **With `25%` MARGIN *(25% of Selling Price)*:** Cost (`$4,000`) equals **`75%`** of Selling Price → **Selling Price = `$4,000 ÷ 0.75 = $5,333.33`** *(Profit = `$1,333.33`!)*
+- **Key Takeaway:** For the exact same percentage (`25%`), a **Margin ALWAYS produces a HIGHER selling price** than a **Mark-Up**!
+
+### Advantages &amp; Limitations of Cost-Plus Pricing
+- **Advantages:** Simple and fast to calculate; guarantees that ALL direct costs AND fixed overheads are recovered when budgeted volume is met; feels transparent and fair to clients on custom jobs.
+- **Limitations:** **Ignores market demand &amp; competitor prices** *(if your quote is `$5,000` and a rival quotes `$4,400`, you lose the order!)*; gives **weak incentive to cut factory waste** *(higher cost simply gets marked up into a higher price!)*.
+
+---
+
+## 2. Diagram 1: Absorption Costing & Cost-Plus Pricing Staircase
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-10/05-cost-plus-and-absorption-costing.svg"
+  alt="Staircase diagram illustrating Absorption Costing and Cost-Plus Pricing from Direct Materials and Direct Labor through Overhead Absorption Rate to Full Cost, Profit Mark-Up, and Quoted Selling Price."
+  caption="Diagram 1 (Static Reference): Walk right up Steps 1 to 5 on every Job Costing question — and check the right panel to verify Mark-Up vs. Margin before quoting!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive Costing-Choice Comparator
+
+<InteractiveDiagram
+  title="Interactive Comparator: Absorption Costing, OAR Bases & Pricing Decisions"
+  layout="compare"
+  instruction="Tap any costing decision below to compare the two sides cleanly."
+  nodes={[
+    {
+      label: 'Labor-Hour OAR vs. Machine-Hour OAR',
+      tag: 'Choosing the Base',
+      detail: 'Factories choose the OAR denominator that best reflects how their workshop actually works!',
+      sideALabel: 'Direct Labor Hour Rate',
+      sideAText: 'Best for LABOR-INTENSIVE workshops (custom carpentry, tailoring, repair garages) where human craft hours drive overhead usage!',
+      sideBLabel: 'Machine Hour Rate',
+      sideBText: 'Best for CAPITAL-INTENSIVE automated plants (CNC milling, printing presses, bottling lines) where heavy machines drive power & depreciation!',
+      examTip: 'Always read whether the problem gives budgeted Direct Labor Hours or budgeted Machine Hours!',
+    },
+    {
+      label: 'Mark-Up vs. Gross Margin',
+      tag: '#1 Pricing Trap!',
+      detail: 'Applying 25% to a $4,000 job cost.',
+      sideALabel: '25% Mark-Up (on Cost)',
+      sideAText: 'Profit = 25% × $4,000 = $1,000 → Quoted Price = $5,000! (Equals a 20% Gross Margin on Sales!)',
+      sideBLabel: '25% Margin (on Selling Price)',
+      sideBText: 'Cost is 75% of Price → Price = $4,000 ÷ 0.75 = $5,333.33! (Profit = $1,333.33 — ALWAYS higher than 25% Mark-Up!)',
+      examTip: 'Quick memory check: Mark-UP divides by Cost (goes UP from cost); MArgin divides by SAles!',
+    },
+    {
+      label: 'Absorption Costing vs. Direct-Cost-Only Pricing',
+      tag: 'Overhead Recovery',
+      detail: 'Why can’t a workshop quote prices based ONLY on Prime Cost?',
+      sideALabel: 'Absorption Costing (Full Cost)',
+      sideAText: 'Loads EVERY job with its fair share of fixed factory rent, supervision & machinery depreciation — ensuring long-run business survival!',
+      sideBLabel: 'Forgetting Factory Overheads',
+      sideBText: 'Quoting just above Prime Cost ($2,800) leaves the $60,000 annual factory rent & depreciation unpaid → business looks busy yet goes bankrupt!',
+      examTip: 'Absorption costing is also required by accounting standards (IAS 2) when valuing manufacturing inventory for financial statements!',
+    },
+    {
+      label: 'Cost-Plus vs. Market-Driven Pricing',
+      tag: 'Strategy Check',
+      detail: 'Weighing internal cost formulas against real-world buyers.',
+      sideALabel: 'Cost-Plus Pricing',
+      sideAText: 'Great for one-off bespoke orders (wedding cakes, custom cabinetry, construction tenders) where no standard shelf price exists.',
+      sideBLabel: 'Competitive / Market Pricing',
+      sideBText: 'Essential for everyday mass-market items (bread, soap, fuel) — you MUST check competitor prices first, then engineer costs down to earn a profit!',
+      examTip: 'In evaluation questions, name BOTH one advantage (guarantees full cost recovery) AND one limitation (ignores rivals/customer willingness to pay)!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Job Costing, Overhead Absorption Rate & Mark-Up vs. Margin Quote (Kingston Custom Cabinetry)"
+  marks={12}
+  problem={
+    <>
+      <p>
+        <strong>Scenario:</strong> <strong>Kingston Custom Cabinetry</strong> budgets annual
+        <strong> Factory Overheads of $60,000</strong> and <strong>4,000 Direct Labor Hours</strong>
+        for 2026. A corporate client requests a quotation for <strong>Job #408 (10 custom mahogany
+        conference desks)</strong> requiring:
+      </p>
+      <ul>
+        <li>Direct Materials (mahogany &amp; hardware): <strong>$1,600</strong></li>
+        <li>Direct Labor: <strong>80 Direct Labor Hours at $12.50 per hour</strong></li>
+        <li>Direct Expense (custom brass logo engraving): <strong>$200</strong></li>
+      </ul>
+      <ol>
+        <li>Calculate the workshop’s <strong>Overhead Absorption Rate (OAR)</strong> per Direct Labor Hour. <em>[2 marks]</em></li>
+        <li>Prepare the <strong>Job Cost Sheet for Job #408</strong> showing Prime Cost, Absorbed Factory Overheads, Total Full Cost, and Full Cost per desk. <em>[5 marks]</em></li>
+        <li>Calculate the Quoted Selling Price (total and per desk) under: (a) a <strong>25% Mark-Up on Cost</strong>; and (b) a <strong>25% Profit Margin on Selling Price</strong>! <em>[5 marks]</em></li>
+      </ol>
+    </>
+  }
+>
+
+### 1. Overhead Absorption Rate (OAR) *(2 marks)*
+$$\text{OAR} = \frac{\text{Budgeted Factory Overheads}}{\text{Budgeted Direct Labor Hours}} = \frac{\$60,000}{4,000\text{ hrs}} = \mathbf{\$15.00\text{ per Direct Labor Hour}}$$
+
+### 2. Job Cost Sheet — Job #408 *(10 Custom Conference Desks — 5 marks)*
+| Cost Element | Working | $ |
+| :--- | :--- | ---: |
+| Direct Materials | Given | 1,600 |
+| Direct Labor | `80 hrs × $12.50/hr` | 1,000 |
+| Direct Expense *(Logo Engraving)* | Given | 200 |
+| **PRIME COST** | | **2,800** |
+| **Add: Absorbed Factory Overheads** | `80 hrs × $15.00 OAR` | **1,200** |
+| **TOTAL FULL PRODUCTION COST** | | **$4,000** |
+| **Full Production Cost per Desk** | `$4,000 ÷ 10 desks` | **$400.00** |
+
+### 3. Quoted Selling Price: Mark-Up vs. Margin *(5 marks)*
+- **(a) Using `25%` Mark-Up on Cost *(2.5 marks)*:**
+  - Profit = `25% × $4,000` = **`$1,000`**
+  - **Total Quote** = `$4,000 + $1,000` = **`$5,000.00`** (**`$500.00` per desk**!)
+- **(b) Using `25%` Profit Margin on Selling Price *(2.5 marks)*:**
+  - Since Profit = `25%` of Selling Price, Total Cost (`$4,000`) = **`75%`** of Selling Price!
+  - **Total Quote** = `$4,000 ÷ 0.75` = **`$5,333.33`** (**`$533.33` per desk**; Profit = `$1,333.33` → Check: `$1,333.33 ÷ $5,333.33 = 25%` ✓!).
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Absorption Costing & Cost-Plus Pricing"
+  items={[
+    {
+      statement: 'Absorption Costing ensures that every product or custom job absorbs a fair share of Factory Overheads in addition to its Prime Cost.',
+      answer: true,
+      explanation: 'Correct! Full Production Cost = Prime Cost + Absorbed Factory Overheads.',
+    },
+    {
+      statement: 'If Budgeted Factory Overheads are $48,000 and Budgeted Machine Hours are 3,000, the Overhead Absorption Rate is $16.00 per Machine Hour.',
+      answer: true,
+      explanation: '$48,000 ÷ 3,000 machine hours = $16.00 per machine hour exact!',
+    },
+    {
+      statement: 'Applying a 20% Mark-Up on Cost produces the exact same Selling Price as applying a 20% Gross Profit Margin on Sales.',
+      answer: false,
+      explanation: 'False! On a $100 cost, 20% Mark-Up gives $120 selling price, whereas 20% Margin ($100 ÷ 0.80) gives $125 selling price!',
+    },
+    {
+      statement: 'A major weakness of Cost-Plus Pricing is that it ignores what competitors are charging and what customers are willing to pay.',
+      answer: true,
+      explanation: 'Spot on! Cost-plus focuses purely on internal costs — you must still reality-check the quote against the market!',
+    },
+    {
+      statement: 'A highly automated bottling plant with very few human workers should generally absorb overheads using a Machine-Hour Rate rather than a Direct-Labor-Hour Rate.',
+      answer: true,
+      explanation: 'Yes — match the OAR base to the true cost driver (machines in automated plants; labor hours in hand-craft workshops)!',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s10-05-project"
+  title="Mini-Project: Custom Batch Price Quotation for Montego Custom T-Shirts"
+  duration="20 mins"
+  scenario="Montego Custom T-Shirts operates automated screen-printing presses with Budgeted Annual Factory Overheads of $48,000 and Budgeted Annual Machine Hours of 3,000 hours. A local charity requests a quote for Job #215 (a batch of 200 Event T-Shirts) requiring: Direct Materials (blank shirts & ink) $900; Direct Labor (30 hours @ $14.00/hr); Screen-Printing Press Time (20 Machine Hours). Management applies a 25% Mark-Up on Full Cost."
+  steps={[
+    'Calculate the Machine-Hour Overhead Absorption Rate (OAR) and explain in 1 sentence why Machine Hours beats Labor Hours for an automated printing press.',
+    'Prepare a neat Job Cost Sheet for Job #215 computing Prime Cost, Absorbed Overheads, Total Full Cost, and Full Cost per T-Shirt.',
+    'Add the 25% Mark-Up on Cost to determine the Total Quoted Selling Price and Selling Price per T-Shirt.',
+    'If a rival print shop offers the charity $9.75/shirt, suggest 2 practical actions Montego Custom T-Shirts could evaluate before walking away from the order!',
+  ]}
+  deliverables={[
+    'OAR Calculation + 1-sentence Base Justification',
+    'Complete Job Cost Sheet & Cost-Plus Quote for Job #215',
+    '2 practical competitive response ideas',
+  ]}
+  rubric={[
+    'OAR = $48,000 ÷ 3,000 machine hrs = $16.00 per machine hour.',
+    'Job Cost Sheet: Direct Materials $900 + Direct Labor $420 (30 × $14) = Prime Cost $1,320 + Absorbed Overheads $320 (20 hrs × $16) = Total Full Cost $1,640 ($8.20/shirt)!',
+    '25% Mark-Up (+$410) → Quoted Selling Price = $2,050 ($10.25/shirt)! Note: $9.75/shirt still beats $8.20 full cost by $1.55/shirt ($310 profit!) — lowering mark-up slightly or negotiating bulk blank-shirt discount wins the job profitably!',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **OAR** = `Budgeted Factory Overheads ÷ Budgeted Labor (or Machine) Hours`.
+- **Full Job Cost** = `Direct Materials + Direct Labor + Direct Expenses + (Job Hours × OAR)`.
+- **Mark-Up** = `% × Cost`; **Margin** = `Cost ÷ (1 − Margin %)`.
+:::

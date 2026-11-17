@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 420" fill="none" role="img" aria-label="How to Interpret Every Debit and Credit Entry Inside a Ledger T-Account">
+  <rect width="820" height="420" rx="12" fill="#1B365D"/>
+  <rect x="14" y="14" width="792" height="392" rx="10" stroke="#2D507C" stroke-width="1.2"/>
+
+  <!-- Header -->
+  <text x="34" y="46" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="18" font-weight="700">Reading Ledger Accounts Like a Detective</text>
+  <text x="34" y="66" fill="#9DD9CB" font-family="monospace" font-size="11.5">REVERSE-ENGINEER ANY T-ACCOUNT LINE BACK INTO ITS EXACT BUSINESS TRANSACTION</text>
+
+  <!-- Top Annotated Customer Account -->
+  <rect x="34" y="88" width="752" height="194" rx="10" fill="#122440" stroke="#6BC4B0" stroke-width="1.8"/>
+  <rect x="34" y="88" width="752" height="30" rx="9" fill="#4E8577"/>
+  <text x="410" y="108" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="13" font-weight="800">Sample Account: M. Clarke Account (Sales Ledger — Credit Customer)</text>
+
+  <line x1="410" y1="118" x2="410" y2="282" stroke="#F5A352" stroke-width="2"/>
+
+  <!-- Left (Dr) Entries + Meanings -->
+  <g font-family="monospace" font-size="10">
+    <text x="50" y="138" fill="#6BC4B0" font-weight="700">Dr SIDE (INCREASES DEBT OWED TO US)</text>
+    <text x="50" y="162" fill="#FFFFFF">May 1  Balance b/d   $400</text>
+    <text x="234" y="162" fill="#9DD9CB" font-family="system-ui, sans-serif" font-size="9.5">← Owed us $400 at start</text>
+
+    <text x="50" y="188" fill="#FFFFFF">May 6  Sales         $900</text>
+    <text x="234" y="188" fill="#9DD9CB" font-family="system-ui, sans-serif" font-size="9.5">← Sold $900 on credit</text>
+
+    <text x="50" y="214" fill="#F5A352">May19  Bank (Dish.)  $300</text>
+    <text x="234" y="214" fill="#F5A352" font-family="system-ui, sans-serif" font-size="9.5">← Cheque bounced!</text>
+
+    <text x="50" y="264" fill="#6BC4B0" font-weight="800">Jun 1  Balance b/d   $550</text>
+    <text x="234" y="264" fill="#6BC4B0" font-family="system-ui, sans-serif" font-size="9.5" font-weight="700">← Still owes us $550!</text>
+  </g>
+
+  <!-- Right (Cr) Entries + Meanings -->
+  <g font-family="monospace" font-size="10">
+    <text x="426" y="138" fill="#F5A352" font-weight="700">Cr SIDE (REDUCES DEBT OWED TO US)</text>
+    <text x="426" y="162" fill="#FFFFFF">May 9  Returns In    $100</text>
+    <text x="612" y="162" fill="#FDEFDF" font-family="system-ui, sans-serif" font-size="9.5">← Returned $100 goods</text>
+
+    <text x="426" y="188" fill="#FFFFFF">May14  Bank          $900</text>
+    <text x="612" y="188" fill="#FDEFDF" font-family="system-ui, sans-serif" font-size="9.5">← Paid us $900 cheque</text>
+
+    <text x="426" y="214" fill="#FFFFFF">May14  Disc. All.     $50</text>
+    <text x="612" y="214" fill="#FDEFDF" font-family="system-ui, sans-serif" font-size="9.5">← Earned $50 cash disc.</text>
+
+    <text x="426" y="242" fill="#A5C0D6">May31  Balance c/d   $550</text>
+    <text x="612" y="242" fill="#A5C0D6" font-family="system-ui, sans-serif" font-size="9.5">← Closing balance</text>
+  </g>
+
+  <!-- Bottom 3 Detective Formula Steps -->
+  <rect x="34" y="302" width="240" height="86" rx="8" fill="#122440" stroke="#6BC4B0" stroke-width="1.3"/>
+  <text x="48" y="322" fill="#6BC4B0" font-family="monospace" font-size="10" font-weight="700">CLUE 1 · READ THE TITLE</text>
+  <text x="48" y="340" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="10.5">Is it a Customer (Asset), Supplier</text>
+  <text x="48" y="356" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="10.5">(Liability), Expense, or Asset A/c?</text>
+  <text x="48" y="374" fill="#9DD9CB" font-family="system-ui, sans-serif" font-size="10">Check whether b/d is Dr or Cr!</text>
+
+  <rect x="290" y="302" width="240" height="86" rx="8" fill="#122440" stroke="#F5A352" stroke-width="1.3"/>
+  <text x="304" y="322" fill="#F5A352" font-family="monospace" font-size="10" font-weight="700">CLUE 2 · READ SIDE + DETAIL</text>
+  <text x="304" y="340" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="10.5">An entry on the Dr side of X with</text>
+  <text x="304" y="356" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="10.5">Detail "Y" means: <tspan font-weight="700" fill="#FFFFFF">Dr X · Cr Y</tspan>!</text>
+  <text x="304" y="374" fill="#FDEFDF" font-family="system-ui, sans-serif" font-size="10">Works on 100% of T-accounts!</text>
+
+  <rect x="546" y="302" width="240" height="86" rx="8" fill="#122440" stroke="#8CC4B4" stroke-width="1.3"/>
+  <text x="560" y="322" fill="#9DD9CB" font-family="monospace" font-size="10" font-weight="700">CLUE 3 · CHECK RARE FLIPS</text>
+  <text x="560" y="340" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="10.5">Credit b/d on a Customer A/c =</text>
+  <text x="560" y="356" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="10.5">Customer overpaid (we owe them)!</text>
+  <text x="560" y="374" fill="#F5A352" font-family="system-ui, sans-serif" font-size="10">Debit b/d on Supplier = We overpaid!</text>
+</svg>

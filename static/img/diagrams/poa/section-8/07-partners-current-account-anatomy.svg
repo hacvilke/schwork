@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" role="img" aria-label="Anatomy of columnar Partners Current Accounts showing every Debit deduction and Credit reward plus Credit vs Debit closing balances">
+  <defs>
+    <style>
+      .title { font: 700 20px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .sub { font: 500 13px system-ui, -apple-system, sans-serif; fill: #4A5560; }
+      .hdr { font: 700 14px system-ui, -apple-system, sans-serif; fill: #FCFBF8; }
+      .h3 { font: 700 13px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .body { font: 500 12px system-ui, -apple-system, sans-serif; fill: #222222; }
+      .sage { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #2E6359; }
+      .coral { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #C84E24; }
+    </style>
+  </defs>
+
+  <rect width="920" height="460" rx="14" fill="#F8F6F1" stroke="#CEDCD6" stroke-width="1.5"/>
+  <text x="32" y="38" class="title">Partners' Current Accounts (Columnar Layout) — Anatomy &amp; Side Rules</text>
+  <text x="32" y="58" class="sub">Remember: Current Accounts are part of Owners' Equity (normally CREDIT) — so CREDIT = Rewards Earned (+), DEBIT = Amounts Taken Out (−)!</text>
+
+  <!-- Main T-Account Box -->
+  <rect x="32" y="78" width="856" height="284" rx="11" fill="#FCFBF8" stroke="#1B365D" stroke-width="1.8"/>
+  <rect x="32" y="78" width="856" height="36" rx="10" fill="#1B365D"/>
+  <text x="460" y="101" text-anchor="middle" class="hdr">Partners' Current Accounts (Side-by-Side Columns for Partner A &amp; Partner B)</text>
+  <line x1="460" y1="114" x2="460" y2="354" stroke="#1B365D" stroke-width="2"/>
+
+  <!-- Debit Half -->
+  <text x="50" y="136" class="coral">DEBIT SIDE (− Reduces Partner's Claim)</text>
+  <line x1="44" y1="144" x2="448" y2="144" stroke="#CEDCD6"/>
+
+  <rect x="46" y="154" width="400" height="32" rx="6" fill="#FFF3EE"/>
+  <text x="58" y="175" class="body">• Opening Balance b/d *(ONLY if partner started OVERDRAWN!)*</text>
+
+  <rect x="46" y="192" width="400" height="32" rx="6" fill="#F8F6F1" stroke="#CEDCD6"/>
+  <text x="58" y="213" class="h3">• Drawings (Cash or Goods taken during year)</text>
+
+  <rect x="46" y="230" width="400" height="32" rx="6" fill="#FFF3EE"/>
+  <text x="58" y="251" class="h3">• Interest on Drawings (Penalty from Appropriation A/c)</text>
+
+  <rect x="46" y="268" width="400" height="32" rx="6" fill="#F8F6F1" stroke="#CEDCD6"/>
+  <text x="58" y="289" class="coral">• Share of Residual LOSS (if Appropriations &gt; Profit!)</text>
+
+  <rect x="46" y="308" width="400" height="36" rx="6" fill="#EBF2EF"/>
+  <text x="58" y="331" class="sage">• Closing Balance c/d *(Normal Positive Cr b/d next yr!)*</text>
+
+  <!-- Credit Half -->
+  <text x="478" y="136" class="sage">CREDIT SIDE (+ Increases Partner's Claim)</text>
+  <line x1="472" y1="144" x2="876" y2="144" stroke="#CEDCD6"/>
+
+  <rect x="474" y="154" width="400" height="32" rx="6" fill="#EBF2EF"/>
+  <text x="486" y="175" class="body">• Opening Balance b/d *(Normal positive retained profit)*</text>
+
+  <rect x="474" y="192" width="400" height="32" rx="6" fill="#F8F6F1" stroke="#CEDCD6"/>
+  <text x="486" y="213" class="h3">• Interest on Capital (from Appropriation A/c)</text>
+
+  <rect x="474" y="230" width="400" height="32" rx="6" fill="#EBF2EF"/>
+  <text x="486" y="251" class="h3">• Partner's Salary *(unless already paid in cash!)*</text>
+
+  <rect x="474" y="268" width="400" height="32" rx="6" fill="#F8F6F1" stroke="#CEDCD6"/>
+  <text x="486" y="289" class="sage">• Share of Residual PROFIT (from Appropriation A/c)</text>
+
+  <rect x="474" y="308" width="400" height="36" rx="6" fill="#FFF3EE"/>
+  <text x="486" y="331" class="coral">• Unpaid Loan Interest (if owed to partner) &amp; Overdrawn c/d</text>
+
+  <!-- Bottom Meaning Strip -->
+  <rect x="32" y="380" width="856" height="62" rx="10" fill="#2E6359"/>
+  <text x="54" y="405" class="hdr">Reading the Closing Balance Brought Down (Jan 1 Next Year):</text>
+  <text x="54" y="428" style="font: 500 12.2px system-ui; fill: #FCFBF8;">• CREDIT Bal b/d (Normal) = Undrawn profits OWED TO the partner (ADDED in Balance Sheet)  |  DEBIT Bal b/d = OVERDRAWN (SUBTRACTED in Balance Sheet!)</text>
+</svg>

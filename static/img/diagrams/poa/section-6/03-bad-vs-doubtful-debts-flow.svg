@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" role="img" aria-label="Step-by-step workflow distinguishing Bad Debts, Bad Debts Recovered, and Provision for Doubtful Debts">
+  <defs>
+    <style>
+      .title { font: 700 20px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .sub { font: 500 13px system-ui, -apple-system, sans-serif; fill: #4A5560; }
+      .hdr { font: 700 14.5px system-ui, -apple-system, sans-serif; fill: #FCFBF8; }
+      .h3 { font: 700 13.5px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .body { font: 500 12px system-ui, -apple-system, sans-serif; fill: #222222; }
+      .mono { font: 700 11.5px ui-monospace, SFMono-Regular, monospace; fill: #122440; }
+      .sage { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #2E6359; }
+      .coral { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #C84E24; }
+    </style>
+  </defs>
+
+  <rect width="920" height="460" rx="14" fill="#F8F6F1" stroke="#CEDCD6" stroke-width="1.5"/>
+  <text x="32" y="38" class="title">Receivables Adjustment Pipeline: Bad Debts vs. Provision for Doubtful Debts</text>
+  <text x="32" y="58" class="sub">ALWAYS write off definite Bad Debts FIRST, then calculate the Provision % on the REMAINING Trade Receivables!</text>
+
+  <!-- Step 1 -->
+  <rect x="32" y="82" width="268" height="252" rx="11" fill="#FCFBF8" stroke="#C84E24" stroke-width="1.6"/>
+  <rect x="32" y="82" width="268" height="36" rx="10" fill="#C84E24"/>
+  <text x="166" y="105" text-anchor="middle" class="hdr">STEP 1: Bad Debts (Confirmed)</text>
+  <text x="48" y="138" class="h3">Customer is bankrupt / vanished</text>
+  <text x="48" y="158" class="body">• Permanently removed from</text>
+  <text x="58" y="174" class="body">Trade Receivables.</text>
+  <rect x="46" y="190" width="240" height="52" rx="7" fill="#FFF3EE" stroke="#C84E24" stroke-width="1"/>
+  <text x="56" y="210" class="mono">Dr Bad Debts Expense</text>
+  <text x="56" y="229" class="mono">   Cr Debtor's A/c</text>
+  <text x="48" y="264" class="coral">Income Stmt: Operating Expense</text>
+  <text x="48" y="286" class="body">Balance Sheet: Already deducted</text>
+  <text x="48" y="302" class="body">from Trade Receivables!</text>
+  <text x="48" y="324" class="sage">Prudence: Don't overstate Assets!</text>
+
+  <!-- Arrow 1->2 -->
+  <polygon points="306,200 322,208 306,216" fill="#1B365D"/>
+  <line x1="300" y1="208" x2="310" y2="208" stroke="#1B365D" stroke-width="2.5"/>
+
+  <!-- Step 2 -->
+  <rect x="326" y="82" width="268" height="252" rx="11" fill="#FCFBF8" stroke="#1B365D" stroke-width="1.6"/>
+  <rect x="326" y="82" width="268" height="36" rx="10" fill="#1B365D"/>
+  <text x="460" y="105" text-anchor="middle" class="hdr">STEP 2: Provision for Doubtful</text>
+  <text x="342" y="138" class="h3">Prudent ESTIMATE (% of remaining)</text>
+  <text x="342" y="158" class="body">• New Prov = % × Remaining Debtors</text>
+  <text x="342" y="174" class="body">• Compare New Prov vs. Old Prov!</text>
+  <rect x="340" y="190" width="240" height="68" rx="7" fill="#EBF2EF" stroke="#1B365D" stroke-width="1"/>
+  <text x="350" y="209" class="coral">If New &gt; Old (INCREASE):</text>
+  <text x="350" y="225" class="mono">Dr Income Stmt (Expense)</text>
+  <text x="350" y="246" class="sage">If New &lt; Old (DECREASE):</text>
+  <text x="350" y="253" class="body"></text>
+  <text x="342" y="276" class="sage">   Cr Income Stmt (Add to GP!)</text>
+  <text x="342" y="298" class="body">Only the CHANGE goes to IS!</text>
+  <text x="342" y="320" class="h3">FULL New Prov goes on Bal Sheet!</text>
+
+  <!-- Arrow 2->3 -->
+  <polygon points="600,200 616,208 600,216" fill="#1B365D"/>
+  <line x1="594" y1="208" x2="604" y2="208" stroke="#1B365D" stroke-width="2.5"/>
+
+  <!-- Step 3 -->
+  <rect x="620" y="82" width="268" height="252" rx="11" fill="#FCFBF8" stroke="#2E6359" stroke-width="1.6"/>
+  <rect x="620" y="82" width="268" height="36" rx="10" fill="#2E6359"/>
+  <text x="754" y="105" text-anchor="middle" class="hdr">STEP 3: Balance Sheet View</text>
+  <text x="636" y="138" class="h3">Current Assets (Net Realizable)</text>
+  <rect x="634" y="154" width="240" height="106" rx="7" fill="#EBF2EF" stroke="#4E8577" stroke-width="1.2"/>
+  <text x="646" y="177" class="body">Trade Receivables</text>
+  <text x="862" y="177" text-anchor="end" class="mono">$20,000</text>
+  <text x="646" y="198" class="coral">Less: New Bad Debts</text>
+  <text x="862" y="198" text-anchor="end" class="mono">(1,000)</text>
+  <text x="646" y="219" class="body">Remaining Receivables</text>
+  <text x="862" y="219" text-anchor="end" class="mono">19,000</text>
+  <text x="646" y="240" class="coral">Less: Prov. (5% × 19k)</text>
+  <text x="862" y="240" text-anchor="end" class="mono">(950)</text>
+  <line x1="646" y1="248" x2="862" y2="248" stroke="#1B365D" stroke-width="1.2"/>
+  <text x="636" y="282" class="sage">Net Trade Receivables = $18,050</text>
+  <text x="636" y="304" class="body">True expected cash collectible</text>
+  <text x="636" y="320" class="body">under the Prudence Concept!</text>
+
+  <!-- Bottom Recovery Box -->
+  <rect x="32" y="356" width="856" height="82" rx="10" fill="#1B365D"/>
+  <text x="54" y="382" class="hdr">BONUS: Bad Debts Recovered (When a written-off debtor unexpectedly pays later!)</text>
+  <text x="54" y="405" style="font: 600 12.5px ui-monospace, monospace; fill: #F5A352;">1) Reinstate: Dr Debtor's A/c  /  Cr Bad Debts Recovered    →    2) Cash paid: Dr Bank/Cash  /  Cr Debtor's A/c</text>
+  <text x="54" y="426" style="font: 500 12px system-ui, sans-serif; fill: #EBF2EF;">Year-End: Close Bad Debts Recovered to Credit of Income Statement (Added to Gross Profit as Other Income!).</text>
+</svg>

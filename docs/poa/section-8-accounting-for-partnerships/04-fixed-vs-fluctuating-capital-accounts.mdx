@@ -1,0 +1,287 @@
+---
+id: fixed-vs-fluctuating-capital-accounts
+title: "8.4 Journal Entries for Partner Capital Accounts (Fixed vs. Fluctuating)"
+sidebar_label: "8.4 Fixed vs. Fluctuating Capital"
+sidebar_position: 4
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 8"
+  section="Accounting for Partnerships — Capital & Appropriation"
+  code="POA-S8-04"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="25 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+When partners start a business, they don’t always invest only cash — Partner A might bring in **cash + a delivery van + inventory**, while Partner B brings in **equipment + receivables minus a creditor bill**! Even more importantly, partnerships must choose between two ways to track owner equity over time: the **Fixed Capital System** *(2 separate accounts per partner — preferred!)* or the **Fluctuating Capital System** *(1 combined account per partner)*. Let’s master both cleanly!
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | **Opening Journal Entries** for forming a partnership (Cash + Non-Cash Assets − Liabilities = Capital), and **Fixed Capital + Current Account** vs. **Fluctuating Capital Account** |
+| **Exam Focus** | Writing accurate opening compound journal entries and explaining **WHY** accountants prefer **Fixed Capital + Current Accounts** |
+| **Learning Outcome** | Record partner formation journal entries accurately and maintain Partner Capital Accounts under both the Fixed and Fluctuating methods |
+
+<ObjectivesBox
+  id="poa-s8-04-obj"
+  objectives={[
+    'Write opening General Journal entries when partners contribute cash, non-cash assets, and/or existing business liabilities.',
+    'Explain the exact difference between the Fixed Capital Account System and the Fluctuating Capital Account System.',
+    'Construct both Fixed (Capital + Current) and Fluctuating Capital Accounts for the exact same year-end figures and prove Total Equity matches.',
+    'State three reasons why most partnerships prefer maintaining Fixed Capital Accounts alongside separate Current Accounts.',
+  ]}
+/>
+
+---
+
+## 1. Opening Journal Entries When Forming a Partnership
+
+When a partner invests **Cash + Non-Cash Assets** (and optionally transfers existing **Liabilities** into the new partnership):
+- **Debit** every **Asset** contributed at its **agreed valuation** *(NOT necessarily its old historical cost!)*
+- **Credit** any **Liability** the partnership agrees to take over
+- **Credit** the **Partner’s Capital Account** with the **Net Value (`Total Assets − Liabilities`)**!
+
+<FormulaCard
+  title="Opening Capital Contribution Entry (General Journal)"
+  onFormulaSheet={false}
+  summary="Always use the AGREED revaluation figure when a partner brings in existing vehicles, equipment, or stock!"
+>
+
+- **Dr** Bank / Cash *(cash invested)*
+- **Dr** Motor Vehicles / Equipment / Inventory / Trade Receivables *(at agreed value)*
+- **Cr** Trade Payables / Bank Loan *(any liability assumed by the firm)*
+- **Cr** **Partner’s Capital Account** *(Net Capital = Assets − Liabilities)*
+
+</FormulaCard>
+
+---
+
+## 2. Fixed Capital System vs. Fluctuating Capital System
+
+| Feature | Fixed Capital System *(Preferred — 2 Accounts!)* | Fluctuating Capital System *(1 Combined Account)* |
+| :--- | :--- | :--- |
+| **Accounts per Partner** | **2:** `Capital Account` + `Current Account` | **1:** Single `Capital Account` only |
+| **What goes into Capital A/c?** | **ONLY permanent Capital** *(opening capital + permanent additions/withdrawals)* | **EVERYTHING** *(capital, interest on capital, salary, profit share, drawings, interest on drawings)* |
+| **Does Capital Balance change yearly?** | **NO — stays FIXED!** | **YES — fluctuates up or down every year!** |
+| **Can it turn into a Debit balance?** | Capital stays **Credit**; **Current A/c** can turn **Debit** *(overdrawn!)* | Combined Capital could shrink sharply if heavy losses/drawings occur |
+| **Why Accountants Prefer Fixed** | 1. Permanent original capital stays crystal clear<br/>2. Easy to compute **Interest on Capital** &amp; **Capital Ratios**<br/>3. Immediately flags if a partner **overdraws** beyond profit! | Simpler to keep only 1 account, but hides overdrawings inside permanent capital |
+
+---
+
+## 3. Diagram 1: Fixed Capital vs. Fluctuating Capital Map
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-8/04-fixed-vs-fluctuating-capital-map.svg"
+  alt="Side-by-side blueprint comparing the Fixed Capital System (separate permanent Capital Account plus yearly Current Account) against the Fluctuating Capital System (one combined changing account), plus the opening asset-contribution journal entry."
+  caption="Diagram 1 (Static Reference): Both systems produce the EXACT SAME Total Partner Equity — the Fixed System simply keeps permanent investment cleanly separated from yearly earnings & drawings!"
+/>
+
+---
+
+## 4. Diagram 2: Interactive Fixed vs. Fluctuating Comparator
+
+<InteractiveDiagram
+  title="Interactive Comparator: Fixed Capital vs. Fluctuating Capital on 4 Key Accounting Tasks"
+  layout="compare"
+  instruction="Tap any task below to compare how the Fixed System vs. Fluctuating System records it."
+  nodes={[
+    {
+      label: 'Recording Yearly Drawings',
+      tag: 'Where Does It Go?',
+      detail: 'Partner B withdraws $8,250 cash for personal living expenses during 2026.',
+      sideALabel: 'Fixed Capital System',
+      sideAText: 'Debited to Partner B’s CURRENT Account (leaving Partner B’s $35,000 Capital Account 100% untouched!).',
+      sideBLabel: 'Fluctuating Capital System',
+      sideBText: 'Debited directly to Partner B’s CAPITAL Account, shrinking the single Capital balance.',
+      examTip: 'Remember: Even under Fixed Capital, if a partner withdraws cash during the year, post Dr Drawings / Cr Bank first, then transfer Drawings to Current A/c at year-end!',
+    },
+    {
+      label: 'Crediting Salary & Profit Share',
+      tag: 'Year-End Rewards',
+      detail: 'Partner B earns $1,750 Interest on Capital, $6,000 Salary, and $9,500 Share of Residual Profit.',
+      sideALabel: 'Fixed Capital System',
+      sideAText: 'All three are CREDITED to Partner B’s CURRENT Account (+$17,250 Cr → less $8,250 Drawings = +$9,000 Cr Current Bal!).',
+      sideBLabel: 'Fluctuating Capital System',
+      sideBText: 'All three are CREDITED straight to Partner B’s CAPITAL Account ($35,000 + $17,250 − $8,250 = $44,000 Closing Capital!).',
+      examTip: 'Verify the math: Fixed Capital ($35,000) + Current ($9,000) = $44,000 = Fluctuating Capital ($44,000) ✓!',
+    },
+    {
+      label: 'Spotting an Overdrawn Partner',
+      tag: 'Internal Control',
+      detail: 'Partner N. Khan earned $7,500 total profit/interest, yet withdrew $8,500 cash in Drawings!',
+      sideALabel: 'Fixed Capital System (Winner!)',
+      sideAText: 'Khan’s Current Account immediately turns into a RED-FLAG DEBIT Balance of $1,000 — warning partners he is eating into permanent capital!',
+      sideBLabel: 'Fluctuating Capital System',
+      sideBText: 'Khan’s Capital simply drops quietly from $30,000 to $29,000 — hiding the $1,000 overdrawing unless someone checks prior years!',
+      examTip: '"Instantly flags overdrawn partners via a Debit Current Account balance" is a top Paper 2 reason to recommend Fixed Capital!',
+    },
+    {
+      label: 'Investing Brand-New Permanent Cash',
+      tag: 'Rare Capital Change',
+      detail: 'Halfway through Year 3, Partner A injects an extra $10,000 of permanent expansion capital by cheque.',
+      sideALabel: 'Fixed Capital System',
+      sideAText: 'Dr Bank $10,000 / Cr Partner A’s CAPITAL Account $10,000! (New permanent capital DOES go in the Capital A/c — raising Fixed Capital from $50k to $60k!)',
+      sideBLabel: 'Fluctuating Capital System',
+      sideAText: 'Dr Bank $10,000 / Cr Partner A’s CAPITAL Account $10,000 (exact same entry!).',
+      examTip: 'Fixed Capital does NOT mean it can NEVER change — it only changes for genuine permanent capital injections, capital withdrawals, or goodwill/revaluation!',
+    },
+  ]}
+/>
+
+---
+
+## 5. Worked Example
+
+<WorkedExample
+  title="Opening Formation Journal Entries + Fixed vs. Fluctuating Capital Accounts Compared"
+  marks={14}
+  problem={
+    <>
+      <p>
+        <strong>Scenario:</strong> On <strong>1 January 2026</strong>, <strong>A. Singh</strong> and
+        <strong> B. Reid</strong> formed <strong>Singh &amp; Reid Interiors</strong> with these agreed contributions:
+      </p>
+      <ul>
+        <li><strong>A. Singh:</strong> Cash at Bank $25,000; Delivery Van (agreed value) $15,000; Inventory $10,000.</li>
+        <li><strong>B. Reid:</strong> Cash at Bank $18,000; Office Equipment $16,000; Trade Receivables $6,000; and the partnership assumed his Trade Payable of <strong>$5,000</strong>.</li>
+      </ul>
+      <p>
+        At <strong>31 December 2026</strong>, year-end figures were: Interest on Capital (Singh $2,500; Reid $1,750);
+        Partner Salary (Reid $6,000); Share of Residual Profit (Singh $9,500; Reid $9,500);
+        Drawings (Singh $7,000; Reid $8,250).
+      </p>
+      <ol>
+        <li>Write the <strong>Opening General Journal entries</strong> on 1 January 2026 to record each partner’s contribution. <em>[4 marks]</em></li>
+        <li>Prepare the partners’ accounts for 2026 under: (a) the <strong>Fixed Capital System</strong> (Capital + Current) <em>[5 marks]</em>, and (b) the <strong>Fluctuating Capital System</strong> <em>[5 marks]</em>.</li>
+      </ol>
+    </>
+  }
+>
+
+### 1. Opening General Journal Entries *(1 January 2026 — 4 marks)*
+
+| Date | Details &amp; Narration | Dr ($) | Cr ($) |
+| :--- | :--- | ---: | ---: |
+| Jan 1 | Bank | 25,000 | |
+| | Delivery Van | 15,000 | |
+| | Inventory | 10,000 | |
+| | &nbsp;&nbsp;&nbsp;&nbsp;**Capital — A. Singh** | | **50,000** |
+| | *Being agreed cash and non-cash assets introduced by A. Singh as opening capital.* | | |
+| Jan 1 | Bank | 18,000 | |
+| | Office Equipment | 16,000 | |
+| | Trade Receivables | 6,000 | |
+| | &nbsp;&nbsp;&nbsp;&nbsp;Trade Payables *(assumed)* | | 5,000 |
+| | &nbsp;&nbsp;&nbsp;&nbsp;**Capital — B. Reid** *(`$40,000 − $5,000`)* | | **35,000** |
+| | *Being agreed assets less assumed liability introduced by B. Reid as opening capital.* | | |
+
+---
+
+### 2(a). Fixed Capital System *(2 Accounts per Partner — 5 marks)*
+
+**Partners’ Capital Accounts *(Fixed — Unchanged!)***
+
+| Dr (31 Dec) | Singh ($) | Reid ($) | Cr (1 Jan) | Singh ($) | Reid ($) |
+| :--- | ---: | ---: | :--- | ---: | ---: |
+| Balance c/d | **50,000** | **35,000** | Opening Capital | 50,000 | 35,000 |
+| | | | **Jan 1, 2027 Bal b/d** | **50,000** | **35,000** |
+
+**Partners’ Current Accounts *(Yearly Activity)***
+
+| Dr (2026) | Singh ($) | Reid ($) | Cr (2026) | Singh ($) | Reid ($) |
+| :--- | ---: | ---: | :--- | ---: | ---: |
+| Drawings | 7,000 | 8,250 | Interest on Capital | 2,500 | 1,750 |
+| **Dec 31 Bal c/d** | **5,000** | **9,000** | Partner Salary | — | 6,000 |
+| | | | Share of Profit | 9,500 | 9,500 |
+| **Totals** | **12,000** | **17,250** | **Totals** | **12,000** | **17,250** |
+| | | | **Jan 1, 2027 Bal b/d** | **5,000** | **9,000** |
+
+---
+
+### 2(b). Fluctuating Capital System *(1 Combined Account — 5 marks)*
+
+**Partners’ Capital Accounts *(Fluctuating)***
+
+| Dr (2026) | Singh ($) | Reid ($) | Cr (2026) | Singh ($) | Reid ($) |
+| :--- | ---: | ---: | :--- | ---: | ---: |
+| Drawings | 7,000 | 8,250 | Jan 1 Opening Capital | 50,000 | 35,000 |
+| **Dec 31 Bal c/d** | **55,000** | **44,000** | Interest on Capital | 2,500 | 1,750 |
+| | | | Partner Salary | — | 6,000 |
+| | | | Share of Profit | 9,500 | 9,500 |
+| **Totals** | **62,000** | **52,250** | **Totals** | **62,000** | **52,250** |
+| | | | **Jan 1, 2027 Bal b/d** | **55,000** | **44,000** |
+
+**Total Equity Proof:** Singh `$50,000 + $5,000 = $55,000` ✓ | Reid `$35,000 + $9,000 = $44,000` ✓ — **100% identical Total Equity!**
+
+</WorkedExample>
+
+---
+
+## 6. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Fixed vs. Fluctuating Partner Capital Accounts"
+  items={[
+    {
+      statement: 'When a partner contributes an existing Delivery Van into a new partnership, the van is recorded in the partnership books at its AGREED valuation, not necessarily its old cost.',
+      answer: true,
+      explanation: 'Yes — partners must agree on a fair current value for non-cash assets brought in so neither partner is unfairly advantaged.',
+    },
+    {
+      statement: 'Under the Fixed Capital System, a partner’s yearly Drawings and Share of Profit are posted directly inside the Fixed Capital Account.',
+      answer: false,
+      explanation: 'Under the Fixed Capital System, yearly Drawings, Salaries, Interest, and Profit Shares ALL go into the separate CURRENT Account — leaving the Capital Account fixed!',
+    },
+    {
+      statement: 'If a partnership assumes a $4,000 Trade Payable along with $24,000 of assets contributed by a partner, that partner’s opening Capital is credited with $20,000.',
+      answer: true,
+      explanation: 'Net Capital = Total Agreed Assets ($24,000) − Assumed Liabilities ($4,000) = $20,000!',
+    },
+    {
+      statement: 'Both the Fixed Capital System and the Fluctuating Capital System always yield the exact same Total Partner Equity on the Balance Sheet.',
+      answer: true,
+      explanation: 'Spot on! Fixed Capital + Current Balance = exact Fluctuating Capital balance.',
+    },
+    {
+      statement: 'A key advantage of maintaining Fixed Capital plus Current Accounts is that any partner who withdraws more than their earnings is immediately flagged by a Debit balance in their Current Account.',
+      answer: true,
+      explanation: 'Yes — a Debit Current Account acts as an instant early-warning signal of overdrawing!',
+    },
+  ]}
+/>
+
+---
+
+## 7. Student Project
+
+<StudentProject
+  id="poa-s8-04-project"
+  title="Mini-Project: Opening Entries & Fixed vs. Fluctuating Accounts for GreenLeaf Landscaping"
+  duration="25 mins"
+  scenario="On 1 January 2026, J. Cole and N. Khan formed 'GreenLeaf Landscaping'. J. Cole contributed: Bank $20,000, Truck (agreed value) $18,000, Tools $4,000, and transferred a $2,000 supplier debt to the firm. N. Khan contributed $30,000 cash into the firm’s Bank. For 2026: Interest on Capital (Cole $2,000; Khan $1,500); Salary (Cole $5,000); Share of Profit (Cole $6,000; Khan $6,000); Drawings (Cole $9,000; Khan $8,500)."
+  steps={[
+    'Write the 1 January 2026 Opening General Journal entries for J. Cole and N. Khan (including narrations).',
+    'Construct the 2026 accounts under Method A: Fixed Capital System (Capital A/cs + columnar Current A/cs — watch N. Khan’s closing Current balance carefully!).',
+    'Construct the 2026 columnar accounts under Method B: Fluctuating Capital System.',
+    'Write a 2-sentence memo pointing out what Method A reveals about N. Khan’s Drawings that Method B hides!',
+  ]}
+  deliverables={[
+    'Opening General Journal entries (1 Jan 2026)',
+    'Complete Fixed (Capital + Current) AND Fluctuating Capital columnar accounts',
+    '2-sentence Internal Control Memo on N. Khan’s overdrawing',
+  ]}
+  rubric={[
+    'Opening Capital: J. Cole = $40,000 ($20k + $18k + $4k − $2k); N. Khan = $30,000.',
+    'Fixed System Closing Balances: Capital stays Cole $40,000 & Khan $30,000; Current Accounts: Cole = $4,000 Cr ($13,000 − $9,000), Khan = $1,000 DEBIT OVERDRAWN ($7,500 Cr − $8,500 Dr)!',
+    'Fluctuating System Closing Balances: Cole = $44,000 Cr; Khan = $29,000 Cr ($30,000 − $1,000) — matching Total Equity ($44k & $29k) while Fixed + Current flags Khan’s $1,000 overdrawing immediately!',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **Opening Net Capital** = `Agreed Assets Contributed − Liabilities Assumed`.
+- **Fixed System** = **Capital A/c** *(permanent)* + **Current A/c** *(yearly rewards &amp; drawings)*.
+- **Fluctuating System** = **1 combined Capital A/c** — same Total Equity, less visibility!
+:::

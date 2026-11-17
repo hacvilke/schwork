@@ -1,0 +1,253 @@
+---
+id: bad-debts-and-doubtful-debts
+title: "6.3 Bad Debts vs. Doubtful Debts: Journal Entries and Treatment"
+sidebar_label: "6.3 Bad & Doubtful Debts"
+sidebar_position: 3
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 6"
+  section="Accounting Adjustments — Bad Debts & Depreciation"
+  code="POA-S6-03"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="25 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+Selling on credit grows revenue — but not every credit customer pays! Under the **Prudence Concept**, a business must NEVER inflate its Balance Sheet with Trade Receivables it realistically cannot collect. That means knowing the exact difference between **confirmed Bad Debts**, an **estimated Provision for Doubtful Debts**, and the pleasant surprise of **Bad Debts Recovered**!
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | **Bad Debts Written Off**, **Provision for Doubtful Debts** (Creation, Increase &amp; Decrease), and **Bad Debts Recovered** |
+| **Exam Focus** | Writing off new Bad Debts **FIRST** before calculating the Provision `%`, posting ONLY the **change** in Provision to the Income Statement while deducting the **FULL new Provision** on the Balance Sheet |
+| **Learning Outcome** | Prepare Bad Debts, Provision for Doubtful Debts, and Bad Debts Recovered journal/ledger entries and display Net Receivables properly |
+
+<ObjectivesBox
+  id="poa-s6-03-obj"
+  objectives={[
+    'Distinguish clearly between a confirmed Bad Debt and an estimated Provision for Doubtful Debts.',
+    'Write General Journal and Ledger entries for writing off Bad Debts and recording Bad Debts Recovered.',
+    'Calculate a new Provision for Doubtful Debts (% of remaining receivables) and treat an Increase vs. Decrease accurately in the Income Statement.',
+    'Present Net Trade Receivables correctly under Current Assets on the Vertical Balance Sheet.',
+  ]}
+/>
+
+---
+
+## 1. Bad Debts vs. Provision for Doubtful Debts
+
+| Feature | Bad Debts (Irrecoverable Debts) | Provision for Doubtful Debts |
+| :--- | :--- | :--- |
+| **Certainty** | **100% Confirmed uncollectible** (debtor is bankrupt, deceased, or vanished) | **Prudent Estimate** of customers who *might* fail to pay in future (usually `%` of Receivables or aged schedule) |
+| **Customer’s Personal A/c** | **Credited &amp; closed to $0** (debtor removed from books) | **Untouched!** You do not know *which* specific customer will default |
+| **Accounting Concept** | **Prudence &amp; Matching** | **Prudence &amp; Matching** |
+| **Journal Entry** | `Dr Bad Debts Expense` / `Cr Debtor’s A/c` | **Increase:** `Dr Income Statement` / `Cr Provision for Doubtful Debts`<br/>**Decrease:** `Dr Provision for Doubtful Debts` / `Cr Income Statement` |
+| **Income Statement Effect** | Full Bad Debts written off = **Operating Expense** | **ONLY the CHANGE** (`New − Old`)! Increase = **Expense**; Decrease = **Add to Gross Profit (Other Income)**! |
+| **Balance Sheet Effect** | Deducted directly from Trade Receivables | **FULL New Provision** deducted from Remaining Trade Receivables |
+
+<FormulaCard
+  title="The Two-Step Receivables Sequence (NEVER Reverse This Order!)"
+  onFormulaSheet={false}
+  summary="Always subtract new Bad Debts BEFORE multiplying by the Provision percentage!"
+>
+
+$$
+\text{Step 1: Remaining Trade Receivables} = \text{Trial Balance Receivables} - \text{Additional Bad Debts}
+$$
+
+$$
+\text{Step 2: New Provision} = \text{Provision \%} \times \text{Remaining Trade Receivables}
+$$
+
+$$
+\text{Step 3: Income Statement Change} = \text{New Provision} - \text{Old Provision (in Trial Balance)}
+$$
+
+- If **New &gt; Old** → **Increase in Provision** → **Operating Expense**!
+- If **New &lt; Old** → **Decrease in Provision** → **Added to Gross Profit (Other Income)**!
+
+</FormulaCard>
+
+---
+
+## 2. Diagram 1: Bad Debts vs. Provision for Doubtful Debts Pipeline
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-6/03-bad-vs-doubtful-debts-flow.svg"
+  alt="Three-step receivables pipeline from confirmed Bad Debts write-off to Provision for Doubtful Debts adjustment and Net Trade Receivables on the Balance Sheet, plus Bad Debts Recovered entries."
+  caption="Diagram 1 (Static Reference): Never forget the #1 exam trap — ONLY the change in Provision hits the Income Statement, while the FULL new Provision reduces Receivables on the Balance Sheet!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive Receivables Scenarios Hub
+
+<InteractiveDiagram
+  title="Interactive Hub: Tap Each Scenario to Master Its Exact Journal Entry & Statement Impact"
+  layout="hub"
+  centerLabel="Receivables"
+  centerSublabel="Prudence Rules"
+  instruction="Select any of the 4 receivables events around the hub to view its exact double-entry and exam trap."
+  nodes={[
+    {
+      label: 'Bad Debt Written Off',
+      tag: 'Confirmed Loss',
+      tone: 'warning',
+      detail: 'Customer T. Mills owes $800 and goes bankrupt. We permanently cancel his account.',
+      example: 'Journal: Dr Bad Debts $800 / Cr T. Mills $800. Year-end closing: Dr Income Statement $800 / Cr Bad Debts $800.',
+      examTip: 'If Bad Debts ALREADY appears inside the Trial Balance, it was already deducted from Debtors — only subtract ADDITIONAL bad debts from the footnotes!',
+    },
+    {
+      label: 'Increase in Provision',
+      tag: 'New > Old',
+      tone: 'warning',
+      detail: 'Old Provision was $600; New 5% Provision required is $950 → we must TOP UP the credit Provision account by $350.',
+      example: 'Journal: Dr Income Statement $350 / Cr Provision for Doubtful Debts $350. Balance Sheet deducts the FULL $950!',
+      examTip: 'First year creating a Provision? Old Provision = $0, so the entire New Provision is an Operating Expense!',
+    },
+    {
+      label: 'Decrease in Provision',
+      tag: 'New < Old',
+      tone: 'positive',
+      detail: 'Old Provision was $1,500; Receivables shrank so New Provision required is only $1,100 → we release $400 back into profit!',
+      example: 'Journal: Dr Provision for Doubtful Debts $400 / Cr Income Statement $400 (shown under "Add: Other Income" after Gross Profit!).',
+      examTip: 'Students often accidentally put a Provision Decrease under Expenses — watch the sign! New < Old = INCOME!',
+    },
+    {
+      label: 'Bad Debt Recovered',
+      tag: 'Bonus Cash!',
+      tone: 'positive',
+      detail: 'A debtor we wrote off last year unexpectedly returns and pays $400! We pass TWO entries so their personal ledger shows they finally settled.',
+      example: '1) Dr Debtor $400 / Cr Bad Debts Recovered $400.  2) Dr Bank/Cash $400 / Cr Debtor $400.  Year-end: Close $400 to Credit of Income Statement (Add to GP)!',
+      examTip: 'Writing BOTH entries (reinstate debtor + record cash) earns full marks and preserves the customer’s credit history!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="3-Year Provision for Doubtful Debts Ledger Account & Statement Extracts"
+  marks={14}
+  problem={
+    <>
+      <p>
+        <strong>Scenario:</strong> <strong>CrestLine Wholesalers</strong> maintains a Provision
+        for Doubtful Debts of <strong>5% of remaining Trade Receivables</strong> at each
+        31 December year-end. Its records for 2024–2026 show:
+      </p>
+      <ul>
+        <li><strong>2024 (Year 1 — No prior provision):</strong> Trade Receivables $25,000 before writing off $1,000 additional Bad Debts.</li>
+        <li><strong>2025 (Year 2):</strong> Remaining Trade Receivables (after writing off $600 Bad Debts) = $30,000. Also, former customer M. Grant — written off in 2024 — unexpectedly paid $400 cash!</li>
+        <li><strong>2026 (Year 3):</strong> Remaining Trade Receivables (after writing off $200 Bad Debts) = $22,000.</li>
+      </ul>
+      <ol>
+        <li>Calculate the required Closing Provision and Income Statement charge/credit for <strong>2024, 2025, and 2026</strong>. <em>[6 marks]</em></li>
+        <li>Construct the <strong>Provision for Doubtful Debts Account</strong> across all 3 years. <em>[5 marks]</em></li>
+        <li>Show the <strong>Income Statement</strong> and <strong>Balance Sheet</strong> extracts for <strong>2025</strong> (including Bad Debts Recovered). <em>[3 marks]</em></li>
+      </ol>
+    </>
+  }
+>
+
+**1. Three-Year Provision Calculations (6 marks):**
+- **2024:** Remaining Receivables = `$25,000 − $1,000 = $24,000` → New Provision (`5% × $24,000`) = **$1,200** (Old = `$0` → **Increase = $1,200 Expense**) *(2 marks)*.
+- **2025:** Remaining Receivables = `$30,000` → New Provision (`5% × $30,000`) = **$1,500** (Old = `$1,200` → **Increase = $300 Expense**) *(2 marks)*.
+- **2026:** Remaining Receivables = `$22,000` → New Provision (`5% × $22,000`) = **$1,100** (Old = `$1,500` → **Decrease = $400 Other Income**) *(2 marks)*.
+
+**2. Provision for Doubtful Debts Account *(Contra-Asset — Credit Balance, 5 marks)*:**
+
+| Date (Dr) | Details | $ | Date (Cr) | Details | $ |
+| :--- | :--- | ---: | :--- | :--- | ---: |
+| **Dec 31, 2024** | Balance c/d | 1,200 | **Dec 31, 2024** | **Income Statement** *(Creation)* | 1,200 |
+| | | **1,200** | | | **1,200** |
+| **Dec 31, 2025** | Balance c/d | 1,500 | Jan 1, 2025 | Balance b/d | 1,200 |
+| | | | **Dec 31, 2025** | **Income Statement** *(Increase)* | 300 |
+| | | **1,500** | | | **1,500** |
+| **Dec 31, 2026** | **Income Statement** *(Decrease)* | 400 | Jan 1, 2026 | Balance b/d | 1,500 |
+| **Dec 31, 2026** | Balance c/d | 1,100 | | | |
+| | | **1,500** | | | **1,500** |
+| | | | Jan 1, 2027 | Balance b/d | 1,100 |
+
+**3. 2025 Financial Statement Extracts (3 marks):**
+- **Income Statement (for the year ended 31 Dec 2025):**
+  - *Add: Other Income:* Bad Debts Recovered **$400** *(1 mark)*
+  - *Less: Operating Expenses:* Bad Debts **$600**; Increase in Provision for Doubtful Debts **$300** *(1 mark)*
+- **Balance Sheet (as at 31 Dec 2025 — Current Assets):**
+  - Trade Receivables `$30,000` *Less:* Provision for Doubtful Debts `($1,500)` = **Net Trade Receivables $28,500** *(1 mark)*.
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Bad Debts & Provision for Doubtful Debts"
+  items={[
+    {
+      statement: 'When calculating a new Provision for Doubtful Debts, any additional Bad Debts from the year-end notes must be subtracted from Trade Receivables FIRST.',
+      answer: true,
+      explanation: 'Always! You never create a doubtful debt provision on a debt you have already confirmed as permanently bad and written off.',
+    },
+    {
+      statement: 'The FULL Closing Provision for Doubtful Debts is always entered as an Operating Expense in the Income Statement every year.',
+      answer: false,
+      explanation: 'ONLY the CHANGE (Increase or Decrease) goes to the Income Statement! The FULL Closing Provision goes on the Balance Sheet (deducted from Receivables).',
+    },
+    {
+      statement: 'A decrease in the Provision for Doubtful Debts (when New Provision is lower than Old Provision) is added to Gross Profit as Other Income.',
+      answer: true,
+      explanation: 'Reducing an unneeded past provision releases profit back into the Income Statement — credited as Other Income!',
+    },
+    {
+      statement: 'Provision for Doubtful Debts normally carries a CREDIT balance and is classified as a Contra-Asset.',
+      answer: true,
+      explanation: 'Correct — it carries a Credit balance and offsets (reduces) the Debit balance of Trade Receivables on the Balance Sheet.',
+    },
+    {
+      statement: 'When a previously written-off customer unexpectedly pays cash, the business credits Sales Revenue.',
+      answer: false,
+      explanation: 'Never credit Sales twice! You reinstate the debtor and credit "Bad Debts Recovered" (which closes as Other Income in the Income Statement).',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s6-03-project"
+  title="Mini-Project: Managing Receivables & Provisions for Metro Hardware"
+  duration="25 mins"
+  scenario="Metro Hardware keeps a 4% Provision for Doubtful Debts. On 1 January 2025, its existing Provision stood at $1,100. At 31 December 2025, Trade Receivables stood at $42,000 before writing off $2,000 of confirmed bad debts. At 31 December 2026, Trade Receivables stood at $35,500 before writing off $500 of confirmed bad debts — and an old debtor written off in 2024 unexpectedly settled $300 by cheque!"
+  steps={[
+    'Calculate Remaining Receivables, New 4% Provision, and the Increase or Decrease in Provision for BOTH 2025 and 2026.',
+    'Write the General Journal entries for 2026 covering: (a) the $500 bad debt write-off, (b) the $300 bad debt recovery (both entries!), and (c) the 2026 Provision adjustment.',
+    'Draw the 2-year Provision for Doubtful Debts T-Account (2025 and 2026) bringing down the 1 Jan 2027 balance.',
+    'Draft neat Balance Sheet extracts for both 31 Dec 2025 and 31 Dec 2026 showing Net Trade Receivables.',
+  ]}
+  deliverables={[
+    '2025 & 2026 Provision calculation workings',
+    'Complete 2026 General Journal entries (with narrations)',
+    '2-Year Provision for Doubtful Debts T-account + Balance Sheet extracts',
+  ]}
+  rubric={[
+    '2025 exact figures: Remaining Receivables $40,000 → New 4% Prov $1,600 (Increase $500 Expense); BS Net Receivables = $38,400.',
+    '2026 exact figures: Remaining Receivables $35,000 → New 4% Prov $1,400 (Decrease $200 Other Income!); BS Net Receivables = $33,600.',
+    '2026 Bad Debt Recovery ($300) shows both reinstatement (Dr Debtor / Cr Bad Debts Recovered) and cheque receipt (Dr Bank / Cr Debtor), closing $300 to Credit of Income Statement.',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **Step 1:** Subtract **New Bad Debts** from Trade Receivables.
+- **Step 2:** Multiply **Remaining Receivables × %** = **New Provision**.
+- **Step 3:** **Income Statement** = **CHANGE only** (`+Exp` if up, `+Other Income` if down); **Balance Sheet** = **FULL New Provision** subtracted from Receivables!
+:::

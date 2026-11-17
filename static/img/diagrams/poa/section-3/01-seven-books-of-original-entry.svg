@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 440" fill="none" role="img" aria-label="The Seven Books of Original Entry Routing Map">
+  <rect width="820" height="440" rx="12" fill="#1B365D"/>
+  <rect x="14" y="14" width="792" height="412" rx="10" stroke="#2D507C" stroke-width="1.2"/>
+
+  <!-- Header -->
+  <text x="34" y="46" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="18" font-weight="700">The Seven Books of Original Entry (Day Books &amp; Journals)</text>
+  <text x="34" y="66" fill="#9DD9CB" font-family="monospace" font-size="11.5">WHERE EVERY SOURCE DOCUMENT IS RECORDED FIRST BEFORE POSTING TO LEDGERS</text>
+
+  <!-- Top Row: 4 Credit Goods Day Books -->
+  <text x="34" y="92" fill="#6BC4B0" font-family="monospace" font-size="10.5" font-weight="700">A. CREDIT GOODS FOR RESALE (4 DAY BOOKS)</text>
+
+  <rect x="34" y="102" width="180" height="94" rx="9" fill="#122440" stroke="#6BC4B0" stroke-width="1.6"/>
+  <rect x="34" y="102" width="180" height="24" rx="9" fill="#4E8577"/>
+  <text x="124" y="118" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="10.5" font-weight="700">1. SALES JOURNAL</text>
+  <text x="124" y="144" text-anchor="middle" fill="#F4F7FA" font-family="system-ui, sans-serif" font-size="11.5" font-weight="600">Credit Sales of Goods</text>
+  <text x="124" y="162" text-anchor="middle" fill="#A5C0D6" font-family="system-ui, sans-serif" font-size="10">Source: Sales Invoice</text>
+  <text x="124" y="182" text-anchor="middle" fill="#9DD9CB" font-family="monospace" font-size="9.5">Cr Sales · Dr Debtors</text>
+
+  <rect x="224" y="102" width="180" height="94" rx="9" fill="#122440" stroke="#6BC4B0" stroke-width="1.6"/>
+  <rect x="224" y="102" width="180" height="24" rx="9" fill="#4E8577"/>
+  <text x="314" y="118" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="10.5" font-weight="700">2. PURCHASES JOURNAL</text>
+  <text x="314" y="144" text-anchor="middle" fill="#F4F7FA" font-family="system-ui, sans-serif" font-size="11.5" font-weight="600">Credit Purchases (Stock)</text>
+  <text x="314" y="162" text-anchor="middle" fill="#A5C0D6" font-family="system-ui, sans-serif" font-size="10">Source: Purchase Invoice</text>
+  <text x="314" y="182" text-anchor="middle" fill="#9DD9CB" font-family="monospace" font-size="9.5">Dr Purchases · Cr Creditors</text>
+
+  <rect x="414" y="102" width="180" height="94" rx="9" fill="#122440" stroke="#8CC4B4" stroke-width="1.6"/>
+  <rect x="414" y="102" width="180" height="24" rx="9" fill="#2E6359"/>
+  <text x="504" y="118" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="10.5" font-weight="700">3. RETURNS INWARDS</text>
+  <text x="504" y="144" text-anchor="middle" fill="#F4F7FA" font-family="system-ui, sans-serif" font-size="11.5" font-weight="600">Goods Back From Buyers</text>
+  <text x="504" y="162" text-anchor="middle" fill="#A5C0D6" font-family="system-ui, sans-serif" font-size="10">Source: Credit Note Issued</text>
+  <text x="504" y="182" text-anchor="middle" fill="#9DD9CB" font-family="monospace" font-size="9.5">Dr Ret. In · Cr Debtors</text>
+
+  <rect x="604" y="102" width="182" height="94" rx="9" fill="#122440" stroke="#8CC4B4" stroke-width="1.6"/>
+  <rect x="604" y="102" width="182" height="24" rx="9" fill="#2E6359"/>
+  <text x="695" y="118" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="10.5" font-weight="700">4. RETURNS OUTWARDS</text>
+  <text x="695" y="144" text-anchor="middle" fill="#F4F7FA" font-family="system-ui, sans-serif" font-size="11.5" font-weight="600">Goods Back To Suppliers</text>
+  <text x="695" y="162" text-anchor="middle" fill="#A5C0D6" font-family="system-ui, sans-serif" font-size="10">Source: Credit Note Rec’d</text>
+  <text x="695" y="182" text-anchor="middle" fill="#9DD9CB" font-family="monospace" font-size="9.5">Dr Creditors · Cr Ret. Out</text>
+
+  <!-- Bottom Row: Cash & General Journal -->
+  <text x="34" y="224" fill="#F5A352" font-family="monospace" font-size="10.5" font-weight="700">B. CASH, PETTY CASH &amp; SPECIAL ENTRIES (3 BOOKS)</text>
+
+  <rect x="34" y="234" width="240" height="106" rx="9" fill="#122440" stroke="#F5A352" stroke-width="1.8"/>
+  <rect x="34" y="234" width="240" height="26" rx="9" fill="#C84E24"/>
+  <text x="154" y="251" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="10.5" font-weight="700">5. CASH BOOK (DUAL ROLE!)</text>
+  <text x="154" y="278" text-anchor="middle" fill="#F4F7FA" font-family="system-ui, sans-serif" font-size="11.5" font-weight="600">All Cash &amp; Bank Receipts/Payments</text>
+  <text x="154" y="296" text-anchor="middle" fill="#A5C0D6" font-family="system-ui, sans-serif" font-size="10">Source: Receipts, Cheques, Bank Slips</text>
+  <text x="154" y="320" text-anchor="middle" fill="#F5A352" font-family="monospace" font-size="9.5">BOTH a Day Book AND a Ledger!</text>
+
+  <rect x="290" y="234" width="240" height="106" rx="9" fill="#122440" stroke="#F5A352" stroke-width="1.8"/>
+  <rect x="290" y="234" width="240" height="26" rx="9" fill="#C84E24"/>
+  <text x="410" y="251" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="10.5" font-weight="700">6. PETTY CASH BOOK</text>
+  <text x="410" y="278" text-anchor="middle" fill="#F4F7FA" font-family="system-ui, sans-serif" font-size="11.5" font-weight="600">Small Everyday Cash Expenses</text>
+  <text x="410" y="296" text-anchor="middle" fill="#A5C0D6" font-family="system-ui, sans-serif" font-size="10">Source: Petty Cash Vouchers</text>
+  <text x="410" y="320" text-anchor="middle" fill="#F5A352" font-family="monospace" font-size="9.5">Postage, cleaning, bus fare (Imprest)</text>
+
+  <rect x="546" y="234" width="240" height="106" rx="9" fill="#122440" stroke="#6BC4B0" stroke-width="1.8"/>
+  <rect x="546" y="234" width="240" height="26" rx="9" fill="#1E4D6B"/>
+  <text x="666" y="251" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="10.5" font-weight="700">7. GENERAL JOURNAL</text>
+  <text x="666" y="278" text-anchor="middle" fill="#F4F7FA" font-family="system-ui, sans-serif" font-size="11.5" font-weight="600">Everything Else (Non-Routine)</text>
+  <text x="666" y="296" text-anchor="middle" fill="#A5C0D6" font-family="system-ui, sans-serif" font-size="10">Credit Non-Current Assets, Opening</text>
+  <text x="666" y="311" text-anchor="middle" fill="#A5C0D6" font-family="system-ui, sans-serif" font-size="10">Entries, Error Corrections, Depreciation</text>
+  <text x="666" y="330" text-anchor="middle" fill="#9DD9CB" font-family="monospace" font-size="9.5">Always includes a Narration!</text>
+
+  <!-- Bottom summary rule -->
+  <rect x="34" y="358" width="752" height="48" rx="9" fill="#122440" stroke="#6BC4B0" stroke-width="1.2"/>
+  <text x="410" y="378" text-anchor="middle" fill="#F5A352" font-family="monospace" font-size="10.5" font-weight="700">EXAM GOLDEN TRAP: CREDIT PURCHASE OF A VAN VS. GOODS FOR RESALE</text>
+  <text x="410" y="396" text-anchor="middle" fill="#F4F7FA" font-family="system-ui, sans-serif" font-size="11.5">Goods bought on credit for resale → <tspan fill="#6BC4B0" font-weight="700">Purchases Journal</tspan>  ·  Equipment/Van bought on credit → <tspan fill="#F5A352" font-weight="700">General Journal</tspan>!</text>
+</svg>

@@ -1,0 +1,247 @@
+---
+id: interpreting-ledger-entries
+title: "4.6 Interpreting Entries and Balances in the Ledger"
+sidebar_label: "4.6 Interpreting Ledger Entries"
+sidebar_position: 6
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 4"
+  section="Ledgers and the Trial Balance — Trial Balance"
+  code="POA-S4-06"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="20 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+One of the highest-value accounting exam questions flips the script completely: instead of giving you transactions and asking for T-accounts, the examiner **shows you a completed T-account** and asks: *"Explain what happened on May 9, May 14, and May 31 — and what does the closing balance mean?"* Once you know the **3-Clue Ledger Detective Formula**, reading any T-account becomes effortless!
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | Reverse-engineering any T-account line back into plain English using **Account Name + Side (`Dr`/`Cr`) + Opposite Details Name + Amount** |
+| **Exam Focus** | Explaining entries inside **Customer (Debtor)**, **Supplier (Creditor)**, **Expense**, and **Asset** T-accounts — including **dishonoured cheques** and **unusual reversed balances**! |
+| **Learning Outcome** | Translate every entry and closing balance inside any ledger account into precise business English |
+
+<ObjectivesBox
+  id="poa-s4-06-obj"
+  objectives={[
+    'Use the "Dr Account Title / Cr Details" (and reverse) rule to reconstruct the original transaction behind any ledger line.',
+    'Interpret every typical entry inside a Customer (Sales Ledger) account and a Supplier (Purchases Ledger) account — including returns, discounts, and dishonoured cheques.',
+    'Explain unusual reversed balances (a Credit balance in a Customer account or a Debit balance in a Supplier account).',
+    'Interpret opening and closing balances of Real, Personal, and Nominal accounts accurately.',
+  ]}
+/>
+
+---
+
+## 1. The Universal Ledger Detective Rule
+
+Look at any single line inside ANY T-account titled **`[Account X]`**:
+- If the entry sits on the **DEBIT side** with Details = **`[Account Y]`** for **`$Z`**, the original double entry was:
+  > **Debit `[Account X]` $Z** &nbsp;and&nbsp; **Credit `[Account Y]` $Z**
+- If the entry sits on the **CREDIT side** with Details = **`[Account Y]`** for **`$Z`**, the original double entry was:
+  > **Debit `[Account Y]` $Z** &nbsp;and&nbsp; **Credit `[Account X]` $Z**
+
+### Quick Translation Table for Common Personal Account Entries
+
+| Account Type | Entry Observed Inside Account | Exact Plain-English Meaning |
+| :--- | :--- | :--- |
+| **Customer A/c** *(Sales Ledger)* | **Dr** `Sales $900` | We **sold $900 of goods on credit** to this customer |
+| **Customer A/c** | **Cr** `Returns Inwards $100` | Customer **returned $100 of goods** to us |
+| **Customer A/c** | **Cr** `Bank $760` + **Cr** `Discount Allowed $40` | Customer **paid $760 by cheque** and received a **$40 cash discount** (settling $800) |
+| **Customer A/c** | **Dr** `Bank (Dishonoured Cheque) $300` | Customer’s earlier **$300 cheque bounced** — so the customer owes us $300 again! |
+| **Customer A/c** | **Cr** `Bad Debts $250` | Customer failed to pay; we **wrote off $250 as an uncollectible bad debt** |
+| **Supplier A/c** *(Purchases Ledger)* | **Cr** `Purchases $1,200` | We **bought $1,200 of goods on credit** from this supplier |
+| **Supplier A/c** | **Dr** `Returns Outwards $150` | We **returned $150 of goods** back to this supplier |
+| **Supplier A/c** | **Dr** `Bank $980` + **Dr** `Discount Received $20` | We **paid $980 by cheque** to this supplier and earned **$20 cash discount** |
+
+:::warning Two Rare "Reversed Balance" Surprises Examiners Love!
+1. **Credit Balance (`Cr b/d`) in a Customer’s Account:** Normally a customer owes US (`Dr b/d`). A rare **Credit `b/d`** means **WE owe the customer money** — for instance, the customer overpaid their bill, paid an advance deposit, or returned goods AFTER already paying in full!
+2. **Debit Balance (`Dr b/d`) in a Supplier’s Account:** Normally we owe the supplier (`Cr b/d`). A rare **Debit `b/d`** means **the supplier owes US money** — e.g., we overpaid our bill or returned goods after already settling the invoice!
+:::
+
+---
+
+## 2. Diagram 1: Reading a T-Account Like a Detective
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-4/06-reading-t-account-clues.svg"
+  alt="Annotated M. Clarke Customer T-Account translating every Debit and Credit line (opening balance, credit sale, bounced cheque, returns inwards, cheque paid, discount allowed, and closing balance b/d $550) alongside three detective rules."
+  caption="Diagram 1 (Static Reference): Every single line inside a ledger tells a clear mini-story when you combine the Account Title, the Side (Dr/Cr), and the Opposite Name in Details!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive Ledger Entry Decoder Hub
+
+<InteractiveDiagram
+  title="Interactive Hub: Tap Any Account Type to Decode Its Typical Lines & Balances"
+  layout="hub"
+  centerLabel="Ledger Decoder"
+  centerSublabel="Read Any T-A/c"
+  instruction="Select any ledger account type around the hub to see how to interpret its Debit entries, Credit entries, and Closing Balance instantly."
+  nodes={[
+    {
+      label: 'Customer (Debtor) A/c',
+      tag: 'Sales Ledger',
+      tone: 'positive',
+      detail: 'Normal balance is DEBIT (Asset — customer owes us). Debits make the debt GROW (Sales, Dishonoured Cheques, Interest charged); Credits make the debt SHRINK (Cash/Bank paid, Discount Allowed, Returns Inwards, Bad Debts).',
+      example: 'Jun 1 Balance b/d $550 (Dr) → "As at 1 June, M. Clarke owed our business $550 for unpaid credit purchases."',
+      examTip: 'Always state WHO owes WHOM and the exact dollar amount — never just write "Debit balance $550"!',
+    },
+    {
+      label: 'Supplier (Creditor) A/c',
+      tag: 'Purchases Ledger',
+      tone: 'warning',
+      detail: 'Normal balance is CREDIT (Liability — we owe supplier). Credits make our debt GROW (Purchases, Interest charged); Debits make our debt SHRINK (Bank/Cash paid, Discount Received, Returns Outwards).',
+      example: 'Jul 1 Balance b/d $1,400 (Cr) → "As at 1 July, our business owed Apex Wholesale $1,400 for credit goods purchased."',
+      examTip: 'Watch out for "Dr Bank $950" on a supplier’s account — that means WE paid the supplier (NOT that the supplier paid us)!',
+    },
+    {
+      label: 'Non-Current Asset A/c',
+      tag: 'Real Account',
+      tone: 'positive',
+      detail: 'Normal balance is DEBIT (original cost of assets still owned). Debits show buying additional assets (Dr Vans / Cr Bank or Vendor); Credits show disposing/selling an asset (Cr Vans / Dr Disposal).',
+      example: 'Machinery A/c shows Dr May 12 Apex Equip $8,000 → "Bought new machinery on credit from Apex Equip for $8,000."',
+      examTip: 'If the Details column says "Bank" or "Cash", the asset was bought for cash/cheque; if it shows a company name, it was bought ON CREDIT!',
+    },
+    {
+      label: 'Expense Account',
+      tag: 'Nominal Account',
+      tone: 'neutral',
+      detail: 'Debits record expenses paid (Bank/Cash) or accrued unpaid bills at year-end. The big year-end Credit line reading "Income Statement" is the total expense charged to calculate Net Profit!',
+      example: 'Insurance A/c: Dr Bank $1,500; Cr Dec 31 Income Statement $1,200; Cr Dec 31 Balance c/d $300 → "$1,200 used this year; $300 prepaid for next year!"',
+      examTip: 'This connects directly to Section 6 (Accruals & Prepayments) — reading Expense T-accounts now gives you a massive head start!',
+    },
+    {
+      label: 'Capital & Drawings',
+      tag: 'Owner’s Equity',
+      tone: 'positive',
+      detail: 'Capital Credits show owner investments and Net Profit added; Capital Debits show Net Loss or Drawings transferred at year-end. Drawings Debits show cash or goods taken by the owner personally.',
+      example: 'Drawings A/c shows Dr Aug 9 Purchases $250 → "Owner withdrew $250 of store inventory at cost for personal family use!"',
+      examTip: 'Spotting "Dr Drawings / Cr Purchases" is a classic exam gem — it means the owner took GOODS (not cash) for private use!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Interpreting Every Line & Balance Inside a Supplier’s Ledger Account"
+  marks={10}
+  problem={
+    <>
+      <p>
+        <strong>Scenario:</strong> Study the following ledger account extracted from the
+        <strong> Purchases Ledger</strong> of <strong>Island Home Goods</strong> for
+        <strong> March 2026</strong>:
+      </p>
+      <p><strong>Dr &emsp;&emsp;&emsp;&emsp; Pacific Distributors Ltd. Account &emsp;&emsp;&emsp;&emsp; Cr</strong></p>
+      <table>
+        <thead>
+          <tr><th>Date</th><th>Details</th><th>$</th><th>Date</th><th>Details</th><th>$</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Mar 7</td><td>Returns Outwards</td><td>180</td><td>Mar 1</td><td>Balance b/d</td><td>900</td></tr>
+          <tr><td>Mar 14</td><td>Bank</td><td>855</td><td>Mar 4</td><td>Purchases</td><td>1,400</td></tr>
+          <tr><td>Mar 14</td><td>Discount Received</td><td>45</td><td>Mar 22</td><td>Purchases</td><td>620</td></tr>
+          <tr><td>Mar 31</td><td>Balance c/d</td><td>1,840</td><td></td><td></td><td></td></tr>
+          <tr><td></td><td><strong>Total</strong></td><td><strong>2,920</strong></td><td></td><td><strong>Total</strong></td><td><strong>2,920</strong></td></tr>
+          <tr><td></td><td></td><td></td><td>Apr 1</td><td>Balance b/d</td><td>1,840</td></tr>
+        </tbody>
+      </table>
+      <p>
+        Explain clearly in plain English the exact meaning of: (a) <strong>Mar 1</strong>,
+        (b) <strong>Mar 4</strong>, (c) <strong>Mar 7</strong>, (d) the two entries on
+        <strong> Mar 14</strong> together, and (e) the <strong>Apr 1 Balance b/d</strong>.
+        <em>[2 marks each = 10 marks]</em>
+      </p>
+    </>
+  }
+>
+
+- **(a) Mar 1 — Cr Balance b/d $900 (2 marks):** At the start of March 2026, Island Home Goods **owed Pacific Distributors Ltd. $900** brought forward from February’s unpaid credit purchases *(2 marks)*.
+- **(b) Mar 4 — Cr Purchases $1,400 (2 marks):** Island Home Goods **bought $1,400 of goods for resale on credit** from Pacific Distributors Ltd. *(2 marks)*.
+- **(c) Mar 7 — Dr Returns Outwards $180 (2 marks):** Island Home Goods **returned $180 of goods** (e.g., damaged or wrong items) back to Pacific Distributors Ltd., reducing the balance owed *(2 marks)*.
+- **(d) Mar 14 — Dr Bank $855 & Dr Discount Received $45 (2 marks):** Island Home Goods **paid $855 by cheque** to Pacific Distributors Ltd. *(1 mark)* and received a **$45 prompt-payment cash discount** — settling **$900** of the debt (`$855 + $45`) in full *(1 mark)*.
+- **(e) Apr 1 — Cr Balance b/d $1,840 (2 marks):** As at 1 April 2026, Island Home Goods **still owes Pacific Distributors Ltd. $1,840** *(1 mark)*, which is a **Current Liability (Trade Payable)** on the Balance Sheet *(1 mark)*.
+
+*(Check: `$900 + $1,400 + $620 − $180 − $855 − $45 = $1,840` ✓!)*
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Interpreting Ledger Entries & Balances"
+  items={[
+    {
+      statement: 'A Debit entry reading "Bank $400" inside a Credit Customer’s account means the customer paid us $400 by cheque.',
+      answer: false,
+      explanation: 'A customer paying us is CREDITED to the customer’s account! A DEBIT entry reading "Bank $400" inside a customer’s account means their $400 cheque was DISHONOURED (bounced) or we refunded them $400!',
+    },
+    {
+      statement: 'A Credit Balance b/d of $200 in a Customer’s Sales Ledger account means our business owes that customer $200 (e.g., due to an overpayment or return after full payment).',
+      answer: true,
+      explanation: 'Customer accounts normally carry a Debit balance; a rare Credit balance reverses the debt, meaning we owe the customer $200.',
+    },
+    {
+      statement: 'Inside the Drawings Account, a Debit entry reading "Purchases $150" means the owner withdrew $150 of business inventory at cost for personal use.',
+      answer: true,
+      explanation: 'Dr Drawings / Cr Purchases records the owner taking resale stock for private use rather than taking cash.',
+    },
+    {
+      statement: 'A Credit entry reading "Bad Debts $300" inside a customer’s account means we wrote off $300 that the customer could not pay.',
+      answer: true,
+      explanation: 'Dr Bad Debts (expense) / Cr Customer Account reduces the customer’s balance by $300 and recognizes the loss.',
+    },
+    {
+      statement: 'In a Motor Vehicles Account, a Debit entry reading "Star Motors $18,000" means the business paid $18,000 cash immediately for a van.',
+      answer: false,
+      explanation: 'Because the Details column names "Star Motors" rather than "Cash" or "Bank", the business bought the $18,000 van ON CREDIT from Star Motors!',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s4-06-project"
+  title="Mini-Project: Ledger Forensic Detective Report"
+  duration="25 mins"
+  scenario="Your manager hands you a printed copy of Credit Customer 'J. Morales's Account' from the Sales Ledger and asks for a quick plain-English briefing before phoning J. Morales: Dr Jun 1 Balance b/d $500; Dr Jun 5 Sales $1,200; Cr Jun 8 Returns Inwards $150; Cr Jun 15 Bank $475; Cr Jun 15 Discount Allowed $25; Dr Jun 21 Bank (Dishonoured Cheque) $475; Dr Jun 21 Discount Allowed (Disallowed) $25; Cr Jun 28 Cash $600."
+  steps={[
+    'Reconstruct the complete T-Account of J. Morales cleanly and balance it on June 30 to find the exact July 1 Balance b/d.',
+    'Write a numbered chronological "Plain-English Story" translating EVERY single date from June 1 to June 28 into one clear sentence.',
+    'Explain specifically WHY the $25 cash discount had to be reversed (Debited back to J. Morales!) on June 21 when the $475 cheque bounced.',
+    'Write a 2-sentence Credit Manager Recommendation telling your boss exactly how much J. Morales owes on July 1 and whether to tighten J. Morales’s credit terms.',
+  ]}
+  deliverables={[
+    'Completed and balanced T-Account for J. Morales (July 1 Dr Balance b/d = $950)',
+    'Chronological 6-date Plain-English Story translating every entry',
+    'Explanation of the disallowed $25 discount + 2-sentence Credit Recommendation',
+  ]}
+  rubric={[
+    'Math is 100% accurate: Dr total = $500+$1,200+$475+$25 = $2,200; Cr total = $150+$475+$25+$600 = $1,250 → Balance b/d = $950 Dr.',
+    'Dishonoured cheque ($475) and cancelled cash discount ($25) are accurately explained (a bounced cheque means the customer never actually paid early!).',
+    'Manager briefing clearly states J. Morales still owes $950 and recommends requiring cash/certified funds until payment history improves.',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **Golden Formula:** `Dr side of X` with Detail `Y` = **`Dr X · Cr Y`**; `Cr side of X` with Detail `Y` = **`Dr Y · Cr X`**.
+- **Spot the 3 Examiner Favorites:**
+  1. `Dr Customer / Cr Bank` = **Dishonoured (bounced) cheque!**
+  2. `Dr Drawings / Cr Purchases` = **Owner took goods for personal use!**
+  3. **Credit `b/d` in a Customer A/c** = Customer overpaid (we owe them)!
+:::

@@ -1,0 +1,417 @@
+/* Styles for <InteractiveDiagram /> — Deep Navy diagram stage, Soft Sage connectors & progress, Warm Coral active states */
+
+.shell {
+  border-radius: 14px;
+  border: 1.5px solid var(--schwork-border);
+  background: var(--schwork-surface);
+  overflow: hidden;
+  margin: 1.5rem 0;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  padding: 0.75rem 1rem;
+  background: var(--schwork-navy);
+  color: #ffffff;
+}
+
+.titleWrap {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.32rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.2rem 0.55rem;
+  border-radius: 6px;
+  background: var(--schwork-sage);
+  color: #ffffff;
+}
+
+.title {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.headerRight {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.exploredBadge {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.74rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  background: rgba(140, 196, 180, 0.2);
+  color: #d7efe8;
+  border: 1px solid rgba(140, 196, 180, 0.4);
+}
+
+.stepControls {
+  display: inline-flex;
+  gap: 0.3rem;
+}
+
+.navBtn {
+  min-width: 34px;
+  min-height: 34px;
+  border-radius: 7px;
+  border: 1px solid rgba(140, 196, 180, 0.45);
+  background: rgba(78, 133, 119, 0.22);
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.navBtn:hover {
+  background: var(--schwork-coral);
+  border-color: var(--schwork-coral);
+}
+
+/* Soft Sage exploration progress track */
+.progressTrack {
+  width: 100%;
+  height: 5px;
+  background: var(--schwork-navy-deep);
+}
+
+.progressFill {
+  height: 100%;
+  background: var(--schwork-sage-light);
+  transition: width 0.25s ease;
+}
+
+.instruction {
+  margin: 0;
+  padding: 0.6rem 1rem;
+  font-size: 0.85rem;
+  color: var(--schwork-text-muted);
+  background: var(--schwork-surface-alt);
+  border-bottom: 1px solid var(--schwork-border);
+}
+
+.stage {
+  background: var(--schwork-navy);
+  padding: 1rem;
+}
+
+/* Hub SVG stage */
+.hubStageWrap {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.hubSvg {
+  display: block;
+  width: 100%;
+  min-width: 460px;
+  height: auto;
+}
+
+.svgNode {
+  cursor: pointer;
+  outline: none;
+}
+
+.svgNode:focus-visible rect {
+  stroke: #f5a352;
+  stroke-width: 3;
+}
+
+/* Flow step diagram */
+.flowTrack {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+}
+
+.flowNode {
+  min-height: 46px;
+  padding: 0.5rem 0.78rem;
+  border-radius: 10px;
+  border: 1.5px solid rgba(140, 196, 180, 0.45);
+  background: #22406c;
+  color: #eef3f7;
+  font-family: var(--ifm-heading-font-family);
+  font-size: 0.84rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.flowNode:hover {
+  border-color: var(--schwork-amber);
+}
+
+.flowNodeVisited {
+  border-color: var(--schwork-sage-light);
+}
+
+.flowNodeActive {
+  background: var(--schwork-coral);
+  border-color: var(--schwork-amber);
+  color: #ffffff;
+}
+
+.flowStepBadge {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  background: rgba(18, 36, 64, 0.55);
+  color: var(--schwork-amber);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.74rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flowNodeActive .flowStepBadge {
+  background: rgba(18, 36, 64, 0.35);
+  color: #ffffff;
+}
+
+.flowNodeLabel {
+  line-height: 1.25;
+}
+
+.flowNodeTag {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.68rem;
+  opacity: 0.85;
+  padding: 0.1rem 0.4rem;
+  border-radius: 5px;
+  background: rgba(18, 36, 64, 0.45);
+}
+
+.flowArrow {
+  color: var(--schwork-sage-light);
+  flex-shrink: 0;
+}
+
+/* Compare chips */
+.compareChips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.compareChip {
+  min-height: 42px;
+  padding: 0.45rem 0.85rem;
+  border-radius: 9px;
+  border: 1.5px solid rgba(140, 196, 180, 0.45);
+  background: #22406c;
+  color: #eef3f7;
+  font-family: var(--ifm-heading-font-family);
+  font-size: 0.85rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.compareChip:hover {
+  border-color: var(--schwork-amber);
+}
+
+.compareChipActive {
+  background: var(--schwork-coral);
+  border-color: var(--schwork-amber);
+  color: #ffffff;
+}
+
+/* Detail panel */
+.detailPanel {
+  padding: 1.05rem 1.15rem;
+  background: var(--schwork-surface);
+  border-top: 2px solid var(--schwork-sage);
+}
+
+.detailTop {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.55rem;
+}
+
+.detailStepPill {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.18rem 0.5rem;
+  border-radius: 6px;
+  background: var(--schwork-surface-alt);
+  color: var(--schwork-text-muted);
+  border: 1px solid var(--schwork-border);
+}
+
+.detailTitle {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 1.04rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.detailTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.18rem 0.55rem;
+  border-radius: 999px;
+  background: var(--schwork-navy);
+  color: #e6f3ef;
+}
+
+.detailTagPositive {
+  background: var(--schwork-success);
+  color: #ffffff;
+}
+
+.detailTagWarning {
+  background: var(--schwork-error);
+  color: #ffffff;
+}
+
+.detailText {
+  margin: 0 0 0.8rem;
+  font-size: 0.94rem;
+  line-height: 1.6;
+}
+
+/* Comparison side-by-side grid */
+.compareGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.75rem;
+  margin-bottom: 0.8rem;
+}
+
+.compareSideGood {
+  padding: 0.85rem 0.95rem;
+  border-radius: 10px;
+  border: 1.5px solid var(--schwork-success);
+  background: var(--schwork-success-bg);
+}
+
+.compareSideBad {
+  padding: 0.85rem 0.95rem;
+  border-radius: 10px;
+  border: 1.5px solid var(--schwork-error);
+  background: var(--schwork-error-bg);
+}
+
+.compareSideHeadingGood,
+.compareSideHeadingBad {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: var(--ifm-heading-font-family);
+  font-size: 0.86rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.compareSideHeadingGood {
+  color: var(--schwork-success);
+}
+
+.compareSideHeadingBad {
+  color: var(--schwork-error);
+}
+
+.compareSideBody {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.calloutExample,
+.calloutTip {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  padding: 0.7rem 0.85rem;
+  border-radius: 9px;
+  font-size: 0.89rem;
+  line-height: 1.5;
+  margin-top: 0.55rem;
+}
+
+.calloutExample {
+  background: var(--schwork-surface-alt);
+  border: 1px solid var(--schwork-border);
+}
+
+.calloutTip {
+  background: var(--schwork-amber-soft);
+  border: 1px solid rgba(200, 78, 36, 0.32);
+}
+
+.calloutIconSage {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--schwork-sage-dark);
+}
+
+:global(html[data-theme='dark']) .calloutIconSage {
+  color: var(--schwork-sage-light);
+}
+
+.calloutIconCoral {
+  flex-shrink: 0;
+  margin-top: 2px;
+  color: var(--schwork-coral);
+}
+
+:global(html[data-theme='dark']) .calloutIconCoral {
+  color: var(--schwork-amber);
+}
+
+@media (max-width: 640px) {
+  .compareGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .stage {
+    padding: 0.8rem;
+  }
+
+  .detailPanel {
+    padding: 0.9rem 0.95rem;
+  }
+}

@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 490" width="920" height="490" role="img" aria-label="Comparison Matrix of Modern Business Payment Methods including Cheques, Standing Orders, Direct Debits, EFTPOS, Direct Deposit, and Wire Transfers">
+  <defs>
+    <style>
+      .bg { fill: #F8F6F1; }
+      .card { fill: #FCFBF8; stroke: #CEDCD6; stroke-width: 2; rx: 12; }
+      .navy { fill: #1B365D; rx: 10; }
+      .sage { fill: #2E6359; rx: 10; }
+      .coral { fill: #C84E24; rx: 10; }
+      .mint { fill: #EBF2EF; stroke: #4E8577; stroke-width: 1.5; rx: 8; }
+      .amber { fill: #FEF3E2; stroke: #F5A352; stroke-width: 1.5; rx: 8; }
+      .title { font-family: system-ui, -apple-system, sans-serif; font-size: 21px; font-weight: 800; fill: #1B365D; }
+      .subtitle { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; fill: #4A5560; }
+      .w-title { font-family: system-ui, -apple-system, sans-serif; font-size: 13.5px; font-weight: 800; fill: #FFFFFF; }
+      .w-sub { font-family: system-ui, -apple-system, sans-serif; font-size: 11.5px; fill: #EBF2EF; }
+      .label { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; font-weight: 800; fill: #1B365D; }
+      .body { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; fill: #222222; }
+      .coral-txt { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; font-weight: 800; fill: #C84E24; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="920" height="490"/>
+  <text x="460" y="34" text-anchor="middle" class="title">Entrepreneur’s Payment Methods Toolkit (Paper vs. Electronic)</text>
+  <text x="460" y="54" text-anchor="middle" class="subtitle">Match each business obligation — rent, utilities, retail sales, and staff salaries — to the safest, fastest payment rail!</text>
+
+  <!-- Row 1: 3 Cards -->
+  <!-- Card 1: Cheques -->
+  <rect class="card" x="24" y="74" width="280" height="156"/>
+  <rect class="navy" x="34" y="84" width="260" height="36"/>
+  <text x="164" y="107" text-anchor="middle" class="w-title">1. CHEQUES (Paper Order)</text>
+  <text x="42" y="142" class="label">How It Works:</text>
+  <text x="42" y="160" class="body">Written order instructing your bank</text>
+  <text x="42" y="177" class="body">to pay a named payee a stated sum.</text>
+  <text x="42" y="200" class="coral-txt">Risk: Slow clearing + NSF bounces!</text>
+  <text x="42" y="218" class="body">Use: Formal B2B invoices, audit trail.</text>
+
+  <!-- Card 2: Standing Order -->
+  <rect class="card" x="320" y="74" width="280" height="156"/>
+  <rect class="sage" x="330" y="84" width="260" height="36"/>
+  <text x="460" y="107" text-anchor="middle" class="w-title">2. STANDING ORDER (Fixed!)</text>
+  <text x="338" y="142" class="label">Payer Instructs Bank:</text>
+  <text x="338" y="160" class="body">Pay the EXACT SAME FIXED amount</text>
+  <text x="338" y="177" class="body">automatically on a set date each month.</text>
+  <text x="338" y="200" class="coral-txt">Keyword: FIXED AMOUNT EVERY TIME!</text>
+  <text x="338" y="218" class="body">Use: Shop rent, loan repayments, insurance.</text>
+
+  <!-- Card 3: Direct Debit -->
+  <rect class="card" x="616" y="74" width="280" height="156"/>
+  <rect class="coral" x="626" y="84" width="260" height="36"/>
+  <text x="756" y="107" text-anchor="middle" class="w-title">3. DIRECT DEBIT (Variable!)</text>
+  <text x="634" y="142" class="label">Payee Pulls Bill Automatically:</text>
+  <text x="634" y="160" class="body">Customer authorizes supplier to collect</text>
+  <text x="634" y="177" class="body">VARYING amounts as bills fluctuate.</text>
+  <text x="634" y="200" class="coral-txt">Keyword: VARIABLE MONTHLY BILLS!</text>
+  <text x="634" y="218" class="body">Use: Electricity, water, phone utilities.</text>
+
+  <!-- Row 2: 3 Cards -->
+  <!-- Card 4: EFTPOS / Debit & Credit Cards -->
+  <rect class="card" x="24" y="246" width="280" height="156"/>
+  <rect class="sage" x="34" y="256" width="260" height="36"/>
+  <text x="164" y="279" text-anchor="middle" class="w-title">4. EFTPOS (Card Terminals)</text>
+  <text x="42" y="314" class="label">Electronic Funds Transfer at POS:</text>
+  <text x="42" y="332" class="body">Customer taps/swipes Debit or Credit</text>
+  <text x="42" y="349" class="body">card at checkout — instant approval!</text>
+  <text x="42" y="372" class="coral-txt">Note: Small merchant processing fee!</text>
+  <text x="42" y="390" class="body">Use: Retail shops, cafes, salons.</text>
+
+  <!-- Card 5: Direct Deposit / Credit Transfer -->
+  <rect class="card" x="320" y="246" width="280" height="156"/>
+  <rect class="navy" x="330" y="256" width="260" height="36"/>
+  <text x="460" y="279" text-anchor="middle" class="w-title">5. DIRECT DEPOSIT (EFT / ACH)</text>
+  <text x="338" y="314" class="label">Bank-to-Bank Electronic Credit:</text>
+  <text x="338" y="332" class="body">Funds pushed electronically straight into</text>
+  <text x="338" y="349" class="body">staff or supplier bank accounts!</text>
+  <text x="338" y="372" class="coral-txt">Eliminates cash-theft &amp; cheque printing!</text>
+  <text x="338" y="390" class="body">Use: Employee payroll, tax remittances.</text>
+
+  <!-- Card 6: Online / Mobile & Wire Transfer -->
+  <rect class="card" x="616" y="246" width="280" height="156"/>
+  <rect class="navy" x="626" y="256" width="260" height="36"/>
+  <text x="756" y="279" text-anchor="middle" class="w-title">6. ONLINE &amp; WIRE TRANSFERS</text>
+  <text x="634" y="314" class="label">Fast Domestic &amp; Cross-Border:</text>
+  <text x="634" y="332" class="body">Online banking pays local bills 24/7;</text>
+  <text x="634" y="349" class="body">SWIFT Wire settles overseas suppliers.</text>
+  <text x="634" y="372" class="coral-txt">Watch: Wire fees &amp; exact account verify!</text>
+  <text x="634" y="390" class="body">Use: Importing stock, remote freelancers.</text>
+
+  <!-- Bottom Exam Contrast Banner -->
+  <rect class="navy" x="24" y="418" width="872" height="56"/>
+  <text x="460" y="441" text-anchor="middle" class="w-title">#1 EXAM CONTRAST: STANDING ORDER vs. DIRECT DEBIT</text>
+  <text x="460" y="460" text-anchor="middle" class="w-sub">Standing Order = Initiated by PAYER for a FIXED sum (e.g. $1,200 Rent)   |   Direct Debit = Initiated by PAYEE for a VARIABLE sum (e.g. Electricity)</text>
+</svg>

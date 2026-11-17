@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" width="920" height="460" role="img" aria-label="Flowchart connecting the 3-Month Sales Budget to the Production Budget via Desired Closing Inventory and Opening Inventory">
+  <defs>
+    <style>
+      .bg { fill: #F8F6F1; }
+      .card { fill: #FCFBF8; stroke: #CEDCD6; stroke-width: 2; rx: 12; }
+      .navy { fill: #1B365D; rx: 10; }
+      .sage { fill: #2E6359; rx: 10; }
+      .coral { fill: #C84E24; rx: 10; }
+      .mint { fill: #EBF2EF; stroke: #4E8577; stroke-width: 1.5; rx: 8; }
+      .amber { fill: #FEF3E2; stroke: #F5A352; stroke-width: 1.5; rx: 8; }
+      .title { font-family: system-ui, -apple-system, sans-serif; font-size: 21px; font-weight: 800; fill: #1B365D; }
+      .subtitle { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; fill: #4A5560; }
+      .w-title { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; font-weight: 800; fill: #FFFFFF; }
+      .w-sub { font-family: system-ui, -apple-system, sans-serif; font-size: 11.5px; fill: #EBF2EF; }
+      .label { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; font-weight: 800; fill: #1B365D; }
+      .body { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; fill: #222222; }
+      .coral-txt { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; font-weight: 800; fill: #C84E24; }
+      .arrow { stroke: #C84E24; stroke-width: 3; fill: none; marker-end: url(#ar13); }
+    </style>
+    <marker id="ar13" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#C84E24"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="920" height="460"/>
+  <text x="460" y="34" text-anchor="middle" class="title">From 3-Month Sales Budget to Production Budget (Master Link)</text>
+  <text x="460" y="54" text-anchor="middle" class="subtitle">Sales Budget ALWAYS comes FIRST — then add Desired Closing Stock and subtract Opening Stock to know how many units to build!</text>
+
+  <!-- Step 1: Sales Budget -->
+  <rect class="card" x="24" y="76" width="380" height="288"/>
+  <rect class="navy" x="36" y="88" width="356" height="44"/>
+  <text x="214" y="108" text-anchor="middle" class="w-title">STEP 1: 3-MONTH SALES BUDGET</text>
+  <text x="214" y="124" text-anchor="middle" class="w-sub">Forecast Units × Selling Price = Budgeted Revenue</text>
+
+  <rect class="mint" x="40" y="146" width="348" height="46"/>
+  <text x="54" y="166" class="label">Jan:  400 units × $25  =  $10,000</text>
+  <text x="54" y="183" class="body">Establishes opening demand for Q1</text>
+
+  <rect class="mint" x="40" y="200" width="348" height="46"/>
+  <text x="54" y="220" class="label">Feb:  500 units × $25  =  $12,500</text>
+  <text x="54" y="237" class="body">Drives Jan’s Desired Closing Stock (20% = 100!)</text>
+
+  <rect class="mint" x="40" y="254" width="348" height="46"/>
+  <text x="54" y="274" class="label">Mar:  600 units × $25  =  $15,000</text>
+  <text x="54" y="291" class="body">Drives Feb’s Desired Closing Stock (20% = 120!)</text>
+
+  <rect class="sage" x="40" y="310" width="348" height="40"/>
+  <text x="214" y="335" text-anchor="middle" class="w-title">Q1 TOTAL: 1,500 Units  =  $37,500 Sales!</text>
+
+  <!-- Connecting Arrow -->
+  <line class="arrow" x1="404" y1="218" x2="452" y2="218"/>
+
+  <!-- Step 2: Production Budget -->
+  <rect class="card" x="456" y="76" width="440" height="288"/>
+  <rect class="coral" x="468" y="88" width="416" height="44"/>
+  <text x="676" y="108" text-anchor="middle" class="w-title">STEP 2: 3-MONTH PRODUCTION BUDGET (UNITS!)</text>
+  <text x="676" y="124" text-anchor="middle" class="w-sub">Never run out of stock AND never over-build warehouse shelves!</text>
+
+  <rect class="amber" x="472" y="146" width="408" height="72"/>
+  <text x="676" y="168" text-anchor="middle" class="coral-txt">MASTER PRODUCTION FORMULA (MEMORIZE!)</text>
+  <text x="676" y="190" text-anchor="middle" class="label">Units to Produce = Budgeted Sales Units</text>
+  <text x="676" y="209" text-anchor="middle" class="label">+ Desired Closing Stock − Opening Stock</text>
+
+  <rect class="mint" x="472" y="228" width="408" height="122"/>
+  <text x="486" y="250" class="label">Watch the Month-to-Month Rollover (20% Rule):</text>
+  <text x="486" y="271" class="body">• Jan: 400 Sales + 100 Close (20% Feb) − 80 Open = 420</text>
+  <text x="486" y="291" class="body">• Feb: 500 Sales + 120 Close (20% Mar) − 100 Open = 520</text>
+  <text x="486" y="311" class="body">• Mar: 600 Sales + 140 Close (20% Apr) − 120 Open = 620</text>
+  <text x="486" y="336" class="coral-txt">Q1 Total Production = 1,560 Units (1,500 + 140 − 80 ✓!)</text>
+
+  <!-- Bottom Trap Banner -->
+  <rect class="navy" x="24" y="382" width="872" height="58"/>
+  <text x="460" y="405" text-anchor="middle" class="w-title">#1 BUDGET TOTAL COLUMN TRAP: NEVER ADD UP MONTHLY OPENING &amp; CLOSING STOCKS!</text>
+  <text x="460" y="425" text-anchor="middle" class="w-sub">Q1 Total Column uses JAN 1 Opening Stock (80) &amp; MAR 31 Closing Stock (140) — NOT 80+100+120! Check: 1,500 + 140 − 80 = 1,560 ✓!</text>
+</svg>

@@ -1,0 +1,254 @@
+---
+id: direct-vs-indirect-costs
+title: "10.1 Direct Costs vs. Indirect Costs (Factory Overheads)"
+sidebar_label: "10.1 Direct vs. Indirect Costs"
+sidebar_position: 1
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 10"
+  section="Manufacturing & Inventory Control — Manufacturing Accounts"
+  code="POA-S10-01"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="20 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+Up to now, every sole trader, partnership, and company we studied was a **merchandising business** — buying finished goods and reselling them. A **manufacturing business** (a bakery, furniture workshop, garment factory, or bottling plant) *creates* its own products from raw materials! Before preparing a Manufacturing Account, you must sort every business cost cleanly into **three exact buckets**: **1. Direct Costs *(Prime Cost)***, **2. Indirect Factory Costs *(Factory Overheads)***, and **3. Non-Manufacturing Expenses *(Office, Selling & Finance — Income Statement ONLY!)***.
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | **Direct Costs** (`Direct Materials + Direct Labor + Direct Expenses = Prime Cost`), **Indirect Factory Overheads**, **Non-Manufacturing Costs**, and **Shared Cost Apportionment** |
+| **Exam Focus** | Instantly distinguishing **Direct vs. Indirect Labor**, separating **Carriage Inwards on Raw Materials** *(Direct!)* from **Carriage Outwards** *(Selling Expense!)*, and splitting shared bills *(e.g. `75%` Factory / `25%` Office)* |
+| **Learning Outcome** | Classify manufacturing and non-manufacturing costs accurately and apportion shared expenses between the factory and the office |
+
+<ObjectivesBox
+  id="poa-s10-01-obj"
+  objectives={[
+    'Define Direct Costs (Direct Materials, Direct Labor, Direct Expenses) and calculate Prime Cost.',
+    'Define Indirect Factory Costs (Factory Overheads) and give examples of indirect materials, indirect labor, and indirect factory expenses.',
+    'Distinguish clearly between Factory Costs (Manufacturing Account) and Non-Manufacturing Costs (Income Statement).',
+    'Apportion shared expenses such as Rent, Power, and Insurance accurately between Factory Overheads and Office Expenses.',
+  ]}
+/>
+
+---
+
+## 1. The Three Cost Buckets of Every Manufacturing Business
+
+### Bucket 1: Direct Costs (`= PRIME COST`)
+A **Direct Cost** can be **physically and economically traced directly to each individual unit** produced!
+1. **Direct Materials:** The main raw ingredients becoming part of the finished product *(e.g., timber in chairs, flour in bread, fabric in shirts)* — **PLUS Carriage Inwards on Raw Materials**!
+2. **Direct Labor *(Manufacturing / Productive Wages)*:** Wages of workers who **hands-on build, assemble, bake, or sew** the product *(e.g., carpenters, machine operators, bakers)*.
+3. **Direct Expenses:** Any special cost incurred directly for a specific product or unit *(e.g., **Royalties** paid per unit patented/manufactured, or hiring a special cutting mold for one custom job)*.
+
+$$\text{Prime Cost} = \text{Direct Materials Consumed} + \text{Direct Labor} + \text{Direct Expenses}$$
+
+### Bucket 2: Indirect Factory Costs (`= FACTORY OVERHEADS`)
+A **Factory Overhead** is a genuine **production cost inside the factory**, yet it **cannot be traced cleanly to one single unit**:
+- **Indirect Materials:** Machine lubricating oil, glue, nails, sandpaper, factory cleaning cloths.
+- **Indirect Labor:** Factory supervisor/foreman salary, factory cleaner, maintenance engineer, factory night security guard.
+- **Indirect Factory Expenses:** Factory rent &amp; rates, factory power/electricity, repairs to plant, **Depreciation of Factory Machinery &amp; Factory Buildings**.
+
+### Bucket 3: Non-Manufacturing Expenses *(NEVER in Manufacturing Account!)*
+Costs incurred **OUTSIDE the factory floor** go strictly to the **Income Statement (Profit &amp; Loss section)**:
+- **Administration:** Office salaries, office rent, stationery, audit fees, **Depreciation of Office Equipment**.
+- **Selling &amp; Distribution:** Advertising, sales commissions, **Carriage Outwards**, **Depreciation of Delivery Vans**.
+- **Finance:** Bank loan interest, debenture interest, discounts allowed, bad debts.
+
+---
+
+## 2. Diagram 1: Direct Costs vs. Factory Overheads vs. Non-Factory Expenses
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-10/01-direct-vs-indirect-costs.svg"
+  alt="Three-column classification guide sorting Direct Costs (Prime Cost), Factory Overheads, and Non-Factory Expenses, plus the Shared Cost Apportionment rule."
+  caption="Diagram 1 (Static Reference): Memorize the three buckets — Bucket 1 + Bucket 2 stay inside the Manufacturing Account; Bucket 3 belongs strictly in the Income Statement!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive Cost-Classification Trap Spotter
+
+<InteractiveDiagram
+  title="Interactive Hub: Tap Each Tricky Factory Item to Nail Its Exact Bucket!"
+  layout="hub"
+  centerLabel="Cost Sort"
+  centerSublabel="Where Does It Go?"
+  instruction="Select any commonly misclassified manufacturing item below to avoid classic Paper 1 & Paper 2 traps."
+  nodes={[
+    {
+      label: 'Carriage Inwards vs. Outwards',
+      tag: 'Opposite Homes!',
+      tone: 'warning',
+      detail: 'Carriage INWARDS brings Raw Materials INTO the factory → Direct Material Cost (adds into Prime Cost!). Carriage OUTWARDS delivers finished products to customers → Selling Expense (Income Statement ONLY!).',
+      example: 'Carriage Inwards on Timber ($3,000) → Manufacturing A/c Stage 1; Carriage Outwards ($3,500) → Income Statement!',
+      examTip: 'Never drop Carriage Outwards into Factory Overheads — delivery to customers happens AFTER manufacturing is finished!',
+    },
+    {
+      label: 'Machinery vs. Delivery Van Depr.',
+      tag: 'Check the Asset!',
+      tone: 'warning',
+      detail: 'Where the asset works decides where its Depreciation goes! Factory Machinery makes products → Factory Overhead. Office Computers & Delivery Vans serve admin/selling → Income Statement!',
+      example: 'Depr. of Factory Plant ($6,400) → Factory Overhead; Depr. of Delivery Vans ($4,500) → Income Statement!',
+      examTip: 'Always read the exact asset name before deciding whether Depreciation goes into Manufacturing or Income Statement!',
+    },
+    {
+      label: 'Carpenter vs. Factory Supervisor',
+      tag: 'Direct vs. Indirect',
+      tone: 'positive',
+      detail: 'A carpenter physically builds each chair (Direct Labor → Prime Cost!). A factory supervisor oversees 30 workers across 6 product lines (Indirect Labor → Factory Overhead!).',
+      example: 'Both sit inside the Manufacturing Account — Direct Labor goes ABOVE Prime Cost, Indirect Labor goes BELOW Prime Cost!',
+      examTip: 'And an Office Accountant works outside the factory altogether → Income Statement Administration Expense!',
+    },
+    {
+      label: 'Shared Premises Rent (75% / 25%)',
+      tag: 'Split Cleanly!',
+      tone: 'neutral',
+      detail: 'When the factory and head office share one building (e.g. $16,000 total rent, 75% Factory / 25% Office), split it BEFORE drafting the statements!',
+      example: '75% × $16,000 = $12,000 → Factory Overheads; 25% × $16,000 = $4,000 → Income Statement Office Expenses!',
+      examTip: 'Double-check your split adds back to 100% ($12,000 + $4,000 = $16,000) so no dollar disappears!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Sorting Factory & Office Costs + Shared Apportionment (Caribbean Woodcraft Factory)"
+  marks={12}
+  problem={
+    <>
+      <p>
+        <strong>Scenario:</strong> <strong>Caribbean Woodcraft Factory</strong> manufactures
+        wooden dining chairs and incurred these costs during 2026 (assume zero opening/closing
+        raw materials for this classification drill):
+      </p>
+      <ul>
+        <li>Raw Timber Purchased: <strong>$42,000</strong></li>
+        <li>Carriage Inwards on Timber: <strong>$3,000</strong></li>
+        <li>Carpenter Assembly Wages: <strong>$38,000</strong></li>
+        <li>Patent Royalty (`$2` per chair made): <strong>$2,000</strong></li>
+        <li>Factory Supervisor’s Salary: <strong>$14,000</strong></li>
+        <li>Wood Glue &amp; Sandpaper (minor consumables): <strong>$1,600</strong></li>
+        <li>Depreciation of Factory Woodworking Machinery: <strong>$6,400</strong></li>
+        <li>Shared Building Rent (<strong>75% Factory / 25% Office</strong>): <strong>$16,000</strong></li>
+        <li>Office Accountant’s Salary: <strong>$18,000</strong></li>
+        <li>Carriage Outwards to Furniture Stores: <strong>$3,500</strong></li>
+        <li>Depreciation of Delivery Vans: <strong>$4,500</strong></li>
+      </ul>
+      <p>
+        Sort every cost cleanly into: (1) <strong>Direct Costs (Prime Cost)</strong>, (2)
+        <strong>Factory Overheads</strong>, and (3) <strong>Non-Manufacturing Expenses (Income Statement)</strong>,
+        and calculate the subtotal of each bucket! <em>[12 marks]</em>
+      </p>
+    </>
+  }
+>
+
+### 1. Direct Costs (`= Prime Cost`) *(4 marks)*
+| Cost Item | Sub-Class | $ |
+| :--- | :--- | ---: |
+| Raw Timber Purchased | Direct Material | 42,000 |
+| Carriage Inwards on Timber | Direct Material | 3,000 |
+| Carpenter Assembly Wages | Direct Labor | 38,000 |
+| Patent Royalty *(per chair produced)* | Direct Expense | 2,000 |
+| **Total Direct Costs *(Prime Cost)*** | | **$85,000** |
+
+### 2. Indirect Factory Costs (`= Factory Overheads`) *(4 marks)*
+| Cost Item | Sub-Class | $ |
+| :--- | :--- | ---: |
+| Factory Supervisor’s Salary | Indirect Labor | 14,000 |
+| Wood Glue &amp; Sandpaper | Indirect Materials | 1,600 |
+| Depreciation of Factory Machinery | Indirect Factory Expense | 6,400 |
+| Factory Share of Building Rent *(`75% × $16,000`)* | Indirect Factory Expense | 12,000 |
+| **Total Factory Overheads** | | **$34,000** |
+
+*(Total Factory Production Cost = Prime Cost `$85,000` + Factory Overheads `$34,000` = **`$119,000`**!)*
+
+### 3. Non-Manufacturing Expenses *(Income Statement ONLY!)* *(4 marks)*
+| Cost Item | Sub-Class | $ |
+| :--- | :--- | ---: |
+| Office Share of Building Rent *(`25% × $16,000`)* | Administration | 4,000 |
+| Office Accountant’s Salary | Administration | 18,000 |
+| Carriage Outwards to Furniture Stores | Selling &amp; Distribution | 3,500 |
+| Depreciation of Delivery Vans | Selling &amp; Distribution | 4,500 |
+| **Total Non-Manufacturing Expenses** | | **$30,000** |
+
+*(Reconciliation Check: `$85,000 + $34,000 + $30,000 = $149,000` — every single dollar accounted for!)*
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Direct vs. Indirect Manufacturing Costs"
+  items={[
+    {
+      statement: 'Prime Cost equals Direct Materials Consumed plus Direct Labor plus Direct Expenses.',
+      answer: true,
+      explanation: 'Correct — Prime Cost is the sum of ALL Direct Manufacturing Costs before adding Factory Overheads!',
+    },
+    {
+      statement: 'The salary of a Factory Night Security Guard is classified as Direct Labor.',
+      answer: false,
+      explanation: 'A security guard protects the entire plant rather than building individual units — that is INDIRECT Labor (Factory Overhead)!',
+    },
+    {
+      statement: 'Carriage Outwards on delivering finished products to retail customers is included under Factory Overheads.',
+      answer: false,
+      explanation: 'NEVER! Carriage Outwards is a Selling & Distribution Expense belonging strictly in the Income Statement (NOT Manufacturing)!',
+    },
+    {
+      statement: 'Royalties paid at $1.50 for every patented bottle manufactured are classified as a Direct Expense inside Prime Cost.',
+      answer: true,
+      explanation: 'Spot on! Because the royalty can be traced directly to each unit produced, it is a classic Direct Expense!',
+    },
+    {
+      statement: 'If total electricity is $10,000 and is apportioned 80% Factory / 20% Office, $8,000 goes to Factory Overheads and $2,000 goes to the Income Statement.',
+      answer: true,
+      explanation: 'Exact! Always split shared utilities cleanly according to the ratio stated in the question.',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s10-01-project"
+  title="Mini-Project: Factory Cost Audit for Tropical Juice Bottling Plant"
+  duration="20 mins"
+  scenario="Tropical Juice Bottling Plant recorded these monthly costs: Fresh Fruit & Glass Bottles $28,000; Bottling Line Worker Wages $22,000; Patented Recipe Royalty $2,000; Plant Supervisor Salary $10,000; Machine Lubricating Oil $1,000; Depreciation of Bottling Machines $5,000; Shared Electricity & Water $10,000 (80% Factory / 20% Office); Sales Representatives’ Salaries $12,000; Carriage Outwards to Supermarkets $3,000."
+  steps={[
+    'Sort every cost into a neat 3-column Cost Audit Table: (1) Direct Costs (Prime Cost), (2) Factory Overheads, and (3) Non-Manufacturing Expenses.',
+    'Show the explicit 80% / 20% apportionment working for Shared Electricity & Water.',
+    'Calculate exact subtotals for Prime Cost, Total Factory Overheads, Total Production Cost (Prime + Overheads), and Total Non-Manufacturing Expenses.',
+    'Write 1 crisp sentence explaining why Machine Lubricating Oil is an Indirect Material even though it touches the bottling machines.',
+  ]}
+  deliverables={[
+    '3-column Cost Audit Table for Tropical Juice Bottling Plant',
+    'Shared Utility Apportionment Working + 4 Cost Subtotals',
+    '1-sentence explanation of Indirect Material classification',
+  ]}
+  rubric={[
+    'Prime Cost = $28,000 + $22,000 + $2,000 = $52,000 exact.',
+    'Factory Overheads = $10,000 + $1,000 + $5,000 + $8,000 (80% of $10k) = $24,000 → Total Factory Production Cost = $76,000!',
+    'Non-Manufacturing Expenses (Income Statement ONLY!) = $12,000 + $3,000 + $2,000 (20% of $10k) = $17,000 (Total All Costs = $93,000 ✓!).',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **Prime Cost** = `Direct Materials (+ Carriage Inwards) + Direct Labor + Direct Expenses (Royalties)`.
+- **Factory Overheads** = Indirect factory costs (`Supervisor, Lubricants, Plant Depr., Factory Rent/Power`).
+- **Non-Factory Costs** (`Office, Selling, Carriage Outwards, Van Depr., Finance`) → **Income Statement ONLY**!
+:::

@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" role="img" aria-label="Anatomy of a Suspense Account showing how the Trial Balance difference opens it and correcting entries clear it to zero">
+  <defs>
+    <style>
+      .title { font: 700 20px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .sub { font: 500 13px system-ui, -apple-system, sans-serif; fill: #4A5560; }
+      .hdr { font: 700 14px system-ui, -apple-system, sans-serif; fill: #FCFBF8; }
+      .h3 { font: 700 13px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .mono { font: 700 11.8px ui-monospace, SFMono-Regular, monospace; fill: #122440; }
+      .body { font: 500 12px system-ui, -apple-system, sans-serif; fill: #222222; }
+      .sage { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #2E6359; }
+      .coral { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #C84E24; }
+    </style>
+  </defs>
+
+  <rect width="920" height="460" rx="14" fill="#F8F6F1" stroke="#CEDCD6" stroke-width="1.5"/>
+  <text x="32" y="38" class="title">How a Suspense Account Opens, Absorbs Corrections &amp; Clears to $0</text>
+  <text x="32" y="58" class="sub">Suppose Trial Balance Credits ($98,600) exceed Debits ($98,150) by $450 — put the $450 opening difference on the SHORT side (Debit)!</text>
+
+  <!-- Left: Unbalanced TB -->
+  <rect x="32" y="82" width="264" height="270" rx="11" fill="#FCFBF8" stroke="#C84E24" stroke-width="1.6"/>
+  <rect x="32" y="82" width="264" height="36" rx="10" fill="#C84E24"/>
+  <text x="164" y="105" text-anchor="middle" class="hdr">1. Unbalanced Trial Balance</text>
+  <text x="50" y="142" class="h3">Initial Totals:</text>
+  <text x="50" y="166" class="mono">Debit Column:   $98,150</text>
+  <text x="50" y="188" class="mono">Credit Column:  $98,600</text>
+  <line x1="50" y1="202" x2="278" y2="202" stroke="#CEDCD6" stroke-width="1.3"/>
+  <text x="50" y="226" class="coral">Debit side is SHORT by $450!</text>
+  <rect x="46" y="242" width="236" height="92" rx="8" fill="#FFF3EE" stroke="#C84E24"/>
+  <text x="58" y="264" class="h3">Temporary Plug Rule:</text>
+  <text x="58" y="284" class="body">Put "Suspense $450" on the</text>
+  <text x="58" y="300" class="body">DEBIT side so both sides</text>
+  <text x="58" y="316" class="sage">temporarily total $98,600!</text>
+
+  <!-- Arrow -->
+  <line x1="296" y1="215" x2="322" y2="215" stroke="#1B365D" stroke-width="2.5"/>
+  <polygon points="318,208 330,215 318,222" fill="#1B365D"/>
+
+  <!-- Right: Suspense T-Account -->
+  <rect x="332" y="82" width="556" height="270" rx="11" fill="#FCFBF8" stroke="#1B365D" stroke-width="1.8"/>
+  <rect x="332" y="82" width="556" height="36" rx="10" fill="#1B365D"/>
+  <text x="610" y="105" text-anchor="middle" class="hdr">2. Suspense Account (Temporary Holding Ledger)</text>
+  <line x1="610" y1="118" x2="610" y2="338" stroke="#1B365D" stroke-width="1.5"/>
+
+  <text x="348" y="140" class="h3">Dr (Short Side Opening + Dr Fixes)</text>
+  <text x="626" y="140" class="h3">Cr (Cr Fixes Clearing Balance)</text>
+  <line x1="344" y1="148" x2="876" y2="148" stroke="#CEDCD6" stroke-width="1.2"/>
+
+  <!-- Debit lines -->
+  <text x="348" y="172" class="coral">Difference per TB ...... $450</text>
+  <text x="348" y="198" class="mono">Sales (undercast) ...... $250</text>
+  <text x="348" y="224" class="body">(Dr Suspense $250 / Cr Sales $250)</text>
+
+  <!-- Credit lines -->
+  <text x="626" y="172" class="mono">Purchases (overcast) ... $300</text>
+  <text x="626" y="198" class="mono">Rent (omitted Dr) ...... $400</text>
+  <text x="626" y="224" class="body">(Dr Rent $400 / Cr Suspense $400)</text>
+
+  <!-- Totals -->
+  <line x1="348" y1="262" x2="594" y2="262" stroke="#1B365D" stroke-width="1.2"/>
+  <line x1="626" y1="262" x2="874" y2="262" stroke="#1B365D" stroke-width="1.2"/>
+  <text x="588" y="284" text-anchor="end" class="mono">$700</text>
+  <text x="868" y="284" text-anchor="end" class="mono">$700</text>
+  <line x1="348" y1="292" x2="594" y2="292" stroke="#1B365D" stroke-width="2"/>
+  <line x1="626" y1="292" x2="874" y2="292" stroke="#1B365D" stroke-width="2"/>
+
+  <rect x="352" y="306" width="516" height="32" rx="7" fill="#EBF2EF"/>
+  <text x="610" y="327" text-anchor="middle" class="sage">✓ Balance = $0! Every single-sided error has been found and cleared!</text>
+
+  <!-- Bottom Unresolved Note -->
+  <rect x="32" y="370" width="856" height="68" rx="10" fill="#EBF2EF" stroke="#4E8577" stroke-width="1.4"/>
+  <text x="52" y="395" class="h3">What If a Balance STILL Remains in Suspense on Balance Sheet Date?</text>
+  <text x="52" y="416" class="body">• Remaining DEBIT Balance → shown temporarily under Current Assets (so the Balance Sheet still balances!)</text>
+  <text x="52" y="432" class="body">• Remaining CREDIT Balance → shown temporarily under Current Liabilities until the remaining error is located!</text>
+</svg>

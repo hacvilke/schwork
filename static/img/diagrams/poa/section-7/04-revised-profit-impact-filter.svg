@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 450" role="img" aria-label="Decision filter showing which correcting journal entries change Net Profit vs which have ZERO effect on Net Profit">
+  <defs>
+    <style>
+      .title { font: 700 20px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .sub { font: 500 13px system-ui, -apple-system, sans-serif; fill: #4A5560; }
+      .hdr { font: 700 14px system-ui, -apple-system, sans-serif; fill: #FCFBF8; }
+      .h3 { font: 700 13.5px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .body { font: 500 12px system-ui, -apple-system, sans-serif; fill: #222222; }
+      .sage { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #2E6359; }
+      .coral { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #C84E24; }
+    </style>
+  </defs>
+
+  <rect width="920" height="450" rx="14" fill="#F8F6F1" stroke="#CEDCD6" stroke-width="1.5"/>
+  <text x="32" y="38" class="title">Statement of Revised Profit: The Instant "Does It Touch Profit?" Filter</text>
+  <text x="32" y="58" class="sub">Inspect your Correcting Journal Entry — ONLY Nominal (Income Statement) accounts ever change Draft Net Profit!</text>
+
+  <!-- 3 Columns -->
+  <!-- Col 1: Increases Profit -->
+  <rect x="32" y="82" width="272" height="278" rx="11" fill="#FCFBF8" stroke="#2E6359" stroke-width="1.8"/>
+  <rect x="32" y="82" width="272" height="38" rx="10" fill="#2E6359"/>
+  <text x="168" y="106" text-anchor="middle" class="hdr">ADD to Draft Profit (+)</text>
+  <text x="48" y="140" class="sage">Correcting Entry CREDITS a</text>
+  <text x="48" y="158" class="sage">Revenue OR Expense Account!</text>
+  <line x1="48" y1="170" x2="288" y2="170" stroke="#CEDCD6"/>
+  <text x="48" y="192" class="body">• Credit Sales (undercast fixed)</text>
+  <text x="48" y="212" class="body">• Credit Discount / Rent Received</text>
+  <text x="48" y="232" class="body">• Credit Purchases (overcast cut)</text>
+  <text x="48" y="252" class="body">• Credit Repairs / Rent Expense</text>
+  <text x="58" y="268" class="body">(removes wrongly expensed asset!)</text>
+  <rect x="46" y="286" width="244" height="56" rx="7" fill="#EBF2EF"/>
+  <text x="58" y="307" class="h3">Golden Rule #1:</text>
+  <text x="58" y="326" class="sage">Cr Nominal A/c = PROFIT UP (+)</text>
+
+  <!-- Col 2: Decreases Profit -->
+  <rect x="324" y="82" width="272" height="278" rx="11" fill="#FCFBF8" stroke="#C84E24" stroke-width="1.8"/>
+  <rect x="324" y="82" width="272" height="38" rx="10" fill="#C84E24"/>
+  <text x="460" y="106" text-anchor="middle" class="hdr">DEDUCT From Draft Profit (−)</text>
+  <text x="340" y="140" class="coral">Correcting Entry DEBITS a</text>
+  <text x="340" y="158" class="coral">Revenue OR Expense Account!</text>
+  <line x1="340" y1="170" x2="580" y2="170" stroke="#CEDCD6"/>
+  <text x="340" y="192" class="body">• Debit Wages / Rent / Insurance</text>
+  <text x="350" y="208" class="body">(omitted expense added!)</text>
+  <text x="340" y="228" class="body">• Debit Purchases (undercast fixed)</text>
+  <text x="340" y="248" class="body">• Debit Sales (overcast cut)</text>
+  <text x="340" y="268" class="body">• Debit Discount Allowed / Bad Debts</text>
+  <rect x="338" y="286" width="244" height="56" rx="7" fill="#FFF3EE"/>
+  <text x="350" y="307" class="h3">Golden Rule #2:</text>
+  <text x="350" y="326" class="coral">Dr Nominal A/c = PROFIT DOWN (−)</text>
+
+  <!-- Col 3: ZERO Effect on Profit -->
+  <rect x="616" y="82" width="272" height="278" rx="11" fill="#FCFBF8" stroke="#1B365D" stroke-width="1.8"/>
+  <rect x="616" y="82" width="272" height="38" rx="10" fill="#1B365D"/>
+  <text x="752" y="106" text-anchor="middle" class="hdr">ZERO Effect on Profit ($0)</text>
+  <text x="632" y="140" class="h3">Entry touches ONLY Balance</text>
+  <text x="632" y="158" class="h3">Sheet A/cs (Assets, Liab, Cap)</text>
+  <line x1="632" y1="170" x2="872" y2="170" stroke="#CEDCD6"/>
+  <text x="632" y="192" class="body">• Commission error between two</text>
+  <text x="642" y="208" class="body">Debtors (A. Lee vs B. Lee)</text>
+  <text x="632" y="228" class="body">• Cash paid to Creditor misposted</text>
+  <text x="632" y="248" class="body">• Drawings vs Bank / Cash error</text>
+  <text x="632" y="268" class="body">• Swapping two Expenses (Rent vs</text>
+  <text x="642" y="282" class="body">Rates: +$X &amp; −$X net $0!)</text>
+  <rect x="630" y="294" width="244" height="48" rx="7" fill="#EBF2EF"/>
+  <text x="642" y="314" class="h3">Golden Rule #3:</text>
+  <text x="642" y="331" class="body">Show "No Effect" — NEVER skip!</text>
+
+  <!-- Bottom Format Formula -->
+  <rect x="32" y="378" width="856" height="52" rx="9" fill="#1B365D"/>
+  <text x="460" y="400" text-anchor="middle" class="hdr">Statement of Revised Net Profit Formula</text>
+  <text x="460" y="420" text-anchor="middle" style="font: 600 12.5px system-ui; fill: #EBF2EF;">Draft Net Profit  +  Additions (Cr Nominal Fixes)  −  Deductions (Dr Nominal Fixes)  =  Corrected (Revised) Net Profit</text>
+</svg>

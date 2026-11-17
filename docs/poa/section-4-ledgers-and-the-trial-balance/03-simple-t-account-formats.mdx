@@ -1,0 +1,245 @@
+---
+id: simple-t-account-formats
+title: "4.3 Drawing Up Simple Account Formats (T-Accounts)"
+sidebar_label: "4.3 Simple T-Account Formats"
+sidebar_position: 3
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 4"
+  section="Ledgers and the Trial Balance — The Ledger System"
+  code="POA-S4-03"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="20 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+A **Ledger Account** is simply a dedicated page keeping all increases and decreases for **ONE single item** (like Bank, Rent, or Customer *K. Brown*) in one place. Accountants use two clean layouts: the classic two-sided **T-Account** (shaped like a giant capital **T** with Debit on the left and Credit on the right) and the modern **Running-Balance (3-Column) Account** used by banks and accounting software.
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | Anatomy of a **T-Account** (`Dr` left / `Cr` right, Date, Details, Folio, `$`), the **"Opposite Account Name" rule**, and **Running-Balance (3-Column) accounts** |
+| **Exam Focus** | Drawing crisp, properly labeled T-accounts and converting seamlessly between T-account style and Running-Balance style |
+| **Learning Outcome** | Format and populate both T-Accounts and Running-Balance accounts cleanly with zero naming or column errors |
+
+<ObjectivesBox
+  id="poa-s4-03-obj"
+  objectives={[
+    'Identify every column and heading required in a standard T-Account (Title, Dr/Cr markers, Date, Details, Folio, Amount).',
+    'Apply the "Opposite Account Name" rule accurately when writing the Details column inside any T-account.',
+    'Draw up a Running-Balance (Three-Column) ledger account showing the updated balance (Dr or Cr) after every transaction.',
+    'Explain the advantages and typical real-world uses of T-Accounts versus Running-Balance accounts.',
+  ]}
+/>
+
+---
+
+## 1. Anatomy of Both Standard Ledger Formats
+
+### Format 1: Classic T-Account (Horizontal / Two-Sided Style)
+Every T-Account has **one centered account title**, **`Dr`** in the top-left corner, **`Cr`** in the top-right corner, and **four identical columns on each side**:
+- **Left side (Debit):** `Date | Details | Folio | $`
+- **Right side (Credit):** `Date | Details | Folio | $`
+
+### Format 2: Running-Balance Account (Three-Column / Vertical Style)
+Instead of splitting left and right halves, every entry goes straight down in chronological order across six columns:
+- `Date | Details | Folio | Debit ($) | Credit ($) | Balance ($)` *(labeled `Dr` or `Cr` on every row!)*
+
+### The #1 Golden Presentation Rule: **The Opposite Account Name Rule**
+Inside the **Details** column of any ledger account, **NEVER write the account’s own name!** Always write the **name of the OTHER account** that completes the double entry!
+- *Example:* Paid $800 Rent by cheque (`Dr Rent $800`, `Cr Bank $800`):
+  - Inside the **Rent Account** (on the Debit side), write Details = **`Bank`** (NOT "Rent"!).
+  - Inside the **Bank Account** (on the Credit side), write Details = **`Rent`** (NOT "Bank"!).
+- *Why?* Writing the cross-reference lets an auditor trace instantly WHERE the matching half of the double entry lives!
+
+---
+
+## 2. Diagram 1: T-Account vs. Running-Balance Layout Side by Side
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-4/03-t-account-vs-running-balance.svg"
+  alt="Side-by-side layout comparing a Classic T-Account (Dr left, Cr right, Balance c/d and b/d) and a Running-Balance Three-Column Account (Date, Details, Dr, Cr, Balance showing running Dr balance after every line) for the exact same Bank transactions."
+  caption="Diagram 1 (Static Reference): Notice how both formats produce the exact same closing $1,300 Dr balance — the Running-Balance format simply recalculates the balance after EVERY row!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive T-Account vs. Running-Balance Comparator
+
+<InteractiveDiagram
+  title="Interactive Comparator: Classic T-Account vs. Running-Balance Format"
+  layout="compare"
+  instruction="Select any comparison dimension below to see when to use T-Accounts versus Running-Balance accounts — and how to score full presentation marks on both."
+  nodes={[
+    {
+      label: 'Visual Layout',
+      tag: 'Structure',
+      detail: 'Both formats store the exact same Debits, Credits, dates, and opposite-account Details.',
+      sideALabel: 'Classic T-Account',
+      sideAText: 'Splits the page vertically down the middle: ALL Debits stack on the left; ALL Credits stack on the right. Great for visualizing double-entry balance at a glance.',
+      sideBLabel: 'Running-Balance (3-Column)',
+      sideBText: 'Lists entries in one single chronological list with three money columns: Debit ($), Credit ($), and Balance ($). No page split needed.',
+      examTip: 'Always check exam instructions! If a question says "using the three-column running-balance format", do NOT draw a T-account!',
+    },
+    {
+      label: 'How You Read the Balance',
+      tag: 'Speed',
+      detail: 'Suppose a customer phones on May 14 asking, "How much do I owe you right now?"',
+      sideALabel: 'Classic T-Account',
+      sideAText: 'You must pause, add up the Debit column, add up the Credit column, and subtract to find the mid-month balance.',
+      sideBLabel: 'Running-Balance (3-Column)',
+      sideBText: 'You read the bottom number in the Balance column INSTANTLY (e.g. "$1,300 Dr") without adding anything!',
+      examTip: 'Remember to write "Dr" or "Cr" beside EVERY number in the Balance column of a Running-Balance account!',
+    },
+    {
+      label: 'Period-End Closing Lines',
+      tag: 'Balancing',
+      detail: 'How does each layout finish off the month?',
+      sideALabel: 'Classic T-Account',
+      sideAText: 'Requires inserting "Balance c/d" on the shorter side, ruling double-underlined equal totals on both sides, and bringing "Balance b/d" down on Day 1 of next month.',
+      sideBLabel: 'Running-Balance (3-Column)',
+      sideBText: 'No "Balance c/d" or double-underlined totals needed — the final line’s Balance column ALREADY IS the closing balance!',
+      examTip: 'That is why banks, credit card statements, and QuickBooks/Xero all print Running-Balance ledgers.',
+    },
+    {
+      label: 'Common Presentation Marks',
+      tag: 'Exam Polish',
+      detail: 'Easy marks students accidentally leave behind when rushing ledger drawings.',
+      sideALabel: 'T-Account Checklist',
+      sideAText: 'Account Name centered at top + "Dr" top-left + "Cr" top-right + Dates + Opposite Account Name in Details + Currency "$" at column top.',
+      sideBLabel: 'Running-Balance Checklist',
+      sideAText: 'Account Name at top + clear column headers (Date, Details, Dr $, Cr $, Balance $) + accurate Dr/Cr tag after each running balance.',
+      examTip: 'Never write vague Details like "Paid for van" or "Cash received" — write the EXACT opposite ledger account name ("Motor Vehicles", "Sales", "K. Brown")!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Drawing Both a T-Account and a Running-Balance Account for One Customer"
+  marks={10}
+  problem={
+    <>
+      <p>
+        <strong>Scenario:</strong> The following transactions took place between your business and
+        credit customer <strong>R. Thomas</strong> during <strong>May 2026</strong>:
+      </p>
+      <ul>
+        <li><strong>May 1:</strong> R. Thomas owed you an opening balance of $600 (Dr).</li>
+        <li><strong>May 5:</strong> Sold goods on credit to R. Thomas, $900.</li>
+        <li><strong>May 9:</strong> R. Thomas returned damaged goods worth $150.</li>
+        <li><strong>May 18:</strong> Received a cheque from R. Thomas for $800 on account.</li>
+        <li><strong>May 24:</strong> Sold additional goods on credit to R. Thomas, $450.</li>
+      </ul>
+      <ol>
+        <li>Prepare <strong>R. Thomas’s Account</strong> in <strong>Classic T-Account format</strong> (balanced on May 31 with June 1 Balance b/d). <em>[5 marks]</em></li>
+        <li>Prepare the exact same account in <strong>Three-Column Running-Balance format</strong>. <em>[5 marks]</em></li>
+      </ol>
+    </>
+  }
+>
+
+**1. Classic T-Account Format (5 marks):**
+
+**Dr &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; R. Thomas Account (Sales Ledger) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Cr**
+
+| Date | Details | $ | Date | Details | $ |
+| :--- | :--- | ---: | :--- | :--- | ---: |
+| May 1 | Balance b/d | 600 | May 9 | Returns Inwards | 150 |
+| May 5 | Sales | 900 | May 18 | Bank | 800 |
+| May 24 | Sales | 450 | **May 31** | **Balance c/d** | **1,000** |
+| | **Total** | **1,950** | | **Total** | **1,950** |
+| **Jun 1** | **Balance b/d** | **1,000** | | | |
+
+---
+
+**2. Three-Column Running-Balance Format (5 marks):**
+
+**R. Thomas Account (Sales Ledger)**
+
+| Date | Details | Debit ($) | Credit ($) | Balance ($) |
+| :--- | :--- | ---: | ---: | ---: |
+| May 1 | Balance b/d | — | — | **600 Dr** |
+| May 5 | Sales | 900 | — | **1,500 Dr** |
+| May 9 | Returns Inwards | — | 150 | **1,350 Dr** |
+| May 18 | Bank | — | 800 | **550 Dr** |
+| May 24 | Sales | 450 | — | **1,000 Dr** |
+
+*(Check: Both layouts end cleanly at **$1,000 Dr**, meaning R. Thomas owes us $1,000 at May 31!)*
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Simple Account Formats (T-Accounts)"
+  items={[
+    {
+      statement: 'Inside the Rent Expense T-Account, when you pay $500 rent by cheque, the Details column should say "Rent Expense".',
+      answer: false,
+      explanation: 'Under the Opposite Account Name rule, NEVER write the account’s own name in Details — inside the Rent Account you write "Bank"!',
+    },
+    {
+      statement: 'In a Classic T-Account, Debit entries always appear on the left side and Credit entries always appear on the right side.',
+      answer: true,
+      explanation: 'Left = Debit (Dr) and Right = Credit (Cr) in every T-account universally.',
+    },
+    {
+      statement: 'A key advantage of the Running-Balance (3-Column) format is that it displays the updated account balance immediately after every single transaction.',
+      answer: true,
+      explanation: 'Because the Balance column updates on every line, you never have to wait until month-end or manually sum both sides to know the balance.',
+    },
+    {
+      statement: 'A Running-Balance account and a Classic T-Account built from the same transactions will produce different closing balances.',
+      answer: false,
+      explanation: 'Both are merely different visual layouts of the exact same Debits and Credits — they ALWAYS produce the exact same closing balance.',
+    },
+    {
+      statement: 'When using a Running-Balance account, it is important to label each balance figure with "Dr" or "Cr".',
+      answer: true,
+      explanation: 'Without a "Dr" or "Cr" indicator beside the balance, a reader cannot tell whether a Bank balance is positive (Dr) or an Overdraft (Cr)!',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s4-03-project"
+  title="Mini-Project: Dual-Format Supplier Ledger Builder"
+  duration="25 mins"
+  scenario="Your shop buys goods on credit from supplier 'TropiGoods Wholesale' (a Trade Payable — normal balance CREDIT!). During June 2026: Jun 1 Opening balance owed to TropiGoods $1,200 (Cr); Jun 4 Bought goods on credit $1,800; Jun 8 Returned damaged goods $250; Jun 15 Paid cheque $1,500; Jun 22 Bought additional goods on credit $750; Jun 28 Received $50 cash discount when paying $450 by cheque."
+  steps={[
+    'Draw TropiGoods Wholesale’s account in Classic T-Account format — remember Credit increases what we owe a supplier and Debit decreases what we owe!',
+    'Balance the T-Account cleanly on June 30 (Balance c/d on the shorter Debit side → July 1 Balance b/d on the Credit side).',
+    'Rewrite the exact same 6 June entries in Three-Column Running-Balance format, carefully updating the "Cr" balance on every single row.',
+    'Add a 2-sentence comparison note explaining which format YOU would prefer if managing 200 active suppliers in real life, and why.',
+  ]}
+  deliverables={[
+    'Completed Classic T-Account for TropiGoods Wholesale with July 1 Balance b/d',
+    'Completed Three-Column Running-Balance Account for TropiGoods Wholesale',
+    'A 2-sentence format preference justification',
+  ]}
+  rubric={[
+    'Opposite Account Names are strictly accurate (Purchases, Returns Outwards, Bank, Discount Received).',
+    'Every row of the Running-Balance column shows exact math ending at $1,500 Cr (Cr: 1,200 + 1,800 + 750 = 3,750; Dr: 250 + 1,500 + 450 + 50 = 2,250 → Closing Balance = $1,500 Cr).',
+    'Both formats agree identically on the $1,500 Cr closing balance.',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **Left = `Dr`**, **Right = `Cr`**.
+- **Opposite Account Name Rule:** Inside Account A, write Account B in Details (never write Account A inside itself!).
+- **Running-Balance Format:** Always tag every Balance figure with **`Dr`** or **`Cr`**!
+:::

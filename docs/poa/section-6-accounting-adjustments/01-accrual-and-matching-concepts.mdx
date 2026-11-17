@@ -1,0 +1,248 @@
+---
+id: accrual-and-matching-concepts
+title: "6.1 The Accrual and Matching Concepts Explained"
+sidebar_label: "6.1 Accrual & Matching Concepts"
+sidebar_position: 1
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 6"
+  section="Accounting Adjustments — Accruals & Prepayments"
+  code="POA-S6-01"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="20 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+At year-end, a business’s Cash Book rarely matches the true revenue earned or true expenses incurred during the year! Some December bills have not been paid yet (**accruals**), while some insurance or rent paid in November actually covers next year (**prepayments**). The **Accrual and Matching Concepts** ensure every dollar of revenue and expense is assigned to the **exact accounting period it belongs to** — regardless of when cash changes hands!
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | **Accrual Basis vs. Cash Basis**, the **Matching Principle**, **Cut-Off Date**, and why year-end adjustments are required for a **True and Fair** profit figure |
+| **Exam Focus** | Explaining the difference between Cash Basis and Accrual Basis, identifying how ignoring accruals/prepayments distorts profit, and calculating true annual expense/revenue |
+| **Learning Outcome** | Apply the Accrual and Matching concepts accurately to determine true revenue and expenses for any accounting period |
+
+<ObjectivesBox
+  id="poa-s6-01-obj"
+  objectives={[
+    'Define the Accrual Concept and the Matching Concept in clear accounting terms.',
+    'Contrast Cash Basis accounting against Accrual Basis accounting using realistic business transactions.',
+    'Explain why omitting year-end accruals or prepayments overstates or understates Net Profit across two consecutive years.',
+    'Calculate the exact revenue earned and expenses incurred for a single 12-month financial period.',
+  ]}
+/>
+
+---
+
+## 1. Accrual Concept vs. Matching Concept
+
+Although they work as a team, know the sharp focus of each principle:
+
+| Accounting Concept | Core Rule | Plain-English Meaning |
+| :--- | :--- | :--- |
+| **Accrual Concept** | Record **revenues when earned** and **expenses when incurred** — **NOT** simply when cash is received or paid. | *"Did the service happen THIS year? Then it belongs in THIS year’s books — cash timing comes second!"* |
+| **Matching Concept** | Match all **expenses incurred** in generating revenue **against the revenue of the exact same accounting period**. | *"Don’t compare 12 months of Sales against only 10 months of Rent — match apples to apples!"* |
+
+### Cash Basis vs. Accrual Basis at a Glance
+
+| Feature | Cash Basis *(Unacceptable for True Accounts)* | Accrual &amp; Matching Basis *(Required Standard)* |
+| :--- | :--- | :--- |
+| **When is Revenue recorded?** | Only when cash/cheque is actually received | When goods are delivered or service is performed (**earned**) |
+| **When is Expense recorded?** | Only when cash/cheque is actually paid | When the benefit/service is used up (**incurred**) |
+| **Unpaid year-end bills** | Ignored until paid next year | **Added** to this year’s expense &amp; shown as a **Current Liability** |
+| **Advance payments for next year** | Dumped entirely into this year’s expense | **Subtracted** from this year’s expense &amp; shown as a **Current Asset** |
+| **Profit Accuracy** | Misleading &amp; easily manipulated by delaying payments | **True &amp; fair view** of real financial performance |
+
+### What Happens If You Forget an Adjustment? (Paper 1 Favorite!)
+
+| Forgotten Year-End Adjustment | Effect on Expenses / Revenue | Effect on Net Profit | Effect on Balance Sheet |
+| :--- | :--- | :--- | :--- |
+| **Forgot Accrued Expense** *(bill owing)* | Expense **Understated** (too low) | Profit **Overstated** (too high!) | Current Liabilities **Understated** |
+| **Forgot Prepaid Expense** *(paid ahead)* | Expense **Overstated** (too high) | Profit **Understated** (too low!) | Current Assets **Understated** |
+| **Forgot Accrued Revenue** *(income owed)* | Revenue **Understated** (too low) | Profit **Understated** (too low!) | Current Assets **Understated** |
+| **Forgot Unearned Revenue** *(cash in advance)* | Revenue **Overstated** (too high) | Profit **Overstated** (too high!) | Current Liabilities **Understated** |
+
+---
+
+## 2. Diagram 1: Accrual & Matching Basis vs. Cash Basis Timeline
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-6/01-accrual-vs-cash-timeline.svg"
+  alt="Timeline comparing Cash Basis against Accrual and Matching Basis across 2026 and 2027 when 2 months of 2026 rent are paid in January 2027."
+  caption="Diagram 1 (Static Reference): Notice how skipping a single $2,000 accrual corrupts BOTH years — 2026 looks $2,000 too rich and 2027 looks $2,000 too poor!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive Cash vs. Accrual Impact Comparator
+
+<InteractiveDiagram
+  title="Interactive Comparator: See How Cash Basis vs. Accrual Basis Treats 4 Everyday Scenarios"
+  layout="compare"
+  instruction="Tap any year-end scenario below to compare the Cash Basis mistake against the correct Accrual & Matching treatment."
+  nodes={[
+    {
+      label: 'Unpaid Dec Electricity',
+      tag: 'Accrued Expense',
+      detail: 'Your shop used $650 of electricity in December 2026, but the utility bill will not be paid until 15 January 2027.',
+      sideALabel: '✕ Cash Basis (Wrong)',
+      sideAText: 'Records $0 in 2026 and charges the $650 to 2027 — making 2026 profit look artificially $650 higher!',
+      sideBLabel: '✓ Accrual & Matching Basis',
+      sideBText: 'Adds $650 to 2026 Electricity Expense (matching Dec power to Dec sales) and records Accrued Electricity $650 as a Current Liability on 31 Dec 2026.',
+      examTip: 'Rule: Benefit used THIS year, unpaid at year-end → ADD to Expense + Current Liability!',
+    },
+    {
+      label: '12-Month Insurance Paid Oct 1',
+      tag: 'Prepaid Expense',
+      detail: 'On 1 October 2026, you pay $2,400 for a full 12-month insurance policy covering 1 Oct 2026 to 30 Sep 2027.',
+      sideALabel: '✕ Cash Basis (Wrong)',
+      sideAText: 'Charges the entire $2,400 to 2026 even though 9 months of coverage protect 2027!',
+      sideBLabel: '✓ Accrual & Matching Basis',
+      sideBText: 'Charges only 3 months ($600) to 2026 Income Statement and carries 9 months ($1,800) as Prepaid Insurance (Current Asset) into 2027.',
+      examTip: 'Count the EXACT months inside the financial year! Always double-check dates carefully.',
+    },
+    {
+      label: 'Tenant Owes Dec Rent',
+      tag: 'Accrued Revenue',
+      detail: 'You sublet your upstairs office for $800/month. By 31 Dec 2026, your tenant has paid 11 months ($8,800) and still owes December.',
+      sideALabel: '✕ Cash Basis (Wrong)',
+      sideAText: 'Shows only $8,800 Rent Revenue in 2026 and pushes Dec 2026’s rent into 2027.',
+      sideBLabel: '✓ Accrual & Matching Basis',
+      sideBText: 'Adds the $800 owing so 2026 Income Statement shows full 12 months ($9,600) and Balance Sheet shows Accrued Rent Receivable $800 as a Current Asset.',
+      examTip: 'Uncollected income you ALREADY earned is an Asset (someone owes YOU money)!',
+    },
+    {
+      label: 'Customer Deposit for Next Year',
+      tag: 'Unearned Revenue',
+      detail: 'On 20 Dec 2026, a client pays $1,500 cash upfront for a catering event you will deliver on 18 Jan 2027.',
+      sideALabel: '✕ Cash Basis (Wrong)',
+      sideAText: 'Counts $1,500 as 2026 revenue even though you haven’t cooked or delivered anything yet!',
+      sideBLabel: '✓ Accrual & Matching Basis',
+      sideBText: 'Excludes $1,500 from 2026 revenue and records Unearned Revenue $1,500 as a Current Liability until you fulfill the job in Jan 2027.',
+      examTip: 'Cash received BEFORE earning it creates an obligation (Liability) to deliver goods/services or refund cash!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Comparing Cash Basis Profit vs. True Accrual & Matching Profit"
+  marks={12}
+  problem={
+    <>
+      <p>
+        <strong>Scenario:</strong> <strong>HarborView Printing</strong> closes its books on
+        <strong> 31 December 2026</strong>. Its cash records and year-end notes show:
+      </p>
+      <ul>
+        <li><strong>Cash Sales collected during 2026:</strong> $82,000.</li>
+        <li><strong>Credit printing jobs completed in Dec 2026</strong> (customers will pay in Jan 2027): $14,000.</li>
+        <li><strong>Advance cash deposit received on 22 Dec 2026</strong> for a February 2027 conference brochure: $3,500.</li>
+        <li><strong>Wages paid in cash during 2026:</strong> $26,500; staff wages for the final week of Dec 2026 unpaid at year-end: $2,500.</li>
+        <li><strong>Insurance paid on 1 July 2026</strong> covering the 12 months to 30 June 2027: $4,800.</li>
+        <li><strong>Shop Rent paid in cash during 2026:</strong> $15,000. <em>(Note: This includes $1,000 paid in Jan 2026 for unpaid Dec 2025 rent, and December 2026 rent of $1,200 is still unpaid at 31 Dec 2026.)</em></li>
+      </ul>
+      <ol>
+        <li>Calculate HarborView Printing’s profit under the <strong>Cash Basis</strong>. <em>[3 marks]</em></li>
+        <li>Calculate the true <strong>2026 Revenue, 2026 Expenses, and True Net Profit</strong> under the <strong>Accrual &amp; Matching Basis</strong>. <em>[7 marks]</em></li>
+        <li>List the <strong>Current Assets</strong> and <strong>Current Liabilities</strong> created by these year-end adjustments. <em>[2 marks]</em></li>
+      </ol>
+    </>
+  }
+>
+
+**1. Cash Basis Calculation (3 marks — Wrong for Financial Statements!):**
+- Cash Receipts = `$82,000 Cash Sales + $3,500 Advance Deposit` = **$85,500** *(1 mark)*
+- Cash Payments = `$26,500 Wages + $4,800 Insurance + $15,000 Rent` = **$46,300** *(1 mark)*
+- Cash Basis Surplus = `$85,500 − $46,300` = **$39,200** *(1 mark)*
+
+**2. True Accrual & Matching Basis for 2026 (7 marks):**
+- **True 2026 Revenue:** `$82,000 Cash Sales + $14,000 Credit Sales earned in Dec` = **$96,000** *(Exclude the $3,500 deposit for Feb 2027!)* *(2 marks)*
+- **True 2026 Expenses:**
+  - `Wages` = `$26,500 paid + $2,500 Dec owing` = **$29,000** *(1 mark)*
+  - `Insurance` = `$4,800 × (6 months: Jul–Dec ÷ 12 months)` = **$2,400** *(6 months = $2,400 prepaid for 2027!)* *(1.5 marks)*
+  - `Shop Rent` = `$15,000 paid − $1,000 (belonged to 2025!) + $1,200 (Dec 2026 owing)` = **$15,200** *(1.5 marks)*
+  - *Total True 2026 Expenses* = `$29,000 + $2,400 + $15,200` = **$46,600**
+- **True 2026 Net Profit** = `$96,000 − $46,600` = **$49,400** *(1 mark)*
+*(Notice how Cash Basis understated true profit by **$10,200**!)*
+
+**3. Balance Sheet Items Created at 31 December 2026 (2 marks):**
+- **Current Assets:** Trade Receivables / Accrued Revenue **$14,000**; Prepaid Insurance **$2,400** *(1 mark)*.
+- **Current Liabilities:** Unearned Revenue (Customer Deposit) **$3,500**; Accrued Wages **$2,500**; Accrued Rent **$1,200** *(1 mark)*.
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Accrual & Matching Concepts"
+  items={[
+    {
+      statement: 'Under the Accrual Concept, revenue is only recorded in the Income Statement once the customer pays cash.',
+      answer: false,
+      explanation: 'That describes the CASH basis! Under the Accrual Concept, revenue is recognized as soon as it is EARNED (delivered), even if cash arrives next year.',
+    },
+    {
+      statement: 'If an unpaid electricity bill of $500 for December is omitted at year-end, Net Profit for that year will be OVERSTATED by $500.',
+      answer: true,
+      explanation: 'Omitting an accrued expense makes total expenses $500 too low, which inflates (overstates) Net Profit by $500.',
+    },
+    {
+      statement: 'Paying $3,600 on 1 October 2026 for a 12-month insurance policy means $900 is an expense in 2026 and $2,700 is a Prepaid Expense (Current Asset).',
+      answer: true,
+      explanation: 'October, November, and December = 3 months (3/12 × $3,600 = $900 expense for 2026); the remaining 9 months ($2,700) belong to 2027!',
+    },
+    {
+      statement: 'Forgetting to subtract a Prepaid Expense of $800 at year-end causes Net Profit to be overstated.',
+      answer: false,
+      explanation: 'Forgetting to subtract a prepayment leaves Expenses TOO HIGH by $800 — which causes Net Profit to be UNDERSTATED (too low)!',
+    },
+    {
+      statement: 'The Matching Concept ensures that expenses incurred to generate this year’s sales are deducted in the same financial period as those sales.',
+      answer: true,
+      explanation: 'Exactly! Matching pairs revenues earned against the expenses incurred to earn them in the identical accounting period.',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s6-01-project"
+  title="Mini-Project: Fixing a Café Owner’s Cash-Basis Profit Mistake"
+  duration="20 mins"
+  scenario="The owner of 'FreshBrew Café' calculated 2026 profit using only her Cash Book: Cash Catering Receipts $64,000 minus Cash Paid (Rent $16,500, Insurance $3,600, Electricity $5,200 = $25,300) = $38,700. Then you uncover four year-end facts on 31 Dec 2026: (1) Rent is $1,500/month ($18,000/yr), so Dec rent ($1,500) is unpaid; (2) Insurance ($3,600) was paid on 1 Oct 2026 for 12 months; (3) Catering Receipts include a $4,000 advance deposit for a Jan 2027 wedding, while a $6,000 Dec corporate event invoice is still unpaid; (4) Dec electricity bill of $600 is unpaid."
+  steps={[
+    'Compute the true 2026 Accrual figure for Catering Revenue, Rent Expense, Insurance Expense, and Electricity Expense.',
+    'Prepare a neat 2-column comparison table: "Cash Basis ($)" vs. "Accrual & Matching Basis ($)" showing each line item and final Profit.',
+    'List the exact Current Assets and Current Liabilities that appear on FreshBrew Café’s 31 Dec 2026 Balance Sheet.',
+    'Write a 2-sentence explanation to the café owner explaining WHY her Cash Book profit ($38,700) differed from true Accrual profit.',
+  ]}
+  deliverables={[
+    'Cash Basis vs. Accrual Basis Profit Comparison Table',
+    'List of 31 Dec 2026 Current Assets & Current Liabilities',
+    '2-sentence owner explanation citing the Accrual & Matching Concepts',
+  ]}
+  rubric={[
+    'True 2026 figures: Revenue $66,000 ($64k − $4k + $6k); Rent $18,000; Insurance $900 (3/12 × $3,600); Electricity $5,800 → Total Expenses $24,700.',
+    'True Accrual Profit = $41,300 ($2,600 higher than Cash Basis $38,700!).',
+    'Balance Sheet adjustments: Current Assets = Accrued Catering Receivable $6,000 + Prepaid Insurance $2,700; Current Liabilities = Unearned Deposit $4,000 + Accrued Rent $1,500 + Accrued Electricity $600.',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **Accrual Concept:** Recognize when **earned / incurred**, NOT when cash moves.
+- **Matching Concept:** Pair this period’s expenses against this period’s revenues.
+- **Golden Shortcut:** **Accrued (Owing)** → **ADD**; **Prepaid / Advance** → **SUBTRACT**!
+:::

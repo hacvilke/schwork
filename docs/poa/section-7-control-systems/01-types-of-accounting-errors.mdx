@@ -1,0 +1,234 @@
+---
+id: types-of-accounting-errors
+title: "7.1 Types of Errors (Affecting vs. Not Affecting Trial Balance)"
+sidebar_label: "7.1 Types of Errors"
+sidebar_position: 1
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 7"
+  section="Control Systems — Error Correction"
+  code="POA-S7-01"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="20 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+You finish your Trial Balance and celebrate because **Total Debits = Total Credits**! Wait — does a balanced Trial Balance guarantee there are **zero mistakes** in the books? **Absolutely NOT!** Six sneaky families of errors leave Debits equal to Credits — while another family breaks Trial Balance agreement immediately and requires a **Suspense Account**. Spotting which family an error belongs to is Step 1 of every Error Correction question!
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | The **6 Errors NOT Affecting Trial Balance (`COPCOR`)** vs. **5 Errors AFFECTING Trial Balance** (requiring Suspense) |
+| **Exam Focus** | Naming the exact error from a 1-sentence business scenario (especially **Commission vs. Principle**!) and stating whether it affects Trial Balance agreement |
+| **Learning Outcome** | Classify any bookkeeping mistake accurately by name and predict whether it will cause the Trial Balance to disagree |
+
+<ObjectivesBox
+  id="poa-s7-01-obj"
+  objectives={[
+    'Explain why a balanced Trial Balance is NOT absolute proof of accounting accuracy.',
+    'Define and identify all six errors that do NOT affect Trial Balance agreement (Commission, Omission, Principle, Compensating, Original Entry, Complete Reversal).',
+    'Distinguish sharply between an Error of Commission and an Error of Principle.',
+    'Identify errors that DO cause the Trial Balance to disagree (single-sided omissions, casting errors, one-sided transpositions, double-debit/double-credit postings).',
+  ]}
+/>
+
+---
+
+## 1. Group A: The 6 Errors That Do NOT Affect Trial Balance Agreement (`COPCOR`)
+
+Because equal Debit and Credit totals were still posted (even though the accounts, classes, sides, or amounts were wrong), the **Trial Balance STILL balances** — and you **NEVER use a Suspense Account** to fix them!
+
+| Mnemonic | Error Name | Clear Definition | Classic Exam Example |
+| :---: | :--- | :--- | :--- |
+| **C** | **Error of Commission** | Posted to the **wrong personal account** of the **SAME class** (e.g., wrong customer or wrong supplier) | Credit sale of `$500` to **A. Brown** posted to **B. Brown’s** account *(both are Debtors!)* |
+| **O** | **Error of Complete Omission** | A transaction is **completely left out** of the books (neither Debit nor Credit entered) | Cash purchase of goods `$900` was completely forgotten and never recorded anywhere |
+| **P** | **Error of Principle** | Posted to the **wrong CLASS of account**, breaking fundamental accounting rules (usually Asset vs. Expense!) | Buying a new Delivery Van `$15,000` debited to **Motor Repairs Expense** instead of **Motor Vehicles (Asset)** |
+| **C** | **Compensating Errors** | Two (or more) **unrelated errors** accidentally cancel each other out by the exact same dollar amount | Sales Book overcast by `$100` (Cr `+$100`) AND Rent Expense overcast by `$100` (Dr `+$100`) |
+| **O** | **Error of Original Entry** | The **wrong dollar figure** is written on the source book and posted identically to BOTH Debit and Credit | Invoice for `$470` entered as `$740` in Purchases Journal and posted as `$740` to BOTH Purchases and Supplier |
+| **R** | **Complete Reversal of Entries** | Right accounts and right amount, but **Debit and Credit sides are swapped upside down** | Paid `$300` cash to Creditor K. Ali: wrongly **Debited Cash** and **Credited K. Ali**! |
+
+---
+
+## 2. Group B: Errors That DO Affect Trial Balance Agreement (Suspense Required!)
+
+Whenever Debits and Credits become unequal, the **Trial Balance fails to agree** and you **MUST use a Suspense Account**:
+1. **Single-Sided Entry (Partial Omission):** Recording the Debit half without the Credit half (or vice versa) — e.g. entering `$500` cash received in the Cash Book, but forgetting to credit the customer’s account.
+2. **Casting (Addition) Error:** Adding up a Day Book (Sales Book, Purchases Book, Returns Book) or ledger column incorrectly (undercast = too low; overcast = too high).
+3. **One-Sided Transposition / Wrong Amount:** Debiting Cash `$720` but crediting the Debtor `$270` (off by `$450`!).
+4. **Posting Both Entries to the Same Side:** Debiting Bank `$400` AND Debiting Customer `$400` instead of crediting Customer (leaves Credits short by **`2 × $400 = $800`**!).
+5. **Omitting a Ledger Balance (or listing it on the wrong side)** when copying balances into the Trial Balance.
+
+---
+
+## 3. Diagram 1: Errors Affecting vs. Not Affecting the Trial Balance
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-7/01-errors-affecting-vs-not-affecting-tb.svg"
+  alt="Two-column classification chart contrasting the 6 COPCOR errors that do not affect Trial Balance agreement against the 5 errors that break Trial Balance agreement and require a Suspense Account."
+  caption="Diagram 1 (Static Reference): Memorize 'COPCOR' for Group A — if an error is inside COPCOR, your correcting entry NEVER touches the Suspense Account!"
+/>
+
+---
+
+## 4. Diagram 2: Interactive Confusing-Pairs Comparator
+
+<InteractiveDiagram
+  title="Interactive Comparator: Master the 4 Error Pairs That Trip Up Exam Candidates!"
+  layout="compare"
+  instruction="Tap any look-alike pair below to learn the exact giveaway clue that separates them."
+  nodes={[
+    {
+      label: 'Commission vs. Principle',
+      tag: '#1 Exam Trap!',
+      detail: 'Both put the right amount on the right side — only the ACCOUNT chosen is wrong!',
+      sideALabel: 'Error of Commission',
+      sideAText: 'Wrong account in the SAME CLASS (e.g., Customer J. Clarke instead of Customer G. Clarke; or Electricity Expense instead of Water Expense). Does NOT distort Assets vs. Profit!',
+      sideBLabel: 'Error of Principle',
+      sideBText: 'Wrong CLASS of account (e.g., Non-Current Asset put in Expense, or Drawings put in Wages). Violates accounting principles and ALWAYS distorts Net Profit & Balance Sheet!',
+      examTip: 'Ask: "Same accounting class (e.g. Debtor vs Debtor)?" → Commission! "Different class (Asset vs Expense)?" → Principle!',
+    },
+    {
+      label: 'Original Entry vs. One-Sided Transposition',
+      tag: 'Digit Swap!',
+      detail: 'Suppose a $670 transaction had its digits swapped to $760 — does it break the Trial Balance?',
+      sideALabel: 'Error of Original Entry (No TB Effect)',
+      sideAText: 'Written as $760 in the Day Book FIRST, so BOTH Debit ($760) and Credit ($760) carry the wrong number → Trial Balance STILL balances!',
+      sideBLabel: 'One-Sided Transposition (Breaks TB!)',
+      sideAText: 'Debited correctly as $670 in one account, but credited wrongly as $760 in the other → Dr ≠ Cr by $90 → Suspense needed!',
+      examTip: 'Check whether BOTH sides got the wrong amount (Original Entry) or ONLY ONE side got it wrong (Suspense)!',
+    },
+    {
+      label: 'Complete Omission vs. Partial Omission',
+      tag: 'Forgotten Entry',
+      detail: 'One leaves the Trial Balance perfectly balanced; the other breaks it immediately.',
+      sideALabel: 'Complete Omission (No TB Effect)',
+      sideAText: 'The entire invoice or receipt was misplaced — NEITHER Debit NOR Credit was entered anywhere in the books.',
+      sideBLabel: 'Partial / Single-Sided Omission (Breaks TB!)',
+      sideAText: 'Entered in the Cash Book (e.g., Dr Bank $500), but clerk forgot to post the second half (Cr Debtor $500) to the ledger!',
+      examTip: 'Look for phrases like "entered in the Cash Book only" or "omitted from the customer’s account" → Partial Omission → Suspense!',
+    },
+    {
+      label: 'Complete Reversal vs. Same-Side Posting',
+      tag: 'Wrong Side!',
+      detail: 'Both involve posting to the wrong side — watch how differently they behave!',
+      sideALabel: 'Complete Reversal (No TB Effect)',
+      sideAText: 'BOTH accounts were flipped (e.g., Dr Cash $400 / Cr Creditor $400 instead of Dr Creditor / Cr Cash). Dr still = Cr ($400 = $400)!',
+      sideBLabel: 'Same-Side Posting (Breaks TB!)',
+      sideAText: 'Cash Book was right (Cr Cash $400), AND Creditor was ALSO Credited $400 → Total Credits exceed Debits by 2 × $400 = $800!',
+      examTip: 'BOTH errors require a 2× correction amount — Complete Reversal fixes two real accounts; Same-Side Posting uses Suspense!',
+    },
+  ]}
+/>
+
+---
+
+## 5. Worked Example
+
+<WorkedExample
+  title="Diagnosing 8 Real Bookkeeping Errors & Predicting Trial Balance Impact"
+  marks={16}
+  problem={
+    <>
+      <p>
+        <strong>Scenario:</strong> An internal audit of <strong>Bayside Supplies</strong> uncovered
+        the following 8 errors at year-end. For EACH error, identify: (a) the exact
+        <strong> Type of Error</strong>, and (b) whether it <strong>Affects Trial Balance Agreement</strong>
+        (Yes/No — and whether a Suspense Account is needed). <em>[2 marks each = 16 marks]</em>
+      </p>
+      <ol>
+        <li>A credit sale of $850 to <strong>P. Reid</strong> was correctly entered in Sales, but posted to <strong>R. Reid’s</strong> account.</li>
+        <li>A cash purchase of resale goods for $1,200 was completely left out of the accounting records.</li>
+        <li>A new office laser printer costing $1,600 (paid by cheque) was debited to <em>Stationery Expense</em>.</li>
+        <li>The Sales Book total was overcast by $300, and the Electricity Expense account was also overcast by $300.</li>
+        <li>A credit purchase of $670 from Apex Ltd was recorded as $760 in the Purchases Journal and posted as $760 to both Purchases and Apex Ltd.</li>
+        <li>Cash of $400 received from credit customer M. Chin was debited to M. Chin’s account and credited to the Cash Account.</li>
+        <li>The Sales Journal total was undercast (under-added) by $500 when posted to the Sales Account.</li>
+        <li>A cheque for $920 paid for Shop Rent was credited as $920 in the Cash Book, but debited as $290 in the Rent Account.</li>
+      </ol>
+    </>
+  }
+>
+
+| # | Exact Error Name *(1 mark)* | Affects Trial Balance? *(1 mark)* | Quick Why |
+| :-: | :--- | :---: | :--- |
+| **1** | **Error of Commission** | **No** *(No Suspense)* | Wrong customer, same class (both Debtors); Dr still = Cr (`$850`) |
+| **2** | **Error of Complete Omission** | **No** *(No Suspense)* | `$0` Dr and `$0` Cr entered → Trial Balance still agrees |
+| **3** | **Error of Principle** | **No** *(No Suspense)* | Non-Current Asset (`Office Equipment`) wrongly put in Expense (`Stationery`) |
+| **4** | **Compensating Errors** | **No** *(No Suspense)* | `+$300` Credit error accidentally cancels `+$300` Debit error |
+| **5** | **Error of Original Entry** | **No** *(No Suspense)* | Wrong `$760` posted equally to BOTH Debit and Credit |
+| **6** | **Complete Reversal of Entries** | **No** *(No Suspense)* | Right accounts &amp; `$400` amount, but Debit and Credit flipped |
+| **7** | **Casting Error (Undercast)** | **YES** *(Uses Suspense!)* | Sales Credit is `$500` too low → Debits exceed Credits by `$500` |
+| **8** | **Single-Sided Transposition Error** | **YES** *(Uses Suspense!)* | Rent Debit (`$290`) vs Bank Credit (`$920`) → Debits short by `$630` |
+
+</WorkedExample>
+
+---
+
+## 6. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Types of Accounting Errors"
+  items={[
+    {
+      statement: 'If a Trial Balance’s Debit and Credit columns agree, the accountant can be 100% certain there are no errors in the ledger.',
+      answer: false,
+      explanation: 'False! All six COPCOR errors (Commission, Omission, Principle, Compensating, Original Entry, and Reversal) leave Debits equal to Credits.',
+    },
+    {
+      statement: 'Debiting a new $12,000 Delivery Van to the Motor Repairs Expense account is an Error of Commission.',
+      answer: false,
+      explanation: 'That is an Error of PRINCIPLE! Mixing up a Non-Current Asset with an Expense crosses into the wrong CLASS of account.',
+    },
+    {
+      statement: 'An Error of Original Entry does NOT cause the Trial Balance to disagree because the wrong amount is posted to both the Debit and Credit sides.',
+      answer: true,
+      explanation: 'Correct — since both sides receive the exact same wrong figure, Debit totals still match Credit totals.',
+    },
+    {
+      statement: 'Undercasting the Purchases Book by $400 will cause the Trial Balance to disagree and will require a Suspense Account to correct.',
+      answer: true,
+      explanation: 'Yes! Undercasting the Purchases Book leaves the Purchases Debit total $400 too low while Suppliers received full Credit.',
+    },
+    {
+      statement: 'Posting a credit sale to customer S. Gayle instead of customer D. Gayle is an Error of Commission.',
+      answer: true,
+      explanation: 'Right class (both are Trade Receivables), wrong personal account — textbook Error of Commission!',
+    },
+  ]}
+/>
+
+---
+
+## 7. Student Project
+
+<StudentProject
+  id="poa-s7-01-project"
+  title="Mini-Project: Junior Auditor’s Error Classification Report"
+  duration="20 mins"
+  scenario="You are auditing 'Emerald Stationers' and find 6 errors: (A) Owner’s personal Drawings of $600 cash were debited to Wages Expense; (B) Credit purchase of $390 from K. Patel was entered as $930 in the Purchases Book and posted as $930 to both accounts; (C) Discount Allowed of $140 was credited to the customer’s account, but omitted from the Discount Allowed account; (D) A $500 cheque received from debtor M. Lewis was credited to N. Lewis; (E) Returns Inwards Book total was overcast by $220; (F) Cash paid $750 for Rent was debited to Cash and credited to Rent. Build a crisp 6-row Audit Classification Report!"
+  steps={[
+    'Draw a 4-column Audit Table: Error Code, Exact Error Name, Affects Trial Balance? (Yes/No), and Uses Suspense? (Yes/No).',
+    'Classify all 6 errors (A–F) accurately — double-check Error A (Drawings vs. Wages!) and Error C (half-omitted!).',
+    'For every "YES" error, calculate the exact dollar gap it caused between Trial Balance Debits and Credits.',
+    'Write a 2-sentence audit note explaining which TWO of these 6 errors distort Net Profit even though the Trial Balance still balances.',
+  ]}
+  deliverables={[
+    '6-row Audit Classification Table for Errors A–F',
+    'Dollar-gap check for every Trial-Balance-affecting error',
+    '2-sentence note on profit-distorting COPCOR errors',
+  ]}
+  rubric={[
+    'Group A (No TB / No Suspense): A = Error of Principle (Drawings vs Expense); B = Error of Original Entry; D = Error of Commission; F = Complete Reversal of Entries.',
+    'Group B (Affects TB / Uses Suspense): C = Partial / Single-Sided Omission (Dr short $140); E = Casting Error / Overcast (Dr too high $220).',
+    'Audit note correctly identifies that Errors A, B, and F all distort Net Profit despite leaving the Trial Balance balanced (while Error D touches only two debtors!).',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- Memorize **COPCOR** for the 6 errors that **do NOT break the Trial Balance**: **C**ommission, **O**mission, **P**rinciple, **C**ompensating, **O**riginal Entry, **R**eversal!
+- **Same class, wrong person** = **Commission**; **Wrong class (Asset vs Expense)** = **Principle**!
+:::

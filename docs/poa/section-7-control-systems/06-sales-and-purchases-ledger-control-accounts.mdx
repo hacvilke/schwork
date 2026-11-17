@@ -1,0 +1,239 @@
+---
+id: sales-and-purchases-ledger-control-accounts
+title: "7.6 Constructing Sales and Purchases Ledger Control Accounts"
+sidebar_label: "7.6 Constructing SLCA & PLCA"
+sidebar_position: 6
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 7"
+  section="Control Systems — Control Accounts & Bank Reconciliation"
+  code="POA-S7-06"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="30 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+Constructing a **Sales Ledger Control Account (SLCA)** or **Purchases Ledger Control Account (PLCA)** is easy once you unlock ONE secret: **treat the SLCA like ONE GIANT DEBTOR (Asset)** and **treat the PLCA like ONE GIANT CREDITOR (Liability)**! Anything that makes customers owe us MORE goes on the **Debit** of SLCA; anything that cuts what customers owe us goes on the **Credit** of SLCA — and PLCA is the exact mirror image!
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | Constructing **SLCA (Total Debtors)** and **PLCA (Total Creditors)** including **minor opposite balances**, **Set-Offs (Contras)**, **Dishonored Cheques**, and **Interest Charged** |
+| **Exam Focus** | **EXCLUDING the 4 classic trap items** (`Cash Sales`, `Cash Purchases`, `Provision for Doubtful Debts`, `Trade Discounts`) and placing minor opposite opening/closing balances on the exact right sides! |
+| **Learning Outcome** | Construct fully balanced Sales Ledger and Purchases Ledger Control Accounts accurately from mixed month-end schedules |
+
+<ObjectivesBox
+  id="poa-s7-06-obj"
+  objectives={[
+    'Apply the "Giant Debtor" (SLCA) and "Giant Creditor" (PLCA) logic to place every entry on the correct Debit or Credit side without rote guesswork.',
+    'Explain and record Set-Offs (Contras), Dishonored Cheques, Interest Charged, and Cash Refunds accurately.',
+    'Handle minor opposite balances (Credit balances in SLCA and Debit balances in PLCA) cleanly at both start and end of the period.',
+    'Identify and exclude all four non-control-account exam trap items (Cash Sales, Cash Purchases, Provision for Doubtful Debts, Trade Discounts).',
+  ]}
+/>
+
+---
+
+## 1. The 4 Classic Exam Traps (NEVER Put These in Control Accounts!)
+
+Examiners ALWAYS slip 2 or 3 of these decoy items into a Control Account question to test whether you truly understand credit ledgers — **cross them out immediately!**
+
+| Decoy Item | Why It MUST Be EXCLUDED From SLCA &amp; PLCA |
+| :--- | :--- |
+| **1. Cash Sales** | Paid immediately in cash (`Dr Cash / Cr Sales`) — **never enters a customer’s credit account!** |
+| **2. Cash Purchases** | Paid immediately in cash (`Dr Purchases / Cr Cash`) — **never enters a supplier’s credit account!** |
+| **3. Provision for Doubtful Debts** | Kept in its own **General Ledger** contra-asset account — **never reduces individual customer balances!** *(Note: Confirmed **Bad Debts** DO go in SLCA Cr!)* |
+| **4. Trade Discounts** | Deducted on the invoice **before** recording Credit Sales/Purchases — never entered in any ledger! *(Note: **Cash Discounts Allowed/Received** DO go in Control Accounts!)* |
+
+*(Bonus note: **Bad Debts Recovered** is also normally excluded unless first reinstated through the debtor’s account on BOTH Dr and Cr — netting to `$0`!)*
+
+### Why Can a Control Account Have TWO Balances at the Same Time?
+- **Minor Credit Balance in SLCA** *(Customer we owe money to)*: Happens when a customer **overpays** their invoice, pays a deposit in advance, or **returns goods after already paying in full**.
+- **Minor Debit Balance in PLCA** *(Supplier who owes US money)*: Happens when we **overpay** a supplier or **return goods after paying our bill in full**.
+- **Rule:** NEVER net them together into one single figure! Carry **BOTH** balances down separately on their exact sides!
+
+---
+
+## 2. Diagram 1: SLCA & PLCA Master Cheat Map
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-7/06-slca-and-plca-master-map.svg"
+  alt="Side-by-side master map showing every Debit and Credit line item of the Sales Ledger Control Account and Purchases Ledger Control Account, plus a warning banner listing the 4 excluded exam trap items."
+  caption="Diagram 1 (Static Reference): Notice how a Set-Off (Contra) reduces BOTH ledgers — Credit SLCA (reduces what debtor owes us) AND Debit PLCA (reduces what we owe creditor)!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive Tricky-Items Hub (Zero Side Confusion!)
+
+<InteractiveDiagram
+  title="Interactive Hub: Tap the 4 Trickiest Control Account Items to Lock In Their Exact Sides"
+  layout="hub"
+  centerLabel="SLCA & PLCA"
+  centerSublabel="Side Logic"
+  instruction="Select any tricky item around the hub to verify WHY it goes on that side using Giant-Debtor / Giant-Creditor logic."
+  nodes={[
+    {
+      label: 'Set-Off (Contra Entry)',
+      tag: 'Cr SLCA · Dr PLCA',
+      tone: 'positive',
+      detail: 'Suppose Apex Traders is BOTH our customer (owes us $2,000) AND our supplier (we owe them $850). Instead of swapping cheques, we mutually cancel $850 off BOTH accounts!',
+      example: 'Journal: Dr Purchases Ledger Control A/c $850 / Cr Sales Ledger Control A/c $850! Both debts shrink by $850!',
+      examTip: 'Set-Off ALWAYS reduces BOTH accounts → Credit SLCA and Debit PLCA!',
+    },
+    {
+      label: 'Dishonored Cheque',
+      tag: 'Dr SLCA (+Debt)',
+      tone: 'warning',
+      detail: 'Earlier we credited the customer when they handed us a $950 cheque — now the bank bounces it! That means the customer STILL owes us $950 again!',
+      example: 'Reinstates customer debt → DEBIT Sales Ledger Control A/c ("Dishonored Cheque $950")!',
+      examTip: 'Never put a bounced customer cheque on the Credit side — bouncing a cheque INCREASES what the customer owes us!',
+    },
+    {
+      label: 'Interest on Overdue Bills',
+      tag: 'Dr SLCA · Cr PLCA',
+      tone: 'warning',
+      detail: 'If WE charge a late customer $150 interest, they owe us MORE (+$150 Dr SLCA). If a SUPPLIER charges US $120 interest, we owe them MORE (+$120 Cr PLCA)!',
+      example: 'Always ask: "Does this make the debt BIGGER?" YES → put it on the INCREASE side (Dr for SLCA, Cr for PLCA)!',
+      examTip: 'Same logic for Cash Refunds: refunding an overpaid customer restores SLCA (Dr); supplier refunding us restores PLCA (Cr)!',
+    },
+    {
+      label: 'Minor Opposite Balances',
+      tag: 'Keep Separate!',
+      tone: 'neutral',
+      detail: 'If 31 Dec shows a minor Credit balance of $400 in SLCA, that means on 1 Jan next month it starts as "Jan 1 Bal b/d $400" on the CREDIT side — so its "Dec 31 Bal c/d $400" MUST sit on the DEBIT side!',
+      example: 'Place the minor Dec 31 Bal c/d FIRST on its opposite side, THEN solve for the main closing balance!',
+      examTip: 'Always double-check BOTH "Jan 1 Bal b/d" lines below the totals — one Dr and one Cr!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Constructing BOTH a Complete SLCA and PLCA (With Minor Balances, Contra & Decoys!)"
+  marks={16}
+  problem={
+    <>
+      <p>
+        <strong>Scenario:</strong> From the following information extracted from the Books of Original
+        Entry of <strong>IslandFresh Distributors</strong> for <strong>December 2026</strong>,
+        construct: (a) the <strong>Sales Ledger Control Account</strong> <em>[8 marks]</em>, and
+        (b) the <strong>Purchases Ledger Control Account</strong> <em>[8 marks]</em>, bringing down
+        all balances to <strong>1 January 2027</strong>:
+      </p>
+      <ul>
+        <li><strong>Balances on 1 December 2026:</strong> Sales Ledger Dr $18,400, Cr $350; Purchases Ledger Cr $14,200, Dr $200.</li>
+        <li><strong>Totals for December 2026:</strong> Credit Sales $64,000; Cash Sales $12,500; Credit Purchases $46,500; Cash Purchases $8,400; Cheques/Cash received from Debtors $55,200; Cheques paid to Suppliers $41,300; Returns Inwards $1,800; Returns Outwards $1,450; Discount Allowed $1,100; Discount Received $900; Dishonored Cheque from Debtor $950; Interest charged to overdue Debtor $150; Interest charged by Supplier $120; Bad Debts written off $700; Provision for Doubtful Debts $1,200; Cash Refund received from Supplier $180; Set-Off (Contra) from Purchases Ledger to Sales Ledger $850.</li>
+        <li><strong>Minor Closing Balances on 31 December 2026:</strong> Sales Ledger Credit Balance $400; Purchases Ledger Debit Balance $300.</li>
+      </ul>
+    </>
+  }
+>
+
+*(Decoys Excluded: **Cash Sales $12,500**, **Cash Purchases $8,400**, and **Provision for Doubtful Debts $1,200** — none of these enter Control Accounts!)*
+
+### (a) Sales Ledger Control Account *(Total Debtors — 8 marks)*
+
+| Date (Dr) | Details | $ | Date (Cr) | Details | $ |
+| :--- | :--- | ---: | :--- | :--- | ---: |
+| Dec 1 | Balance b/d *(main Dr)* | 18,400 | Dec 1 | Balance b/d *(minor Cr)* | 350 |
+| Dec 31 | Credit Sales *(Sales Jnl)* | 64,000 | Dec 31 | Bank / Cash *(receipts)* | 55,200 |
+| Dec 31 | Bank *(Dishonored Cheque)* | 950 | Dec 31 | Returns Inwards | 1,800 |
+| Dec 31 | Interest Charged *(overdue)* | 150 | Dec 31 | Discount Allowed | 1,100 |
+| Dec 31 | Balance c/d *(minor Cr)* | 400 | Dec 31 | Bad Debts Written Off | 700 |
+| | | | Dec 31 | Purchases Ledger *(Contra)* | 850 |
+| | | | Dec 31 | **Balance c/d *(main Dr)*** | **23,900** |
+| | | **$83,900** | | | **$83,900** |
+| Jan 1, 2027 | **Balance b/d *(Trade Rec.)*** | **23,900** | Jan 1, 2027 | Balance b/d *(minor Cr)* | 400 |
+
+---
+
+### (b) Purchases Ledger Control Account *(Total Creditors — 8 marks)*
+
+| Date (Dr) | Details | $ | Date (Cr) | Details | $ |
+| :--- | :--- | ---: | :--- | :--- | ---: |
+| Dec 1 | Balance b/d *(minor Dr)* | 200 | Dec 1 | Balance b/d *(main Cr)* | 14,200 |
+| Dec 31 | Bank *(paid suppliers)* | 41,300 | Dec 31 | Credit Purchases *(Purch Jnl)* | 46,500 |
+| Dec 31 | Returns Outwards | 1,450 | Dec 31 | Interest Charged *(supplier)* | 120 |
+| Dec 31 | Discount Received | 900 | Dec 31 | Bank *(Cash Refund)* | 180 |
+| Dec 31 | Sales Ledger *(Contra)* | 850 | Dec 31 | Balance c/d *(minor Dr)* | 300 |
+| Dec 31 | **Balance c/d *(main Cr)*** | **16,600** | | | |
+| | | **$61,300** | | | **$61,300** |
+| Jan 1, 2027 | Balance b/d *(minor Dr)* | 300 | Jan 1, 2027 | **Balance b/d *(Trade Pay.)*** | **16,600** |
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Constructing SLCA & PLCA"
+  items={[
+    {
+      statement: 'Cash Sales and Cash Purchases must be excluded from the Sales Ledger and Purchases Ledger Control Accounts.',
+      answer: true,
+      explanation: 'Correct! Control Accounts summarize CREDIT customers (Debtors) and CREDIT suppliers (Creditors) only.',
+    },
+    {
+      statement: 'A Dishonored Cheque received from a credit customer is posted to the CREDIT side of the Sales Ledger Control Account.',
+      answer: false,
+      explanation: 'A bounced cheque REINSTATES what the customer owes us, so it increases Debtors → DEBIT side of SLCA!',
+    },
+    {
+      statement: 'A Set-Off (Contra) between a customer who is also a supplier is CREDITED to the SLCA and DEBITED to the PLCA.',
+      answer: true,
+      explanation: 'Yes! Canceling mutual debt reduces both Trade Receivables (Cr SLCA) and Trade Payables (Dr PLCA).',
+    },
+    {
+      statement: 'Provision for Doubtful Debts is credited inside the Sales Ledger Control Account.',
+      answer: false,
+      explanation: 'Classic trap! Confirmed BAD DEBTS go on Cr of SLCA, but Provision for Doubtful Debts NEVER enters SLCA!',
+    },
+    {
+      statement: 'Discount Received from suppliers appears on the DEBIT side of the Purchases Ledger Control Account.',
+      answer: true,
+      explanation: 'Yes — cash discounts received reduce how much we owe our suppliers (reducing a Liability = Debit PLCA!).',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s7-06-project"
+  title="Mini-Project: Month-End Control Accounts for MetroMart Wholesale"
+  duration="25 mins"
+  scenario="Prepare BOTH the Sales Ledger Control Account and Purchases Ledger Control Account for 'MetroMart Wholesale' for November 2026 (bringing down 1 December 2026 balances!) from these figures: Opening Balances (1 Nov): Sales Ledger Dr $12,500; Purchases Ledger Cr $9,600. November Totals: Credit Sales $38,000; Cash Sales $9,000; Credit Purchases $29,400; Cash Purchases $4,500; Receipts from Debtors $33,400; Payments to Suppliers $26,200; Returns Inwards $900; Returns Outwards $800; Discount Allowed $700; Discount Received $600; Dishonored Customer Cheque $600; Interest Charged to Debtor $100; Interest Charged by Supplier $100; Bad Debts Written Off $400; Provision for Doubtful Debts $800; Contra Set-Off $500."
+  steps={[
+    'Cross out the 3 decoy items FIRST and list them in a short "Excluded Items" note explaining why each is omitted.',
+    'Construct the Sales Ledger Control Account (SLCA), total both sides, and solve for the 30 Nov Closing Debit Balance.',
+    'Construct the Purchases Ledger Control Account (PLCA), total both sides, and solve for the 30 Nov Closing Credit Balance.',
+    'Write a 2-line Balance Sheet extract showing Trade Receivables (Net of the $800 Provision!) and Trade Payables on 30 November 2026.',
+  ]}
+  deliverables={[
+    'Excluded Decoys Note (3 items + reasons)',
+    'Completed & Balanced SLCA and PLCA with 1 Dec Bal b/d',
+    '2-line Balance Sheet extract for Net Trade Receivables & Trade Payables',
+  ]}
+  rubric={[
+    'Decoys excluded: Cash Sales ($9,000), Cash Purchases ($4,500), and Provision for Doubtful Debts ($800).',
+    'SLCA exact totals: Dr $51,200 ($12,500 + $38,000 + $600 + $100); Cr before bal c/d $35,900 ($33,400 + $900 + $700 + $400 + $500) → Closing Dr Balance = $15,300!',
+    'PLCA exact totals: Cr $39,100 ($9,600 + $29,400 + $100); Dr before bal c/d $28,100 ($26,200 + $800 + $600 + $500) → Closing Cr Balance = $11,000! (Balance Sheet Net Receivables = $15,300 − $800 = $14,500!)',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **SLCA = Giant Debtor (Dr ↑ / Cr ↓)**; **PLCA = Giant Creditor (Cr ↑ / Dr ↓)**!
+- **Contra / Set-Off:** **Cr SLCA** &amp; **Dr PLCA**.
+- **EXCLUDE:** **Cash Sales**, **Cash Purchases**, **Provision for Doubtful Debts**, and **Trade Discounts**!
+:::

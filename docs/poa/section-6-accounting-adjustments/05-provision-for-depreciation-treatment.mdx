@@ -1,0 +1,252 @@
+---
+id: provision-for-depreciation-treatment
+title: "6.5 Provision for Depreciation Journal Entries and Balance Sheet Treatment"
+sidebar_label: "6.5 Provision for Depreciation"
+sidebar_position: 5
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 6"
+  section="Accounting Adjustments — Bad Debts & Depreciation"
+  code="POA-S6-05"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="25 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+Why do accountants NEVER credit the **Machinery Account** directly when recording depreciation? Because the **Historical Cost Concept** says we should always be able to see what the asset **originally cost**! Instead, accountants create a companion **Contra-Asset account** called **Provision for Depreciation (Accumulated Depreciation)** — keeping the Asset Account untouched at original cost while accumulating all past depreciation charges neatly on the Credit side.
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | **Provision for Depreciation Account** (Credit balance / Contra-Asset), **Annual Adjusting Journal Entry**, **Income Statement** (THIS year’s charge ONLY) vs. **Balance Sheet** (TOTAL Accumulated Depreciation) |
+| **Exam Focus** | Constructing multi-year Asset and Provision for Depreciation T-accounts and NEVER confusing annual depreciation expense with total accumulated depreciation |
+| **Learning Outcome** | Record journal entries, post multi-year Provision for Depreciation ledger accounts, and display Cost, Accumulated Depreciation, and NBV accurately on the Balance Sheet |
+
+<ObjectivesBox
+  id="poa-s6-05-obj"
+  objectives={[
+    'Explain why depreciation is credited to a separate Provision for Depreciation account rather than directly to the Asset account.',
+    'Write the annual adjusting journal entry for depreciation and close it to the Income Statement.',
+    'Construct both the Non-Current Asset Account (at Cost) and the Provision for Depreciation Account across multiple accounting years.',
+    'Distinguish sharply between the single-year expense on the Income Statement and cumulative depreciation on the Balance Sheet.',
+  ]}
+/>
+
+---
+
+## 1. The Three Accounts Behind Every Depreciating Asset
+
+Every depreciating Non-Current Asset uses a clean 3-account system:
+
+| Ledger Account | Type &amp; Normal Balance | What Goes Inside It? | Where Does It Go at Year-End? |
+| :--- | :---: | :--- | :--- |
+| **1. Asset Account** *(e.g. Machinery)* | **Asset (Debit)** | Original cost of all assets owned (plus new purchases at cost) | **Balance Sheet → Cost Column** |
+| **2. Provision for Depreciation A/c** | **Contra-Asset (Credit)** | **Running total** of EVERY year’s depreciation since purchase (`Bal b/d` + this year’s charge) | **Balance Sheet → Accum. Depr. Column** *(subtracted from Cost!)* |
+| **3. Depreciation Expense A/c** *(or direct to Income Stmt)* | **Expense (Debit)** | **ONLY this year’s** depreciation charge | **Income Statement → Operating Expenses** *(closed to $0 every year!)* |
+
+<FormulaCard
+  title="Standard Annual Depreciation Journal Entry (Memorize!)"
+  onFormulaSheet={false}
+  summary="Debit the Expense (Income Statement) and Credit the Provision for Depreciation (Contra-Asset) — NEVER touch the Asset Account!"
+>
+
+**Two-Step Style:**
+1. `Dr Depreciation Expense` — *This year’s charge*
+   `Cr Provision for Depreciation — [Asset]` — *Adds to cumulative depreciation*
+2. `Dr Income Statement` — *Closes annual expense to profit*
+   `Cr Depreciation Expense`
+
+**Combined Direct Style *(Most Common on Paper 2)*:**
+- **`Dr Income Statement (Depreciation — [Asset])`**
+- **`Cr Provision for Depreciation — [Asset]`**
+
+</FormulaCard>
+
+---
+
+## 2. Diagram 1: Ledger Accounts to Financial Statements Flow
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-6/05-depreciation-ledger-to-balance-sheet.svg"
+  alt="Diagram tracing a $30,000 machine through the Machinery Account, Provision for Depreciation Account, Year 2 Income Statement ($3,000 expense), and Year 2 Balance Sheet ($30,000 Cost minus $6,000 Accum. Depr. = $24,000 NBV)."
+  caption="Diagram 1 (Static Reference): Trace the arrows! This year’s $3,000 charge flows UP to the Income Statement, while the cumulative $6,000 closing balance flows RIGHT to the Balance Sheet!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive 4-Step Depreciation Posting Flow
+
+<InteractiveDiagram
+  title="Interactive Flow: Follow These 4 Steps to Nail Every Provision for Depreciation Question"
+  layout="flow"
+  instruction="Click each step from 1 to 4 to see how multi-year depreciation flows cleanly from T-accounts to financial statements."
+  nodes={[
+    {
+      label: '1. Keep Asset A/c at Cost',
+      tag: 'Dr Balance',
+      tone: 'neutral',
+      detail: 'Whenever you buy a new machine or van, Debit the Asset A/c ("Bank / Supplier") at full purchase + installation cost. NEVER write depreciation inside the Asset A/c!',
+      example: 'Buy Machine #1 for $30,000 (2025) and Machine #2 for $20,000 (2026) → Machinery A/c closing balance on 31 Dec 2026 = $50,000!',
+      examTip: 'Only remove an asset from the Asset A/c when you actually SELL or SCRAP it (Asset Disposal)!',
+    },
+    {
+      label: '2. Bring Down Old Provision',
+      tag: 'Cr Bal b/d',
+      tone: 'neutral',
+      detail: 'Because Provision for Depreciation is a CONTRA-ASSET, its opening balance on 1 January ALWAYS starts on the CREDIT side ("Jan 1 Balance b/d").',
+      example: 'After Year 1’s $3,000 charge, Year 2 opens with Credit "Jan 1 Balance b/d $3,000".',
+      examTip: 'Remember: Putting Provision b/d on the Debit side by mistake flips the entire account upside down!',
+    },
+    {
+      label: '3. Credit This Year’s Charge',
+      tag: 'Dec 31 Entry',
+      tone: 'warning',
+      detail: 'Calculate THIS year’s depreciation (check Straight-Line vs. Reducing-Balance carefully!), then post "Dec 31 Income Statement $X" on the CREDIT side of the Provision A/c.',
+      example: 'Year 2 charge = 10% × $50,000 = $5,000 → Credit Provision A/c "Dec 31 Income Statement $5,000" (and charge $5,000 as an Operating Expense!).',
+      examTip: 'Double-check: ONLY this year’s $5,000 enters the 2026 Income Statement — NEVER the cumulative $8,000!',
+    },
+    {
+      label: '4. Carry Down Total Accum. Depr.',
+      tag: 'To Balance Sheet',
+      tone: 'positive',
+      detail: 'Add the Credit side ($3,000 b/d + $5,000 Year 2 = $8,000), write "Dec 31 Balance c/d $8,000" on the Debit side, and bring down "Jan 1 Balance b/d $8,000" on the Credit side!',
+      example: 'Balance Sheet (31 Dec 2026): Cost $50,000 − Accum. Depr. $8,000 = Net Book Value $42,000!',
+      examTip: 'Notice how every single figure on the 3-column Balance Sheet comes straight off your two T-account closing balances!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="2-Year Machinery & Provision for Depreciation Ledger Accounts + Statement Extracts"
+  marks={12}
+  problem={
+    <>
+      <p>
+        <strong>Scenario:</strong> <strong>Apex Printworks</strong> depreciates Machinery at
+        <strong> 10% per annum using the Straight-Line Method</strong>, charging a
+        <strong> full year’s depreciation in the year of purchase</strong>. Its financial year ends
+        <strong> 31 December</strong>:
+      </p>
+      <ul>
+        <li><strong>1 January 2025:</strong> Bought Machine #1 for <strong>$30,000</strong> by cheque.</li>
+        <li><strong>1 July 2026:</strong> Bought Machine #2 for <strong>$20,000</strong> by cheque.</li>
+      </ul>
+      <ol>
+        <li>Prepare the <strong>Machinery Account</strong> for 2025 and 2026. <em>[3 marks]</em></li>
+        <li>Prepare the <strong>Provision for Depreciation — Machinery Account</strong> for 2025 and 2026. <em>[5 marks]</em></li>
+        <li>Show the <strong>Income Statement</strong> and <strong>Balance Sheet</strong> extracts for the year ended <strong>31 December 2026</strong>. <em>[4 marks]</em></li>
+      </ol>
+    </>
+  }
+>
+
+### 1. Machinery Account *(At Original Cost — 3 marks)*
+
+| Date (Dr) | Details | $ | Date (Cr) | Details | $ |
+| :--- | :--- | ---: | :--- | :--- | ---: |
+| Jan 1, 2025 | Bank *(Machine #1)* | 30,000 | Dec 31, 2025 | Balance c/d | 30,000 |
+| | | **30,000** | | | **30,000** |
+| Jan 1, 2026 | Balance b/d | 30,000 | Dec 31, 2026 | Balance c/d | 50,000 |
+| Jul 1, 2026 | Bank *(Machine #2)* | 20,000 | | | |
+| | | **50,000** | | | **50,000** |
+| Jan 1, 2027 | Balance b/d | 50,000 | | | |
+
+### 2. Provision for Depreciation — Machinery Account *(Contra-Asset — 5 marks)*
+- *2025 Annual Depreciation:* `10% × $30,000` = **$3,000**
+- *2026 Annual Depreciation:* `10% × $50,000` *(full year policy on Machine #2 too!)* = **$5,000**
+
+| Date (Dr) | Details | $ | Date (Cr) | Details | $ |
+| :--- | :--- | ---: | :--- | :--- | ---: |
+| Dec 31, 2025 | Balance c/d | 3,000 | Dec 31, 2025 | **Income Statement** | 3,000 |
+| | | **3,000** | | | **3,000** |
+| Dec 31, 2026 | Balance c/d | 8,000 | Jan 1, 2026 | Balance b/d | 3,000 |
+| | | | Dec 31, 2026 | **Income Statement** | 5,000 |
+| | | **8,000** | | | **8,000** |
+| | | | Jan 1, 2027 | Balance b/d | 8,000 |
+
+### 3. 2026 Financial Statement Extracts *(4 marks)*
+- **Income Statement Extract (for the year ended 31 December 2026):** *(1 mark)*
+  - *Less: Operating Expenses:* Depreciation — Machinery **$5,000** *(2026 charge ONLY!)*
+- **Balance Sheet Extract (as at 31 December 2026):** *(3 marks)*
+
+| Non-Current Assets | Cost ($) | Accum. Depr. ($) | Net Book Value ($) |
+| :--- | ---: | ---: | ---: |
+| Machinery | 50,000 | (8,000) | **42,000** |
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Provision for Depreciation Treatment"
+  items={[
+    {
+      statement: 'The annual adjusting entry to record depreciation is: Debit Income Statement (Depreciation Expense) and Credit Provision for Depreciation.',
+      answer: true,
+      explanation: 'Spot on! Expenses increase on the Debit side, while the Contra-Asset Provision for Depreciation grows on the Credit side.',
+    },
+    {
+      statement: 'Provision for Depreciation normally carries a DEBIT balance in the General Ledger.',
+      answer: false,
+      explanation: 'Provision for Depreciation is a CONTRA-ASSET — it carries a CREDIT balance so that it offsets the Debit balance of the Asset Account!',
+    },
+    {
+      statement: 'At the end of Year 3, the TOTAL Accumulated Depreciation across Years 1, 2, and 3 is charged as an expense in Year 3’s Income Statement.',
+      answer: false,
+      explanation: 'NEVER! Only YEAR 3’s single depreciation charge enters Year 3’s Income Statement; TOTAL Accumulated Depreciation goes on the Balance Sheet!',
+    },
+    {
+      statement: 'Keeping a separate Provision for Depreciation account allows readers of the Balance Sheet to see BOTH the Original Cost and the Net Book Value of fixed assets.',
+      answer: true,
+      explanation: 'Yes — that respects the Historical Cost Concept while showing how worn down the firm’s assets currently are.',
+    },
+    {
+      statement: 'If a Delivery Van costs $25,000 and its Provision for Depreciation Balance c/d is $9,000, its Net Book Value on the Balance Sheet is $16,000.',
+      answer: true,
+      explanation: 'Net Book Value = Original Cost ($25,000) − Accumulated Depreciation ($9,000) = $16,000!',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s6-05-project"
+  title="Mini-Project: Multi-Year Reducing-Balance Provision Ledgers for RapidClean Laundry"
+  duration="25 mins"
+  scenario="RapidClean Laundry depreciates Delivery Vans at 20% per annum using the Reducing-Balance Method (full year’s depreciation in year of purchase; financial year ends 31 December). On 1 January 2025, it bought Van #1 for $25,000 by cheque. On 1 January 2026, it bought Van #2 for $15,000 by cheque. Build the complete 2-year ledger accounts and 2026 Balance Sheet extract!"
+  steps={[
+    'Draw the Delivery Vans Account (at Cost) for 2025 and 2026, bringing down the 1 Jan 2027 balance.',
+    'Calculate 2025 depreciation (20% of $25,000) and 2026 depreciation (20% of total Opening Net Book Value across BOTH vans!).',
+    'Construct the 2-year Provision for Depreciation — Delivery Vans Account, showing both Income Statement transfers and the 1 Jan 2027 Credit Bal b/d.',
+    'Write the 2026 General Journal entry for depreciation and prepare the 2026 Income Statement & 3-column Balance Sheet extracts.',
+  ]}
+  deliverables={[
+    'Delivery Vans A/c & Provision for Depreciation A/c (2025–2026)',
+    '2026 Adjusting General Journal entry with narration',
+    '2026 Income Statement & 3-column Balance Sheet extracts',
+  ]}
+  rubric={[
+    'Delivery Vans A/c: 31 Dec 2025 Bal c/d $25,000; 31 Dec 2026 Bal c/d $40,000 ($25,000 + $15,000).',
+    'Provision for Depreciation A/c: 2025 IS charge $5,000 (Bal c/d $5,000); 2026 Opening NBV = $20,000 (Van 1) + $15,000 (Van 2) = $35,000 → 2026 IS charge = 20% × $35,000 = $7,000 → 31 Dec 2026 Bal c/d = $12,000 (Credit b/d Jan 1, 2027)!',
+    '2026 Balance Sheet extract shows: Delivery Vans Cost $40,000 | Accum. Depr. ($12,000) | Net Book Value $28,000 (and 2026 IS shows ONLY $7,000!).',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **Asset A/c** = ALWAYS at **Original Cost** (`Dr`).
+- **Provision for Depreciation A/c** = ALWAYS a **Contra-Asset (`Cr`)** holding cumulative depreciation.
+- **Income Statement** = **THIS YEAR ONLY**; **Balance Sheet** = **TOTAL ACCUMULATED**!
+:::

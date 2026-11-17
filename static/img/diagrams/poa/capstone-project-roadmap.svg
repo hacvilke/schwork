@@ -1,0 +1,111 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 490" width="920" height="490" role="img" aria-label="Principles of Accounts Final Capstone Project 4-Phase Roadmap uniting all 11 syllabus sections into one complete real-world business accounting portfolio">
+  <defs>
+    <style>
+      .bg { fill: #F8F6F1; }
+      .card { fill: #FCFBF8; stroke: #CEDCD6; stroke-width: 2; rx: 12; }
+      .navy { fill: #1B365D; rx: 10; }
+      .sage { fill: #2E6359; rx: 10; }
+      .coral { fill: #C84E24; rx: 10; }
+      .mint { fill: #EBF2EF; stroke: #4E8577; stroke-width: 1.5; rx: 8; }
+      .amber { fill: #FEF3E2; stroke: #F5A352; stroke-width: 1.5; rx: 8; }
+      .title { font-family: system-ui, -apple-system, sans-serif; font-size: 21px; font-weight: 800; fill: #1B365D; }
+      .subtitle { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; fill: #4A5560; }
+      .w-title { font-family: system-ui, -apple-system, sans-serif; font-size: 13.5px; font-weight: 800; fill: #FFFFFF; }
+      .w-sub { font-family: system-ui, -apple-system, sans-serif; font-size: 11px; fill: #EBF2EF; }
+      .label { font-family: system-ui, -apple-system, sans-serif; font-size: 12.5px; font-weight: 800; fill: #1B365D; }
+      .body { font-family: system-ui, -apple-system, sans-serif; font-size: 11.5px; fill: #222222; }
+      .coral-txt { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; font-weight: 800; fill: #C84E24; }
+      .arrow { stroke: #C84E24; stroke-width: 2.5; fill: none; marker-end: url(#arcap); }
+    </style>
+    <marker id="arcap" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#C84E24"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="920" height="490"/>
+  <text x="460" y="34" text-anchor="middle" class="title">POA Final Capstone Project: 4-Phase Full-Syllabus Simulation</text>
+  <text x="460" y="54" text-anchor="middle" class="subtitle">BlueHarbor Craft &amp; Roastery — Unite ALL 11 Syllabus Sections (88 Topics) into ONE Balanced Accounting Portfolio!</text>
+
+  <!-- Phase 1 -->
+  <rect class="card" x="24" y="76" width="198" height="314"/>
+  <rect class="navy" x="34" y="86" width="178" height="46"/>
+  <text x="123" y="106" text-anchor="middle" class="w-title">PHASE 1 (25 pts)</text>
+  <text x="123" y="123" text-anchor="middle" class="w-sub">Sections 2, 3, 4 &amp; 11</text>
+  <rect class="mint" x="36" y="144" width="174" height="120"/>
+  <text x="46" y="164" class="label">Books &amp; Trial Balance</text>
+  <text x="46" y="182" class="body">• Opening Capital Proof</text>
+  <text x="46" y="199" class="body">• Day Books &amp; Cash Book</text>
+  <text x="46" y="216" class="body">• Imprest Petty Cash</text>
+  <text x="46" y="233" class="body">• Payroll Register Entry</text>
+  <text x="46" y="250" class="body">• Balanced Trial Balance!</text>
+  <rect class="amber" x="36" y="274" width="174" height="102"/>
+  <text x="46" y="294" class="coral-txt">Checkpoint 1:</text>
+  <text x="46" y="314" class="label">Trial Balance Proof</text>
+  <text x="46" y="334" class="body">Dr = Cr exact match</text>
+  <text x="46" y="354" class="body">before adjustments!</text>
+
+  <line class="arrow" x1="222" y1="224" x2="244" y2="224"/>
+
+  <!-- Phase 2 -->
+  <rect class="card" x="248" y="76" width="198" height="314"/>
+  <rect class="sage" x="258" y="86" width="178" height="46"/>
+  <text x="347" y="106" text-anchor="middle" class="w-title">PHASE 2 (20 pts)</text>
+  <text x="347" y="123" text-anchor="middle" class="w-sub">Sections 6, 7 &amp; 10</text>
+  <rect class="mint" x="260" y="144" width="174" height="120"/>
+  <text x="270" y="164" class="label">Controls &amp; Adjustments</text>
+  <text x="270" y="182" class="body">• Bank Reconciliation</text>
+  <text x="270" y="199" class="body">• Adjusted Cash Book</text>
+  <text x="270" y="216" class="body">• FIFO Closing Inventory</text>
+  <text x="270" y="233" class="body">• Accrual &amp; Prepayment</text>
+  <text x="270" y="250" class="body">• Depr. &amp; 5% Bad Debts</text>
+  <rect class="amber" x="260" y="274" width="174" height="102"/>
+  <text x="270" y="294" class="coral-txt">Checkpoint 2:</text>
+  <text x="270" y="314" class="label">Clean Controls</text>
+  <text x="270" y="334" class="body">Cash Book matches</text>
+  <text x="270" y="354" class="body">Bank Statement 100%!</text>
+
+  <line class="arrow" x1="446" y1="224" x2="468" y2="224"/>
+
+  <!-- Phase 3 -->
+  <rect class="card" x="472" y="76" width="198" height="314"/>
+  <rect class="coral" x="482" y="86" width="178" height="46"/>
+  <text x="571" y="106" text-anchor="middle" class="w-title">PHASE 3 (30 pts)</text>
+  <text x="571" y="123" text-anchor="middle" class="w-sub">Sections 5 &amp; 6</text>
+  <rect class="mint" x="484" y="144" width="174" height="120"/>
+  <text x="494" y="164" class="label">Final Statements &amp; Ratios</text>
+  <text x="494" y="182" class="body">• Vertical Income Stmt</text>
+  <text x="494" y="199" class="body">• Classified Balance Sheet</text>
+  <text x="494" y="216" class="body">• Gross &amp; Net Margin %</text>
+  <text x="494" y="233" class="body">• Current &amp; Acid Test</text>
+  <text x="494" y="250" class="body">• Financial Health Memo</text>
+  <rect class="amber" x="484" y="274" width="174" height="102"/>
+  <text x="494" y="294" class="coral-txt">Checkpoint 3:</text>
+  <text x="494" y="314" class="label">Balanced Sheet!</text>
+  <text x="494" y="334" class="body">Total Net Assets =</text>
+  <text x="494" y="354" class="body">Closing Capital exact!</text>
+
+  <line class="arrow" x1="670" y1="224" x2="692" y2="224"/>
+
+  <!-- Phase 4 -->
+  <rect class="card" x="696" y="76" width="200" height="314"/>
+  <rect class="navy" x="706" y="86" width="180" height="46"/>
+  <text x="796" y="106" text-anchor="middle" class="w-title">PHASE 4 (25 pts)</text>
+  <text x="796" y="123" text-anchor="middle" class="w-sub">Sections 1, 8, 9 &amp; 11</text>
+  <rect class="mint" x="708" y="144" width="176" height="120"/>
+  <text x="718" y="164" class="label">Growth, Budgets &amp; Ethics</text>
+  <text x="718" y="182" class="body">• Partnership vs. Ltd Plan</text>
+  <text x="718" y="199" class="body">• 3-Mo Sales &amp; Prod Budget</text>
+  <text x="718" y="216" class="body">• Break-Even &amp; Cash Risk</text>
+  <text x="718" y="233" class="body">• Accounting Ethics Audit</text>
+  <text x="718" y="250" class="body">• Executive Pitch Summary</text>
+  <rect class="amber" x="708" y="274" width="176" height="102"/>
+  <text x="718" y="294" class="coral-txt">Checkpoint 4:</text>
+  <text x="718" y="314" class="label">Portfolio Ready!</text>
+  <text x="718" y="334" class="body">100-Point Self-Check</text>
+  <text x="718" y="354" class="body">Mastery Certificate!</text>
+
+  <!-- Bottom Completion Banner -->
+  <rect class="navy" x="24" y="408" width="872" height="60"/>
+  <text x="460" y="432" text-anchor="middle" class="w-title">COMPLETE PORTFOLIO TARGET: 100 POINTS · ESTIMATED COMPLETION TIME: 2–3 HOURS</text>
+  <text x="460" y="452" text-anchor="middle" class="w-sub">Complete all 4 phases on paper or in Excel FIRST — then open the sealed Self-Verification Checkpoints at the bottom to audit your exact numbers!</text>
+</svg>

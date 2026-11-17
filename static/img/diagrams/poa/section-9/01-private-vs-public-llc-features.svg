@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 470" role="img" aria-label="Comparison of Private Limited Companies (Ltd) vs Public Limited Companies (PLC) and the four pillars of corporate legal status">
+  <defs>
+    <style>
+      .title { font: 700 20px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .sub { font: 500 13px system-ui, -apple-system, sans-serif; fill: #4A5560; }
+      .hdr { font: 700 14px system-ui, -apple-system, sans-serif; fill: #FCFBF8; }
+      .h3 { font: 700 13px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .body { font: 500 12px system-ui, -apple-system, sans-serif; fill: #222222; }
+      .sage { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #2E6359; }
+      .coral { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #C84E24; }
+    </style>
+  </defs>
+
+  <rect width="920" height="470" rx="14" fill="#F8F6F1" stroke="#CEDCD6" stroke-width="1.5"/>
+  <text x="32" y="38" class="title">Limited Liability Companies: 4 Pillars + Private (Ltd) vs. Public (PLC)</text>
+  <text x="32" y="58" class="sub">Incorporated under the Companies Act as an artificial legal person — legally separate from its shareholders and Board of Directors.</text>
+
+  <!-- Top 4 Pillars -->
+  <rect x="32" y="76" width="202" height="94" rx="10" fill="#FCFBF8" stroke="#1B365D" stroke-width="1.6"/>
+  <rect x="32" y="76" width="202" height="28" rx="9" fill="#1B365D"/>
+  <text x="133" y="95" text-anchor="middle" class="hdr">Separate Legal Entity</text>
+  <text x="46" y="122" class="body">Company owns assets,</text>
+  <text x="46" y="139" class="body">signs contracts &amp; can sue</text>
+  <text x="46" y="156" class="sage">in its OWN legal name!</text>
+
+  <rect x="250" y="76" width="202" height="94" rx="10" fill="#FCFBF8" stroke="#2E6359" stroke-width="1.6"/>
+  <rect x="250" y="76" width="202" height="28" rx="9" fill="#2E6359"/>
+  <text x="351" y="95" text-anchor="middle" class="hdr">Limited Liability</text>
+  <text x="264" y="122" class="body">Shareholders risk ONLY</text>
+  <text x="264" y="139" class="body">the value of their shares</text>
+  <text x="264" y="156" class="sage">— personal homes safe!</text>
+
+  <rect x="468" y="76" width="202" height="94" rx="10" fill="#FCFBF8" stroke="#4E8577" stroke-width="1.6"/>
+  <rect x="468" y="76" width="202" height="28" rx="9" fill="#4E8577"/>
+  <text x="569" y="95" text-anchor="middle" class="hdr">Perpetual Succession</text>
+  <text x="482" y="122" class="body">Company keeps living</text>
+  <text x="482" y="139" class="body">even if a shareholder</text>
+  <text x="482" y="156" class="h3">dies or sells shares!</text>
+
+  <rect x="686" y="76" width="202" height="94" rx="10" fill="#FCFBF8" stroke="#C84E24" stroke-width="1.6"/>
+  <rect x="686" y="76" width="202" height="28" rx="9" fill="#C84E24"/>
+  <text x="787" y="95" text-anchor="middle" class="hdr">Split Control</text>
+  <text x="700" y="122" class="body">Shareholders OWN;</text>
+  <text x="700" y="139" class="body">elected Board of Directors</text>
+  <text x="700" y="156" class="coral">MANAGES daily affairs!</text>
+
+  <!-- Private vs Public Comparison Cards -->
+  <rect x="32" y="190" width="418" height="212" rx="11" fill="#FCFBF8" stroke="#2E6359" stroke-width="1.8"/>
+  <rect x="32" y="190" width="418" height="36" rx="10" fill="#2E6359"/>
+  <text x="241" y="213" text-anchor="middle" class="hdr">Private Limited Company (e.g. Apex Hardware Ltd)</text>
+  <text x="50" y="248" class="body">• Shares sold PRIVATELY to family, friends, or invited investors</text>
+  <text x="50" y="272" class="body">• CANNOT sell shares to the general public or stock exchange</text>
+  <text x="50" y="296" class="body">• Transfer of shares requires approval of the Board of Directors</text>
+  <text x="50" y="320" class="sage">• Financial accounts stay MORE PRIVATE (not published broadly)</text>
+  <text x="50" y="344" class="body">• Founders keep tight control — avoids hostile takeovers!</text>
+  <rect x="48" y="358" width="386" height="30" rx="6" fill="#EBF2EF"/>
+  <text x="241" y="378" text-anchor="middle" class="h3">Ideal for: Growing family firms &amp; mid-sized private ventures</text>
+
+  <rect x="470" y="190" width="418" height="212" rx="11" fill="#FCFBF8" stroke="#1B365D" stroke-width="1.8"/>
+  <rect x="470" y="190" width="418" height="36" rx="10" fill="#1B365D"/>
+  <text x="679" y="213" text-anchor="middle" class="hdr">Public Limited Company (e.g. IslandBank PLC)</text>
+  <text x="488" y="248" class="body">• MAY invite the general public to buy shares (via Prospectus)</text>
+  <text x="488" y="272" class="sage">• Shares trade FREELY on the Stock Exchange (no board consent)</text>
+  <text x="488" y="296" class="sage">• Can raise MASSIVE capital from thousands of investors!</text>
+  <text x="488" y="320" class="coral">• MUST publish audited Annual Financial Statements publicly!</text>
+  <text x="488" y="344" class="coral">• Higher audit/compliance costs &amp; risk of hostile takeover</text>
+  <rect x="486" y="358" width="386" height="30" rx="6" fill="#FFF3EE"/>
+  <text x="679" y="378" text-anchor="middle" class="h3">Ideal for: Banks, airlines, major manufacturers &amp; telecoms</text>
+
+  <!-- Bottom Incorporation Docs Strip -->
+  <rect x="32" y="416" width="856" height="38" rx="8" fill="#1B365D"/>
+  <text x="460" y="440" text-anchor="middle" style="font: 700 12.2px system-ui; fill: #FCFBF8;">Key Formation Docs: Memorandum of Association (External Charter) · Articles of Association (Internal Rules) · Certificate of Incorporation (Birth Certificate!)</text>
+</svg>

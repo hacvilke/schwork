@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 470" role="img" aria-label="Comparison of Cash Basis vs Accrual and Matching Basis across two financial years">
+  <defs>
+    <style>
+      .title { font: 700 20px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .sub { font: 500 13px system-ui, -apple-system, sans-serif; fill: #4A5560; }
+      .sec { font: 700 15px system-ui, -apple-system, sans-serif; fill: #FCFBF8; }
+      .h3 { font: 700 14px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .body { font: 500 12.5px system-ui, -apple-system, sans-serif; fill: #222222; }
+      .muted { font: 500 12px system-ui, -apple-system, sans-serif; fill: #4A5560; }
+      .sage { font: 700 13px system-ui, -apple-system, sans-serif; fill: #2E6359; }
+      .coral { font: 700 13px system-ui, -apple-system, sans-serif; fill: #C84E24; }
+      .badge { font: 700 11.5px system-ui, -apple-system, sans-serif; fill: #FCFBF8; }
+    </style>
+  </defs>
+
+  <rect width="920" height="470" rx="14" fill="#F8F6F1" stroke="#CEDCD6" stroke-width="1.5"/>
+
+  <text x="32" y="38" class="title">Accrual &amp; Matching Concept vs. Cash Basis Timeline</text>
+  <text x="32" y="58" class="sub">Example: Monthly shop rent is $1,000 ($12,000/yr). In 2026, only 10 months ($10,000) were paid; Dec &amp; Nov bills are paid in Jan 2027.</text>
+
+  <!-- Timeline Bar -->
+  <rect x="32" y="78" width="415" height="36" rx="8" fill="#1B365D"/>
+  <text x="239" y="101" text-anchor="middle" class="sec">Financial Year 2026 (Jan 1 – Dec 31)</text>
+  <rect x="473" y="78" width="415" height="36" rx="8" fill="#4E8577"/>
+  <text x="680" y="101" text-anchor="middle" class="sec">Financial Year 2027 (Jan 1 – Dec 31)</text>
+  <line x1="460" y1="74" x2="460" y2="386" stroke="#C84E24" stroke-width="2.5" stroke-dasharray="6,5"/>
+  <rect x="415" y="122" width="90" height="22" rx="11" fill="#C84E24"/>
+  <text x="460" y="137" text-anchor="middle" class="badge">31 Dec Cut-Off</text>
+
+  <!-- Wrong: Cash Basis Card -->
+  <rect x="32" y="156" width="856" height="96" rx="10" fill="#FCFBF8" stroke="#C84E24" stroke-width="1.6"/>
+  <rect x="32" y="156" width="10" height="96" rx="4" fill="#C84E24"/>
+  <text x="56" y="182" class="coral">✕ WRONG: Cash Basis (Records only when cash moves)</text>
+  <rect x="56" y="194" width="380" height="44" rx="7" fill="#FFF3EE" stroke="#C84E24" stroke-width="1"/>
+  <text x="72" y="213" class="h3">2026 Rent Expense = $10,000 (Too Low!)</text>
+  <text x="72" y="230" class="muted">Understates 2026 expenses → overstates 2026 Net Profit by $2,000.</text>
+
+  <rect x="484" y="194" width="386" height="44" rx="7" fill="#FFF3EE" stroke="#C84E24" stroke-width="1"/>
+  <text x="500" y="213" class="h3">2027 Rent Expense = $14,000 (Too High!)</text>
+  <text x="500" y="230" class="muted">Dumps 2026's unpaid $2,000 onto 2027 → distorts BOTH years!</text>
+
+  <!-- Right: Accrual & Matching Basis Card -->
+  <rect x="32" y="268" width="856" height="114" rx="10" fill="#FCFBF8" stroke="#2E6359" stroke-width="1.8"/>
+  <rect x="32" y="268" width="10" height="114" rx="4" fill="#2E6359"/>
+  <text x="56" y="294" class="sage">✓ CORRECT: Accrual &amp; Matching Basis (Matches revenue &amp; expense to the EXACT year incurred)</text>
+
+  <rect x="56" y="306" width="380" height="62" rx="7" fill="#EBF2EF" stroke="#4E8577" stroke-width="1.2"/>
+  <text x="72" y="326" class="h3">2026 Rent Expense = $12,000 ($10k paid + $2k accrued)</text>
+  <text x="72" y="344" class="body">Full 12 months matched against 2026 Sales Revenue.</text>
+  <text x="72" y="360" class="sage">Balance Sheet (31 Dec 2026): Accrued Rent $2,000 (Current Liability)</text>
+
+  <rect x="484" y="306" width="386" height="62" rx="7" fill="#EBF2EF" stroke="#4E8577" stroke-width="1.2"/>
+  <text x="500" y="326" class="h3">2027 Rent Expense = $12,000 (Only 2027's 12 months)</text>
+  <text x="500" y="344" class="body">Jan 2027 payment of $2,000 clears the 2026 Liability — NOT 2027 expense!</text>
+  <text x="500" y="360" class="sage">Both years show True &amp; Fair Profit!</text>
+
+  <!-- Bottom Golden Rule Banner -->
+  <rect x="32" y="400" width="856" height="50" rx="9" fill="#1B365D"/>
+  <text x="460" y="422" text-anchor="middle" class="sec">Golden Rule of Year-End Adjustments</text>
+  <text x="460" y="441" text-anchor="middle" style="font: 500 12.5px system-ui, sans-serif; fill: #EBF2EF;">ADD amounts owing/accrued for THIS year · SUBTRACT amounts prepaid/received in advance for NEXT year!</text>
+</svg>

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 470" role="img" aria-label="Two-stage Adjusted Cash Book Bank Reconciliation flow diagram with worked numbers showing positive and overdraft formulas">
+  <defs>
+    <style>
+      .title { font: 700 20px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .sub { font: 500 13px system-ui, -apple-system, sans-serif; fill: #4A5560; }
+      .hdr { font: 700 14px system-ui, -apple-system, sans-serif; fill: #FCFBF8; }
+      .h3 { font: 700 13px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .mono { font: 700 11.8px ui-monospace, SFMono-Regular, monospace; fill: #122440; }
+      .body { font: 500 12px system-ui, -apple-system, sans-serif; fill: #222222; }
+      .sage { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #2E6359; }
+      .coral { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #C84E24; }
+    </style>
+  </defs>
+
+  <rect width="920" height="470" rx="14" fill="#F8F6F1" stroke="#CEDCD6" stroke-width="1.5"/>
+  <text x="32" y="38" class="title">The 2-Stage Bank Reconciliation Blueprint (Adjusted Cash Book Method)</text>
+  <text x="32" y="58" class="sub">ALWAYS update the Cash Book FIRST (Stage 1) — that updated balance goes on the Balance Sheet! Then reconcile to the Bank Statement (Stage 2).</text>
+
+  <!-- Stage 1: Adjusted Cash Book -->
+  <rect x="32" y="80" width="420" height="288" rx="11" fill="#FCFBF8" stroke="#1B365D" stroke-width="1.8"/>
+  <rect x="32" y="80" width="420" height="36" rx="10" fill="#1B365D"/>
+  <text x="242" y="103" text-anchor="middle" class="hdr">STAGE 1: Adjusted Cash Book (Bank Column)</text>
+  <line x1="242" y1="116" x2="242" y2="334" stroke="#1B365D" stroke-width="1.4"/>
+
+  <text x="44" y="136" class="sage">Dr (+)</text>
+  <text x="254" y="136" class="coral">Cr (−)</text>
+  <line x1="42" y1="144" x2="442" y2="144" stroke="#CEDCD6"/>
+
+  <text x="44" y="166" class="mono">Bal b/d ......... $4,200</text>
+  <text x="44" y="188" class="mono">Credit Transfer .   $800</text>
+  <text x="44" y="210" class="mono">Dividend ........   $200</text>
+
+  <text x="254" y="166" class="mono">Bank Charges .....  $90</text>
+  <text x="254" y="188" class="mono">Standing Order ... $450</text>
+  <text x="254" y="210" class="mono">Dishonored Chq ... $360</text>
+  <text x="254" y="236" class="sage">Adj. Bal c/d ....$4,300</text>
+
+  <line x1="44" y1="258" x2="232" y2="258" stroke="#1B365D"/>
+  <line x1="254" y1="258" x2="440" y2="258" stroke="#1B365D"/>
+  <text x="228" y="276" text-anchor="end" class="mono">$5,200</text>
+  <text x="436" y="276" text-anchor="end" class="mono">$5,200</text>
+  <line x1="44" y1="283" x2="232" y2="283" stroke="#1B365D" stroke-width="2"/>
+  <line x1="254" y1="283" x2="440" y2="283" stroke="#1B365D" stroke-width="2"/>
+  <text x="44" y="306" class="sage">Adj. Bal b/d .... $4,300</text>
+  <rect x="44" y="324" width="396" height="32" rx="6" fill="#EBF2EF"/>
+  <text x="242" y="344" text-anchor="middle" class="h3">→ $4,300 is the TRUE Bank Figure for the Balance Sheet!</text>
+
+  <!-- Arrow Stage 1 -> Stage 2 -->
+  <line x1="452" y1="224" x2="482" y2="224" stroke="#2E6359" stroke-width="2.8"/>
+  <polygon points="478,216 491,224 478,232" fill="#2E6359"/>
+
+  <!-- Stage 2: Bank Reconciliation Statement -->
+  <rect x="494" y="80" width="394" height="288" rx="11" fill="#FCFBF8" stroke="#2E6359" stroke-width="1.8"/>
+  <rect x="494" y="80" width="394" height="36" rx="10" fill="#2E6359"/>
+  <text x="691" y="103" text-anchor="middle" class="hdr">STAGE 2: Bank Reconciliation Statement</text>
+
+  <text x="512" y="146" class="h3">Balance per Adjusted Cash Book</text>
+  <text x="870" y="146" text-anchor="end" class="mono">$4,300</text>
+
+  <text x="512" y="182" class="sage">Add: Unpresented Cheques</text>
+  <text x="870" y="182" text-anchor="end" class="mono">+1,150</text>
+  <line x1="774" y1="192" x2="870" y2="192" stroke="#CEDCD6"/>
+  <text x="870" y="212" text-anchor="end" class="mono">5,450</text>
+
+  <text x="512" y="246" class="coral">Less: Uncredited Deposits</text>
+  <text x="524" y="264" class="body">(Late Lodgements in Transit)</text>
+  <text x="870" y="246" text-anchor="end" class="mono">(950)</text>
+
+  <line x1="774" y1="276" x2="870" y2="276" stroke="#1B365D" stroke-width="1.4"/>
+  <text x="512" y="300" class="h3">Balance per Bank Statement</text>
+  <text x="870" y="300" text-anchor="end" class="sage">$4,500 ✓</text>
+  <line x1="774" y1="308" x2="870" y2="308" stroke="#1B365D" stroke-width="2.2"/>
+
+  <rect x="510" y="324" width="362" height="32" rx="6" fill="#EBF2EF"/>
+  <text x="691" y="344" text-anchor="middle" class="sage">Matches Bank Statement EXACTLY ($4,500 Cr)!</text>
+
+  <!-- Bottom Overdraft Shortcut -->
+  <rect x="32" y="384" width="856" height="68" rx="10" fill="#1B365D"/>
+  <text x="54" y="408" class="hdr">PRO TIP FOR BANK OVERDRAFTS (Zero Sign Confusion Ever!):</text>
+  <text x="54" y="430" style="font: 600 12.5px system-ui; fill: #F5A352;">Write an Overdraft as a NEGATIVE number (e.g. -$1,200) and use the EXACT SAME signs: (+ Unpresented) &amp; (- Uncredited)!</text>
+  <text x="54" y="446" style="font: 500 11.8px system-ui; fill: #EBF2EF;">Example: -$1,200 (OD) + $700 Unpresented - $400 Uncredited = -$900 ($900 Overdraft per Bank Statement!)</text>
+</svg>

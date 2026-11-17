@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 470" width="920" height="470" role="img" aria-label="Financial Plan Architecture of an Entrepreneur’s Business Plan linking Startup Capital Budget, Break-Even Point, Projected Income Statement, Cash Flow, and Pro-Forma Balance Sheet">
+  <defs>
+    <style>
+      .bg { fill: #F8F6F1; }
+      .card { fill: #FCFBF8; stroke: #CEDCD6; stroke-width: 2; rx: 12; }
+      .navy { fill: #1B365D; rx: 10; }
+      .sage { fill: #2E6359; rx: 10; }
+      .coral { fill: #C84E24; rx: 10; }
+      .mint { fill: #EBF2EF; stroke: #4E8577; stroke-width: 1.5; rx: 8; }
+      .amber { fill: #FEF3E2; stroke: #F5A352; stroke-width: 1.5; rx: 8; }
+      .title { font-family: system-ui, -apple-system, sans-serif; font-size: 21px; font-weight: 800; fill: #1B365D; }
+      .subtitle { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; fill: #4A5560; }
+      .w-title { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; font-weight: 800; fill: #FFFFFF; }
+      .w-sub { font-family: system-ui, -apple-system, sans-serif; font-size: 11.5px; fill: #EBF2EF; }
+      .label { font-family: system-ui, -apple-system, sans-serif; font-size: 12.5px; font-weight: 800; fill: #1B365D; }
+      .body { font-family: system-ui, -apple-system, sans-serif; font-size: 11.5px; fill: #222222; }
+      .coral-txt { font-family: system-ui, -apple-system, sans-serif; font-size: 12.5px; font-weight: 800; fill: #C84E24; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="920" height="470"/>
+  <text x="460" y="34" text-anchor="middle" class="title">The Entrepreneur’s Business Plan — Financial Section Blueprint</text>
+  <text x="460" y="54" text-anchor="middle" class="subtitle">Every accounting skill from Sections 1–11 unites here to prove to bankers and investors that your startup is viable!</text>
+
+  <!-- Center Hub -->
+  <rect class="navy" x="348" y="176" width="224" height="106"/>
+  <text x="460" y="210" text-anchor="middle" class="w-title">BUSINESS PLAN</text>
+  <text x="460" y="230" text-anchor="middle" class="w-title">FINANCIAL CORE</text>
+  <text x="460" y="252" text-anchor="middle" class="w-sub">Proves Viability, Liquidity</text>
+  <text x="460" y="268" text-anchor="middle" class="w-sub">&amp; Repayment Power!</text>
+
+  <!-- Connector lines -->
+  <line x1="308" y1="145" x2="348" y2="195" stroke="#1B365D" stroke-width="2.5"/>
+  <line x1="612" y1="145" x2="572" y2="195" stroke="#1B365D" stroke-width="2.5"/>
+  <line x1="308" y1="312" x2="348" y2="262" stroke="#1B365D" stroke-width="2.5"/>
+  <line x1="612" y1="312" x2="572" y2="262" stroke="#1B365D" stroke-width="2.5"/>
+
+  <!-- Top-Left: Startup Capital & Sources -->
+  <rect class="card" x="24" y="76" width="290" height="134"/>
+  <rect class="sage" x="34" y="86" width="270" height="32"/>
+  <text x="169" y="107" text-anchor="middle" class="w-title">1. STARTUP COST &amp; FUNDING</text>
+  <text x="42" y="140" class="label">How Much Cash to Open Doors?</text>
+  <text x="42" y="158" class="body">• Equipment, Licenses &amp; Opening Stock</text>
+  <text x="42" y="175" class="body">• Working Capital Cushion (3 months)</text>
+  <text x="42" y="195" class="coral-txt">Sources: Owner Equity + Bank Loan/Grant</text>
+
+  <!-- Top-Right: Break-Even Analysis -->
+  <rect class="card" x="606" y="76" width="290" height="134"/>
+  <rect class="coral" x="616" y="86" width="270" height="32"/>
+  <text x="751" y="107" text-anchor="middle" class="w-title">2. BREAK-EVEN ANALYSIS</text>
+  <text x="624" y="140" class="label">Minimum Sales to Cover All Costs:</text>
+  <text x="624" y="160" class="coral-txt">BEP (Units) = Fixed Costs ÷ (Price − VC)</text>
+  <text x="624" y="180" class="body">Contribution/Unit = Price − Variable Cost</text>
+  <text x="624" y="197" class="body">Proves sales target beats break-even safely!</text>
+
+  <!-- Bottom-Left: Projected Income & Cash Flow -->
+  <rect class="card" x="24" y="250" width="290" height="134"/>
+  <rect class="navy" x="34" y="260" width="270" height="32"/>
+  <text x="169" y="281" text-anchor="middle" class="w-title">3. PROJECTED IS &amp; CASH FLOW</text>
+  <text x="42" y="314" class="label">Year 1 Profitability &amp; Solvency:</text>
+  <text x="42" y="332" class="body">• Sales Budget → Projected Net Profit</text>
+  <text x="42" y="349" class="body">• 6–12 Month Cash Flow Projection</text>
+  <text x="42" y="369" class="coral-txt">Proves bills &amp; loan payments paid on time!</text>
+
+  <!-- Bottom-Right: Pro-Forma Balance Sheet & Ratios -->
+  <rect class="card" x="606" y="250" width="290" height="134"/>
+  <rect class="sage" x="616" y="260" width="270" height="32"/>
+  <text x="751" y="281" text-anchor="middle" class="w-title">4. PRO-FORMA BS &amp; RATIOS</text>
+  <text x="624" y="314" class="label">Year-End Net Worth &amp; Return:</text>
+  <text x="624" y="332" class="body">• Opening vs. Projected Year 1 Balance Sheet</text>
+  <text x="624" y="349" class="body">• Expected Gross Margin %, Current Ratio</text>
+  <text x="624" y="369" class="coral-txt">• Expected Return on Capital (ROCE / ROI)!</text>
+
+  <!-- Bottom Complete Business Plan Context Banner -->
+  <rect class="navy" x="24" y="402" width="872" height="52"/>
+  <text x="460" y="423" text-anchor="middle" class="w-title">NON-FINANCIAL SECTIONS TOO: EXECUTIVE SUMMARY · MARKET ANALYSIS · OPERATIONS · RISK PLAN</text>
+  <text x="460" y="442" text-anchor="middle" class="w-sub">A winning Business Plan pairs a compelling customer story with rock-solid, realistic accounting projections!</text>
+</svg>

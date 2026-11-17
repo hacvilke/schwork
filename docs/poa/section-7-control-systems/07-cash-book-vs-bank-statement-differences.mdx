@@ -1,0 +1,259 @@
+---
+id: cash-book-vs-bank-statement-differences
+title: "7.7 Items Causing Differences Between Cash Book and Bank Statement"
+sidebar_label: "7.7 Cash Book vs. Bank Statement"
+sidebar_position: 7
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 7"
+  section="Control Systems — Control Accounts & Bank Reconciliation"
+  code="POA-S7-07"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="20 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+At the end of every month, your business’s **Cash Book (Bank Column)** says you have **`$3,420`** in the bank — yet the monthly **Bank Statement** sent by your bank says **`$3,790`**! Did someone steal money? Almost never! Because businesses and banks record transactions at **different moments** (and banks process automatic fees and transfers before telling you!), the two balances rarely agree on Day 1. Learning the **exact 2 families of differences** makes Bank Reconciliation effortless!
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | **The Bank Statement Mirror Rule**, **Items on Bank Statement NOT Yet in Cash Book** (Standing Orders, Direct Debits, Credit Transfers, Bank Charges, Dishonored Cheques), and **Timing Differences** (Unpresented Cheques &amp; Late Lodgements) |
+| **Exam Focus** | Sorting any discrepancy instantly into **Stage 1 (Update the Cash Book!)** vs. **Stage 2 (Put ONLY on the Bank Reconciliation Statement!)** and distinguishing **Standing Order** vs. **Direct Debit** |
+| **Learning Outcome** | Explain why Cash Book and Bank Statement balances disagree and sort every item into its exact reconciliation stage |
+
+<ObjectivesBox
+  id="poa-s7-07-obj"
+  objectives={[
+    'Explain the Mirror Rule: why a positive balance is a DEBIT in the Cash Book but a CREDIT on the Bank Statement.',
+    'Define and distinguish Standing Orders, Direct Debits, Credit Transfers, Bank Charges, Dividends Received, and Dishonored Cheques.',
+    'Define Unpresented Cheques (Outstanding Cheques) and Late Lodgements (Uncredited Deposits / Deposits in Transit).',
+    'Sort any list of differences accurately between items requiring Cash Book adjustment and timing differences for the Bank Reconciliation Statement.',
+  ]}
+/>
+
+---
+
+## 1. First — Master the "Bank Statement Mirror Rule"!
+
+Students get confused when a Bank Statement says **`Credit Balance $3,790`** while the Cash Book says **`Debit Balance $3,420`**. Why are they opposite?
+- In **YOUR** books, cash in the bank is an **ASSET** → Increases are **Debits (`Dr`)**, Withdrawals are **Credits (`Cr`)**.
+- In the **BANK’S** books, YOUR deposit is money the bank **OWES BACK TO YOU (a Liability!)** → Deposits are **Credits (`Cr`)**, Withdrawals are **Debits (`Dr`)**!
+
+| Account Status | In YOUR Cash Book (Bank Col.) | On the BANK STATEMENT |
+| :--- | :---: | :---: |
+| **Favorable (Positive) Cash Balance** | **DEBIT (`Dr`)** *(Asset)* | **CREDIT (`Cr`)** *(Bank owes you!)* |
+| **Bank Overdraft (Negative Balance)** | **CREDIT (`Cr`)** *(Liability)* | **DEBIT (`Dr`)** *(You owe the bank!)* |
+
+---
+
+## 2. The Two Families of Differences (Know Every Term!)
+
+### Family 1: Items on Bank Statement NOT Yet in Cash Book → **UPDATE CASH BOOK!**
+*(The bank already processed these — our Cash Book is simply behind!)*
+
+| Item | Plain-English Meaning | Cash Book Fix |
+| :--- | :--- | :---: |
+| **Credit Transfer / Direct Deposit** | A customer transfers money straight into our bank account electronically | **DEBIT** *(+Cash)* |
+| **Dividends / Bank Interest Received** | Investments or savings pay cash directly into our bank account | **DEBIT** *(+Cash)* |
+| **Bank Charges / Overdraft Interest** | Monthly service fees, cheque-book charges, or overdraft interest deducted by bank | **CREDIT** *(−Cash)* |
+| **Standing Order (SO)** | Instruction by **US** for the bank to pay a **FIXED dollar amount** on a fixed date every month (e.g., `$600` rent or loan installment) | **CREDIT** *(−Cash)* |
+| **Direct Debit (DD)** | Permission for a **SUPPLIER** to pull a **VARIABLE amount** from our account as bills change (e.g., electricity or phone bills) | **CREDIT** *(−Cash)* |
+| **Dishonored (NSF / Bounced) Cheque** | A customer’s cheque we deposited bounced due to *"Insufficient Funds"* or signature error | **CREDIT** *(−Cash)* |
+| **Cash Book Errors** | E.g., We wrote a `$430` cheque as `$340` in our Cash Book (or undercast Cash Book) | **Dr or Cr** *(fix error)* |
+
+### Family 2: Timing Differences (In Cash Book, NOT Yet on Bank Statement) → **BANK RECONCILIATION STATEMENT ONLY!**
+*(Our Cash Book is ALREADY right — the bank just hasn’t processed these yet! NEVER put these in the Adjusted Cash Book!)*
+
+| Timing Difference | Plain-English Meaning | Effect on Bank Reconciliation |
+| :--- | :--- | :---: |
+| **Unpresented Cheques** *(Outstanding Cheques)* | Cheques WE wrote and mailed to suppliers (credited in our Cash Book), which the suppliers have **not yet cashed** at the bank | **ADD** to Adjusted Cash Book Balance |
+| **Late Lodgements** *(Uncredited Deposits / Deposits in Transit)* | Cash/cheques WE deposited near month-end (debited in our Cash Book) that have **not yet cleared** onto the Bank Statement | **SUBTRACT** from Adjusted Cash Book Balance |
+| **Bank Errors** *(Rare)* | E.g., Bank accidentally charged another company’s cheque to our account | Adjust on **Bank Reconciliation Statement** *(notify bank!)* |
+
+---
+
+## 3. Diagram 1: Cash Book vs. Bank Statement Bridge
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-7/07-cash-book-vs-bank-statement-bridge.svg"
+  alt="Two-column bridge contrasting Cause 1 (Bank Statement items missing from Cash Book — updated in Adjusted Cash Book) against Cause 2 (Timing Differences — shown only on Bank Reconciliation Statement), plus the Mirror Rule strip."
+  caption="Diagram 1 (Static Reference): Ask one question — 'Who is behind?' If WE are behind → update the Adjusted Cash Book! If the BANK is behind → put it on the Bank Reconciliation Statement!"
+/>
+
+---
+
+## 4. Diagram 2: Interactive Confusing Bank-Terms Comparator
+
+<InteractiveDiagram
+  title="Interactive Comparator: 4 Bank Reconciliation Pairs Students Commonly Mix Up"
+  layout="compare"
+  instruction="Tap any look-alike pair below to lock in the exact textbook difference for Paper 1 & Paper 2."
+  nodes={[
+    {
+      label: 'Standing Order vs. Direct Debit',
+      tag: 'Paper 1 Classic!',
+      detail: 'Both are automatic recurring bank payments — what is the crisp exam distinction?',
+      sideALabel: 'Standing Order (SO)',
+      sideAText: 'Initiated by the PAYER (account holder) for a FIXED amount on a fixed regular date — e.g., $600 monthly shop rent or $450 monthly loan repayment.',
+      sideBLabel: 'Direct Debit (DD)',
+      sideBText: 'Authorizes the PAYEE (supplier/utility) to collect VARIABLE amounts that change each bill — e.g., monthly electricity, water, or mobile phone bills.',
+      examTip: 'Memory hook: "Standing" = Stays the SAME fixed amount; "Direct Debit" = Utility pulls a DIFFERENT (variable) amount!',
+    },
+    {
+      label: 'Unpresented Cheque vs. Dishonored Cheque',
+      tag: 'Stage 2 vs. Stage 1!',
+      detail: 'One goes ONLY on the Bank Reconciliation Statement; the other MUST be credited in the Adjusted Cash Book!',
+      sideALabel: 'Unpresented Cheque (Timing — Stage 2)',
+      sideAText: 'A valid cheque WE wrote to a supplier who simply hasn’t visited the bank yet. Our Cash Book is ALREADY right — ADD on Bank Rec Statement!',
+      sideBLabel: 'Dishonored Cheque (Bounced — Stage 1)',
+      sideBText: 'A CUSTOMER’s cheque we deposited that BOUNCED ("NSF"). We thought we got paid, so we MUST deduct it on the CREDIT side of our Adjusted Cash Book!',
+      examTip: 'Never confuse "Unpresented" (we wrote it, waiting to clear) with "Dishonored" (customer’s cheque bounced)!',
+    },
+    {
+      label: 'Credit Transfer vs. Late Lodgement',
+      tag: 'Incoming Money!',
+      detail: 'Both involve money coming IN — why do they go into completely different stages?',
+      sideALabel: 'Credit Transfer (Stage 1 — Adj. CB Dr)',
+      sideAText: 'Already ON the Bank Statement, missing from our Cash Book → we must DEBIT our Adjusted Cash Book (+Cash)!',
+      sideBLabel: 'Late Lodgement / Uncredited Deposit (Stage 2 — BRS Less)',
+      sideBText: 'Already IN our Cash Book, NOT yet on the Bank Statement → leave Cash Book alone and SUBTRACT on the Bank Reconciliation Statement!',
+      examTip: 'Always ask: "Is it ALREADY in the Cash Book?" If YES → Timing Difference (Stage 2); if NO → Update Cash Book (Stage 1)!',
+    },
+    {
+      label: 'Debit Balance vs. Credit Balance',
+      tag: 'Mirror Rule!',
+      detail: 'Does "Credit Balance $2,500" mean cash in hand or a bank overdraft?',
+      sideALabel: 'In the CASH BOOK',
+      sideAText: 'DEBIT = Positive Cash (Asset); CREDIT = Bank Overdraft (Current Liability).',
+      sideBLabel: 'On the BANK STATEMENT',
+      sideBText: 'CREDIT = Positive Cash (Bank owes you!); DEBIT = Bank Overdraft (You owe the bank!).',
+      examTip: 'Always check WHICH document the words "Dr" or "Cr" came from before starting any calculation!',
+    },
+  ]}
+/>
+
+---
+
+## 5. Worked Example
+
+<WorkedExample
+  title="Comparing a Cash Book Against a Bank Statement Line-by-Line to Spot Every Discrepancy"
+  marks={12}
+  problem={
+    <>
+      <p>
+        <strong>Scenario:</strong> On <strong>31 October 2026</strong>, <strong>BreezeTech Services</strong>’
+        Cash Book (Bank Column) showed a <strong>Debit balance of $3,420</strong>, while its
+        Bank Statement showed a <strong>Credit balance of $3,790</strong>. Comparing both records
+        tick-by-tick uncovered seven un-ticked items:
+      </p>
+      <ol>
+        <li>Credit transfer from customer R. Clarke appearing on Bank Statement only: <strong>$650</strong>.</li>
+        <li>Dividend received directly into the bank account: <strong>$180</strong>.</li>
+        <li>Bank charges shown on the Bank Statement only: <strong>$70</strong>.</li>
+        <li>Standing order for shop insurance paid by the bank: <strong>$320</strong>.</li>
+        <li>Dishonored cheque from customer T. Mills shown on Bank Statement: <strong>$250</strong>.</li>
+        <li>Cheques written to suppliers not yet presented to bank: #104 ($540) and #107 ($260) = <strong>$800</strong>.</li>
+        <li>Cash &amp; cheques deposited late on 31 October not yet credited by bank: <strong>$620</strong>.</li>
+      </ol>
+      <p>
+        <strong>Required:</strong> (a) Classify all 7 items into <strong>Stage 1 (Adjusted Cash Book: Dr or Cr)</strong>
+        vs. <strong>Stage 2 (Bank Reconciliation Statement: Add or Less)</strong> <em>[7 marks]</em>;
+        (b) Prove mathematically that these 7 items explain the entire gap between <strong>$3,420</strong> and <strong>$3,790</strong> <em>[5 marks]</em>.
+      </p>
+    </>
+  }
+>
+
+### (a) Classification Table *(7 marks — 1 mark each)*
+
+| # | Item | Amount ($) | Stage | Exact Treatment |
+| :-: | :--- | ---: | :---: | :--- |
+| **1** | Credit Transfer (R. Clarke) | 650 | **Stage 1** | **DEBIT** Adjusted Cash Book *(+Cash)* |
+| **2** | Dividend Received | 180 | **Stage 1** | **DEBIT** Adjusted Cash Book *(+Cash)* |
+| **3** | Bank Charges | 70 | **Stage 1** | **CREDIT** Adjusted Cash Book *(−Cash)* |
+| **4** | Standing Order (Insurance) | 320 | **Stage 1** | **CREDIT** Adjusted Cash Book *(−Cash)* |
+| **5** | Dishonored Cheque (T. Mills) | 250 | **Stage 1** | **CREDIT** Adjusted Cash Book *(−Cash)* |
+| **6** | Unpresented Cheques (#104, #107) | 800 | **Stage 2** | **ADD** on Bank Reconciliation Statement |
+| **7** | Late Lodgement (31 Oct) | 620 | **Stage 2** | **SUBTRACT** on Bank Reconciliation Statement |
+
+### (b) Mathematical Reconciliation Proof *(5 marks)*
+- **Stage 1 — True Adjusted Cash Book Balance:**
+  `$3,420 + ($650 + $180) − ($70 + $320 + $250)` = `$3,420 + $830 − $640` = **`$3,610` (Debit)** *(3 marks)*
+- **Stage 2 — Bridge to Bank Statement Balance:**
+  `$3,610 + $800 (Unpresented) − $620 (Late Lodgement)` = **`$3,790` (Credit)** = **Exact Bank Statement Balance ✓!** *(2 marks)*
+
+</WorkedExample>
+
+---
+
+## 6. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Cash Book vs. Bank Statement Differences"
+  items={[
+    {
+      statement: 'A CREDIT balance on a Bank Statement means the business has a favorable (positive) cash balance in its bank account.',
+      answer: true,
+      explanation: 'Yes — Mirror Rule! From the bank’s point of view, your positive cash deposit is money the bank owes you (a Credit balance).',
+    },
+    {
+      statement: 'A Standing Order is used for variable bills that change amount every month, while a Direct Debit is used strictly for fixed equal amounts.',
+      answer: false,
+      explanation: 'Flipped! A STANDING ORDER pays a FIXED amount (e.g., rent), while a DIRECT DEBIT lets utilities pull VARIABLE amounts!',
+    },
+    {
+      statement: 'Unpresented Cheques must be entered on the Credit side of the Adjusted Cash Book.',
+      answer: false,
+      explanation: 'NEVER! Unpresented cheques were ALREADY credited in the Cash Book when written — they are Timing Differences shown ONLY on the Bank Reconciliation Statement!',
+    },
+    {
+      statement: 'A Dishonored (NSF) Cheque from a customer must be entered on the Credit side of the Adjusted Cash Book.',
+      answer: true,
+      explanation: 'Yes — because we earlier debited the Cash Book expecting the cheque to clear, we must now credit the Cash Book to reverse it!',
+    },
+    {
+      statement: 'Late Lodgements (Deposits in Transit) are deposits recorded in the Cash Book near month-end that do not yet appear on the Bank Statement.',
+      answer: true,
+      explanation: 'Spot on! They are classic timing differences deducted in the Bank Reconciliation Statement.',
+    },
+  ]}
+/>
+
+---
+
+## 7. Student Project
+
+<StudentProject
+  id="poa-s7-07-project"
+  title="Mini-Project: Bank Discrepancy Sorting Board for BayView Café"
+  duration="20 mins"
+  scenario="BayView Café’s manager hands you 8 end-of-month bank items and asks where EACH one belongs: (1) Monthly bank maintenance fee $45; (2) Customer corporate catering payment transferred electronically $1,200; (3) Cheque #318 ($480) written to flour supplier still uncashed; (4) Auto-payment for variable monthly electricity bill $390; (5) Fixed monthly payment for espresso machine lease $550; (6) Night-safe cash deposit made at 6:00 pm on Dec 31 ($940) not yet on Bank Statement; (7) Customer cheque for $210 returned by bank stamped 'Refer to Drawer'; (8) Bank interest earned on business account $65."
+  steps={[
+    'Draw a 4-bucket Sorting Board: Bucket A (Adjusted CB — Debit), Bucket B (Adjusted CB — Credit), Bucket C (Bank Rec Stmt — Add), Bucket D (Bank Rec Stmt — Deduct).',
+    'Place all 8 items accurately into Buckets A–D, giving the official accounting name for items 2, 4, 5, 6, and 7.',
+    'If BayView Café’s unadjusted Cash Book Debit balance was $2,800, calculate (a) its Adjusted Cash Book balance and (b) the expected Bank Statement Credit balance!',
+    'Write a 2-sentence explanation of why "Refer to Drawer" (Item 7) reduces the café’s bank balance AND reinstates a Trade Receivable.',
+  ]}
+  deliverables={[
+    '4-Bucket Bank Discrepancy Sorting Board with official accounting terms',
+    'Calculated Adjusted Cash Book balance & Bank Statement balance',
+    '2-sentence note on Dishonored ("Refer to Drawer") Cheques',
+  ]}
+  rubric={[
+    'Bucket A (Dr Adj CB): Item 2 Credit Transfer ($1,200) + Item 8 Bank Interest ($65) = +$1,265. Bucket B (Cr Adj CB): Item 1 Bank Charges ($45) + Item 4 Direct Debit ($390) + Item 5 Standing Order ($550) + Item 7 Dishonored Cheque ($210) = −$1,195.',
+    'Bucket C (BRS Add): Item 3 Unpresented Cheque ($480). Bucket D (BRS Less): Item 6 Late Lodgement ($940).',
+    'Exact math proof: Adjusted Cash Book = $2,800 + $1,265 − $1,195 = $2,870 (Dr); Expected Bank Statement = $2,870 + $480 − $940 = $2,410 (Cr)!',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **Mirror Rule:** Positive = **Dr** in Cash Book, **Cr** on Bank Statement; Overdraft = **Cr** in Cash Book, **Dr** on Bank Statement.
+- **Stage 1 (Adj. CB):** Credit Transfers, Dividends/Interest (`Dr`) · Bank Charges, Standing Orders, Direct Debits, Dishonored Cheques, CB Errors (`Cr/Dr`).
+- **Stage 2 (BRS ONLY):** **+ Unpresented Cheques**, **− Late Lodgements**!
+:::

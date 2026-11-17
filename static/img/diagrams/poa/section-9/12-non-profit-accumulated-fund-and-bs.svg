@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" role="img" aria-label="Three-step workflow to build a Non-Profit Organization's Opening Accumulated Fund, Income and Expenditure Account, and Vertical Balance Sheet">
+  <defs>
+    <style>
+      .title { font: 700 20px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .sub { font: 500 13px system-ui, -apple-system, sans-serif; fill: #4A5560; }
+      .hdr { font: 700 14px system-ui, -apple-system, sans-serif; fill: #FCFBF8; }
+      .h3 { font: 700 13px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .mono { font: 700 11.5px ui-monospace, SFMono-Regular, monospace; fill: #122440; }
+      .body { font: 500 12px system-ui, -apple-system, sans-serif; fill: #222222; }
+      .sage { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #2E6359; }
+      .coral { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #C84E24; }
+    </style>
+  </defs>
+
+  <rect width="920" height="460" rx="14" fill="#F8F6F1" stroke="#CEDCD6" stroke-width="1.5"/>
+  <text x="32" y="38" class="title">Complete 3-Step Non-Profit Final Accounts Pipeline</text>
+  <text x="32" y="58" class="sub">Since clubs don't have "Owner's Capital", Step 1 ALWAYS calculates the Opening Accumulated Fund via a Statement of Affairs (Assets − Liabilities)!</text>
+
+  <!-- Step 1 -->
+  <rect x="32" y="80" width="268" height="292" rx="11" fill="#FCFBF8" stroke="#1B365D" stroke-width="1.7"/>
+  <rect x="32" y="80" width="268" height="36" rx="10" fill="#1B365D"/>
+  <text x="166" y="103" text-anchor="middle" class="hdr">STEP 1: Opening Accum. Fund</text>
+  <text x="48" y="138" class="h3">Statement of Affairs (1 Jan)</text>
+  <text x="48" y="160" class="sage">ALL Opening Assets (1 Jan):</text>
+  <text x="48" y="178" class="body">• Clubhouse &amp; Equipment NBV</text>
+  <text x="48" y="195" class="body">• Opening Bar Inventory</text>
+  <text x="48" y="212" class="body">• Subs in Arrears (1 Jan)</text>
+  <text x="48" y="229" class="body">• Opening Bank / Cash b/d!</text>
+  <text x="48" y="254" class="coral">LESS Opening Liabilities (1 Jan):</text>
+  <text x="48" y="272" class="body">• Bar Payables / Accrued Exp.</text>
+  <text x="48" y="289" class="body">• Subs in Advance (1 Jan)</text>
+  <rect x="46" y="308" width="240" height="48" rx="7" fill="#EBF2EF"/>
+  <text x="166" y="328" text-anchor="middle" class="h3">= Opening Accumulated Fund</text>
+  <text x="166" y="346" text-anchor="middle" class="body">(Never forget Opening Bank b/d!)</text>
+
+  <!-- Arrow -->
+  <line x1="300" y1="226" x2="320" y2="226" stroke="#1B365D" stroke-width="2.5"/>
+  <polygon points="316,219 328,226 316,233" fill="#1B365D"/>
+
+  <!-- Step 2 -->
+  <rect x="326" y="80" width="268" height="292" rx="11" fill="#FCFBF8" stroke="#2E6359" stroke-width="1.7"/>
+  <rect x="326" y="80" width="268" height="36" rx="10" fill="#2E6359"/>
+  <text x="460" y="103" text-anchor="middle" class="hdr">STEP 2: Income &amp; Expenditure</text>
+  <text x="342" y="138" class="sage">Income (Accrual Revenue ONLY):</text>
+  <text x="342" y="158" class="body">• Earned Subscriptions (Sub A/c)</text>
+  <text x="342" y="176" class="body">• Net Bar / Refreshment Profit</text>
+  <text x="342" y="194" class="body">• Dance / Raffle Profit</text>
+  <text x="342" y="212" class="body">• Donations &amp; Interest Earned</text>
+  <text x="342" y="238" class="coral">Less: Revenue Expenditure:</text>
+  <text x="342" y="258" class="body">• Adjusted Rent, Utilities, Wages</text>
+  <text x="342" y="276" class="body">• Depreciation on Equipment!</text>
+  <text x="342" y="294" class="body">• Stationery, Repairs, Insurance</text>
+  <rect x="340" y="308" width="240" height="48" rx="7" fill="#EBF2EF"/>
+  <text x="460" y="328" text-anchor="middle" class="sage">= SURPLUS (or DEFICIT)</text>
+  <text x="460" y="346" text-anchor="middle" class="body">(No Capital Purchases here!)</text>
+
+  <!-- Arrow -->
+  <line x1="594" y1="226" x2="614" y2="226" stroke="#1B365D" stroke-width="2.5"/>
+  <polygon points="610,219 622,226 610,233" fill="#1B365D"/>
+
+  <!-- Step 3 -->
+  <rect x="620" y="80" width="268" height="292" rx="11" fill="#FCFBF8" stroke="#C84E24" stroke-width="1.7"/>
+  <rect x="620" y="80" width="268" height="36" rx="10" fill="#C84E24"/>
+  <text x="754" y="103" text-anchor="middle" class="hdr">STEP 3: Club Balance Sheet</text>
+  <text x="636" y="138" class="h3">Top Half (31 Dec):</text>
+  <text x="636" y="158" class="body">• Non-Current Assets (incl. NEW</text>
+  <text x="646" y="174" class="body">equipment bought − Depr.!)</text>
+  <text x="636" y="194" class="body">• CA: Bar Stock, Subs in Arrears,</text>
+  <text x="646" y="210" class="body">Prepayments, Closing Bank c/d</text>
+  <text x="636" y="230" class="body">• Less CL: Bar Payables, Subs in</text>
+  <text x="646" y="246" class="body">Advance, Accrued Expenses</text>
+  <text x="636" y="274" class="sage">Financed By (Accumulated Fund):</text>
+  <text x="636" y="294" class="mono">Opening Accumulated Fund</text>
+  <text x="636" y="312" class="sage">+ Surplus  (or − Deficit)</text>
+  <text x="636" y="330" class="body">+ Life Membership / Cap. Grants</text>
+  <text x="636" y="352" class="h3">= Closing Accumulated Fund ✓!</text>
+
+  <!-- Bottom Special Funds Tip -->
+  <rect x="32" y="392" width="856" height="48" rx="9" fill="#1B365D"/>
+  <text x="460" y="413" text-anchor="middle" class="hdr">Check Special Club Funds &amp; Life Subscriptions Carefully!</text>
+  <text x="460" y="432" text-anchor="middle" style="font: 500 12.2px system-ui; fill: #EBF2EF;">Dedicated Capital Donations (e.g. "Building Fund" or "Life Membership Fund") are Capital Receipts → shown in the Balance Sheet Financed By section!</text>
+</svg>

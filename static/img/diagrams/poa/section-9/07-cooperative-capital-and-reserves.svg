@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 450" role="img" aria-label="Sources of capital for a Co-operative Society: Member Share Capital, Retained Statutory Reserves, Member Deposits, Entrance Fees, and External Loans or Grants">
+  <defs>
+    <style>
+      .title { font: 700 20px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .sub { font: 500 13px system-ui, -apple-system, sans-serif; fill: #4A5560; }
+      .hdr { font: 700 14px system-ui, -apple-system, sans-serif; fill: #FCFBF8; }
+      .h3 { font: 700 13px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .body { font: 500 12px system-ui, -apple-system, sans-serif; fill: #222222; }
+      .sage { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #2E6359; }
+      .coral { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #C84E24; }
+    </style>
+  </defs>
+
+  <rect width="920" height="450" rx="14" fill="#F8F6F1" stroke="#CEDCD6" stroke-width="1.5"/>
+  <text x="32" y="38" class="title">How a Co-operative Society Raises Capital (Internal vs. External Sources)</text>
+  <text x="32" y="58" class="sub">Unlike Public LLCs, Co-operative shares do NOT trade on a Stock Exchange — they are bought/withdrawn directly through the Society at par value!</text>
+
+  <!-- Left: Internal Equity Sources -->
+  <rect x="32" y="80" width="420" height="286" rx="11" fill="#FCFBF8" stroke="#2E6359" stroke-width="1.8"/>
+  <rect x="32" y="80" width="420" height="36" rx="10" fill="#2E6359"/>
+  <text x="242" y="103" text-anchor="middle" class="hdr">Internal Capital (Members' Equity)</text>
+
+  <rect x="48" y="128" width="388" height="62" rx="7" fill="#EBF2EF"/>
+  <text x="60" y="148" class="sage">1. Member Share Capital (Fixed Par Value)</text>
+  <text x="60" y="166" class="body">Members buy affordable shares (e.g. $5–$10 par) often via</text>
+  <text x="60" y="182" class="body">payroll deductions; legal cap limits any single member's share!</text>
+
+  <rect x="48" y="198" width="388" height="72" rx="7" fill="#F8F6F1" stroke="#CEDCD6"/>
+  <text x="60" y="218" class="h3">2. Statutory Reserve &amp; Retained Surplus</text>
+  <text x="60" y="236" class="body">Law requires transferring a % of yearly Net Surplus (often</text>
+  <text x="60" y="252" class="body">20%–25%) into a Statutory Reserve + Education Fund!</text>
+  <text x="60" y="266" class="sage">Indivisible permanent safety cushion owned collectively!</text>
+
+  <rect x="48" y="278" width="388" height="74" rx="7" fill="#EBF2EF"/>
+  <text x="60" y="298" class="h3">3. Entrance / Registration Fees &amp; Special Levies</text>
+  <text x="60" y="316" class="body">Small one-time joining fee paid by new members (helps</text>
+  <text x="60" y="332" class="body">cover setup admin or transfers to Statutory Reserve!)</text>
+
+  <!-- Right: Debt / External Sources -->
+  <rect x="468" y="80" width="420" height="286" rx="11" fill="#FCFBF8" stroke="#1B365D" stroke-width="1.8"/>
+  <rect x="468" y="80" width="420" height="36" rx="10" fill="#1B365D"/>
+  <text x="678" y="103" text-anchor="middle" class="hdr">External &amp; Borrowed Capital (Liabilities)</text>
+
+  <rect x="484" y="128" width="388" height="72" rx="7" fill="#FFF3EE"/>
+  <text x="496" y="148" class="coral">1. Member Savings &amp; Fixed Deposits</text>
+  <text x="496" y="166" class="body">Members deposit extra savings (earning interest) which</text>
+  <text x="496" y="182" class="body">Credit Unions lend onward to other members as loans!</text>
+
+  <rect x="484" y="208" width="388" height="68" rx="7" fill="#F8F6F1" stroke="#CEDCD6"/>
+  <text x="496" y="228" class="h3">2. Loans From Co-op League / Commercial Banks</text>
+  <text x="496" y="246" class="body">Long-term mortgages or development loans from National</text>
+  <text x="496" y="262" class="body">Co-op Leagues, Credit Union Leagues, or Agricultural Banks</text>
+
+  <rect x="484" y="284" width="388" height="68" rx="7" fill="#EBF2EF"/>
+  <text x="496" y="304" class="sage">3. Government / Donor Grants &amp; Subsidies</text>
+  <text x="496" y="322" class="body">State/NGO grants supporting farming co-ops, cold storage,</text>
+  <text x="496" y="338" class="body">or rural community development (often non-repayable!)</text>
+
+  <!-- Bottom Accounting Entry Strip -->
+  <rect x="32" y="384" width="856" height="48" rx="9" fill="#1B365D"/>
+  <text x="460" y="405" text-anchor="middle" class="hdr">Journal Entries When Member Buys vs. Withdraws Co-op Shares:</text>
+  <text x="460" y="424" text-anchor="middle" style="font: 600 12.2px ui-monospace, monospace; fill: #F5A352;">Buy Shares: Dr Bank / Cr Members' Share Capital   |   Withdraw Shares: Dr Members' Share Capital / Cr Bank (Par Value!)</text>
+</svg>

@@ -1,0 +1,238 @@
+---
+id: raising-capital-for-a-cooperative
+title: "9.7 Raising Capital for a Co-operative Society"
+sidebar_label: "9.7 Co-op Capital & Reserves"
+sidebar_position: 7
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 9"
+  section="LLCs, Co-ops & Non-Profits — Co-operative Societies"
+  code="POA-S9-07"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="20 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+Because Co-operative Societies **cannot sell shares on the Stock Exchange** and **cap dividends on shares**, they fund their operations through a distinctive mix of **Members’ Share Capital (redeemable at par)**, **Statutory & Education Reserves** (built up from annual surplus!), **Entrance Fees**, **Member Savings Deposits** *(in Credit Unions)*, and **Development Loans or Grants**! Knowing which source is **Members’ Equity** and which is a **Liability** guarantees clean Co-op Balance Sheets!
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | **6 Co-op Funding Sources** (Member Shares, Statutory Reserve, Education/General Reserves, Entrance Fees, Member Deposits, Loans/Grants) and exact **Journal Entries** for share issues &amp; redemptions |
+| **Exam Focus** | Knowing that **Members’ Shares are REDEEMABLE at par** (unlike permanent LLC shares!), **Member Deposits are LIABILITIES** *(not equity!)*, and the **Statutory Reserve is LEGALLY MANDATORY & NON-DISTRIBUTABLE** |
+| **Learning Outcome** | Identify how Co-operative Societies raise internal and external capital, record member share transactions, and classify each funding source accurately on the Balance Sheet |
+
+<ObjectivesBox
+  id="poa-s9-07-obj"
+  objectives={[
+    'Identify and classify all internal and external sources of capital available to a Co-operative Society.',
+    'Explain why Co-operative Share Capital is variable/redeemable at par and capped per member.',
+    'Explain the legal purpose and non-distributable nature of the Statutory Reserve Fund and Education Fund.',
+    'Write accurate General Journal entries for member share subscriptions, entrance fees, share withdrawals/redemptions, and external loans.',
+  ]}
+/>
+
+---
+
+## 1. Internal vs. External Capital Sources of a Co-operative
+
+| Capital Source | Classification on Balance Sheet | Key Characteristics &amp; Legal Rules |
+| :--- | :--- | :--- |
+| **Members’ Share Capital** | **Members’ Equity** | Bought directly from the Co-op at **par value**; **capped per member** (e.g., max `20%` of total shares) so no one dominates; **withdrawable / redeemable at par** when a member leaves! |
+| **Statutory Reserve Fund** | **Members’ Equity *(Capital/Statutory Reserve)*** | Required by Co-op law (typically `20%–25%` of annual Net Surplus every year); **INDIVISIBLE / NON-DISTRIBUTABLE** — protects creditors &amp; stabilizes the society permanently! |
+| **Education / General Reserves** | **Members’ Equity *(Reserves)*** | Earmarked out of annual surplus for member training (Education Fund) or future expansion (General/Building Reserve). |
+| **Entrance Fees** | **Income / Statutory Reserve** | Small one-time, **non-refundable** registration fee paid when joining — covers onboarding paperwork or goes straight into the Statutory Reserve! |
+| **Members’ Savings Deposits** *(Credit Unions)* | **Liability** *(Current / Non-Current!)* | Savings held by members that can be withdrawn on demand/notice — earns deposit interest and is a **LIABILITY** owed back to members (NOT Share Capital!). |
+| **Loans &amp; Grants** | **Loans = Liability**; **Capital Grants = Reserve/Equity** | Low-interest loans from Co-op Credit Leagues, agricultural banks, or government development agencies. |
+
+### Why Is Co-op Share Capital "Variable" (Unlike an LLC)?
+- In a **Limited Liability Company**, Issued Share Capital is **permanent** — if you want your cash back, you must sell your shares to *another investor* (the company keeps its cash!).
+- In a **Co-operative Society**, new members join continuously (**raising** Share Capital), and departing members can **redeem (withdraw)** their shares directly from the Co-op at par value (**reducing** Share Capital: `Dr Members’ Share Capital / Cr Bank`)!
+
+---
+
+## 2. Diagram 1: Co-operative Capital Sources & Reserves Architecture
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-9/07-cooperative-capital-and-reserves.svg"
+  alt="Two-column diagram showing Internal Members’ Funds (Members’ Share Capital, Statutory Reserve Fund, Education and General Reserves) versus External and Member-Debt Sources (Members’ Deposits, Loans, Entrance Fees and Grants)."
+  caption="Diagram 1 (Static Reference): Memorize the green rule at the bottom — NEVER lump Member Savings Deposits inside Share Capital; deposits are a LIABILITY owed back to saving members!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive Co-op Capital Classification Check
+
+<InteractiveDiagram
+  title="Interactive Hub: Tap Each Co-op Funding Item to Check Its Double Entry & Balance Sheet Home"
+  layout="hub"
+  centerLabel="Co-op Funds"
+  centerSublabel="Equity vs. Debt"
+  instruction="Select any funding source below to test its accounting entry and exam traps."
+  nodes={[
+    {
+      label: 'Member Buys New Shares',
+      tag: 'Equity Up!',
+      tone: 'positive',
+      detail: '120 farmers each buy $500 of Co-op shares at par → Cash increases and Members’ Share Capital increases.',
+      example: 'Journal: Dr Bank $60,000 / Cr Members’ Share Capital $60,000. Shown at the top of "Financed By" (Members’ Equity)!',
+      examTip: 'Co-ops do NOT normally have Share Premium — member shares are always issued and redeemed at PAR value!',
+    },
+    {
+      label: 'Departing Member Redeems Shares',
+      tag: 'Variable Capital!',
+      tone: 'warning',
+      detail: 'Unlike an LLC, when a member leaves a Co-operative Society, the society refunds their share capital at par value (subject to bylaws/notice)!',
+      example: 'Member withdraws $500 share → Journal: Dr Members’ Share Capital $500 / Cr Bank $500! Closing Share Capital drops from $60,000 to $59,500.',
+      examTip: 'Because shares can be withdrawn, Co-op laws MANDATE a permanent, non-distributable Statutory Reserve Fund as a financial safety anchor!',
+    },
+    {
+      label: 'Statutory Reserve Fund',
+      tag: 'Legally Locked!',
+      tone: 'neutral',
+      detail: 'The Co-operative Societies Act forces every Co-op to transfer a fixed statutory % (often 20% or 25%) of annual Net Surplus into the Statutory Reserve EVERY profitable year!',
+      example: 'Can members vote to cash out the Statutory Reserve as a bonus? NO! It is legally indivisible — permanently strengthening the society’s asset base!',
+      examTip: 'Remember: Statutory Reserve % is calculated on THIS YEAR’S Net Surplus ONLY — NOT including Undistributed Surplus b/f!',
+    },
+    {
+      label: 'Member Savings Deposits',
+      tag: 'Liability Trap!',
+      tone: 'warning',
+      detail: 'In Credit Unions and Thrift Co-ops, members hold BOTH Shares (ownership) AND Savings Deposits (borrowable/withdrawable savings).',
+      example: 'Journal on deposit: Dr Bank / Cr Members’ Savings Deposits. On the Balance Sheet, Members’ Deposits sit under LIABILITIES — never under Equity!',
+      examTip: 'Interest paid on Member Deposits is an Operating/Finance EXPENSE in the Income Statement — whereas Share Dividends go in Appropriation!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Recording Co-operative Capital Transactions & Financing Extract (BlueMountain Farmers’ Co-op)"
+  marks={12}
+  problem={
+    <>
+      <p>
+        <strong>Scenario:</strong> On <strong>1 January 2026</strong>, <strong>BlueMountain Farmers’
+        Co-operative Society</strong> held an Opening Statutory Reserve of <strong>$18,000</strong>
+        and an Opening Education Reserve of <strong>$6,000</strong>. During 2026, it executed these
+        capital transactions:
+      </p>
+      <ol>
+        <li><strong>Jan 10:</strong> <strong>120 farmer-members</strong> subscribed and paid in full for <strong>$500 of Shares each</strong> plus a non-refundable <strong>$20 Entrance Fee each</strong> (bylaws credit Entrance Fees directly to the Income Statement).</li>
+        <li><strong>Mar 1:</strong> Secured a <strong>$25,000 `6%` Development Loan</strong> from the Agricultural Co-op Bank (repayable in 2031) to build a cold-storage room.</li>
+        <li><strong>Oct 15:</strong> One retiring farmer redeemed their <strong>$500 share</strong> at par and was refunded by cheque.</li>
+      </ol>
+      <p>
+        <strong>Required:</strong> (a) Prepare the <strong>General Journal entries</strong> (with narrations) for all transactions <em>[8 marks]</em>; (b) Prepare the <strong>Capital &amp; Long-Term Financing Extract</strong> as at 31 December 2026 *(before 2026 surplus appropriation)* <em>[4 marks]</em>.
+      </p>
+    </>
+  }
+>
+
+### (a) BlueMountain Farmers’ Co-op — General Journal *(8 marks)*
+
+| Date | Details &amp; Narration | Dr ($) | Cr ($) |
+| :--- | :--- | ---: | ---: |
+| **Jan 10** | Bank *(`120 × $500`)* | 60,000 | |
+| | &nbsp;&nbsp;&nbsp;&nbsp;Members’ Share Capital | | 60,000 |
+| | *Being issue of $500 shares at par to 120 members.* | | |
+| **Jan 10** | Bank *(`120 × $20`)* | 2,400 | |
+| | &nbsp;&nbsp;&nbsp;&nbsp;Entrance Fees Income | | 2,400 |
+| | *Being non-refundable $20 entrance fees collected from 120 members.* | | |
+| **Mar 1** | Bank | 25,000 | |
+| | &nbsp;&nbsp;&nbsp;&nbsp;6% Development Loan (2031) | | 25,000 |
+| | *Being long-term agricultural co-op loan received for cold-storage room.* | | |
+| **Oct 15** | Members’ Share Capital | 500 | |
+| | &nbsp;&nbsp;&nbsp;&nbsp;Bank | | 500 |
+| | *Being redemption at par of retiring member’s $500 share.* | | |
+
+### (b) Capital & Long-Term Financing Extract as at 31 December 2026 *(4 marks)*
+
+| Financed By *(Pre-Appropriation)* | $ | $ |
+| :--- | ---: | ---: |
+| **Members’ Equity** | | |
+| Members’ Share Capital *(`$60,000 − $500 redeemed`)* | | 59,500 |
+| Statutory Reserve Fund *(Opening)* | 18,000 | |
+| Education Reserve Fund *(Opening)* | 6,000 | 24,000 |
+| *Total Members’ Equity (Pre-Surplus)* | | **83,500** |
+| **Non-Current Liabilities** | | |
+| 6% Development Loan (2031) | | **25,000** |
+| **Total Long-Term Financing** | | **$108,500** |
+
+*(Notice: The `$2,400` Entrance Fees sit in the 2026 Income Statement as Income — unless bylaws specifically mandate crediting Entrance Fees straight to the Statutory Reserve!)*
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Raising Co-operative Capital"
+  items={[
+    {
+      statement: 'Co-operative Societies commonly place a statutory limit (cap) on the percentage of total shares any single member may own.',
+      answer: true,
+      explanation: 'Yes — capping individual shareholdings protects democratic balance and prevents any wealthy member from wielding undue financial pressure.',
+    },
+    {
+      statement: 'In a Credit Union, Members’ Savings Deposits should be added inside Members’ Share Capital under Equity.',
+      answer: false,
+      explanation: 'NEVER! Members’ Savings Deposits can be withdrawn by savers and represent a LIABILITY owed by the Credit Union to depositors!',
+    },
+    {
+      statement: 'When a member withdraws from a Co-operative Society and redeems $400 of shares at par, the society Debits Members’ Share Capital $400 and Credits Bank $400.',
+      answer: true,
+      explanation: 'Correct — redeeming shares reduces both Members’ Share Capital (Equity) and Bank (Asset)!',
+    },
+    {
+      statement: 'A Co-operative’s Statutory Reserve Fund may be divided up and paid out as cash bonuses whenever members vote for it at an AGM.',
+      answer: false,
+      explanation: 'False! By Co-op law, the Statutory Reserve Fund is legally indivisible and non-distributable — it stays locked permanently to protect the society.',
+    },
+    {
+      statement: 'Co-operative shares are normally issued and redeemed at par (nominal) value rather than at speculative market prices.',
+      answer: true,
+      explanation: 'Spot on — preventing speculation ensures the society remains member-focused!',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s9-07-project"
+  title="Mini-Project: Capitalization & Liability Schedule for Unity Credit Union"
+  duration="20 mins"
+  scenario="Unity Credit Union opened 2026 with a Statutory Reserve of $12,000. During the year: (1) 200 members subscribed for $250 of Member Shares each ($50,000) and paid $15 non-refundable Entrance Fees each ($3,000 — credited to Entrance Fees Income); (2) Members placed $40,000 into withdrawable Savings Deposit Accounts; (3) 4 relocating members redeemed their $250 shares at par ($1,000 total)."
+  steps={[
+    'Write all 4 General Journal entries with clean narrations for the share subscriptions, entrance fees, member deposits, and share redemptions.',
+    'Sort every closing balance into the exact right Balance Sheet bucket: Members’ Equity vs. Liabilities.',
+    'Explain in 2 crisp sentences WHY a Statutory Reserve Fund is even more vital for a Co-operative than a General Reserve is for a PLC (hint: think about share withdrawals!).',
+  ]}
+  deliverables={[
+    '4 General Journal entries with narrations',
+    'Classified Members’ Equity vs. Liabilities Balance Sheet Extract',
+    '2-sentence Statutory Reserve Importance Explanation',
+  ]}
+  rubric={[
+    'Closing Members’ Share Capital = $50,000 − $1,000 redeemed = $49,000; Opening Statutory Reserve = $12,000 → Total Members’ Equity (pre-surplus) = $61,000.',
+    'Members’ Savings Deposits ($40,000) placed strictly under LIABILITIES (NOT Equity!); Entrance Fees ($3,000) credited to Income Statement (unless bylaws direct to Statutory Reserve).',
+    'Explanation clearly highlights that because Co-op Share Capital is variable/withdrawable when members leave, a legally locked Statutory Reserve provides a permanent capital cushion!',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **Co-op Shares** = Variable &amp; **redeemable at par** (`Dr Members’ Share Capital / Cr Bank` on withdrawal!).
+- **Statutory Reserve** = Legally mandatory &amp; **NON-distributable**.
+- **Members’ Deposits** = **LIABILITY** (never Equity!).
+:::

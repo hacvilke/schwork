@@ -1,0 +1,236 @@
+---
+id: journal-entries-for-error-correction
+title: "7.2 Journal Entries for Correction of Errors"
+sidebar_label: "7.2 Correcting Journal Entries"
+sidebar_position: 2
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 7"
+  section="Control Systems — Error Correction"
+  code="POA-S7-02"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="25 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+In real accounting, you are **NEVER allowed to use correction fluid, scratch out figures, or rip pages out of a ledger** — that destroys the audit trail! Instead, every mistake is corrected transparently through a formal **General Journal entry** (complete with a clear **narration**). Use the foolproof **3-Step Method** (*Wrong Done → Right Needed → Correcting Entry*), and even the trickiest Reversal or Suspense entry takes 15 seconds!
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | Writing **General Journal correcting entries** (with narrations) for **two-sided COPCOR errors** AND **single-sided Suspense errors** |
+| **Exam Focus** | Never forgetting the **`2×` amount rule** for Reversals &amp; Wrong-Side postings, checking whether an error needs **Suspense**, and writing crisp **narrations** |
+| **Learning Outcome** | Draft accurate General Journal entries (with narrations) to correct any two-sided or single-sided accounting error |
+
+<ObjectivesBox
+  id="poa-s7-02-obj"
+  objectives={[
+    'Explain why accounting errors must be corrected via General Journal entries rather than erasing ledger figures.',
+    'Apply the 3-Step Method (Wrong Entry → Right Entry → Correcting Entry) to write flawless correcting journal entries.',
+    'Apply the 2× Amount Rule accurately for Complete Reversals and Single-Sided Wrong-Side Postings.',
+    'Write concise, exam-ready narrations beneath every correcting journal entry.',
+  ]}
+/>
+
+---
+
+## 1. The 3-Step Method + Quick Correction Patterns
+
+Whenever a question asks for correcting Journal Entries, run this quick check on scrap paper:
+1. **Step 1 — What WAS done?** *(Write the wrong Dr &amp; Cr posted)*
+2. **Step 2 — What SHOULD have been done?** *(Write the right Dr &amp; Cr)*
+3. **Step 3 — Bridge Step 1 → Step 2:**
+   - Leave any **correct** half completely untouched!
+   - **Cancel** any wrong Debit by **Crediting** it (and cancel any wrong Credit by **Debiting** it).
+   - **Record** any missing correct Debit or Credit.
+   - If only **ONE** real account needs fixing → plug **`Suspense`** on the opposite side!
+
+### Quick Pattern Reference Table
+
+| Error Situation | How to Fix It Instantly | Example |
+| :--- | :--- | :--- |
+| **Error of Commission / Principle** | **Dr** Right A/c / **Cr** Wrong A/c *(or reverse if Credit side was wrong)* | New Van `$8,000` put in Repairs → `Dr Motor Vehicles $8,000 / Cr Repairs $8,000` |
+| **Complete Omission** | Just post the **normal entry**! | Omitted credit sale `$700` to J. Lee → `Dr J. Lee $700 / Cr Sales $700` |
+| **Error of Original Entry (Too Low)** | Post the **missing difference** on the normal sides | `$520` purchase posted as `$250` (short `$270`) → `Dr Purchases $270 / Cr Supplier $270` |
+| **Error of Original Entry (Too High)** | **Reverse** the excess difference | `$350` sale posted as `$530` (over `$180`) → `Dr Sales $180 / Cr Customer $180` |
+| **Complete Reversal of Entries** | Post correct sides for **DOUBLE (`2×`) the amount!** | Paid `$450` cash to Creditor reversed → `Dr Creditor $900 / Cr Cash $900` |
+| **Day Book Undercast / Overcast** | Fix the ONE nominal account + **Suspense** on opposite side! | Sales Book undercast `$300` → `Dr Suspense $300 / Cr Sales $300` |
+
+---
+
+## 2. Diagram 1: The Foolproof 3-Step Error-Correction Method
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-7/02-error-correction-3-step-method.svg"
+  alt="Three-step flowchart showing Step 1 Wrong Entry Done, Step 2 Right Entry Needed, and Step 3 Correcting Journal Entry for both an Error of Principle and a Complete Reversal of Entries, plus the Suspense shortcut."
+  caption="Diagram 1 (Static Reference): Notice how Step 1 + Step 3 mathematically equals Step 2 — you can ALWAYS verify your own answer in 5 seconds!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive Error-Fix Explorer (Click Any Trap!)
+
+<InteractiveDiagram
+  title="Interactive Hub: Tap Any Classic Exam Error to See Its Exact Journal Fix & Proof"
+  layout="hub"
+  centerLabel="Journal Fixes"
+  centerSublabel="Dr = Cr Proof"
+  instruction="Select any of the 4 high-frequency exam error types below to check the exact Debit, Credit, and narration."
+  nodes={[
+    {
+      label: 'Principle / Commission',
+      tag: 'Swap Account',
+      tone: 'neutral',
+      detail: 'Only ONE account name is wrong while the other half of the double entry (like Bank or Sales) is already 100% correct!',
+      example: 'Bought Furniture $2,500 by cheque, debited to Purchases → Dr Furniture $2,500 / Cr Purchases $2,500. (Bank Cr $2,500 is already right — DO NOT touch Bank!)',
+      examTip: 'Never touch an account that was already posted accurately — touching Bank here would break the Cash Book!',
+    },
+    {
+      label: 'Complete Reversal (2×)',
+      tag: 'Double Amount!',
+      tone: 'warning',
+      detail: 'If you only post 1× the amount, you merely reset both accounts back to $0 — you MUST post 2× (once to erase the mistake, once to record the truth)!',
+      example: 'Received $400 cheque from debtor K. Bell, wrongly debited K. Bell $400 & credited Bank $400 → Fix: Dr Bank $800 / Cr K. Bell $800!',
+      examTip: 'Verify on a mini T-account: K. Bell had Dr $400; posting Cr $800 leaves net Cr $400 — exact match!',
+    },
+    {
+      label: 'Day Book Casting Error',
+      tag: 'Uses Suspense',
+      tone: 'warning',
+      detail: 'Individual customer/supplier ledgers were posted correctly from invoices — ONLY the column total posted to Sales/Purchases/Returns is wrong!',
+      example: 'Purchases Book overcast by $350 (Purchases Dr is $350 too high!) → Fix: Dr Suspense $350 / Cr Purchases $350.',
+      examTip: 'Memory cue: "Undercast" = ADD more to the account’s normal side; "Overcast" = REDUCE it by posting on its opposite side!',
+    },
+    {
+      label: 'Wrong Side in ONE Account',
+      tag: '2× + Suspense!',
+      tone: 'positive',
+      detail: 'Cash Book was posted right, but the personal account was posted on the WRONG side — needs DOUBLE the amount AND Suspense!',
+      example: 'Paid $300 cash to creditor M. Ali (Cr Cash $300 ✓), but wrongly CREDITED M. Ali $300 → Fix: Dr M. Ali $600 / Cr Suspense $600!',
+      examTip: 'This combines BOTH skills (2× rule + Suspense) — spotting it earns instant top-band Paper 2 marks!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Writing 6 Correcting General Journal Entries (With Exam-Grade Narrations)"
+  marks={12}
+  problem={
+    <>
+      <p>
+        <strong>Scenario:</strong> Prepare the <strong>General Journal entries</strong> (including
+        narrations) needed to correct the following 6 errors discovered in the books of
+        <strong> Harbour Hardware</strong> on <strong>31 December 2026</strong>: <em>[2 marks each = 12 marks]</em>
+      </p>
+      <ol>
+        <li>A new delivery motorcycle costing $3,500 (paid by cheque) was wrongly debited to <em>Motor Expenses</em>.</li>
+        <li>A credit sale of $680 to <strong>K. Lewis</strong> was posted to <strong>C. Lewis’s</strong> account.</li>
+        <li>Cash of $450 paid to supplier <strong>N. Patel</strong> was debited to Cash and credited to N. Patel.</li>
+        <li>A credit purchase of $520 from <strong>Star Wholesale</strong> was entered as $250 in the Purchases Journal and posted as $250 to both accounts.</li>
+        <li>The Purchases Book total was overcast (over-added) by $350.</li>
+        <li>Cash of $600 received from credit customer <strong>T. Blake</strong> was entered accurately in the Cash Book, but omitted from T. Blake’s account.</li>
+      </ol>
+    </>
+  }
+>
+
+**Harbour Hardware — General Journal (31 December 2026)**
+
+| # | Account &amp; Narration | Debit ($) | Credit ($) |
+| :-: | :--- | ---: | ---: |
+| **1** | **Motor Vehicles** | 3,500 | |
+| | &nbsp;&nbsp;&nbsp;&nbsp;**Motor Expenses** | | 3,500 |
+| | *Being correction of Error of Principle: new motorcycle wrongly debited to Motor Expenses.* | | |
+| **2** | **K. Lewis** | 680 | |
+| | &nbsp;&nbsp;&nbsp;&nbsp;**C. Lewis** | | 680 |
+| | *Being correction of Error of Commission: credit sale to K. Lewis wrongly posted to C. Lewis.* | | |
+| **3** | **N. Patel** *(`2 × $450`)* | 900 | |
+| | &nbsp;&nbsp;&nbsp;&nbsp;**Cash** | | 900 |
+| | *Being correction of Complete Reversal of $450 cash paid to creditor N. Patel.* | | |
+| **4** | **Purchases** *(`$520 − $250`)* | 270 | |
+| | &nbsp;&nbsp;&nbsp;&nbsp;**Star Wholesale** | | 270 |
+| | *Being correction of Error of Original Entry: credit purchase understated by $270.* | | |
+| **5** | **Suspense** | 350 | |
+| | &nbsp;&nbsp;&nbsp;&nbsp;**Purchases** | | 350 |
+| | *Being correction of Purchases Book overcast by $350.* | | |
+| **6** | **Suspense** | 600 | |
+| | &nbsp;&nbsp;&nbsp;&nbsp;**T. Blake** | | 600 |
+| | *Being correction of partial omission: cash receipt omitted from debtor T. Blake’s account.* | | |
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Correcting Journal Entries"
+  items={[
+    {
+      statement: 'To correct a Complete Reversal of Entries of $300, the correcting journal entry must be posted for $600 (double the original amount).',
+      answer: true,
+      explanation: 'Yes! $300 cancels out the reversed entry back to $0, and the second $300 records the transaction on its proper sides.',
+    },
+    {
+      statement: 'If the Sales Book was undercast by $400, the correcting journal entry is: Debit Sales $400 and Credit Suspense $400.',
+      answer: false,
+      explanation: 'Sales has a CREDIT balance — if it is undercast (too low), you must CREDIT Sales $400 and DEBIT Suspense $400!',
+    },
+    {
+      statement: 'When correcting an Error of Principle where new Machinery ($5,000) paid by cheque was debited to Repairs, you must also adjust the Bank Account.',
+      answer: false,
+      explanation: 'Bank was already credited $5,000 accurately! Leave Bank untouched — simply Dr Machinery $5,000 / Cr Repairs $5,000.',
+    },
+    {
+      statement: 'If a $750 rent payment was credited correctly in the Bank column ($750) but debited as $570 in the Rent Account, the correcting entry is Dr Rent $180 / Cr Suspense $180.',
+      answer: true,
+      explanation: 'Spot on! Rent Debit was short by $750 − $570 = $180, so Dr Rent $180 and Cr Suspense $180.',
+    },
+    {
+      statement: 'Every General Journal error-correction entry should include a short narration explaining the mistake being corrected.',
+      answer: true,
+      explanation: 'Narrations are essential for the audit trail — and examiners regularly award marks specifically for clear narrations!',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s7-02-project"
+  title="Mini-Project: General Journal Error-Correction Sheet for Oceanic Traders"
+  duration="20 mins"
+  scenario="Draft the formal General Journal (Date, Details + Narration, Debit, Credit) for 'Oceanic Traders' on 31 December 2026 to correct these 5 errors: (1) A credit sale of $1,100 to J. Grant was completely omitted from the books; (2) A new shop counter costing $2,800 (paid by cheque) was debited to Repairs; (3) A cheque for $320 received from credit customer D. Cole was debited to D. Cole and credited to Bank; (4) The Sales Book total was undercast by $420; (5) Shop Rent of $750 paid by cheque was entered accurately in the Cash Book, but debited as $570 in the Rent Account."
+  steps={[
+    'For each of the 5 errors, write a 2-line rough check on scratch paper: "Wrong Done" vs. "Right Needed".',
+    'Rule a clean 4-column General Journal table (Date | Details & Narration | Dr $ | Cr $).',
+    'Enter all 5 correcting journal entries with clear, concise narrations underneath each entry.',
+    'Check that ONLY Errors 4 and 5 use the Suspense Account, and that Error 3 uses double the amount ($640)!',
+  ]}
+  deliverables={[
+    '5-entry General Journal formatted cleanly with Debit & Credit columns',
+    'Exam-grade narration under every single entry',
+    'Self-check confirming Suspense usage & 2× reversal rule',
+  ]}
+  rubric={[
+    'Entry 1: Dr J. Grant $1,100 / Cr Sales $1,100. Entry 2: Dr Shop Fittings $2,800 / Cr Repairs $2,800.',
+    'Entry 3 (Reversal 2×): Dr Bank $640 / Cr D. Cole $640.',
+    'Entry 4 (Undercast): Dr Suspense $420 / Cr Sales $420. Entry 5 (One-sided transposition $750 − $570): Dr Rent $180 / Cr Suspense $180.',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **3-Step Rule:** `Wrong Done` → `Right Needed` → `Correcting Entry` (never touch an already-correct half!).
+- **Undercast** = add to **normal side**; **Overcast** = post to **opposite side**!
+- **Complete Reversal** OR **Wrong-Side Single Posting** = **DOUBLE (`2×`) the amount**!
+:::

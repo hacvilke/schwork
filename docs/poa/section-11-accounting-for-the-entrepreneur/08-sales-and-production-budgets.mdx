@@ -1,0 +1,253 @@
+---
+id: sales-and-production-budgets
+title: "11.8 Preparing Sales and Production Budgets (3-Month Period)"
+sidebar_label: "11.8 Sales & Production Budgets"
+sidebar_position: 8
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 11"
+  section="Accounting for the Entrepreneur — Projections & Business Planning"
+  code="POA-S11-08"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="25 min"
+  difficulty="Exam Mastery"
+/>
+
+:::info Essential Understanding
+Every operational budget in a business starts with ONE master domino: the **Sales Budget** *(forecasted customer demand × selling price)*! Once you know how many units customers will buy over the next **3 months (Quarter 1)**, the factory builds its **Production Budget** — adding a safety cushion of **Desired Closing Stock** (usually a `%` of *next month’s* sales!) and subtracting **Opening Stock** already sitting in the warehouse so you NEVER suffer embarrassing stockouts OR choke cash flow with dusty unsold inventory!
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | **3-Month Sales Budget** (`Forecast Units × Selling Price`), **3-Month Production Budget** (`Sales Units + Desired Closing Stock − Opening Stock`), and **Budgeted Production Cost Extension** |
+| **Exam Focus** | Computing **Desired Closing Stock** as `%` of **NEXT month’s sales** *(using Month 4 sales for Month 3’s closing stock!)*, rolling **Month 1 Closing Stock → Month 2 Opening Stock**, and **NEVER summing monthly stocks in the Q1 Total column** |
+| **Learning Outcome** | Prepare linked 3-month Sales and Production Budgets accurately and explain how budgeting improves entrepreneurial control |
+
+<ObjectivesBox
+  id="poa-s11-08-obj"
+  objectives={[
+    'Define a budget and explain why the Sales Budget must be prepared BEFORE the Production Budget.',
+    'Prepare a 3-month Sales Budget showing budgeted units, unit selling price, and budgeted sales revenue.',
+    'Prepare a 3-month Production Budget applying desired closing inventory percentages and month-to-month opening inventory rollovers.',
+    'Verify the Quarter Total column accurately using Period-Start Opening Inventory and Period-End Closing Inventory.',
+  ]}
+/>
+
+---
+
+## 1. The Linked Sales & Production Budget Formulas
+
+<FormulaCard
+  title="Sales Budget → Production Budget Master Equations"
+  onFormulaSheet={false}
+  summary="Sales Budget is in UNITS & DOLLARS; Production Budget is primarily in UNITS (then optionally multiplied by Unit Cost)!"
+>
+
+$$
+\textbf{Sales Budget (\$)} = \text{Budgeted Sales Units} \times \text{Budgeted Selling Price per Unit}
+$$
+
+$$
+\textbf{Production Budget (Units)} = \text{Budgeted Sales Units} + \text{Desired Closing Inventory} - \text{Opening Inventory}
+$$
+
+$$
+\textbf{Rollover Rule:}\quad \text{Opening Inventory (Month } t\text{)} = \text{Closing Inventory (Month } t-1\text{)}
+$$
+
+</FormulaCard>
+
+### Why Do Businesses Prepare Budgets? *(Classic Paper 1 &amp; Paper 2 Question!)*
+1. **Forward Planning &amp; Coordination:** Aligns the Sales team, Factory floor, Raw Materials purchasing, and Cash Flow before the quarter even begins!
+2. **Preventing Stockouts &amp; Over-Production:** Keeps an exact safety buffer (e.g., `20%` of next month’s sales) so sudden orders are fulfilled without tying up excess cash in unsold stock.
+3. **Performance Control *(Variance Analysis)*:** Lets owners compare **Actual Sales / Production** against **Budgeted Targets** every month to spot waste or booming products early!
+
+---
+
+## 2. Diagram 1: From 3-Month Sales Budget to Production Budget
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-11/08-sales-to-production-budget-flow.svg"
+  alt="Two-step pipeline linking a 3-Month Sales Budget (Jan-Mar: 400, 500, 600 units at $25 = $37,500) directly into the 3-Month Production Budget (420, 520, 620 units = 1,560 total units) with the Total Column inventory trap highlighted."
+  caption="Diagram 1 (Static Reference): Memorize the bottom navy Total Column trap — Q1 Total uses ONLY Jan 1 Opening Stock (80) and Mar 31 Closing Stock (140), NEVER the sum of all three months!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive 4-Step Sales & Production Budget Lab
+
+<InteractiveDiagram
+  title="Interactive Flow: Follow These 4 Exact Steps to Nail Every 3-Month Budget Question"
+  layout="flow"
+  instruction="Click Steps 1 to 4 to trace Month 4’s hidden role and the Quarter Total proof."
+  nodes={[
+    {
+      label: '1. Build Sales Budget FIRST',
+      tag: 'Units & Dollars',
+      tone: 'neutral',
+      detail: 'List budgeted sales units for Jan (400), Feb (500), and Mar (600) → Q1 Total = 1,500 units. Multiply by $25/unit → Jan $10,000, Feb $12,500, Mar $15,000 → Q1 Total = $37,500!',
+      example: 'Remember: Keep April’s sales forecast (700 units) handy off to the side — you DO NOT include April inside Q1 Sales, yet you NEED April to compute March’s Closing Stock!',
+      examTip: 'Always check why a 3-month exam question sneaks Month 4’s sales figure into the footnote — 100% of the time it is for Month 3’s Desired Closing Stock!',
+    },
+    {
+      label: '2. Compute Desired Closing Stock (20%)',
+      tag: 'Look Ahead 1 Mo!',
+      tone: 'warning',
+      detail: 'Policy: End every month holding 20% of NEXT month’s budgeted sales! Jan Close = 20% × Feb (500) = 100; Feb Close = 20% × Mar (600) = 120; Mar Close = 20% × Apr (700) = 140!',
+      example: 'Now roll each Closing Stock into the VERY NEXT month’s Opening Stock: Feb Open = 100; Mar Open = 120! (Jan Open = 80 was given!)',
+      examTip: 'Drawing tiny diagonal arrows from Jan Close (100) → Feb Open (100) and Feb Close (120) → Mar Open (120) eliminates transposition mistakes!',
+    },
+    {
+      label: '3. Solve Monthly Units to Produce',
+      tag: 'Sales + Close − Open',
+      tone: 'positive',
+      detail: 'Apply the formula down every column: Jan = 400 + 100 − 80 = 420; Feb = 500 + 120 − 100 = 520; Mar = 600 + 140 − 120 = 620!',
+      example: 'Notice: Because sales are rising every month (400 → 500 → 600 → 700), the factory MUST build slightly MORE than monthly sales (420, 520, 620) to keep growing the safety cushion!',
+      examTip: 'If a question also gives Unit Production Cost ($14/unit), add one bottom row multiplying Units to Produce × $14 → Budgeted Production Cost ($21,840)!',
+    },
+    {
+      label: '4. Cross-Check the Q1 Total Column ✓',
+      tag: '1,560 = 1,560!',
+      tone: 'positive',
+      detail: 'Sum horizontal production: 420 + 520 + 620 = 1,560 units! Now verify vertically using Q1 Sales (1,500) + Mar 31 Closing Stock (140) − Jan 1 Opening Stock (80) = 1,560 units!',
+      example: 'NEVER write "Closing Stock = 100 + 120 + 140 = 360" in the Total column — there are ONLY 140 bottles in the warehouse on March 31!',
+      examTip: 'This horizontal = vertical 1,560 proof guarantees 100% accuracy before moving to the next question!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="3-Month Sales Budget, Production Budget & Production Cost Schedule (Caribbean Eco-Bottles Ltd)"
+  marks={14}
+  problem={
+    <>
+      <p>
+        <strong>Scenario:</strong> <strong>Caribbean Eco-Bottles Ltd</strong> manufactures
+        insulated reusable water bottles selling at <strong>$25.00 each</strong> (unit production
+        cost = <strong>$14.00 per bottle</strong>). Forecasted monthly sales units for early 2026 are:
+      </p>
+      <ul>
+        <li><strong>January:</strong> 400 units | <strong>February:</strong> 500 units | <strong>March:</strong> 600 units | <strong>April:</strong> 700 units.</li>
+        <li><strong>Inventory Policy:</strong> Desired Closing Inventory of Finished Goods at the end of every month must equal <strong>20% of the FOLLOWING month’s budgeted sales</strong>.</li>
+        <li><strong>Opening Inventory (1 January 2026):</strong> <strong>80 bottles</strong> (`20% × 400`).</li>
+      </ul>
+      <ol>
+        <li>Prepare the <strong>3-Month Sales Budget (Jan–Mar 2026 + Q1 Total)</strong> in units and dollars. <em>[4 marks]</em></li>
+        <li>Prepare the <strong>3-Month Production Budget (Jan–Mar 2026 + Q1 Total)</strong> in units, showing Desired Closing Stock, Opening Stock, and the Q1 Total cross-check! <em>[7 marks]</em></li>
+        <li>Extend the Production Budget to show <strong>Budgeted Production Cost (`$14/unit`)</strong> for each month and Q1 in total. <em>[3 marks]</em></li>
+      </ol>
+    </>
+  }
+>
+
+### 1. Caribbean Eco-Bottles Ltd — 3-Month Sales Budget (Q1: Jan–Mar 2026) *(4 marks)*
+
+| Sales Budget | Jan | Feb | Mar | **Q1 Total** |
+| :--- | ---: | ---: | ---: | ---: |
+| Budgeted Sales *(Units)* | 400 | 500 | 600 | **1,500** |
+| Budgeted Selling Price *(per unit)* | `$25` | `$25` | `$25` | `$25` |
+| **Budgeted Sales Revenue ($)** | **$10,000** | **$12,500** | **$15,000** | **$37,500** |
+
+---
+
+### 2. Caribbean Eco-Bottles Ltd — 3-Month Production Budget (Q1: Jan–Mar 2026) *(7 marks)*
+
+| Production Budget *(Units)* | Jan | Feb | Mar | **Q1 Total** |
+| :--- | ---: | ---: | ---: | ---: |
+| Budgeted Sales Units | 400 | 500 | 600 | **1,500** |
+| **Add:** Desired Closing Inventory *(`20%` of next mo.)* | 100 | 120 | 140 | **140** *(Mar 31!)* |
+| *Total Units Required* | *500* | *620* | *740* | *1,640* |
+| **Less:** Opening Inventory *(prior mo. closing)* | (80) | (100) | (120) | **(80)** *(Jan 1!)* |
+| **Budgeted Production *(Units to Make)*** | **420** | **520** | **620** | **1,560** |
+
+- *Workings:* Jan Close = `20% × 500 = 100`; Feb Close = `20% × 600 = 120`; Mar Close = `20% × 700 (Apr!) = 140`.
+- **Cross-Check Proof:** Horizontal Sum (`420 + 520 + 620 = 1,560`) = Vertical Q1 Total (`1,500 + 140 − 80 = 1,560`) ✓!
+
+---
+
+### 3. Budgeted Production Cost Schedule (`$14.00` per Bottle) *(3 marks)*
+
+| Production Cost Extension | Jan | Feb | Mar | **Q1 Total** |
+| :--- | ---: | ---: | ---: | ---: |
+| Budgeted Production *(Units)* | 420 | 520 | 620 | **1,560** |
+| Unit Production Cost | `$14` | `$14` | `$14` | `$14` |
+| **Budgeted Total Production Cost ($)** | **$5,880** | **$7,280** | **$8,680** | **$21,840** |
+
+*(Check: `$5,880 + $7,280 + $8,680 = $21,840` = `1,560 × $14` exact ✓!)*
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Sales & Production Budgets"
+  items={[
+    {
+      statement: 'In almost every commercial business, the Production Budget is prepared FIRST and then used to calculate the Sales Budget.',
+      answer: false,
+      explanation: 'Flipped! The SALES BUDGET always comes FIRST — customer demand drives how many units the factory needs to manufacture!',
+    },
+    {
+      statement: 'Budgeted Production Units equals Budgeted Sales Units PLUS Desired Closing Inventory MINUS Opening Inventory.',
+      answer: true,
+      explanation: 'Spot on! You must build enough for this month’s sales AND next month’s opening cushion, minus units already on hand!',
+    },
+    {
+      statement: 'If Desired Closing Inventory is 25% of next month’s sales, then March’s Closing Inventory is calculated using April’s forecasted sales.',
+      answer: true,
+      explanation: 'Correct — which is why 3-month budget problems always give you Month 4’s sales forecast too!',
+    },
+    {
+      statement: 'In the Quarter Total column of a 3-Month Production Budget, you should add together the Opening Inventories of January, February, and March.',
+      answer: false,
+      explanation: 'NEVER sum monthly stocks! Use ONLY Period-Start Opening Inventory (Jan 1) and Period-End Closing Inventory (Mar 31)!',
+    },
+    {
+      statement: 'A Production Budget is prepared primarily in physical UNITS rather than solely in dollar values.',
+      answer: true,
+      explanation: 'Yes — factory managers need exact unit counts first to schedule raw materials, labor shifts, and machine hours!',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s11-08-project"
+  title="Mini-Project: Q2 Sales & Production Budgets for BlueMountain Coffee Roasters"
+  duration="20 mins"
+  scenario="Prepare the 3-Month Sales Budget and Production Budget (Q2: April–June 2026 + Q2 Total) for 'BlueMountain Coffee Roasters' (selling price = $20.00 per bag of roasted beans): Forecasted Monthly Sales — April 300 bags, May 400 bags, June 500 bags, July 400 bags. Inventory Policy: Desired Closing Inventory at the end of every month equals 25% of NEXT month’s budgeted sales. Opening Inventory on 1 April 2026 is 75 bags (25% × 300)."
+  steps={[
+    'Prepare the 3-Month Sales Budget (Apr–Jun + Q2 Total) in bags and dollars.',
+    'Calculate Desired Closing Inventory for April (25% of May), May (25% of June), and June (25% of July!), rolling each into the following month’s Opening Inventory.',
+    'Prepare the complete 3-Month Production Budget (Apr–Jun + Q2 Total) and verify that Horizontal Production Sum equals Vertical Q2 Total!',
+    'Add 1 brief sentence explaining why June’s production (475 bags) is actually LESS than June’s sales (500 bags)!',
+  ]}
+  deliverables={[
+    '3-Month Sales Budget (Apr–Jun + Q2 Total) for BlueMountain Coffee Roasters',
+    '3-Month Production Budget with Q2 Total Cross-Check Proof',
+    '1-sentence interpretation of June’s inventory drawdown',
+  ]}
+  rubric={[
+    'Sales Budget exact: Apr $6,000 (300), May $8,000 (400), Jun $10,000 (500) → Q2 Total = 1,200 bags / $24,000!',
+    'Production Budget exact: Apr = 300 + 100 − 75 = 325 bags; May = 400 + 125 − 100 = 425 bags; Jun = 500 + 100 − 125 = 475 bags → Q2 Total = 1,225 bags (Check: 1,200 + 100 Jun 30 Close − 75 Apr 1 Open = 1,225 ✓!).',
+    'Interpretation notes that because July sales drop back to 400 bags, June needs a smaller closing cushion (100 vs. 125 opening), letting the roaster sell 25 bags out of existing stock!',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **Order:** **1. Sales Budget** (`Units × Price`) → **2. Production Budget** (`Sales + Desired Close − Open`).
+- **Month 4 Sales** feeds **Month 3’s Desired Closing Stock**!
+- **Q1 Total Column:** Uses **Jan 1 Opening Stock** &amp; **Mar 31 Closing Stock** *(NEVER add monthly stocks!)*!
+:::

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" role="img" aria-label="Comparison between Fixed Capital plus Current Account system vs Fluctuating Capital Account system for partnerships">
+  <defs>
+    <style>
+      .title { font: 700 20px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .sub { font: 500 13px system-ui, -apple-system, sans-serif; fill: #4A5560; }
+      .hdr { font: 700 14px system-ui, -apple-system, sans-serif; fill: #FCFBF8; }
+      .h3 { font: 700 13px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .body { font: 500 12px system-ui, -apple-system, sans-serif; fill: #222222; }
+      .sage { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #2E6359; }
+      .coral { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #C84E24; }
+    </style>
+  </defs>
+
+  <rect width="920" height="460" rx="14" fill="#F8F6F1" stroke="#CEDCD6" stroke-width="1.5"/>
+  <text x="32" y="38" class="title">Fixed Capital System vs. Fluctuating Capital System</text>
+  <text x="32" y="58" class="sub">Most partnerships prefer the FIXED Capital System (2 separate accounts per partner) so permanent investment stays crystal clear!</text>
+
+  <!-- Left: Fixed Capital System (Recommended) -->
+  <rect x="32" y="80" width="420" height="304" rx="11" fill="#FCFBF8" stroke="#2E6359" stroke-width="1.8"/>
+  <rect x="32" y="80" width="420" height="38" rx="10" fill="#2E6359"/>
+  <text x="242" y="104" text-anchor="middle" class="hdr">Method 1: FIXED Capital System (2 Accounts — Preferred!)</text>
+
+  <rect x="48" y="132" width="388" height="96" rx="8" fill="#EBF2EF" stroke="#4E8577"/>
+  <text x="60" y="153" class="h3">Account A: Partner's Capital Account (STAYS FIXED!)</text>
+  <text x="60" y="173" class="body">• Records ONLY original permanent capital introduced</text>
+  <text x="60" y="191" class="body">  (plus any permanent new capital or capital withdrawal)</text>
+  <text x="60" y="213" class="sage">✓ Makes calculating Interest on Capital super clean!</text>
+
+  <rect x="48" y="240" width="388" height="128" rx="8" fill="#FCFBF8" stroke="#1B365D" stroke-width="1.3"/>
+  <text x="60" y="261" class="h3">Account B: Partner's Current Account (Fluctuates Yearly)</text>
+  <text x="60" y="281" class="sage">Cr (+): Interest on Capital, Partner Salary, Share of Profit</text>
+  <text x="60" y="301" class="coral">Dr (−): Drawings, Interest on Drawings, Share of Loss</text>
+  <text x="60" y="324" class="body">• Instantly exposes if a partner overdrew beyond profit</text>
+  <text x="60" y="342" class="coral">  (a DEBIT Current Account balance = overdrawn partner!)</text>
+
+  <!-- Right: Fluctuating Capital System -->
+  <rect x="468" y="80" width="420" height="304" rx="11" fill="#FCFBF8" stroke="#1B365D" stroke-width="1.8"/>
+  <rect x="468" y="80" width="420" height="38" rx="10" fill="#1B365D"/>
+  <text x="678" y="104" text-anchor="middle" class="hdr">Method 2: FLUCTUATING Capital System (1 Combined A/c)</text>
+
+  <rect x="484" y="132" width="388" height="176" rx="8" fill="#EBF2EF" stroke="#1B365D"/>
+  <text x="496" y="154" class="h3">Single Combined Capital Account (Changes Every Year!)</text>
+  <text x="496" y="178" class="sage">CREDITED with (+):</text>
+  <text x="496" y="196" class="body">• Opening Capital + New Capital Introduced</text>
+  <text x="496" y="214" class="body">• Interest on Capital, Partner Salary &amp; Share of Profit</text>
+  <text x="496" y="242" class="coral">DEBITED with (−):</text>
+  <text x="496" y="260" class="body">• Drawings, Interest on Drawings &amp; Share of Loss</text>
+  <text x="496" y="286" class="h3">Closing Balance changes up or down EVERY year!</text>
+
+  <rect x="484" y="320" width="388" height="48" rx="7" fill="#FFF3EE"/>
+  <text x="496" y="340" class="coral">Drawback: Original invested capital gets mixed up with</text>
+  <text x="496" y="357" class="body">yearly profits &amp; drawings — harder to track overdrawings!</text>
+
+  <!-- Bottom Opening Journal Entry -->
+  <rect x="32" y="400" width="856" height="44" rx="9" fill="#1B365D"/>
+  <text x="460" y="427" text-anchor="middle" style="font: 700 12.5px ui-monospace, monospace; fill: #FCFBF8;">When Partner Contributes Cash + Assets (e.g. Van):  Dr Bank $X · Dr Motor Vehicles $Y   /   Cr Partner's Capital A/c $(X+Y)</text>
+</svg>

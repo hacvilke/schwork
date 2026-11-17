@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" width="920" height="460" role="img" aria-label="Payroll Source Documents Audit Trail from Time Cards and Tax Authorization Forms through the Payroll Register to Individual Earnings Records and Payslips">
+  <defs>
+    <style>
+      .bg { fill: #F8F6F1; }
+      .card { fill: #FCFBF8; stroke: #CEDCD6; stroke-width: 2; rx: 12; }
+      .navy { fill: #1B365D; rx: 10; }
+      .sage { fill: #2E6359; rx: 10; }
+      .coral { fill: #C84E24; rx: 10; }
+      .mint { fill: #EBF2EF; stroke: #4E8577; stroke-width: 1.5; rx: 8; }
+      .amber { fill: #FEF3E2; stroke: #F5A352; stroke-width: 1.5; rx: 8; }
+      .title { font-family: system-ui, -apple-system, sans-serif; font-size: 21px; font-weight: 800; fill: #1B365D; }
+      .subtitle { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; fill: #4A5560; }
+      .w-title { font-family: system-ui, -apple-system, sans-serif; font-size: 13.5px; font-weight: 800; fill: #FFFFFF; }
+      .w-sub { font-family: system-ui, -apple-system, sans-serif; font-size: 11px; fill: #EBF2EF; }
+      .label { font-family: system-ui, -apple-system, sans-serif; font-size: 12.5px; font-weight: 800; fill: #1B365D; }
+      .body { font-family: system-ui, -apple-system, sans-serif; font-size: 11.5px; fill: #222222; }
+      .coral-txt { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; font-weight: 800; fill: #C84E24; }
+      .arrow { stroke: #1B365D; stroke-width: 2.5; fill: none; marker-end: url(#ar12); }
+    </style>
+    <marker id="ar12" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#1B365D"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="920" height="460"/>
+  <text x="460" y="34" text-anchor="middle" class="title">The 5 Core Payroll Source Documents &amp; Audit Trail</text>
+  <text x="460" y="54" text-anchor="middle" class="subtitle">Every dollar paid to staff must trace cleanly from verified hours worked right through to the signed payslip &amp; annual earnings record!</text>
+
+  <!-- Step 1: Time Card / Clock Card -->
+  <rect class="card" x="24" y="78" width="196" height="278"/>
+  <rect class="navy" x="34" y="88" width="176" height="42"/>
+  <text x="122" y="107" text-anchor="middle" class="w-title">1. TIME CARD</text>
+  <text x="122" y="122" text-anchor="middle" class="w-sub">(Clock / Biometric Log)</text>
+  <text x="40" y="152" class="label">Captures:</text>
+  <text x="40" y="170" class="body">• Exact Clock-IN &amp; OUT</text>
+  <text x="40" y="188" class="body">• Regular vs. OT hours</text>
+  <text x="40" y="206" class="body">• Supervisor signature</text>
+  <rect class="amber" x="36" y="226" width="172" height="114"/>
+  <text x="46" y="247" class="coral-txt">Fraud Control!</text>
+  <text x="46" y="266" class="body">Biometric / supervisor</text>
+  <text x="46" y="283" class="body">sign-off stops "buddy</text>
+  <text x="46" y="300" class="body">punching" &amp; phantom</text>
+  <text x="46" y="317" class="body">overtime claims!</text>
+
+  <line class="arrow" x1="220" y1="216" x2="244" y2="216"/>
+
+  <!-- Step 2: Employee Auth & Tax Forms -->
+  <rect class="card" x="248" y="78" width="196" height="278"/>
+  <rect class="sage" x="258" y="88" width="176" height="42"/>
+  <text x="346" y="107" text-anchor="middle" class="w-title">2. HR &amp; TAX FORMS</text>
+  <text x="346" y="122" text-anchor="middle" class="w-sub">(Rates &amp; Deductions)</text>
+  <text x="264" y="152" class="label">Authorizes:</text>
+  <text x="264" y="170" class="body">• Signed pay rate letter</text>
+  <text x="264" y="188" class="body">• Tax ID / NIS enrollment</text>
+  <text x="264" y="206" class="body">• Written consent for</text>
+  <text x="272" y="222" class="body">voluntary deductions</text>
+  <rect class="mint" x="260" y="242" width="172" height="98"/>
+  <text x="270" y="263" class="label">Legal Protection</text>
+  <text x="270" y="282" class="body">Employer CANNOT deduct</text>
+  <text x="270" y="299" class="body">union dues or credit union</text>
+  <text x="270" y="316" class="body">without signed authority!</text>
+
+  <line class="arrow" x1="444" y1="216" x2="468" y2="216"/>
+
+  <!-- Step 3: Payroll Register -->
+  <rect class="card" x="472" y="78" width="196" height="278"/>
+  <rect class="navy" x="482" y="88" width="176" height="42"/>
+  <text x="570" y="107" text-anchor="middle" class="w-title">3. PAYROLL REGISTER</text>
+  <text x="570" y="122" text-anchor="middle" class="w-sub">(All Staff — 1 Period)</text>
+  <text x="488" y="152" class="label">Summarizes:</text>
+  <text x="488" y="170" class="body">• Every employee’s Gross</text>
+  <text x="488" y="188" class="body">• Every deduction column</text>
+  <text x="488" y="206" class="body">• Total Net Pay disbursed</text>
+  <rect class="mint" x="484" y="226" width="172" height="114"/>
+  <text x="494" y="247" class="label">Journal Source!</text>
+  <text x="494" y="266" class="body">Column totals feed the</text>
+  <text x="494" y="283" class="body">General Journal directly:</text>
+  <text x="494" y="302" class="coral-txt">Dr Wages Expense</text>
+  <text x="494" y="319" class="coral-txt">Cr Payables &amp; Bank!</text>
+
+  <line class="arrow" x1="668" y1="216" x2="692" y2="216"/>
+
+  <!-- Step 4: Earnings Record & Payslip -->
+  <rect class="card" x="696" y="78" width="200" height="278"/>
+  <rect class="coral" x="706" y="88" width="180" height="42"/>
+  <text x="796" y="107" text-anchor="middle" class="w-title">4. RECORD &amp; PAYSLIP</text>
+  <text x="796" y="122" text-anchor="middle" class="w-sub">(Per Employee Proofs)</text>
+  <rect class="mint" x="708" y="142" width="176" height="92"/>
+  <text x="718" y="161" class="label">Employee Earnings Record</text>
+  <text x="718" y="179" class="body">1-year cumulative YTD</text>
+  <text x="718" y="196" class="body">ledger for ONE worker —</text>
+  <text x="718" y="213" class="body">prepares annual Tax forms!</text>
+  <rect class="amber" x="708" y="244" width="176" height="96"/>
+  <text x="718" y="263" class="coral-txt">Payslip (Pay Advice)</text>
+  <text x="718" y="281" class="body">Given to worker every</text>
+  <text x="718" y="298" class="body">payday proving Gross,</text>
+  <text x="718" y="315" class="body">Deductions &amp; Net Pay!</text>
+
+  <!-- Bottom Internal Control Banner -->
+  <rect class="navy" x="24" y="376" width="872" height="62"/>
+  <text x="460" y="401" text-anchor="middle" class="w-title">SEPARATION OF DUTIES: HOW ENTREPRENEURS PREVENT "GHOST WORKER" FRAUD</text>
+  <text x="460" y="422" text-anchor="middle" class="w-sub">1. HR hires staff   |   2. Supervisor signs Time Cards   |   3. Payroll Clerk calculates Register   |   4. Owner approves Bank Transfer!</text>
+</svg>

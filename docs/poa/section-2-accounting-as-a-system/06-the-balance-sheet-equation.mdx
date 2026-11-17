@@ -1,0 +1,262 @@
+---
+id: the-balance-sheet-equation
+title: "2.6 The Balance Sheet Equation: Assets = Capital + Liabilities"
+sidebar_label: "2.6 The Balance Sheet Equation"
+sidebar_position: 6
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 2"
+  section="Accounting as a System — Balance Sheet Basics"
+  code="POA-S2-06"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="25 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+Every single Balance Sheet in the world rests on one unbreakable mathematical law: **Assets = Capital + Liabilities**. Why? Because **every resource a business owns (Assets)** had to be paid for by **someone** — either put in by the **owner (Capital)** or borrowed from **outsiders (Liabilities)**. No matter how many transactions occur, both sides of this scale MUST stay perfectly equal!
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | Defining **Assets, Liabilities, and Capital**, rearranging `A = C + L`, and proving how every transaction keeps the equation balanced |
+| **Exam Focus** | Solving missing-figure tables (`A = C + L`, `C = A − L`, `L = A − C`) and tracing how multi-step transactions alter all three elements |
+| **Learning Outcome** | Classify items accurately as Assets, Liabilities, or Capital and compute updated totals after any series of business transactions |
+
+<ObjectivesBox
+  id="poa-s2-06-obj"
+  objectives={[
+    'Define Assets, Liabilities, and Capital (Owner’s Equity) with clear real-world examples.',
+    'State and rearrange the Accounting (Balance Sheet) Equation to find any missing element.',
+    'Explain how Revenue, Expenses, Drawings, and Additional Capital expand the equation.',
+    'Demonstrate step-by-step how every business transaction preserves equality across Assets = Capital + Liabilities.',
+  ]}
+/>
+
+---
+
+## 1. The Core Elements & Formula Sheet
+
+| Element | Simple Definition | Common Examples |
+| :--- | :--- | :--- |
+| **Assets (A)** | Economic resources **owned or controlled** by the business that bring future value | Premises, Machinery, Motor Vehicles, Inventory (Stock), Trade Receivables (Debtors), Bank, Cash |
+| **Capital / Equity (C)** | Resources **supplied by the owner** (the owner’s residual claim on net assets) | Owner’s starting cash/equipment + Net Profit − Drawings |
+| **Liabilities (L)** | Debts or obligations **owed to outsiders** (creditors and lenders) | Bank Loans, Mortgages, Trade Payables (Creditors), Bank Overdraft, Accrued Expenses |
+
+<FormulaCard
+  title="The Accounting (Balance Sheet) Equation"
+  onFormulaSheet={false}
+  summary="Resources owned by the business always equal owner’s investment plus outside debts."
+>
+
+$$
+\text{Assets} = \text{Capital} + \text{Liabilities}
+$$
+
+**Rearrangements (Net Worth & Debt):**
+
+$$
+\text{Capital} = \text{Assets} - \text{Liabilities} \qquad \text{and} \qquad \text{Liabilities} = \text{Assets} - \text{Capital}
+$$
+
+**Expanded Equation (Showing Profit & Drawings):**
+
+$$
+\text{Assets} = \text{Opening Capital} + \text{Revenue} - \text{Expenses} - \text{Drawings} + \text{Liabilities}
+$$
+
+</FormulaCard>
+
+---
+
+## 2. Diagram 1: The Accounting Equation Balance Scale
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-2/06-accounting-equation-scale.svg"
+  alt="Balance scale showing Assets on the left pan ($100,000) perfectly balancing Capital ($65,000) plus Liabilities ($35,000) on the right pan, along with the three formula rearrangements A = C + L, C = A - L, and L = A - C."
+  caption="Diagram 1 (Static Reference): Every dollar of Assets on the left must be matched by a dollar of Owner’s Capital or Outside Liabilities on the right."
+/>
+
+---
+
+## 3. Diagram 2: Interactive Live Equation Balance Simulator
+
+<InteractiveDiagram
+  title="Interactive Transaction Proof: Watch 5 Sequential Transactions Keep A = C + L Balanced"
+  layout="flow"
+  instruction="Click through Transactions 1 to 5 in order. Watch how EVERY single transaction changes at least two items yet keeps Assets EXACTLY equal to Capital + Liabilities!"
+  nodes={[
+    {
+      label: '1. Start Business',
+      tag: 'A ↑  C ↑',
+      tone: 'positive',
+      detail: 'Owner deposits $20,000 cash into a brand-new business bank account to start trading. Bank (Asset) rises by $20,000 and Capital rises by $20,000.',
+      example: 'Assets: $20,000 (Bank)  =  Capital: $20,000  +  Liabilities: $0  →  $20,000 = $20,000 ✓',
+      examTip: 'Owner introducing cash or equipment ALWAYS increases both Assets and Capital equally.',
+    },
+    {
+      label: '2. Buy Van on Credit',
+      tag: 'A ↑  L ↑',
+      tone: 'warning',
+      detail: 'Business buys a $12,000 delivery van using a bank loan (no cash paid yet). Vehicles (Asset) rises by $12,000 and Bank Loan (Liability) rises by $12,000.',
+      example: 'Assets: $32,000 ($20k Bank + $12k Van)  =  Capital: $20,000  +  Liabilities: $12,000 (Loan)  →  $32,000 = $32,000 ✓',
+      examTip: 'Buying ANY asset on credit or with a loan increases BOTH sides (Assets ↑ and Liabilities ↑).',
+    },
+    {
+      label: '3. Buy Stock for Cash',
+      tag: 'A ↑  A ↓',
+      tone: 'neutral',
+      detail: 'Business pays $4,000 by cheque to buy goods for resale. One asset goes up (Inventory +$4,000) and another asset goes down (Bank −$4,000). Total Assets stay unchanged!',
+      example: 'Assets: $32,000 ($16k Bank + $12k Van + $4k Stock)  =  Capital: $20,000  +  Liabilities: $12,000  →  $32,000 = $32,000 ✓',
+      examTip: 'Swapping one asset for another (e.g. paying cash for stock or receiving cash from a debtor) changes TOTAL Assets by $0!',
+    },
+    {
+      label: '4. Pay Part of Loan',
+      tag: 'A ↓  L ↓',
+      tone: 'positive',
+      detail: 'Business repays $2,000 of the bank loan by cheque. Bank (Asset) decreases by $2,000 and Bank Loan (Liability) decreases by $2,000.',
+      example: 'Assets: $30,000 ($14k Bank + $12k Van + $4k Stock)  =  Capital: $20,000  +  Liabilities: $10,000  →  $30,000 = $30,000 ✓',
+      examTip: 'Paying off a supplier (Trade Payable) or bank loan reduces BOTH sides equally (Assets ↓ and Liabilities ↓).',
+    },
+    {
+      label: '5. Owner Drawings',
+      tag: 'A ↓  C ↓',
+      tone: 'warning',
+      detail: 'Owner takes $1,000 cash from the business bank account for personal family use. Bank (Asset) falls by $1,000 and Capital falls by $1,000.',
+      example: 'Assets: $29,000 ($13k Bank + $12k Van + $4k Stock)  =  Capital: $19,000  +  Liabilities: $10,000  →  $29,000 = $29,000 ✓',
+      examTip: 'Drawings and Expenses reduce Capital; Profit/Revenue increases Capital!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Solving Missing Figures & Completing an Accounting Equation Effect Table"
+  marks={10}
+  problem={
+    <>
+      <p>
+        <strong>Part A (4 marks):</strong> Find the missing figure (<strong>?</strong>) for each
+        independent business using the Accounting Equation:
+      </p>
+      <table>
+        <thead>
+          <tr><th>Business</th><th>Assets ($)</th><th>Capital ($)</th><th>Liabilities ($)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Alpha Traders</td><td><strong>?</strong></td><td>48,500</td><td>21,500</td></tr>
+          <tr><td>Beta Boutique</td><td>94,000</td><td><strong>?</strong></td><td>31,200</td></tr>
+          <tr><td>Gamma Repairs</td><td>62,400</td><td>45,000</td><td><strong>?</strong></td></tr>
+          <tr><td>Delta Designs</td><td>115,000</td><td><strong>?</strong></td><td>42,500</td></tr>
+        </tbody>
+      </table>
+      <p>
+        <strong>Part B (6 marks):</strong> A small salon starts the week with
+        <strong> Assets = $40,000</strong>, <strong>Capital = $30,000</strong>, and
+        <strong> Liabilities = $10,000</strong>. State the effect (+, −, or No Change) on
+        <strong> Assets, Capital, and Liabilities</strong> and calculate the final totals after
+        these three transactions:
+      </p>
+      <ol>
+        <li>Bought styling equipment worth $3,500 on credit from SalonPro.</li>
+        <li>Paid $1,500 cash to settle part of an existing trade payable.</li>
+        <li>Received $2,000 cash from a credit customer who owed money from last month.</li>
+      </ol>
+    </>
+  }
+>
+
+**Part A — Finding Missing Figures (4 marks — 1 mark each):**
+1. **Alpha Traders:** Assets = Capital + Liabilities = $48,500 + $21,500 = **$70,000**
+2. **Beta Boutique:** Capital = Assets − Liabilities = $94,000 − $31,200 = **$62,800**
+3. **Gamma Repairs:** Liabilities = Assets − Capital = $62,400 − $45,000 = **$17,400**
+4. **Delta Designs:** Capital = Assets − Liabilities = $115,000 − $42,500 = **$72,500**
+
+**Part B — Step-by-Step Transaction Effect Table (6 marks — 2 marks per transaction):**
+
+| Step | Transaction | Assets ($) | Capital ($) | Liabilities ($) | Check (`A = C + L`) |
+| :--- | :--- | :---: | :---: | :---: | :---: |
+| **Start** | Opening Balances | **40,000** | **30,000** | **10,000** | 40,000 = 40,000 ✓ |
+| **1.** | Bought equipment $3,500 on credit | **+3,500** (Equipment ↑) | No Change | **+3,500** (Payables ↑) | 43,500 = 43,500 ✓ |
+| **2.** | Paid $1,500 cash to trade payable | **−1,500** (Cash ↓) | No Change | **−1,500** (Payables ↓) | 42,000 = 42,000 ✓ |
+| **3.** | Received $2,000 cash from debtor | **+2,000 Cash / −2,000 Receivables = $0 net** | No Change | No Change | 42,000 = 42,000 ✓ |
+| **End** | **Final Totals** | **$42,000** | **$30,000** | **$12,000** | **$42,000 = $30,000 + $12,000 ✓** |
+
+*(Look at Transaction 3 — examiners LOVE testing receiving cash from a credit customer! Because Cash goes up $2,000 and Trade Receivables goes down $2,000, Total Assets stay exactly $42,000!)*
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: The Balance Sheet Equation"
+  items={[
+    {
+      statement: 'If a business has Total Assets of $85,000 and Total Liabilities of $25,000, then Capital must equal $110,000.',
+      answer: false,
+      explanation: 'Capital = Assets − Liabilities = $85,000 − $25,000 = $60,000 (not $85,000 + $25,000!).',
+    },
+    {
+      statement: 'Collecting $1,000 cash from a credit customer (Trade Receivable) leaves Total Assets unchanged.',
+      answer: true,
+      explanation: 'Cash increases by $1,000 while Trade Receivables decrease by $1,000 — an equal swap within Assets that leaves Total Assets unchanged.',
+    },
+    {
+      statement: 'Buying $5,000 of inventory on credit increases both Total Assets and Total Liabilities by $5,000.',
+      answer: true,
+      explanation: 'Inventory (Asset) rises by $5,000 and Trade Payables (Liability) rises by $5,000, keeping A = C + L balanced.',
+    },
+    {
+      statement: 'A business bank overdraft is classified as a Current Asset because it involves a bank account.',
+      answer: false,
+      explanation: 'A bank overdraft means you owe money TO the bank, making it a Current Liability (not an Asset!).',
+    },
+    {
+      statement: 'When a business earns a Net Profit, Owner’s Capital increases.',
+      answer: true,
+      explanation: 'Net Profit belongs to the owner and increases Capital (while Net Losses and Drawings decrease Capital).',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s2-06-project"
+  title="Mini-Project: 7-Transaction Startup Equation Tracker"
+  duration="25–35 mins"
+  scenario="You are launching a weekend mobile car-wash business ('ShineGo Auto'). Starting from $0 on Day 1, build a live Accounting Equation Tracking Sheet proving that Assets = Capital + Liabilities holds true after every single transaction during your launch week."
+  steps={[
+    'Design a clean spreadsheet or notebook table with columns: Day, Transaction Description, Cash, Equipment/Supplies, Total Assets, Capital, Liabilities, and Balance Check (✓).',
+    'Enter these 7 launch transactions row by row: (1) You invest $3,000 cash, (2) Borrow $2,000 bank loan, (3) Buy a $1,800 pressure washer for cash, (4) Buy $400 soap/wax supplies on credit from CleanMax, (5) Pay $250 of the CleanMax bill in cash, (6) Earn $650 cash washing cars (revenue increases Capital!), (7) Withdraw $200 cash for personal groceries (Drawings).',
+    'Compute the updated running balance after every single row and verify that Total Assets = Capital + Liabilities on ALL 7 rows.',
+    'Write a 2-sentence verification summary stating your final Net Worth (Capital) and explaining why Transaction 3 left Total Assets unchanged.',
+  ]}
+  deliverables={[
+    'A completed 7-row Accounting Equation Tracking Table',
+    'A verified Final Balance Summary showing Total Assets = Capital + Liabilities',
+    'A short reflection explaining the asset-swap effect of Transaction 3',
+  ]}
+  rubric={[
+    'All 7 transactions are accurately recorded with zero arithmetic slips (hint: final Assets = $5,600, Capital = $3,450, Liabilities = $2,150).',
+    'Revenue (+$650) increases Capital and Drawings (−$200) decreases Capital.',
+    'Every single row satisfies Assets = Capital + Liabilities.',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- Memorize all 3 rearrangements: **`A = C + L`**, **`C = A − L`**, **`L = A − C`**.
+- Watch out for the **two classic exam traps**:
+  1. **Asset Swaps** (buying equipment for cash, collecting cash from debtors) → **Total Assets = No Change!**
+  2. **Bank Overdraft** → **Liability**, NOT an Asset!
+:::

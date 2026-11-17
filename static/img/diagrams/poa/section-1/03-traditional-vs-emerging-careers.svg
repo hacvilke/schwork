@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 420" fill="none" role="img" aria-label="Traditional vs Emerging Careers in Accounting">
+  <rect width="820" height="420" rx="12" fill="#1B365D"/>
+  <rect x="14" y="14" width="792" height="392" rx="10" stroke="#2D507C" stroke-width="1.2"/>
+
+  <text x="34" y="46" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="18" font-weight="700">Traditional vs. Emerging Careers in Accounting</text>
+  <text x="34" y="66" fill="#9DD9CB" font-family="monospace" font-size="11.5">HOW CORE BOOKKEEPING EVOLVES INTO MODERN TECH-ENABLED CAREERS</text>
+
+  <!-- Traditional Track -->
+  <rect x="34" y="88" width="360" height="222" rx="12" fill="#122440" stroke="#6BC4B0" stroke-width="1.8"/>
+  <rect x="34" y="88" width="360" height="34" rx="12" fill="#4E8577"/>
+  <text x="214" y="110" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="13" font-weight="700">TRADITIONAL ACCOUNTING CAREERS</text>
+
+  <g font-family="system-ui, sans-serif" font-size="11.5">
+    <text x="54" y="146" fill="#9DD9CB" font-weight="700">• Bookkeeper / Accounts Clerk</text>
+    <text x="66" y="162" fill="#CBDCE8" font-size="10.5">Daily entries, ledgers, invoices &amp; bank reconciliations</text>
+
+    <text x="54" y="186" fill="#9DD9CB" font-weight="700">• Financial Accountant</text>
+    <text x="66" y="202" fill="#CBDCE8" font-size="10.5">Prepares statutory financial statements for external users</text>
+
+    <text x="54" y="226" fill="#9DD9CB" font-weight="700">• Management / Cost Accountant</text>
+    <text x="66" y="242" fill="#CBDCE8" font-size="10.5">Budgets, cost control &amp; internal strategy reports</text>
+
+    <text x="54" y="266" fill="#9DD9CB" font-weight="700">• External / Internal Auditor &amp; Tax Accountant</text>
+    <text x="66" y="282" fill="#CBDCE8" font-size="10.5">Verifies true &amp; fair accuracy; ensures tax compliance</text>
+  </g>
+
+  <!-- Emerging Track -->
+  <rect x="426" y="88" width="360" height="222" rx="12" fill="#122440" stroke="#F5A352" stroke-width="1.8"/>
+  <rect x="426" y="88" width="360" height="34" rx="12" fill="#C84E24"/>
+  <text x="606" y="110" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="13" font-weight="700">EMERGING ACCOUNTING CAREERS</text>
+
+  <g font-family="system-ui, sans-serif" font-size="11.5">
+    <text x="446" y="146" fill="#F5A352" font-weight="700">• Forensic Accountant</text>
+    <text x="458" y="162" fill="#CBDCE8" font-size="10.5">Investigates fraud, money laundering &amp; court evidence</text>
+
+    <text x="446" y="186" fill="#F5A352" font-weight="700">• Accounting Information Systems (AIS) Analyst</text>
+    <text x="458" y="202" fill="#CBDCE8" font-size="10.5">Designs ERP, cloud software &amp; cybersecurity controls</text>
+
+    <text x="446" y="226" fill="#F5A352" font-weight="700">• Financial Data &amp; Business Analytics Specialist</text>
+    <text x="458" y="242" fill="#CBDCE8" font-size="10.5">Forecasting dashboards, automation &amp; AI-assisted audits</text>
+
+    <text x="446" y="266" fill="#F5A352" font-weight="700">• Sustainability / ESG &amp; Environmental Accountant</text>
+    <text x="458" y="282" fill="#CBDCE8" font-size="10.5">Measures carbon footprint &amp; ethical governance impact</text>
+  </g>
+
+  <!-- Bottom Career Ladder -->
+  <rect x="34" y="328" width="752" height="60" rx="10" fill="#122440" stroke="#4E8577" stroke-width="1.3"/>
+  <text x="52" y="348" fill="#9DD9CB" font-family="monospace" font-size="10.5" font-weight="700">TYPICAL CAREER PROGRESSION PATH</text>
+  <g font-family="system-ui, sans-serif" font-size="11.5" font-weight="700">
+    <text x="52" y="373" fill="#FFFFFF">POA Student</text>
+    <text x="148" y="373" fill="#F5A352">→</text>
+    <text x="172" y="373" fill="#FFFFFF">Accounts Clerk</text>
+    <text x="285" y="373" fill="#F5A352">→</text>
+    <text x="309" y="373" fill="#FFFFFF">Chartered / Certified (ACCA, CPA)</text>
+    <text x="536" y="373" fill="#F5A352">→</text>
+    <text x="560" y="373" fill="#9DD9CB">Controller / CFO / Specialist</text>
+  </g>
+</svg>

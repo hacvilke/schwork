@@ -1,0 +1,234 @@
+---
+id: translating-source-documents
+title: "3.3 Translating Source Documents into Transaction Descriptions"
+sidebar_label: "3.3 Translating Documents"
+sidebar_position: 3
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 3"
+  section="Books of Original Entry — Documents & Subsidiary Books"
+  code="POA-S3-03"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="20 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+In real offices — and in structured accounting exams — nobody hands you neat bullet lists saying *"Bought $500 goods on credit from Sam."* Instead, you are handed a stack of **invoices, credit notes, receipts, cheque stubs, and bank slips**! The secret skill of every great bookkeeper is **reading any source document from YOUR business’s perspective** and turning it into one crystal-clear transaction sentence.
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | The **5-Step Document Decoding Method**: spotting **WHO WE ARE** (Issuer vs. Recipient), **Document Type**, **Cash vs. Credit**, **Goods vs. Asset**, and **Net Amount** |
+| **Exam Focus** | Converting raw source documents (especially mixed invoices & credit notes) into exact transaction narratives + identifying the right Day Book |
+| **Learning Outcome** | Decode any business source document rapidly and translate it into an unambiguous accounting transaction description |
+
+<ObjectivesBox
+  id="poa-s3-03-obj"
+  objectives={[
+    'Determine your business’s perspective immediately by checking the letterhead (Issuer) versus the "To:" line (Recipient).',
+    'Translate Invoices, Credit Notes, Official Receipts, Cheque Counterfoils, Bank Deposit Slips, and Petty Cash Vouchers into clear transaction descriptions.',
+    'Spot whether a document represents a Cash transaction vs. Credit transaction and Resale Goods vs. Fixed Asset / Expense.',
+    'Explain why the exact same document produces two mirror-image transaction descriptions in the Seller’s books and the Buyer’s books.',
+  ]}
+/>
+
+---
+
+## 1. The Perspective Mirror Rule (Read This Twice!)
+
+One single sheet of paper tells **two opposite stories** depending on whose desk it sits on. Always look first at **whose books you are keeping**!
+
+| Document on Your Desk | If YOUR Business Is the **ISSUER** (Top Letterhead) | If YOUR Business Is the **RECIPIENT** ("To:" / "Received From") |
+| :--- | :--- | :--- |
+| **Invoice** (for resale goods) | *"We **sold** goods on credit to [Customer] for $[Net]."* → **Sales Journal** | *"We **bought** goods on credit from [Supplier] for $[Net]."* → **Purchases Journal** |
+| **Invoice** (for a computer/van) | *"We **sold** a non-current asset on credit..."* → **General Journal** | *"We **bought** [Equipment/Van] on credit from [Vendor]..."* → **General Journal** |
+| **Credit Note** | *"[Customer] **returned** goods to us worth $[Net] (or overcharge reduced)."* → **Returns Inwards Journal** | *"We **returned** goods worth $[Net] to [Supplier]."* → **Returns Outwards Journal** |
+| **Official Receipt** | *"We **received** $[Amount] cash/cheque from [Payer]."* → **Cash Book (Dr)** | *"We **paid** $[Amount] cash/cheque to [Issuer]."* → **Cash Book (Cr)** |
+| **Cheque Counterfoil (Stub)** | *(Always kept by the Payer!)* *"We **paid** $[Amount] by cheque to [Payee] for [Purpose]."* → **Cash Book (Cr · Bank)** | *(N/A — stub stays inside the payer’s chequebook)* |
+| **Bank Deposit (Pay-In) Slip** | *"We **deposited** $[Amount] cash/cheques into our business bank account."* → **Cash Book (Dr · Bank)** | *(Stamped by Bank for depositor)* |
+
+---
+
+## 2. Diagram 1: The Five-Step Document-to-Transaction Bridge
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-3/03-document-to-transaction-bridge.svg"
+  alt="Five-step horizontal workflow (Perspective, Document Type, Item Type, Net Value, Clear Sentence) with a worked mirror example showing how Credit Note #CN-19 translates into Returns Inwards for Metro Fabrics and Returns Outwards for StyleWear Boutique."
+  caption="Diagram 1 (Static Reference): Never skip Step 1 (Perspective)! Checking whether YOUR company is on the letterhead or the 'To:' line prevents reversing Sales and Purchases."
+/>
+
+---
+
+## 3. Diagram 2: Interactive 5-Step Document Decoder
+
+<InteractiveDiagram
+  title="Interactive Decoder: Walk Through All 5 Checks on Any Mystery Paper Slip"
+  layout="flow"
+  instruction="Tap Steps 1 through 5 to see how an experienced bookkeeper decodes a tricky supplier document in under 15 seconds."
+  nodes={[
+    {
+      label: '1. Find Our Name',
+      tag: 'Perspective',
+      tone: 'positive',
+      detail: 'Ask immediately: "Whose books am I keeping?" Check if OUR business name is at the very top letterhead (we issued it) or next to "To:" / "Sold To:" (we received it).',
+      example: 'You keep the books of SolarTech Shop. The invoice letterhead says "Volt Distributors" and "To: SolarTech Shop" → Volt is the SELLER, and WE are the BUYER!',
+      examTip: 'Reversing buyer and seller is the #1 reason students lose full marks on document-translation questions.',
+    },
+    {
+      label: '2. Read Doc Title',
+      tag: 'Event Type',
+      tone: 'positive',
+      detail: 'Identify the bold title: Invoice (credit sale/purchase), Credit Note (return/allowance), Cash Bill/Receipt (paid immediately), Cheque Stub (bank payment), or PCV (petty cash).',
+      example: 'Title says "CREDIT NOTE #41" from Volt Distributors to SolarTech Shop → Volt reduced what we owe, meaning WE returned goods to Volt.',
+      examTip: 'Watch for the word "CASH SALE" or "PAID" stamped on a bill — that turns a receipt into a Cash Book entry instead of a credit day book!',
+    },
+    {
+      label: '3. Check What Was Traded',
+      tag: 'Stock vs. Asset',
+      tone: 'warning',
+      detail: 'Look at the description column! Are these items goods we resell in our shop (Inventory/Purchases), a long-term Fixed Asset (delivery van, computer), or an operating expense (electricity, repairs)?',
+      example: 'SolarTech Shop sells solar panels. Buying 20 solar panels on credit = Purchases Journal; buying a shop cash register on credit = General Journal!',
+      examTip: 'Always match the item to WHAT the business trades in! A car dealership buying cars = Purchases; a bakery buying a car = Motor Vehicle (Asset)!',
+    },
+    {
+      label: '4. Grab the Net Figure',
+      tag: 'Exact Dollar',
+      tone: 'warning',
+      detail: 'Ignore gross list prices whenever a Trade Discount appears! Always take the final NET amount AFTER subtracting Trade Discount (plus any non-recoverable delivery if charged on the invoice).',
+      example: 'Invoice shows $2,000 list − 10% Trade Discount ($200) = $1,800 Net. Your transaction description MUST state $1,800!',
+      examTip: 'Never subtract a printed Cash Discount term (like "2/10, Net 30") when recording the original invoice — cash discount only happens IF paid early!',
+    },
+    {
+      label: '5. Draft Narrative',
+      tag: 'Action Ready',
+      tone: 'positive',
+      detail: 'Combine Date + Action Verb + Item + Counterparty + Payment Type (cash/cheque/credit) + Net Dollar Amount + Document # into one crisp sentence, then name the Book of Original Entry.',
+      example: '"June 14: Returned defective solar panels worth $180 net to Volt Distributors (Credit Note #41) → Returns Outwards Journal."',
+      examTip: 'A complete transaction description ALWAYS answers: Date, Who, What, Cash/Credit, and How Much!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Translating Five Real Source Documents for 'Oasis Bakery'"
+  marks={10}
+  problem={
+    <>
+      <p>
+        <strong>Scenario:</strong> You are the bookkeeper for <strong>Oasis Bakery</strong>.
+        Five source documents arrive on your desk during April 2026:
+      </p>
+      <ol>
+        <li><strong>Invoice #772</strong> (April 3): Letterhead <em>Island Flour Mills</em>; To: <em>Oasis Bakery</em>; 30 sacks baking flour @ $25 = $750 less 10% trade discount = <strong>$675</strong>; Terms: Net 30.</li>
+        <li><strong>Invoice #109</strong> (April 5): Letterhead <em>Oasis Bakery</em>; To: <em>Seaview Hotel</em>; 100 assorted pastries @ $4 = <strong>$400</strong>; Terms: Net 14.</li>
+        <li><strong>Credit Note #CN-15</strong> (April 6): Letterhead <em>Oasis Bakery</em>; To: <em>Seaview Hotel</em>; 10 stale pastries returned = <strong>$40</strong>.</li>
+        <li><strong>Cheque Counterfoil #4508</strong> (April 9): Paid to <em>City Power Co.</em>; For: March Electricity Bill; Amount: <strong>$320</strong>.</li>
+        <li><strong>Invoice #901</strong> (April 12): Letterhead <em>BakeEquip Ltd.</em>; To: <em>Oasis Bakery</em>; 1 Industrial Commercial Oven = <strong>$4,500</strong>; Terms: 60 days credit.</li>
+      </ol>
+      <p>
+        For each document, write a <strong>clear 1-sentence transaction description</strong> from
+        Oasis Bakery’s viewpoint AND state the exact <strong>Book of Original Entry</strong>.
+        <em>[2 marks each = 10 marks]</em>
+      </p>
+    </>
+  }
+>
+
+1. **Invoice #772 (April 3) — (2 marks):**
+   - *Description:* Oasis Bakery **purchased baking flour (goods for resale) on credit** from Island Flour Mills for **$675 net** *(after 10% trade discount)* *(1 mark)*.
+   - *Book of Original Entry:* **Purchases Journal** *(1 mark)*.
+
+2. **Invoice #109 (April 5) — (2 marks):**
+   - *Description:* Oasis Bakery **sold assorted pastries on credit** to Seaview Hotel for **$400** *(1 mark)*.
+   - *Book of Original Entry:* **Sales Journal** *(1 mark)*.
+
+3. **Credit Note #CN-15 (April 6) — (2 marks):**
+   - *Description:* Seaview Hotel **returned stale pastries** worth **$40** to Oasis Bakery *(1 mark)*.
+   - *Book of Original Entry:* **Returns Inwards Journal** *(1 mark)*.
+
+4. **Cheque Counterfoil #4508 (April 9) — (2 marks):**
+   - *Description:* Oasis Bakery **paid $320 by cheque** to City Power Co. for the March electricity bill *(1 mark)*.
+   - *Book of Original Entry:* **Cash Book** *(Credit side — Bank column)* *(1 mark)*.
+
+5. **Invoice #901 (April 12) — (2 marks):**
+   - *Description:* Oasis Bakery **purchased an industrial commercial oven (Non-Current Asset) on credit** from BakeEquip Ltd. for **$4,500** *(1 mark)*.
+   - *Book of Original Entry:* **General Journal** *(1 mark — because an oven is long-term equipment, NOT resale flour/pastries!)*.
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Translating Source Documents"
+  items={[
+    {
+      statement: 'If your business’s name appears at the top letterhead of a Credit Note, it means your business returned goods to a supplier.',
+      answer: false,
+      explanation: 'Credit Notes are issued by the SELLER — so if your name is on the letterhead, a CUSTOMER returned goods to YOU (Returns Inwards).',
+    },
+    {
+      statement: 'A Cheque Counterfoil (stub) in your business chequebook represents a bank payment recorded on the Credit side of the Cash Book.',
+      answer: true,
+      explanation: 'Whenever you write a cheque to pay a bill or supplier, the counterfoil is your source document for a Credit entry in the Bank column of the Cash Book.',
+    },
+    {
+      statement: 'An invoice for a new delivery truck bought on credit by a clothing store is translated as a credit purchase of a Non-Current Asset.',
+      answer: true,
+      explanation: 'A clothing store trades in clothes, not trucks — so the delivery truck is a Non-Current Asset entered in the General Journal.',
+    },
+    {
+      statement: 'When translating an invoice showing "Terms: 2/10, Net 30", you immediately deduct the 2% cash discount before writing the invoice amount.',
+      answer: false,
+      explanation: 'Never deduct a cash discount on the invoice date! Cash discount is earned ONLY later if the customer actually pays within the 10-day window.',
+    },
+    {
+      statement: 'An Official Receipt issued BY your supplier TO your business proves that your business paid cash or cheque to that supplier.',
+      answer: true,
+      explanation: 'Receiving an Official Receipt means you paid money out, recorded on the Credit side of your Cash Book.',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s3-03-project"
+  title="Mini-Project: Two-Perspectives Document Translation Lab"
+  duration="25–30 mins"
+  scenario="Two neighboring businesses — 'Prime Lumber Yard' (Wholesaler) and 'CraftWood Furniture' (Furniture Maker) — complete four transactions during one week: (1) Prime Lumber sells $2,000 list price of cedar timber less 10% trade discount on credit to CraftWood, (2) CraftWood returns $200 list price of warped timber and Prime Lumber issues a Credit Note, (3) CraftWood pays $1,000 on account by cheque and Prime Lumber issues Receipt #801, and (4) CraftWood buys a $1,200 electric table saw on credit from ToolMart."
+  steps={[
+    'Build a 4-row Dual-Perspective Translation Table with columns: Document Summary, Net Amount, Translation & Book in Prime Lumber’s Books, and Translation & Book in CraftWood’s Books.',
+    'Carefully compute the Net Amount for Transaction 1 AND Transaction 2 (remember the 10% Trade Discount on the returned timber!).',
+    'Complete both business viewpoints for all applicable transactions (note: Transaction 4 involves ToolMart instead of Prime Lumber!).',
+    'Write a short 3-bullet "Quick Decoder Checklist" that helps any classmate avoid swapping Buyer and Seller viewpoints on exam day.',
+  ]}
+  deliverables={[
+    'A completed Dual-Perspective Translation Table covering both companies',
+    'Step-by-step Net Amount check for both the Invoice ($1,800) and the Credit Note ($180)',
+    'A 3-bullet Perspective Decoder Checklist',
+  ]}
+  rubric={[
+    'Net amounts correctly deduct 10% trade discount on both the timber sale ($1,800) and timber return ($180).',
+    'Mirror books match accurately (Sales vs. Purchases; Returns Inwards vs. Returns Outwards; Cash Book Dr vs. Cash Book Cr).',
+    'Transaction 4 (electric table saw on credit for CraftWood) is accurately routed to the General Journal.',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- Always ask **3 rapid questions** for every source document:
+  1. **Whose name is on the letterhead?** *(Issuer = Seller/Payee; "To:" = Buyer/Payer)*
+  2. **Cash or Credit — and Stock or Fixed Asset?**
+  3. **Did I take the Net Total AFTER Trade Discount (and NOT subtract an unearned Cash Discount)?**
+:::

@@ -1,0 +1,278 @@
+---
+id: partnership-balance-sheet
+title: "8.8 Preparing the Partnership Balance Sheet"
+sidebar_label: "8.8 Partnership Balance Sheet"
+sidebar_position: 8
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 8"
+  section="Accounting for Partnerships — Financials"
+  code="POA-S8-08"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="30 min"
+  difficulty="Exam Mastery"
+/>
+
+:::info Essential Understanding
+You have reached the **Section 8 Capstone**! Here’s the best news in Partnership Accounting: the **entire top half** of a Partnership Balance Sheet (**Non-Current Assets**, **Current Assets**, **Current Liabilities**, and **Working Capital**) is **100% IDENTICAL** to a Sole Trader Balance Sheet! Only the **"Financed By"** bottom half upgrades — cleanly displaying each partner’s **Fixed Capital Account**, each partner’s **Current Account** *(with overdrawn Debit balances subtracted in brackets!)*, and any **Partner’s Loan** under **Non-Current Liabilities**!
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | Full vertical **Partnership Balance Sheet**, focusing on the **"Financed By"** block: **Fixed Capital Accounts**, **Closing Current Accounts (`+` Cr / `−` Dr)**, and **Non-Current Liabilities (including Partner’s Loan!)** |
+| **Exam Focus** | Subtracting **Debit (overdrawn) Current Account balances in brackets**, placing **Partner’s Loans under Non-Current Liabilities (NOT Capital!)**, and confirming **`Total Net Assets = Total Capital Employed`** |
+| **Learning Outcome** | Construct a complete, balanced vertical Partnership Balance Sheet seamlessly integrated with an Appropriation Account and Partners’ Current Accounts |
+
+<ObjectivesBox
+  id="poa-s8-08-obj"
+  objectives={[
+    'Identify the exact structural differences between a Sole Trader Balance Sheet and a Partnership Balance Sheet.',
+    'Present Fixed Capital Accounts and Partners’ Current Accounts accurately in the "Financed By" section (including subtracting Debit overdrawn balances in brackets).',
+    'Classify a Partner’s Loan correctly under Non-Current Liabilities rather than Partner’s Capital.',
+    'Construct a complete balanced vertical Partnership Balance Sheet from Appropriation, Current Accounts, and year-end asset/liability balances.',
+  ]}
+/>
+
+---
+
+## 1. Sole Trader vs. Partnership Balance Sheet — What Changes?
+
+| Balance Sheet Section | Sole Trader | Partnership |
+| :--- | :--- | :--- |
+| **Non-Current Assets** *(Cost, Accum. Depr., NBV)* | Same 3 columns | **100% Identical!** |
+| **Current Assets − Current Liabilities = Working Capital** | Same layout | **100% Identical!** *(watch unpaid Loan Interest if put in CL instead of Current A/c)* |
+| **Financed By — Capital** | Single Capital (`Open + NP − Dr`) | **Fixed Capital Account listed for EACH partner** *(A + B = Total Fixed Capital)* |
+| **Financed By — Current Accounts** | *(Not used)* | **Closing Current Account for EACH partner** *(Credit = `+`; Overdrawn Debit = `($X)` subtracted!)* |
+| **Financed By — Non-Current Liabilities** | Bank Loans / Mortgages | **Partner’s Loan(s)** + Bank Loans / Mortgages! |
+
+### Two Guaranteed Balance Sheet Exam Checks
+1. **Partner’s Loan Placement:** A Partner’s Loan is a **long-term debt owed by the firm**, NOT permanent Capital — ALWAYS place it under **Non-Current Liabilities** (so on dissolution it ranks ahead of partner Capital!).
+2. **Unpaid Loan Interest Double-Check:** If unpaid Loan Interest (`$900`) was **already credited inside the Partner’s Current Account**, DO **NOT** list it again under Current Liabilities — otherwise your Balance Sheet will be out of balance by `$900`!
+
+---
+
+## 2. Diagram 1: Partnership Balance Sheet Blueprint
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-8/08-partnership-balance-sheet-financed-by.svg"
+  alt="Partnership Balance Sheet blueprint highlighting the identical Sole Trader top half paired against the Partnership-specific Financed By section showing Fixed Capitals, Credit and Debit Current Accounts, and Partner Loan under Non-Current Liabilities."
+  caption="Diagram 1 (Static Reference): Keep your eyes on the two bottom rules — subtract Debit (overdrawn) Current balances in brackets AND put Partner Loans under Non-Current Liabilities!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive 4-Step Full Partnership Capstone Flow
+
+<InteractiveDiagram
+  title="Interactive Flow: How All 4 Partnership Statements Link Together Into One Balanced Proof"
+  layout="flow"
+  instruction="Click Steps 1 to 4 to trace how every single dollar flows from Operating Profit all the way to Total Capital Employed."
+  nodes={[
+    {
+      label: '1. Income Statement (True NP)',
+      tag: 'Loan Int. First!',
+      tone: 'neutral',
+      detail: 'Deduct Interest on any Partner’s Loan as an Operating Expense in the Income Statement FIRST to arrive at true Net Profit.',
+      example: 'Operating Profit $38,900 − 6% Loan Interest on Reid’s $15,000 loan ($900) = True Net Profit $38,000!',
+      examTip: 'Remember: Loan Interest hits Net Profit; Capital Interest does NOT!',
+    },
+    {
+      label: '2. Appropriation Account',
+      tag: 'Distribute NP',
+      tone: 'neutral',
+      detail: 'Add Interest on Drawings, deduct Interest on Capital & Partner Salaries, and divide Residual Profit in the agreed ratio.',
+      example: '$38,000 + $500 Int Dr − $6,500 Int Cap − $8,000 Salary = $24,000 Residual → Reid $14,400 (3/5) & Khan $9,600 (2/5)!',
+      examTip: 'Never let Drawings principal enter this statement!',
+    },
+    {
+      label: '3. Partners’ Current Accounts',
+      tag: 'Update Claims',
+      tone: 'warning',
+      detail: 'Start with opening Current balances, Credit all Appropriation rewards (plus unpaid Loan Interest if applicable!), Debit Drawings & Interest on Drawings, and find each partner’s closing balance.',
+      example: 'Reid finishes +$17,000 Credit; Khan finishes ($3,000) DEBIT Overdrawn → Net Current Accounts = +$14,000!',
+      examTip: 'Carry EACH partner’s closing balance cleanly — never lump them before writing the Balance Sheet!',
+    },
+    {
+      label: '4. Vertical Balance Sheet ✓',
+      tag: 'Net Assets = Cap. Emp.',
+      tone: 'positive',
+      detail: 'List NCA + Working Capital (= Total Net Assets). In Financed By, show Fixed Capitals + Current Accounts (showing Debit overdrawn in brackets!) + Non-Current Liabilities (including Partner’s Loan!).',
+      example: 'Total Net Assets ($171,000) = Fixed Capital ($130,000) + Net Current ($14,000) + NCL ($27,000) = $171,000 ✓!',
+      examTip: 'Double-underline both grand totals once they match — guaranteed full presentation marks!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Full Section 8 Capstone Worked Example
+
+<WorkedExample
+  title="Complete Partnership Final Accounts: Appropriation + Current Accounts + Balanced Balance Sheet"
+  marks={20}
+  problem={
+    <>
+      <p>
+        <strong>Scenario:</strong> <strong>J. Reid</strong> and <strong>S. Khan</strong> are
+        partners in <strong>HarborLine Logistics</strong>. As at <strong>31 December 2026</strong>,
+        the following balances and details were extracted:
+      </p>
+      <ul>
+        <li><strong>Non-Current Assets:</strong> Premises (Cost $90,000); Delivery Fleet (Cost $50,000, Accum. Depr. $18,000); Office Equipment (Cost $20,000, Accum. Depr. $7,000).</li>
+        <li><strong>Current Assets &amp; Liabilities:</strong> Closing Inventory $22,000; Trade Receivables $18,500 (less Provision for Doubtful Debts $500); Prepaid Insurance $1,000; Cash at Bank $11,000; Trade Payables $14,800; Accrued Electricity $1,200.</li>
+        <li><strong>Long-Term Financing:</strong> Fixed Capitals — J. Reid $80,000, S. Khan $50,000; <strong>6% Loan from Partner J. Reid (1 Jan 2026): $15,000</strong> (unpaid interest to be credited to Reid’s Current Account); 5-Year Bank Loan: $12,000.</li>
+        <li><strong>Current Accounts (1 Jan 2026):</strong> J. Reid $2,000 (Cr); S. Khan $1,000 (Dr).</li>
+        <li><strong>2026 Performance &amp; Deed Terms:</strong> Operating Profit <em>before Loan Interest</em> = <strong>$38,900</strong>; Interest on Capital <strong>5% p.a.</strong>; Annual Salary for Khan <strong>$8,000</strong>; Drawings — Reid $4,000, Khan $21,900; Interest on Drawings — Reid $300, Khan $200; Residual Profits shared <strong>3 : 2</strong> (Reid : Khan).</li>
+      </ul>
+      <p>
+        <strong>Required:</strong> Prepare (a) the <strong>Appropriation Account</strong> <em>[5 marks]</em>,
+        (b) columnar <strong>Partners’ Current Accounts</strong> <em>[6 marks]</em>, and (c) the
+        <strong> Vertical Classified Balance Sheet as at 31 December 2026</strong> <em>[9 marks]</em>.
+      </p>
+    </>
+  }
+>
+
+### (a) HarborLine Logistics — Profit & Loss Appropriation Account (Year ended 31 Dec 2026) *(5 marks)*
+*Loan Interest:* `6% × $15,000` = **`$900`** → **True Net Profit** = `$38,900 − $900` = **`$38,000`**
+
+| Details | $ | $ | $ |
+| :--- | ---: | ---: | ---: |
+| **Net Profit for the Year** | | | **38,000** |
+| **Add: Interest on Drawings** *(Reid $300 + Khan $200)* | | | 500 |
+| | | | **38,500** |
+| **Less: Appropriations** | | | |
+| Interest on Capital (`5%`): Reid $4,000 + Khan $2,500 | | 6,500 | |
+| Partner’s Salary: S. Khan | | 8,000 | **(14,500)** |
+| **Residual Profit (`3 : 2`):** | | | **24,000** |
+| &nbsp;&nbsp;&nbsp;&nbsp;J. Reid (`3/5`) | | 14,400 | |
+| &nbsp;&nbsp;&nbsp;&nbsp;S. Khan (`2/5`) | | 9,600 | **(24,000)** |
+
+---
+
+### (b) Partners’ Current Accounts *(Columnar — 6 marks)*
+
+| Dr (2026) | Reid ($) | Khan ($) | Cr (2026) | Reid ($) | Khan ($) |
+| :--- | ---: | ---: | :--- | ---: | ---: |
+| Jan 1 Bal b/d *(overdrawn)* | — | 1,000 | Jan 1 Bal b/d | 2,000 | — |
+| Drawings | 4,000 | 21,900 | Interest on Capital | 4,000 | 2,500 |
+| Interest on Drawings | 300 | 200 | Partner’s Salary | — | 8,000 |
+| **Dec 31 Bal c/d** *(Reid)* | **17,000** | — | Loan Interest *(unpaid)* | 900 | — |
+| | | | Share of Profit | 14,400 | 9,600 |
+| | | | **Dec 31 Bal c/d** *(Khan)* | — | **3,000** |
+| **Totals** | **21,300** | **23,100** | **Totals** | **21,300** | **23,100** |
+| **Jan 1, 2027 Bal b/d (Dr)** | — | **3,000** | **Jan 1, 2027 Bal b/d (Cr)** | **17,000** | — |
+
+---
+
+### (c) HarborLine Logistics — Balance Sheet as at 31 December 2026 *(9 marks)*
+
+| Non-Current Assets | Cost ($) | Accum. Depr. ($) | Net Book Value ($) |
+| :--- | ---: | ---: | ---: |
+| Premises | 90,000 | — | 90,000 |
+| Delivery Fleet | 50,000 | (18,000) | 32,000 |
+| Office Equipment | 20,000 | (7,000) | 13,000 |
+| **Total Non-Current Assets** | **160,000** | **(25,000)** | **135,000** |
+
+| Current Assets &amp; Working Capital | $ | $ | $ |
+| :--- | ---: | ---: | ---: |
+| **Current Assets** | | | |
+| Closing Inventory | | 22,000 | |
+| Trade Receivables | 18,500 | | |
+| Less: Provision for Doubtful Debts | (500) | 18,000 | |
+| Prepaid Insurance | | 1,000 | |
+| Cash at Bank | | 11,000 | |
+| *Total Current Assets* | | *52,000* | |
+| **Less: Current Liabilities** | | | |
+| Trade Payables | 14,800 | | |
+| Accrued Electricity | 1,200 | *(16,000)* | |
+| **Working Capital** *($52,000 − $16,000)* | | | **36,000** |
+| **Total Net Assets** *($135,000 + $36,000)* | | | **$171,000** |
+
+| Financed By | $ | $ | $ |
+| :--- | ---: | ---: | ---: |
+| **Capital Accounts (Fixed)** | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;J. Reid | | 80,000 | |
+| &nbsp;&nbsp;&nbsp;&nbsp;S. Khan | | 50,000 | **130,000** |
+| **Current Accounts** | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;J. Reid *(Credit balance)* | | 17,000 | |
+| &nbsp;&nbsp;&nbsp;&nbsp;S. Khan *(Debit balance — overdrawn!)* | | (3,000) | **14,000** |
+| **Non-Current Liabilities** | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;6% Loan from Partner J. Reid | | 15,000 | |
+| &nbsp;&nbsp;&nbsp;&nbsp;5-Year Bank Loan | | 12,000 | **27,000** |
+| **Total Capital Employed** *($130,000 + $14,000 + $27,000)* | | | **$171,000** |
+
+**PERFECT BALANCE PROOF:** Total Net Assets (**$171,000**) = Total Capital Employed (**$171,000**) ✓!
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Partnership Balance Sheet"
+  items={[
+    {
+      statement: 'A Partner’s Loan to the business is shown inside the Fixed Capital Accounts section of the Partnership Balance Sheet.',
+      answer: false,
+      explanation: 'NEVER! A Partner’s Loan is a debt owed by the partnership and MUST be shown under NON-CURRENT LIABILITIES!',
+    },
+    {
+      statement: 'If Partner B finishes the year with a Debit (overdrawn) Current Account balance of $3,000, that $3,000 is SUBTRACTED in brackets inside the Current Accounts section of the Balance Sheet.',
+      answer: true,
+      explanation: 'Yes — an overdrawn Debit Current Account reduces total partners’ equity, so it is shown in brackets and subtracted.',
+    },
+    {
+      statement: 'The Non-Current Assets, Current Assets, Current Liabilities, and Working Capital sections of a Partnership Balance Sheet follow the exact same layout as a Sole Trader Balance Sheet.',
+      answer: true,
+      explanation: '100% True — only the "Financed By" section changes to display each partner’s Capital, Current Account, and any Partner’s Loan.',
+    },
+    {
+      statement: 'If unpaid Loan Interest owed to a partner has already been credited to that partner’s Current Account, it should ALSO be listed under Current Liabilities on the Balance Sheet.',
+      answer: false,
+      explanation: 'Listing it in BOTH places double-counts the liability and immediately puts your Balance Sheet out of balance!',
+    },
+    {
+      statement: 'In a properly balanced Partnership Balance Sheet, Total Net Assets (NCA + Working Capital) equals Fixed Capital + Net Current Accounts + Non-Current Liabilities.',
+      answer: true,
+      explanation: 'Spot on! Total Net Assets = Total Capital Employed.',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s8-08-project"
+  title="Section 8 Capstone Project (Part 3 of 3): Complete Balance Sheet for SunCoast Architects"
+  duration="25 mins"
+  scenario="Complete your 3-part SunCoast Architects partnership package (using your exact closing balances from Projects 8.6 and 8.7!) by constructing its 3-column Vertical Classified Balance Sheet as at 31 December 2026: Non-Current Assets — Studio Office (Cost $60,000, no depr.); CAD Equipment (Cost $25,000, Accum. Depr. $6,000). Current Assets — Design Supplies Inventory $4,500; Trade Receivables $11,500 (less Provision for Doubtful Debts $500); Cash at Bank $7,200. Current Liabilities — Trade Payables $6,200; Accrued Utilities $800. Financed By (from Projects 8.6 & 8.7) — Fixed Capitals: C. Brown $50,000, D. Patel $30,000; Closing Current Accounts: C. Brown ($1,700) Debit Overdrawn, D. Patel $6,400 Credit; Non-Current Liability: 8% Loan from Partner D. Patel $10,000 (remember: its $800 unpaid interest was ALREADY credited in Patel’s Current Account!)."
+  steps={[
+    'Draw a clean 3-column vertical Balance Sheet headed "SunCoast Architects — Balance Sheet as at 31 December 2026".',
+    'Complete the Top Half (Non-Current Assets Cost/Accum. Depr./NBV + Current Assets − Current Liabilities = Working Capital → Total Net Assets).',
+    'Complete the Partnership "Financed By" section displaying Fixed Capitals, Current Accounts (remember brackets on Brown’s overdrawn $1,700!), and Patel’s 8% Loan under Non-Current Liabilities.',
+    'Double-underline both grand totals and confirm Total Net Assets = Total Capital Employed to the exact penny!',
+  ]}
+  deliverables={[
+    'Complete 3-column Vertical Partnership Balance Sheet for SunCoast Architects',
+    'Confirmed double-underlined balance proof',
+    '1-sentence note explaining why Patel’s $800 Loan Interest does NOT appear under Current Liabilities here',
+  ]}
+  rubric={[
+    'Top Half exact figures: NCA NBV = $79,000 ($60,000 + $19,000); CA = $22,700 ($4,500 + $11,000 + $7,200) − CL $7,000 ($6,200 + $800) = Working Capital $15,700 → Total Net Assets = $94,700!',
+    'Financed By exact figures: Fixed Capitals $80,000 ($50k + $30k) + Net Current Accounts $4,700 ($6,400 Cr − $1,700 Dr) + 8% Loan from D. Patel $10,000 = Total Capital Employed $94,700!',
+    'Exact Match: $94,700 = $94,700 ✓ — and note correctly explains that the $800 Loan Interest was already credited inside Patel’s Current Account!',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **Top Half** = Identical to Sole Trader (`NCA + Working Capital = Total Net Assets`).
+- **Financed By** = **Fixed Capitals** + **Current Accounts (`Cr` added, `Dr` subtracted in brackets!)** + **Non-Current Liabilities (including Partner’s Loan!)**.
+- Congratulations — you have mastered **Section 8 (Accounting for Partnerships)**! Next up: **Section 9 (Limited Liability Companies, Co-operative Societies & Non-Profit Organizations)**!
+:::

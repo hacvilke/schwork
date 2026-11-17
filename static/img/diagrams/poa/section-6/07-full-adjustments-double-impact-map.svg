@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 500" role="img" aria-label="Double-impact map showing how every Trial Balance footnote adjustment enters BOTH the Income Statement and the Balance Sheet">
+  <defs>
+    <style>
+      .title { font: 700 20px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .sub { font: 500 13px system-ui, -apple-system, sans-serif; fill: #4A5560; }
+      .th { font: 700 13px system-ui, -apple-system, sans-serif; fill: #FCFBF8; }
+      .td { font: 500 12px system-ui, -apple-system, sans-serif; fill: #222222; }
+      .bold { font: 700 12.2px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .sage { font: 700 12px system-ui, -apple-system, sans-serif; fill: #2E6359; }
+      .coral { font: 700 12px system-ui, -apple-system, sans-serif; fill: #C84E24; }
+    </style>
+  </defs>
+
+  <rect width="920" height="500" rx="14" fill="#F8F6F1" stroke="#CEDCD6" stroke-width="1.5"/>
+  <text x="32" y="38" class="title">The Golden "TWICE" Rule: Every Footnote Adjustment Goes TWO Places!</text>
+  <text x="32" y="58" class="sub">Items INSIDE the Trial Balance appear ONCE. Items in the ADDITIONAL NOTES below the Trial Balance ALWAYS appear TWICE (IS + BS)!</text>
+
+  <!-- Table Header -->
+  <rect x="32" y="76" width="856" height="36" rx="8" fill="#1B365D"/>
+  <text x="48" y="99" class="th">Year-End Note Below Trial Balance</text>
+  <text x="312" y="99" class="th">Impact #1: Income Statement</text>
+  <text x="614" y="99" class="th">Impact #2: Balance Sheet</text>
+
+  <!-- Row 1: Closing Inventory -->
+  <rect x="32" y="116" width="856" height="44" rx="5" fill="#FCFBF8" stroke="#CEDCD6"/>
+  <text x="48" y="143" class="bold">1. Closing Inventory</text>
+  <text x="312" y="143" class="sage">SUBTRACT in Cost of Goods Sold</text>
+  <text x="614" y="143" class="sage">Current Asset (Inventory)</text>
+
+  <!-- Row 2: Accrued Expense -->
+  <rect x="32" y="164" width="856" height="44" rx="5" fill="#EBF2EF" stroke="#CEDCD6"/>
+  <text x="48" y="191" class="bold">2. Accrued Expense (Owing)</text>
+  <text x="312" y="191" class="coral">ADD to Expense (Operating Exp.)</text>
+  <text x="614" y="191" class="coral">Current Liability (Accrued Exp.)</text>
+
+  <!-- Row 3: Prepaid Expense -->
+  <rect x="32" y="212" width="856" height="44" rx="5" fill="#FCFBF8" stroke="#CEDCD6"/>
+  <text x="48" y="239" class="bold">3. Prepaid Expense (Advance)</text>
+  <text x="312" y="239" class="sage">SUBTRACT from Expense</text>
+  <text x="614" y="239" class="sage">Current Asset (Prepayments)</text>
+
+  <!-- Row 4: Accrued / Unearned Revenue -->
+  <rect x="32" y="260" width="856" height="44" rx="5" fill="#EBF2EF" stroke="#CEDCD6"/>
+  <text x="48" y="287" class="bold">4. Accrued / Unearned Income</text>
+  <text x="312" y="287" class="td">Accrued: ADD to Rev  |  Advance: SUB</text>
+  <text x="614" y="287" class="td">Accrued: CA  |  Advance: CL</text>
+
+  <!-- Row 5: New Bad Debts -->
+  <rect x="32" y="308" width="856" height="44" rx="5" fill="#FCFBF8" stroke="#CEDCD6"/>
+  <text x="48" y="335" class="bold">5. Additional Bad Debts</text>
+  <text x="312" y="335" class="coral">ADD to Bad Debts (Operating Exp.)</text>
+  <text x="614" y="335" class="coral">SUBTRACT from Trade Receivables</text>
+
+  <!-- Row 6: Provision for Doubtful Debts -->
+  <rect x="32" y="356" width="856" height="44" rx="5" fill="#EBF2EF" stroke="#CEDCD6"/>
+  <text x="48" y="383" class="bold">6. Provision for Doubtful Debts</text>
+  <text x="312" y="383" class="td">CHANGE only (+Exp / −Add to GP)</text>
+  <text x="614" y="383" class="coral">SUBTRACT FULL New Prov. from AR</text>
+
+  <!-- Row 7: Annual Depreciation -->
+  <rect x="32" y="404" width="856" height="44" rx="5" fill="#FCFBF8" stroke="#CEDCD6"/>
+  <text x="48" y="431" class="bold">7. Current Year Depreciation</text>
+  <text x="312" y="431" class="coral">Operating Expense (THIS year only)</text>
+  <text x="614" y="431" class="coral">ADD to Accum. Depr. (Deduct from Cost)</text>
+
+  <!-- Bottom Exam Proof Strip -->
+  <rect x="32" y="458" width="856" height="30" rx="7" fill="#2E6359"/>
+  <text x="460" y="478" text-anchor="middle" style="font: 700 12.5px system-ui; fill: #FCFBF8;">Tick every Note TWICE (✓ IS  +  ✓ BS) — if every footnote is ticked twice, your Balance Sheet WILL balance!</text>
+</svg>

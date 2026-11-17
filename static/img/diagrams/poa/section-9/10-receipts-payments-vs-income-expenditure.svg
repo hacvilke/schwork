@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 450" role="img" aria-label="Side-by-side contrast between a Receipts and Payments Account (Cash Basis) and an Income and Expenditure Account (Accrual Basis)">
+  <defs>
+    <style>
+      .title { font: 700 20px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .sub { font: 500 13px system-ui, -apple-system, sans-serif; fill: #4A5560; }
+      .hdr { font: 700 14px system-ui, -apple-system, sans-serif; fill: #FCFBF8; }
+      .h3 { font: 700 13px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .body { font: 500 12px system-ui, -apple-system, sans-serif; fill: #222222; }
+      .sage { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #2E6359; }
+      .coral { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #C84E24; }
+    </style>
+  </defs>
+
+  <rect width="920" height="450" rx="14" fill="#F8F6F1" stroke="#CEDCD6" stroke-width="1.5"/>
+  <text x="32" y="38" class="title">Receipts &amp; Payments Account vs. Income &amp; Expenditure Account</text>
+  <text x="32" y="58" class="sub">The #1 Non-Profit Exam Distinction: Receipts &amp; Payments tracks ALL CASH (Capital + Revenue); Income &amp; Expenditure tracks ACCRUAL REVENUE ONLY!</text>
+
+  <!-- Left Card: Receipts & Payments -->
+  <rect x="32" y="80" width="420" height="296" rx="11" fill="#FCFBF8" stroke="#1B365D" stroke-width="1.8"/>
+  <rect x="32" y="80" width="420" height="36" rx="10" fill="#1B365D"/>
+  <text x="242" y="103" text-anchor="middle" class="hdr">Receipts &amp; Payments A/c (Summary Cash Book)</text>
+
+  <text x="50" y="140" class="h3">Basis: STRICT CASH BASIS</text>
+  <text x="50" y="164" class="sage">• Starts with: Opening Cash / Bank Balance b/d</text>
+  <text x="50" y="186" class="body">• Debit side: ALL Cash &amp; Cheques RECEIVED</text>
+  <text x="50" y="208" class="body">• Credit side: ALL Cash &amp; Cheques PAID OUT</text>
+  <text x="50" y="234" class="coral">• Includes BOTH Capital &amp; Revenue items!</text>
+  <text x="60" y="252" class="body">(e.g. buying new gym equipment $5,000 IS included!)</text>
+  <text x="50" y="276" class="coral">• Ignores accruals, prepayments &amp; depreciation!</text>
+  <text x="50" y="300" class="body">• Includes cash received for LAST yr &amp; NEXT yr</text>
+
+  <rect x="48" y="318" width="388" height="44" rx="7" fill="#EBF2EF"/>
+  <text x="242" y="337" text-anchor="middle" class="h3">Ends With: Closing Cash / Bank Balance c/d</text>
+  <text x="242" y="354" text-anchor="middle" class="body">(Does NOT show whether club made a Surplus or Deficit!)</text>
+
+  <!-- Right Card: Income & Expenditure -->
+  <rect x="468" y="80" width="420" height="296" rx="11" fill="#FCFBF8" stroke="#2E6359" stroke-width="1.8"/>
+  <rect x="468" y="80" width="420" height="36" rx="10" fill="#2E6359"/>
+  <text x="678" y="103" text-anchor="middle" class="hdr">Income &amp; Expenditure A/c (Club Income Stmt)</text>
+
+  <text x="486" y="140" class="sage">Basis: STRICT ACCRUAL &amp; MATCHING BASIS</text>
+  <text x="486" y="164" class="body">• NO Opening or Closing Cash/Bank Balances!</text>
+  <text x="486" y="186" class="sage">• Includes ONLY THIS YEAR'S Revenue Income</text>
+  <text x="486" y="208" class="body">• Includes ONLY THIS YEAR'S Revenue Expenses</text>
+  <text x="486" y="234" class="coral">• EXCLUDES Capital Expenditure &amp; Capital Receipts!</text>
+  <text x="496" y="252" class="body">(Buying $5,000 equipment → Balance Sheet Asset!)</text>
+  <text x="486" y="276" class="sage">• INCLUDES Accruals, Prepayments &amp; Depreciation!</text>
+  <text x="486" y="300" class="body">• Includes Net Bar / Dance Profit (or Loss)</text>
+
+  <rect x="484" y="318" width="388" height="44" rx="7" fill="#EBF2EF"/>
+  <text x="678" y="337" text-anchor="middle" class="sage">Ends With: SURPLUS or DEFICIT for the Year</text>
+  <text x="678" y="354" text-anchor="middle" class="body">(Transferred directly to Accumulated Fund on Bal Sheet!)</text>
+
+  <!-- Bottom Exam Tip -->
+  <rect x="32" y="394" width="856" height="40" rx="8" fill="#1B365D"/>
+  <text x="460" y="419" text-anchor="middle" style="font: 700 12.5px system-ui; fill: #FCFBF8;">Watch Out: In a Receipts &amp; Payments A/c, Receipts sit on DEBIT &amp; Payments on CREDIT — identical to a Cash Book!</text>
+</svg>

@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 420" fill="none" role="img" aria-label="Five Fundamental Ethical Principles Supporting Public Trust in Accounting">
+  <rect width="820" height="420" rx="12" fill="#1B365D"/>
+  <rect x="14" y="14" width="792" height="392" rx="10" stroke="#2D507C" stroke-width="1.2"/>
+
+  <text x="34" y="46" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="18" font-weight="700">The Five Pillars of Accounting Ethics</text>
+  <text x="34" y="66" fill="#9DD9CB" font-family="monospace" font-size="11.5">INTERNATIONAL CODE OF ETHICS FOR PROFESSIONAL ACCOUNTANTS</text>
+
+  <!-- Roof / Public Trust Beam -->
+  <polygon points="410,82 770,124 50,124" fill="#C84E24" stroke="#F5A352" stroke-width="2"/>
+  <text x="410" y="114" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="14" font-weight="800">PUBLIC TRUST &amp; CREDIBLE FINANCIAL REPORTING</text>
+
+  <!-- 5 Pillars -->
+  <g font-family="system-ui, sans-serif">
+    <!-- Pillar 1 -->
+    <rect x="52" y="138" width="134" height="202" rx="9" fill="#122440" stroke="#6BC4B0" stroke-width="1.7"/>
+    <rect x="52" y="138" width="134" height="34" rx="9" fill="#4E8577"/>
+    <text x="119" y="160" text-anchor="middle" fill="#FFFFFF" font-size="12" font-weight="700">1. INTEGRITY</text>
+    <text x="119" y="196" text-anchor="middle" fill="#F4F7FA" font-size="11" font-weight="600">Honest &amp; Straight</text>
+    <text x="119" y="220" text-anchor="middle" fill="#BFD4E4" font-size="10">No false figures,</text>
+    <text x="119" y="236" text-anchor="middle" fill="#BFD4E4" font-size="10">omissions, or</text>
+    <text x="119" y="252" text-anchor="middle" fill="#BFD4E4" font-size="10">misleading reports.</text>
+    <text x="119" y="320" text-anchor="middle" fill="#F5A352" font-family="monospace" font-size="9.5" font-weight="700">TRUTHFULNESS</text>
+
+    <!-- Pillar 2 -->
+    <rect x="197" y="138" width="134" height="202" rx="9" fill="#122440" stroke="#6BC4B0" stroke-width="1.7"/>
+    <rect x="197" y="138" width="134" height="34" rx="9" fill="#4E8577"/>
+    <text x="264" y="160" text-anchor="middle" fill="#FFFFFF" font-size="12" font-weight="700">2. OBJECTIVITY</text>
+    <text x="264" y="196" text-anchor="middle" fill="#F4F7FA" font-size="11" font-weight="600">Unbiased Judgment</text>
+    <text x="264" y="220" text-anchor="middle" fill="#BFD4E4" font-size="10">Free from bias,</text>
+    <text x="264" y="236" text-anchor="middle" fill="#BFD4E4" font-size="10">bribes, or conflicts</text>
+    <text x="264" y="252" text-anchor="middle" fill="#BFD4E4" font-size="10">of interest.</text>
+    <text x="264" y="320" text-anchor="middle" fill="#F5A352" font-family="monospace" font-size="9.5" font-weight="700">INDEPENDENCE</text>
+
+    <!-- Pillar 3 -->
+    <rect x="342" y="138" width="136" height="202" rx="9" fill="#122440" stroke="#6BC4B0" stroke-width="1.7"/>
+    <rect x="342" y="138" width="136" height="34" rx="9" fill="#4E8577"/>
+    <text x="410" y="159" text-anchor="middle" fill="#FFFFFF" font-size="11" font-weight="700">3. COMPETENCE</text>
+    <text x="410" y="196" text-anchor="middle" fill="#F4F7FA" font-size="11" font-weight="600">Skill &amp; Due Care</text>
+    <text x="410" y="220" text-anchor="middle" fill="#BFD4E4" font-size="10">Maintain current</text>
+    <text x="410" y="236" text-anchor="middle" fill="#BFD4E4" font-size="10">standards, work</text>
+    <text x="410" y="252" text-anchor="middle" fill="#BFD4E4" font-size="10">diligently &amp; accurately.</text>
+    <text x="410" y="320" text-anchor="middle" fill="#F5A352" font-family="monospace" font-size="9.5" font-weight="700">DUE CARE</text>
+
+    <!-- Pillar 4 -->
+    <rect x="489" y="138" width="134" height="202" rx="9" fill="#122440" stroke="#6BC4B0" stroke-width="1.7"/>
+    <rect x="489" y="138" width="134" height="34" rx="9" fill="#4E8577"/>
+    <text x="556" y="159" text-anchor="middle" fill="#FFFFFF" font-size="10.8" font-weight="700">4. CONFIDENTIAL</text>
+    <text x="556" y="196" text-anchor="middle" fill="#F4F7FA" font-size="11" font-weight="600">Protect Client Data</text>
+    <text x="556" y="220" text-anchor="middle" fill="#BFD4E4" font-size="10">Never leak or trade</text>
+    <text x="556" y="236" text-anchor="middle" fill="#BFD4E4" font-size="10">private records unless</text>
+    <text x="556" y="252" text-anchor="middle" fill="#BFD4E4" font-size="10">legally required.</text>
+    <text x="556" y="320" text-anchor="middle" fill="#F5A352" font-family="monospace" font-size="9.5" font-weight="700">PRIVACY</text>
+
+    <!-- Pillar 5 -->
+    <rect x="634" y="138" width="134" height="202" rx="9" fill="#122440" stroke="#6BC4B0" stroke-width="1.7"/>
+    <rect x="634" y="138" width="134" height="34" rx="9" fill="#4E8577"/>
+    <text x="701" y="159" text-anchor="middle" fill="#FFFFFF" font-size="11" font-weight="700">5. BEHAVIOUR</text>
+    <text x="701" y="196" text-anchor="middle" fill="#F4F7FA" font-size="11" font-weight="600">Uphold Reputation</text>
+    <text x="701" y="220" text-anchor="middle" fill="#BFD4E4" font-size="10">Obey laws &amp; avoid</text>
+    <text x="701" y="236" text-anchor="middle" fill="#BFD4E4" font-size="10">conduct that discredits</text>
+    <text x="701" y="252" text-anchor="middle" fill="#BFD4E4" font-size="10">the profession.</text>
+    <text x="701" y="320" text-anchor="middle" fill="#F5A352" font-family="monospace" font-size="9.5" font-weight="700">COMPLIANCE</text>
+  </g>
+
+  <!-- Foundation base -->
+  <rect x="50" y="354" width="720" height="34" rx="8" fill="#122440" stroke="#9DD9CB" stroke-width="1.4"/>
+  <text x="410" y="375" text-anchor="middle" fill="#9DD9CB" font-family="monospace" font-size="11.5" font-weight="700">FOUNDATION: ACCOUNTING LAWS · PROFESSIONAL BODIES · INTERNAL CONTROLS</text>
+</svg>
