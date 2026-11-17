@@ -1,0 +1,132 @@
+/* Styles for <DiagramFigure /> — responsive diagram card with fullscreen zoom modal */
+
+.card {
+  margin: 1.6rem 0;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1.5px solid var(--schwork-border);
+  background: #132238;
+  box-shadow: 0 8px 24px rgba(11, 21, 36, 0.12);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.65rem 1rem;
+  background: #0d192b;
+  border-bottom: 1px solid rgba(43, 179, 192, 0.25);
+}
+
+.sourceTag {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--schwork-cyan-light);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.expandBtn {
+  min-height: 36px;
+  padding: 0.3rem 0.7rem;
+  border-radius: 7px;
+  border: 1px solid rgba(43, 179, 192, 0.4);
+  background: #172b46;
+  color: #ffffff;
+  font-family: var(--ifm-font-family-base);
+  font-size: 0.78rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  cursor: pointer;
+}
+
+.expandBtn:hover {
+  border-color: var(--schwork-lime);
+  color: var(--schwork-lime);
+}
+
+.mediaBtn {
+  display: block;
+  width: 100%;
+  border: none;
+  background: #132238;
+  padding: 0.75rem;
+  cursor: zoom-in;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  max-width: 720px;
+  margin: 0 auto;
+  height: auto;
+  border-radius: 8px;
+}
+
+.caption {
+  padding: 0.75rem 1rem;
+  background: var(--schwork-surface);
+  color: var(--schwork-text-muted);
+  font-size: 0.88rem;
+  line-height: 1.5;
+  border-top: 1px solid var(--schwork-border);
+}
+
+.lightboxBackdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(7, 14, 24, 0.92);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.lightboxClose {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  min-width: 46px;
+  min-height: 46px;
+  border-radius: 10px;
+  border: 2px solid var(--schwork-lime);
+  background: var(--schwork-navy);
+  color: var(--schwork-lime);
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.lightboxContent {
+  max-width: 96vw;
+  max-height: 82vh;
+  overflow: auto;
+  border-radius: 12px;
+  border: 1.5px solid var(--schwork-cyan);
+  background: #132238;
+  padding: 0.75rem;
+}
+
+.lightboxImage {
+  display: block;
+  width: 100%;
+  min-width: 300px;
+  max-width: 980px;
+  height: auto;
+}
+
+.lightboxCaption {
+  margin-top: 0.75rem;
+  color: #dcebf3;
+  font-size: 0.9rem;
+  text-align: center;
+  max-width: 680px;
+}

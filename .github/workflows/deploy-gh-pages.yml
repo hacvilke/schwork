@@ -29,12 +29,21 @@ jobs:
           node-version: 22
           cache: npm
 
+      - name: Configure GitHub Pages
+        id: pages
+        uses: actions/configure-pages@v5
+
       - name: Install dependencies
         run: npm ci
 
-      - name: Build static site (GitHub Pages baseUrl)
+      - name: Run unit tests
+        run: npm test
+
+      - name: Build static site for GitHub Pages
         env:
           DEPLOY_TARGET: gh-pages
+          SITE_URL: ${{ steps.pages.outputs.origin }}
+          BASE_URL: ${{ steps.pages.outputs.base_path }}/
         run: npm run build:gh-pages
 
       - name: Upload GitHub Pages artifact

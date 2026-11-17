@@ -1,19 +1,41 @@
-import React, {useMemo, useRef, useState} from 'react';
+/**
+ * Touch-friendly interactive SVG function grapher for Maths, Physics, and POA lessons.
+ *
+ * Pure coordinate and curve-sampling math lives in `./graphMath.ts` so this file
+ * stays focused on user interactions (pan, zoom, sliders, trace readout) and rendering.
+ */
+
+import React, {useId, useMemo, useRef, useState} from 'react';
 import {RotateCcw, ZoomIn, ZoomOut} from 'lucide-react';
 import {compileExpression} from '@site/src/utils/mathParser';
-import styles from './lesson.module.css';
-
-export type CurveColor = 'cyan' | 'lime' | 'softCyan' | 'coral';
+import {
+  buildAxisTicks,
+  CURVE_COLORS,
+  formatTickLabel,
+  GRAPH_LAYOUT,
+  mathToSvgX,
+  mathToSvgY,
+  sampleCurvePath,
+  svgToMathX,
+  type CurveColor,
+} from './graphMath';
+import styles from './InteractiveGraph.module.css';
 
 export interface GraphCurve {
+  /** Math expression in terms of x and any slider parameter names (e.g. "a*x^2 + b*x + c"). */
   expr: string;
+  /** Human-readable label shown in the legend. Defaults to `y = ${expr}`. */
   label?: string;
+  /** Theme colour name. Defaults to 'cyan' for the first curve, 'lime' for the second. */
   color?: CurveColor;
+  /** Render as a dashed reference line (useful for asymptotes or y = 0). */
   dashed?: boolean;
 }
 
 export interface GraphParameter {
+  /** Variable name used inside curve expressions (e.g. "a", "m", "c"). */
   name: string;
+  /** Friendly slider label (e.g. "Gradient (m)"). */
   label?: string;
   min: number;
   max: number;
@@ -29,44 +51,45 @@ export interface GraphPoint {
 }
 
 export interface InteractiveGraphProps {
+  /** Heading shown in the top toolbar. */
   title?: string;
+  /** One or more mathematical curves to plot. */
   curves: GraphCurve[];
+  /** Optional interactive sliders wired to variables in the curve expressions. */
   parameters?: GraphParameter[];
+  /** Optional key points (intercepts, turning points) highlighted on the graph. */
   points?: GraphPoint[];
+  /** Initial visible x-axis range [min, max]. Defaults to [-8, 8]. */
   xDomain?: [number, number];
+  /** Initial visible y-axis range [min, max]. Defaults to [-6, 6]. */
   yDomain?: [number, number];
   xLabel?: string;
   yLabel?: string;
+  /** Allow students to type their own expression for the primary curve. */
   allowCustomExpr?: boolean;
 }
 
-const COLOR_HEX: Record<CurveColor, string> = {
-  cyan: '#2BB3C0',
-  lime: '#C8FF00',
-  softCyan: '#7ADBE4',
-  coral: '#FF6B6B',
-};
-
-const SVG_W = 680;
-const SVG_H = 400;
-const PAD = {top: 22, right: 22, bottom: 34, left: 42};
-const PLOT_W = SVG_W - PAD.left - PAD.right;
-const PLOT_H = SVG_H - PAD.top - PAD.bottom;
-
-function niceStep(range: number): number {
-  const rough = range / 8;
-  const pow10 = Math.pow(10, Math.floor(Math.log10(Math.max(rough, 1e-6))));
-  const norm = rough / pow10;
-  if (norm <= 1.5) return pow10;
-  if (norm <= 3) return 2 * pow10;
-  if (norm <= 7) return 5 * pow10;
-  return 10 * pow10;
+interface DragState {
+  isDragging: boolean;
+  hasMoved: boolean;
+  startClientX: number;
+  startClientY: number;
+  startXRange: [number, number];
+  startYRange: [number, number];
 }
 
-function formatTick(n: number): string {
-  if (Math.abs(n) < 1e-9) return '0';
-  if (Math.abs(n) >= 1000 || Math.abs(n) < 0.01) return n.toExponential(1);
-  return Number(n.toFixed(2)).toString();
+function getDefaultCurveColor(index: number): CurveColor {
+  if (index === 0) return 'cyan';
+  if (index === 1) return 'lime';
+  return 'softCyan';
+}
+
+function buildInitialParameters(parameters: GraphParameter[]): Record<string, number> {
+  const values: Record<string, number> = {};
+  for (const param of parameters) {
+    values[param.name] = param.defaultValue;
+  }
+  return values;
 }
 
 export default function InteractiveGraph({
@@ -80,135 +103,83 @@ export default function InteractiveGraph({
   yLabel = 'y',
   allowCustomExpr = false,
 }: InteractiveGraphProps): React.JSX.Element {
+  // 1. Viewport, slider, and trace state
   const [xRange, setXRange] = useState<[number, number]>(xDomain);
   const [yRange, setYRange] = useState<[number, number]>(yDomain);
 
-  const initialParams = useMemo(() => {
-    const map: Record<string, number> = {};
-    for (const p of parameters) {
-      map[p.name] = p.defaultValue;
-    }
-    return map;
-  }, [parameters]);
-
+  const initialParams = useMemo(() => buildInitialParameters(parameters), [parameters]);
   const [paramValues, setParamValues] = useState<Record<string, number>>(initialParams);
   const [customExpr, setCustomExpr] = useState(curves[0]?.expr ?? 'x^2');
   const [traceX, setTraceX] = useState<number | null>(null);
 
+  const uniqueId = useId();
+  const clipPathId = `schwork-graph-clip-${uniqueId}`;
+  const exprInputId = `schwork-expr-input-${uniqueId}`;
+
   const svgRef = useRef<SVGSVGElement | null>(null);
-  const dragRef = useRef<{
-    active: boolean;
-    startClientX: number;
-    startClientY: number;
-    startXRange: [number, number];
-    startYRange: [number, number];
-    moved: boolean;
-  }>({
-    active: false,
+  const dragRef = useRef<DragState>({
+    isDragging: false,
+    hasMoved: false,
     startClientX: 0,
     startClientY: 0,
     startXRange: xDomain,
     startYRange: yDomain,
-    moved: false,
   });
 
+  // 2. Compile curve expressions & calculate ticks and SVG paths
   const activeCurves = useMemo<GraphCurve[]>(() => {
     if (!allowCustomExpr || curves.length === 0) return curves;
-    return [{...curves[0], expr: customExpr, label: `y = ${customExpr}`}, ...curves.slice(1)];
+    const editablePrimary = {
+      ...curves[0],
+      expr: customExpr,
+      label: `y = ${customExpr}`,
+    };
+    return [editablePrimary, ...curves.slice(1)];
   }, [allowCustomExpr, curves, customExpr]);
 
   const compiledCurves = useMemo(
     () =>
-      activeCurves.map((c, idx) => ({
-        ...c,
-        colorHex: COLOR_HEX[c.color ?? (idx === 0 ? 'cyan' : idx === 1 ? 'lime' : 'softCyan')],
-        fn: compileExpression(c.expr),
+      activeCurves.map((curve, index) => ({
+        ...curve,
+        colorHex: CURVE_COLORS[curve.color ?? getDefaultCurveColor(index)],
+        fn: compileExpression(curve.expr),
       })),
     [activeCurves],
   );
 
-  const toSvgX = (x: number) =>
-    PAD.left + ((x - xRange[0]) / (xRange[1] - xRange[0])) * PLOT_W;
+  const xTicks = useMemo(() => buildAxisTicks(xRange), [xRange]);
+  const yTicks = useMemo(() => buildAxisTicks(yRange), [yRange]);
 
-  const toSvgY = (y: number) =>
-    PAD.top + ((yRange[1] - y) / (yRange[1] - yRange[0])) * PLOT_H;
+  const curvePaths = useMemo(
+    () =>
+      compiledCurves.map((curve) =>
+        sampleCurvePath(curve.fn, paramValues, xRange, yRange),
+      ),
+    [compiledCurves, paramValues, xRange, yRange],
+  );
 
-  const fromSvgX = (sx: number) =>
-    xRange[0] + ((sx - PAD.left) / PLOT_W) * (xRange[1] - xRange[0]);
-
-  const xTicks = useMemo(() => {
-    const step = niceStep(xRange[1] - xRange[0]);
-    const start = Math.ceil(xRange[0] / step) * step;
-    const out: number[] = [];
-    for (let v = start; v <= xRange[1] + step * 1e-6; v += step) {
-      out.push(Number(v.toFixed(6)));
-    }
-    return out;
-  }, [xRange]);
-
-  const yTicks = useMemo(() => {
-    const step = niceStep(yRange[1] - yRange[0]);
-    const start = Math.ceil(yRange[0] / step) * step;
-    const out: number[] = [];
-    for (let v = start; v <= yRange[1] + step * 1e-6; v += step) {
-      out.push(Number(v.toFixed(6)));
-    }
-    return out;
-  }, [yRange]);
-
-  const curvePaths = useMemo(() => {
-    const samples = 260;
-    const spanY = yRange[1] - yRange[0];
-    const maxJump = spanY * 1.4;
-
-    return compiledCurves.map((curve) => {
-      if (!curve.fn) return '';
-      const segments: string[] = [];
-      let penDown = false;
-      let prevY = 0;
-
-      for (let i = 0; i <= samples; i++) {
-        const x = xRange[0] + (i / samples) * (xRange[1] - xRange[0]);
-        const y = curve.fn({...paramValues, x});
-
-        if (!Number.isFinite(y) || Math.abs(y) > Math.max(Math.abs(yRange[0]), Math.abs(yRange[1])) * 6 + 50) {
-          penDown = false;
-          continue;
-        }
-
-        if (penDown && Math.abs(y - prevY) > maxJump) {
-          penDown = false;
-        }
-
-        const sx = toSvgX(x);
-        const sy = toSvgY(y);
-        segments.push(`${penDown ? 'L' : 'M'}${sx.toFixed(2)},${sy.toFixed(2)}`);
-        penDown = true;
-        prevY = y;
-      }
-
-      return segments.join(' ');
-    });
-  }, [compiledCurves, paramValues, xRange, yRange]);
-
-  const primaryTrace = useMemo(() => {
-    if (traceX === null || !compiledCurves[0]?.fn) return null;
-    const y = compiledCurves[0].fn({...paramValues, x: traceX});
-    if (!Number.isFinite(y)) return null;
-    return {x: traceX, y};
+  const tracedPoint = useMemo(() => {
+    const primaryFn = compiledCurves[0]?.fn;
+    if (traceX === null || !primaryFn) return null;
+    const y = primaryFn({...paramValues, x: traceX});
+    return Number.isFinite(y) ? {x: traceX, y} : null;
   }, [traceX, compiledCurves, paramValues]);
 
-  const zoom = (factor: number) => {
-    const cx = (xRange[0] + xRange[1]) / 2;
-    const cy = (yRange[0] + yRange[1]) / 2;
-    const halfX = ((xRange[1] - xRange[0]) / 2) * factor;
-    const halfY = ((yRange[1] - yRange[0]) / 2) * factor;
-    if (halfX < 0.25 || halfX > 250) return;
-    setXRange([cx - halfX, cx + halfX]);
-    setYRange([cy - halfY, cy + halfY]);
+  // 3. Zoom, reset, and pointer pan / tap-to-trace handlers
+  const zoomBy = (scaleFactor: number) => {
+    const centerX = (xRange[0] + xRange[1]) / 2;
+    const centerY = (yRange[0] + yRange[1]) / 2;
+    const nextHalfX = ((xRange[1] - xRange[0]) / 2) * scaleFactor;
+    const nextHalfY = ((yRange[1] - yRange[0]) / 2) * scaleFactor;
+
+    // Prevent zooming into float-precision noise or out past useful ranges
+    if (nextHalfX < 0.25 || nextHalfX > 250) return;
+
+    setXRange([centerX - nextHalfX, centerX + nextHalfX]);
+    setYRange([centerY - nextHalfY, centerY + nextHalfY]);
   };
 
-  const resetView = () => {
+  const resetGraph = () => {
     setXRange(xDomain);
     setYRange(yDomain);
     setParamValues(initialParams);
@@ -218,98 +189,108 @@ export default function InteractiveGraph({
     }
   };
 
-  const getSvgCoords = (clientX: number, clientY: number) => {
-    const svg = svgRef.current;
-    if (!svg) return null;
-    const rect = svg.getBoundingClientRect();
-    const sx = ((clientX - rect.left) / rect.width) * SVG_W;
-    const sy = ((clientY - rect.top) / rect.height) * SVG_H;
-    return {sx, sy, rect};
-  };
-
-  const handlePointerDown = (e: React.PointerEvent<SVGSVGElement>) => {
-    e.currentTarget.setPointerCapture(e.pointerId);
-    dragRef.current = {
-      active: true,
-      startClientX: e.clientX,
-      startClientY: e.clientY,
-      startXRange: xRange,
-      startYRange: yRange,
-      moved: false,
+  const clientToSvgPoint = (clientX: number, clientY: number) => {
+    const svgElement = svgRef.current;
+    if (!svgElement) return null;
+    const bounds = svgElement.getBoundingClientRect();
+    return {
+      svgX: ((clientX - bounds.left) / bounds.width) * GRAPH_LAYOUT.width,
+      svgY: ((clientY - bounds.top) / bounds.height) * GRAPH_LAYOUT.height,
+      bounds,
     };
   };
 
-  const handlePointerMove = (e: React.PointerEvent<SVGSVGElement>) => {
-    const coords = getSvgCoords(e.clientX, e.clientY);
-    if (!coords) return;
+  const isInsidePlotX = (svgX: number) =>
+    svgX >= GRAPH_LAYOUT.paddingLeft &&
+    svgX <= GRAPH_LAYOUT.width - GRAPH_LAYOUT.paddingRight;
 
-    if (dragRef.current.active) {
-      const dxPx = e.clientX - dragRef.current.startClientX;
-      const dyPx = e.clientY - dragRef.current.startClientY;
-      if (Math.abs(dxPx) > 3 || Math.abs(dyPx) > 3) {
-        dragRef.current.moved = true;
+  const handlePointerDown = (event: React.PointerEvent<SVGSVGElement>) => {
+    event.currentTarget.setPointerCapture(event.pointerId);
+    dragRef.current = {
+      isDragging: true,
+      hasMoved: false,
+      startClientX: event.clientX,
+      startClientY: event.clientY,
+      startXRange: xRange,
+      startYRange: yRange,
+    };
+  };
+
+  const handlePointerMove = (event: React.PointerEvent<SVGSVGElement>) => {
+    const pointer = clientToSvgPoint(event.clientX, event.clientY);
+    if (!pointer) return;
+
+    if (dragRef.current.isDragging) {
+      const deltaPixelsX = event.clientX - dragRef.current.startClientX;
+      const deltaPixelsY = event.clientY - dragRef.current.startClientY;
+      if (Math.abs(deltaPixelsX) > 3 || Math.abs(deltaPixelsY) > 3) {
+        dragRef.current.hasMoved = true;
       }
 
-      const [sx0, sx1] = dragRef.current.startXRange;
-      const [sy0, sy1] = dragRef.current.startYRange;
-      const dxMath = (dxPx / ((coords.rect.width * PLOT_W) / SVG_W)) * (sx1 - sx0);
-      const dyMath = (dyPx / ((coords.rect.height * PLOT_H) / SVG_H)) * (sy1 - sy0);
+      const [startXMin, startXMax] = dragRef.current.startXRange;
+      const [startYMin, startYMax] = dragRef.current.startYRange;
+      const plotWidthPx = (pointer.bounds.width * GRAPH_LAYOUT.plotWidth) / GRAPH_LAYOUT.width;
+      const plotHeightPx = (pointer.bounds.height * GRAPH_LAYOUT.plotHeight) / GRAPH_LAYOUT.height;
 
-      setXRange([sx0 - dxMath, sx1 - dxMath]);
-      setYRange([sy0 + dyMath, sy1 + dyMath]);
+      const shiftX = (deltaPixelsX / plotWidthPx) * (startXMax - startXMin);
+      const shiftY = (deltaPixelsY / plotHeightPx) * (startYMax - startYMin);
+
+      setXRange([startXMin - shiftX, startXMax - shiftX]);
+      setYRange([startYMin + shiftY, startYMax + shiftY]);
       return;
     }
 
-    if (coords.sx >= PAD.left && coords.sx <= SVG_W - PAD.right) {
-      setTraceX(fromSvgX(coords.sx));
+    // Desktop hover updates the live coordinate crosshair
+    if (isInsidePlotX(pointer.svgX)) {
+      setTraceX(svgToMathX(pointer.svgX, xRange));
     }
   };
 
-  const handlePointerUp = (e: React.PointerEvent<SVGSVGElement>) => {
-    if (dragRef.current.active && !dragRef.current.moved) {
-      const coords = getSvgCoords(e.clientX, e.clientY);
-      if (coords && coords.sx >= PAD.left && coords.sx <= SVG_W - PAD.right) {
-        setTraceX(fromSvgX(coords.sx));
+  const handlePointerUp = (event: React.PointerEvent<SVGSVGElement>) => {
+    // A tap without dragging pins the coordinate marker on phones
+    if (dragRef.current.isDragging && !dragRef.current.hasMoved) {
+      const pointer = clientToSvgPoint(event.clientX, event.clientY);
+      if (pointer && isInsidePlotX(pointer.svgX)) {
+        setTraceX(svgToMathX(pointer.svgX, xRange));
       }
     }
-    dragRef.current.active = false;
+    dragRef.current.isDragging = false;
   };
 
-  const axisXSvgY = toSvgY(0);
-  const axisYSvgX = toSvgX(0);
-  const clipId = useMemo(
-    () => `plot-clip-${Math.random().toString(36).slice(2, 9)}`,
-    [],
-  );
+  const {width, height, paddingTop, paddingRight, paddingBottom, paddingLeft, plotWidth, plotHeight} =
+    GRAPH_LAYOUT;
+  const xAxisSvgY = mathToSvgY(0, yRange);
+  const yAxisSvgX = mathToSvgX(0, xRange);
 
+  // 4. Render toolbar, HUD legend, SVG canvas, sliders, and optional expression sandbox
   return (
-    <figure className={styles.graphShell}>
-      <div className={styles.graphToolbar}>
-        <div className={styles.graphTitleWrap}>
-          <span className={styles.graphPill}>Interactive</span>
-          <span className={styles.graphTitle}>{title}</span>
+    <figure className={styles.shell}>
+      <div className={styles.toolbar}>
+        <div className={styles.titleWrap}>
+          <span className={styles.badge}>Interactive</span>
+          <span className={styles.title}>{title}</span>
         </div>
-        <div className={styles.graphControls}>
+        <div className={styles.controls}>
           <button
             type="button"
-            className={styles.graphIconBtn}
-            onClick={() => zoom(0.75)}
+            className={styles.iconBtn}
+            onClick={() => zoomBy(0.75)}
             aria-label="Zoom in"
             title="Zoom in">
             <ZoomIn size={18} />
           </button>
           <button
             type="button"
-            className={styles.graphIconBtn}
-            onClick={() => zoom(1.33)}
+            className={styles.iconBtn}
+            onClick={() => zoomBy(1.33)}
             aria-label="Zoom out"
             title="Zoom out">
             <ZoomOut size={18} />
           </button>
           <button
             type="button"
-            className={styles.graphIconBtn}
-            onClick={resetView}
+            className={styles.iconBtn}
+            onClick={resetGraph}
             aria-label="Reset graph"
             title="Reset view & sliders">
             <RotateCcw size={17} />
@@ -317,30 +298,30 @@ export default function InteractiveGraph({
         </div>
       </div>
 
-      <div className={styles.graphHud}>
+      <div className={styles.hud}>
         <div className={styles.legendList}>
-          {compiledCurves.map((c, idx) => (
-            <span key={idx} className={styles.legendItem}>
+          {compiledCurves.map((curve, index) => (
+            <span key={index} className={styles.legendItem}>
               <span
                 className={styles.legendSwatch}
-                style={{backgroundColor: c.colorHex}}
+                style={{backgroundColor: curve.colorHex}}
               />
-              <span>{c.label ?? `y = ${c.expr}`}</span>
+              <span>{curve.label ?? `y = ${curve.expr}`}</span>
             </span>
           ))}
         </div>
         <span className={styles.readoutPill}>
-          {primaryTrace
-            ? `(${primaryTrace.x.toFixed(2)}, ${primaryTrace.y.toFixed(2)})`
+          {tracedPoint
+            ? `(${tracedPoint.x.toFixed(2)}, ${tracedPoint.y.toFixed(2)})`
             : 'Tap or drag graph'}
         </span>
       </div>
 
-      <div className={styles.graphCanvasWrap}>
+      <div className={styles.canvasWrap}>
         <svg
           ref={svgRef}
-          viewBox={`0 0 ${SVG_W} ${SVG_H}`}
-          className={styles.graphSvg}
+          viewBox={`0 0 ${width} ${height}`}
+          className={styles.svg}
           role="img"
           aria-label={title}
           onPointerDown={handlePointerDown}
@@ -348,105 +329,109 @@ export default function InteractiveGraph({
           onPointerUp={handlePointerUp}
           onPointerCancel={handlePointerUp}>
           <defs>
-            <clipPath id={clipId}>
-              <rect x={PAD.left} y={PAD.top} width={PLOT_W} height={PLOT_H} />
+            <clipPath id={clipPathId}>
+              <rect x={paddingLeft} y={paddingTop} width={plotWidth} height={plotHeight} />
             </clipPath>
           </defs>
 
+          {/* Plot canvas */}
           <rect
-            x={PAD.left}
-            y={PAD.top}
-            width={PLOT_W}
-            height={PLOT_H}
+            x={paddingLeft}
+            y={paddingTop}
+            width={plotWidth}
+            height={plotHeight}
             fill="#132238"
             stroke="#223b5d"
             strokeWidth="1"
           />
 
-          {xTicks.map((tx) => {
-            const sx = toSvgX(tx);
-            if (sx < PAD.left - 1 || sx > SVG_W - PAD.right + 1) return null;
+          {/* Vertical gridlines & x-axis ticks */}
+          {xTicks.map((tick) => {
+            const svgX = mathToSvgX(tick, xRange);
+            if (svgX < paddingLeft - 1 || svgX > width - paddingRight + 1) return null;
             return (
-              <g key={`x-${tx}`}>
+              <g key={`x-${tick}`}>
                 <line
-                  x1={sx}
-                  y1={PAD.top}
-                  x2={sx}
-                  y2={SVG_H - PAD.bottom}
+                  x1={svgX}
+                  y1={paddingTop}
+                  x2={svgX}
+                  y2={height - paddingBottom}
                   stroke="#1f3654"
                   strokeWidth="1"
                 />
                 <text
-                  x={sx}
-                  y={SVG_H - PAD.bottom + 18}
+                  x={svgX}
+                  y={height - paddingBottom + 18}
                   fill="#8fb0c7"
                   fontSize="11"
                   fontFamily="monospace"
                   textAnchor="middle">
-                  {formatTick(tx)}
+                  {formatTickLabel(tick)}
                 </text>
               </g>
             );
           })}
 
-          {yTicks.map((ty) => {
-            const sy = toSvgY(ty);
-            if (sy < PAD.top - 1 || sy > SVG_H - PAD.bottom + 1) return null;
+          {/* Horizontal gridlines & y-axis ticks */}
+          {yTicks.map((tick) => {
+            const svgY = mathToSvgY(tick, yRange);
+            if (svgY < paddingTop - 1 || svgY > height - paddingBottom + 1) return null;
             return (
-              <g key={`y-${ty}`}>
+              <g key={`y-${tick}`}>
                 <line
-                  x1={PAD.left}
-                  y1={sy}
-                  x2={SVG_W - PAD.right}
-                  y2={sy}
+                  x1={paddingLeft}
+                  y1={svgY}
+                  x2={width - paddingRight}
+                  y2={svgY}
                   stroke="#1f3654"
                   strokeWidth="1"
                 />
                 <text
-                  x={PAD.left - 8}
-                  y={sy + 4}
+                  x={paddingLeft - 8}
+                  y={svgY + 4}
                   fill="#8fb0c7"
                   fontSize="11"
                   fontFamily="monospace"
                   textAnchor="end">
-                  {formatTick(ty)}
+                  {formatTickLabel(tick)}
                 </text>
               </g>
             );
           })}
 
-          <g clipPath={`url(#${clipId})`}>
-            {axisXSvgY >= PAD.top && axisXSvgY <= SVG_H - PAD.bottom && (
+          {/* Clipped plot contents: axes, curves, highlighted points, live trace crosshair */}
+          <g clipPath={`url(#${clipPathId})`}>
+            {xAxisSvgY >= paddingTop && xAxisSvgY <= height - paddingBottom && (
               <line
-                x1={PAD.left}
-                y1={axisXSvgY}
-                x2={SVG_W - PAD.right}
-                y2={axisXSvgY}
+                x1={paddingLeft}
+                y1={xAxisSvgY}
+                x2={width - paddingRight}
+                y2={xAxisSvgY}
                 stroke="#6b8ea8"
                 strokeWidth="1.6"
               />
             )}
-            {axisYSvgX >= PAD.left && axisYSvgX <= SVG_W - PAD.right && (
+            {yAxisSvgX >= paddingLeft && yAxisSvgX <= width - paddingRight && (
               <line
-                x1={axisYSvgX}
-                y1={PAD.top}
-                x2={axisYSvgX}
-                y2={SVG_H - PAD.bottom}
+                x1={yAxisSvgX}
+                y1={paddingTop}
+                x2={yAxisSvgX}
+                y2={height - paddingBottom}
                 stroke="#6b8ea8"
                 strokeWidth="1.6"
               />
             )}
 
-            {compiledCurves.map((curve, idx) => {
-              const d = curvePaths[idx];
-              if (!d) return null;
+            {compiledCurves.map((curve, index) => {
+              const pathData = curvePaths[index];
+              if (!pathData) return null;
               return (
                 <path
-                  key={idx}
-                  d={d}
+                  key={index}
+                  d={pathData}
                   fill="none"
                   stroke={curve.colorHex}
-                  strokeWidth={idx === 0 ? 3.2 : 2.5}
+                  strokeWidth={index === 0 ? 3.2 : 2.5}
                   strokeDasharray={curve.dashed ? '8 6' : undefined}
                   strokeLinecap="round"
                   strokeLinejoin="round"
@@ -454,50 +439,43 @@ export default function InteractiveGraph({
               );
             })}
 
-            {points.map((pt, idx) => {
-              const sx = toSvgX(pt.x);
-              const sy = toSvgY(pt.y);
-              const col = COLOR_HEX[pt.color ?? 'lime'];
+            {points.map((point, index) => {
+              const svgX = mathToSvgX(point.x, xRange);
+              const svgY = mathToSvgY(point.y, yRange);
+              const colorHex = CURVE_COLORS[point.color ?? 'lime'];
               return (
-                <g key={idx}>
-                  <circle
-                    cx={sx}
-                    cy={sy}
-                    r={5.5}
-                    fill={col}
-                    stroke="#0b1524"
-                    strokeWidth="2"
-                  />
-                  {pt.label && (
+                <g key={index}>
+                  <circle cx={svgX} cy={svgY} r={5.5} fill={colorHex} stroke="#0b1524" strokeWidth="2" />
+                  {point.label && (
                     <text
-                      x={sx + 9}
-                      y={sy - 8}
-                      fill={col}
+                      x={svgX + 9}
+                      y={svgY - 8}
+                      fill={colorHex}
                       fontSize="12"
                       fontWeight="700"
                       fontFamily="monospace">
-                      {pt.label}
+                      {point.label}
                     </text>
                   )}
                 </g>
               );
             })}
 
-            {primaryTrace && (
+            {tracedPoint && (
               <g>
                 <line
-                  x1={toSvgX(primaryTrace.x)}
-                  y1={PAD.top}
-                  x2={toSvgX(primaryTrace.x)}
-                  y2={SVG_H - PAD.bottom}
+                  x1={mathToSvgX(tracedPoint.x, xRange)}
+                  y1={paddingTop}
+                  x2={mathToSvgX(tracedPoint.x, xRange)}
+                  y2={height - paddingBottom}
                   stroke="#C8FF00"
                   strokeWidth="1"
                   strokeDasharray="4 4"
                   opacity="0.7"
                 />
                 <circle
-                  cx={toSvgX(primaryTrace.x)}
-                  cy={toSvgY(primaryTrace.y)}
+                  cx={mathToSvgX(tracedPoint.x, xRange)}
+                  cy={mathToSvgY(tracedPoint.y, yRange)}
                   r={6.5}
                   fill="#C8FF00"
                   stroke="#132238"
@@ -507,21 +485,17 @@ export default function InteractiveGraph({
             )}
           </g>
 
+          {/* Axis end labels */}
           <text
-            x={SVG_W - PAD.right - 4}
-            y={SVG_H - 6}
+            x={width - paddingRight - 4}
+            y={height - 6}
             fill="#7ADBE4"
             fontSize="12"
             fontWeight="700"
             textAnchor="end">
             {xLabel}
           </text>
-          <text
-            x={PAD.left + 6}
-            y={PAD.top + 14}
-            fill="#7ADBE4"
-            fontSize="12"
-            fontWeight="700">
+          <text x={paddingLeft + 6} y={paddingTop + 14} fill="#7ADBE4" fontSize="12" fontWeight="700">
             {yLabel}
           </text>
         </svg>
@@ -530,13 +504,13 @@ export default function InteractiveGraph({
       {parameters.length > 0 && (
         <div className={styles.slidersPanel}>
           {parameters.map((param) => {
-            const val = paramValues[param.name] ?? param.defaultValue;
+            const currentValue = paramValues[param.name] ?? param.defaultValue;
             return (
               <label key={param.name} className={styles.sliderRow}>
                 <span className={styles.sliderLabelRow}>
                   <span>{param.label ?? param.name}</span>
                   <span className={styles.sliderValue}>
-                    {param.name} = {val}
+                    {param.name} = {currentValue}
                   </span>
                 </span>
                 <input
@@ -545,11 +519,11 @@ export default function InteractiveGraph({
                   min={param.min}
                   max={param.max}
                   step={param.step ?? 0.5}
-                  value={val}
-                  onChange={(e) =>
-                    setParamValues((prev) => ({
-                      ...prev,
-                      [param.name]: Number(e.target.value),
+                  value={currentValue}
+                  onChange={(event) =>
+                    setParamValues((previous) => ({
+                      ...previous,
+                      [param.name]: Number(event.target.value),
                     }))
                   }
                 />
@@ -561,15 +535,15 @@ export default function InteractiveGraph({
 
       {allowCustomExpr && (
         <div className={styles.customExprBar}>
-          <label htmlFor="schwork-expr-input" className={styles.customExprLabel}>
+          <label htmlFor={exprInputId} className={styles.customExprLabel}>
             Try your own f(x) =
           </label>
           <input
-            id="schwork-expr-input"
+            id={exprInputId}
             type="text"
             className={styles.customExprInput}
             value={customExpr}
-            onChange={(e) => setCustomExpr(e.target.value)}
+            onChange={(event) => setCustomExpr(event.target.value)}
             placeholder="e.g. a*x^2 + b*x + c or 2*sin(x)"
             spellCheck={false}
             autoCapitalize="none"
@@ -578,7 +552,7 @@ export default function InteractiveGraph({
         </div>
       )}
 
-      <div className={styles.graphHint}>
+      <div className={styles.hint}>
         Drag to pan · Tap anywhere to read (x, y) coordinates · Use + / − buttons on phones to zoom.
       </div>
     </figure>

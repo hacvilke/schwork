@@ -1,11 +1,19 @@
+/**
+ * Global MDX component registry.
+ * Any component added here becomes available in every `.md` / `.mdx` lesson
+ * without needing manual import statements at the top of the file.
+ */
+
 import MDXComponents from '@theme-original/MDXComponents';
-import SyllabusHeader from '@site/src/components/lesson/SyllabusHeader';
-import ObjectivesBox from '@site/src/components/lesson/ObjectivesBox';
-import FormulaCard from '@site/src/components/lesson/FormulaCard';
-import WorkedExample from '@site/src/components/lesson/WorkedExample';
-import QuickCheck from '@site/src/components/lesson/QuickCheck';
-import InteractiveGraph from '@site/src/components/lesson/InteractiveGraph';
-import DiagramFigure from '@site/src/components/lesson/DiagramFigure';
+import {
+  DiagramFigure,
+  FormulaCard,
+  InteractiveGraph,
+  ObjectivesBox,
+  QuickCheck,
+  SyllabusHeader,
+  WorkedExample,
+} from '@site/src/components/lesson';
 
 export default {
   ...MDXComponents,

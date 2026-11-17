@@ -1,3 +1,23 @@
+/**
+ * Central subject list for the homepage and `/subjects` directory.
+ *
+ * To activate a subject once its docs folder is ready:
+ *   1. Change `status` from `'planned'` to `'live'`
+ *   2. Add `docPath: '/docs/<subject-slug>'`
+ *
+ * Example:
+ *   {
+ *     id: 'mathematics',
+ *     name: 'Mathematics',
+ *     shortCode: 'MATH',
+ *     cluster: 'Core',
+ *     status: 'live',
+ *     syllabusSections: 9,
+ *     summary: '...',
+ *     docPath: '/docs/mathematics',
+ *   }
+ */
+
 export type SubjectStatus = 'live' | 'planned';
 
 export type SubjectCluster =
