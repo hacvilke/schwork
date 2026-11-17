@@ -1,24 +1,12 @@
-/* Styles for <ObjectivesBox /> — interactive checkable syllabus objectives */
+/* Styles for <ObjectivesBox /> — Soft Sage Green module card & progress bar */
 
 .box {
-  position: relative;
-  overflow: hidden;
   background: var(--schwork-surface);
   border: 1.5px solid var(--schwork-border);
+  border-top: 4px solid var(--schwork-sage);
   border-radius: 14px;
-  padding: 1.35rem 1.25rem 1.15rem;
+  padding: 1.1rem 1.25rem;
   margin: 1.4rem 0;
-}
-
-/* Flush horizontal Cool Cyan accent bar clipped cleanly by rounded corners */
-.box::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: var(--schwork-cyan);
 }
 
 .header {
@@ -26,8 +14,8 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 0.5rem;
-  margin-bottom: 0.85rem;
+  gap: 0.6rem;
+  margin-bottom: 0.7rem;
 }
 
 .title {
@@ -36,24 +24,45 @@
   gap: 0.5rem;
   font-family: var(--ifm-heading-font-family);
   font-weight: 700;
-  font-size: 1.02rem;
-  color: var(--ifm-heading-color);
+  font-size: 1rem;
+  color: var(--schwork-navy);
   margin: 0;
+}
+
+:global(html[data-theme='dark']) .title {
+  color: #f4f7fa;
 }
 
 .progressBadge {
   font-family: var(--ifm-font-family-monospace);
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   font-weight: 700;
-  padding: 0.25rem 0.65rem;
+  padding: 0.24rem 0.65rem;
   border-radius: 999px;
   background: var(--schwork-navy);
-  color: var(--schwork-lime);
+  color: #ffffff;
 }
 
-:global(html[data-theme='dark']) .progressBadge {
-  background: #0b1524;
-  border: 1px solid rgba(200, 255, 0, 0.4);
+/* Soft Sage Green progress bar */
+.progressTrack {
+  width: 100%;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--schwork-surface-alt);
+  border: 1px solid var(--schwork-border);
+  overflow: hidden;
+  margin-bottom: 0.85rem;
+}
+
+.progressFill {
+  height: 100%;
+  border-radius: 999px;
+  background: var(--schwork-sage);
+  transition: width 0.25s ease;
+}
+
+:global(html[data-theme='dark']) .progressFill {
+  background: var(--schwork-sage-light);
 }
 
 .list {
@@ -70,28 +79,21 @@
   align-items: flex-start;
   gap: 0.7rem;
   padding: 0.55rem 0.65rem;
-  border-radius: 10px;
-  background: var(--schwork-surface-alt);
+  border-radius: 9px;
   cursor: pointer;
   min-height: 44px;
-  transition: background 0.15s ease, border-color 0.15s ease;
-  border: 1px solid transparent;
-  user-select: none;
+  transition: background-color 0.15s ease;
 }
 
 .item:hover {
-  border-color: var(--schwork-cyan);
-}
-
-.itemDone {
-  background: rgba(43, 179, 192, 0.14);
-  border-color: rgba(43, 179, 192, 0.45);
+  background: var(--schwork-surface-alt);
 }
 
 .hiddenInput {
   position: absolute;
   opacity: 0;
-  pointer-events: none;
+  width: 1px;
+  height: 1px;
 }
 
 .checkbox {
@@ -100,32 +102,33 @@
   height: 22px;
   margin-top: 2px;
   border-radius: 6px;
-  border: 2px solid var(--schwork-cyan-dark);
+  border: 2px solid var(--schwork-sage);
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: var(--schwork-surface);
-  color: var(--schwork-navy);
+  background: transparent;
+  color: #ffffff;
   transition: all 0.15s ease;
 }
 
 .itemDone .checkbox {
-  background: var(--schwork-lime);
-  border-color: var(--schwork-navy);
+  background: var(--schwork-sage);
+  border-color: var(--schwork-sage-dark);
+  color: #ffffff;
 }
 
 .text {
-  font-size: 0.95rem;
-  line-height: 1.48;
+  font-size: 0.94rem;
+  line-height: 1.5;
 }
 
 .itemDone .text {
+  color: var(--schwork-text-muted);
   text-decoration: line-through;
-  opacity: 0.78;
 }
 
 @media (max-width: 640px) {
   .box {
-    padding: 1.2rem 1rem 1rem;
+    padding: 0.95rem 1rem;
   }
 }

@@ -9,42 +9,67 @@
 @import '@fontsource/jetbrains-mono/600.css';
 
 /* ==========================================================================
-   SCHWORK DESIGN SYSTEM
-   Palette: Deep Navy (#132238) + Cool Cyan (#2BB3C0) + Acid Lime (#C8FF00)
-   Two colours that work together + one deliberate clash accent.
+   SCHWORK ACADEMIC DESIGN SYSTEM (60-30-10 RULE)
+   - Neutral Base (60–90%): Soft Cream / Off-White (#F8F6F1) + Dark Charcoal (#222222)
+   - Primary (Matching Color 1): Deep Navy (#1B365D) — Navigation, headers, anchors
+   - Secondary (Matching Color 2): Soft Sage Green / Muted Teal (#4E8577) — Cards, progress bars
+   - Contrast Accent (10%): Warm Coral / Burnt Amber (#C84E24 / #F5A352) — Primary buttons & alerts
    ========================================================================== */
 
 :root {
   /* Core brand palette */
-  --schwork-navy: #132238;
-  --schwork-navy-deep: #0b1524;
-  --schwork-navy-mid: #1d3454;
-  --schwork-cyan: #2bb3c0;
-  --schwork-cyan-dark: #18838e;
-  --schwork-cyan-darker: #116670;
-  --schwork-cyan-light: #7adbe4;
-  --schwork-cyan-tint: rgba(43, 179, 192, 0.11);
-  --schwork-lime: #c8ff00;
-  --schwork-lime-hover: #b6eb00;
-  --schwork-lime-ink: #132238;
-  --schwork-lime-border: #8eb800;
+  --schwork-navy: #1b365d;
+  --schwork-navy-deep: #122440;
+  --schwork-navy-mid: #254672;
 
-  /* Surface & border tokens (Light mode) */
-  --schwork-bg: #f6fafc;
-  --schwork-surface: #ffffff;
-  --schwork-surface-alt: #ebf3f7;
-  --schwork-border: #d2e2eb;
-  --schwork-text: #132238;
-  --schwork-text-muted: #455b73;
+  /* Matching secondary: Soft Sage Green / Muted Teal */
+  --schwork-sage: #4e8577;
+  --schwork-sage-dark: #2e6359;
+  --schwork-sage-darker: #224b43;
+  --schwork-sage-light: #8cc4b4;
+  --schwork-sage-tint: rgba(78, 133, 119, 0.13);
 
-  /* Docusaurus Infima overrides (accessible teal-cyan on light backgrounds) */
-  --ifm-color-primary: #178692;
-  --ifm-color-primary-dark: #147883;
-  --ifm-color-primary-darker: #13717b;
-  --ifm-color-primary-darkest: #0f5d66;
-  --ifm-color-primary-light: #1a94a1;
-  --ifm-color-primary-lighter: #1c9ba9;
-  --ifm-color-primary-lightest: #2bb3c0;
+  /* Contrast accent: Warm Coral & Warm Amber */
+  --schwork-coral: #c84e24;
+  --schwork-coral-hover: #b3421b;
+  --schwork-coral-ink: #ffffff;
+  --schwork-amber: #f5a352;
+  --schwork-amber-soft: #fdefdf;
+  --schwork-amber-border: #d97736;
+
+  /* Semantic aliases retained for shared lesson CSS modules */
+  --schwork-cyan: var(--schwork-sage);
+  --schwork-cyan-dark: var(--schwork-sage-dark);
+  --schwork-cyan-darker: var(--schwork-sage-darker);
+  --schwork-cyan-light: var(--schwork-sage-light);
+  --schwork-cyan-tint: var(--schwork-sage-tint);
+  --schwork-lime: var(--schwork-coral);
+  --schwork-lime-hover: var(--schwork-coral-hover);
+  --schwork-lime-ink: var(--schwork-coral-ink);
+  --schwork-lime-border: var(--schwork-amber-border);
+
+  /* Neutral Base (Light mode — glare-free off-white cream + dark charcoal text) */
+  --schwork-bg: #f8f6f1;
+  --schwork-surface: #fcfbf8;
+  --schwork-surface-alt: #ebf2ef;
+  --schwork-border: #cedcd6;
+  --schwork-text: #222222;
+  --schwork-text-muted: #4a5560;
+
+  /* Accessible semantic feedback states (always paired with icons + text!) */
+  --schwork-success: #256f46;
+  --schwork-success-bg: rgba(37, 111, 70, 0.1);
+  --schwork-error: #b83227;
+  --schwork-error-bg: rgba(184, 50, 39, 0.09);
+
+  /* Docusaurus Infima overrides (accessible sage-teal primary links on soft cream) */
+  --ifm-color-primary: #2e6359;
+  --ifm-color-primary-dark: #27554c;
+  --ifm-color-primary-darker: #244f47;
+  --ifm-color-primary-darkest: #1c3e38;
+  --ifm-color-primary-light: #367166;
+  --ifm-color-primary-lighter: #3b7a6e;
+  --ifm-color-primary-lightest: #4e8577;
 
   --ifm-background-color: var(--schwork-bg);
   --ifm-background-surface-color: var(--schwork-surface);
@@ -52,8 +77,8 @@
   --ifm-font-color-secondary: var(--schwork-text-muted);
   --ifm-heading-color: var(--schwork-navy);
   --ifm-navbar-background-color: var(--schwork-navy);
-  --ifm-navbar-link-color: #e6f2f7;
-  --ifm-navbar-link-hover-color: var(--schwork-lime);
+  --ifm-navbar-link-color: #eef3f7;
+  --ifm-navbar-link-hover-color: var(--schwork-amber);
   --ifm-footer-background-color: var(--schwork-navy-deep);
   --ifm-table-border-color: var(--schwork-border);
   --ifm-table-stripe-background: var(--schwork-surface-alt);
@@ -63,30 +88,35 @@
   --ifm-font-family-monospace: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
 
   --ifm-font-size-base: 16px;
-  --ifm-line-height-base: 1.68;
+  --ifm-line-height-base: 1.7;
   --ifm-code-font-size: 92%;
   --ifm-global-radius: 10px;
   --ifm-navbar-height: 3.75rem;
-  --docusaurus-highlighted-code-line-bg: rgba(43, 179, 192, 0.14);
+  --docusaurus-highlighted-code-line-bg: rgba(78, 133, 119, 0.16);
 }
 
-/* Match Infima's `html[data-theme='dark']` specificity so our Deep Navy tokens
- * cleanly replace Infima's default `#1b1b1d` / `#242526` grey backgrounds. */
+/* Harmonious dark mode (soft slate navy, muted sage, warm amber — zero glare) */
 html[data-theme='dark'] {
-  --schwork-bg: #0b1524;
-  --schwork-surface: #132238;
-  --schwork-surface-alt: #1a2d49;
-  --schwork-border: #253d60;
-  --schwork-text: #eaf3f8;
-  --schwork-text-muted: #9eb7cc;
+  --schwork-bg: #101c2c;
+  --schwork-surface: #17273d;
+  --schwork-surface-alt: #1f344e;
+  --schwork-border: #2f4968;
+  --schwork-text: #eef2f5;
+  --schwork-text-muted: #a9bccb;
+  --schwork-amber-soft: rgba(245, 163, 82, 0.14);
 
-  --ifm-color-primary: #39c7d4;
-  --ifm-color-primary-dark: #2bb3c0;
-  --ifm-color-primary-darker: #28a9b5;
-  --ifm-color-primary-darkest: #218b95;
-  --ifm-color-primary-light: #4fcdd9;
-  --ifm-color-primary-lighter: #5ad0dc;
-  --ifm-color-primary-lightest: #7adbe4;
+  --schwork-success: #5cc98f;
+  --schwork-success-bg: rgba(92, 201, 143, 0.14);
+  --schwork-error: #f2746b;
+  --schwork-error-bg: rgba(242, 116, 107, 0.14);
+
+  --ifm-color-primary: #7bb8a8;
+  --ifm-color-primary-dark: #66aa98;
+  --ifm-color-primary-darker: #5ca290;
+  --ifm-color-primary-darkest: #488676;
+  --ifm-color-primary-light: #90c6b8;
+  --ifm-color-primary-lighter: #9bcdc0;
+  --ifm-color-primary-lightest: #b8dbd2;
 
   --ifm-background-color: var(--schwork-bg);
   --ifm-background-surface-color: var(--schwork-surface);
@@ -94,21 +124,21 @@ html[data-theme='dark'] {
   --ifm-font-color-secondary: var(--schwork-text-muted);
   --ifm-color-content: var(--schwork-text);
   --ifm-color-content-secondary: var(--schwork-text-muted);
-  --ifm-heading-color: #f4f9fc;
-  --ifm-navbar-background-color: #0e1b2f;
-  --ifm-navbar-link-color: #eaf3f8;
-  --ifm-navbar-link-hover-color: var(--schwork-lime);
-  --ifm-footer-background-color: #070e18;
+  --ifm-heading-color: #f4f7fa;
+  --ifm-navbar-background-color: #132540;
+  --ifm-navbar-link-color: #eef2f5;
+  --ifm-navbar-link-hover-color: var(--schwork-amber);
+  --ifm-footer-background-color: #0b1627;
   --ifm-toc-border-color: var(--schwork-border);
   --ifm-table-border-color: var(--schwork-border);
   --ifm-table-stripe-background: var(--schwork-surface-alt);
-  --ifm-code-background: rgba(43, 179, 192, 0.14);
-  --ifm-hover-overlay: rgba(43, 179, 192, 0.1);
-  --docusaurus-highlighted-code-line-bg: rgba(200, 255, 0, 0.12);
+  --ifm-code-background: rgba(123, 184, 168, 0.15);
+  --ifm-hover-overlay: rgba(123, 184, 168, 0.1);
+  --docusaurus-highlighted-code-line-bg: rgba(245, 163, 82, 0.14);
 }
 
 /* ==========================================================================
-   MOBILE-FIRST FOUNDATION & SEAMLESS FULL-HEIGHT BACKGROUNDS
+   MOBILE-FIRST FOUNDATION & GLARE-FREE FULL-HEIGHT BACKGROUNDS
    ========================================================================== */
 
 html {
@@ -130,11 +160,11 @@ body {
   background-color: var(--schwork-bg);
 }
 
-/* Navbar polish (always Deep Navy anchor with Acid Lime accent spark) */
+/* Top Navigation Bar (Deep Navy anchor + Muted Sage bottom rule) */
 .navbar {
   background-color: var(--ifm-navbar-background-color);
-  border-bottom: 2px solid var(--schwork-cyan);
-  box-shadow: 0 2px 16px rgba(11, 21, 36, 0.18);
+  border-bottom: 2px solid var(--schwork-sage);
+  box-shadow: 0 2px 14px rgba(18, 36, 64, 0.16);
 }
 
 .navbar__logo {
@@ -170,48 +200,48 @@ body {
 }
 
 .navbar__link--active {
-  color: var(--schwork-lime) !important;
+  color: var(--schwork-amber) !important;
 }
 
-/* Color mode toggle inside dark navy navbar */
+/* Color mode toggle inside Deep Navy navbar */
 .navbar button[class*='toggleButton'] {
-  color: #e6f2f7;
+  color: #eef3f7;
   min-width: 40px;
   min-height: 40px;
 }
 
 .navbar button[class*='toggleButton']:hover {
-  background: rgba(200, 255, 0, 0.14);
-  color: var(--schwork-lime);
+  background: rgba(245, 163, 82, 0.16);
+  color: var(--schwork-amber);
 }
 
 /* Mobile sidebar drawer */
 .navbar-sidebar {
   background-color: var(--schwork-navy);
-  color: #eaf3f8;
+  color: #eef3f7;
 }
 
 .navbar-sidebar__brand {
   background-color: var(--schwork-navy-deep);
-  border-bottom: 1px solid rgba(43, 179, 192, 0.25);
+  border-bottom: 1px solid rgba(140, 196, 180, 0.25);
 }
 
 .navbar-sidebar__close {
-  color: var(--schwork-lime);
+  color: var(--schwork-amber);
   min-width: 44px;
   min-height: 44px;
 }
 
 .navbar-sidebar .menu__link {
-  color: #dcebf3;
+  color: #e2ecf2;
   min-height: 44px;
   display: flex;
   align-items: center;
 }
 
 .navbar-sidebar .menu__link--active {
-  color: var(--schwork-navy) !important;
-  background-color: var(--schwork-lime) !important;
+  color: #ffffff !important;
+  background-color: var(--schwork-coral) !important;
   box-shadow: none !important;
   font-weight: 700;
 }
@@ -234,16 +264,16 @@ body {
   line-height: 1.4;
 }
 
-/* Use inset box-shadow instead of border-left so rounded corners stay crisp */
+/* Soft Sage active module indicator in docs sidebar */
 .menu__link--active:not(.menu__link--sublist) {
-  background: var(--schwork-cyan-tint);
-  box-shadow: inset 3.5px 0 0 var(--schwork-lime);
+  background: var(--schwork-sage-tint);
+  box-shadow: inset 3.5px 0 0 var(--schwork-sage);
   font-weight: 700;
 }
 
 html[data-theme='light'] .menu__link--active:not(.menu__link--sublist) {
-  box-shadow: inset 3.5px 0 0 var(--schwork-navy);
-  background: linear-gradient(90deg, rgba(200, 255, 0, 0.35), rgba(43, 179, 192, 0.12));
+  box-shadow: inset 3.5px 0 0 var(--schwork-sage-dark);
+  background: #e5efe9;
   color: var(--schwork-navy);
 }
 
@@ -254,7 +284,7 @@ html[data-theme='light'] .menu__link--active:not(.menu__link--sublist) {
 }
 
 .pagination-nav__link:hover {
-  border-color: var(--schwork-cyan);
+  border-color: var(--schwork-sage);
 }
 
 /* ==========================================================================
@@ -276,8 +306,6 @@ html[data-theme='light'] .menu__link--active:not(.menu__link--sublist) {
   white-space: nowrap;
 }
 
-/* Wrapper injected by src/theme/MDXComponents.tsx so tables always fill 100%
- * width cleanly on desktop (no cut-off header color!) and scroll on phones. */
 .schwork-table-wrap {
   width: 100%;
   overflow-x: auto;
@@ -300,11 +328,11 @@ html[data-theme='light'] .menu__link--active:not(.menu__link--sublist) {
 .schwork-table-wrap thead tr {
   background-color: var(--schwork-navy);
   border-top: none;
-  border-bottom: 2px solid var(--schwork-cyan);
+  border-bottom: 2px solid var(--schwork-sage);
 }
 
 html[data-theme='dark'] .schwork-table-wrap thead tr {
-  background-color: #0d192b;
+  background-color: #132540;
 }
 
 .schwork-table-wrap th {
@@ -313,7 +341,7 @@ html[data-theme='dark'] .schwork-table-wrap thead tr {
   font-family: var(--ifm-heading-font-family);
   font-size: 0.9rem;
   letter-spacing: 0.01em;
-  border-color: rgba(43, 179, 192, 0.25);
+  border-color: rgba(140, 196, 180, 0.25);
   white-space: nowrap;
 }
 
@@ -342,60 +370,60 @@ html[data-theme='dark'] .schwork-table-wrap thead tr {
   margin-top: 2.2rem;
 }
 
-/* Acid Lime selection clash! */
+/* Warm amber text selection highlight */
 ::selection {
-  background-color: var(--schwork-lime);
-  color: var(--schwork-navy);
+  background-color: #f8d4ac;
+  color: #222222;
 }
 
-/* Footer polish — explicitly override Infima's `.footer--dark` (#303846 grey) */
+/* Footer polish (Deep Navy anchor + Muted Sage top border) */
 .footer,
 .footer.footer--dark {
   --ifm-footer-background-color: var(--schwork-navy-deep);
-  --ifm-footer-color: #c8dde9;
-  --ifm-footer-link-color: #dcebf3;
+  --ifm-footer-color: #cfdbe6;
+  --ifm-footer-link-color: #e6eff5;
   background-color: var(--schwork-navy-deep);
-  border-top: 3px solid var(--schwork-lime);
+  border-top: 3px solid var(--schwork-sage);
 }
 
 html[data-theme='dark'] .footer,
 html[data-theme='dark'] .footer.footer--dark {
-  --ifm-footer-background-color: #070e18;
-  background-color: #070e18;
+  --ifm-footer-background-color: #0b1627;
+  background-color: #0b1627;
 }
 
 .footer__title {
   font-family: var(--ifm-heading-font-family);
-  color: var(--schwork-cyan-light);
+  color: var(--schwork-sage-light);
   text-transform: uppercase;
   font-size: 0.8rem;
   letter-spacing: 0.08em;
 }
 
 .footer__link-item:hover {
-  color: var(--schwork-lime);
+  color: var(--schwork-amber);
 }
 
 /* ==========================================================================
-   LOCAL SEARCH BAR IN DARK NAVY NAVBAR
+   LOCAL SEARCH BAR IN DEEP NAVY NAVBAR
    ========================================================================== */
 
 .navbar__search-input,
 input[class*='searchInput'] {
   background-color: rgba(255, 255, 255, 0.1) !important;
   color: #ffffff !important;
-  border: 1px solid rgba(43, 179, 192, 0.45) !important;
+  border: 1px solid rgba(140, 196, 180, 0.45) !important;
   border-radius: 8px !important;
 }
 
 .navbar__search-input::placeholder,
 input[class*='searchInput']::placeholder {
-  color: #a9c6d8 !important;
+  color: #bcd0de !important;
 }
 
 .navbar__search-input:focus,
 input[class*='searchInput']:focus {
-  border-color: var(--schwork-lime) !important;
+  border-color: var(--schwork-amber) !important;
   outline: none !important;
 }
 
@@ -433,7 +461,7 @@ input[class*='searchInput']:focus {
   }
 }
 
-/* Print-friendly styles for students printing notes at school / parish libraries */
+/* Print-friendly styles */
 @media print {
   .navbar,
   .footer,

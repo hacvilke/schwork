@@ -14,8 +14,5 @@ export {default as TrueFalseQuiz} from './TrueFalseQuiz';
 export {default as ClassifyActivity} from './ClassifyActivity';
 export {default as ExplainActivity} from './ExplainActivity';
 export {default as ExtraPractice} from './ExtraPractice';
-export {default as AccountingCycle} from './AccountingCycle';
-export {default as TAccount} from './TAccount';
-export type {TAccountEntry, TAccountProps} from './TAccount';
 export {default as InteractiveGraph} from './InteractiveGraph';
 export {default as DiagramFigure} from './DiagramFigure';

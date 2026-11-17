@@ -3,6 +3,7 @@
  * and Paper 2 (short-answer with revealable mark scheme).
  *
  * Pass `options` + `correctIndex` for multiple choice, or omit `options` for a mark-scheme reveal.
+ * Accessibility: never relies on color alone — every answered state shows an explicit icon + text label.
  */
 
 import React, {useState} from 'react';
@@ -63,6 +64,8 @@ export default function QuickCheck({
             {options.map((optionText, index) => {
               const isRightOption = index === correctIndex;
               const isChosenOption = index === selectedOption;
+              const showRightMark = hasAnswered && isRightOption;
+              const showWrongMark = hasAnswered && isChosenOption && !isRightOption;
 
               return (
                 <button
@@ -72,13 +75,23 @@ export default function QuickCheck({
                   onClick={() => setSelectedOption(index)}
                   className={clsx(
                     styles.optionBtn,
-                    hasAnswered && isRightOption && styles.optionCorrect,
-                    hasAnswered && isChosenOption && !isRightOption && styles.optionWrong,
+                    showRightMark && styles.optionCorrect,
+                    showWrongMark && styles.optionWrong,
                   )}>
                   <span className={styles.optionLetter}>
                     {OPTION_LETTERS[index] ?? index + 1}
                   </span>
-                  <span>{optionText}</span>
+                  <span className={styles.optionText}>{optionText}</span>
+                  {showRightMark && (
+                    <span className={styles.optionStatusCorrect} aria-label="Correct answer">
+                      <CheckCircle2 size={17} aria-hidden="true" />
+                    </span>
+                  )}
+                  {showWrongMark && (
+                    <span className={styles.optionStatusWrong} aria-label="Incorrect choice">
+                      <XCircle size={17} aria-hidden="true" />
+                    </span>
+                  )}
                 </button>
               );
             })}
@@ -94,12 +107,12 @@ export default function QuickCheck({
                 <div className={styles.feedbackTitle}>
                   {isCorrect ? (
                     <>
-                      <CheckCircle2 size={18} color="#16a34a" />
+                      <CheckCircle2 size={18} className={styles.iconCorrect} aria-hidden="true" />
                       <span>Correct! ({correctLetter})</span>
                     </>
                   ) : (
                     <>
-                      <XCircle size={18} color="#dc2626" />
+                      <XCircle size={18} className={styles.iconWrong} aria-hidden="true" />
                       <span>Not quite — the correct option is {correctLetter}.</span>
                     </>
                   )}
@@ -112,7 +125,7 @@ export default function QuickCheck({
                   type="button"
                   className={styles.secondaryBtn}
                   onClick={() => setSelectedOption(null)}>
-                  <RotateCcw size={15} />
+                  <RotateCcw size={15} aria-hidden="true" />
                   Try again
                 </button>
               </div>

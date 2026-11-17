@@ -1,5 +1,5 @@
 /**
- * Highlighted formula reference card for Maths, Physics, Chemistry, and POA lessons.
+ * Highlighted formula reference card for Maths, Physics, Chemistry, and STEM lessons.
  * Clearly flags whether a formula is provided on the exam formula sheet or must be memorized,
  * and supports an optional short plain-English `summary` revealed on hover or tap/click.
  */

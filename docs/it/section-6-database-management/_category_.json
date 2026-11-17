@@ -1,9 +1,0 @@
-{
-  "label": "Section 6: Database Management",
-  "position": 7,
-  "collapsed": true,
-  "link": {
-    "type": "generated-index",
-    "description": "Relational database concepts, primary/foreign/candidate/secondary keys, data types, 1:1 and 1:M relationships, forms & sub-forms, Select Queries with calculated fields, and grouped summary reports."
-  }
-}

@@ -1,13 +1,13 @@
-/* Styles for <ExplainActivity /> — "Explain in Your Own Words" active-recall box */
+/* Styles for <ExplainActivity /> — Soft Sage structure + Warm Coral primary CTA */
 
 .card {
   position: relative;
   overflow: hidden;
-  background: var(--schwork-surface);
-  border: 1.5px solid var(--schwork-border);
   border-radius: 14px;
-  padding: 1.2rem 1.2rem 1.2rem 1.45rem;
-  margin: 1.6rem 0;
+  border: 1.5px solid var(--schwork-border);
+  background: var(--schwork-surface);
+  padding: 1.15rem 1.25rem 1.15rem 1.4rem;
+  margin: 1.5rem 0;
 }
 
 .card::before {
@@ -17,7 +17,7 @@
   bottom: 0;
   left: 0;
   width: 5px;
-  background: linear-gradient(180deg, var(--schwork-cyan), var(--schwork-lime));
+  background: var(--schwork-sage);
 }
 
 .header {
@@ -26,7 +26,7 @@
   align-items: center;
   justify-content: space-between;
   gap: 0.5rem;
-  margin-bottom: 0.65rem;
+  margin-bottom: 0.45rem;
 }
 
 .badge {
@@ -37,21 +37,16 @@
   font-size: 0.74rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.05em;
   padding: 0.22rem 0.6rem;
   border-radius: 6px;
   background: var(--schwork-navy);
-  color: var(--schwork-lime);
-}
-
-:global(html[data-theme='dark']) .badge {
-  background: #0b1524;
-  border: 1px solid rgba(200, 255, 0, 0.4);
+  color: #e6f3ef;
 }
 
 .savedTag {
   font-family: var(--ifm-font-family-monospace);
-  font-size: 0.74rem;
+  font-size: 0.72rem;
   color: var(--schwork-text-muted);
 }
 
@@ -59,13 +54,13 @@
   font-family: var(--ifm-heading-font-family);
   font-size: 1.04rem;
   font-weight: 700;
-  margin: 0 0 0.45rem;
+  margin: 0.15rem 0 0.35rem;
 }
 
 .prompt {
-  font-size: 0.94rem;
-  color: var(--schwork-text-muted);
   margin: 0 0 0.95rem;
+  font-size: 0.92rem;
+  color: var(--schwork-text-muted);
   line-height: 1.55;
 }
 
@@ -85,104 +80,111 @@
   font-family: var(--ifm-heading-font-family);
   font-size: 0.9rem;
   font-weight: 700;
-  color: var(--ifm-heading-color);
 }
 
 .textarea {
   width: 100%;
   min-height: 76px;
   padding: 0.65rem 0.8rem;
-  border-radius: 10px;
+  border-radius: 9px;
   border: 1.5px solid var(--schwork-border);
-  background: var(--schwork-surface-alt);
+  background: var(--schwork-bg);
   color: var(--schwork-text);
   font-family: var(--ifm-font-family-base);
   font-size: 0.92rem;
   line-height: 1.5;
   resize: vertical;
-  transition: border-color 0.15s ease;
 }
 
 .textarea:focus {
   outline: none;
-  border-color: var(--schwork-cyan);
+  border-color: var(--schwork-sage);
 }
 
 .actions {
-  margin-top: 1rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 0.55rem;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 1rem;
 }
 
+/* Warm Coral primary action button */
 .primaryBtn {
   min-height: 44px;
-  padding: 0.5rem 1rem;
+  padding: 0.55rem 1rem;
   border-radius: 9px;
   border: none;
-  background: var(--schwork-lime);
-  color: var(--schwork-navy);
+  background: var(--schwork-coral);
+  color: #ffffff;
   font-family: var(--ifm-heading-font-family);
-  font-size: 0.88rem;
   font-weight: 700;
+  font-size: 0.88rem;
   display: inline-flex;
   align-items: center;
-  gap: 0.42rem;
+  gap: 0.45rem;
   cursor: pointer;
+  transition: background-color 0.15s ease;
 }
 
 .primaryBtn:hover {
-  background: var(--schwork-lime-hover);
+  background: var(--schwork-coral-hover);
 }
 
 .secondaryBtn {
   min-height: 44px;
-  padding: 0.5rem 0.9rem;
+  padding: 0.5rem 0.85rem;
   border-radius: 9px;
   border: 1.5px solid var(--schwork-border);
   background: transparent;
   color: var(--schwork-text);
   font-family: var(--ifm-heading-font-family);
-  font-size: 0.84rem;
   font-weight: 600;
+  font-size: 0.84rem;
   display: inline-flex;
   align-items: center;
-  gap: 0.4rem;
+  gap: 0.38rem;
   cursor: pointer;
 }
 
 .secondaryBtn:hover {
-  border-color: var(--schwork-cyan);
+  border-color: var(--schwork-sage);
+  background: var(--schwork-surface-alt);
 }
 
 .guideBox {
   margin-top: 1rem;
-  padding: 0.95rem 1rem;
-  border-radius: 11px;
+  padding: 0.9rem 1rem;
+  border-radius: 10px;
+  border: 1.5px solid rgba(78, 133, 119, 0.45);
   background: var(--schwork-surface-alt);
-  border: 1.5px solid var(--schwork-cyan);
+  font-size: 0.9rem;
+  line-height: 1.55;
 }
 
 .guideHeading {
   font-family: var(--ifm-heading-font-family);
-  font-size: 0.9rem;
+  font-size: 0.88rem;
   font-weight: 700;
-  margin: 0 0 0.55rem;
-  color: var(--ifm-color-primary);
+  margin: 0 0 0.5rem;
+  color: var(--schwork-sage-dark);
+}
+
+:global(html[data-theme='dark']) .guideHeading {
+  color: var(--schwork-sage-light);
 }
 
 .guideList {
   margin: 0;
-  padding-left: 1.2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.4rem;
-  font-size: 0.9rem;
-  line-height: 1.5;
+  padding-left: 1.15rem;
+}
+
+.guideList li + li {
+  margin-top: 0.4rem;
 }
 
 @media (max-width: 640px) {
   .card {
-    padding: 1rem 1rem 1rem 1.25rem;
+    padding: 0.95rem 1rem 0.95rem 1.15rem;
   }
 }

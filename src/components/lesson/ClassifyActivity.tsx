@@ -1,7 +1,8 @@
 /**
  * Interactive classification & definition-matching drill.
- * Works for matching definitions to business types, classifying Fixed vs Current Assets,
- * sorting Current vs Long-Term Liabilities, or any category-sorting classwork across subjects.
+ * Works for matching definitions to concepts, classifying hardware vs software,
+ * sorting input vs output devices, or any category-sorting classwork across subjects.
+ * Accessibility: always pairs color feedback with explicit check/X icons and text labels.
  */
 
 import React, {useState} from 'react';
@@ -19,7 +20,7 @@ export interface ClassifyItem {
 }
 
 export interface ClassifyActivityProps {
-  /** Card title (e.g. "Classify Each Asset: Fixed vs Current"). */
+  /** Card title (e.g. "Classify Each Device: Input vs Output"). */
   title: string;
   /** Short instructions shown under the title. */
   instruction?: string;
@@ -51,7 +52,7 @@ export default function ClassifyActivity({
     <section className={styles.card} aria-label={title}>
       <div className={styles.header}>
         <div className={styles.titleWrap}>
-          <Layers size={19} color="#2BB3C0" aria-hidden="true" />
+          <Layers size={19} className={styles.headerIcon} aria-hidden="true" />
           <h3 className={styles.title}>{title}</h3>
         </div>
 
@@ -108,7 +109,16 @@ export default function ClassifyActivity({
                         showRightHint && styles.catAnswerHint,
                       )}
                       onClick={() => pickCategory(index, category)}>
-                      {category}
+                      {isPicked && isCorrect && (
+                        <CheckCircle2 size={14} aria-hidden="true" />
+                      )}
+                      {isPicked && !isCorrect && (
+                        <XCircle size={14} aria-hidden="true" />
+                      )}
+                      {showRightHint && (
+                        <CheckCircle2 size={14} aria-hidden="true" />
+                      )}
+                      <span>{category}</span>
                     </button>
                   );
                 })}

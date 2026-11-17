@@ -1,6 +1,7 @@
 /**
  * Interactive True / False drill for checking theory understanding across any subject.
  * Students tap True or False on each statement for immediate explanations and a live score.
+ * Accessibility: pairs color states with check/X icons and explicit text feedback.
  */
 
 import React, {useState} from 'react';
@@ -18,7 +19,7 @@ export interface TrueFalseItem {
 }
 
 export interface TrueFalseQuizProps {
-  /** Card title (e.g. "True or False: Users & Careers in POA"). */
+  /** Card title (e.g. "True or False: Hardware & Storage Concepts"). */
   title?: string;
   /** List of True / False statements. */
   items: TrueFalseItem[];
@@ -49,7 +50,7 @@ export default function TrueFalseQuiz({
     <section className={styles.card} aria-label={title}>
       <div className={styles.header}>
         <div className={styles.titleWrap}>
-          <ListChecks size={19} color="#2BB3C0" aria-hidden="true" />
+          <ListChecks size={19} className={styles.headerIcon} aria-hidden="true" />
           <h3 className={styles.title}>{title}</h3>
         </div>
 
@@ -104,7 +105,16 @@ export default function TrueFalseQuiz({
                           showCorrectHighlight && styles.choiceAnswerHighlight,
                         )}
                         onClick={() => selectAnswer(index, choice)}>
-                        {choice ? 'True' : 'False'}
+                        {isPicked && isCorrect && (
+                          <CheckCircle2 size={14} aria-hidden="true" />
+                        )}
+                        {isPicked && !isCorrect && (
+                          <XCircle size={14} aria-hidden="true" />
+                        )}
+                        {showCorrectHighlight && (
+                          <CheckCircle2 size={14} aria-hidden="true" />
+                        )}
+                        <span>{choice ? 'True' : 'False'}</span>
                       </button>
                     );
                   })}

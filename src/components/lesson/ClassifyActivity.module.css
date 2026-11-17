@@ -1,23 +1,12 @@
-/* Styles for <ClassifyActivity /> — interactive category classification & matching drill */
+/* Styles for <ClassifyActivity /> — Soft Sage structure & accessible icon+text states */
 
 .card {
-  position: relative;
-  overflow: hidden;
-  background: var(--schwork-surface);
-  border: 1.5px solid var(--schwork-border);
   border-radius: 14px;
-  padding: 1.2rem 1.2rem 1.2rem 1.45rem;
-  margin: 1.6rem 0;
-}
-
-.card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 5px;
-  background: var(--schwork-cyan);
+  border: 1.5px solid var(--schwork-border);
+  border-top: 4px solid var(--schwork-sage);
+  background: var(--schwork-surface);
+  padding: 1.15rem 1.25rem;
+  margin: 1.5rem 0;
 }
 
 .header {
@@ -25,8 +14,8 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  gap: 0.6rem;
-  margin-bottom: 0.55rem;
+  gap: 0.65rem;
+  margin-bottom: 0.45rem;
 }
 
 .titleWrap {
@@ -35,11 +24,26 @@
   gap: 0.5rem;
 }
 
+.headerIcon {
+  color: var(--schwork-sage-dark);
+  flex-shrink: 0;
+}
+
+:global(html[data-theme='dark']) .headerIcon {
+  color: var(--schwork-sage-light);
+}
+
 .title {
   font-family: var(--ifm-heading-font-family);
   font-size: 1.02rem;
   font-weight: 700;
   margin: 0;
+}
+
+.subtitle {
+  margin: 0 0 0.9rem;
+  font-size: 0.88rem;
+  color: var(--schwork-text-muted);
 }
 
 .headerRight {
@@ -50,82 +54,74 @@
 
 .scoreBadge {
   font-family: var(--ifm-font-family-monospace);
-  font-size: 0.78rem;
+  font-size: 0.76rem;
   font-weight: 700;
   padding: 0.24rem 0.65rem;
   border-radius: 999px;
   background: var(--schwork-navy);
-  color: var(--schwork-lime);
-}
-
-:global(html[data-theme='dark']) .scoreBadge {
-  background: #0b1524;
-  border: 1px solid rgba(200, 255, 0, 0.4);
+  color: #ffffff;
 }
 
 .resetBtn {
-  min-height: 36px;
-  padding: 0.28rem 0.65rem;
+  min-height: 34px;
+  padding: 0.25rem 0.65rem;
   border-radius: 8px;
-  border: 1.5px solid var(--schwork-border);
-  background: transparent;
+  border: 1px solid var(--schwork-border);
+  background: var(--schwork-surface-alt);
   color: var(--schwork-text);
   font-family: var(--ifm-heading-font-family);
-  font-size: 0.8rem;
+  font-size: 0.78rem;
   font-weight: 600;
   display: inline-flex;
   align-items: center;
-  gap: 0.32rem;
+  gap: 0.35rem;
   cursor: pointer;
 }
 
 .resetBtn:hover {
-  border-color: var(--schwork-cyan);
-}
-
-.subtitle {
-  margin: 0 0 1rem;
-  font-size: 0.9rem;
-  color: var(--schwork-text-muted);
-  line-height: 1.5;
+  border-color: var(--schwork-sage);
 }
 
 .list {
   display: flex;
   flex-direction: column;
-  gap: 0.85rem;
+  gap: 0.75rem;
 }
 
 .row {
-  padding: 0.9rem 0.95rem;
   border-radius: 11px;
-  background: var(--schwork-surface-alt);
   border: 1.5px solid var(--schwork-border);
-  transition: border-color 0.15s ease;
+  background: var(--schwork-bg);
+  padding: 0.85rem 0.95rem;
+  transition: border-color 0.15s ease, background-color 0.15s ease;
 }
 
 .rowCorrect {
-  border-color: #16a34a;
-  background: rgba(22, 163, 74, 0.08);
+  border-color: var(--schwork-success);
+  background: var(--schwork-success-bg);
 }
 
 .rowWrong {
-  border-color: #dc2626;
-  background: rgba(220, 38, 38, 0.07);
+  border-color: var(--schwork-error);
+  background: var(--schwork-error-bg);
 }
 
 .promptText {
-  margin: 0 0 0.7rem;
-  font-size: 0.95rem;
+  margin: 0 0 0.65rem;
+  font-size: 0.94rem;
+  font-weight: 500;
   line-height: 1.5;
-  font-weight: 600;
 }
 
 .indexNum {
   font-family: var(--ifm-font-family-monospace);
   font-weight: 700;
-  color: var(--ifm-color-primary);
+  color: var(--schwork-sage-dark);
   margin-right: 0.45rem;
+}
+
+:global(html[data-theme='dark']) .indexNum {
+  color: var(--schwork-sage-light);
 }
 
 .categoryRow {
@@ -135,49 +131,48 @@
 }
 
 .catBtn {
-  min-height: 40px;
-  padding: 0.38rem 0.78rem;
+  min-height: 38px;
+  padding: 0.35rem 0.78rem;
   border-radius: 8px;
   border: 1.5px solid var(--schwork-border);
   background: var(--schwork-surface);
   color: var(--schwork-text);
   font-family: var(--ifm-heading-font-family);
-  font-size: 0.83rem;
-  font-weight: 700;
+  font-size: 0.82rem;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.32rem;
   cursor: pointer;
-  transition: all 0.14s ease;
+  transition: all 0.15s ease;
 }
 
 .catBtn:hover {
-  border-color: var(--schwork-cyan);
+  border-color: var(--schwork-sage);
 }
 
 .catSelectedCorrect {
-  background: var(--schwork-lime);
-  border-color: #16a34a;
-  color: var(--schwork-navy);
+  background: var(--schwork-success);
+  border-color: var(--schwork-success);
+  color: #ffffff;
 }
 
 .catSelectedWrong {
-  background: #dc2626;
-  border-color: #dc2626;
+  background: var(--schwork-error);
+  border-color: var(--schwork-error);
   color: #ffffff;
 }
 
 .catAnswerHint {
-  border-color: #16a34a;
-  color: #15803d;
-}
-
-:global(html[data-theme='dark']) .catAnswerHint {
-  color: #86efac;
+  border-color: var(--schwork-success);
+  color: var(--schwork-success);
 }
 
 .explanation {
-  margin-top: 0.7rem;
-  padding-top: 0.65rem;
+  margin-top: 0.65rem;
+  padding-top: 0.6rem;
   border-top: 1px dashed var(--schwork-border);
-  font-size: 0.88rem;
+  font-size: 0.89rem;
   line-height: 1.5;
   display: flex;
   align-items: flex-start;
@@ -185,24 +180,19 @@
 }
 
 .iconCorrect {
-  color: #16a34a;
   flex-shrink: 0;
   margin-top: 2px;
+  color: var(--schwork-success);
 }
 
 .iconWrong {
-  color: #dc2626;
   flex-shrink: 0;
   margin-top: 2px;
+  color: var(--schwork-error);
 }
 
 @media (max-width: 640px) {
   .card {
-    padding: 1rem 1rem 1rem 1.25rem;
-  }
-
-  .catBtn {
-    min-height: 42px;
-    font-size: 0.81rem;
+    padding: 0.95rem 1rem;
   }
 }

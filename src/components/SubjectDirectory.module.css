@@ -1,4 +1,4 @@
-/* Styles for <SubjectDirectory /> — searchable & filterable subject grid */
+/* Styles for <SubjectDirectory /> — Soft Sage module cards + Deep Navy & Warm Coral accents */
 
 .controlsBar {
   display: flex;
@@ -37,7 +37,7 @@
 
 .searchInput:focus {
   outline: none;
-  border-color: var(--schwork-cyan);
+  border-color: var(--schwork-sage);
 }
 
 .clearBtn {
@@ -85,34 +85,39 @@
 }
 
 .filterBtn:hover {
-  border-color: var(--schwork-cyan);
+  border-color: var(--schwork-sage);
 }
 
 .filterBtnUniversity {
-  border-color: rgba(43, 179, 192, 0.55);
+  border-color: rgba(78, 133, 119, 0.55);
 }
 
 .filterCount {
   font-family: var(--ifm-font-family-monospace);
   font-size: 0.72rem;
   font-weight: 700;
-  opacity: 0.78;
+  opacity: 0.8;
 }
 
 .filterBtnActive {
   background: var(--schwork-navy);
-  color: #c8ff00;
+  color: #ffffff;
   border-color: var(--schwork-navy);
 }
 
 .filterBtnActive .filterCount {
+  color: var(--schwork-amber);
   opacity: 1;
 }
 
 :global(html[data-theme='dark']) .filterBtnActive {
-  background: #c8ff00;
-  color: #132238;
-  border-color: #c8ff00;
+  background: var(--schwork-sage);
+  color: #ffffff;
+  border-color: var(--schwork-sage);
+}
+
+:global(html[data-theme='dark']) .filterBtnActive .filterCount {
+  color: #eef2f5;
 }
 
 .grid {
@@ -121,31 +126,28 @@
   gap: 1rem;
 }
 
+/* Module cards separated calmly with soft sage accents */
 .card {
   position: relative;
   overflow: hidden;
   background: var(--schwork-surface);
   border: 1.5px solid var(--schwork-border);
+  border-top: 4px solid var(--schwork-sage);
   border-radius: 14px;
   padding: 1.2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   gap: 0.9rem;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+.card:hover {
+  border-color: var(--schwork-sage-dark);
 }
 
 .cardUniversity {
-  border-color: var(--schwork-cyan);
-}
-
-.cardUniversity::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 4px;
-  background: linear-gradient(90deg, var(--schwork-cyan), var(--schwork-lime));
+  border-top-color: var(--schwork-navy);
 }
 
 .cardTop {
@@ -163,17 +165,17 @@
   padding: 0.22rem 0.55rem;
   border-radius: 6px;
   background: var(--schwork-navy);
-  color: #7adbe4;
+  color: #e6f3ef;
 }
 
 :global(html[data-theme='dark']) .code {
-  background: #0b1524;
-  border: 1px solid rgba(43, 179, 192, 0.4);
+  background: #101c2c;
+  border: 1px solid rgba(140, 196, 180, 0.4);
 }
 
 .cardUniversity .code {
-  background: var(--schwork-lime);
-  color: var(--schwork-navy);
+  background: var(--schwork-sage-dark);
+  color: #ffffff;
   border: none;
 }
 
@@ -188,14 +190,15 @@
   border: 1px solid var(--schwork-border);
 }
 
+/* Warm Coral contrast badge for live subjects */
 .statusLive {
   font-family: var(--ifm-font-family-monospace);
   font-size: 0.72rem;
   font-weight: 700;
   padding: 0.22rem 0.55rem;
   border-radius: 6px;
-  background: #c8ff00;
-  color: #132238;
+  background: var(--schwork-coral);
+  color: #ffffff;
 }
 
 .name {
@@ -223,6 +226,15 @@
   font-size: 0.78rem;
   color: var(--schwork-text-muted);
   font-family: var(--ifm-font-family-monospace);
+}
+
+.footer a {
+  color: var(--schwork-coral);
+  font-weight: 700;
+}
+
+:global(html[data-theme='dark']) .footer a {
+  color: var(--schwork-amber);
 }
 
 .emptyState {
