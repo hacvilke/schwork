@@ -1,271 +1,61 @@
-/* Styles for <SubjectDirectory /> — Soft Sage module cards + Deep Navy & Warm Coral accents */
+/* Clean, card-free vertical list of subjects for `/subjects` */
 
-.controlsBar {
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid var(--schwork-border);
+}
+
+.item {
+  border-bottom: 1px solid var(--schwork-border);
+}
+
+.link {
   display: flex;
-  flex-direction: column;
-  gap: 0.9rem;
-  margin-bottom: 1.5rem;
-}
-
-.searchWrap {
-  position: relative;
-  max-width: 480px;
-  width: 100%;
-}
-
-.searchIcon {
-  position: absolute;
-  left: 0.85rem;
-  top: 50%;
-  transform: translateY(-50%);
-  color: var(--schwork-text-muted);
-  pointer-events: none;
-}
-
-.searchInput {
-  width: 100%;
-  min-height: 44px;
-  padding: 0.55rem 2.4rem 0.55rem 2.55rem;
-  border-radius: 10px;
-  border: 1.5px solid var(--schwork-border);
-  background: var(--schwork-surface);
-  color: var(--schwork-text);
-  font-family: var(--ifm-font-family-base);
-  font-size: 0.92rem;
-  transition: border-color 0.15s ease;
-}
-
-.searchInput:focus {
-  outline: none;
-  border-color: var(--schwork-sage);
-}
-
-.clearBtn {
-  position: absolute;
-  right: 0.45rem;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 30px;
-  height: 30px;
-  border-radius: 7px;
-  border: none;
-  background: transparent;
-  color: var(--schwork-text-muted);
-  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  cursor: pointer;
-}
-
-.clearBtn:hover {
-  color: var(--schwork-text);
-}
-
-.filterRow {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.45rem;
-}
-
-.filterBtn {
-  min-height: 40px;
-  padding: 0.4rem 0.85rem;
-  border-radius: 999px;
-  border: 1.5px solid var(--schwork-border);
-  background: var(--schwork-surface);
-  color: var(--schwork-text);
-  font-family: var(--ifm-heading-font-family);
-  font-size: 0.84rem;
-  font-weight: 600;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.42rem;
-  cursor: pointer;
-  transition: all 0.15s ease;
-}
-
-.filterBtn:hover {
-  border-color: var(--schwork-sage);
-}
-
-.filterBtnUniversity {
-  border-color: rgba(78, 133, 119, 0.55);
-}
-
-.filterCount {
-  font-family: var(--ifm-font-family-monospace);
-  font-size: 0.72rem;
-  font-weight: 700;
-  opacity: 0.8;
-}
-
-.filterBtnActive {
-  background: var(--schwork-navy);
-  color: #ffffff;
-  border-color: var(--schwork-navy);
-}
-
-.filterBtnActive .filterCount {
-  color: var(--schwork-amber);
-  opacity: 1;
-}
-
-:global(html[data-theme='dark']) .filterBtnActive {
-  background: var(--schwork-sage);
-  color: #ffffff;
-  border-color: var(--schwork-sage);
-}
-
-:global(html[data-theme='dark']) .filterBtnActive .filterCount {
-  color: #eef2f5;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
   gap: 1rem;
-}
-
-/* Module cards separated calmly with soft sage accents */
-.card {
-  position: relative;
-  overflow: hidden;
-  background: var(--schwork-surface);
-  border: 1.5px solid var(--schwork-border);
-  border-top: 4px solid var(--schwork-sage);
-  border-radius: 14px;
-  padding: 1.2rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  gap: 0.9rem;
-  transition: border-color 0.15s ease, transform 0.15s ease;
-}
-
-.card:hover {
-  border-color: var(--schwork-sage-dark);
-}
-
-.cardUniversity {
-  border-top-color: var(--schwork-navy);
-}
-
-.cardTop {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem;
-  margin-bottom: 0.6rem;
-}
-
-.code {
-  font-family: var(--ifm-font-family-monospace);
-  font-size: 0.76rem;
-  font-weight: 700;
-  padding: 0.22rem 0.55rem;
+  min-height: 52px;
+  padding: 0.78rem 0.65rem;
+  color: var(--schwork-text);
+  text-decoration: none !important;
   border-radius: 6px;
-  background: var(--schwork-navy);
-  color: #e6f3ef;
+  transition: background-color 0.14s ease, color 0.14s ease;
 }
 
-:global(html[data-theme='dark']) .code {
-  background: #101c2c;
-  border: 1px solid rgba(140, 196, 180, 0.4);
+.link:hover,
+.link:focus-visible {
+  background-color: var(--schwork-surface-alt);
+  color: var(--schwork-navy);
+  outline: none;
 }
 
-.cardUniversity .code {
-  background: var(--schwork-sage-dark);
-  color: #ffffff;
-  border: none;
-}
-
-.statusPlanned {
-  font-family: var(--ifm-font-family-monospace);
-  font-size: 0.72rem;
-  font-weight: 700;
-  padding: 0.22rem 0.55rem;
-  border-radius: 6px;
-  background: var(--schwork-surface-alt);
-  color: var(--schwork-text-muted);
-  border: 1px solid var(--schwork-border);
-}
-
-/* Warm Coral contrast badge for live subjects */
-.statusLive {
-  font-family: var(--ifm-font-family-monospace);
-  font-size: 0.72rem;
-  font-weight: 700;
-  padding: 0.22rem 0.55rem;
-  border-radius: 6px;
-  background: var(--schwork-coral);
+:global(html[data-theme='dark']) .link:hover,
+:global(html[data-theme='dark']) .link:focus-visible {
   color: #ffffff;
 }
 
 .name {
   font-family: var(--ifm-heading-font-family);
-  font-size: 1.08rem;
-  font-weight: 700;
-  margin: 0 0 0.45rem;
+  font-size: 1.04rem;
+  font-weight: 600;
+  line-height: 1.35;
 }
 
-.summary {
-  font-size: 0.89rem;
-  color: var(--schwork-text-muted);
-  line-height: 1.55;
-  margin: 0;
+.arrow {
+  flex-shrink: 0;
+  color: var(--schwork-sage);
+  transition: transform 0.14s ease, color 0.14s ease;
 }
 
-.footer {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.5rem;
-  padding-top: 0.75rem;
-  border-top: 1px dashed var(--schwork-border);
-  font-size: 0.78rem;
-  color: var(--schwork-text-muted);
-  font-family: var(--ifm-font-family-monospace);
-}
-
-.footer a {
+.link:hover .arrow,
+.link:focus-visible .arrow {
   color: var(--schwork-coral);
-  font-weight: 700;
+  transform: translateX(3px);
 }
 
-:global(html[data-theme='dark']) .footer a {
+:global(html[data-theme='dark']) .link:hover .arrow,
+:global(html[data-theme='dark']) .link:focus-visible .arrow {
   color: var(--schwork-amber);
-}
-
-.emptyState {
-  padding: 1.5rem;
-  border-radius: 12px;
-  border: 1.5px dashed var(--schwork-border);
-  background: var(--schwork-surface);
-  color: var(--schwork-text-muted);
-  text-align: center;
-  font-size: 0.94rem;
-}
-
-.resetLink {
-  border: none;
-  background: transparent;
-  color: var(--ifm-color-primary);
-  font-weight: 700;
-  text-decoration: underline;
-  cursor: pointer;
-  padding: 0;
-  font-size: inherit;
-}
-
-@media (max-width: 996px) {
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 640px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
 }
