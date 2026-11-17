@@ -1,0 +1,58 @@
+{
+  "name": "schwork",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Free, mobile-first CSEC documentation & study platform for Jamaican secondary school students.",
+  "scripts": {
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start --host 0.0.0.0 --port 3000",
+    "build": "docusaurus build",
+    "build:gh-pages": "DEPLOY_TARGET=gh-pages docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "DEPLOY_TARGET=gh-pages docusaurus deploy",
+    "clear": "docusaurus clear",
+    "serve": "docusaurus serve --host 0.0.0.0 --port 3000 --no-open",
+    "typecheck": "tsc",
+    "diagrams": "python3 scripts/matplotlib/build_all.py"
+  },
+  "dependencies": {
+    "@docusaurus/core": "3.10.2",
+    "@docusaurus/preset-classic": "3.10.2",
+    "@easyops-cn/docusaurus-search-local": "^0.55.3",
+    "@fontsource/jetbrains-mono": "^5.2.8",
+    "@fontsource/plus-jakarta-sans": "^5.2.8",
+    "@fontsource/space-grotesk": "^5.2.8",
+    "@mdx-js/react": "^3.1.1",
+    "clsx": "^2.1.1",
+    "katex": "^0.16.22",
+    "lucide-react": "^1.73.0",
+    "prism-react-renderer": "^2.4.1",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "rehype-katex": "^7.0.1",
+    "remark-math": "^6.0.0"
+  },
+  "devDependencies": {
+    "@docusaurus/module-type-aliases": "3.10.2",
+    "@docusaurus/tsconfig": "3.10.2",
+    "@docusaurus/types": "3.10.2",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "typescript": "~5.8.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 3 chrome version",
+      "last 3 firefox version",
+      "last 5 safari version"
+    ]
+  },
+  "engines": {
+    "node": ">=20.0"
+  }
+}

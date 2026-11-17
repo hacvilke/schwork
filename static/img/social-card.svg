@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" fill="none">
+  <rect width="1200" height="630" fill="#132238"/>
+  <g opacity="0.14" stroke="#2BB3C0" stroke-width="1">
+    <path d="M0 90H1200M0 180H1200M0 270H1200M0 360H1200M0 450H1200M0 540H1200"/>
+    <path d="M120 0V630M240 0V630M360 0V630M480 0V630M600 0V630M720 0V630M840 0V630M960 0V630M1080 0V630"/>
+  </g>
+  <rect x="84" y="88" width="290" height="44" rx="8" fill="#C8FF00"/>
+  <text x="108" y="117" fill="#132238" font-family="system-ui, sans-serif" font-size="22" font-weight="800" letter-spacing="1.2">JAMAICA · GRADES 10–11</text>
+  <text x="84" y="250" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="96" font-weight="800">schwork</text>
+  <text x="84" y="328" fill="#9BDCE3" font-family="system-ui, sans-serif" font-size="34" font-weight="500">Every high school subject documented clearly</text>
+  <text x="84" y="376" fill="#9BDCE3" font-family="system-ui, sans-serif" font-size="34" font-weight="500">for phones, school computers, and libraries.</text>
+  <rect x="84" y="454" width="260" height="8" rx="4" fill="#2BB3C0"/>
+  <rect x="356" y="454" width="76" height="8" rx="4" fill="#C8FF00"/>
+  <text x="84" y="534" fill="#7CA8B8" font-family="monospace" font-size="24">Structured Notes · Interactive Graphs · Worked Examples · Practice Checks</text>
+</svg>

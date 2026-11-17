@@ -1,0 +1,204 @@
+---
+id: sample-lesson
+title: "Sample Lesson: Quadratics & Vectors"
+sidebar_label: Sample Lesson
+---
+
+<SyllabusHeader
+  subject="Mathematics · Preview"
+  section="Relations, Functions, Graphs & Vectors — sample lesson format"
+  code="SAMPLE-01"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="10 min"
+  difficulty="Core"
+/>
+
+This sample page shows how lessons are laid out across **Schwork**: clear objectives, formula cards, interactive graphs, zoomable diagrams, worked examples, and quick self-checks.
+
+<ObjectivesBox
+  id="sample-lesson-01"
+  objectives={[
+    'Identify the roots, y-intercept, and axis of symmetry of a quadratic function.',
+    'Explore how changing a, b, and c transforms the graph of y = ax² + bx + c.',
+    'Add two column vectors geometrically using the Triangle & Parallelogram Law.',
+    'Apply Pythagoras’ theorem and basic trigonometric ratios to a right-angled triangle.',
+  ]}
+/>
+
+---
+
+## 1. Key Formulas
+
+<FormulaCard title="The Quadratic Formula" onFormulaSheet={true}>
+
+For any quadratic equation $ax^2 + bx + c = 0$ where $a \neq 0$:
+
+$$
+x = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+$$
+
+The discriminant $\Delta = b^2 - 4ac$ tells you how many real roots the equation has:
+- $\Delta > 0$ — two distinct real roots
+- $\Delta = 0$ — one repeated real root (touches the $x$-axis)
+- $\Delta < 0$ — no real roots
+
+</FormulaCard>
+
+<FormulaCard title="Axis of Symmetry & Turning Point" onFormulaSheet={false}>
+
+For $f(x) = ax^2 + bx + c$, the equation of the axis of symmetry is:
+
+$$
+x = -\frac{b}{2a}
+$$
+
+</FormulaCard>
+
+---
+
+## 2. Interactive Quadratic Graph
+
+Move the sliders below to see how $a$, $b$, and $c$ change the shape and position of the parabola. Tap any spot on the curve to read its coordinates.
+
+<InteractiveGraph
+  title="Explore Quadratics: y = a·x² + b·x + c"
+  curves={[
+    {expr: 'a*x^2 + b*x + c', label: 'y = ax² + bx + c', color: 'cyan'},
+    {expr: '0', label: 'y = 0 (x-axis)', color: 'softCyan', dashed: true},
+  ]}
+  parameters={[
+    {name: 'a', label: 'Width & direction (a)', min: -3, max: 3, step: 0.5, defaultValue: 1},
+    {name: 'b', label: 'Horizontal tilt (b)', min: -6, max: 6, step: 1, defaultValue: -2},
+    {name: 'c', label: 'y-intercept (c)', min: -5, max: 5, step: 1, defaultValue: -3},
+  ]}
+  xDomain={[-6, 8]}
+  yDomain={[-6, 8]}
+/>
+
+Want to test your own function? Type an expression such as `x^2 - 4`, `2x + 1`, or `2*sin(x)` below:
+
+<InteractiveGraph
+  title="Equation Sandbox — Try Your Own Function"
+  curves={[
+    {expr: '2*sin(x)', label: 'y = 2·sin(x)', color: 'lime'},
+  ]}
+  xDomain={[-7, 7]}
+  yDomain={[-4, 4]}
+  allowCustomExpr={true}
+/>
+
+---
+
+## 3. Diagrams (Tap to Expand on Phones)
+
+<DiagramFigure
+  src="/img/diagrams/template/vector-addition.svg"
+  alt="Parallelogram and Triangle Law of Vector Addition showing vectors a=(4,1), b=(2,3), and resultant r=(6,4)"
+  caption="Figure 1: Adding vectors tail-to-tip or completing the parallelogram gives the same resultant vector r = a + b."
+  sourceLabel="Vector Diagram"
+/>
+
+<DiagramFigure
+  src="/img/diagrams/template/right-triangle-trig.svg"
+  alt="Right-angled triangle ABC showing Adjacent 4cm, Opposite 3cm, Hypotenuse 5cm, right-angle square, and SOH-CAH-TOA ratios"
+  caption="Figure 2: Reference right-angled triangle showing Pythagoras’ theorem and the three primary trigonometric ratios."
+  sourceLabel="Geometry Reference"
+/>
+
+---
+
+## 4. Reference Tables
+
+Tables swipe sideways smoothly on smaller screens so columns always stay readable:
+
+| Quantity | Symbol | SI Unit | Unit Symbol | Exam Paper |
+| :--- | :---: | :--- | :---: | :---: |
+| Displacement | $s$ | metre | $\text{m}$ | Paper 1 & 2 |
+| Velocity | $v$ | metre per second | $\text{m s}^{-1}$ | Paper 1 & 2 |
+| Acceleration | $a$ | metre per second squared | $\text{m s}^{-2}$ | Paper 1 & 2 |
+| Force | $F$ | newton | $\text{N}$ | Paper 1 & 2 |
+| Work / Energy | $W, E$ | joule | $\text{J}$ | Paper 1 & 2 |
+
+---
+
+## 5. Worked Example
+
+<WorkedExample
+  title="Finding the Roots & Minimum Point of a Quadratic"
+  marks={4}
+  problem={
+    <>
+      Given the quadratic function <strong>f(x) = x² − 2x − 3</strong>, determine:
+      (a) the roots of <em>f(x) = 0</em>, and (b) the coordinates of its minimum point.
+    </>
+  }
+  examTip="Always check the sign of a first! When a > 0 the parabola opens upward (U-shape), so the turning point is a MINIMUM. When a < 0 it opens downward, giving a MAXIMUM."
+>
+
+**(a) Find the roots by factorising:**
+
+$$
+x^2 - 2x - 3 = 0
+$$
+
+Find two numbers that multiply to $-3$ and add to $-2$: those are $-3$ and $+1$.
+
+$$
+(x - 3)(x + 1) = 0
+$$
+
+$$
+x = 3 \quad \text{or} \quad x = -1
+$$
+
+**(b) Find the minimum point:**
+
+Use $x = -\dfrac{b}{2a}$ with $a = 1$ and $b = -2$:
+
+$$
+x = -\frac{-2}{2(1)} = 1
+$$
+
+Substitute $x = 1$ back into $f(x)$:
+
+$$
+f(1) = (1)^2 - 2(1) - 3 = 1 - 2 - 3 = -4
+$$
+
+Therefore, the minimum turning point is **$(1,\,-4)$**.
+
+</WorkedExample>
+
+---
+
+## 6. Quick Practice Checks
+
+<QuickCheck
+  paper="Paper 1"
+  marks={1}
+  question="What is the y-intercept of the quadratic curve y = 2x² − 5x + 7?"
+  options={[
+    '(0, −5)',
+    '(0, 2)',
+    '(0, 7)',
+    '(7, 0)',
+  ]}
+  correctIndex={2}
+  explanation="The y-intercept occurs where x = 0. Substituting x = 0 gives y = 2(0)² − 5(0) + 7 = 7, so the point is (0, 7)."
+/>
+
+<QuickCheck
+  paper="Paper 2"
+  marks={3}
+  question="A right-angled triangle has legs of length 6 cm and 8 cm. Calculate the length of the hypotenuse, showing all working."
+  explanation={
+    <div>
+      <p><strong>Mark Scheme [3 marks]:</strong></p>
+      <ol>
+        <li>State Pythagoras’ theorem: <code>c² = a² + b²</code> <em>[1 mark]</em></li>
+        <li>Substitute values: <code>c² = 6² + 8² = 36 + 64 = 100</code> <em>[1 mark]</em></li>
+        <li>Take positive square root: <code>c = √100 = 10 cm</code> <em>[1 mark]</em></li>
+      </ol>
+    </div>
+  }
+/>
