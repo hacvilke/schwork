@@ -9,6 +9,7 @@ import MDXComponents from '@theme-original/MDXComponents';
 import {
   DiagramFigure,
   FormulaCard,
+  FormulaHint,
   InteractiveGraph,
   ObjectivesBox,
   QuickCheck,
@@ -32,6 +33,7 @@ export default {
   SyllabusHeader,
   ObjectivesBox,
   FormulaCard,
+  FormulaHint,
   WorkedExample,
   QuickCheck,
   InteractiveGraph,

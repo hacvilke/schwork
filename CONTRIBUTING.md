@@ -55,7 +55,8 @@ All components in `src/components/lesson/` are globally registered via `src/them
 
 - `<SyllabusHeader subject="..." section="..." code="..." papers={['Paper 1', 'Paper 2']} studyTime="15 min" difficulty="Core" />`
 - `<ObjectivesBox id="unique-lesson-id" objectives={['...', '...']} />`
-- `<FormulaCard title="..." onFormulaSheet={true | false}>...</FormulaCard>`
+- `<FormulaCard title="..." onFormulaSheet={true | false} summary="Optional short plain-English summary">...</FormulaCard>`
+- `<FormulaHint short="Short plain-English explanation" label="Optional label" block={true | false}>...</FormulaHint>` — Hover or tap/click any inline or display formula to pop up a shorter plain-English explanation.
 - `<InteractiveGraph title="..." curves={[...]} parameters={[...]} />`
 - `<DiagramFigure src="/img/diagrams/..." alt="..." caption="..." />`
 - `<WorkedExample title="..." marks={4} problem={...} examTip="...">...</WorkedExample>`
