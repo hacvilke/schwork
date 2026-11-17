@@ -1,0 +1,180 @@
+---
+id: t-accounts-and-balancing-off
+title: "4.2 Posting to T-Accounts & Balancing Off (c/d & b/d)"
+sidebar_label: "4.2 T-Accounts & Balancing Off"
+sidebar_position: 2
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 4"
+  section="Drawing Ledger T-Accounts, Double-Entry Posting & Balancing Off Accounts (Balance c/d & Balance b/d)"
+  code="POA-4.2"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="22 min"
+  difficulty="Core"
+/>
+
+<ObjectivesBox
+  id="poa-4-2"
+  objectives={[
+    'Draw neat, properly titled T-Accounts with Debit (Dr) on the left and Credit (Cr) on the right.',
+    'Post transactions cleanly by naming the OPPOSITE account in the Details column.',
+    'Balance off any ledger account using the 4-step Balance c/d and Balance b/d method.',
+    'Interpret what a Debit Balance b/d vs a Credit Balance b/d tells you about an account.',
+  ]}
+/>
+
+---
+
+## 1. How a T-Account Works (Golden Posting Rule!)
+
+A **T-Account** looks like a capital letter **`T`**:
+- **Left side = Debit (Dr)**
+- **Right side = Credit (Cr)**
+- **Golden Labelling Rule:** Inside any account, write the **name of the OTHER (corresponding) account** in the `Details` column!
+  - Example: When you buy goods on credit from **K. Ellis** for **J\$54,000**:
+    - Inside **Purchases Account (Dr side):** write `May 2 | K. Ellis | 54,000`
+    - Inside **K. Ellis Account (Cr side):** write `May 2 | Purchases | 54,000`
+
+---
+
+## 2. How to Balance Off an Account in 4 Easy Steps (`c/d` → `b/d`)
+
+Examiners constantly report that students mix up **`Balance c/d`** (*carried down*) and **`Balance b/d`** (*brought down*). Follow these 4 steps and you will **never** miss a balancing mark again:
+
+1. **Add up both sides** separately on rough paper and find which side is **bigger**.
+2. Write the **bigger total** in the total box on **BOTH sides** (double-underlined!).
+3. On the **SMALLER side** (right *above* the total line), write the missing difference as **`Balance c/d`** (*carried down* — closing this month).
+4. On the **OPPOSITE (BIGGER) side** (*below* the double-underlined total, dated the **1st of the next month**), bring that exact same number down as **`Balance b/d`** (*brought down* — opening next month!).
+
+:::tip Quick Check!
+An account is named after the side where **`Balance b/d`** lands!
+- **`Balance b/d` on the Debit side** = a **Debit Balance** *(Assets, Debtors, Expenses, Drawings)*.
+- **`Balance b/d` on the Credit side** = a **Credit Balance** *(Liabilities, Creditors, Capital, Revenues)*.
+:::
+
+---
+
+## 3. Worked Example: Complete Set of Balanced T-Accounts (*D. Fraser Books*)
+
+Watch all eight transactions for **D. Fraser Books** in **May 2026** posted into neat T-accounts and balanced off at **31 May** — we will carry every single `Balance b/d` straight into the **Trial Balance** in Lesson 4.3!
+
+| Date | Transaction | Account Debited (Dr) | Account Credited (Cr) |
+| :--- | :--- | :--- | :--- |
+| May 1 | Owner D. Fraser put **J\$150,000** into the business bank | Bank *(Asset ↑)* | Capital *(Capital ↑)* |
+| May 2 | Bought goods on credit from **K. Ellis** for **J\$54,000** | Purchases *(Expense ↑)* | K. Ellis *(Creditor ↑)* |
+| May 5 | Bought Shop Fittings by cheque **J\$35,000** | Shop Fittings *(Asset ↑)* | Bank *(Asset ↓)* |
+| May 9 | Sold goods on credit to **M. Gayle** for **J\$68,000** | M. Gayle *(Debtor ↑)* | Sales *(Revenue ↑)* |
+| May 14 | Paid **K. Ellis** **J\$30,000** by cheque | K. Ellis *(Creditor ↓)* | Bank *(Asset ↓)* |
+| May 18 | Received cheque **J\$42,000** from **M. Gayle** | Bank *(Asset ↑)* | M. Gayle *(Debtor ↓)* |
+| May 24 | Paid shop rent by cheque **J\$18,000** | Rent *(Expense ↑)* | Bank *(Asset ↓)* |
+| May 28 | Owner withdrew **J\$12,000** by cheque for private use | Drawings *(Drawings ↑)* | Bank *(Asset ↓)* |
+
+### General Ledger & Cash/Bank Account
+
+<TAccount
+  title="Bank Account (Real / Asset)"
+  debit={[
+    { date: 'May 1', details: 'Capital', amount: '150,000' },
+    { date: 'May 18', details: 'M. Gayle', amount: '42,000' },
+  ]}
+  credit={[
+    { date: 'May 5', details: 'Shop Fittings', amount: '35,000' },
+    { date: 'May 14', details: 'K. Ellis', amount: '30,000' },
+    { date: 'May 24', details: 'Rent', amount: '18,000' },
+    { date: 'May 28', details: 'Drawings', amount: '12,000' },
+    { date: 'May 31', details: 'Balance c/d', amount: '97,000', isBalance: true },
+  ]}
+  total="192,000"
+  debitBroughtDown={{ date: 'June 1', details: 'Balance b/d', amount: '97,000', isBalance: true }}
+  note="Debit side (J$192,000) > Credit side (J$95,000) → Debit Balance b/d of J$97,000 means D. Fraser has J$97,000 Cash at Bank (Current Asset)."
+/>
+
+<TAccount
+  title="Capital Account (General Ledger)"
+  debit={[
+    { date: 'May 31', details: 'Balance c/d', amount: '150,000', isBalance: true },
+  ]}
+  credit={[
+    { date: 'May 1', details: 'Bank', amount: '150,000' },
+  ]}
+  total="150,000"
+  creditBroughtDown={{ date: 'June 1', details: 'Balance b/d', amount: '150,000', isBalance: true }}
+  note="Credit Balance b/d of J$150,000 — owner's capital invested in the business."
+/>
+
+<TAccount
+  title="Purchases Account (General Ledger — Nominal)"
+  debit={[
+    { date: 'May 2', details: 'K. Ellis', amount: '54,000' },
+  ]}
+  credit={[
+    { date: 'May 31', details: 'Balance c/d', amount: '54,000', isBalance: true },
+  ]}
+  total="54,000"
+  debitBroughtDown={{ date: 'June 1', details: 'Balance b/d', amount: '54,000', isBalance: true }}
+  note="Notice May 2 — K. Ellis J$54,000 sits on the Debit side of Purchases!"
+/>
+
+<TAccount
+  title="Sales Account (General Ledger — Nominal)"
+  debit={[
+    { date: 'May 31', details: 'Balance c/d', amount: '68,000', isBalance: true },
+  ]}
+  credit={[
+    { date: 'May 9', details: 'M. Gayle', amount: '68,000' },
+  ]}
+  total="68,000"
+  creditBroughtDown={{ date: 'June 1', details: 'Balance b/d', amount: '68,000', isBalance: true }}
+  note="Sales always carries a Credit Balance b/d (Revenue)."
+/>
+
+### Personal Accounts (Purchases Ledger & Sales Ledger)
+
+<TAccount
+  title="K. Ellis Account (Purchases Ledger — Creditor)"
+  debit={[
+    { date: 'May 14', details: 'Bank', amount: '30,000' },
+    { date: 'May 31', details: 'Balance c/d', amount: '24,000', isBalance: true },
+  ]}
+  credit={[
+    { date: 'May 2', details: 'Purchases', amount: '54,000' },
+  ]}
+  total="54,000"
+  creditBroughtDown={{ date: 'June 1', details: 'Balance b/d', amount: '24,000', isBalance: true }}
+  note="Credit Balance b/d of J$24,000 means D. Fraser STILL OWES K. Ellis J$24,000 (Current Liability)."
+/>
+
+<TAccount
+  title="M. Gayle Account (Sales Ledger — Debtor)"
+  debit={[
+    { date: 'May 9', details: 'Sales', amount: '68,000' },
+  ]}
+  credit={[
+    { date: 'May 18', details: 'Bank', amount: '42,000' },
+    { date: 'May 31', details: 'Balance c/d', amount: '26,000', isBalance: true },
+  ]}
+  total="68,000"
+  debitBroughtDown={{ date: 'June 1', details: 'Balance b/d', amount: '26,000', isBalance: true }}
+  note="Debit Balance b/d of J$26,000 means M. Gayle STILL OWES D. Fraser J$26,000 (Current Asset)."
+/>
+
+*(The three remaining single-entry General Ledger accounts carry straight-line Debit balances: **Shop Fittings = J\$35,000 Dr**, **Rent = J\$18,000 Dr**, and **Drawings = J\$12,000 Dr**.)*
+
+---
+
+## 4. Quick Check
+
+<QuickCheck
+  paper="Paper 1"
+  marks={1}
+  question="In a debtor's personal account, the Debit side totals J$82,000 and the Credit side totals J$55,000. Where are Balance c/d and Balance b/d placed?"
+  options={[
+    'Balance c/d J$27,000 on Debit side; Balance b/d J$27,000 on Credit side',
+    'Balance c/d J$27,000 on Credit side; Balance b/d J$27,000 on Debit side',
+    'Balance c/d J$82,000 on Credit side; Balance b/d J$55,000 on Debit side',
+    'Balance c/d J$27,000 on both Debit and Credit sides',
+  ]}
+  correctIndex={1}
+  explanation="Put Balance c/d (J$27,000) on the smaller (Credit) side above the totals so both sides add to J$82,000, then bring Balance b/d (J$27,000) down on the bigger (Debit) side below the totals!"
+/>

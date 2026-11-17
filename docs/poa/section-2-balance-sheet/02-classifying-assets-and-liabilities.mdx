@@ -1,0 +1,249 @@
+---
+id: classifying-assets-and-liabilities
+title: "2.2 Classifying Assets, Liabilities & Capital"
+sidebar_label: "2.2 Classifying Assets & Liabilities"
+sidebar_position: 2
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 2"
+  section="Balance Sheet Classifications — Fixed Assets, Current Assets, Current Liabilities, Long-Term Liabilities & Capital"
+  code="POA-2.2"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="18 min"
+  difficulty="Core"
+/>
+
+<ObjectivesBox
+  id="poa-2-2"
+  objectives={[
+    'Distinguish clearly between Fixed Assets (Non-Current Assets) and Current Assets.',
+    'List assets in Order of Permanence (and recognise Order of Liquidity).',
+    'Distinguish clearly between Current Liabilities and Long-Term (Non-Current) Liabilities.',
+    'Avoid classic exam classification traps (Bank Overdraft, Loan to vs Loan from, Stock for resale).',
+  ]}
+/>
+
+---
+
+## 1. Classifying Assets: Fixed vs Current
+
+On a Classified Balance Sheet, **Assets** are split into two clear groups based on **how long** the business intends to keep them and **why** they were bought:
+
+### A. Fixed Assets (Non-Current Assets)
+**Definition:** Long-term resources acquired **for use in running the business** — **NOT for resale** — expected to last **more than one accounting year**.
+
+Common British/Caribbean Fixed Assets (listed in **Order of Permanence** — hardest to convert to cash first):
+1. **Land and Buildings (Premises)**
+2. **Plant and Machinery**
+3. **Furniture, Fixtures and Fittings**
+4. **Office / Computer Equipment**
+5. **Motor Vehicles**
+
+### B. Current Assets
+**Definition:** Short-term resources that are already cash, or are expected to be **sold, used up, or converted into cash within one accounting year** (12 months) during normal trading.
+
+Common British/Caribbean Current Assets (listed in **Order of Permanence** — least liquid first, most liquid last):
+1. **Stock (Inventory)** — unsold goods held for resale
+2. **Debtors (Accounts Receivable)** — customers who owe the business money from credit sales
+3. **Prepaid Expenses (Prepayments)** — expenses paid in advance (e.g. next year's insurance)
+4. **Cash at Bank** — positive money held in the business bank account
+5. **Cash in Hand** — physical notes and coins kept at the business (e.g. petty cash / cash register)
+
+:::tip Order of Permanence vs Order of Liquidity
+- **Order of Permanence** *(most common in Jamaican / British Balance Sheets)*: starts with the most permanent asset (**Premises**) down to **Cash in Hand**.
+- **Order of Liquidity** *(exact reverse)*: starts with **Cash in Hand** → **Cash at Bank** → **Debtors** → **Stock** → up to **Premises** last.
+:::
+
+---
+
+## 2. Classifying Liabilities & Capital
+
+### A. Current Liabilities
+**Definition:** Short-term debts owed by the business that must be settled **within one accounting year (12 months)**.
+- **Creditors (Accounts Payable)** — suppliers owed money for credit purchases
+- **Bank Overdraft** — withdrawing more from the business current account than is deposited (short-term debt owed to the bank)
+- **Accrued Expenses (Expenses Owing)** — bills used up this year but not yet paid (e.g. unpaid JPS electricity or wages owing)
+- **Short-Term Loan** — any loan repayable in **1 year or less**
+
+### B. Long-Term Liabilities (Non-Current Liabilities)
+**Definition:** Long-term debts owed to outsiders that are repayable **over more than one accounting year** (longer than 12 months).
+- **Bank Loan** (e.g. a 5-year business expansion loan)
+- **Mortgage** (a long-term loan secured against land/buildings)
+- **Loan from a Finance Company or Individual** (repayable over several years)
+- **Debentures** *(for limited companies)*
+
+### C. Capital (Owner's Equity)
+**Definition:** The owner's net investment in the business. Over an accounting year, Capital grows with **Net Profit** (and extra capital introduced) and shrinks when the owner takes **Drawings** (or suffers a **Net Loss**).
+
+<FormulaCard
+  title="Closing Capital Formula"
+  onFormulaSheet={false}
+  summary="Start with what the owner had in the business at the start of the year, add the profit earned, and take away whatever cash or goods the owner withdrew for personal use."
+>
+
+<FormulaHint
+  block
+  label="Closing Capital"
+  short="Profit belongs to the owner so it increases Capital; Drawings are personal withdrawals so they decrease Capital."
+>
+
+$$
+\text{Closing Capital} = \text{Opening Capital} + \text{Net Profit} - \text{Drawings}
+$$
+
+</FormulaHint>
+
+</FormulaCard>
+
+---
+
+## 3. Classic Exam Classification Traps (Watch Out!)
+
+| Tricky Item | Correct Classification | Why Students Get Caught! |
+| :--- | :--- | :--- |
+| **Bank Overdraft** | **Current Liability** | Regular **Cash at Bank** is a Current Asset, but a **Bank Overdraft** means you owe the bank money! |
+| **Loan FROM J. Brown (5 yrs)** | **Long-Term Liability** | "Loan **from**" means the business borrowed it and **owes** J. Brown. |
+| **Loan TO M. Grant** | **Asset** *(Current if ≤ 1 yr, Non-Current if > 1 yr)* | "Loan **to**" means someone owes **us** money — it is a resource coming back to the business! |
+| **Motor Vans at a Car Dealership** | **Current Asset (Stock)** | At a bakery, a van is a **Fixed Asset**. At a car dealership, cars are bought **for resale**, making them **Stock (Current Asset)**! |
+
+---
+
+## 4. Classwork Activities: Classify Assets & Liabilities
+
+<ClassifyActivity
+  title="Classwork 1: Classify Each Asset — Fixed Asset vs Current Asset"
+  instruction="Decide whether each asset belonging to a Jamaican furniture store is a Fixed Asset (Non-Current) or a Current Asset."
+  categories={['Fixed Asset', 'Current Asset']}
+  items={[
+    {
+      prompt: 'Shop Premises (Land and Building)',
+      answer: 'Fixed Asset',
+      explanation:
+        'Premises are long-term property used to house and operate the business, not bought for resale.',
+    },
+    {
+      prompt: 'Stock of wooden chairs and beds held for sale',
+      answer: 'Current Asset',
+      explanation:
+        'Goods held specifically to be sold to customers within the year are Stock (Inventory) — a Current Asset.',
+    },
+    {
+      prompt: 'Debtors (customers who bought furniture on 30-day credit)',
+      answer: 'Current Asset',
+      explanation:
+        'Debtors (Accounts Receivable) are expected to pay cash to the store within a few weeks/months.',
+    },
+    {
+      prompt: 'Delivery Truck used to transport furniture to buyers',
+      answer: 'Fixed Asset',
+      explanation:
+        'The truck is used in operations over several years rather than held for resale.',
+    },
+    {
+      prompt: 'Cash at Bank (positive balance in NCB business account)',
+      answer: 'Current Asset',
+      explanation:
+        'Money readily available in the business bank account is one of the most liquid Current Assets.',
+    },
+    {
+      prompt: 'Office Computers & Cash Registers',
+      answer: 'Fixed Asset',
+      explanation:
+        'Office equipment assists daily operations for multiple years and is not for resale.',
+    },
+    {
+      prompt: 'Cash in Hand (petty cash float in the safe)',
+      answer: 'Current Asset',
+      explanation:
+        'Cash in Hand is the most liquid Current Asset of all.',
+    },
+  ]}
+/>
+
+<ClassifyActivity
+  title="Classwork 2: Classify Each Item — Liability, Capital, or Asset?"
+  instruction="Watch carefully for Bank Overdraft, Mortgage, Drawings, and 'Loan from' vs 'Loan to'!"
+  categories={[
+    'Current Liability',
+    'Long-Term Liability',
+    'Capital (Owner’s Equity)',
+    'Asset',
+  ]}
+  items={[
+    {
+      prompt: 'Creditors (suppliers owed for stock bought on 30-day credit)',
+      answer: 'Current Liability',
+      explanation:
+        'Trade creditors must normally be paid within 30–60 days (well within one year), making them Current Liabilities.',
+    },
+    {
+      prompt: '15-Year Mortgage on the warehouse building',
+      answer: 'Long-Term Liability',
+      explanation:
+        'A mortgage is repaid over many years (more than 12 months), so it is a Long-Term (Non-Current) Liability.',
+    },
+    {
+      prompt: 'Bank Overdraft of J$45,000',
+      answer: 'Current Liability',
+      explanation:
+        'An overdraft is a short-term debt owed to the bank, repayable on demand — always a Current Liability.',
+    },
+    {
+      prompt: '5-Year Bank Loan from Scotiabank',
+      answer: 'Long-Term Liability',
+      explanation:
+        'Because repayment extends beyond 12 months, a 5-year bank loan is a Long-Term Liability.',
+    },
+    {
+      prompt: 'Unpaid JPS Electricity Bill (Accrued Expense)',
+      answer: 'Current Liability',
+      explanation:
+        'An unpaid utility bill must be settled quickly within the coming weeks — a Current Liability.',
+    },
+    {
+      prompt: 'Owner’s Opening Capital + Net Profit − Drawings',
+      answer: 'Capital (Owner’s Equity)',
+      explanation:
+        'Capital represents the owner’s net stake in the business after adding profit and deducting drawings.',
+    },
+    {
+      prompt: 'Loan TO an employee (repayable in 6 months)',
+      answer: 'Asset',
+      explanation:
+        'A loan TO someone means they owe the business money — it is a Current Asset, NOT a liability!',
+    },
+  ]}
+/>
+
+---
+
+## 5. Quick Exam Check
+
+<QuickCheck
+  paper="Paper 1"
+  marks={1}
+  question="Which list shows Current Assets arranged strictly in Order of Permanence (least liquid to most liquid)?"
+  options={[
+    'Cash in Hand, Cash at Bank, Debtors, Stock',
+    'Stock, Debtors, Cash at Bank, Cash in Hand',
+    'Premises, Motor Vehicles, Stock, Debtors',
+    'Debtors, Stock, Cash in Hand, Cash at Bank',
+  ]}
+  correctIndex={1}
+  explanation="Order of Permanence puts the hardest-to-turn-into-cash Current Asset first (Stock) and ends with the most liquid asset (Cash in Hand)."
+/>
+
+<QuickCheck
+  paper="Paper 1"
+  marks={1}
+  question="Which of the following is classified as a Current Liability on a Sole Trader’s Balance Sheet?"
+  options={[
+    'Prepaid Rent',
+    '10-Year Mortgage',
+    'Bank Overdraft',
+    'Debtors',
+  ]}
+  correctIndex={2}
+  explanation="A Bank Overdraft is a short-term amount owed to the bank (Current Liability). Prepaid Rent and Debtors are Current Assets; a 10-Year Mortgage is a Long-Term Liability."
+/>

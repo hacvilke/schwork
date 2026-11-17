@@ -1,0 +1,149 @@
+---
+id: suspense-accounts-and-errors
+title: "7.3 Suspense Accounts, Error Corrections & Revised Net Profit"
+sidebar_label: "7.3 Suspense Accounts & Errors"
+sidebar_position: 3
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 7"
+  section="Errors Affecting vs Not Affecting the Trial Balance, Journal Corrections, Suspense T-Account & Statement of Revised Net Profit"
+  code="POA-7.3"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="22 min"
+  difficulty="Core"
+/>
+
+<ObjectivesBox
+  id="poa-7-3"
+  objectives={[
+    'Distinguish clearly between errors that DO affect the Trial Balance (require Suspense Account) and errors that DO NOT affect the Trial Balance.',
+    'Open a Suspense Account on the correct side of a disagreeing Trial Balance.',
+    'Prepare General Journal entries to correct both types of errors and clear the Suspense Account to zero.',
+    'Construct a Statement of Revised (Corrected) Net Profit showing which errors change profit and which do not.',
+  ]}
+/>
+
+---
+
+## 1. What Is a Suspense Account? (Kid-Friendly Explanation!)
+
+Suppose your Trial Balance refuses to balance — say **Total Credits exceed Total Debits by J\$12,400** — and you need to draft financial statements while hunting down the bookkeeping mistakes.
+
+A **Suspense Account** is a **temporary holding account** placed on the **SHORTER side** of the Trial Balance so both columns temporarily agree while you investigate. As you find and fix every one-sided error through the General Journal, the Suspense Account shrinks until its balance hits **ZERO (`J$0`)** — proving all Trial Balance errors have been fixed!
+
+---
+
+## 2. Which Errors Need the Suspense Account?
+
+| **Group A: Do NOT Affect Trial Balance** *(NO Suspense Account!)* | **Group B: DO Affect Trial Balance** *(USE Suspense Account!)* |
+| :--- | :--- |
+| 1. **Error of Omission** *(left out of both Dr and Cr)* | 1. **Single-sided omission** *(posted to Dr, forgot Cr)* |
+| 2. **Error of Commission** *(wrong person's account)* | 2. **Posting to the SAME side twice** *(both Dr and Dr, or both Cr and Cr → correct with **DOUBLE the amount**!)* |
+| 3. **Error of Principle** *(wrong class — e.g. Van put in Purchases)* | 3. **Undercasting or Overcasting** a Day Book or account *(added up too low or too high)* |
+| 4. **Error of Original Entry** *(wrong number on both sides)* | 4. **Different figures on Dr and Cr** *(e.g. Dr 10,000, Cr 100,000)* |
+| 5. **Complete Reversal** *(Dr and Cr swapped on both sides)* | 5. **Extracting a Balance b/d into the wrong Trial Balance column** |
+| 6. **Compensating Errors** *(two equal opposite errors)* | |
+
+:::tip Which Errors Change Net Profit?
+Only errors that touch a **Nominal Account** (Sales, Purchases, Returns, Expenses, Other Revenues) change Net Profit! Errors that ONLY touch **Balance Sheet accounts** (Assets, Liabilities, Capital, Drawings — e.g. Cash vs Office Equipment) have **ZERO effect on Net Profit**!
+:::
+
+---
+
+## 3. Worked Example: Journal Corrections, Suspense Account & Revised Net Profit
+
+<WorkedExample
+  title="N. Edwards — Journal Entries, Suspense Account & Statement of Revised Net Profit"
+  marks={14}
+  problem={
+    <>
+      At 31 December 2025, <strong>N. Edwards’</strong> Trial Balance failed to agree: the <strong>Credit side exceeded the Debit side by J$12,400</strong>, so a Suspense Account was opened. Draft Net Profit was <strong>J$84,000</strong>.
+      <br />
+      Investigation uncovered four errors:
+      <br />
+      1. The <strong>Purchases Journal</strong> was undercast (added too low) by <strong>J$8,000</strong>.
+      <br />
+      2. Cash paid for <strong>Office Equipment J$2,200</strong> was correctly credited in Cash, but also <strong>credited to Office Equipment</strong> in error.
+      <br />
+      3. A credit sale of <strong>J$6,000</strong> to <strong>M. Shaw</strong> was completely omitted from the books.
+      <br />
+      4. Repairs to the delivery van of <strong>J$3,500</strong> were wrongly debited to the <strong>Motor Vehicles</strong> account.
+      <br />
+      Prepare: (a) General Journal corrections, (b) the Suspense Account, and (c) the Statement of Revised Net Profit.
+    </>
+  }
+  examTip="Watch Error #2! When an item was put on the WRONG side of ONE account (credited J$2,200 instead of debited J$2,200), you must debit DOUBLE the amount (J$4,400): J$2,200 to erase the wrong credit + J$2,200 to record the true debit!"
+>
+
+### (a) General Journal Entries to Correct Errors
+
+| # | Details | Dr (J\$) | Cr (J\$) | Affects Suspense? |
+| :-: | :--- | :---: | :---: | :---: |
+| **1** | Purchases | 8,000 | | **Yes** *(one-sided undercast)* |
+| | &nbsp;&nbsp;&nbsp;&nbsp;Suspense Account | | 8,000 | |
+| | *(Being correction of undercast Purchases Journal)* | | | |
+| **2** | Office Equipment *(2 × 2,200)* | 4,400 | | **Yes** *(credited twice!)* |
+| | &nbsp;&nbsp;&nbsp;&nbsp;Suspense Account | | 4,400 | |
+| | *(Being correction of Office Equipment wrongly credited)* | | | |
+| **3** | M. Shaw *(Debtor)* | 6,000 | | **No** *(Error of Omission)* |
+| | &nbsp;&nbsp;&nbsp;&nbsp;Sales | | 6,000 | |
+| | *(Being omitted credit sale to M. Shaw now recorded)* | | | |
+| **4** | Motor Repairs | 3,500 | | **No** *(Error of Principle)* |
+| | &nbsp;&nbsp;&nbsp;&nbsp;Motor Vehicles | | 3,500 | |
+| | *(Being van repairs removed from Motor Vehicles account)* | | | |
+
+### (b) Suspense Account *(Clears Cleanly to Zero!)*
+
+<TAccount
+  title="Suspense Account (31 December 2025)"
+  debit={[
+    { date: 'Dec 31', details: 'Difference per Trial Balance', amount: '12,400', isBalance: true },
+  ]}
+  credit={[
+    { date: 'Dec 31', details: 'Purchases (Error 1)', amount: '8,000' },
+    { date: 'Dec 31', details: 'Office Equipment (Error 2)', amount: '4,400' },
+  ]}
+  total="12,400"
+  note="Total Dr (12,400) = Total Cr (12,400) → Closing balance is ZERO! Every Trial Balance error is resolved."
+/>
+
+### (c) Statement of Revised Net Profit for the year ended 31 December 2025
+
+| Particulars | J\$ | J\$ |
+| :--- | :---: | :---: |
+| **Draft Net Profit (before corrections)** | | **84,000** |
+| **Add:** Omitted Credit Sale to M. Shaw *(Error 3 — Revenue ↑)* | | 6,000 |
+| | | 90,000 |
+| **Less:** | | |
+| &nbsp;&nbsp;Purchases Journal undercast *(Error 1 — Cost of Sales ↑)* | 8,000 | |
+| &nbsp;&nbsp;Motor Repairs wrongly capitalised *(Error 4 — Expense ↑)* | 3,500 | (11,500) |
+| **REVISED (CORRECTED) NET PROFIT** | | **78,500** |
+
+*(Notice Error 2 touched ONLY Office Equipment — a Balance Sheet asset — so it had **NO effect** on Net Profit!)*
+
+</WorkedExample>
+
+---
+
+## 4. Quick Check
+
+<QuickCheck
+  paper="Paper 1"
+  marks={1}
+  question="Office machinery bought for J$5,000 cash was debited to Office Machinery (J$5,000) AND debited to Cash (J$5,000). What journal entry corrects this error?"
+  options={[
+    'Dr Suspense J$5,000; Cr Cash J$5,000',
+    'Dr Suspense J$10,000; Cr Cash J$10,000',
+    'Dr Cash J$10,000; Cr Suspense J$10,000',
+    'Dr Office Machinery J$5,000; Cr Cash J$5,000',
+  ]}
+  correctIndex={1}
+  explanation="Cash was debited J$5,000 instead of credited J$5,000 — you must CREDIT Cash by DOUBLE (J$10,000: J$5,000 to cancel the wrong debit + J$5,000 to post the right credit) and DEBIT Suspense J$10,000!"
+/>
+
+---
+
+:::tip Section 7 Complete!
+You've conquered all three POA Control Systems: **Bank Statements, Updated Cash Books & Bank Reconciliation Statements**, **Sales & Purchases Ledger Control Accounts**, and **Suspense Accounts & Revised Net Profit**! Next up: **[Section 8: Accounting for Partnerships](/docs/poa/section-8-partnerships/partnership-basics-and-capital)**!
+:::

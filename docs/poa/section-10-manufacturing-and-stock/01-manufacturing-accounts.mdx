@@ -1,0 +1,171 @@
+---
+id: manufacturing-accounts
+title: "10.1 Manufacturing Accounts, Prime Cost & Unit Cost"
+sidebar_label: "10.1 Manufacturing Accounts"
+sidebar_position: 1
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 10"
+  section="Direct vs Indirect Costs, Raw Materials Consumed, Prime Cost, Factory Overheads, Work in Progress (WIP), Cost of Production & Unit Cost"
+  code="POA-10.1"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="24 min"
+  difficulty="Core"
+/>
+
+<ObjectivesBox
+  id="poa-10-1"
+  objectives={[
+    'Distinguish clearly between Direct Costs (Prime Cost) and Indirect Factory Costs (Factory Overheads), plus non-factory office/selling expenses.',
+    'Prepare a complete Manufacturing Account showing Raw Materials Consumed, Prime Cost, Factory Overheads, Work in Progress, and Cost of Production.',
+    'Calculate Production Cost per Unit and apply Cost-Plus / Mark-Up pricing.',
+    'Explain how Cost of Production transfers straight into the Manufacturer’s Trading Account (replacing Purchases!).',
+  ]}
+/>
+
+---
+
+## 1. How a Factory's Accounts Differ From a Shop's Accounts
+
+A retail shop buys finished goods ready to sell. A **manufacturer** (like Purity Bakery, GraceKennedy factories, or a local jam maker) buys **raw materials** and turns them into **finished goods** inside a factory! So a manufacturer has **three types of Stock**:
+1. **Raw Materials** *(unprocessed ingredients — e.g. fruit, sugar, jars)*
+2. **Work in Progress (WIP)** *(half-finished items still on the factory floor at year-end)*
+3. **Finished Goods** *(completed products ready to sell in the Trading Account!)*
+
+### Direct Costs vs Factory Overheads vs Office/Selling Expenses
+
+| Cost Group | Plain-English Meaning | Examples | Where It Goes |
+| :--- | :--- | :--- | :--- |
+| **Direct Costs** *(Sum = **Prime Cost**)* | Costs you can trace **directly** to every single unit made. | **Direct Materials** (Raw Materials Consumed), **Direct Labour** (factory machine operators' wages), **Direct Expenses** (patents / **royalties** per unit). | **Top Half of Manufacturing Account** → **Prime Cost** |
+| **Indirect Factory Costs** *(**Factory Overheads**)* | General costs of running the **factory building** that cannot be traced to one single item. | Factory rent, factory electricity/power, factory machinery repairs, **indirect factory wages** (supervisors, cleaners), **depreciation of factory machinery**. | **Bottom Half of Manufacturing Account** *(added to Prime Cost)* |
+| **Office, Admin & Selling Expenses** | Costs of the **office or delivery/sales team** *(NOT the factory!)* | Office salaries, office rent, advertising, Carriage Outwards, delivery van depreciation. | **Profit & Loss Account ONLY** *(NEVER in Manufacturing Account!)* |
+
+---
+
+## 2. Core Manufacturing Formulae (Hover or Tap to Explain!)
+
+<FormulaCard
+  title="Manufacturing Account & Unit Cost Formulae"
+  onFormulaSheet={false}
+  summary="Add all Direct Costs to get Prime Cost, add Factory Overheads, adjust for Opening & Closing Work in Progress to get Cost of Production, then divide by units made for Unit Cost!"
+>
+
+<FormulaHint
+  block
+  label="Prime Cost"
+  short="The total of ALL Direct Costs — Raw Materials Consumed + Direct Factory Wages + Direct Expenses (like Royalties)."
+>
+
+$$
+\text{Prime Cost} = \text{Raw Materials Consumed} + \text{Direct Labour} + \text{Direct Expenses}
+$$
+
+</FormulaHint>
+
+<FormulaHint
+  block
+  label="Cost of Production (Cost of Goods Manufactured)"
+  short="Prime Cost plus Factory Overheads, then ADD Opening Work in Progress and SUBTRACT Closing Work in Progress."
+>
+
+$$
+\text{Cost of Production} = \text{Prime Cost} + \text{Factory Overheads} + \text{Opening WIP} - \text{Closing WIP}
+$$
+
+</FormulaHint>
+
+<FormulaHint
+  block
+  label="Unit Cost of Production & Cost-Plus Pricing"
+  short="Divide total Cost of Production by total units completed to get cost per unit, then add your mark-up % to set a selling price."
+>
+
+$$
+\text{Unit Cost} = \frac{\text{Cost of Production}}{\text{Number of Units Produced}}
+$$
+
+</FormulaHint>
+
+</FormulaCard>
+
+---
+
+## 3. Worked Example: Complete Manufacturing Account + Unit Cost + Trading Extract
+
+<WorkedExample
+  title="Blue Mountain Jam Factory — Manufacturing Account & Unit Cost (Year Ended 31 Dec 2025)"
+  marks={15}
+  problem={
+    <>
+      From the records of <strong>Blue Mountain Jam Factory</strong> for the year ended <strong>31 December 2025</strong> (in J$):
+      <br />
+      • Stock at 1 Jan 2025: Raw Materials <strong>45,000</strong>; Work in Progress <strong>15,000</strong>; Finished Goods <strong>30,000</strong>
+      <br />
+      • Stock at 31 Dec 2025: Raw Materials <strong>40,000</strong>; Work in Progress <strong>25,000</strong>; Finished Goods <strong>50,000</strong>
+      <br />
+      • Purchases of Raw Materials <strong>190,000</strong>; Returns Outwards (Raw Materials) <strong>6,000</strong>; Carriage Inwards on Raw Materials <strong>11,000</strong>
+      <br />
+      • Direct Factory Wages <strong>110,000</strong>; Royalties paid per jar <strong>10,000</strong>
+      <br />
+      • Factory Rent <strong>32,000</strong>; Factory Power &amp; Fuel <strong>18,000</strong>; Indirect Factory Wages <strong>24,000</strong>; Depreciation of Factory Machinery <strong>16,000</strong>
+      <br />
+      • Sales of Finished Jars <strong>500,000</strong>; Office Salaries <strong>48,000</strong>; Total jars produced: <strong>20,000 jars</strong>.
+      <br />
+      (a) Prepare the Manufacturing Account and Trading Account extract. (b) Calculate Unit Cost and Selling Price with a 25% mark-up.
+    </>
+  }
+  examTip="Spot the distractor immediately! Office Salaries (J$48,000) is an administrative expense — leave it OUT of the Manufacturing Account (it goes in the Profit & Loss Account!)."
+>
+
+### (a) Manufacturing Account for the year ended 31 December 2025
+
+| Particulars | J\$ | J\$ | J\$ |
+| :--- | :---: | :---: | :---: |
+| **DIRECT MATERIALS (RAW MATERIALS CONSUMED)** | | | |
+| Opening Stock of Raw Materials *(1 Jan 2025)* | | 45,000 | |
+| Add: Purchases of Raw Materials | 190,000 | | |
+| Less: Returns Outwards | (6,000) | | |
+| Add: Carriage Inwards on Raw Materials | 11,000 | 195,000 | |
+| *Raw Materials Available for Use* | | *240,000* | |
+| Less: Closing Stock of Raw Materials *(31 Dec 2025)* | | (40,000) | |
+| **Cost of Raw Materials Consumed** | | | **200,000** |
+| **Add: Direct Labour & Direct Expenses** | | | |
+| Direct Factory Wages | | 110,000 | |
+| Royalties *(Direct Expense)* | | 10,000 | 120,000 |
+| **PRIME COST** | | | **320,000** |
+| | | | |
+| **ADD: FACTORY OVERHEADS** | | | |
+| Factory Rent | | 32,000 | |
+| Factory Power & Fuel | | 18,000 | |
+| Indirect Factory Wages | | 24,000 | |
+| Depreciation of Factory Machinery | | 16,000 | **90,000** |
+| *Total Manufacturing Cost* | | | *410,000* |
+| Add: Opening Work in Progress *(1 Jan 2025)* | | 15,000 | |
+| Less: Closing Work in Progress *(31 Dec 2025)* | | (25,000) | (10,000) |
+| **COST OF PRODUCTION** *(transferred to Trading Account)* | | | **400,000** |
+
+### (b) Unit Cost, Cost-Plus Pricing & Trading Account Extract
+- **Unit Cost of Production:** $\frac{400{,}000}{20{,}000} =$ **J\$20.00 per jar**
+- **Cost-Plus Selling Price (25% mark-up):** J\$20.00 + (25% × J\$20.00) = J\$20.00 + J\$5.00 = **J\$25.00 per jar**
+- **Trading Account Extract:** Sales **J\$500,000** − Cost of Sales (`Opening Finished Goods 30,000 + Cost of Production 400,000 − Closing Finished Goods 50,000 = 380,000`) = **Gross Profit J\$120,000**!
+
+</WorkedExample>
+
+---
+
+## 4. Quick Check
+
+<QuickCheck
+  paper="Paper 1"
+  marks={1}
+  question="Which combination of items makes up a manufacturer's PRIME COST?"
+  options={[
+    'Factory Rent + Factory Power + Indirect Wages',
+    'Raw Materials Consumed + Direct Factory Wages + Direct Expenses (Royalties)',
+    'Prime Cost + Opening WIP − Closing WIP',
+    'Opening Finished Goods + Cost of Production − Closing Finished Goods',
+  ]}
+  correctIndex={1}
+  explanation="Prime Cost is ALWAYS the sum of ALL Direct Costs: Raw Materials Consumed + Direct Labour + Direct Expenses!"
+/>

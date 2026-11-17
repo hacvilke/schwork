@@ -1,0 +1,150 @@
+---
+id: trial-balance
+title: "4.3 Extracting & Interpreting the Trial Balance"
+sidebar_label: "4.3 The Trial Balance"
+sidebar_position: 3
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 4"
+  section="Preparing the Trial Balance from Ledger Balances b/d, Its Uses & Its Limitations"
+  code="POA-4.3"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="18 min"
+  difficulty="Core"
+/>
+
+<ObjectivesBox
+  id="poa-4-3"
+  objectives={[
+    'Define the Trial Balance and explain its two main purposes.',
+    'Extract a neat, balanced Trial Balance straight from the Balance b/d of every ledger account.',
+    'Classify every standard POA account into the Debit column or Credit column without guessing.',
+    'State the limitations of a Trial Balance — the 6 classic accounting errors that do NOT stop it from balancing.',
+  ]}
+/>
+
+---
+
+## 1. What Is a Trial Balance?
+
+A **Trial Balance** is a **two-column list of every ledger account's `Balance b/d`** (Debit column and Credit column) prepared on a specific date — normally at month-end or year-end.
+
+**Two Key Uses:**
+1. **Checks Arithmetical Accuracy:** Because every transaction had an equal Debit and Credit, the **Total Debits MUST equal Total Credits**. If they disagree, you know immediately that an arithmetic or posting mistake happened!
+2. **Blueprint for Final Accounts:** It gathers every account balance onto one tidy sheet so you can quickly build the **Trading and Profit & Loss Account** and **Balance Sheet**!
+
+---
+
+## 2. Worked Example: Extracting *D. Fraser Books'* Trial Balance
+
+Taking every single **`Balance b/d`** straight from our T-accounts in **Lesson 4.2**:
+
+**D. Fraser Books**
+**Trial Balance as at 31 May 2026**
+
+| Account Name | Debit (J\$) | Credit (J\$) | Why This Side? (`DEAD CLIC`) |
+| :--- | :---: | :---: | :--- |
+| Bank | 97,000 | | Asset (Dr b/d) |
+| Capital | | 150,000 | Capital (Cr b/d) |
+| Shop Fittings | 35,000 | | Fixed Asset (Dr b/d) |
+| Purchases | 54,000 | | Cost of Goods / Expense (Dr b/d) |
+| Sales | | 68,000 | Revenue / Income (Cr b/d) |
+| K. Ellis *(Creditor)* | | 24,000 | Current Liability (Cr b/d) |
+| M. Gayle *(Debtor)* | 26,000 | | Current Asset (Dr b/d) |
+| Rent | 18,000 | | Expense (Dr b/d) |
+| Drawings | 12,000 | | Drawings (Dr b/d) |
+| **TOTALS** | **242,000** | **242,000** | **Balanced! ✓** |
+
+---
+
+## 3. Quick Cheat-Sheet: Which Column of the Trial Balance?
+
+| Always in the **DEBIT** Column | Always in the **CREDIT** Column |
+| :--- | :--- |
+| All **Assets** (Premises, Machinery, Vans, Opening Stock, Debtors, Cash, Positive Bank) | **Capital** |
+| **Purchases** & **Carriage Inwards** | **Sales** |
+| **Returns Inwards** *(Sales Returns)* | **Returns Outwards** *(Purchases Returns)* |
+| All **Expenses** (Rent, Wages, Electricity, Insurance, Carriage Outwards, Bad Debts, Depreciation) | All **Liabilities** (Creditors, **Bank Overdraft**, Bank Loan, Mortgage) |
+| **Discount Allowed** | **Discount Received** & Other Incomes (Rent Received, Commission Received) |
+| **Drawings** | **Provision for Depreciation** & **Provision for Doubtful Debts** |
+
+:::warning Watch Out for Closing Stock!
+**Opening Stock** appears inside the Trial Balance (Debit column), while **Closing Stock** is counted at year-end and normally appears **outside / underneath** the Trial Balance as a note!
+:::
+
+---
+
+## 4. Limitations of the Trial Balance (Errors It CANNOT Catch!)
+
+A balancing Trial Balance proves that **Total Debits = Total Credits** — it does **NOT** prove the books are 100% error-free! Six classic errors still allow the Trial Balance to balance:
+
+| Error Type | Kid-Friendly Explanation & Example |
+| :--- | :--- |
+| **1. Error of Omission** | A transaction was completely left out of **both** accounts (forgot to record a J\$5,000 cash sale at all). |
+| **2. Error of Commission** | Posted to the **wrong person's account** in the right class (credited *N. Lewis* instead of *M. Lewis*). |
+| **3. Error of Principle** | Posted to the **wrong class of account** (debited a new photocopier to *Purchases* instead of *Office Equipment*). |
+| **4. Error of Original Entry** | Wrote the **wrong number** on both sides from the start (recorded J\$615 as J\$651 in both Dr and Cr). |
+| **5. Complete Reversal of Entries** | Put the Debit on the Credit side and the Credit on the Debit side (Dr Sales, Cr Cash for a cash sale). |
+| **6. Compensating Errors** | Two unrelated mistakes of the exact same size cancel each other out (+J\$200 on Dr and +J\$200 on Cr). |
+
+---
+
+## 5. Practice Activities
+
+<ClassifyActivity
+  title="Classwork: Trial Balance — Debit Column or Credit Column?"
+  instruction="Place each tricky exam item into its correct Trial Balance column."
+  categories={['Debit Column (Dr)', 'Credit Column (Cr)']}
+  items={[
+    {
+      prompt: 'Returns Inwards (Sales Returns)',
+      answer: 'Debit Column (Dr)',
+      explanation: 'Sales is a Credit, so Returns Inwards reduces Sales on the DEBIT side.',
+    },
+    {
+      prompt: 'Returns Outwards (Purchases Returns)',
+      answer: 'Credit Column (Cr)',
+      explanation: 'Purchases is a Debit, so Returns Outwards reduces Purchases on the CREDIT side.',
+    },
+    {
+      prompt: 'Bank Overdraft',
+      answer: 'Credit Column (Cr)',
+      explanation: 'A Bank Overdraft is a Current Liability owed to the bank — always Credit!',
+    },
+    {
+      prompt: 'Discount Allowed',
+      answer: 'Debit Column (Dr)',
+      explanation: 'Discount Allowed is an expense to the business — always Debit.',
+    },
+    {
+      prompt: 'Discount Received',
+      answer: 'Credit Column (Cr)',
+      explanation: 'Discount Received is revenue/other income earned from suppliers — always Credit.',
+    },
+    {
+      prompt: 'Provision for Depreciation',
+      answer: 'Credit Column (Cr)',
+      explanation: 'Provision for Depreciation is a contra-asset (reduces Fixed Assets), so it carries a Credit balance.',
+    },
+    {
+      prompt: 'Carriage Inwards',
+      answer: 'Debit Column (Dr)',
+      explanation: 'Delivery cost to bring purchases into the store is a cost/expense — Debit!',
+    },
+  ]}
+/>
+
+<QuickCheck
+  paper="Paper 1"
+  marks={1}
+  question="A business bought a photocopier for J$75,000 and wrongly debited the Purchases account instead of Office Equipment. Which error was committed, and will the Trial Balance still balance?"
+  options={[
+    'Error of Commission — Trial Balance will NOT balance',
+    'Error of Principle — Trial Balance WILL still balance',
+    'Error of Omission — Trial Balance WILL still balance',
+    'Error of Original Entry — Trial Balance will NOT balance',
+  ]}
+  correctIndex={1}
+  explanation="Treating a Fixed Asset (Real account) as Purchases (Nominal account) is an Error of Principle — wrong class of account! Because a debit of J$75,000 was still made, the Trial Balance still balances."
+/>

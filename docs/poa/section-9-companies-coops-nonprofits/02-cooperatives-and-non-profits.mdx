@@ -1,0 +1,128 @@
+---
+id: cooperatives-and-non-profits
+title: "9.2 Co-operative Societies & Non-Profit Organisations (Clubs)"
+sidebar_label: "9.2 Co-operatives & Non-Profits"
+sidebar_position: 2
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 9"
+  section="Co-operative Societies (Principles & Distribution of Surplus) + Non-Profit Organisations (Receipts & Payments, Subscriptions & Income and Expenditure)"
+  code="POA-9.2"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="22 min"
+  difficulty="Core"
+/>
+
+<ObjectivesBox
+  id="poa-9-2"
+  objectives={[
+    'State the core principles, types (Credit Unions, Agricultural Societies), and capital sources of Co-operative Societies.',
+    'Prepare a Co-operative Society’s Income Statement & Distribution of Surplus (Statutory Reserve, Education Fund, Patronage Refund, Share Interest).',
+    'Translate Sole Trader accounting terms into Non-Profit (Club & Society) terms (Receipts & Payments, Surplus/Deficit, Accumulated Fund).',
+    'Prepare a Non-Profit Receipts and Payments Account (plus know the classic Subscriptions & Income and Expenditure bridge!).',
+  ]}
+/>
+
+---
+
+## 1. Co-operative Societies (Member-Owned & Democratic!)
+
+A **Co-operative Society** is owned, controlled, and used by its own **members** for their mutual benefit rather than maximising outside shareholder profit (famous Jamaican examples: **Credit Unions** like COK / JTA / EduCom, **Coffee & Agricultural Societies**, and **Fishermen's Co-operatives**).
+
+### Core Co-operative Principles (High-Yield Exam Theory!)
+1. **Voluntary & Open Membership** — anyone sharing the common bond can join or leave freely.
+2. **Democratic Control ("One Member, One Vote")** — even if one member holds 500 shares and another holds 10 shares, each gets **1 vote** to elect the Board of Management!
+3. **Members Are Both Owners AND Customers** — members buy shares (raising capital) and use the society's loans, groceries, or farm supplies.
+4. **Fair Distribution of Surplus** — any yearly **Surplus** (excess of income over expenditure) is split according to the Co-operative's rules:
+   - **Statutory Reserve Fund** *(mandatory % set aside by law for financial safety)*
+   - **Education Fund** *(training members and staff)*
+   - **Honorarium** *(small thank-you payment to voluntary committee officers)*
+   - **Interest / Dividend on Members' Shares**
+   - **Patronage Refund (Bonus)** *(shared back to members based on how much business they did with the co-operative!)*
+
+---
+
+## 2. Non-Profit Organisations (Clubs, Charities & Societies)
+
+Sports clubs, youth clubs, churches, and charities exist to **serve members or the community**, NOT to make commercial profit. Notice how familiar Sole Trader terms simply get **new club-friendly names**:
+
+| Sole Trader Term | **Non-Profit (Club / Society) Equivalent** | Plain-English Meaning |
+| :--- | :--- | :--- |
+| **Cash Book** | **Receipts and Payments Account** | Summary of ALL **cash & bank** received (Dr) and paid (Cr) during the year — includes BOTH capital and revenue cash items! |
+| **Profit & Loss Account** | **Income and Expenditure Account** | Accrual-based summary of **revenue income** and **revenue expenses** for THIS year ONLY (excludes capital purchases like new equipment!). |
+| **Net Profit / Net Loss** | **Surplus / Deficit** | **Surplus** = Income > Expenditure; **Deficit** = Expenditure > Income. |
+| **Capital (Owner's Equity)** | **Accumulated Fund** | The club's net worth: $\text{Accumulated Fund} = \text{Club Assets} - \text{Club Liabilities}$! |
+
+---
+
+## 3. Worked Example: Receipts & Payments Account (*Portmore Sports Club*)
+
+*(Remember: On the Revised Syllabus, Paper 2 focuses sharply on preparing a neat **Receipts and Payments Account** — with Receipts on the **Debit** side, Payments on the **Credit** side, proper `Balance c/d` and `Balance b/d`, and distinguishing Capital vs Revenue expenditure!)*
+
+<WorkedExample
+  title="Portmore Sports Club — Receipts & Payments Account (Year Ended 31 Dec 2025)"
+  marks={8}
+  problem={
+    <>
+      <strong>Portmore Sports Club</strong> started on 1 January 2025 with Cash &amp; Bank of <strong>J$18,000</strong>.
+      During 2025, the treasurer recorded:
+      <br />
+      • Receipts: Members’ Subscriptions <strong>J$65,000</strong>; Bar Takings <strong>J$42,000</strong>; Donations <strong>J$15,000</strong>.
+      <br />
+      • Payments: Bar Purchases <strong>J$24,000</strong>; Clubhouse Rent <strong>J$30,000</strong>; New Sports Equipment <strong>J$28,000</strong>; Secretary’s Expenses <strong>J$12,000</strong>; Competition Prizes <strong>J$8,000</strong>.
+      <br />
+      (a) Prepare the <strong>Receipts and Payments Account</strong> for the year ended 31 December 2025.
+      <br />
+      (b) Identify which payment is <strong>Capital Expenditure</strong> and state whether it would appear in an Income &amp; Expenditure Account.
+    </>
+  }
+  examTip="Always put Cash/Bank Opening Balance + ALL cash inflows (Subscriptions, Donations, Bar Takings) on the DEBIT side, ALL cash outflows on the CREDIT side, and double-check your Balance c/d (above totals) and Balance b/d (below totals)!"
+>
+
+### (a) Receipts & Payments Account
+
+<TAccount
+  title="Portmore Sports Club — Receipts & Payments Account (Year Ended 31 Dec 2025)"
+  debit={[
+    { date: 'Jan 1', details: 'Balance b/d', amount: '18,000', isBalance: true },
+    { date: 'Dec 31', details: 'Members’ Subscriptions', amount: '65,000' },
+    { date: 'Dec 31', details: 'Bar Takings', amount: '42,000' },
+    { date: 'Dec 31', details: 'Donations', amount: '15,000' },
+  ]}
+  credit={[
+    { date: 'Dec 31', details: 'Bar Purchases', amount: '24,000' },
+    { date: 'Dec 31', details: 'Clubhouse Rent', amount: '30,000' },
+    { date: 'Dec 31', details: 'New Sports Equipment', amount: '28,000' },
+    { date: 'Dec 31', details: 'Secretary’s Expenses', amount: '12,000' },
+    { date: 'Dec 31', details: 'Competition Prizes', amount: '8,000' },
+    { date: 'Dec 31', details: 'Balance c/d', amount: '38,000', isBalance: true },
+  ]}
+  total="140,000"
+  debitBroughtDown={{ date: '2026 Jan 1', details: 'Balance b/d (Cash & Bank)', amount: '38,000', isBalance: true }}
+  note="Opening Cash (18,000) + Receipts (122,000) − Payments (102,000) = Closing Cash & Bank Balance of J$38,000!"
+/>
+
+### (b) Capital vs Revenue Expenditure *(Also Bridges to Old-Syllabus Income & Expenditure!)*
+- **New Sports Equipment (J\$28,000)** is **Capital Expenditure** — it appears in the **Receipts & Payments Account** (because cash was spent), but it does **NOT** appear in an **Income & Expenditure Account**! Instead, it goes to **Fixed Assets** on the Club Balance Sheet (only annual *depreciation* on equipment goes into Income & Expenditure!).
+- *(Old-Syllabus Tip: In a Club **Income & Expenditure Account**, Bar Profit = `42,000 − 24,000 = 18,000`, plus Subscriptions `65,000` + Donations `15,000` = `98,000` Income; less Revenue Expenses `30,000 + 12,000 + 8,000 = 50,000` → **Surplus of J\$48,000**, added to the **Accumulated Fund**!)*
+
+</WorkedExample>
+
+---
+
+## 4. Quick Check
+
+<QuickCheck
+  paper="Paper 1"
+  marks={1}
+  question="In the financial statements of a non-profit club or co-operative society, what is the excess of Income over Expenditure called?"
+  options={[
+    'Gross Profit',
+    'Surplus',
+    'Deficit',
+    'Accumulated Fund',
+  ]}
+  correctIndex={1}
+  explanation="Non-profit clubs and co-operatives do not call their result 'Net Profit' — excess of Income over Expenditure is a SURPLUS (and excess of Expenditure over Income is a DEFICIT)."
+/>

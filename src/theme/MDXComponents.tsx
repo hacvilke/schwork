@@ -7,13 +7,18 @@
 import React from 'react';
 import MDXComponents from '@theme-original/MDXComponents';
 import {
+  AccountingCycle,
+  ClassifyActivity,
   DiagramFigure,
+  ExplainActivity,
   FormulaCard,
   FormulaHint,
   InteractiveGraph,
   ObjectivesBox,
   QuickCheck,
   SyllabusHeader,
+  TAccount,
+  TrueFalseQuiz,
   WorkedExample,
 } from '@site/src/components/lesson';
 
@@ -36,6 +41,11 @@ export default {
   FormulaHint,
   WorkedExample,
   QuickCheck,
+  TrueFalseQuiz,
+  ClassifyActivity,
+  ExplainActivity,
+  AccountingCycle,
+  TAccount,
   InteractiveGraph,
   DiagramFigure,
 };

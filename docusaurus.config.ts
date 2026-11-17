@@ -153,6 +153,12 @@ const config: Config = {
           position: 'left',
         },
         {
+          type: 'docSidebar',
+          sidebarId: 'poaSidebar',
+          position: 'left',
+          label: 'POA',
+        },
+        {
           to: '/docs/sample-lesson',
           label: 'Sample Lesson',
           position: 'left',
@@ -177,6 +183,10 @@ const config: Config = {
             {
               label: 'Sample Lesson',
               to: '/docs/sample-lesson',
+            },
+            {
+              label: 'Principles of Accounts (POA)',
+              to: '/docs/poa',
             },
             {
               label: 'Browse Subjects',

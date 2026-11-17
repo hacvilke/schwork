@@ -61,6 +61,11 @@ All components in `src/components/lesson/` are globally registered via `src/them
 - `<DiagramFigure src="/img/diagrams/..." alt="..." caption="..." />`
 - `<WorkedExample title="..." marks={4} problem={...} examTip="...">...</WorkedExample>`
 - `<QuickCheck paper="Paper 1" marks={1} question="..." options={[...]} correctIndex={0} explanation="..." />`
+- `<TrueFalseQuiz title="..." items={[{statement: '...', answer: true, explanation: '...'}]} />`
+- `<ClassifyActivity title="..." categories={['...']} items={[{prompt: '...', answer: '...', explanation: '...'}]} />`
+- `<ExplainActivity id="unique-activity-id" title="..." prompt="..." items={[{label: '...', keyPoint: '...'}]} />`
+- `<AccountingCycle />` — Interactive 8-stage POA accounting cycle explorer.
+- `<TAccount title="..." debit={[...]} credit={[...]} total="..." debitBroughtDown={...} />` — Authentic Dr/Cr ledger T-account with double-underlined totals and `Balance b/d`.
 
 ---
 

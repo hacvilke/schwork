@@ -1,0 +1,203 @@
+/* Styles for <AccountingCycle /> — interactive 8-stage POA cycle explorer */
+
+.shell {
+  background: #132238;
+  color: #eaf3f8;
+  border-radius: 16px;
+  border: 1.5px solid rgba(43, 179, 192, 0.45);
+  overflow: hidden;
+  margin: 1.6rem 0;
+  box-shadow: 0 10px 28px rgba(11, 21, 36, 0.18);
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  padding: 0.8rem 1rem;
+  background: #0d192b;
+  border-bottom: 1px solid rgba(43, 179, 192, 0.25);
+}
+
+.titleWrap {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+}
+
+.badge {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  background: var(--schwork-lime);
+  color: #132238;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.navControls {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.navBtn {
+  min-height: 38px;
+  padding: 0.3rem 0.7rem;
+  border-radius: 8px;
+  border: 1px solid rgba(43, 179, 192, 0.45);
+  background: #172b46;
+  color: #eaf3f8;
+  font-family: var(--ifm-heading-font-family);
+  font-size: 0.8rem;
+  font-weight: 700;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  cursor: pointer;
+  transition: border-color 0.15s ease, color 0.15s ease;
+}
+
+.navBtn:hover {
+  border-color: var(--schwork-lime);
+  color: var(--schwork-lime);
+}
+
+.stepGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.55rem;
+  padding: 1rem;
+  background: #0f1d31;
+  border-bottom: 1px solid rgba(43, 179, 192, 0.22);
+}
+
+.stepBtn {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.3rem;
+  min-height: 68px;
+  padding: 0.65rem 0.75rem;
+  border-radius: 10px;
+  border: 1.5px solid rgba(43, 179, 192, 0.28);
+  background: #162944;
+  color: #dcebf3;
+  text-align: left;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.stepBtn:hover {
+  border-color: #2bb3c0;
+  transform: translateY(-1px);
+}
+
+.stepBtnActive {
+  background: #c8ff00;
+  border-color: #c8ff00;
+  color: #132238;
+}
+
+.stepNum {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.72rem;
+  font-weight: 700;
+  opacity: 0.85;
+}
+
+.stepName {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 0.84rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.detailPanel {
+  padding: 1.15rem 1.2rem 1.25rem;
+}
+
+.detailTop {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.6rem;
+}
+
+.stageHeading {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.bookPill {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.74rem;
+  font-weight: 700;
+  padding: 0.22rem 0.6rem;
+  border-radius: 999px;
+  background: rgba(43, 179, 192, 0.18);
+  color: #8be6ee;
+  border: 1px solid rgba(43, 179, 192, 0.45);
+}
+
+.detailDesc {
+  margin: 0 0 0.9rem;
+  font-size: 0.95rem;
+  color: #d6eaf2;
+  line-height: 1.55;
+}
+
+.exampleBox {
+  padding: 0.8rem 0.95rem;
+  border-radius: 10px;
+  background: #0b1524;
+  border: 1px solid rgba(200, 255, 0, 0.4);
+  font-size: 0.89rem;
+  line-height: 1.5;
+  color: #eaf3f8;
+}
+
+.exampleLabel {
+  display: inline-block;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #c8ff00;
+  margin-bottom: 0.25rem;
+}
+
+.cycleLoopNote {
+  padding: 0.55rem 1rem;
+  background: #0a1422;
+  border-top: 1px solid rgba(43, 179, 192, 0.18);
+  font-size: 0.78rem;
+  color: #8fb0c7;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+@media (max-width: 768px) {
+  .stepGrid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0.85rem;
+  }
+}

@@ -1,0 +1,223 @@
+---
+id: bad-debts-and-adjusted-statements
+title: "6.3 Bad Debts, Provision for Doubtful Debts & Adjusted Final Accounts"
+sidebar_label: "6.3 Bad Debts & Adjusted Statements"
+sidebar_position: 3
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 6"
+  section="Bad Debts Written Off, Provision for Doubtful Debts (Create, Increase & Decrease) & Adjusted Trading, P&L and Balance Sheet"
+  code="POA-6.3"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="24 min"
+  difficulty="Core"
+/>
+
+<ObjectivesBox
+  id="poa-6-3"
+  objectives={[
+    'Distinguish clearly between Bad Debts and Doubtful Debts (and explain why the Prudence concept demands both).',
+    'Prepare Journal entries and T-Accounts to write off Bad Debts and adjust the Provision for Doubtful Debts (creating, increasing, and decreasing the provision).',
+    'Show the exact treatment of Bad Debts and Provision for Doubtful Debts in the Trading & Profit and Loss Account and Balance Sheet.',
+    'Combine Accruals, Prepayments, Depreciation, and Bad & Doubtful Debts into Adjusted Final Accounts.',
+  ]}
+/>
+
+---
+
+## 1. Bad Debts vs Doubtful Debts (Kid-Friendly Explanation!)
+
+Whenever a business sells on credit, not every customer pays on time — and a few never pay at all! Businesses track overdue invoices using an **Aging of Debtors** schedule (30 days, 60 days, 90+ days overdue) and separate them into two clear categories:
+
+| Term | Plain-English Meaning | What the Accountant Does |
+| :--- | :--- | :--- |
+| **Bad Debts** | Money owed by a debtor who **definitely CANNOT or WILL NOT pay** (e.g. went bankrupt, closed down, died insolvent, disappeared). | **Write it off completely!**<br/>1. `Dr Bad Debts` / `Cr Customer (Debtor)` *(closes their account to zero)*<br/>2. At year-end: `Dr Profit & Loss` / `Cr Bad Debts` *(Expense in P&L)* |
+| **Provision for Doubtful Debts** | A cautious **estimate** (usually a percentage of remaining Debtors, e.g. **5%**) for customers who **MIGHT fail to pay** in the future *(applying the **Prudence** & **Matching** concepts!)*. | **Do NOT erase individual customer accounts!** Instead, maintain a **Provision for Doubtful Debts Account** (Credit balance) and subtract the full closing provision from Debtors on the Balance Sheet! |
+
+:::warning Crucial Exam Order Rule!
+If a question has **BOTH** a new Bad Debt to write off **AND** a Provision for Doubtful Debts percentage, **ALWAYS subtract the Bad Debt from Debtors FIRST**, then calculate the Provision percentage on the **remaining good Debtors**!
+:::
+
+---
+
+## 2. How Changes in Provision for Doubtful Debts Hit the Profit & Loss Account
+
+This is one of the **#1 Paper 1 & Paper 2 traps** — learn these three crystal-clear rules:
+
+1. **Creating a Provision (Year 1):** Entire provision is an **Expense** in the Profit & Loss Account (`Dr P&L`, `Cr Provision for Doubtful Debts`).
+2. **INCREASING an Existing Provision** *(New Provision > Old Provision)*: ONLY the **INCREASE** is charged as an **Expense** in the Profit & Loss Account (`Dr P&L`, `Cr Provision`).
+3. **DECREASING an Existing Provision** *(New Provision < Old Provision)*: ONLY the **DECREASE** is treated as **Other Revenue / Add to Gross Profit** in the Profit & Loss Account (`Dr Provision`, `Cr P&L`)!
+4. **On the Balance Sheet (EVERY year):** ALWAYS subtract the **FULL Closing Provision** from closing Debtors under Current Assets!
+
+---
+
+## 3. Worked Example 1: 3-Year Provision for Doubtful Debts (Create, Increase & Decrease!)
+
+<WorkedExample
+  title="Manteca Wholesale — Provision for Doubtful Debts (2024–2026 at 5%)"
+  marks={10}
+  problem={
+    <>
+      Manteca Wholesale began trading on 1 January 2024 and decided to maintain a{' '}
+      <strong>Provision for Doubtful Debts of 5% of Debtors</strong> at each year-end.
+      <br />
+      Year-end Debtors (after writing off bad debts):
+      <br />
+      • 31 Dec 2024: <strong>J$80,000</strong>
+      <br />
+      • 31 Dec 2025: <strong>J$100,000</strong>
+      <br />
+      • 31 Dec 2026: <strong>J$70,000</strong>
+      <br />
+      Show the <strong>Provision for Doubtful Debts T-Account</strong> for all three years and state the exact effect on the Profit &amp; Loss Account and Balance Sheet each year.
+    </>
+  }
+  examTip="Notice that in Year 2 (2025), you do NOT put J$5,000 in the Profit & Loss Account — you already have J$4,000 sitting in the Provision, so you only charge the J$1,000 INCREASE to P&L! On the Balance Sheet, however, you show the FULL J$5,000 subtracted from Debtors!"
+>
+
+### Quick Workings Table
+| Year | Closing Debtors (J\$) | Required Provision — 5% (J\$) | Old Provision (J\$) | Change to **Profit & Loss** | Balance Sheet Net Debtors (J\$) |
+| :---: | :---: | :---: | :---: | :--- | :---: |
+| **2024** | 80,000 | **4,000** | 0 | **Expense: J\$4,000** *(created)* | $80{,}000 - 4{,}000 = \mathbf{76{,}000}$ |
+| **2025** | 100,000 | **5,000** | 4,000 | **Expense: J\$1,000** *(increase)* | $100{,}000 - 5{,}000 = \mathbf{95{,}000}$ |
+| **2026** | 70,000 | **3,500** | 5,000 | **Add to GP (Income): J\$1,500** *(decrease!)* | $70{,}000 - 3{,}500 = \mathbf{66{,}500}$ |
+
+<TAccount
+  title="Provision for Doubtful Debts Account (2024 — Created)"
+  debit={[
+    { date: '2024 Dec 31', details: 'Balance c/d (5% × 80,000)', amount: '4,000', isBalance: true },
+  ]}
+  credit={[
+    { date: '2024 Dec 31', details: 'Profit & Loss (Expense)', amount: '4,000' },
+  ]}
+  total="4,000"
+  creditBroughtDown={{ date: '2025 Jan 1', details: 'Balance b/d', amount: '4,000', isBalance: true }}
+/>
+
+<TAccount
+  title="Provision for Doubtful Debts Account (2025 — Increased by J$1,000)"
+  debit={[
+    { date: '2025 Dec 31', details: 'Balance c/d (5% × 100,000)', amount: '5,000', isBalance: true },
+  ]}
+  credit={[
+    { date: '2025 Jan 1', details: 'Balance b/d', amount: '4,000', isBalance: true },
+    { date: '2025 Dec 31', details: 'Profit & Loss (Increase)', amount: '1,000' },
+  ]}
+  total="5,000"
+  creditBroughtDown={{ date: '2026 Jan 1', details: 'Balance b/d', amount: '5,000', isBalance: true }}
+/>
+
+<TAccount
+  title="Provision for Doubtful Debts Account (2026 — Decreased by J$1,500)"
+  debit={[
+    { date: '2026 Dec 31', details: 'Profit & Loss (Decrease — Income)', amount: '1,500' },
+    { date: '2026 Dec 31', details: 'Balance c/d (5% × 70,000)', amount: '3,500', isBalance: true },
+  ]}
+  credit={[
+    { date: '2026 Jan 1', details: 'Balance b/d', amount: '5,000', isBalance: true },
+  ]}
+  total="5,000"
+  creditBroughtDown={{ date: '2027 Jan 1', details: 'Balance b/d', amount: '3,500', isBalance: true }}
+  note="Because the provision dropped from J$5,000 to J$3,500, the J$1,500 reduction is CREDITED to Profit & Loss (added to Gross Profit as Other Income)!"
+/>
+
+</WorkedExample>
+
+---
+
+## 4. Worked Example 2: Putting ALL Section 6 Adjustments Into Final Accounts!
+
+<WorkedExample
+  title="P. Gordon Electronics — Adjusted Profit & Loss & Balance Sheet Extracts (31 Dec 2025)"
+  marks={12}
+  problem={
+    <>
+      <strong>P. Gordon Electronics</strong> achieved a Gross Profit of <strong>J$185,000</strong> for the year ended{' '}
+      <strong>31 December 2025</strong>. Trial Balance balances included:
+      <br />
+      Delivery Van at cost <strong>J$200,000</strong>; Provision for Depreciation on Van (1 Jan 2025) <strong>J$40,000</strong>;
+      Debtors <strong>J$70,000</strong>; Provision for Doubtful Debts (1 Jan 2025) <strong>J$5,000</strong>;
+      Salaries <strong>J$52,000</strong>; Electricity <strong>J$55,000</strong>; Insurance <strong>J$28,000</strong>; Bad Debts <strong>J$3,500</strong>.
+      <br />
+      <strong>Year-End Adjustments:</strong>
+      <br />
+      1. Accrued Electricity: <strong>J$5,000</strong> &nbsp;|&nbsp; 2. Prepaid Insurance: <strong>J$4,000</strong>
+      <br />
+      3. Depreciate Delivery Van at <strong>10% per annum Straight-Line</strong> (on cost).
+      <br />
+      4. Adjust Provision for Doubtful Debts to <strong>5% of Debtors</strong>.
+      <br />
+      Prepare the adjusted <strong>Profit &amp; Loss Account</strong> and the <strong>Balance Sheet Extract</strong>.
+    </>
+  }
+  examTip="Every single year-end adjustment appears TWICE (Dual Aspect!): once in the Profit & Loss Account, and once on the Balance Sheet!"
+>
+
+**P. Gordon Electronics — Profit & Loss Account for the year ended 31 December 2025**
+
+| Particulars | J\$ | J\$ |
+| :--- | :---: | :---: |
+| **Gross Profit** | | **185,000** |
+| **Add: Other Revenue** | | |
+| Decrease in Provision for Doubtful Debts *(5,000 → 3,500)* | | 1,500 |
+| | | **186,500** |
+| **Less: Expenses** | | |
+| Salaries | 52,000 | |
+| Electricity *(55,000 + 5,000 accrued)* | 60,000 | |
+| Insurance *(28,000 − 4,000 prepaid)* | 24,000 | |
+| Bad Debts Written Off | 3,500 | |
+| Depreciation — Delivery Van *(10% × 200,000)* | 20,000 | **(159,500)** |
+| **ADJUSTED NET PROFIT** | | **27,000** |
+
+**P. Gordon Electronics — Balance Sheet Extract as at 31 December 2025**
+
+| Section & Item | Cost / Gross (J\$) | Deduction (J\$) | Net Value (J\$) |
+| :--- | :---: | :---: | :---: |
+| **FIXED ASSETS** | | | |
+| Delivery Van *(Provision = 40,000 old + 20,000 new)* | 200,000 | (60,000) | **140,000** *(NBV)* |
+| **CURRENT ASSETS** | | | |
+| Debtors | 70,000 | (3,500) | **66,500** |
+| Prepaid Insurance | | | **4,000** |
+| **CURRENT LIABILITIES** | | | |
+| Accrued Electricity | | | **5,000** |
+
+</WorkedExample>
+
+---
+
+## 5. Practice Checks
+
+<QuickCheck
+  paper="Paper 1"
+  marks={1}
+  question="What is the correct double entry to write off an uncollectible debt owed by customer R. Davis?"
+  options={[
+    'Dr Cash; Cr Bad Debts',
+    'Dr Bad Debts; Cr R. Davis (Debtor)',
+    'Dr R. Davis (Debtor); Cr Bad Debts',
+    'Dr Provision for Doubtful Debts; Cr Cash',
+  ]}
+  correctIndex={1}
+  explanation="Bad Debts is an expense (Dr Bad Debts), and crediting R. Davis removes the uncollectible balance from Debtors (Cr R. Davis)."
+/>
+
+<QuickCheck
+  paper="Paper 1"
+  marks={1}
+  question="On 1 January, Provision for Doubtful Debts stood at J$2,000. On 31 December, Debtors are J$35,000 and the business maintains a 5% provision. What goes into the Profit & Loss Account?"
+  options={[
+    'Expense of J$1,750',
+    'Expense of J$250',
+    'Other Revenue (Add to Gross Profit) of J$250',
+    'Other Revenue (Add to Gross Profit) of J$1,750',
+  ]}
+  correctIndex={2}
+  explanation="New Provision = 5% × 35,000 = J$1,750. Since the old provision was J$2,000, the provision DECREASED by J$250 (2,000 − 1,750) → credited to Profit & Loss (Added to Gross Profit as Other Revenue)!"
+/>
+
+---
+
+:::tip Sections 1–6 Complete!
+You've built the entire Grade 10 & Grade 11 Sole Trader accounting spine — from Purpose, Ethics & Concepts through Final Accounts & Adjustments! Next up: **[Section 7: Control Systems — Bank Reconciliation, Control Accounts & Suspense Accounts](/docs/poa/section-7-control-systems/bank-reconciliation)**!
+:::
