@@ -1,0 +1,193 @@
+/* Styles and keyframe animations for <LogoLoader />
+ * Animates the closed pointing-up hand rising through the center of the
+ * graduation cap, splitting it cleanly into two halves with tassel swing
+ * and Acid Lime breakthrough sparks.
+ */
+
+.wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+}
+
+.svg {
+  display: block;
+  overflow: visible;
+}
+
+.sizeSm {
+  width: 48px;
+  height: 48px;
+}
+
+.sizeMd {
+  width: 84px;
+  height: 84px;
+}
+
+.sizeLg {
+  width: 112px;
+  height: 112px;
+}
+
+.label {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #8be6ee;
+}
+
+/* ---------- Animated logo parts ---------- */
+
+/* Left half of the graduation cap starts joined at center, then splits outward left */
+.capLeft {
+  transform-box: fill-box;
+  transform-origin: 100% 60%;
+  animation: splitLeft 1.55s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+}
+
+/* Right half of the graduation cap starts joined at center, then splits outward right */
+.capRight {
+  transform-box: fill-box;
+  transform-origin: 0% 60%;
+  animation: splitRight 1.55s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+}
+
+/* Tassel swings outward with follow-through as the right half kicks open */
+.tassel {
+  transform-box: fill-box;
+  transform-origin: 50% 0%;
+  animation: swingTassel 1.55s ease-in-out infinite;
+}
+
+/* Closed hand pointing straight up rises up through the center to break the cap */
+.hand {
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+  animation: riseHand 1.55s cubic-bezier(0.22, 1, 0.36, 1) infinite;
+}
+
+/* Acid Lime sparks burst off the pointing fingertip at peak height */
+.sparks {
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+  animation: sparkBurst 1.55s ease-out infinite;
+}
+
+@keyframes splitLeft {
+  0%,
+  16% {
+    transform: translate(5.5px, 1px) rotate(0deg);
+  }
+  34% {
+    transform: translate(-2px, -1px) rotate(-11deg);
+  }
+  48%,
+  74% {
+    transform: translate(-1px, 0px) rotate(-7deg);
+  }
+  92%,
+  100% {
+    transform: translate(5.5px, 1px) rotate(0deg);
+  }
+}
+
+@keyframes splitRight {
+  0%,
+  16% {
+    transform: translate(-5.5px, 1px) rotate(0deg);
+  }
+  34% {
+    transform: translate(2px, -1px) rotate(11deg);
+  }
+  48%,
+  74% {
+    transform: translate(1px, 0px) rotate(7deg);
+  }
+  92%,
+  100% {
+    transform: translate(-5.5px, 1px) rotate(0deg);
+  }
+}
+
+@keyframes swingTassel {
+  0%,
+  18% {
+    transform: rotate(0deg);
+  }
+  36% {
+    transform: rotate(-16deg);
+  }
+  52% {
+    transform: rotate(7deg);
+  }
+  66%,
+  82% {
+    transform: rotate(-2deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes riseHand {
+  0%,
+  12% {
+    transform: translateY(11px) scale(0.94);
+  }
+  34% {
+    transform: translateY(-2.5px) scale(1.03);
+  }
+  48%,
+  74% {
+    transform: translateY(0px) scale(1);
+  }
+  92%,
+  100% {
+    transform: translateY(11px) scale(0.94);
+  }
+}
+
+@keyframes sparkBurst {
+  0%,
+  22% {
+    opacity: 0;
+    transform: translateY(4px) scale(0.45);
+  }
+  36% {
+    opacity: 1;
+    transform: translateY(-2px) scale(1.16);
+  }
+  52%,
+  70% {
+    opacity: 0.95;
+    transform: translateY(0px) scale(1);
+  }
+  84%,
+  100% {
+    opacity: 0;
+    transform: translateY(3px) scale(0.5);
+  }
+}
+
+/* Respect accessibility settings for motion-sensitive students */
+@media (prefers-reduced-motion: reduce) {
+  .capLeft,
+  .capRight,
+  .tassel,
+  .hand,
+  .sparks {
+    animation: none;
+  }
+
+  .capLeft {
+    transform: rotate(-7deg);
+  }
+
+  .capRight {
+    transform: rotate(7deg);
+  }
+}

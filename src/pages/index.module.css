@@ -311,6 +311,11 @@
   justify-content: center;
 }
 
+:global(html[data-theme='dark']) .pillarIcon {
+  background: #0b1524;
+  border: 1px solid rgba(200, 255, 0, 0.35);
+}
+
 .pillarTitle {
   font-family: var(--ifm-heading-font-family);
   font-size: 1.02rem;
@@ -327,17 +332,29 @@
 
 /* ---------- Bottom Banner ---------- */
 .workflowBanner {
+  position: relative;
+  overflow: hidden;
   background: linear-gradient(135deg, #132238 0%, #19314f 100%);
   color: #f0f6fa;
   border-radius: 18px;
-  padding: 1.75rem;
+  padding: 1.75rem 1.75rem 1.75rem 2.05rem;
   border: 1.5px solid rgba(43, 179, 192, 0.45);
-  border-left: 6px solid #c8ff00;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 1.25rem;
+}
+
+/* Flush Acid Lime vertical bar clipped cleanly by the banner's border-radius */
+.workflowBanner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 6px;
+  background: #c8ff00;
 }
 
 .workflowTitle {
@@ -389,6 +406,6 @@
   }
 
   .workflowBanner {
-    padding: 1.25rem;
+    padding: 1.25rem 1.25rem 1.25rem 1.55rem;
   }
 }

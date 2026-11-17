@@ -1,0 +1,67 @@
+/* Styles for <PageLoader /> — sleek Acid Lime progress bar and animated brand
+ * emblem badge shown briefly during page loads and route transitions.
+ */
+
+.topBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  z-index: 10001;
+  background: linear-gradient(90deg, #2bb3c0 0%, #c8ff00 65%, #2bb3c0 100%);
+  transform-origin: 0% 50%;
+  animation: progressSweep 0.65s ease-out forwards;
+  pointer-events: none;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(11, 21, 36, 0.72);
+  backdrop-filter: blur(4px);
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.24s ease;
+}
+
+.overlayFading {
+  opacity: 0;
+}
+
+.pill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  padding: 1.2rem 1.6rem;
+  border-radius: 18px;
+  background: #132238;
+  border: 1.5px solid rgba(43, 179, 192, 0.55);
+  box-shadow: 0 18px 44px rgba(5, 11, 20, 0.5);
+}
+
+@keyframes progressSweep {
+  0% {
+    transform: scaleX(0.08);
+    opacity: 1;
+  }
+  75% {
+    transform: scaleX(0.92);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .topBar {
+    animation: none;
+  }
+}

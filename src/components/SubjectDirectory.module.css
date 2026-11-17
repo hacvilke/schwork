@@ -31,7 +31,7 @@
   border-color: var(--schwork-navy);
 }
 
-[data-theme='dark'] .filterBtnActive {
+:global(html[data-theme='dark']) .filterBtnActive {
   background: #c8ff00;
   color: #132238;
   border-color: #c8ff00;
@@ -70,6 +70,11 @@
   border-radius: 6px;
   background: var(--schwork-navy);
   color: #7adbe4;
+}
+
+:global(html[data-theme='dark']) .code {
+  background: #0b1524;
+  border: 1px solid rgba(43, 179, 192, 0.4);
 }
 
 .statusPlanned {

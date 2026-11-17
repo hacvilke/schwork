@@ -55,6 +55,8 @@
   --ifm-navbar-link-color: #e6f2f7;
   --ifm-navbar-link-hover-color: var(--schwork-lime);
   --ifm-footer-background-color: var(--schwork-navy-deep);
+  --ifm-table-border-color: var(--schwork-border);
+  --ifm-table-stripe-background: var(--schwork-surface-alt);
 
   --ifm-font-family-base: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   --ifm-heading-font-family: 'Space Grotesk', 'Plus Jakarta Sans', system-ui, sans-serif;
@@ -68,7 +70,9 @@
   --docusaurus-highlighted-code-line-bg: rgba(43, 179, 192, 0.14);
 }
 
-[data-theme='dark'] {
+/* Match Infima's `html[data-theme='dark']` specificity so our Deep Navy tokens
+ * cleanly replace Infima's default `#1b1b1d` / `#242526` grey backgrounds. */
+html[data-theme='dark'] {
   --schwork-bg: #0b1524;
   --schwork-surface: #132238;
   --schwork-surface-alt: #1a2d49;
@@ -88,32 +92,59 @@
   --ifm-background-surface-color: var(--schwork-surface);
   --ifm-font-color-base: var(--schwork-text);
   --ifm-font-color-secondary: var(--schwork-text-muted);
+  --ifm-color-content: var(--schwork-text);
+  --ifm-color-content-secondary: var(--schwork-text-muted);
   --ifm-heading-color: #f4f9fc;
   --ifm-navbar-background-color: #0e1b2f;
   --ifm-navbar-link-color: #eaf3f8;
   --ifm-navbar-link-hover-color: var(--schwork-lime);
   --ifm-footer-background-color: #070e18;
+  --ifm-toc-border-color: var(--schwork-border);
+  --ifm-table-border-color: var(--schwork-border);
+  --ifm-table-stripe-background: var(--schwork-surface-alt);
+  --ifm-code-background: rgba(43, 179, 192, 0.14);
+  --ifm-hover-overlay: rgba(43, 179, 192, 0.1);
   --docusaurus-highlighted-code-line-bg: rgba(200, 255, 0, 0.12);
 }
 
 /* ==========================================================================
-   MOBILE-FIRST FOUNDATION & OVERFLOW SAFETY
+   MOBILE-FIRST FOUNDATION & SEAMLESS FULL-HEIGHT BACKGROUNDS
    ========================================================================== */
 
 html {
   scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
+  background-color: var(--schwork-bg);
+  min-height: 100%;
 }
 
 body {
   overflow-x: clip;
   background-color: var(--schwork-bg);
+  color: var(--schwork-text);
+  min-height: 100%;
+}
+
+#__docusaurus,
+.main-wrapper {
+  background-color: var(--schwork-bg);
 }
 
 /* Navbar polish (always Deep Navy anchor with Acid Lime accent spark) */
 .navbar {
+  background-color: var(--ifm-navbar-background-color);
   border-bottom: 2px solid var(--schwork-cyan);
   box-shadow: 0 2px 16px rgba(11, 21, 36, 0.18);
+}
+
+.navbar__logo {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+
+.navbar__logo img {
+  border-radius: 7px;
 }
 
 .navbar__title {
@@ -161,6 +192,7 @@ body {
 }
 
 .navbar-sidebar__brand {
+  background-color: var(--schwork-navy-deep);
   border-bottom: 1px solid rgba(43, 179, 192, 0.25);
 }
 
@@ -180,12 +212,20 @@ body {
 .navbar-sidebar .menu__link--active {
   color: var(--schwork-navy) !important;
   background-color: var(--schwork-lime) !important;
+  box-shadow: none !important;
   font-weight: 700;
 }
 
-/* Docs desktop sidebar active highlight */
+/* Docs desktop sidebar & mobile TOC polish */
 .theme-doc-sidebar-container {
   border-right: 1px solid var(--schwork-border) !important;
+  background-color: var(--schwork-bg);
+}
+
+.theme-doc-toc-mobile {
+  background-color: var(--schwork-surface) !important;
+  border: 1px solid var(--schwork-border);
+  border-radius: 10px;
 }
 
 .menu__link {
@@ -194,28 +234,39 @@ body {
   line-height: 1.4;
 }
 
+/* Use inset box-shadow instead of border-left so rounded corners stay crisp */
 .menu__link--active:not(.menu__link--sublist) {
   background: var(--schwork-cyan-tint);
-  border-left: 3px solid var(--schwork-lime);
+  box-shadow: inset 3.5px 0 0 var(--schwork-lime);
   font-weight: 700;
 }
 
-[data-theme='light'] .menu__link--active:not(.menu__link--sublist) {
-  border-left-color: var(--schwork-navy);
+html[data-theme='light'] .menu__link--active:not(.menu__link--sublist) {
+  box-shadow: inset 3.5px 0 0 var(--schwork-navy);
   background: linear-gradient(90deg, rgba(200, 255, 0, 0.35), rgba(43, 179, 192, 0.12));
   color: var(--schwork-navy);
 }
 
+.pagination-nav__link {
+  background-color: var(--schwork-surface);
+  border-color: var(--schwork-border);
+  border-radius: 12px;
+}
+
+.pagination-nav__link:hover {
+  border-color: var(--schwork-cyan);
+}
+
 /* ==========================================================================
-   KATEX & TABLES: ZERO HORIZONTAL OVERFLOW ON PHONES
+   KATEX & TABLES: FULL-WIDTH COLOR + ZERO OVERFLOW ON PHONES
    ========================================================================== */
 
 .katex-display {
   overflow-x: auto;
-  overflow-y: hidden;
-  padding: 0.75rem 0.5rem;
+  overflow-y: visible;
+  padding: 0.9rem 0.85rem;
   margin: 1rem 0;
-  border-radius: 8px;
+  border-radius: 10px;
   background: var(--schwork-surface-alt);
   border: 1px solid var(--schwork-border);
   -webkit-overflow-scrolling: touch;
@@ -225,24 +276,56 @@ body {
   white-space: nowrap;
 }
 
-.markdown table {
-  display: block;
+/* Wrapper injected by src/theme/MDXComponents.tsx so tables always fill 100%
+ * width cleanly on desktop (no cut-off header color!) and scroll on phones. */
+.schwork-table-wrap {
   width: 100%;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  border-collapse: collapse;
-  border-radius: 10px;
+  border-radius: 12px;
+  border: 1.5px solid var(--schwork-border);
+  background: var(--schwork-surface);
+  margin: 1.35rem 0;
 }
 
-.markdown table th {
+.schwork-table-wrap table {
+  display: table !important;
+  width: 100%;
+  min-width: 100%;
+  margin: 0 !important;
+  border-collapse: collapse;
+  background: transparent;
+}
+
+.schwork-table-wrap thead tr {
   background-color: var(--schwork-navy);
+  border-top: none;
+  border-bottom: 2px solid var(--schwork-cyan);
+}
+
+html[data-theme='dark'] .schwork-table-wrap thead tr {
+  background-color: #0d192b;
+}
+
+.schwork-table-wrap th {
+  background-color: transparent;
   color: #ffffff;
   font-family: var(--ifm-heading-font-family);
   font-size: 0.9rem;
   letter-spacing: 0.01em;
+  border-color: rgba(43, 179, 192, 0.25);
+  white-space: nowrap;
 }
 
-.markdown table tr:nth-child(2n) {
+.schwork-table-wrap td {
+  border-color: var(--schwork-border);
+}
+
+.schwork-table-wrap tbody tr {
+  background-color: var(--schwork-surface);
+}
+
+.schwork-table-wrap tbody tr:nth-child(2n) {
   background-color: var(--schwork-surface-alt);
 }
 
@@ -265,9 +348,20 @@ body {
   color: var(--schwork-navy);
 }
 
-/* Footer polish */
-.footer {
+/* Footer polish — explicitly override Infima's `.footer--dark` (#303846 grey) */
+.footer,
+.footer.footer--dark {
+  --ifm-footer-background-color: var(--schwork-navy-deep);
+  --ifm-footer-color: #c8dde9;
+  --ifm-footer-link-color: #dcebf3;
+  background-color: var(--schwork-navy-deep);
   border-top: 3px solid var(--schwork-lime);
+}
+
+html[data-theme='dark'] .footer,
+html[data-theme='dark'] .footer.footer--dark {
+  --ifm-footer-background-color: #070e18;
+  background-color: #070e18;
 }
 
 .footer__title {

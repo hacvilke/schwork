@@ -1,12 +1,24 @@
 /* Styles for <ObjectivesBox /> — interactive checkable syllabus objectives */
 
 .box {
+  position: relative;
+  overflow: hidden;
   background: var(--schwork-surface);
   border: 1.5px solid var(--schwork-border);
-  border-top: 4px solid var(--schwork-cyan);
   border-radius: 14px;
-  padding: 1.15rem 1.25rem;
+  padding: 1.35rem 1.25rem 1.15rem;
   margin: 1.4rem 0;
+}
+
+/* Flush horizontal Cool Cyan accent bar clipped cleanly by rounded corners */
+.box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--schwork-cyan);
 }
 
 .header {
@@ -39,6 +51,11 @@
   color: var(--schwork-lime);
 }
 
+:global(html[data-theme='dark']) .progressBadge {
+  background: #0b1524;
+  border: 1px solid rgba(200, 255, 0, 0.4);
+}
+
 .list {
   list-style: none;
   padding: 0;
@@ -67,7 +84,7 @@
 }
 
 .itemDone {
-  background: rgba(43, 179, 192, 0.12);
+  background: rgba(43, 179, 192, 0.14);
   border-color: rgba(43, 179, 192, 0.45);
 }
 
@@ -109,6 +126,6 @@
 
 @media (max-width: 640px) {
   .box {
-    padding: 1rem;
+    padding: 1.2rem 1rem 1rem;
   }
 }

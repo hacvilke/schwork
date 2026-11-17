@@ -23,10 +23,10 @@ export const GRAPH_LAYOUT = {
   height: 400,
   paddingTop: 22,
   paddingRight: 22,
-  paddingBottom: 34,
-  paddingLeft: 42,
-  plotWidth: 680 - 42 - 22,
-  plotHeight: 400 - 22 - 34,
+  paddingBottom: 42,
+  paddingLeft: 46,
+  plotWidth: 680 - 46 - 22,
+  plotHeight: 400 - 22 - 42,
 } as const;
 
 /** Choose a clean human-friendly grid spacing (1, 2, 5, 10, ...) for a given axis span. */

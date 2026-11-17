@@ -137,8 +137,8 @@ const config: Config = {
       logo: {
         alt: 'Schwork Logo',
         src: 'img/logo.svg',
-        width: 30,
-        height: 30,
+        width: 34,
+        height: 34,
       },
       items: [
         {
