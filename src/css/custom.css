@@ -1,0 +1,356 @@
+@import 'katex/dist/katex.min.css';
+@import '@fontsource/space-grotesk/600.css';
+@import '@fontsource/space-grotesk/700.css';
+@import '@fontsource/plus-jakarta-sans/400.css';
+@import '@fontsource/plus-jakarta-sans/500.css';
+@import '@fontsource/plus-jakarta-sans/600.css';
+@import '@fontsource/plus-jakarta-sans/700.css';
+@import '@fontsource/jetbrains-mono/400.css';
+@import '@fontsource/jetbrains-mono/600.css';
+
+/* ==========================================================================
+   SCHWORK DESIGN SYSTEM
+   Palette: Deep Navy (#132238) + Cool Cyan (#2BB3C0) + Acid Lime (#C8FF00)
+   Two colours that work together + one deliberate clash accent.
+   ========================================================================== */
+
+:root {
+  /* Core brand palette */
+  --schwork-navy: #132238;
+  --schwork-navy-deep: #0b1524;
+  --schwork-navy-mid: #1d3454;
+  --schwork-cyan: #2bb3c0;
+  --schwork-cyan-dark: #18838e;
+  --schwork-cyan-darker: #116670;
+  --schwork-cyan-light: #7adbe4;
+  --schwork-cyan-tint: rgba(43, 179, 192, 0.11);
+  --schwork-lime: #c8ff00;
+  --schwork-lime-hover: #b6eb00;
+  --schwork-lime-ink: #132238;
+  --schwork-lime-border: #8eb800;
+
+  /* Surface & border tokens (Light mode) */
+  --schwork-bg: #f6fafc;
+  --schwork-surface: #ffffff;
+  --schwork-surface-alt: #ebf3f7;
+  --schwork-border: #d2e2eb;
+  --schwork-text: #132238;
+  --schwork-text-muted: #455b73;
+
+  /* Docusaurus Infima overrides (accessible teal-cyan on light backgrounds) */
+  --ifm-color-primary: #178692;
+  --ifm-color-primary-dark: #147883;
+  --ifm-color-primary-darker: #13717b;
+  --ifm-color-primary-darkest: #0f5d66;
+  --ifm-color-primary-light: #1a94a1;
+  --ifm-color-primary-lighter: #1c9ba9;
+  --ifm-color-primary-lightest: #2bb3c0;
+
+  --ifm-background-color: var(--schwork-bg);
+  --ifm-background-surface-color: var(--schwork-surface);
+  --ifm-font-color-base: var(--schwork-text);
+  --ifm-font-color-secondary: var(--schwork-text-muted);
+  --ifm-heading-color: var(--schwork-navy);
+  --ifm-navbar-background-color: var(--schwork-navy);
+  --ifm-navbar-link-color: #e6f2f7;
+  --ifm-navbar-link-hover-color: var(--schwork-lime);
+  --ifm-footer-background-color: var(--schwork-navy-deep);
+
+  --ifm-font-family-base: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --ifm-heading-font-family: 'Space Grotesk', 'Plus Jakarta Sans', system-ui, sans-serif;
+  --ifm-font-family-monospace: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  --ifm-font-size-base: 16px;
+  --ifm-line-height-base: 1.68;
+  --ifm-code-font-size: 92%;
+  --ifm-global-radius: 10px;
+  --ifm-navbar-height: 3.75rem;
+  --docusaurus-highlighted-code-line-bg: rgba(43, 179, 192, 0.14);
+}
+
+[data-theme='dark'] {
+  --schwork-bg: #0b1524;
+  --schwork-surface: #132238;
+  --schwork-surface-alt: #1a2d49;
+  --schwork-border: #253d60;
+  --schwork-text: #eaf3f8;
+  --schwork-text-muted: #9eb7cc;
+
+  --ifm-color-primary: #39c7d4;
+  --ifm-color-primary-dark: #2bb3c0;
+  --ifm-color-primary-darker: #28a9b5;
+  --ifm-color-primary-darkest: #218b95;
+  --ifm-color-primary-light: #4fcdd9;
+  --ifm-color-primary-lighter: #5ad0dc;
+  --ifm-color-primary-lightest: #7adbe4;
+
+  --ifm-background-color: var(--schwork-bg);
+  --ifm-background-surface-color: var(--schwork-surface);
+  --ifm-font-color-base: var(--schwork-text);
+  --ifm-font-color-secondary: var(--schwork-text-muted);
+  --ifm-heading-color: #f4f9fc;
+  --ifm-navbar-background-color: #0e1b2f;
+  --ifm-navbar-link-color: #eaf3f8;
+  --ifm-navbar-link-hover-color: var(--schwork-lime);
+  --ifm-footer-background-color: #070e18;
+  --docusaurus-highlighted-code-line-bg: rgba(200, 255, 0, 0.12);
+}
+
+/* ==========================================================================
+   MOBILE-FIRST FOUNDATION & OVERFLOW SAFETY
+   ========================================================================== */
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  overflow-x: clip;
+  background-color: var(--schwork-bg);
+}
+
+/* Navbar polish (always Deep Navy anchor with Acid Lime accent spark) */
+.navbar {
+  border-bottom: 2px solid var(--schwork-cyan);
+  box-shadow: 0 2px 16px rgba(11, 21, 36, 0.18);
+}
+
+.navbar__title {
+  font-family: var(--ifm-heading-font-family);
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+.navbar__toggle {
+  color: #ffffff;
+  min-width: 44px;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar__link {
+  font-weight: 600;
+  font-size: 0.94rem;
+}
+
+.navbar__link--active {
+  color: var(--schwork-lime) !important;
+}
+
+/* Color mode toggle inside dark navy navbar */
+.navbar button[class*='toggleButton'] {
+  color: #e6f2f7;
+  min-width: 40px;
+  min-height: 40px;
+}
+
+.navbar button[class*='toggleButton']:hover {
+  background: rgba(200, 255, 0, 0.14);
+  color: var(--schwork-lime);
+}
+
+/* Mobile sidebar drawer */
+.navbar-sidebar {
+  background-color: var(--schwork-navy);
+  color: #eaf3f8;
+}
+
+.navbar-sidebar__brand {
+  border-bottom: 1px solid rgba(43, 179, 192, 0.25);
+}
+
+.navbar-sidebar__close {
+  color: var(--schwork-lime);
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.navbar-sidebar .menu__link {
+  color: #dcebf3;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-sidebar .menu__link--active {
+  color: var(--schwork-navy) !important;
+  background-color: var(--schwork-lime) !important;
+  font-weight: 700;
+}
+
+/* Docs desktop sidebar active highlight */
+.theme-doc-sidebar-container {
+  border-right: 1px solid var(--schwork-border) !important;
+}
+
+.menu__link {
+  border-radius: 8px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.menu__link--active:not(.menu__link--sublist) {
+  background: var(--schwork-cyan-tint);
+  border-left: 3px solid var(--schwork-lime);
+  font-weight: 700;
+}
+
+[data-theme='light'] .menu__link--active:not(.menu__link--sublist) {
+  border-left-color: var(--schwork-navy);
+  background: linear-gradient(90deg, rgba(200, 255, 0, 0.35), rgba(43, 179, 192, 0.12));
+  color: var(--schwork-navy);
+}
+
+/* ==========================================================================
+   KATEX & TABLES: ZERO HORIZONTAL OVERFLOW ON PHONES
+   ========================================================================== */
+
+.katex-display {
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding: 0.75rem 0.5rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+  background: var(--schwork-surface-alt);
+  border: 1px solid var(--schwork-border);
+  -webkit-overflow-scrolling: touch;
+}
+
+.katex-display > .katex {
+  white-space: nowrap;
+}
+
+.markdown table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  border-collapse: collapse;
+  border-radius: 10px;
+}
+
+.markdown table th {
+  background-color: var(--schwork-navy);
+  color: #ffffff;
+  font-family: var(--ifm-heading-font-family);
+  font-size: 0.9rem;
+  letter-spacing: 0.01em;
+}
+
+.markdown table tr:nth-child(2n) {
+  background-color: var(--schwork-surface-alt);
+}
+
+/* Headings & editorial polish */
+.markdown h1,
+.markdown h2,
+.markdown h3 {
+  letter-spacing: -0.02em;
+}
+
+.markdown h2 {
+  padding-bottom: 0.35rem;
+  border-bottom: 2px solid var(--schwork-border);
+  margin-top: 2.2rem;
+}
+
+/* Acid Lime selection clash! */
+::selection {
+  background-color: var(--schwork-lime);
+  color: var(--schwork-navy);
+}
+
+/* Footer polish */
+.footer {
+  border-top: 3px solid var(--schwork-lime);
+}
+
+.footer__title {
+  font-family: var(--ifm-heading-font-family);
+  color: var(--schwork-cyan-light);
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+}
+
+.footer__link-item:hover {
+  color: var(--schwork-lime);
+}
+
+/* ==========================================================================
+   LOCAL SEARCH BAR IN DARK NAVY NAVBAR
+   ========================================================================== */
+
+.navbar__search-input,
+input[class*='searchInput'] {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  color: #ffffff !important;
+  border: 1px solid rgba(43, 179, 192, 0.45) !important;
+  border-radius: 8px !important;
+}
+
+.navbar__search-input::placeholder,
+input[class*='searchInput']::placeholder {
+  color: #a9c6d8 !important;
+}
+
+.navbar__search-input:focus,
+input[class*='searchInput']:focus {
+  border-color: var(--schwork-lime) !important;
+  outline: none !important;
+}
+
+/* ==========================================================================
+   SMALL SCREEN REFINEMENTS (320px - 640px PHONES)
+   ========================================================================== */
+
+@media (max-width: 640px) {
+  :root {
+    --ifm-font-size-base: 15.5px;
+    --ifm-navbar-height: 3.5rem;
+  }
+
+  .container {
+    padding-left: 0.9rem;
+    padding-right: 0.9rem;
+  }
+
+  .markdown h1 {
+    font-size: 1.7rem;
+    line-height: 1.22;
+  }
+
+  .markdown h2 {
+    font-size: 1.32rem;
+  }
+
+  .pagination-nav {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+
+  .pagination-nav__link {
+    min-height: 54px;
+  }
+}
+
+/* Print-friendly styles for students printing notes at school / parish libraries */
+@media print {
+  .navbar,
+  .footer,
+  .theme-doc-sidebar-container,
+  .theme-doc-toc-desktop,
+  .pagination-nav {
+    display: none !important;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+}
