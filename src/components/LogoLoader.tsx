@@ -10,10 +10,14 @@ import clsx from 'clsx';
 import styles from './LogoLoader.module.css';
 
 export interface LogoLoaderProps {
-  /** Visual size preset. Defaults to `'md'` (84px). */
-  size?: 'sm' | 'md' | 'lg';
+  /** Visual size preset. Defaults to `'md'` (84px). Use `'hero'` for the large homepage showcase. */
+  size?: 'sm' | 'md' | 'lg' | 'hero';
   /** Optional loading caption displayed underneath the icon. */
   label?: string;
+  /** Accessible label override (defaults to `label` or `'Loading'`). */
+  ariaLabel?: string;
+  /** Use `'img'` for brand showcase contexts instead of `'status'` loading alerts. */
+  role?: 'status' | 'img';
   /** Whether to draw the Deep Navy rounded icon badge behind the animation. */
   showFrame?: boolean;
   /** Optional extra CSS class name on the outer wrapper. */
@@ -24,20 +28,24 @@ const SIZE_CLASS: Record<NonNullable<LogoLoaderProps['size']>, string> = {
   sm: styles.sizeSm,
   md: styles.sizeMd,
   lg: styles.sizeLg,
+  hero: styles.sizeHero,
 };
 
 export default function LogoLoader({
   size = 'md',
   label,
+  ariaLabel,
+  role = 'status',
   showFrame = true,
   className,
 }: LogoLoaderProps): React.JSX.Element {
+  const isHero = size === 'hero';
   return (
     <div
-      className={clsx(styles.wrapper, className)}
-      role="status"
-      aria-live="polite"
-      aria-label={label ?? 'Loading'}>
+      className={clsx(styles.wrapper, isHero && styles.heroTempo, className)}
+      role={role}
+      aria-live={role === 'status' ? 'polite' : undefined}
+      aria-label={ariaLabel ?? label ?? 'Loading'}>
       <svg
         viewBox="0 0 64 64"
         fill="none"

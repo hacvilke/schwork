@@ -32,6 +32,20 @@
   height: 112px;
 }
 
+.sizeHero {
+  width: clamp(200px, 24vw, 276px);
+  height: clamp(200px, 24vw, 276px);
+  filter: drop-shadow(0 22px 44px rgba(5, 11, 20, 0.55));
+}
+
+.heroTempo .capLeft,
+.heroTempo .capRight,
+.heroTempo .tassel,
+.heroTempo .hand,
+.heroTempo .sparks {
+  animation-duration: 2.6s;
+}
+
 .label {
   font-family: var(--ifm-font-family-monospace);
   font-size: 0.8rem;
