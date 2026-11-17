@@ -1,0 +1,194 @@
+/* Styles for <QuickCheck /> — interactive Paper 1 & Paper 2 practice checks */
+
+.card {
+  background: var(--schwork-surface);
+  border: 1.5px solid var(--schwork-border);
+  border-left: 5px solid var(--schwork-cyan);
+  border-radius: 14px;
+  padding: 1.15rem 1.2rem;
+  margin: 1.6rem 0;
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--ifm-color-primary);
+}
+
+.marksPill {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.76rem;
+  font-weight: 700;
+  padding: 0.2rem 0.55rem;
+  border-radius: 6px;
+  background: var(--schwork-cyan-tint);
+  color: var(--ifm-color-primary);
+}
+
+.prompt {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  line-height: 1.5;
+}
+
+.optionList {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.55rem;
+}
+
+.optionBtn {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  min-height: 48px;
+  padding: 0.7rem 0.9rem;
+  text-align: left;
+  border-radius: 10px;
+  border: 1.5px solid var(--schwork-border);
+  background: var(--schwork-surface-alt);
+  color: var(--schwork-text);
+  font-family: var(--ifm-font-family-base);
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.optionBtn:hover:not(:disabled) {
+  border-color: var(--schwork-cyan);
+  transform: translateY(-1px);
+}
+
+.optionLetter {
+  flex-shrink: 0;
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.82rem;
+  font-weight: 700;
+  background: var(--schwork-navy);
+  color: #ffffff;
+}
+
+.optionCorrect {
+  border-color: #16a34a !important;
+  background: rgba(22, 163, 74, 0.14) !important;
+}
+
+.optionCorrect .optionLetter {
+  background: var(--schwork-lime);
+  color: var(--schwork-navy);
+}
+
+.optionWrong {
+  border-color: #dc2626 !important;
+  background: rgba(220, 38, 38, 0.12) !important;
+}
+
+.optionWrong .optionLetter {
+  background: #dc2626;
+  color: #ffffff;
+}
+
+.feedback {
+  margin-top: 0.95rem;
+  padding: 0.85rem 1rem;
+  border-radius: 10px;
+  font-size: 0.93rem;
+  line-height: 1.52;
+  background: var(--schwork-surface-alt);
+  border: 1px solid var(--schwork-border);
+}
+
+.feedbackCorrect {
+  border-color: #16a34a;
+  background: rgba(22, 163, 74, 0.1);
+}
+
+.feedbackWrong {
+  border-color: #dc2626;
+  background: rgba(220, 38, 38, 0.08);
+}
+
+.feedbackTitle {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.actions {
+  margin-top: 0.8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+}
+
+.primaryBtn {
+  min-height: 44px;
+  padding: 0.55rem 1rem;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  font-family: var(--ifm-heading-font-family);
+  font-weight: 700;
+  font-size: 0.9rem;
+  background: var(--schwork-lime);
+  color: var(--schwork-navy);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.primaryBtn:hover {
+  background: var(--schwork-lime-hover);
+}
+
+.secondaryBtn {
+  min-height: 44px;
+  padding: 0.55rem 0.95rem;
+  border-radius: 9px;
+  border: 1.5px solid var(--schwork-border);
+  cursor: pointer;
+  font-family: var(--ifm-heading-font-family);
+  font-weight: 600;
+  font-size: 0.86rem;
+  background: transparent;
+  color: var(--schwork-text);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.secondaryBtn:hover {
+  border-color: var(--schwork-cyan);
+}
+
+@media (max-width: 640px) {
+  .card {
+    padding: 1rem;
+  }
+}

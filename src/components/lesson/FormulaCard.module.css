@@ -1,0 +1,59 @@
+/* Styles for <FormulaCard /> — highlighted key exam formula block */
+
+.card {
+  background: var(--schwork-surface);
+  border: 1.5px solid var(--schwork-cyan);
+  border-radius: 14px;
+  overflow: hidden;
+  margin: 1.4rem 0;
+  box-shadow: 0 4px 16px rgba(19, 34, 56, 0.06);
+}
+
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.7rem 1.1rem;
+  background: var(--schwork-navy);
+  color: #ffffff;
+}
+
+.title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  font-family: var(--ifm-heading-font-family);
+  font-weight: 700;
+  font-size: 0.96rem;
+}
+
+.badgeGiven {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.74rem;
+  font-weight: 700;
+  padding: 0.22rem 0.6rem;
+  border-radius: 6px;
+  background: rgba(43, 179, 192, 0.22);
+  color: var(--schwork-cyan-light);
+  border: 1px solid rgba(43, 179, 192, 0.5);
+}
+
+.badgeMemorize {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.74rem;
+  font-weight: 700;
+  padding: 0.22rem 0.6rem;
+  border-radius: 6px;
+  background: var(--schwork-lime);
+  color: var(--schwork-navy);
+}
+
+.body {
+  padding: 1rem 1.15rem;
+}
+
+.body > :last-child {
+  margin-bottom: 0;
+}

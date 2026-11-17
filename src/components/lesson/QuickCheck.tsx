@@ -1,18 +1,31 @@
+/**
+ * Interactive self-check practice question for Paper 1 (multiple choice)
+ * and Paper 2 (short-answer with revealable mark scheme).
+ *
+ * Pass `options` + `correctIndex` for multiple choice, or omit `options` for a mark-scheme reveal.
+ */
+
 import React, {useState} from 'react';
 import {CheckCircle2, HelpCircle, RotateCcw, XCircle} from 'lucide-react';
 import clsx from 'clsx';
-import styles from './lesson.module.css';
+import styles from './QuickCheck.module.css';
 
 export interface QuickCheckProps {
+  /** Paper type shown in the card header. Defaults to 'Paper 1'. */
   paper?: 'Paper 1' | 'Paper 2';
+  /** Number of marks for this question. Defaults to 1. */
   marks?: number;
+  /** Question text or JSX prompt. */
   question: React.ReactNode;
+  /** Optional list of multiple-choice answers (omit for Paper 2 mark-scheme mode). */
   options?: string[];
+  /** Zero-based index of the correct option (e.g. 0 = A, 1 = B, 2 = C, 3 = D). */
   correctIndex?: number;
+  /** Worked explanation or Paper 2 mark scheme shown after answering. */
   explanation: React.ReactNode;
 }
 
-const LETTERS = ['A', 'B', 'C', 'D', 'E'];
+const OPTION_LETTERS = ['A', 'B', 'C', 'D', 'E'];
 
 export default function QuickCheck({
   paper = 'Paper 1',
@@ -22,16 +35,18 @@ export default function QuickCheck({
   correctIndex = 0,
   explanation,
 }: QuickCheckProps): React.JSX.Element {
-  const [selected, setSelected] = useState<number | null>(null);
-  const [revealed, setRevealed] = useState(false);
+  const [selectedOption, setSelectedOption] = useState<number | null>(null);
+  const [showMarkScheme, setShowMarkScheme] = useState(false);
 
-  const isMcq = Array.isArray(options) && options.length > 0;
-  const isCorrect = selected !== null && selected === correctIndex;
+  const isMultipleChoice = Array.isArray(options) && options.length > 0;
+  const hasAnswered = selectedOption !== null;
+  const isCorrect = hasAnswered && selectedOption === correctIndex;
+  const correctLetter = OPTION_LETTERS[correctIndex] ?? String(correctIndex + 1);
 
   return (
-    <section className={styles.quizCard} aria-label={`${paper} Quick Check`}>
-      <div className={styles.quizHeader}>
-        <span className={styles.quizLabel}>
+    <section className={styles.card} aria-label={`${paper} Quick Check`}>
+      <div className={styles.header}>
+        <span className={styles.label}>
           <HelpCircle size={15} aria-hidden="true" />
           Quick Check · {paper}
         </span>
@@ -40,70 +55,63 @@ export default function QuickCheck({
         </span>
       </div>
 
-      <div className={styles.quizPrompt}>{question}</div>
+      <div className={styles.prompt}>{question}</div>
 
-      {isMcq ? (
+      {isMultipleChoice ? (
         <>
-          <div className={styles.optionGrid} role="group" aria-label="Answer choices">
-            {options.map((opt, idx) => {
-              const showResult = selected !== null;
-              const isThisCorrect = idx === correctIndex;
-              const isThisSelected = idx === selected;
+          <div className={styles.optionList} role="group" aria-label="Answer choices">
+            {options.map((optionText, index) => {
+              const isRightOption = index === correctIndex;
+              const isChosenOption = index === selectedOption;
 
               return (
                 <button
-                  key={idx}
+                  key={index}
                   type="button"
-                  disabled={showResult}
-                  onClick={() => setSelected(idx)}
+                  disabled={hasAnswered}
+                  onClick={() => setSelectedOption(index)}
                   className={clsx(
                     styles.optionBtn,
-                    showResult && isThisCorrect && styles.optionCorrect,
-                    showResult && isThisSelected && !isThisCorrect && styles.optionWrong,
+                    hasAnswered && isRightOption && styles.optionCorrect,
+                    hasAnswered && isChosenOption && !isRightOption && styles.optionWrong,
                   )}>
-                  <span className={styles.optionLetter}>{LETTERS[idx] ?? idx + 1}</span>
-                  <span>{opt}</span>
+                  <span className={styles.optionLetter}>
+                    {OPTION_LETTERS[index] ?? index + 1}
+                  </span>
+                  <span>{optionText}</span>
                 </button>
               );
             })}
           </div>
 
-          {selected !== null && (
+          {hasAnswered && (
             <>
               <div
                 className={clsx(
-                  styles.quizFeedback,
-                  isCorrect ? styles.quizFeedbackGood : styles.quizFeedbackBad,
+                  styles.feedback,
+                  isCorrect ? styles.feedbackCorrect : styles.feedbackWrong,
                 )}>
-                <div
-                  style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '0.45rem',
-                    fontWeight: 700,
-                    marginBottom: '0.35rem',
-                  }}>
+                <div className={styles.feedbackTitle}>
                   {isCorrect ? (
                     <>
                       <CheckCircle2 size={18} color="#16a34a" />
-                      <span>Correct! ({LETTERS[correctIndex]})</span>
+                      <span>Correct! ({correctLetter})</span>
                     </>
                   ) : (
                     <>
                       <XCircle size={18} color="#dc2626" />
-                      <span>
-                        Not quite — the correct option is {LETTERS[correctIndex]}.
-                      </span>
+                      <span>Not quite — the correct option is {correctLetter}.</span>
                     </>
                   )}
                 </div>
                 <div>{explanation}</div>
               </div>
-              <div className={styles.quizActions}>
+
+              <div className={styles.actions}>
                 <button
                   type="button"
-                  className={styles.secondaryActionBtn}
-                  onClick={() => setSelected(null)}>
+                  className={styles.secondaryBtn}
+                  onClick={() => setSelectedOption(null)}>
                   <RotateCcw size={15} />
                   Try again
                 </button>
@@ -113,15 +121,15 @@ export default function QuickCheck({
         </>
       ) : (
         <>
-          <div className={styles.quizActions}>
+          <div className={styles.actions}>
             <button
               type="button"
-              className={styles.primaryActionBtn}
-              onClick={() => setRevealed((v) => !v)}>
-              {revealed ? 'Hide mark scheme' : 'Check mark scheme'}
+              className={styles.primaryBtn}
+              onClick={() => setShowMarkScheme((visible) => !visible)}>
+              {showMarkScheme ? 'Hide mark scheme' : 'Check mark scheme'}
             </button>
           </div>
-          {revealed && <div className={styles.quizFeedback}>{explanation}</div>}
+          {showMarkScheme && <div className={styles.feedback}>{explanation}</div>}
         </>
       )}
     </section>

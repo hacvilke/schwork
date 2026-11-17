@@ -1,0 +1,221 @@
+/* Styles for <InteractiveGraph /> — touch-friendly SVG coordinate grapher */
+
+.shell {
+  background: #132238;
+  color: #eaf3f8;
+  border-radius: 16px;
+  border: 1.5px solid rgba(43, 179, 192, 0.45);
+  overflow: hidden;
+  margin: 1.6rem 0;
+  box-shadow: 0 10px 28px rgba(11, 21, 36, 0.18);
+}
+
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  padding: 0.8rem 1rem;
+  background: #0d192b;
+  border-bottom: 1px solid rgba(43, 179, 192, 0.25);
+}
+
+.titleWrap {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  flex-wrap: wrap;
+}
+
+.badge {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  border-radius: 5px;
+  background: var(--schwork-lime);
+  color: #132238;
+  text-transform: uppercase;
+}
+
+.title {
+  font-family: var(--ifm-heading-font-family);
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.iconBtn {
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 8px;
+  border: 1px solid rgba(43, 179, 192, 0.4);
+  background: #172b46;
+  color: #eaf3f8;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.iconBtn:hover {
+  border-color: var(--schwork-lime);
+  color: var(--schwork-lime);
+}
+
+.hud {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.55rem 1rem;
+  background: rgba(11, 21, 36, 0.65);
+  border-bottom: 1px solid rgba(43, 179, 192, 0.18);
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.8rem;
+}
+
+.legendList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.legendItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #dcebf3;
+}
+
+.legendSwatch {
+  width: 14px;
+  height: 4px;
+  border-radius: 2px;
+}
+
+.readoutPill {
+  padding: 0.2rem 0.55rem;
+  border-radius: 6px;
+  background: rgba(200, 255, 0, 0.14);
+  border: 1px solid rgba(200, 255, 0, 0.45);
+  color: var(--schwork-lime);
+  font-weight: 600;
+}
+
+.canvasWrap {
+  position: relative;
+  width: 100%;
+  touch-action: none;
+  cursor: grab;
+  user-select: none;
+}
+
+.canvasWrap:active {
+  cursor: grabbing;
+}
+
+.svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.slidersPanel {
+  padding: 0.85rem 1rem 1rem;
+  background: #0e1c30;
+  border-top: 1px solid rgba(43, 179, 192, 0.25);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 0.85rem;
+}
+
+.sliderRow {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.sliderLabelRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.82rem;
+}
+
+.sliderValue {
+  color: var(--schwork-lime);
+  font-weight: 700;
+}
+
+.sliderInput {
+  width: 100%;
+  height: 28px;
+  accent-color: #c8ff00;
+  cursor: pointer;
+}
+
+.customExprBar {
+  padding: 0.75rem 1rem;
+  background: #0b1524;
+  border-top: 1px solid rgba(43, 179, 192, 0.22);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.customExprLabel {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.82rem;
+  color: var(--schwork-cyan-light);
+  font-weight: 600;
+}
+
+.customExprInput {
+  flex: 1;
+  min-width: 160px;
+  min-height: 40px;
+  padding: 0.4rem 0.75rem;
+  border-radius: 8px;
+  border: 1.5px solid rgba(43, 179, 192, 0.45);
+  background: #132238;
+  color: #ffffff;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.9rem;
+}
+
+.customExprInput:focus {
+  outline: none;
+  border-color: var(--schwork-lime);
+}
+
+.hint {
+  padding: 0.5rem 1rem;
+  font-size: 0.76rem;
+  color: #8ba8be;
+  background: #0a1422;
+  border-top: 1px solid rgba(43, 179, 192, 0.14);
+}
+
+@media (max-width: 640px) {
+  .toolbar {
+    padding: 0.7rem 0.85rem;
+  }
+
+  .slidersPanel {
+    grid-template-columns: 1fr;
+  }
+}

@@ -12,6 +12,7 @@
     "deploy": "DEPLOY_TARGET=gh-pages docusaurus deploy",
     "clear": "docusaurus clear",
     "serve": "docusaurus serve --host 0.0.0.0 --port 3000 --no-open",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
     "typecheck": "tsc",
     "diagrams": "python3 scripts/matplotlib/build_all.py"
   },
