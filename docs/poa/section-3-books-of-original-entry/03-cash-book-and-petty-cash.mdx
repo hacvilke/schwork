@@ -17,52 +17,81 @@ sidebar_position: 3
 <ObjectivesBox
   id="poa-3-3"
   objectives={[
-    'Explain why the Cash Book acts as BOTH a Book of Original Entry and a Ledger account.',
-    'Prepare and balance a Three-Column Cash Book (Discount, Cash, Bank) cleanly.',
-    'Record Contra Entries (C) accurately when moving money between Cash and Bank.',
-    'Interpret Cash and Bank closing balances — including recognising a Bank Overdraft.',
-    'Prepare and balance a Petty Cash Book using the Imprest System (float & reimbursement).',
+    'Explain why the Cash Book serves as BOTH a Book of Original Entry and a Ledger account (dual role).',
+    'Prepare and balance a Three-Column Cash Book (Discount, Cash, Bank) accurately — including separating capital vs revenue payments.',
+    'Record Contra Entries (C) correctly, including tricky "keep a cash float and bank the rest" narratives.',
+    'Interpret Cash and Bank closing balances (including a Bank Overdraft) and handle Discount column totals cleanly.',
+    'Prepare and balance an analytical Petty Cash Book using the Imprest System and explain why businesses use it.',
   ]}
 />
 
 ---
 
-## 1. The Three-Column Cash Book (Why It Is Special!)
+## 1. The Cash Book's Unique Dual Role
 
-The **Cash Book** is unique: it is **both a Book of Original Entry AND a Ledger account** (combining the Cash Account and the Bank Account side by side so you don't need separate Cash and Bank T-accounts!).
+Every other Day Book (Sales Journal, Purchases Journal, etc.) is *only* a Book of Original Entry. The **Cash Book** is special: it is **BOTH a Book of Original Entry AND a Ledger Account** at the same time!
 
+Because Cash and Bank transactions happen every single day, accountants put the **Cash Account** and the **Bank Account** side by side inside one book so they never have to draw separate Cash and Bank T-accounts in the General Ledger.
+
+### Evolution of the Cash Book (Know All Three Types!)
+- **Two-Column Cash Book:** Has **Cash** and **Bank** columns on each side.
+- **Three-Column Cash Book** *(most commonly tested on exams!)*: Adds **Discount Allowed** on the Debit side and **Discount Received** on the Credit side right beside Cash and Bank!
+
+### Left Side vs Right Side Rules
 - **Left Side — Debit (Dr) = Money COMING IN (Receipts):**
-  - `Discount Allowed` *(memorandum column — never balanced off!)*
-  - `Cash (J\$)` *(notes & coins received)*
-  - `Bank (J\$)` *(cheques banked, card receipts, online transfers received)*
+  - `Discount Allowed` *(memorandum column — cash discounts we granted to debtors who paid early)*
+  - `Cash (J\$)` *(physical notes & coins entering the till)*
+  - `Bank (J\$)` *(cheques banked, debit/credit card receipts, online transfers entering our bank account)*
 - **Right Side — Credit (Cr) = Money GOING OUT (Payments):**
-  - `Discount Received` *(memorandum column — never balanced off!)*
-  - `Cash (J\$)` *(notes & coins paid out)*
-  - `Bank (J\$)` *(cheques written, standing orders, bank transfers paid)*
+  - `Discount Received` *(memorandum column — cash discounts suppliers granted to us for paying early)*
+  - `Cash (J\$)` *(physical notes & coins paid out of the till)*
+  - `Bank (J\$)` *(cheques written, bank transfers paid, standing orders, direct debits)*
+
+:::tip Golden Rule for the Discount Columns!
+The **Discount Allowed** and **Discount Received** columns are **NEVER balanced off** against each other — they are two completely different accounts! At month-end:
+- Simply **total** the Debit Discount column → post **Dr Discount Allowed Account** (Expense) in the General Ledger.
+- Simply **total** the Credit Discount column → post **Cr Discount Received Account** (Other Income) in the General Ledger.
+*(The individual customer/supplier accounts were already credited/debited with the discount when each line was posted!)*
+:::
 
 ---
 
 ## 2. Contra Entries (`C`) — Moving Your Own Money!
 
-A **Contra Entry** happens when **both the Debit AND the Credit** of a transaction occur **inside the Cash Book itself** — you are simply shifting the business's own money between the **Cash Till** and the **Bank Account**. Mark **`C`** in the Folio column on both sides!
+A **Contra Entry** happens when **both halves (Debit and Credit)** of a transaction occur **inside the Cash Book itself** — you are simply transferring the business's own money between the **Cash Till** and the **Bank Account**. Always write **`C`** in the Folio column on both sides so nobody posts it again to the General Ledger!
 
 | Contra Transaction | Debit Side (Money In) | Credit Side (Money Out) |
 | :--- | :--- | :--- |
 | **Paid cash from till into the bank** *(banking cash)* | **Dr Bank** — write `"Cash"` in Details, **`C`** in Folio | **Cr Cash** — write `"Bank"` in Details, **`C`** in Folio |
 | **Withdrew cash from bank for office use** | **Dr Cash** — write `"Bank"` in Details, **`C`** in Folio | **Cr Bank** — write `"Cash"` in Details, **`C`** in Folio |
 
-:::warning Classic Exam Pitfall!
-If the owner withdraws cash from the bank for **personal use**, that is **NOT** a contra entry — it is **Drawings** (`Cr Bank`, `Dr Drawings` in the General Ledger)!
-Also remember: if a business buys **Office Equipment (J\$36,000)** and pays **Office Equipment Repairs (J\$4,000)** on the same day, record them as **two separate lines** — do NOT lump capital expenditure and revenue repairs together!
-:::
+### Watch Out for Three Real Exam Traps (From the May/June 2025 Subject Report!)
+1. **Owner's Personal Withdrawal is NOT a Contra Entry:** If the owner withdraws cash from the bank for *personal/private use*, record `Cr Bank` (Details: `Drawings`) and `Dr Drawings` in the General Ledger — **never** `Dr Cash`!
+2. **"Keep a Cash Float and Bank the Rest" Narrative Contra** *(tested directly on May/June 2025 Paper 02 Q1!)*: Suppose on 30 June the question says: *"Deposited all remaining cash into the bank except for a J\$5,000 cash float."*
+   - **Step 1:** Total all Debit Cash receipts so far, and subtract all Credit Cash payments so far to see how much physical cash is sitting in the till (say, J\$23,000).
+   - **Step 2:** Subtract the float kept back ($23{,}000 - 5{,}000 =$ **J\$18,000**).
+   - **Step 3:** Record a **Contra Entry (`C`)** for **J\$18,000**: `Cr Cash (Details: Bank)` and `Dr Bank (Details: Cash)` — leaving exactly **J\$5,000** as `Balance c/d` in Cash!
+3. **Separate Capital vs Revenue Expenditure on the Same Cheque** *(also highlighted on May/June 2025 Q1!)*: If a business pays J\$36,000 for **new Office Equipment** and J\$4,000 for **Equipment Repairs**, write them on **TWO separate lines** (`Office Equipment 36,000` and `Equipment Repairs 4,000`) — NEVER lump them into one J\$40,000 line!
 
 ---
 
-## 3. Worked Example 1: Three-Column Cash Book (With Contra Entry & Bank Overdraft!)
+## 3. Interpreting Closing Balances (`Cash` vs `Bank`)
+
+After balancing the **Cash** and **Bank** columns separately using the `Balance c/d` → `Balance b/d` method:
+
+| Closing `Balance b/d` | What It Means | Where It Goes on the Balance Sheet |
+| :--- | :--- | :--- |
+| **Cash — Debit `Balance b/d`** | Physical cash remaining in the till/safe at month-end. *(Cash can **NEVER** have a Credit balance — you cannot hand out more physical notes than you hold!)* | **Current Asset** (*Cash in Hand*) |
+| **Bank — Debit `Balance b/d`** | Positive money sitting safely in the business's bank account (deposits > cheques written). | **Current Asset** (*Cash at Bank*) |
+| **Bank — Credit `Balance b/d`** | **Bank Overdraft!** Cheques & payments out exceeded deposits in — the business owes the bank that exact amount! | **Current Liability** (*Bank Overdraft*) |
+
+---
+
+## 4. Worked Example 1: Three-Column Cash Book (With Contra Entry & Bank Overdraft)
 
 <WorkedExample
   title="T. Bennett Traders — Three-Column Cash Book for June 2026"
-  marks={12}
+  marks={14}
   problem={
     <>
       On <strong>1 June 2026</strong>, T. Bennett Traders had <strong>Cash J$12,000 (Dr)</strong> and{' '}
@@ -85,7 +114,7 @@ Also remember: if a business buys **Office Equipment (J\$36,000)** and pays **Of
       • June 28 — Paid by cheque for new Office Equipment <strong>J$36,000</strong> and Office Equipment Repairs <strong>J$4,000</strong>
     </>
   }
-  examTip="NEVER try to balance the Discount columns! Simply total Discount Allowed (post Dr Discount Allowed in GL) and total Discount Received (post Cr Discount Received in GL). And notice that Cash can NEVER have a credit balance — you cannot spend more physical cash than you hold — whereas Bank CAN end with a credit balance (a Bank Overdraft)!"
+  examTip="Always double-check whether an opening Bank balance is Debit (cash in bank) or Credit (opening Bank Overdraft — starts on the Credit side!). Also check that every Contra entry shows 'C' in BOTH Folio columns."
 >
 
 **T. Bennett Traders — Three-Column Cash Book (June 2026)**
@@ -118,20 +147,26 @@ Also remember: if a business buys **Office Equipment (J\$36,000)** and pays **Of
 | **July 1** | **Balance b/d** *(Bank Overdraft)* | | | | **2,000** |
 
 **Interpreting the Closing Balances (Paper 2 Theory Marks!):**
-- **Cash `Balance b/d` = J\$7,500 (Dr):** T. Bennett has **J\$7,500 Cash in Hand** *(Current Asset)* on 1 July.
-- **Bank `Balance b/d` = J\$2,000 (Cr):** Cheques paid out (J\$74,500) exceeded bank deposits (J\$72,500) by **J\$2,000** — the business has a **Bank Overdraft of J\$2,000** *(Current Liability)*!
+- **Cash `Balance b/d` = J\$7,500 (Dr):** T. Bennett holds **J\$7,500 Cash in Hand** *(Current Asset)* on 1 July.
+- **Bank `Balance b/d` = J\$2,000 (Cr):** Bank payments (J\$74,500) exceeded bank deposits (J\$72,500) by **J\$2,000** — the business has a **Bank Overdraft of J\$2,000** *(Current Liability)*!
 
 </WorkedExample>
 
 ---
 
-## 4. The Petty Cash Book & The Imprest System
+## 5. The Analytical Petty Cash Book & The Imprest System
 
-Instead of writing cheques or cluttering the main Cash Book for J\$500 taxi fares or J\$300 envelopes, a junior clerk keeps a small locked cash box controlled by the **Imprest System**:
+Writing a business cheque or cluttering the main Cash Book every time someone buys J\$400 of envelopes or pays J\$600 for a messenger's taxi fare would waste huge amounts of time. Instead, businesses delegate small daily payments to a petty cashier using the **Analytical Petty Cash Book** under the **Imprest System**:
 
-1. **Fixed Float (Imprest Amount):** At the start of every month, the petty cashier starts with the **exact same fixed sum** (say, **J\$6,000**).
-2. **Petty Cash Vouchers:** Every tiny payment is recorded in the **Total Paid** column AND sorted into an **Analysis Column** (e.g. *Stationery*, *Travelling*, *Cleaning*).
-3. **Reimbursement (Restoring the Imprest):** At month-end, the main cashier refunds the **exact amount spent**, bringing the float right back to **J\$6,000**!
+### How the Imprest System Works (3 Simple Steps)
+1. **Set a Fixed Float (Imprest Amount):** Management agrees on a fixed starting amount for every period (e.g. **J\$6,000** per month).
+2. **Record & Categorise Every Payment:** Every payment requires a signed **Petty Cash Voucher** (with receipt attached). The clerk enters the amount twice — once in **Total Paid**, and once in the matching **Analysis Column** (e.g. *Stationery*, *Travelling*, *Cleaning*, or *Ledger Accounts* if paying a small creditor).
+3. **Reimburse Exact Spending:** At period-end, the main cashier inspects all vouchers and refunds the **EXACT sum spent** — bringing the petty cash box right back to **J\$6,000** on the 1st of the next month!
+
+### Why Businesses Love the Imprest System (Exam Advantages!)
+- **Strong Fraud Control:** At any moment, `Cash left in the tin + Total signed vouchers` MUST equal the fixed Imprest Float (J\$6,000) — any missing J\$100 shows up immediately!
+- **Limits Exposure:** Because only a small fixed float is kept in the office tin, maximum risk of theft is strictly capped.
+- **Keeps the Main Cash Book & General Ledger Tidy:** Instead of 40 tiny expense entries in the General Ledger, only **one monthly total per analysis column** is debited to *Stationery*, *Travelling*, *Cleaning*, etc.!
 
 <WorkedExample
   title="T. Bennett Traders — Petty Cash Book (Imprest Float = J$6,000)"
@@ -147,7 +182,7 @@ Instead of writing cheques or cluttering the main Cash Book for J\$500 taxi fare
       Write up the Petty Cash Book, balance it at 30 June, and state the reimbursement needed on 1 July.
     </>
   }
-  examTip="Always double-check that the sum of all Analysis Column totals equals the Total Paid column! Here: 2,100 + 1,500 + 1,100 = 4,700 ✓."
+  examTip="ALWAYS cross-check your arithmetic by adding up all Analysis Column totals horizontally — they MUST equal the Total Paid column! Here: 2,100 + 1,500 + 1,100 = 4,700 ✓."
 >
 
 | Receipts (J\$) | Date | Details | Voucher | Total Paid (J\$) | Stationery (J\$) | Travelling (J\$) | Cleaning (J\$) |
@@ -164,14 +199,16 @@ Instead of writing cheques or cluttering the main Cash Book for J\$500 taxi fare
 | **1,300** | **July 1** | **Balance b/d** | | | | | |
 | **4,700** | **July 1** | **Cash *(reimbursement)*** | | | | | |
 
-- **Cash left in the petty cash box at 30 June:** **J\$1,300** *(Current Asset)*
-- **Reimbursement on 1 July:** **J\$4,700** *(exact amount spent, restoring the float back to J\$6,000!)*
+- **Cash left in the box at 30 June:** **J\$1,300** *(Current Asset)*
+- **Reimbursement on 1 July:** **J\$4,700** *(exact sum spent, restoring the float cleanly back to J\$6,000!)*
+- **General Ledger Posting:** Dr Stationery J\$2,100; Dr Travelling J\$1,500; Dr Cleaning J\$1,100 (total Cr Petty Cash J\$4,700).
 
 </WorkedExample>
 
----
-
-## 5. Practice Checks
+<ExtraPractice
+  title="Extra Practice: Cash Book & Petty Cash"
+  summary="3 Paper 1 Quick Checks"
+>
 
 <QuickCheck
   paper="Paper 1"
@@ -198,5 +235,21 @@ Instead of writing cheques or cluttering the main Cash Book for J\$500 taxi fare
     'J$17,350',
   ]}
   correctIndex={1}
-  explanation="Under the Imprest System, the cashier always reimburses the EXACT amount spent (J$7,350), which adds to the J$2,650 left in the box to restore the J$10,000 float."
+  explanation="Under the Imprest System, the cashier ALWAYS reimburses the EXACT amount spent (J$7,350), which adds to the J$2,650 left in the box to restore the J$10,000 float."
 />
+
+<QuickCheck
+  paper="Paper 1"
+  marks={1}
+  question="At month-end, the Bank column of a Cash Book shows a Credit Balance b/d of J$8,400. What does this represent?"
+  options={[
+    'J$8,400 Cash at Bank (Current Asset)',
+    'J$8,400 Bank Overdraft (Current Liability)',
+    'J$8,400 Net Profit for the month',
+    'An arithmetic mistake in the Cash Book',
+  ]}
+  correctIndex={1}
+  explanation="A Credit Balance b/d in the Bank column means payments out of the bank exceeded deposits in — a Bank Overdraft (Current Liability)."
+/>
+
+</ExtraPractice>

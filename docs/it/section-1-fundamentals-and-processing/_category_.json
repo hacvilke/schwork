@@ -1,0 +1,9 @@
+{
+  "label": "Section 1: Computer Fundamentals & Processing",
+  "position": 2,
+  "collapsed": false,
+  "link": {
+    "type": "generated-index",
+    "description": "Computer types, hardware & IPOS cycle, storage units, cloud vs local storage, I/O devices, software, interfaces, specs, troubleshooting, data validation, verification, and file access."
+  }
+}

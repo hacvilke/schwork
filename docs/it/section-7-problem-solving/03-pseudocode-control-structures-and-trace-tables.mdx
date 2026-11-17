@@ -1,0 +1,220 @@
+---
+id: pseudocode-control-structures-and-trace-tables
+title: "7.3 Pseudocode, Control Structures (IF & Loops) & Trace Tables"
+sidebar_label: "7.3 Pseudocode, Loops & Trace Tables"
+sidebar_position: 3
+---
+
+<SyllabusHeader
+  subject="Information Technology · Section 7"
+  section="Pseudocode Conventions, Sequence, Selection (IF-THEN, IF-THEN-ELSE, Nested IF), Loops (FOR, WHILE, REPEAT-UNTIL) & Dry-Running Algorithms with Trace Tables"
+  code="IT-7.3"
+  papers={['Paper 1', 'Paper 2', 'SBA']}
+  studyTime="30 min"
+  difficulty="Exam-Focused"
+/>
+
+<ObjectivesBox
+  id="it-7-3"
+  objectives={[
+    'Write clean, structured, well-indented pseudocode using standard keywords (START/STOP, READ/INPUT, SET/STORE/←, PRINT/WRITE/OUTPUT).',
+    'Construct and trace all Selection structures: IF-THEN, IF-THEN-ELSE, and Nested IF-THEN-ELSE.',
+    'Choose and write the right Iteration (Loop) structure — FOR (count-controlled), WHILE (pre-test), or REPEAT...UNTIL (post-test) — with proper initialisation and sentinel control.',
+    'Desk-check (dry-run) algorithms accurately using Trace Tables to verify outputs and detect logic errors.',
+  ]}
+/>
+
+---
+
+## 1. Writing Clean Exam Pseudocode (Core Conventions!)
+
+**Pseudocode** ("fake code") writes an algorithm in **structured, English-like statements** that follow programming logic *without* worrying about strict semicolons or one specific coding language! On Paper 2, examiners award marks for **clear logic, variable initialisation, clean indentation, and matching closing keywords (`ENDIF`, `ENDWHILE`, `ENDFOR`)**!
+
+### Standard Syllabus Pseudocode Keywords
+- **Start / End:** `START` … `STOP` (or `BEGIN` … `END`)
+- **Initialisation / Assignment:** `SET Total TO 0`, `STORE 0 TO Total`, or **`Total ← 0`**
+- **Input:** `READ Price`, `INPUT Age`, or `ACCEPT Name` *(always `PRINT` a clear user prompt before `READ` in SBA!)*
+- **Output:** `PRINT "Total is ", Total`, `WRITE`, `OUTPUT`, or `DISPLAY`
+
+---
+
+## 2. The Three Control Structures (Sequence, Selection & Iteration!)
+
+Every computer program ever written is built from just **THREE control structures**:
+
+### 1. Sequence
+Instructions execute **strictly one line after another from top to bottom**, once each, with zero branching or skipping!
+
+### 2. Selection (Conditional Branching!)
+Executes different blocks of code depending on whether a condition is `TRUE` or `FALSE`:
+
+```text
+{--- (a) IF-THEN (single action only if TRUE) ---}
+IF Total > 5000 THEN
+    Discount ← Total * 0.10
+ENDIF
+
+{--- (b) IF-THEN-ELSE (two mutually exclusive paths) ---}
+IF Score >= 50 THEN
+    PRINT "Pass"
+ELSE
+    PRINT "Fail"
+ENDIF
+
+{--- (c) NESTED IF-THEN-ELSE (3 or more graded outcomes!) ---}
+IF Score >= 80 THEN
+    Grade ← 'A'
+ELSE
+    IF Score >= 60 THEN
+        Grade ← 'B'
+    ELSE
+        Grade ← 'C'
+    ENDIF
+ENDIF
+```
+
+### 3. Iteration / Loops (**Know ALL THREE Loop Types & Exact Differences!**)
+
+Paper 1 and Paper 2 LOVE contrasting **`FOR`**, **`WHILE`**, and **`REPEAT...UNTIL`**!
+
+| Loop Construct | Category | When Condition Is Checked | Runs At Least Once? | Best Exam Scenario! |
+| :--- | :---: | :---: | :---: | :--- |
+| **`FOR … TO … DO … ENDFOR`** | **Bounded / Count-Controlled** | Before each pass (automatic counter!) | Only if start ≤ end | **EXACT number of repetitions is KNOWN upfront!** (e.g. *exactly 10 students*, *12 months*, *25 employees*). |
+| **`WHILE … DO … ENDWHILE`** | **Unbounded / Pre-Test** | **At the TOP (BEFORE** entering body!) — repeats **WHILE TRUE**, stops when **FALSE**! | **NO — may run `0` times** if condition is immediately FALSE! | **Number of items is UNKNOWN** — stops on a **Sentinel Value** (e.g. *keep entering numbers until user enters `0` or `-1`!*). |
+| **`REPEAT … UNTIL …`** | **Unbounded / Post-Test** | **At the BOTTOM (AFTER** running body!) — repeats **UNTIL TRUE**, keeps looping while **FALSE**! | **YES — ALWAYS runs AT LEAST ONCE!** | **Menu choices & Input Validation** (must ask user at least once before checking if input is valid!). |
+
+#### Clean Side-by-Side Patterns (Notice Initialisation & Updating!)
+
+```text
+{--- 1. FOR LOOP (Known count: exactly 5 marks) ---}
+Total ← 0
+FOR Count ← 1 TO 5 DO
+    PRINT "Enter mark:"
+    READ Mark
+    Total ← Total + Mark
+ENDFOR
+Average ← Total / 5
+PRINT "Average = ", Average
+
+{--- 2. WHILE LOOP (Sentinel-controlled: stops when Number = 0!) ---}
+{--- WATCH THE CLASSIC EXAM PATTERN: READ BEFORE loop + READ AT BOTTOM of loop! ---}
+PositiveCount ← 0
+PRINT "Enter a whole number (0 to quit):"
+READ Num
+WHILE Num <> 0 DO
+    IF Num > 0 THEN
+        PRINT "Positive Number"
+        PositiveCount ← PositiveCount + 1
+    ELSE
+        PRINT "Negative Number"
+    ENDIF
+    PRINT "Enter next whole number (0 to quit):"
+    READ Num
+ENDWHILE
+PRINT "You have entered a zero. Goodbye! Positives: ", PositiveCount
+
+{--- 3. REPEAT...UNTIL LOOP (Post-test input validation: runs at least once!) ---}
+REPEAT
+    PRINT "Enter exam score (0 to 100):"
+    READ Score
+UNTIL (Score >= 0) AND (Score <= 100)
+```
+
+> **#1 Paper 2 Pseudocode Mistake (Infinite Loop Warning!):** Inside a **`WHILE` loop**, NEVER forget to **update the loop variable inside the loop** (e.g. `READ Num` at the bottom or `Count ← Count + 1`)! If `Num` never changes inside `WHILE Num <> 0`, the loop runs **forever (infinite loop)** and violates algorithm termination!
+
+---
+
+## 3. Desk Checking / Dry Running with a **Trace Table** (**Guaranteed Paper 2 & SBA Marks!**)
+
+A **Trace Table** is a hand-executed **dry run (desk check)** where YOU act like the CPU — stepping through an algorithm line by line with chosen **test data** to verify every variable's exact value and catch hidden **logic errors**!
+
+### Four Golden Rules for Full Marks on Any Trace Table
+1. **Column Headings:** List **EVERY variable** in the algorithm (in order of appearance) PLUS an **`Output`** column (and optionally a `Condition` column for clarity!).
+2. **Row 1 (Initialisation):** Record initial values immediately (`Total = 0`, `Count = 0`, etc.).
+3. **One Row per Pass / Update:** Whenever a variable changes (or on every pass of a loop), record the **new value** cleanly row by row — **never erase old values**!
+4. **Never skip the final boundary check:** Show the exact value that causes the loop to terminate (e.g. `Num = 0` or `Count = 5`) and the final printed `Output`!
+
+---
+
+## 4. Worked Example: Complete Pseudocode + Trace Table (Real Exam Pattern!)
+
+<WorkedExample
+  title="Counting Refunds & Dry-Running with a Trace Table (SBA & Paper 2 Master Example)"
+  marks={12}
+  problem={
+    <>
+      An election algorithm accepts the <strong>VotesReceived</strong> for <strong>4 candidates</strong> in a constituency where <code>TOTAL_VOTES = 1000</code>. A candidate earns a deposit refund if their votes equal or exceed <strong>20% of 1000 (i.e. ≥ 200 votes)</strong>.
+      <br />
+      Study the pseudocode below and execute a complete <strong>Trace Table</strong> using the test inputs: <strong><code>150, 320, 200, 90</code></strong>!
+    </>
+  }
+  examTip="WATCH THE BOUNDARY TEST VALUE 200! Because the condition is Votes >= 200 (greater than OR EQUAL to), 200 IS TRUE ('Refund Due')! Examiners deliberately include exact boundary values like 200 to check whether you read >= vs > carefully!"
+>
+
+### The Pseudocode
+```text
+START
+    RefundCount ← 0
+    FOR i ← 1 TO 4 DO
+        READ Votes
+        IF Votes >= 200 THEN
+            Status ← "Refund Due"
+            RefundCount ← RefundCount + 1
+        ELSE
+            Status ← "No Refund"
+        ENDIF
+        PRINT Status
+    ENDFOR
+    PRINT "Total Refunds: ", RefundCount
+STOP
+```
+
+### Completed Trace Table *(Test Data: `150`, `320`, `200`, `90`)*
+
+| Step / Pass | `i` | `Votes` | `Votes >= 200?` | `Status` | `RefundCount` | `Output` |
+| :--- | :---: | :---: | :---: | :--- | :---: | :--- |
+| Init | — | — | — | — | `0` | — |
+| Pass 1 | `1` | `150` | `FALSE` | `"No Refund"` | `0` | `No Refund` |
+| Pass 2 | `2` | `320` | `TRUE` | `"Refund Due"` | `1` | `Refund Due` |
+| Pass 3 *(Boundary!)* | `3` | `200` | **`TRUE`** | `"Refund Due"` | `2` | `Refund Due` |
+| Pass 4 | `4` | `90` | `FALSE` | `"No Refund"` | `2` | `No Refund` |
+| After Loop | — | — | — | — | `2` | **`Total Refunds: 2`** |
+
+*(Check: Exactly 2 candidates — `320` and `200` — earned refunds, matching `RefundCount = 2` ✓!)*
+
+</WorkedExample>
+
+<ExtraPractice
+  title="Extra Practice: Pseudocode, Loops & Trace Tables"
+  summary="2 Paper 1 Quick Checks"
+>
+
+<QuickCheck
+  paper="Paper 1"
+  marks={1}
+  question="Which loop structure ALWAYS executes its loop body AT LEAST ONCE before testing its terminating condition at the bottom?"
+  options={[
+    'FOR ... TO ... DO',
+    'WHILE ... DO',
+    'REPEAT ... UNTIL',
+    'IF ... THEN ... ELSE',
+  ]}
+  correctIndex={2}
+  explanation="REPEAT...UNTIL is a post-test loop — it executes the body first and tests the UNTIL condition at the bottom, guaranteeing at least one pass!"
+/>
+
+<QuickCheck
+  paper="Paper 1"
+  marks={1}
+  question="Trace these 4 lines of pseudocode carefully:  X ← 4  |  Y ← 10  |  X ← X + Y  |  Y ← X - 3.  What are the FINAL values of X and Y?"
+  options={[
+    'X = 4, Y = 7',
+    'X = 14, Y = 11',
+    'X = 14, Y = 1',
+    'X = 10, Y = 7',
+  ]}
+  correctIndex={1}
+  explanation="Step 1: X=4. Step 2: Y=10. Step 3: X becomes 4 + 10 = 14! Step 4: Y uses the NEW X (14), so Y = 14 − 3 = 11! Final: X = 14, Y = 11!"
+/>
+
+</ExtraPractice>

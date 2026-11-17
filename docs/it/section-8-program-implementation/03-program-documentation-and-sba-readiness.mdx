@@ -1,0 +1,161 @@
+---
+id: program-documentation-and-sba-readiness
+title: "8.3 Program Documentation & Complete IT SBA Checklist"
+sidebar_label: "8.3 Documentation & SBA Guide"
+sidebar_position: 3
+---
+
+<SyllabusHeader
+  subject="Information Technology · Section 8"
+  section="Importance of Program Documentation, Internal Documentation Features (Mnemonic Names, Comments, Indentation, White Space), External Documentation (User Manual) & Full IT SBA Integration Guide"
+  code="IT-8.3"
+  papers={['Paper 1', 'Paper 2', 'SBA']}
+  studyTime="20 min"
+  difficulty="Foundational"
+/>
+
+<ObjectivesBox
+  id="it-8-3"
+  objectives={[
+    'Explain why thorough Program Documentation is critical for software maintenance, teamwork, and end users.',
+    'Identify and apply all FOUR features of Internal Documentation (mnemonic variable names, comments, indentation, effective white space).',
+    'Describe the essential contents of External Documentation (User Manual & Technical Manual).',
+    'Use the complete 5-component IT SBA Checklist (50 marks) to verify every deliverable before submission.',
+  ]}
+/>
+
+---
+
+## 1. Why Program Documentation Matters! (Syllabus Objective 8.6!)
+
+Writing a working program is only **half the job**! Six months later — when Jamaica changes its GCT rate, a bug pops up, or a brand-new programmer joins the company — undocumented spaghetti code is almost impossible to understand safely!
+
+**Program Documentation** is all the written explanations, formatting, and guides accompanying a program to make it **easy to read, debug, update (maintain), and operate**! It splits cleanly into **TWO essential halves**:
+
+---
+
+## 2. Internal Documentation vs External Documentation
+
+### A. Internal Documentation *(Built DIRECTLY INSIDE the Source Code — for Programmers!)*
+Internal documentation is read by **developers and examiners inspecting the code** (and is ignored by the computer when running the program!):
+
+| Internal Feature | What It Means | Poor Example ❌ | Clean, Full-Mark Example ✅ |
+| :--- | :--- | :--- | :--- |
+| **1. Mnemonic (Meaningful) Variable Names** | Naming variables & constants so they describe **exactly what data they store**! | `a`, `b`, `c`, `x1` | `itemPrice`, `studentCount`, `GCT_RATE`, `netPay` |
+| **2. Comments** *(Header & Inline)* | Plain-English notes explaining **Author, Date, Purpose** at the top + tricky logic inside — completely **ignored by the compiler/interpreter**! | No comments anywhere | Pascal: `{ Compute 10% bulk discount }`<br/>Python: `# Compute 10% bulk discount`<br/>C: `// Compute 10% bulk discount` |
+| **3. Indentation** | Shifting code blocks cleanly right (2–4 spaces) inside every **`IF`**, **`ELSE`**, **`FOR`**, and **`WHILE`** block so program structure pops visually! | Every single line jammed flush against the left margin! | Clearly indented nested loops and `if/else` branches! |
+| **4. Effective Use of White Space** | Leaving **blank lines** between logical sections (declarations, input block, processing loop, final output) and spaces around operators! | 40 cramped lines smashed together with zero blank lines! | Blank lines cleanly separating Init, Input, Calculation, and Output blocks! |
+
+### B. External Documentation *(Separate Written Guides — for End Users & Technicians!)*
+1. **User Manual (User Guide):** Written in **clear, non-technical everyday language** for the everyday person operating the program! Includes:
+   - **Purpose & Overview** of what the software does,
+   - **System Requirements** (minimum OS, RAM, disk space),
+   - **Installation & Startup Steps** (with clear screenshots!),
+   - **Step-by-Step Operating Instructions** (how to enter data, sample screens, sample valid inputs & outputs),
+   - **Troubleshooting / FAQ & Error Messages** (what to do if an error pops up, plus help-desk contact details)!
+2. **Technical / Programmer Manual:** Written for IT maintenance staff — contains the **Problem Statement, IPO Chart, Flowcharts/Pseudocode, Data Dictionary, Complete Commented Source Code, and Trace Table / Test Plan**!
+
+---
+
+## 3. Worked Example: Auditing Poorly Documented Code (Paper 2!)
+
+<WorkedExample
+  title="Fixing Internal Documentation & Distinguishing Internal vs External Guides"
+  marks={6}
+  problem={
+    <>
+      Look at this poorly documented snippet written by a classmate:
+      <br />
+      <code>a=0</code><br />
+      <code>b=int(input())</code><br />
+      <code>while b&gt;0:</code><br />
+      <code>a=a+b</code><br />
+      <code>b=int(input())</code><br />
+      <code>print(a)</code>
+      <br />
+      (a) Identify <strong>THREE</strong> internal documentation flaws in the snippet above and rewrite it properly in Python.
+      <br />
+      (b) Explain clearly why a non-technical school bursar needs a <strong>User Manual (External Documentation)</strong> rather than just reading the commented source code.
+    </>
+  }
+  examTip="Always cite the exact 4 official internal documentation terms from the syllabus: (1) Mnemonic variable names, (2) Comments (author/date/purpose), (3) Proper Indentation, and (4) Effective White Space!"
+>
+
+### (a) Three Flaws & Cleanly Documented Rewrite
+- **Flaws:** (1) Cryptic non-mnemonic names `a` and `b`; (2) Zero comments explaining author/date/purpose; (3) Missing indentation inside the `while` loop (causes a Python syntax error too!) & no white space separating logical blocks!
+
+```python
+# Program: Positive Sales Accumulator
+# Author : K. Campbell | Date: 16 Nov 2026
+# Purpose: Sums positive sales amounts until a zero/negative sentinel is entered
+
+total_sales = 0
+
+sale_amount = int(input("Enter sale amount (0 or negative to stop): "))
+
+while sale_amount > 0:
+    total_sales = total_sales + sale_amount
+    sale_amount = int(input("Enter next sale amount (0 or negative to stop): "))
+
+print("Total Sales: J$", total_sales)
+```
+
+### (b) Why the Bursar Needs External Documentation (User Manual)
+- The bursar is an **end user, NOT a programmer** — they should never have to read source code! A **User Manual** gives plain-English step-by-step instructions, sample inputs, screenshots, and error troubleshooting so staff can operate the program accurately and safely!
+
+</WorkedExample>
+
+---
+
+## 4. Complete 50-Mark IT SBA Readiness Checklist (All 5 Components!)
+
+Your School-Based Assessment counts for **25% of your final IT grade (50 marks)** — check every single item below before submitting!
+
+| SBA Component | Max Marks | Must-Have High-Mark Deliverables |
+| :--- | :---: | :--- |
+| **1. Word-Processing** | **10** | Professional formatting (margins, headers/footers, page numbers, tables/columns), imported spreadsheet chart/table, **Mail Merge** (Primary Document + Data Source + Merged Letters), and a clean **Fillable Electronic Form** with Content Controls! |
+| **2. Web Page Design** | **5** | Focused site (**≤ 3 pages**) built with visual tool (Google Sites/Wix/Word) using data from your Spreadsheet + **ALL 4 Hyperlink types** tested with zero broken links! |
+| **3. Spreadsheets** | **10** | Clean multi-sheet workbook with **`SUM`, `AVERAGE`, `IF`, `COUNTIF`, `VLOOKUP`, `PMT`**, **`$` absolute references**, multi-level sorting, complex filtering, **Pivot Table / Pivot Chart**, and well-labelled charts! |
+| **4. Database Management** | **10** | Related tables (≥ 25 records, ≥ 3 data types, Primary & Foreign Keys, **`1:M` join**), Form + Sub-Form, multi-table Select Queries with **Calculated Fields & criteria**, and a grouped/sorted **Report with Summary stats & Specific Title**! |
+| **5. Problem-Solving & Programming** | **15** | (1) Clear **Problem Definition**; (2) Verified **Flowchart/Pseudocode** (6 marks — Start, friendly names, initialisation, prompt/read, Selection + Loop!); (3) **Trace Table** with real SBA test data (4 marks — ≤ 10 iterations); (4) **Working, Documented Source Code + Execution Screenshots** (5 marks)! |
+
+<ExtraPractice
+  title="Extra Practice: Program Documentation"
+  summary="2 Paper 1 Quick Checks"
+>
+
+<QuickCheck
+  paper="Paper 1"
+  marks={1}
+  question="Which of the following is an example of EXTERNAL documentation rather than INTERNAL documentation?"
+  options={[
+    'Using meaningful variable names like studentAverage',
+    'Indenting statements inside an IF-ELSE block',
+    'A printed or PDF User Manual explaining how to install and operate the software',
+    'Adding inline comments inside source code',
+  ]}
+  correctIndex={2}
+  explanation="A User Manual is External Documentation written outside the code for end users — mnemonic names, comments, indentation, and white space are all Internal Documentation!"
+/>
+
+<QuickCheck
+  paper="Paper 1"
+  marks={1}
+  question="What happens to program comments (such as # Calculate tax or { Calculate tax }) when the compiler or interpreter runs your program?"
+  options={[
+    'They are printed automatically on the user’s monitor',
+    'They slow down mathematical loops by 50%',
+    'They are completely ignored by the translator and exist solely for human readers',
+    'They trigger a syntax error if longer than one word',
+  ]}
+  correctIndex={2}
+  explanation="Translators completely ignore comments — they exist purely to help human programmers understand and maintain the code!"
+/>
+
+</ExtraPractice>
+
+---
+
+:::tip Entire Information Technology Syllabus Complete (Sections 1–8)!
+All **8 Sections (22 complete, deep-note lessons)** of Information Technology are now live! Every lesson aligns directly with the revised high-school IT curriculum — combining rich textbook-grade notes, real exam worked examples, and collapsed **Extra Practice** drawers.
+:::

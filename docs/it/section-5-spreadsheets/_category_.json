@@ -1,0 +1,9 @@
+{
+  "label": "Section 5: Spreadsheets",
+  "position": 6,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "description": "Spreadsheet fundamentals, arithmetic formulae, relative & absolute addressing, SUM/AVERAGE/IF/COUNTIF/VLOOKUP/PMT, sorting, filtering, pivot tables, charts, and multi-sheet links."
+  }
+}

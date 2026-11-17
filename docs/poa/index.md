@@ -9,7 +9,7 @@ sidebar_position: 1
 
 Welcome to **Schwork Principles of Accounts** — structured like clean technical documentation for Jamaican high school students (Grades 10–11).
 
-Every section starts with **plain-English theory**, connects **classic past-paper foundations** with **updated syllabus topics**, and backs every concept up with **worked examples in Jamaican dollars (J$)**, **True/False drills**, **"Explain in Your Own Words" activities**, and **hover/tap formula hints**.
+Every section puts **deep, textbook-quality study notes** front and centre — connecting **classic past-paper foundations** with **updated syllabus topics**, complete **worked examples in Jamaican dollars (J\$)**, and **hover/tap formula hints** — while optional **Quick Checks**, **True/False drills**, and **"Explain in Your Own Words"** activities stay neatly tucked inside a collapsed **Extra Practice** drawer at the bottom of each lesson.
 
 ---
 

@@ -7,48 +7,63 @@ sidebar_position: 1
 
 <SyllabusHeader
   subject="Principles of Accounts · Section 5"
-  section="Trading Account (Net Sales, Cost of Sales & Gross Profit) + Profit & Loss Account (Other Revenue, Less Expenses & Net Profit)"
+  section="Trading Account (Net Sales, Cost of Sales & Gross Profit), Profit & Loss Account (Other Revenues, Expenses & Net Profit) & Missing-Figure Calculations"
   code="POA-5.1"
   papers={['Paper 1', 'Paper 2', 'SBA']}
-  studyTime="24 min"
+  studyTime="25 min"
   difficulty="Core"
 />
 
 <ObjectivesBox
   id="poa-5-1"
   objectives={[
-    'Explain the two-part structure of the Trading and Profit & Loss Account (Income Statement) and write its proper heading ("for the year ended...").',
-    'Calculate Net Sales, Cost of Sales, and Gross Profit cleanly — treating Returns Inwards, Returns Outwards, Carriage Inwards, Opening Stock, and Closing Stock accurately.',
-    'Distinguish clearly between Carriage Inwards (Trading Account) and Carriage Outwards (Profit & Loss Account).',
-    'Add Other Revenues (Discount Received, Rent Received) and deduct Operating Expenses to find Net Profit (or Net Loss), and show how Net Profit flows to the Balance Sheet.',
+    'Explain the exact purpose and two-part anatomy of the Trading and Profit & Loss Account (Income Statement) and write its proper heading.',
+    'Calculate Net Sales, Cost of Sales, and Gross Profit accurately — handling Returns Inwards, Returns Outwards, Carriage Inwards, Goods Drawn by Owner, Opening Stock, and Closing Stock.',
+    'Distinguish Carriage Inwards from Carriage Outwards, and Other Revenues from Operating Expenses.',
+    'Calculate Net Profit (or Net Loss), show its exact transfer to the Balance Sheet Capital section, and solve missing-figure Income Statement questions.',
   ]}
 />
 
 ---
 
-## 1. Two Sections, Two Questions (Kid-Friendly Guide!)
+## 1. Purpose & Two-Part Structure of the Income Statement
 
-The **Trading and Profit & Loss Account** *(also called the **Income Statement**)* measures a business's performance over an entire year — so its heading ALWAYS says:
-> **[Business Name] — Trading and Profit & Loss Account for the year ended [Date]**
+Every business owner wants to know at the end of the year: *"Did I actually make money — and WHERE did my money go?"* The **Trading and Profit & Loss Account** *(also called the **Income Statement**)* answers that question by matching all revenue earned against all costs and expenses incurred across the entire year.
 
-It is split into **two clean halves** that answer two plain questions:
-1. **Top Half — The Trading Account:** *"How much profit did we make purely from buying and selling our goods?"* → gives **Gross Profit** (or Gross Loss).
-2. **Bottom Half — The Profit & Loss Account:** *"After adding extra side incomes (like Discount Received or Rent Received) and paying ALL our running bills (wages, rent, electricity, delivery out, depreciation, bad debts), how much final profit is actually left for the owner?"* → gives **Net Profit** (or Net Loss)!
+Always begin with the **exact period heading**:
+> **[Business Name]**
+> **Trading and Profit & Loss Account for the year ended [Date]** *(never "as at"!)*
+
+It is divided cleanly into **two connected sections**:
+
+### Part 1 — The Trading Account *(Buying & Selling Goods Only!)*
+Answers: *"How much trading profit did we make purely from buying goods at wholesale and selling them at retail?"*
+- Compares **Net Sales (Turnover)** against **Cost of Sales (Cost of Goods Sold)**.
+- Result: **Gross Profit** (if Net Sales > Cost of Sales) or **Gross Loss** (if Cost of Sales > Net Sales).
+
+### Part 2 — The Profit & Loss Account *(Running the Entire Business!)*
+Answers: *"After adding side incomes and paying ALL day-to-day running bills, how much final profit belongs to the owner?"*
+- Starts with **Gross Profit** brought down from Part 1.
+- **Adds Other Revenues** (e.g. *Discount Received*, *Rent Received*, *Commission Received*, *Reduction in Provision for Doubtful Debts*).
+- **Subtracts Operating Expenses** (e.g. *Wages & Salaries*, *Shop Rent*, *Electricity & Water*, *Insurance*, *Carriage Outwards*, *Discount Allowed*, *Advertising*, *Motor Expenses*, *Loan Interest*, *Bad Debts*, *Depreciation*).
+- Result: **Net Profit** *(or **Net Loss**)* — which flows directly into the **Capital** section of the Balance Sheet!
 
 ---
 
-## 2. Core Trading & P&L Formulas (Hover or Tap to Simplify!)
+## 2. Step-by-Step Trading & P&L Formulae
+
+Hover or tap any formula below to see the plain-English meaning:
 
 <FormulaCard
-  title="Step-by-Step Trading & Profit and Loss Formulas"
+  title="Core Trading and Profit & Loss Formulae"
   onFormulaSheet={false}
-  summary="Find Net Sales, subtract Cost of Sales to get Gross Profit, add any other incomes, then subtract operating expenses to reach Net Profit!"
+  summary="Net Sales minus Cost of Sales equals Gross Profit; Gross Profit plus Other Revenues minus Operating Expenses equals Net Profit!"
 >
 
 <FormulaHint
   block
-  label="Net Sales (Turnover)"
-  short="Take total Sales and subtract goods customers sent back (Returns Inwards)."
+  label="1. Net Sales (Turnover)"
+  short="Total Sales revenue minus goods returned by customers (Returns Inwards / Sales Returns)."
 >
 
 $$
@@ -59,8 +74,8 @@ $$
 
 <FormulaHint
   block
-  label="Cost of Sales (Cost of Goods Sold)"
-  short="Start with Opening Stock, add Net Purchases and Carriage Inwards (shipping goods IN), then subtract unsold Closing Stock at year-end."
+  label="2. Cost of Goods Available & Cost of Sales"
+  short="Start with Opening Stock, add Net Purchases (Purchases minus Returns Outwards) plus Carriage Inwards (shipping goods IN), subtract any goods taken by the owner for personal use, then subtract Closing Stock left unsold!"
 >
 
 $$
@@ -71,8 +86,8 @@ $$
 
 <FormulaHint
   block
-  label="Gross Profit & Net Profit"
-  short="Gross Profit is trading profit before bills; Net Profit is final profit after adding other incomes and paying every operating expense."
+  label="3. Gross Profit & Net Profit"
+  short="Gross Profit measures pure trading margin; Net Profit is final profit after side incomes and all running expenses."
 >
 
 $$
@@ -87,22 +102,41 @@ $$
 
 </FormulaCard>
 
+### Why Do We Subtract Closing Stock from Cost of Goods Available?
+This confuses many students until they picture a fruit stall:
+- You started the week with **10 mangoes** (Opening Stock) and bought **90 more** (Purchases) → you had **100 mangoes available** to sell.
+- On Saturday night, **25 mangoes are still sitting unsold** in your crate (Closing Stock).
+- How many mangoes did you *actually sell*? $100 - 25 = \mathbf{75\text{ mangoes}}$!
+Subtracting **Closing Stock** removes unsold goods so you match ONLY the cost of the goods **actually sold** against your Sales revenue (**Matching Concept**)!
+
 ---
 
-## 3. Classic Exam Traps (Watch Out!)
+## 3. Five Classic Exam Traps (Highlighted in the 2025 Subject Report!)
 
-Examiners repeatedly report these four preventable errors on Paper 2:
+Examiners repeatedly see students throw away easy marks on these exact five points:
 
-| Common Mistake | Correct Rule |
+| Exam Trap | Correct Rule You Must Follow |
 | :--- | :--- |
-| **Mixing up Carriage Inwards vs Carriage Outwards** | **Carriage Inwards** *(delivery cost to bring stock IN to our shop)* → **ADD to Purchases in the Trading Account**.<br/>**Carriage Outwards** *(delivery cost to send sold goods OUT to customers)* → **Expense in the Profit & Loss Account**! |
-| **Adding Cost of Sales instead of subtracting it** | **Cost of Sales** is always **SUBTRACTED** from Net Sales to find Gross Profit! |
-| **Putting Other Revenue under Expenses** | **Discount Received**, **Commission Received**, and **Rent Received** are **incomes** — **ADD** them to Gross Profit! |
-| **Putting Drawings or Assets inside the Income Statement** | **Drawings**, **Debtors**, **Creditors**, and **Cash** NEVER go in the Trading & P&L Account — they belong on the **Balance Sheet**! |
+| **1. Carriage Inwards vs Carriage Outwards** | **Carriage Inwards** *(freight/shipping paid to bring stock IN to our shop)* → **ADD to Net Purchases in the Trading Account**.<br/>**Carriage Outwards** *(delivery paid to send sold goods OUT to customers)* → **Operating Expense in the Profit & Loss Account**! |
+| **2. Treating Cost of Sales as an Expense or adding it to Sales** | **Cost of Sales** is ALWAYS **SUBTRACTED** from Net Sales inside the Trading Account to calculate Gross Profit — never added! |
+| **3. Misplacing Other Revenue** | **Discount Received**, **Rent Received**, and **Commission Received** are **revenues** — ALWAYS **ADD** them directly under Gross Profit, NEVER subtract them under Expenses! |
+| **4. Owner Taking Stock (Goods) for Personal Use** | If the owner took J\$5,000 of stock home for personal use, **SUBTRACT J\$5,000 from Purchases** in the Trading Account *(so Cost of Sales isn't inflated!)* AND **ADD J\$5,000 to Drawings** on the Balance Sheet! |
+| **5. Putting Balance Sheet Items into the Income Statement** | **Assets** (Debtors, Bank, Equipment), **Liabilities** (Creditors, Loans), **Capital**, and **Drawings** NEVER appear in the Trading & P&L Account! *(Only **Closing Stock** appears in BOTH places: subtracted in Trading Account AND listed as a Current Asset on the Balance Sheet!)* |
 
 ---
 
-## 4. Worked Example: Complete Trading and Profit & Loss Account
+## 4. Finding Missing Figures in an Incomplete Income Statement!
+
+*(Tested directly on May/June 2025 Paper 032 Q2!)*
+Examiners love giving a partially filled Income Statement with blank boxes and asking you to work **backwards** using the formulas:
+- Missing **Closing Stock?** Remember: $\text{Cost of Goods Available} - \text{Closing Stock} = \text{Cost of Sales}$, so **$\text{Closing Stock} = \text{Cost of Goods Available} - \text{Cost of Sales}$**!
+- Missing **Opening Stock?** Rearrange: **$\text{Opening Stock} = \text{Cost of Goods Available} - \text{Net Purchases} - \text{Carriage Inwards}$**!
+- Missing **Net Sales?** **$\text{Net Sales} = \text{Cost of Sales} + \text{Gross Profit}$**!
+- Missing **Operating Expense** (e.g. Rent)? Add up all known expenses, subtract from `Total Expenses` (which equals `Gross Profit + Other Revenue − Net Profit`), and the exact gap is the missing expense!
+
+---
+
+## 5. Worked Example: Complete Trading and Profit & Loss Account
 
 <WorkedExample
   title="S. Morrison Hardware — Trading and Profit & Loss Account (Year Ended 31 Dec 2025)"
@@ -122,7 +156,7 @@ Examiners repeatedly report these four preventable errors on Paper 2:
       <em>Note: Closing Stock at 31 December 2025 was valued at <strong>J$42,000</strong>.</em>
     </>
   }
-  examTip="Always put Closing Stock in TWO places in a full Final Accounts question: (1) Subtracted in the Trading Account (to find Cost of Sales), and (2) Listed under Current Assets on the Balance Sheet!"
+  examTip="Show every clean intermediate subtotal (Net Sales, Net Purchases, Cost of Goods Available for Sale, Cost of Sales, Gross Profit, Total Expenses, Net Profit) — examiners award step marks on every subtotal even if you make one tiny slip earlier!"
 >
 
 **S. Morrison Hardware**
@@ -159,18 +193,21 @@ Examiners repeatedly report these four preventable errors on Paper 2:
 | Motor Expenses | | 10,000 | **(120,000)** |
 | **NET PROFIT** *(transferred to Capital on Balance Sheet)* | | | **60,000** |
 
-**How Net Profit Flows to the Balance Sheet:**
-On S. Morrison Hardware's Balance Sheet as at 31 December 2025, this **J\$60,000 Net Profit** is **ADDED** to Opening Capital (J\$220,000) before deducting Drawings (J\$20,000) to get Closing Capital of **J\$260,000**! *(If expenses exceeded Gross Profit + Other Revenue, the result would be a **Net Loss**, which is **SUBTRACTED** from Opening Capital.)*
+**Exact Effect on the Balance Sheet (Capital Section):**
+- If S. Morrison started the year with **Opening Capital J\$220,000** and took **Drawings J\$20,000**:
+  - Opening Capital J\$220,000 **+ Net Profit J\$60,000** − Drawings J\$20,000 = **Closing Capital J\$260,000**!
+- *(If Expenses had been J\$195,000 instead of J\$120,000, the firm would report a **Net Loss of J\$15,000**, which is **SUBTRACTED** from Opening Capital alongside Drawings!)*
 
 </WorkedExample>
 
----
-
-## 5. Practice Activities
+<ExtraPractice
+  title="Extra Practice: Trading & Profit & Loss Account"
+  summary="1 Placement Drill · 2 Paper 1 Quick Checks"
+>
 
 <ClassifyActivity
-  title="Classwork: Where Does Each Item Go?"
-  instruction="Decide whether each item belongs in the Trading Account, Other Revenue (P&L), Expenses (P&L), or Balance Sheet Only."
+  title="Where Does Each Item Go?"
+  instruction="Select whether each item belongs in the Trading Account, Other Revenue (P&L), Expenses (P&L), or Balance Sheet Only."
   categories={[
     'Trading Account',
     'Other Revenue (Add to GP)',
@@ -224,3 +261,19 @@ On S. Morrison Hardware's Balance Sheet as at 31 December 2025, this **J\$60,000
   correctIndex={1}
   explanation="Cost of Sales = 15,000 + (92,000 − 4,000) + 3,000 − 18,000 = 15,000 + 88,000 + 3,000 − 18,000 = J$88,000."
 />
+
+<QuickCheck
+  paper="Paper 1"
+  marks={1}
+  question="If Cost of Goods Available for Sale is J$190,000, Net Sales is J$250,000, and Gross Profit is J$95,000, what was the value of Closing Stock?"
+  options={[
+    'J$35,000',
+    'J$60,000',
+    'J$95,000',
+    'J$155,000',
+  ]}
+  correctIndex={0}
+  explanation="First find Cost of Sales = Net Sales − Gross Profit = 250,000 − 95,000 = J$155,000. Then Closing Stock = Cost of Goods Available − Cost of Sales = 190,000 − 155,000 = J$35,000!"
+/>
+
+</ExtraPractice>

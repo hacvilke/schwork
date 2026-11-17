@@ -1,16 +1,16 @@
 ---
 id: source-documents-and-discounts
-title: "3.1 Source Documents, Cash vs Credit & Discounts"
+title: "3.1 Source Documents, Payment Methods & Discounts"
 sidebar_label: "3.1 Source Documents & Discounts"
 sidebar_position: 1
 ---
 
 <SyllabusHeader
   subject="Principles of Accounts · Section 3"
-  section="Books of Original Entry — Source Documents, Cash vs Credit Transactions, Payment Methods & Trade vs Cash Discounts"
+  section="Books of Original Entry — Uses, Cash vs Credit Payments, Source Documents (Invoices, Notes & Statements) & Trade vs Cash Discounts"
   code="POA-3.1"
   papers={['Paper 1', 'Paper 2', 'SBA']}
-  studyTime="18 min"
+  studyTime="22 min"
   difficulty="Core"
 />
 
@@ -18,90 +18,148 @@ sidebar_position: 1
   id="poa-3-1"
   objectives={[
     'Explain why businesses use Books of Original Entry (Day Books / Journals) before posting to the Ledger.',
-    'Distinguish clearly between Cash transactions and Credit transactions, plus modern payment methods.',
-    'Match every major Source Document (invoice, credit note, debit note, receipt, cheque stub, petty cash voucher) to its exact Book of Original Entry.',
-    'Calculate and distinguish Trade Discount vs Cash Discount (Discount Allowed and Discount Received).',
+    'Distinguish clearly between Cash transactions and Credit transactions and identify modern electronic payment methods.',
+    'Identify, prepare, and read key Source Documents (Invoices, Credit Notes, Debit Notes, Receipts, Statement of Account, Petty Cash Vouchers) and match each to its exact Book of Original Entry.',
+    'Distinguish Trade Discount from Cash Discount (Discount Allowed and Discount Received) and compute net invoice and settlement figures accurately.',
   ]}
 />
 
 ---
 
-## 1. What Are Books of Original Entry? (Kid-Friendly Explanation)
+## 1. Why Do Businesses Use Books of Original Entry?
 
-Imagine running a busy supermarket in Kingston with 400 sales a day. If you tried to write every single receipt straight into the main Ledger, the Ledger would quickly become a giant, messy pile of paper!
+Imagine running a busy supermarket in Kingston that serves 500 customers and receives 20 supplier deliveries every day. If an accounts clerk tried to post every single receipt and invoice directly into the main Ledger, the Ledger would quickly become enormous, cluttered, and almost impossible to check!
 
-Instead, businesses first sort similar transactions into **Books of Original Entry** *(also called **Day Books** or **Subsidiary Books**)* — like colour-coded folders where transactions are first written down straight from **Source Documents** (receipts, invoices, cheques, vouchers) before neat totals are posted to the Ledger.
+Instead, businesses first record transactions straight from **Source Documents** into specialised **Books of Original Entry** *(also called **Day Books**, **Journals**, or **Subsidiary Books**)*. Think of them as labelled daily folders:
 
-| The 7 Books of Original Entry | What Goes Inside | Main Source Document |
+- **Keeps the General Ledger clean:** Instead of posting 300 separate credit sales into the Sales Account, you enter them daily in the Sales Journal and post **one single monthly total** to the Sales Account!
+- **Allows division of labour:** One clerk can handle the Sales Journal, another the Purchases Journal, and another the Cash Book at the exact same time.
+- **Creates a clear audit trail:** Every entry includes the date, customer/supplier name, invoice number, and folio reference — making errors and fraud much easier to spot.
+
+### The Seven Books of Original Entry at a Glance
+
+| Book of Original Entry | Transactions Recorded Inside | Source Document Used |
 | :--- | :--- | :--- |
-| **1. Sales Journal (Sales Day Book)** | **Credit sales** of goods held for resale | **Sales Invoice** *(duplicate/copy kept by seller)* |
-| **2. Purchases Journal (Purchases Day Book)** | **Credit purchases** of goods for resale | **Purchases Invoice** *(original invoice received from supplier)* |
-| **3. Returns Inwards Journal** *(Sales Returns)* | Goods returned **by our credit customers** | **Credit Note issued** *(copy)* |
-| **4. Returns Outwards Journal** *(Purchases Returns)* | Goods we returned **to our credit suppliers** | **Credit Note received** *(or Debit Note issued)* |
-| **5. Cash Book** | **ALL cash and bank** receipts & payments (including cheques, cards, online transfers) | **Receipts**, cash register slips, **cheque counterfoils (stubs)**, bank deposit slips, electronic transfer alerts |
-| **6. Petty Cash Book** | Small everyday cash expenses (bus/taxi fare, tea, stamps, pens, cleaning) | **Petty Cash Vouchers** |
-| **7. General Journal (Journal Proper)** | Everything else — non-cash, unusual, or year-end items (buying/selling a Fixed Asset on credit, opening entries, depreciation, bad debts, correcting errors) | **Journal Vouchers**, memos, contracts, fixed-asset invoices |
+| **1. Sales Journal** *(Sales Day Book)* | **Credit sales** of goods held for resale (stock) | **Duplicate Sales Invoice** *(copy kept by seller)* |
+| **2. Purchases Journal** *(Purchases Day Book)* | **Credit purchases** of goods for resale (stock) | **Original Purchases Invoice** *(received from supplier)* |
+| **3. Returns Inwards Journal** *(Sales Returns Book)* | Credit goods **returned TO us by customers** | **Duplicate Credit Note** *(issued by us)* |
+| **4. Returns Outwards Journal** *(Purchases Returns Book)* | Credit goods **returned BY us to suppliers** | **Original Credit Note received** *(or Debit Note sent)* |
+| **5. Cash Book** | **ALL cash and bank** receipts & payments (notes, coins, cheques, cards, online transfers) | **Cash Receipts**, till tapes, **cheque counterfoils (stubs)**, bank deposit slips, e-banking alerts |
+| **6. Petty Cash Book** | Small, everyday cash expenses (bus/taxi fare, tea, stamps, pens, cleaning items) | **Petty Cash Vouchers** |
+| **7. General Journal** *(Journal Proper)* | All **non-routine / non-cash** items: buying/selling Fixed Assets on credit, opening entries, year-end adjustments, and error corrections | **Journal Vouchers**, contracts, memos, fixed-asset invoices |
 
 ---
 
-## 2. Cash vs Credit Transactions & Modern Payment Methods
+## 2. Cash vs Credit Transactions & Forms of Payment
 
-- **Cash Transaction:** Payment happens **immediately** when the goods or services change hands — whether paid in physical **cash**, by **cheque**, by **debit card**, or via instant **bank transfer / mobile wallet** (e.g. Lynk, NCB/Scotiabank online transfer, PayPal). Recorded straight in the **Cash Book**!
-- **Credit Transaction:** Goods or services are supplied **now**, and payment is promised **later** (e.g. "Net 30 days"). Recorded first in the **Sales Journal** or **Purchases Journal** (or General Journal for a Fixed Asset on credit).
-- **Credit Card note:** For the *buyer*, buying on a credit card creates a debt owed to the credit card issuer (paid later). For the *seller*, credit card sales are normally settled quickly into the seller's bank account (minus a small merchant fee).
+Every business purchase or sale falls into one of two categories based on **WHEN payment takes place**:
 
-:::tip Source Document Quick Tip: Credit Note vs Debit Note
-- **Credit Note:** Sent by the **seller** to a customer to **reduce** the amount the customer owes (because goods were damaged, faulty, returned, or overcharged).
-- **Debit Note:** Sent to **increase** an amount owed (for example, when an invoice undercharged a customer) — or sent by a buyer requesting a Credit Note when returning faulty goods.
+### A. Cash Transactions (Paid Immediately → Cash Book!)
+Payment is settled **at the time of purchase or sale**. Notice that in accounting, "cash transaction" does **NOT** mean only paper notes and coins — it includes **every immediate payment method**:
+1. **Physical Cash:** Notes and coins (recorded in the **Cash** column).
+2. **Cheques:** Written bank instructions payable on presentation (recorded in the **Bank** column).
+3. **Debit Cards:** Deduct funds immediately from the buyer's bank account via POS terminal (recorded in the **Bank** column).
+4. **Electronic / Digital Payment Methods** *(tested in recent Jamaican exams!)*: Online bank transfers (e.g. NCB, Scotiabank, Sagicor online banking / RTGS / ACH), mobile wallets (e.g. **Lynk**, PayPal, Apple Pay), and standing orders/direct debits (recorded in the **Bank** column).
+
+### B. Credit Transactions (Paid Later → Credit Day Books!)
+Goods or services change hands **today**, while payment is agreed for a **future date** (e.g. *"Net 30 days"*).
+- **Credit Sales** create a **Debtor (Account Receivable)** and go into the **Sales Journal**.
+- **Credit Purchases** create a **Creditor (Account Payable)** and go into the **Purchases Journal**.
+- **Credit Cards:** For the *buyer*, paying with a credit card creates a liability owed to the credit card company (paid later when the monthly card bill arrives). For the *seller*, credit card sales are deposited swiftly into the seller's bank account (minus a small processing fee).
+
+---
+
+## 3. Essential Source Documents (How to Read & Translate Them!)
+
+Examiners frequently print a mock **Invoice**, **Credit Note**, or **Statement of Account** and ask you to either fill in missing numbers or write the exact transaction description (Syllabus Objectives 3.4 & 3.5 — tested on the May/June 2025 Paper 02 Q1!).
+
+### A. Sales Invoice vs Purchases Invoice
+It is actually the **EXACT SAME document** seen from two different viewpoints!
+- **Seller's viewpoint:** Keeps the **duplicate copy** → it is a **Sales Invoice** (goes in the **Sales Journal**).
+- **Buyer's viewpoint:** Receives the **original copy** → it is a **Purchases Invoice** (goes in the **Purchases Journal** — *unless* it is for a Fixed Asset, which goes in the **General Journal**!).
+- **Key details shown on an Invoice:** Seller's name & address, Buyer's name & address, Invoice Number, Date, Description & Quantity of goods, Unit Price, Extended Total, **Trade Discount** (deducted right on the invoice!), **Net Invoice Total**, and **Payment / Cash Discount Terms** (e.g. *"2.5% 14 days, Net 30 days"*).
+
+### B. Credit Note vs Debit Note
+| Document | Who Sends It & Why? | Effect on Customer's Balance |
+| :--- | :--- | :--- |
+| **Credit Note** | Sent by the **Seller** to the **Buyer** when goods are returned damaged/unwanted, or when the seller **overcharged** on an earlier invoice. *(Often printed in red!)* | **REDUCES** what the customer owes the seller. |
+| **Debit Note** | Sent by the **Seller** to the **Buyer** when the seller **undercharged** on an invoice (or missed an item). *(Note: Buyers also sometimes send a Debit Note to notify a supplier that faulty goods are being sent back and request a Credit Note.)* | **INCREASES** what the customer owes the seller *(when issued by seller for undercharge)*. |
+
+### C. Statement of Account *(Tested on May/June 2025 Paper 02!)*
+A **Statement of Account** is a **monthly summary** sent by a seller to a credit customer showing:
+- Opening balance owed at the start of the month (`Balance b/f`),
+- Every **Invoice** issued during the month (**increases** the balance — Debit column),
+- Every **Credit Note** issued and **Payment / Cheque / Discount** received during the month (**decreases** the balance — Credit column), and
+- The final **Amount Due** at month-end!
+
+*(Important: A Statement of Account is a **reminder and checking tool** — it is **NOT** a Book of Original Entry source document for new entries, because each individual invoice, credit note, and cheque was already recorded when it occurred!)*
+
+### D. Receipts, Cheque Counterfoils & Petty Cash Vouchers
+- **Receipt:** Official proof that cash or cheque payment was received.
+- **Cheque Counterfoil (Stub):** The left-hand slip left in the chequebook after tearing out a cheque — records date, payee, reason, and J\$ amount paid.
+- **Petty Cash Voucher:** A numbered slip signed by the employee receiving small cash and authorised by a supervisor, with the store receipt stapled to it.
+
+---
+
+## 4. Trade Discount vs Cash Discount (Big Exam Favourite!)
+
+Mixing up **Trade Discount** and **Cash Discount** is one of the fastest ways to lose easy marks. Compare every detail below:
+
+| Feature | **Trade Discount** | **Cash Discount** |
+| :--- | :--- | :--- |
+| **Purpose** | Reward for **buying in bulk** or being a fellow trade buyer/retailer. | Reward for **paying a credit invoice promptly** within a set credit window (e.g. *"5% within 14 days"*). |
+| **When calculated?** | Deducted **immediately on the invoice** from the catalogue/list price. | Deducted **later**, ONLY if the buyer actually settles the bill before the discount deadline! |
+| **Entered in the Ledger?** | **NEVER!** Only the **net invoice total** (after trade discount) is recorded in the Day Book and Ledger. | **YES!** Recorded in the Discount columns of the **Three-Column Cash Book** and posted to the Ledger. |
+| **Income Statement treatment** | Not shown separately (Sales and Purchases are already recorded net of trade discount). | **Discount Allowed** (given to our debtors) = **Operating Expense** in P&L.<br/>**Discount Received** (earned from our suppliers) = **Other Revenue** in P&L! |
+
+:::warning Never Add Discount Percentages Together!
+If an invoice carries a **10% Trade Discount** and a **5% Cash Discount**, the total discount is **NOT 15%**!
+1. Always deduct **Trade Discount first** from the List Price to get the **Net Invoice Price**.
+2. Then calculate **Cash Discount ONLY on the Net Invoice Price**!
 :::
 
 ---
 
-## 3. Trade Discount vs Cash Discount (Big Exam Favourite!)
-
-Students constantly lose marks by mixing these two up — keep them crystal clear:
-
-| Feature | **Trade Discount** | **Cash Discount** |
-| :--- | :--- | :--- |
-| **Why is it given?** | Reward for **buying in bulk** or being a fellow trader/retailer. | Reward for **paying a credit invoice promptly** (e.g. "5% within 14 days"). |
-| **When is it deducted?** | Deducted **immediately on the invoice** before calculating the invoice total. | Deducted **later**, ONLY when the bill is actually paid on time. |
-| **Recorded in the Ledger?** | **NEVER!** Only the **net invoice price** is recorded in the books. | **YES!** Entered in the Discount columns of the **Three-Column Cash Book** and posted to the Ledger. |
-| **Two types** | One type (just lowers the invoice price). | **Discount Allowed** (we give it to our debtors → *Expense*) and **Discount Received** (suppliers give it to us → *Other Income*). |
+## 5. Past-Paper-Style Worked Example
 
 <WorkedExample
-  title="Calculating Trade Discount vs Cash Discount on an Invoice"
-  marks={4}
+  title="Calculating Trade Discount, Cash Discount & Completing a Statement of Account"
+  marks={6}
   problem={
     <>
-      Jamaica Office Depot sells goods with a catalogue list price of <strong>J$40,000</strong> on credit to{' '}
-      <strong>R. Nelson</strong>. A <strong>10% Trade Discount</strong> is granted on the invoice, plus terms of{' '}
+      <strong>Part (a)</strong> Jamaica Office Depot sells goods with a catalogue list price of <strong>J$40,000</strong> on credit to{' '}
+      <strong>R. Nelson</strong> on 4 May. A <strong>10% Trade Discount</strong> is granted on the invoice, plus terms of{' '}
       <strong>5% Cash Discount</strong> if paid within 14 days.
       <br />
-      (a) What amount is entered in the <strong>Sales Journal</strong>?
+      &nbsp;&nbsp;(i) What amount is entered in Jamaica Office Depot’s <strong>Sales Journal</strong>?
       <br />
-      (b) If R. Nelson pays within 10 days by cheque, how much is the <strong>Cash Discount</strong> and how much is written on the cheque?
+      &nbsp;&nbsp;(ii) If R. Nelson returns goods with a net value of <strong>J$4,000</strong> on 8 May and pays the remaining balance on 12 May by cheque, calculate the <strong>Cash Discount</strong> and the <strong>exact cheque amount</strong>.
     </>
   }
-  examTip="ALWAYS calculate Trade Discount first on the list price, then calculate Cash Discount ONLY on the reduced net invoice figure — NEVER add 10% + 5% = 15%!"
+  examTip="ALWAYS remember to subtract any Returns Inwards (Credit Note) BEFORE calculating a Cash Discount on settlement! A customer only earns Cash Discount on the net amount they actually still owe."
 >
 
-**(a) Net Invoice Price entered in the Sales Journal:** *(2 marks)*
-- Trade Discount = $10\% \times 40{,}000 =$ **J\$4,000** *(not recorded in the ledger)*
-- Net Invoice Price = $40{,}000 - 4{,}000 =$ **J\$36,000** → entered in the Sales Journal.
+**(i) Amount entered in the Sales Journal (4 May):** *(2 marks)*
+- Trade Discount = $10\% \times 40{,}000 =$ **J\$4,000** *(deducted on invoice only — NOT entered in any ledger account!)*
+- Net Invoice Price = $40{,}000 - 4{,}000 =$ **J\$36,000** → entered in the **Sales Journal**.
 
-**(b) Cash Discount & Cheque Paid (within 14 days):** *(2 marks)*
-- Cash Discount Allowed = $5\% \times 36{,}000 =$ **J\$1,800** *(recorded in Cash Book Discount Allowed column)*
-- Cheque Amount Paid = $36{,}000 - 1{,}800 =$ **J\$34,200** *(recorded in Cash Book Bank column)*
+**(ii) Cash Discount & Cheque Paid (12 May — within 14-day window!):** *(4 marks)*
+- Amount owed after 8 May return = $36{,}000 - 4{,}000 =$ **J\$32,000**
+- Cash Discount Allowed = $5\% \times 32{,}000 =$ **J\$1,600** *(entered in Cash Book Discount Allowed column)*
+- Cheque Amount Paid = $32{,}000 - 1{,}600 =$ **J\$30,400** *(entered in Cash Book Bank column)*
+
+*(Notice how cleanly all three steps flow: List Price J\$40,000 → less 10% Trade Discount = J\$36,000 → less Return J\$4,000 = J\$32,000 owed → less 5% Cash Discount J\$1,600 = **J\$30,400 cheque**!)*
 
 </WorkedExample>
 
----
-
-## 4. Classwork Activity: Match Source Documents to Books of Original Entry
+<ExtraPractice
+  title="Extra Practice: Source Documents & Discounts"
+  summary="1 Matching Drill · 2 Paper 1 Quick Checks"
+>
 
 <ClassifyActivity
-  title="Classwork: Which Book of Original Entry Uses This Source Document?"
-  instruction="Match each real-world Jamaican business document or transaction to the exact Book of Original Entry where it is recorded first."
+  title="Which Book of Original Entry Uses This Source Document?"
+  instruction="Match each source document or transaction to the exact Book of Original Entry where it is recorded first."
   categories={[
     'Sales Journal',
     'Purchases Journal',
@@ -114,38 +172,32 @@ Students constantly lose marks by mixing these two up — keep them crystal clea
     {
       prompt: 'Duplicate Sales Invoice for goods sold on 30-day credit to M. Ellis',
       answer: 'Sales Journal',
-      explanation:
-        'All credit sales of goods for resale are recorded first in the Sales Journal from duplicate sales invoices.',
+      explanation: 'All credit sales of goods for resale are recorded first in the Sales Journal from duplicate sales invoices.',
     },
     {
-      prompt: 'Original Purchases Invoice received from a wholesale supplier for stock bought on credit',
+      prompt: 'Original Purchases Invoice received from a supplier for stock bought on credit',
       answer: 'Purchases Journal',
-      explanation:
-        'Credit purchases of goods for resale go straight into the Purchases Journal.',
+      explanation: 'Credit purchases of goods for resale go straight into the Purchases Journal.',
     },
     {
       prompt: 'Credit Note issued to a customer who returned cracked tiles bought on credit',
       answer: 'Returns Inwards Journal',
-      explanation:
-        'Goods coming back IN from a credit customer are recorded in the Returns Inwards (Sales Returns) Journal.',
+      explanation: 'Goods coming back IN from a credit customer are recorded in the Returns Inwards Journal.',
     },
     {
-      prompt: 'Cheque counterfoil (stub) showing J$25,000 paid to JPS for electricity',
+      prompt: 'Cheque counterfoil showing J$25,000 paid to JPS for electricity',
       answer: 'Cash Book',
-      explanation:
-        'All cheque payments and bank transfers are recorded in the Bank column of the Cash Book.',
+      explanation: 'All cheque payments and bank transfers are recorded in the Bank column of the Cash Book.',
     },
     {
       prompt: 'Petty Cash Voucher signed by a messenger for J$900 bus fare',
       answer: 'Petty Cash Book',
-      explanation:
-        'Small day-to-day cash payments backed by petty cash vouchers go into the Petty Cash Book.',
+      explanation: 'Small day-to-day cash payments backed by petty cash vouchers go into the Petty Cash Book.',
     },
     {
       prompt: 'Invoice for a delivery van (Fixed Asset) bought on credit from Kingston Motors',
       answer: 'General Journal',
-      explanation:
-        'Watch this classic exam trap! The Purchases Journal is ONLY for stock bought for resale — a Fixed Asset bought on credit goes into the General Journal!',
+      explanation: 'The Purchases Journal is ONLY for stock bought for resale — a Fixed Asset bought on credit goes into the General Journal!',
     },
   ]}
 />
@@ -163,3 +215,19 @@ Students constantly lose marks by mixing these two up — keep them crystal clea
   correctIndex={1}
   explanation="First take 20% Trade Discount off J$10,000 → J$8,000 net invoice. Then take 5% Cash Discount off J$8,000 (= J$400) → Cash paid = J$8,000 − J$400 = J$7,600."
 />
+
+<QuickCheck
+  paper="Paper 1"
+  marks={1}
+  question="Which document is sent by a seller to a customer to REDUCE the amount the customer owes after faulty goods are returned?"
+  options={[
+    'Sales Invoice',
+    'Debit Note',
+    'Credit Note',
+    'Petty Cash Voucher',
+  ]}
+  correctIndex={2}
+  explanation="A Credit Note is issued by the seller to credit (reduce) the buyer's account for returned goods or an invoice overcharge."
+/>
+
+</ExtraPractice>
