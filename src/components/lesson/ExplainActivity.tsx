@@ -18,7 +18,7 @@ export interface ExplainPromptItem {
 }
 
 export interface ExplainActivityProps {
-  /** Unique storage key per lesson activity (e.g. "it-2-1-networks"). */
+  /** Unique storage key per lesson activity (e.g. "math-1-2-quadratics"). */
   id: string;
   /** Activity title. */
   title: string;

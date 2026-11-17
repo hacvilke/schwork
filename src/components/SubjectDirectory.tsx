@@ -57,7 +57,7 @@ export default function SubjectDirectory(): React.JSX.Element {
             type="search"
             value={searchQuery}
             onChange={(event) => setSearchQuery(event.target.value)}
-            placeholder="Find a subject (e.g. Mathematics, Physics, IT, University)…"
+            placeholder="Find a subject (e.g. Mathematics, Physics, Spanish, University)…"
             aria-label="Filter subjects by name or topic"
             className={styles.searchInput}
           />

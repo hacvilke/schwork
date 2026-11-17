@@ -153,12 +153,6 @@ const config: Config = {
           position: 'left',
         },
         {
-          type: 'docSidebar',
-          sidebarId: 'itSidebar',
-          position: 'left',
-          label: 'IT',
-        },
-        {
           to: '/docs/sample-lesson',
           label: 'Sample Lesson',
           position: 'left',
@@ -183,10 +177,6 @@ const config: Config = {
             {
               label: 'Sample Lesson',
               to: '/docs/sample-lesson',
-            },
-            {
-              label: 'Information Technology (IT)',
-              to: '/docs/it',
             },
             {
               label: 'Browse Subjects',

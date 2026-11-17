@@ -167,17 +167,6 @@ export const SUBJECTS: SubjectEntry[] = [
       'Scarcity & choice, demand & supply, market structures, money & banking, inflation, international trade, and Caribbean development.',
   },
   {
-    id: 'information-technology',
-    name: 'Information Technology',
-    shortCode: 'IT',
-    cluster: 'Business & Tech',
-    status: 'live',
-    syllabusSections: 8,
-    summary:
-      'Computer fundamentals, networks & web technologies, cybersecurity & ICT impact, word-processing, spreadsheets, databases, problem-solving algorithms, and programming.',
-    docPath: '/docs/it',
-  },
-  {
     id: 'edpm',
     name: 'EDPM',
     shortCode: 'EDPM',
