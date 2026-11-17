@@ -38,6 +38,11 @@
   color: var(--schwork-cyan-light);
 }
 
+:global(html[data-theme='dark']) .tag {
+  background: #0b1524;
+  border: 1px solid rgba(43, 179, 192, 0.4);
+}
+
 .title {
   font-family: var(--ifm-heading-font-family);
   font-weight: 700;

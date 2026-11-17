@@ -18,6 +18,11 @@
   padding: 0.7rem 1.1rem;
   background: var(--schwork-navy);
   color: #ffffff;
+  border-bottom: 1px solid rgba(43, 179, 192, 0.35);
+}
+
+:global(html[data-theme='dark']) .header {
+  background: #0d192b;
 }
 
 .title {

@@ -1,6 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
   <rect width="64" height="64" rx="14" fill="#132238"/>
-  <path d="M16 21C16 18.8 17.8 17 20 17H30V45H20C17.8 45 16 43.2 16 41V21Z" stroke="#2BB3C0" stroke-width="3.5" stroke-linejoin="round"/>
-  <path d="M48 21C48 18.8 46.2 17 44 17H34V45H44C46.2 45 48 43.2 48 41V21Z" stroke="#2BB3C0" stroke-width="3.5" stroke-linejoin="round"/>
-  <circle cx="50" cy="14" r="6" fill="#C8FF00"/>
+  <path d="M32 6V9M25.6 8.4L27.5 10.3M38.4 8.4L36.5 10.3" stroke="#C8FF00" stroke-width="2.4" stroke-linecap="round"/>
+  <!-- Left broken graduation cap half -->
+  <g transform="rotate(-7 20 30)">
+    <path d="M10.5 29.6L22.2 33.9V41.6C16.7 41.1 12.4 39.2 10.5 36.8V29.6Z" fill="#1A8E9A"/>
+    <path d="M4.2 26.2L22.4 18.6L21.3 24.3L22.8 27.6L21.8 32.6L4.2 26.2Z" fill="#2BB3C0"/>
+  </g>
+  <!-- Right broken graduation cap half + Acid Lime tassel -->
+  <g transform="rotate(7 44 30)">
+    <path d="M53.5 29.6L41.8 33.9V41.6C47.3 41.1 51.6 39.2 53.5 36.8V29.6Z" fill="#1A8E9A"/>
+    <path d="M59.8 26.2L41.6 18.6L42.7 24.3L41.2 27.6L42.2 32.6L59.8 26.2Z" fill="#2BB3C0"/>
+    <path d="M56.2 27.2C57.2 31 57 35 56 38.4" stroke="#C8FF00" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M54 40H58L59 45.4H53L54 40Z" fill="#C8FF00"/>
+  </g>
+  <!-- Closed hand pointing straight up -->
+  <path d="M26.5 49.4V56.4C26.5 57.3 27.2 58 28.1 58H35.9C36.8 58 37.5 57.3 37.5 56.4V49.4H26.5Z" fill="#E3F3F7"/>
+  <rect x="26.5" y="53.4" width="11" height="2.4" rx="1" fill="#C8FF00"/>
+  <path d="M24.2 38.8C24.2 35.8 26.4 33.8 29.4 33.8H37.8C40.1 33.8 41.8 35.5 41.8 37.8V43.8C41.8 48.1 38.6 51.2 34.4 51.2H29.6C26.1 51.2 24.2 48.5 24.2 45V38.8Z" fill="#FFFFFF" stroke="#132238" stroke-width="1.8" stroke-linejoin="round"/>
+  <path d="M28.6 35.8V15.4C28.6 13.4 30.1 12 32 12C33.9 12 35.4 13.4 35.4 15.4V35.8" fill="#FFFFFF" stroke="#132238" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="34.8" y="30.6" width="3.9" height="9" rx="1.95" fill="#FFFFFF" stroke="#132238" stroke-width="1.65"/>
+  <rect x="37.9" y="32" width="3.6" height="8.4" rx="1.8" fill="#FFFFFF" stroke="#132238" stroke-width="1.65"/>
+  <rect x="40.5" y="34" width="3.3" height="7.4" rx="1.65" fill="#FFFFFF" stroke="#132238" stroke-width="1.65"/>
+  <path d="M24.2 42.6V39.2C24.2 36.2 26.3 34.6 29.2 34.6H34.2C35.9 34.6 37 35.8 37 37.4C37 39 35.9 40.2 34.2 40.2H30.8C29.3 40.2 28.4 41.2 28.4 42.8V43.8" fill="#FFFFFF" stroke="#132238" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

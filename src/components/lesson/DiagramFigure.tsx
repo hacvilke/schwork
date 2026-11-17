@@ -2,12 +2,15 @@
  * Responsive diagram wrapper for static SVG/PNG illustrations (e.g. geometry proofs,
  * vector diagrams, optics rays, or science lab apparatus).
  * Automatically handles baseUrl for both Vercel ('/') and GitHub Pages ('/schwork/'),
+ * shows the animated <LogoLoader /> while loading on slower mobile connections,
  * and includes a full-screen tap-to-zoom lightbox for phone screens.
  */
 
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import useBaseUrl from '@docusaurus/useBaseUrl';
+import clsx from 'clsx';
 import {Maximize2, X} from 'lucide-react';
+import LogoLoader from '@site/src/components/LogoLoader';
 import styles from './DiagramFigure.module.css';
 
 export interface DiagramFigureProps {
@@ -28,7 +31,16 @@ export default function DiagramFigure({
   sourceLabel = 'Diagram',
 }: DiagramFigureProps): React.JSX.Element {
   const imageUrl = useBaseUrl(src);
+  const imageRef = useRef<HTMLImageElement | null>(null);
+  const [isLoaded, setIsLoaded] = useState(false);
   const [isExpanded, setIsExpanded] = useState(false);
+
+  // If the image was already cached before React hydrated, clear the loader immediately
+  useEffect(() => {
+    if (imageRef.current?.complete) {
+      setIsLoaded(true);
+    }
+  }, [imageUrl]);
 
   // Allow closing the zoomed lightbox with the Escape key on desktop
   useEffect(() => {
@@ -60,7 +72,20 @@ export default function DiagramFigure({
           className={styles.mediaBtn}
           onClick={() => setIsExpanded(true)}
           aria-label={`Zoom ${alt}`}>
-          <img src={imageUrl} alt={alt} loading="lazy" className={styles.image} />
+          {!isLoaded && (
+            <div className={styles.loadingState}>
+              <LogoLoader size="sm" label="Loading diagram…" />
+            </div>
+          )}
+          <img
+            ref={imageRef}
+            src={imageUrl}
+            alt={alt}
+            loading="lazy"
+            onLoad={() => setIsLoaded(true)}
+            onError={() => setIsLoaded(true)}
+            className={clsx(styles.image, !isLoaded && styles.imageLoading)}
+          />
         </button>
 
         {caption && <figcaption className={styles.caption}>{caption}</figcaption>}

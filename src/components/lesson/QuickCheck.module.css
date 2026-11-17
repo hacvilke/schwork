@@ -1,12 +1,24 @@
 /* Styles for <QuickCheck /> — interactive Paper 1 & Paper 2 practice checks */
 
 .card {
+  position: relative;
+  overflow: hidden;
   background: var(--schwork-surface);
   border: 1.5px solid var(--schwork-border);
-  border-left: 5px solid var(--schwork-cyan);
   border-radius: 14px;
-  padding: 1.15rem 1.2rem;
+  padding: 1.15rem 1.2rem 1.15rem 1.45rem;
   margin: 1.6rem 0;
+}
+
+/* Flush vertical Cool Cyan accent stripe clipped smoothly by rounded corners */
+.card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 5px;
+  background: var(--schwork-cyan);
 }
 
 .header {
@@ -92,6 +104,11 @@
   color: #ffffff;
 }
 
+:global(html[data-theme='dark']) .optionLetter {
+  background: #0b1524;
+  border: 1px solid rgba(43, 179, 192, 0.4);
+}
+
 .optionCorrect {
   border-color: #16a34a !important;
   background: rgba(22, 163, 74, 0.14) !important;
@@ -100,6 +117,7 @@
 .optionCorrect .optionLetter {
   background: var(--schwork-lime);
   color: var(--schwork-navy);
+  border-color: transparent;
 }
 
 .optionWrong {
@@ -110,6 +128,7 @@
 .optionWrong .optionLetter {
   background: #dc2626;
   color: #ffffff;
+  border-color: transparent;
 }
 
 .feedback {
@@ -189,6 +208,6 @@
 
 @media (max-width: 640px) {
   .card {
-    padding: 1rem;
+    padding: 1rem 1rem 1rem 1.25rem;
   }
 }
