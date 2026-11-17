@@ -4,12 +4,12 @@ import Layout from '@theme/Layout';
 import {
   ArrowRight,
   BookOpen,
-  CheckCircle2,
   ClipboardCheck,
   Compass,
   LineChart,
   Smartphone,
 } from 'lucide-react';
+import LogoLoader from '@site/src/components/LogoLoader';
 import SubjectDirectory from '@site/src/components/SubjectDirectory';
 import styles from './index.module.css';
 
@@ -27,7 +27,6 @@ export default function Home(): React.JSX.Element {
             <div>
               <div className={styles.eyebrowRow}>
                 <span className={styles.clashPill}>Jamaica · Grades 10–11</span>
-                <span className={styles.cyanPill}>Free · No Login Needed</span>
               </div>
 
               <h1 className={styles.heroTitle}>
@@ -52,41 +51,19 @@ export default function Home(): React.JSX.Element {
               </div>
             </div>
 
-            {/* Clean Student Study Preview Card */}
-            <aside className={styles.previewCard} aria-label="Inside a Schwork lesson">
-              <div className={styles.previewTop}>
-                <span>Inside every topic</span>
-                <span className={styles.previewTag}>Paper 1 &amp; 2</span>
+            {/* Animated Schwork Brand Mark Showcase */}
+            <div className={styles.heroLogoStage}>
+              <div className={styles.logoPulseAura} aria-hidden="true" />
+              <div className={styles.logoOrbitRing} aria-hidden="true" />
+              <div className={styles.logoFloatWrap}>
+                <LogoLoader
+                  size="hero"
+                  role="img"
+                  ariaLabel="Schwork animated logo: raised clenched fist breaking through a graduation cap"
+                  showFrame
+                />
               </div>
-              <div className={styles.previewBody}>
-                <div className={styles.previewKicker}>Example Lesson Format</div>
-                <h2 className={styles.previewHeading}>
-                  Quadratic Functions &amp; Graphs
-                </h2>
-                <ul className={styles.previewList}>
-                  <li>
-                    <CheckCircle2 size={16} color="#C8FF00" />
-                    <span>Checkable syllabus objectives to track progress</span>
-                  </li>
-                  <li>
-                    <CheckCircle2 size={16} color="#C8FF00" />
-                    <span>Clear formula cards (Memorize vs Formula Sheet)</span>
-                  </li>
-                  <li>
-                    <CheckCircle2 size={16} color="#C8FF00" />
-                    <span>Interactive graphs &amp; zoomable diagrams</span>
-                  </li>
-                  <li>
-                    <CheckCircle2 size={16} color="#C8FF00" />
-                    <span>Worked examples + instant self-check quizzes</span>
-                  </li>
-                </ul>
-
-                <Link to="/docs/sample-lesson" className={styles.previewFooterLink}>
-                  Open Sample Lesson <ArrowRight size={15} aria-hidden="true" />
-                </Link>
-              </div>
-            </aside>
+            </div>
           </div>
         </div>
       </header>
