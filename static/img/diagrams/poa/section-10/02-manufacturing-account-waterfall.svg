@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 510" width="920" height="510" role="img" aria-label="Step-by-step Manufacturing Account Waterfall from Raw Materials Consumed through Prime Cost, Factory Overheads, and Work-in-Progress to Cost of Production">
+  <defs>
+    <style>
+      .bg { fill: #F8F6F1; }
+      .card { fill: #FCFBF8; stroke: #CEDCD6; stroke-width: 2; rx: 12; }
+      .navy-box { fill: #1B365D; rx: 10; }
+      .sage-box { fill: #2E6359; rx: 10; }
+      .coral-box { fill: #C84E24; rx: 10; }
+      .mint { fill: #EBF2EF; stroke: #4E8577; stroke-width: 1.5; rx: 8; }
+      .amber { fill: #FEF3E2; stroke: #F5A352; stroke-width: 1.5; rx: 8; }
+      .title { font-family: system-ui, -apple-system, sans-serif; font-size: 21px; font-weight: 800; fill: #1B365D; }
+      .subtitle { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; fill: #4A5560; }
+      .white-bold { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; font-weight: 800; fill: #FFFFFF; }
+      .white-sub { font-family: system-ui, -apple-system, sans-serif; font-size: 11.5px; fill: #EBF2EF; }
+      .label { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; font-weight: 700; fill: #1B365D; }
+      .body { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; fill: #222222; }
+      .coral-bold { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; font-weight: 800; fill: #C84E24; }
+      .arrow { stroke: #1B365D; stroke-width: 2.5; fill: none; marker-end: url(#arr); }
+    </style>
+    <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#1B365D"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="920" height="510"/>
+  <text x="460" y="34" text-anchor="middle" class="title">The 4-Stage Manufacturing Account Waterfall</text>
+  <text x="460" y="54" text-anchor="middle" class="subtitle">Follow this exact top-to-bottom sequence to compute Cost of Production — every single mark falls cleanly in order!</text>
+
+  <!-- Left Main Waterfall Column -->
+  <!-- Stage 1 -->
+  <rect class="card" x="28" y="74" width="540" height="84"/>
+  <rect class="navy-box" x="38" y="84" width="136" height="64"/>
+  <text x="106" y="112" text-anchor="middle" class="white-bold">STAGE 1</text>
+  <text x="106" y="130" text-anchor="middle" class="white-sub">Raw Materials</text>
+  <text x="190" y="99" class="label">Cost of Raw Materials Consumed</text>
+  <text x="190" y="119" class="body">Opening Raw Materials + Purchases of Raw Materials</text>
+  <text x="190" y="137" class="body">+ Carriage Inwards − Returns Outwards − Closing Raw Materials</text>
+
+  <line class="arrow" x1="298" y1="158" x2="298" y2="178"/>
+
+  <!-- Stage 2 -->
+  <rect class="card" x="28" y="180" width="540" height="76"/>
+  <rect class="navy-box" x="38" y="190" width="136" height="56"/>
+  <text x="106" y="214" text-anchor="middle" class="white-bold">STAGE 2</text>
+  <text x="106" y="232" text-anchor="middle" class="white-sub">= PRIME COST</text>
+  <text x="190" y="205" class="label">Add: Direct Labor + Direct Expenses (Royalties)</text>
+  <text x="190" y="226" class="body">Raw Materials Consumed + Direct Wages + Direct Expenses</text>
+  <text x="190" y="244" class="coral-bold">= PRIME COST (Total Direct Manufacturing Cost!)</text>
+
+  <line class="arrow" x1="298" y1="256" x2="298" y2="276"/>
+
+  <!-- Stage 3 -->
+  <rect class="card" x="28" y="278" width="540" height="76"/>
+  <rect class="sage-box" x="38" y="288" width="136" height="56"/>
+  <text x="106" y="312" text-anchor="middle" class="white-bold">STAGE 3</text>
+  <text x="106" y="330" text-anchor="middle" class="white-sub">+ Overheads</text>
+  <text x="190" y="303" class="label">Add: Factory Overheads (Indirect Factory Costs)</text>
+  <text x="190" y="324" class="body">Factory Rent, Power, Indirect Wages, Repairs &amp; Plant Depr.</text>
+  <text x="190" y="342" class="label">= Total Factory Cost Incurred During the Year</text>
+
+  <line class="arrow" x1="298" y1="354" x2="298" y2="374"/>
+
+  <!-- Stage 4 -->
+  <rect class="card" x="28" y="376" width="540" height="106"/>
+  <rect class="coral-box" x="38" y="388" width="136" height="82"/>
+  <text x="106" y="418" text-anchor="middle" class="white-bold">STAGE 4</text>
+  <text x="106" y="438" text-anchor="middle" class="white-sub">Adjust WIP →</text>
+  <text x="106" y="454" text-anchor="middle" class="white-sub">PRODUCTION</text>
+  <text x="190" y="404" class="label">Work-in-Progress (WIP) Adjustment</text>
+  <text x="190" y="424" class="body">ADD: Opening Work-in-Progress (unfinished on 1 Jan)</text>
+  <text x="190" y="442" class="body">LESS: Closing Work-in-Progress (unfinished on 31 Dec)</text>
+  <text x="190" y="466" class="coral-bold">= COST OF PRODUCTION (Transferred to Trading A/c!)</text>
+
+  <!-- Right Side Callout Panel: 3 Inventories & Scrap Rule -->
+  <rect class="card" x="592" y="74" width="302" height="408"/>
+  <rect class="navy-box" x="604" y="86" width="278" height="42"/>
+  <text x="743" y="112" text-anchor="middle" class="white-bold">3 INVENTORIES OF A FACTORY!</text>
+
+  <rect class="mint" x="608" y="142" width="270" height="72"/>
+  <text x="620" y="162" class="label">1. Raw Materials Inventory</text>
+  <text x="620" y="180" class="body">Unprocessed inputs (flour, steel, cloth)</text>
+  <text x="620" y="198" class="coral-bold">→ Stage 1 of Manufacturing A/c</text>
+
+  <rect class="mint" x="608" y="224" width="270" height="72"/>
+  <text x="620" y="244" class="label">2. Work-in-Progress (WIP)</text>
+  <text x="620" y="262" class="body">Half-built items still on assembly line</text>
+  <text x="620" y="280" class="coral-bold">→ Stage 4 of Manufacturing A/c</text>
+
+  <rect class="amber" x="608" y="306" width="270" height="80"/>
+  <text x="620" y="326" class="coral-bold">3. Finished Goods Inventory</text>
+  <text x="620" y="344" class="body">Completed items ready for customers!</text>
+  <text x="620" y="362" class="coral-bold">→ NEVER in Manufacturing A/c!</text>
+  <text x="620" y="378" class="body">Goes strictly to Trading Account!</text>
+
+  <rect class="sage-box" x="608" y="398" width="270" height="70"/>
+  <text x="743" y="420" text-anchor="middle" class="white-bold">CLOSING BS CHECK!</text>
+  <text x="743" y="439" text-anchor="middle" class="white-sub">ALL 3 Closing Inventories (RM + WIP</text>
+  <text x="743" y="456" text-anchor="middle" class="white-sub">+ Finished Goods) sit in Current Assets!</text>
+</svg>

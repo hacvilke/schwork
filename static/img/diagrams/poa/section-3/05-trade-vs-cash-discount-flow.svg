@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 420" fill="none" role="img" aria-label="Step-by-Step Waterfall Showing Trade Discount First Then Cash Discount">
+  <rect width="820" height="420" rx="12" fill="#1B365D"/>
+  <rect x="14" y="14" width="792" height="392" rx="10" stroke="#2D507C" stroke-width="1.2"/>
+
+  <!-- Header -->
+  <text x="34" y="46" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="18" font-weight="700">Trade Discount vs. Cash Discount: Exact Order &amp; Recording</text>
+  <text x="34" y="66" fill="#9DD9CB" font-family="monospace" font-size="11.5">RULE: ALWAYS DEDUCT TRADE DISCOUNT FIRST (ON INVOICE), THEN CASH DISCOUNT (AT PAYMENT)</text>
+
+  <!-- Step 1: List Price -->
+  <rect x="34" y="96" width="150" height="106" rx="10" fill="#122440" stroke="#8CC4B4" stroke-width="1.6"/>
+  <text x="109" y="120" text-anchor="middle" fill="#9DD9CB" font-family="monospace" font-size="10.5" font-weight="700">1. CATALOG LIST</text>
+  <text x="109" y="152" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="24" font-weight="800">$1,000</text>
+  <text x="109" y="176" text-anchor="middle" fill="#A5C0D6" font-family="system-ui, sans-serif" font-size="10">Printed price before</text>
+  <text x="109" y="190" text-anchor="middle" fill="#A5C0D6" font-family="system-ui, sans-serif" font-size="10">bulk reduction</text>
+
+  <!-- Arrow + Trade Discount badge -->
+  <path d="M188 148 H234" stroke="#6BC4B0" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M227 142 L237 148 L227 154" fill="none" stroke="#6BC4B0" stroke-width="2.2" stroke-linecap="round"/>
+  <rect x="186" y="102" width="56" height="34" rx="6" fill="#4E8577"/>
+  <text x="214" y="117" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="9.5" font-weight="800">−20%</text>
+  <text x="214" y="130" text-anchor="middle" fill="#EBF2EF" font-family="monospace" font-size="8.5">TRADE</text>
+
+  <!-- Step 2: Net Invoice Price -->
+  <rect x="242" y="96" width="174" height="106" rx="10" fill="#122440" stroke="#6BC4B0" stroke-width="2"/>
+  <text x="329" y="118" text-anchor="middle" fill="#6BC4B0" font-family="monospace" font-size="10.5" font-weight="700">2. NET INVOICE</text>
+  <text x="329" y="150" text-anchor="middle" fill="#6BC4B0" font-family="system-ui, sans-serif" font-size="24" font-weight="800">$800</text>
+  <text x="329" y="172" text-anchor="middle" fill="#F4F7FA" font-family="system-ui, sans-serif" font-size="10.5" font-weight="700">Entered in Day Book!</text>
+  <text x="329" y="188" text-anchor="middle" fill="#A5C0D6" font-family="system-ui, sans-serif" font-size="9.5">Trade disc ($200) NOT in ledger</text>
+
+  <!-- Arrow + Cash Discount badge -->
+  <path d="M420 148 H466" stroke="#F5A352" stroke-width="2.6" stroke-linecap="round"/>
+  <path d="M459 142 L469 148 L459 154" fill="none" stroke="#F5A352" stroke-width="2.2" stroke-linecap="round"/>
+  <rect x="418" y="102" width="56" height="34" rx="6" fill="#C84E24"/>
+  <text x="446" y="117" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="9.5" font-weight="800">−5%</text>
+  <text x="446" y="130" text-anchor="middle" fill="#FDEFDF" font-family="monospace" font-size="8.5">CASH</text>
+
+  <!-- Step 3: Cash Paid -->
+  <rect x="474" y="96" width="154" height="106" rx="10" fill="#122440" stroke="#F5A352" stroke-width="2"/>
+  <text x="551" y="118" text-anchor="middle" fill="#F5A352" font-family="monospace" font-size="10.5" font-weight="700">3. CASH PAID</text>
+  <text x="551" y="150" text-anchor="middle" fill="#F5A352" font-family="system-ui, sans-serif" font-size="24" font-weight="800">$760</text>
+  <text x="551" y="172" text-anchor="middle" fill="#F4F7FA" font-family="system-ui, sans-serif" font-size="10.5" font-weight="700">Paid within 10 days</text>
+  <text x="551" y="188" text-anchor="middle" fill="#A5C0D6" font-family="system-ui, sans-serif" font-size="9.5">$800 − 5% ($40) = $760</text>
+
+  <!-- Step 4: Cash Discount Recorded -->
+  <rect x="642" y="96" width="144" height="106" rx="10" fill="#132F34" stroke="#6BC4B0" stroke-width="1.8"/>
+  <text x="714" y="118" text-anchor="middle" fill="#9DD9CB" font-family="monospace" font-size="10" font-weight="700">4. CASH BOOK</text>
+  <text x="714" y="148" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="20" font-weight="800">$40 Disc.</text>
+  <text x="714" y="170" text-anchor="middle" fill="#6BC4B0" font-family="system-ui, sans-serif" font-size="10.5" font-weight="700">RECORDED!</text>
+  <text x="714" y="186" text-anchor="middle" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="9.5">Discount Allowed / Rec’d</text>
+
+  <!-- Bottom Comparison Cards -->
+  <rect x="34" y="226" width="368" height="162" rx="10" fill="#122440" stroke="#6BC4B0" stroke-width="1.5"/>
+  <rect x="34" y="226" width="368" height="28" rx="10" fill="#4E8577"/>
+  <text x="218" y="244" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="11" font-weight="700">TRADE DISCOUNT (BULK / WHOLESALE)</text>
+  <g font-family="system-ui, sans-serif" font-size="11" fill="#DCE8F2">
+    <text x="50" y="274">• <tspan font-weight="700" fill="#6BC4B0">Purpose:</tspan> Encourage bulk buying or trade resale</text>
+    <text x="50" y="296">• <tspan font-weight="700" fill="#6BC4B0">When given:</tspan> Immediately on the Invoice</text>
+    <text x="50" y="318">• <tspan font-weight="700" fill="#6BC4B0">In the Ledger?</tspan> <tspan font-weight="800" fill="#F5A352">NEVER recorded in any ledger A/c</tspan></text>
+    <text x="50" y="340">• <tspan font-weight="700" fill="#6BC4B0">Note:</tspan> Sales/Purchases entered strictly at Net Price</text>
+    <text x="50" y="366" fill="#9DD9CB" font-size="10">No condition on paying early — everyone buying bulk gets it.</text>
+  </g>
+
+  <rect x="418" y="226" width="368" height="162" rx="10" fill="#122440" stroke="#F5A352" stroke-width="1.5"/>
+  <rect x="418" y="226" width="368" height="28" rx="10" fill="#C84E24"/>
+  <text x="602" y="244" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="11" font-weight="700">CASH DISCOUNT (PROMPT PAYMENT)</text>
+  <g font-family="system-ui, sans-serif" font-size="11" fill="#DCE8F2">
+    <text x="434" y="274">• <tspan font-weight="700" fill="#F5A352">Purpose:</tspan> Reward customers who pay quickly (e.g. 2/10)</text>
+    <text x="434" y="296">• <tspan font-weight="700" fill="#F5A352">When given:</tspan> Only IF debt is settled within discount days</text>
+    <text x="434" y="318">• <tspan font-weight="700" fill="#F5A352">In the Ledger?</tspan> <tspan font-weight="800" fill="#6BC4B0">YES — in Cash Book &amp; Income Stmt!</tspan></text>
+    <text x="434" y="340">• <tspan font-weight="700" fill="#F5A352">Seller:</tspan> Discount Allowed (Expense · Dr)</text>
+    <text x="434" y="362">• <tspan font-weight="700" fill="#F5A352">Buyer:</tspan> Discount Received (Income · Cr)</text>
+  </g>
+</svg>

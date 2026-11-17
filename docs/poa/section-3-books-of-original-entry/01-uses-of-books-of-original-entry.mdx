@@ -1,0 +1,236 @@
+---
+id: uses-of-books-of-original-entry
+title: "3.1 Uses of Books of Original Entry (General Journal, Sales, Purchases Books)"
+sidebar_label: "3.1 Books of Original Entry"
+sidebar_position: 1
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 3"
+  section="Books of Original Entry — Documents & Subsidiary Books"
+  code="POA-S3-01"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="20 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+Imagine stuffing 500 daily sales invoices, cash receipts, and bills straight into the main General Ledger one by one — it would turn into an unreadable mess! **Books of Original Entry** (also called *Day Books* or *Books of Prime Entry*) act as **specialized sorting trays** where similar transactions are recorded chronologically FIRST, summarized into neat totals, and then posted cleanly to the ledgers.
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | All **7 Books of Original Entry** and the exact types of transactions each book accepts |
+| **Exam Focus** | Routing tricky transactions (e.g., *credit purchase of a van* vs. *credit purchase of goods for resale*) to the **exact right book** |
+| **Learning Outcome** | Identify all seven Books of Original Entry, explain why businesses use them, and route any transaction accurately |
+
+<ObjectivesBox
+  id="poa-s3-01-obj"
+  objectives={[
+    'Define Books of Original Entry (Books of Prime Entry) and explain four practical advantages of using them.',
+    'List all seven Books of Original Entry: Sales Journal, Purchases Journal, Returns Inwards Journal, Returns Outwards Journal, Cash Book, Petty Cash Book, and General Journal.',
+    'Match every common business transaction and source document to the correct Book of Original Entry.',
+    'Distinguish clearly between transactions entered in the Purchases/Sales Journals versus the General Journal.',
+  ]}
+/>
+
+---
+
+## 1. The Seven Books of Original Entry Master Guide
+
+| Book of Original Entry | Exact Transactions Recorded | Source Document Used |
+| :--- | :--- | :--- |
+| **1. Sales Journal** *(Sales Day Book)* | **Credit sales of goods** held for resale ONLY | Sales Invoice (copy retained by seller) |
+| **2. Purchases Journal** *(Purchases Day Book)* | **Credit purchases of goods** for resale ONLY | Purchase Invoice (received from supplier) |
+| **3. Returns Inwards Journal** *(Sales Returns Book)* | Credit customers **returning goods** to us | Credit Note **issued** by us to customer |
+| **4. Returns Outwards Journal** *(Purchases Returns Book)* | Goods we **return to credit suppliers** | Credit Note **received** from supplier |
+| **5. Cash Book** *(2-column or 3-column)* | **ALL cash and bank** receipts & payments (including cash sales, cash purchases, bank transfers, and cash discounts) | Official Receipts, Cheque Counterfoils, Bank Deposit Slips |
+| **6. Petty Cash Book** | **Small everyday cash expenses** (postage, stationery, bus fare, cleaning) | Signed Petty Cash Vouchers |
+| **7. General Journal** *(The Journal)* | **Non-routine / unusual entries**: credit purchases/sales of **Non-Current Assets** (vans, machinery), opening entries, error corrections, bad debt write-offs, depreciation | Journal Vouchers, Asset Invoices, Management Memos |
+
+### Why Businesses Use Books of Original Entry
+1. **Reduces General Ledger Clutter:** Instead of posting 300 individual credit sales into the Sales Account, only **one single monthly total** gets posted.
+2. **Division of Labour (Specialization):** One clerk can manage the Sales Journal while another updates the Purchases Journal and a third handles the Cash Book simultaneously.
+3. **Chronological Audit Trail:** Every transaction is logged in date order with invoice/document numbers for quick checking.
+4. **Easier Error Detection:** Grouping similar transactions lets accountants build Control Accounts (Section 7) and pinpoint discrepancies faster.
+
+---
+
+## 2. Diagram 1: The Seven Books of Original Entry Routing Map
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-3/01-seven-books-of-original-entry.svg"
+  alt="Visual routing chart grouping all seven Books of Original Entry into Credit Goods Day Books (Sales, Purchases, Returns Inwards, Returns Outwards) and Cash/Special Books (Cash Book, Petty Cash Book, General Journal), highlighting the fixed-asset credit trap."
+  caption="Diagram 1 (Static Reference): Keep the Cash Book dual-role and the General Journal non-current-asset rule top of mind for Paper 1 and Paper 2!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive Book-of-Original-Entry Router
+
+<InteractiveDiagram
+  title="Interactive Hub: Tap Each Book to Check What Goes IN — and What Stays OUT!"
+  layout="hub"
+  centerLabel="7 Prime Books"
+  centerSublabel="First Entry Point"
+  instruction="Select any Book of Original Entry around the hub to verify exactly which transactions belong inside it and which classic exam traps to keep OUT."
+  nodes={[
+    {
+      label: 'Sales Journal',
+      tag: 'Credit Sales',
+      tone: 'positive',
+      detail: 'Records credit sales of trading inventory (goods bought to resell) strictly at net invoice price after trade discount.',
+      example: 'Sold $1,500 of shoes on 30-day credit to City Footwear → Sales Journal. (Sold shoes for CASH → Cash Book; sold old office desk on credit → General Journal!)',
+      examTip: 'Cash sales NEVER enter the Sales Journal — they go straight into the Cash Book!',
+    },
+    {
+      label: 'Purchases Journal',
+      tag: 'Credit Stock',
+      tone: 'positive',
+      detail: 'Records credit purchases of trading goods for resale ONLY. Never includes cash purchases or non-current assets.',
+      example: 'Bought $2,400 of fabric on credit from Loom Supply for resale → Purchases Journal. (Bought a $20,000 delivery van on credit → General Journal!)',
+      examTip: 'The #1 most tested trap: buying equipment or a van on credit goes to the GENERAL JOURNAL, NOT the Purchases Journal.',
+    },
+    {
+      label: 'Returns Books',
+      tag: 'In & Out',
+      tone: 'neutral',
+      detail: 'Returns Inwards logs goods returned BY credit customers; Returns Outwards logs goods WE return TO credit suppliers.',
+      example: 'Customer sends back $120 of cracked mugs → Returns Inwards Journal. We send back $300 of wrong-sized shirts to our supplier → Returns Outwards Journal.',
+      examTip: 'Both returns books are supported by CREDIT NOTES (issued = Inwards; received = Outwards).',
+    },
+    {
+      label: 'Cash Book',
+      tag: 'Dual Role',
+      tone: 'warning',
+      detail: 'Records EVERY receipt and payment involving Cash or Bank, plus Cash Discounts. Uniquely acts as BOTH a Book of Original Entry AND the Cash/Bank Ledger accounts!',
+      example: 'Cash sales ($600), paying rent by cheque ($900), receiving a customer transfer ($1,100), and banking cash ($400) all enter the Cash Book.',
+      examTip: 'Remember its unique exam title: the Cash Book is BOTH a Book of Prime Entry AND part of the Double-Entry Ledger.',
+    },
+    {
+      label: 'Petty Cash Book',
+      tag: 'Small Cash',
+      tone: 'positive',
+      detail: 'Keeps minor, frequent cash payments (stamps, milk, bus fare, pens) out of the main Cash Book using a fixed cash float (Imprest System).',
+      example: 'Paid $8 for postage stamps and $15 for window cleaning from the petty cash box → Petty Cash Book.',
+      examTip: 'Major bills like $2,000 monthly rent or supplier cheques stay in the main Cash Book, NOT Petty Cash.',
+    },
+    {
+      label: 'General Journal',
+      tag: 'Special Items',
+      tone: 'warning',
+      detail: 'Handles every transaction that does not fit the six specialized books — always written with Debit account, Credit account, and a short explanatory Narration.',
+      example: 'Opening entries when starting a business, buying a $9,000 computer on credit, writing off a bad debt, recording annual depreciation, and correcting errors.',
+      examTip: 'Never forget the NARRATION line at the bottom of every General Journal entry — examiners award marks for it!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Routing Eight Real Business Transactions to the Exact Book of Original Entry"
+  marks={8}
+  problem={
+    <>
+      <p>
+        <strong>Question:</strong> State the exact <strong>Book of Original Entry</strong> in
+        which each of the following eight transactions of <strong>Metro Sports Store</strong>
+        should be recorded first. <em>[1 mark each = 8 marks]</em>
+      </p>
+      <ol>
+        <li>Sold $1,800 of soccer jerseys on credit to Valley High School.</li>
+        <li>Purchased $3,200 of basketballs for resale on credit from ProGear Wholesale.</li>
+        <li>Purchased a $15,000 delivery van on credit from AutoCity Motors.</li>
+        <li>Sold $450 of tennis rackets for immediate cash.</li>
+        <li>Valley High School returned $200 of damaged soccer jerseys.</li>
+        <li>Paid $14 from the office tin for courier postage stamps.</li>
+        <li>Returned $350 of defective basketballs to ProGear Wholesale.</li>
+        <li>Wrote off $180 owed by a bankrupt customer, T. Lewis, as a Bad Debt.</li>
+      </ol>
+    </>
+  }
+>
+
+1. **Credit sale of soccer jerseys (resale goods):** **Sales Journal** *(1 mark)*
+2. **Credit purchase of basketballs (resale goods):** **Purchases Journal** *(1 mark)*
+3. **Credit purchase of a delivery van (Non-Current Asset!):** **General Journal** *(1 mark — NOT Purchases Journal!)*
+4. **Immediate cash sale of tennis rackets:** **Cash Book** *(1 mark — NOT Sales Journal!)*
+5. **Customer returns credit goods to us:** **Returns Inwards Journal** *(1 mark)*
+6. **Minor $14 cash payment for stamps:** **Petty Cash Book** *(1 mark)*
+7. **We return credit goods to our supplier:** **Returns Outwards Journal** *(1 mark)*
+8. **Writing off a Bad Debt (non-routine adjustment):** **General Journal** *(1 mark)*
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Uses of Books of Original Entry"
+  items={[
+    {
+      statement: 'Buying a $12,000 delivery van on credit for business use should be recorded in the Purchases Journal.',
+      answer: false,
+      explanation: 'The Purchases Journal ONLY records credit purchases of goods bought for resale. Credit purchases of Non-Current Assets (vans, machinery) go into the General Journal.',
+    },
+    {
+      statement: 'The Cash Book is unique because it serves as BOTH a Book of Original Entry and a Ledger account.',
+      answer: true,
+      explanation: 'Cash and Bank columns inside the Cash Book are the actual double-entry Cash and Bank ledger accounts as well as the prime record of cash/bank movements.',
+    },
+    {
+      statement: 'Cash sales of merchandise are recorded first in the Sales Journal.',
+      answer: false,
+      explanation: 'Cash sales go directly into the Cash Book (Debit side). The Sales Journal is strictly for CREDIT sales of goods.',
+    },
+    {
+      statement: 'Using Books of Original Entry allows several accounting clerks to record different types of transactions at the same time.',
+      answer: true,
+      explanation: 'Division of labour is a major benefit — separate clerks can maintain the Sales, Purchases, Cash, and Petty Cash books simultaneously.',
+    },
+    {
+      statement: 'Correcting a ledger error or recording annual depreciation is entered first in the General Journal.',
+      answer: true,
+      explanation: 'Non-routine accounting entries — including error corrections, opening entries, bad debts, and depreciation — belong in the General Journal.',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s3-01-project"
+  title="Mini-Project: Bookkeeper’s Inbox Sorting Challenge"
+  duration="25–30 mins"
+  scenario="You are the head bookkeeper at 'BrightHome Furniture'. At 9:00 a.m. Monday, your inbox holds 10 unsorted paperwork slips from the weekend. You must build a clear Routing Guide so your junior clerks file every single transaction into the exact right Book of Original Entry without triggering any classic rookie mistakes."
+  steps={[
+    'Draw a 7-box "Books of Original Entry Filing Station" chart covering all 7 books.',
+    'Invent 10 realistic BrightHome Furniture transactions — make sure to include at least 1 credit sale of sofas, 1 cash sale of lamps, 1 credit purchase of dining tables for resale, 1 credit purchase of an office printer (trap!), 1 customer return, 1 return to supplier, 1 cheque payment for rent, 1 $9 tea/coffee petty cash slip, 1 bad debt write-off, and 1 owner capital cash deposit.',
+    'Route every one of your 10 transactions into the exact Book of Original Entry and name the matching Source Document for each.',
+    'Add a bold "3 Rookie Traps to Avoid" warning box at the bottom of your chart for new clerks.',
+  ]}
+  deliverables={[
+    'A 7-Book Routing Station visual chart',
+    'A completed 10-Transaction Inbox Routing Table (Transaction → Source Document → Exact Prime Book)',
+    'A 3-point Rookie Traps warning box',
+  ]}
+  rubric={[
+    'All 7 Books of Original Entry are accurately represented and used.',
+    'Classic traps (credit purchase of office printer → General Journal; cash sale → Cash Book) are routed 100% accurately.',
+    'Source documents match each book correctly (invoices, credit notes, receipts, petty cash vouchers, memos).',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **Goods for resale on credit** → Sales / Purchases / Returns Inwards / Returns Outwards Journals.
+- **Any Cash or Bank movement** → **Cash Book** (small cash expenses → **Petty Cash Book**).
+- **Credit purchase/sale of Fixed Assets, bad debts, error fixes, opening entries** → **General Journal**!
+:::

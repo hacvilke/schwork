@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 470" role="img" aria-label="Three-way comparison of Ordinary Shares, Preference Shares, and Debentures across status, voting rights, return, and liquidation priority">
+  <defs>
+    <style>
+      .title { font: 700 20px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .sub { font: 500 13px system-ui, -apple-system, sans-serif; fill: #4A5560; }
+      .hdr { font: 700 14px system-ui, -apple-system, sans-serif; fill: #FCFBF8; }
+      .h3 { font: 700 13px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .body { font: 500 12px system-ui, -apple-system, sans-serif; fill: #222222; }
+      .sage { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #2E6359; }
+      .coral { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #C84E24; }
+    </style>
+  </defs>
+
+  <rect width="920" height="470" rx="14" fill="#F8F6F1" stroke="#CEDCD6" stroke-width="1.5"/>
+  <text x="32" y="38" class="title">How Companies Raise Long-Term Capital: Shares vs. Debentures</text>
+  <text x="32" y="58" class="sub">Shares represent OWNERSHIP (Equity) paid with Dividends · Debentures represent LONG-TERM DEBT (Loan) paid with fixed Interest!</text>
+
+  <!-- Col 1: Ordinary Shares -->
+  <rect x="32" y="80" width="272" height="304" rx="11" fill="#FCFBF8" stroke="#1B365D" stroke-width="1.8"/>
+  <rect x="32" y="80" width="272" height="38" rx="10" fill="#1B365D"/>
+  <text x="168" y="104" text-anchor="middle" class="hdr">1. Ordinary Shares (Equity)</text>
+  <text x="48" y="140" class="h3">Status: TRUE OWNERS</text>
+  <text x="48" y="164" class="sage">• FULL Voting Rights at AGM!</text>
+  <text x="48" y="188" class="body">• Return: VARIABLE Dividend</text>
+  <text x="58" y="204" class="body">(high in boom yrs, $0 in loss yrs)</text>
+  <text x="48" y="228" class="coral">• Paid LAST on profits &amp; closure</text>
+  <text x="48" y="252" class="body">• Highest risk, highest upside</text>
+  <rect x="46" y="274" width="244" height="94" rx="7" fill="#EBF2EF"/>
+  <text x="58" y="294" class="h3">Where on Statements?</text>
+  <text x="58" y="314" class="body">• Bal Sheet: Share Capital</text>
+  <text x="58" y="332" class="body">• Dividend: Appropriation A/c</text>
+  <text x="58" y="352" class="sage">(Distribution of Profit!)</text>
+
+  <!-- Col 2: Preference Shares -->
+  <rect x="324" y="80" width="272" height="304" rx="11" fill="#FCFBF8" stroke="#2E6359" stroke-width="1.8"/>
+  <rect x="324" y="80" width="272" height="38" rx="10" fill="#2E6359"/>
+  <text x="460" y="104" text-anchor="middle" class="hdr">2. Preference Shares (Equity)</text>
+  <text x="340" y="140" class="h3">Status: PRIORITY OWNERS</text>
+  <text x="340" y="164" class="coral">• Normally NO Voting Rights</text>
+  <text x="340" y="188" class="sage">• Return: FIXED % Dividend</text>
+  <text x="350" y="204" class="body">(e.g. 6% Pref — paid BEFORE Ord.!)</text>
+  <text x="340" y="228" class="body">• Cumulative = missed divs carry fwd</text>
+  <text x="340" y="252" class="body">• Paid BEFORE Ord. on liquidation</text>
+  <rect x="338" y="274" width="244" height="94" rx="7" fill="#EBF2EF"/>
+  <text x="350" y="294" class="h3">Where on Statements?</text>
+  <text x="350" y="314" class="body">• Bal Sheet: Share Capital</text>
+  <text x="350" y="332" class="body">• Dividend: Appropriation A/c</text>
+  <text x="350" y="352" class="sage">(ONLY paid if profit exists!)</text>
+
+  <!-- Col 3: Debentures -->
+  <rect x="616" y="80" width="272" height="304" rx="11" fill="#FCFBF8" stroke="#C84E24" stroke-width="1.8"/>
+  <rect x="616" y="80" width="272" height="38" rx="10" fill="#C84E24"/>
+  <text x="752" y="104" text-anchor="middle" class="hdr">3. Debentures (Long-Term Loan)</text>
+  <text x="632" y="140" class="coral">Status: CREDITORS (Lenders!)</text>
+  <text x="632" y="164" class="coral">• ZERO Voting Rights</text>
+  <text x="632" y="188" class="h3">• Return: FIXED % INTEREST</text>
+  <text x="642" y="204" class="coral">(MUST be paid even in a LOSS!)</text>
+  <text x="632" y="228" class="sage">• Paid FIRST before ALL shares!</text>
+  <text x="632" y="252" class="body">• Often secured on firm assets</text>
+  <rect x="630" y="274" width="244" height="94" rx="7" fill="#FFF3EE"/>
+  <text x="642" y="294" class="coral">Where on Statements?</text>
+  <text x="642" y="314" class="body">• Bal Sheet: Non-Current Liab.</text>
+  <text x="642" y="332" class="coral">• Interest: INCOME STATEMENT</text>
+  <text x="642" y="352" class="coral">(Operating Expense — NOT Approp!)</text>
+
+  <!-- Bottom Capital Ladder -->
+  <rect x="32" y="400" width="856" height="54" rx="9" fill="#1B365D"/>
+  <text x="460" y="422" text-anchor="middle" class="hdr">Share Capital Ladder (Authorized → Issued → Called-Up → Paid-Up)</text>
+  <text x="460" y="442" text-anchor="middle" style="font: 500 12.2px system-ui; fill: #EBF2EF;">Authorized = Legal Max (memo only!)  →  Issued = Actually sold (entered in books!)  →  Paid-Up = Cash actually received by company!</text>
+</svg>

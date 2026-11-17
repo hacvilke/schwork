@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 480" width="920" height="480" role="img" aria-label="Six-Month Cash Flow Projection Bridge showing Opening Cash plus Cash Inflows minus Cash Outflows rolling into Closing Cash and warning of a Mid-Year Deficit">
+  <defs>
+    <style>
+      .bg { fill: #F8F6F1; }
+      .card { fill: #FCFBF8; stroke: #CEDCD6; stroke-width: 2; rx: 12; }
+      .navy { fill: #1B365D; rx: 8; }
+      .sage { fill: #2E6359; rx: 8; }
+      .coral { fill: #C84E24; rx: 8; }
+      .mint { fill: #EBF2EF; stroke: #4E8577; stroke-width: 1.5; rx: 6; }
+      .amber { fill: #FEF3E2; stroke: #F5A352; stroke-width: 1.5; rx: 6; }
+      .title { font-family: system-ui, -apple-system, sans-serif; font-size: 21px; font-weight: 800; fill: #1B365D; }
+      .subtitle { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; fill: #4A5560; }
+      .w-title { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; font-weight: 800; fill: #FFFFFF; }
+      .w-sub { font-family: system-ui, -apple-system, sans-serif; font-size: 11.5px; fill: #EBF2EF; }
+      .label { font-family: system-ui, -apple-system, sans-serif; font-size: 12.5px; font-weight: 800; fill: #1B365D; }
+      .body { font-family: system-ui, -apple-system, sans-serif; font-size: 11.5px; fill: #222222; }
+      .coral-txt { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; font-weight: 800; fill: #C84E24; }
+      .pos { fill: #2E6359; rx: 5; }
+      .neg { fill: #C84E24; rx: 5; }
+      .axis { stroke: #1B365D; stroke-width: 2; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="920" height="480"/>
+  <text x="460" y="34" text-anchor="middle" class="title">6-Month Cash Flow Projection &amp; Closing Cash Roll-Forward</text>
+  <text x="460" y="54" text-anchor="middle" class="subtitle">Month 1 Closing Cash becomes Month 2 Opening Cash — spot cash crunches MONTHS early before cheques bounce!</text>
+
+  <!-- Left Panel: Rolling Formula -->
+  <rect class="card" x="24" y="74" width="358" height="314"/>
+  <rect class="navy" x="36" y="86" width="334" height="40"/>
+  <text x="203" y="111" text-anchor="middle" class="w-title">MONTHLY CASH FLOW STRUCTURE</text>
+
+  <rect class="mint" x="40" y="138" width="326" height="42"/>
+  <text x="54" y="163" class="label">1. Opening Cash Balance (from Last Month!)</text>
+
+  <rect class="mint" x="40" y="188" width="326" height="46"/>
+  <text x="54" y="208" class="label">2. + Cash Inflows (Receipts)</text>
+  <text x="54" y="225" class="body">Cash sales, delayed credit collections, loans</text>
+
+  <rect class="amber" x="40" y="242" width="326" height="46"/>
+  <text x="54" y="262" class="coral-txt">3. − Cash Outflows (Payments)</text>
+  <text x="54" y="279" class="body">Suppliers, rent, wages, equipment cash buy</text>
+
+  <rect class="sage" x="40" y="296" width="326" height="40"/>
+  <text x="203" y="321" text-anchor="middle" class="w-title">= Closing Cash (Opening + Inflows − Outflows)</text>
+
+  <text x="203" y="366" text-anchor="middle" class="coral-txt">ZERO Depreciation! (Non-cash NEVER enters!)</text>
+
+  <!-- Right Panel: 6-Month Bar Chart Showing Cash Deficit in Month 3 -->
+  <rect class="card" x="400" y="74" width="496" height="314"/>
+  <text x="648" y="102" text-anchor="middle" class="label">CLOSING CASH TRAJECTORY (JAN–JUN — $ THOUSANDS)</text>
+
+  <!-- Zero Baseline at y=278 -->
+  <line class="axis" x1="436" y1="278" x2="872" y2="278"/>
+  <text x="428" y="282" text-anchor="end" class="label">$0</text>
+  <line x1="436" y1="158" x2="872" y2="158" stroke="#CEDCD6" stroke-dasharray="4 4"/>
+  <text x="428" y="162" text-anchor="end" class="body">+$6k</text>
+  <line x1="436" y1="218" x2="872" y2="218" stroke="#CEDCD6" stroke-dasharray="4 4"/>
+  <text x="428" y="222" text-anchor="end" class="body">+$3k</text>
+  <line x1="436" y1="338" x2="872" y2="338" stroke="#CEDCD6" stroke-dasharray="4 4"/>
+  <text x="428" y="342" text-anchor="end" class="coral-txt">−$3k</text>
+
+  <!-- Bars: scale 20px per $1k -->
+  <!-- Jan: +$3.0k (60px) -->
+  <rect class="pos" x="454" y="218" width="44" height="60"/>
+  <text x="476" y="210" text-anchor="middle" class="label">+$3.0k</text>
+  <text x="476" y="298" text-anchor="middle" class="label">Jan</text>
+
+  <!-- Feb: +$1.5k (30px) -->
+  <rect class="pos" x="524" y="248" width="44" height="30"/>
+  <text x="546" y="240" text-anchor="middle" class="label">+$1.5k</text>
+  <text x="546" y="298" text-anchor="middle" class="label">Feb</text>
+
+  <!-- Mar: -$2.0k (Equipment purchase! 40px below zero) -->
+  <rect class="neg" x="594" y="278" width="44" height="40"/>
+  <text x="616" y="335" text-anchor="middle" class="coral-txt">−$2.0k!</text>
+  <text x="616" y="268" text-anchor="middle" class="coral-txt">Mar</text>
+
+  <!-- Apr: +$0.5k (10px) -->
+  <rect class="pos" x="664" y="268" width="44" height="10"/>
+  <text x="686" y="260" text-anchor="middle" class="label">+$0.5k</text>
+  <text x="686" y="298" text-anchor="middle" class="label">Apr</text>
+
+  <!-- May: +$3.5k (70px) -->
+  <rect class="pos" x="734" y="208" width="44" height="70"/>
+  <text x="756" y="200" text-anchor="middle" class="label">+$3.5k</text>
+  <text x="756" y="298" text-anchor="middle" class="label">May</text>
+
+  <!-- Jun: +$6.5k (130px) -->
+  <rect class="pos" x="804" y="148" width="44" height="130"/>
+  <text x="826" y="140" text-anchor="middle" class="label">+$6.5k</text>
+  <text x="826" y="298" text-anchor="middle" class="label">Jun</text>
+
+  <text x="648" y="370" text-anchor="middle" class="coral-txt">Early Warning: March dips −$2,000 → Arrange $3k Overdraft or Lease Equipment!</text>
+
+  <!-- Bottom Cash vs Profit Banner -->
+  <rect class="navy" x="24" y="404" width="872" height="58"/>
+  <text x="460" y="427" text-anchor="middle" class="w-title">PROFIT ≠ CASH! WHY PROFITABLE STARTUPS CAN STILL RUN OUT OF CASH</text>
+  <text x="460" y="447" text-anchor="middle" class="w-sub">Credit sales enter Cash Flow ONLY when collected (e.g. 1 month later!), while upfront equipment buys drain cash immediately!</text>
+</svg>

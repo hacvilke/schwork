@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 490" width="920" height="490" role="img" aria-label="Three-Statement Pipeline of a Manufacturing Concern linking Manufacturing Account to Income Statement and Classified Balance Sheet">
+  <defs>
+    <style>
+      .bg { fill: #F8F6F1; }
+      .card { fill: #FCFBF8; stroke: #CEDCD6; stroke-width: 2; rx: 12; }
+      .navy { fill: #1B365D; rx: 10; }
+      .sage { fill: #2E6359; rx: 10; }
+      .coral { fill: #C84E24; rx: 10; }
+      .mint { fill: #EBF2EF; stroke: #4E8577; stroke-width: 1.5; rx: 8; }
+      .amber { fill: #FEF3E2; stroke: #F5A352; stroke-width: 1.5; rx: 8; }
+      .title { font-family: system-ui, -apple-system, sans-serif; font-size: 21px; font-weight: 800; fill: #1B365D; }
+      .subtitle { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; fill: #4A5560; }
+      .w-title { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; font-weight: 800; fill: #FFFFFF; }
+      .w-sub { font-family: system-ui, -apple-system, sans-serif; font-size: 11.5px; fill: #EBF2EF; }
+      .label { font-family: system-ui, -apple-system, sans-serif; font-size: 12.5px; font-weight: 800; fill: #1B365D; }
+      .body { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; fill: #222222; }
+      .coral-txt { font-family: system-ui, -apple-system, sans-serif; font-size: 12.5px; font-weight: 800; fill: #C84E24; }
+      .arrow { stroke: #C84E24; stroke-width: 3; fill: none; marker-end: url(#arr2); }
+    </style>
+    <marker id="arr2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#C84E24"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="920" height="490"/>
+  <text x="460" y="34" text-anchor="middle" class="title">The 3-Statement Manufacturing Final Accounts Pipeline</text>
+  <text x="460" y="54" text-anchor="middle" class="subtitle">See how Cost of Production replaces "Purchases" in the Trading Account, and ALL 3 Closing Stocks land on the Balance Sheet!</text>
+
+  <!-- Panel 1: Manufacturing Account -->
+  <rect class="card" x="22" y="76" width="268" height="328"/>
+  <rect class="navy" x="34" y="88" width="244" height="48"/>
+  <text x="156" y="109" text-anchor="middle" class="w-title">1. MANUFACTURING A/C</text>
+  <text x="156" y="126" text-anchor="middle" class="w-sub">Factory Costs ONLY!</text>
+
+  <text x="40" y="160" class="label">Raw Materials Consumed</text>
+  <text x="40" y="179" class="body">+ Direct Labor &amp; Royalties</text>
+  <text x="40" y="198" class="label">= PRIME COST</text>
+  <line x1="40" y1="210" x2="270" y2="210" stroke="#CEDCD6" stroke-width="1.5"/>
+  <text x="40" y="230" class="body">+ Factory Overheads</text>
+  <text x="48" y="247" class="body">• Factory Rent / Power Share</text>
+  <text x="48" y="264" class="body">• Indirect Wages &amp; Plant Depr.</text>
+  <line x1="40" y1="276" x2="270" y2="276" stroke="#CEDCD6" stroke-width="1.5"/>
+  <text x="40" y="296" class="body">+ Opening WIP</text>
+  <text x="40" y="314" class="body">− Closing WIP</text>
+
+  <rect class="amber" x="36" y="330" width="240" height="58"/>
+  <text x="156" y="352" text-anchor="middle" class="coral-txt">= COST OF PRODUCTION</text>
+  <text x="156" y="372" text-anchor="middle" class="body">Flows straight to Trading A/c! →</text>
+
+  <!-- Arrow 1->2 -->
+  <line class="arrow" x1="290" y1="230" x2="322" y2="230"/>
+
+  <!-- Panel 2: Income Statement -->
+  <rect class="card" x="326" y="76" width="268" height="328"/>
+  <rect class="sage" x="338" y="88" width="244" height="48"/>
+  <text x="460" y="109" text-anchor="middle" class="w-title">2. INCOME STATEMENT</text>
+  <text x="460" y="126" text-anchor="middle" class="w-sub">Trading + Office / Selling!</text>
+
+  <text x="344" y="160" class="label">Sales (Less Returns Inwards)</text>
+  <text x="344" y="179" class="body">Less: Cost of Goods Sold:</text>
+  <text x="352" y="197" class="body">• Opening Finished Goods</text>
+  <text x="352" y="215" class="coral-txt">• + COST OF PRODUCTION ←</text>
+  <text x="352" y="233" class="body">• − Closing Finished Goods</text>
+  <text x="344" y="253" class="label">= GROSS PROFIT</text>
+  <line x1="344" y1="264" x2="574" y2="264" stroke="#CEDCD6" stroke-width="1.5"/>
+  <text x="344" y="284" class="body">Less: Non-Factory Expenses:</text>
+  <text x="352" y="302" class="body">• Admin &amp; Office Rent Share</text>
+  <text x="352" y="319" class="body">• Selling, Carriage Out, Vans Depr.</text>
+
+  <rect class="mint" x="340" y="330" width="240" height="58"/>
+  <text x="460" y="352" text-anchor="middle" class="label">= NET PROFIT FOR YEAR</text>
+  <text x="460" y="372" text-anchor="middle" class="body">Flows straight to Capital! →</text>
+
+  <!-- Arrow 2->3 -->
+  <line class="arrow" x1="594" y1="230" x2="626" y2="230"/>
+
+  <!-- Panel 3: Balance Sheet -->
+  <rect class="card" x="630" y="76" width="268" height="328"/>
+  <rect class="coral" x="642" y="88" width="244" height="48"/>
+  <text x="764" y="109" text-anchor="middle" class="w-title">3. BALANCE SHEET</text>
+  <text x="764" y="126" text-anchor="middle" class="w-sub">Snapshot on 31 December!</text>
+
+  <text x="648" y="158" class="label">Non-Current Assets (NBV):</text>
+  <text x="656" y="176" class="body">• Factory Premises &amp; Machinery</text>
+  <text x="656" y="193" class="body">• Office Equipment &amp; Vans</text>
+
+  <rect class="mint" x="644" y="205" width="240" height="94"/>
+  <text x="654" y="224" class="coral-txt">Current Assets — ALL 3 STOCKS!</text>
+  <text x="654" y="242" class="body">1. Closing Raw Materials</text>
+  <text x="654" y="259" class="body">2. Closing Work-in-Progress</text>
+  <text x="654" y="276" class="body">3. Closing Finished Goods</text>
+  <text x="654" y="292" class="body">+ Receivables, Prepayments, Bank</text>
+
+  <text x="648" y="320" class="body">Less: Current Liabilities = WC</text>
+  <line x1="648" y1="330" x2="878" y2="330" stroke="#CEDCD6" stroke-width="1.5"/>
+  <text x="648" y="352" class="label">Financed By:</text>
+  <text x="648" y="370" class="body">Opening Capital + Net Profit ←</text>
+  <text x="648" y="388" class="body">− Drawings (+ Long-Term Loans)</text>
+
+  <!-- Bottom Banner -->
+  <rect class="navy" x="22" y="420" width="876" height="54"/>
+  <text x="460" y="443" text-anchor="middle" class="w-title">EXAM LIFESAVER: IF A FACTORY ALSO BUYS FINISHED GOODS FOR RESALE...</text>
+  <text x="460" y="462" text-anchor="middle" class="w-sub">Add "Purchases of Finished Goods" right beside Cost of Production inside the Trading Account (NEVER inside Manufacturing Account!)</text>
+</svg>

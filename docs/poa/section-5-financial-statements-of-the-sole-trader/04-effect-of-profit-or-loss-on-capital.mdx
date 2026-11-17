@@ -1,0 +1,265 @@
+---
+id: effect-of-profit-or-loss-on-capital
+title: "5.4 The Effect of Net Profit or Loss on Capital"
+sidebar_label: "5.4 Effect of Profit/Loss on Capital"
+sidebar_position: 4
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 5"
+  section="Financial Statements of the Sole-Trader — Preparation"
+  code="POA-S5-04"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="20 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+Why does a sole trader bother computing **Net Profit** in the Income Statement? Because in a one-owner business, **100% of Net Profit belongs to the owner — directly increasing Owner’s Capital**! Conversely, a **Net Loss** shrinks Owner’s Capital — and **Drawings** shrink it further. Mastering the **Owner’s Capital Equation** also unlocks a classic exam skill: **finding Net Profit backwards when only Opening and Closing Balance Sheets are known!**
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | The **Owner’s Capital Bridge** (`Closing Capital = Opening Capital + Additional Capital + Net Profit [or − Net Loss] − Drawings`) and **Statement of Affairs** profit recovery |
+| **Exam Focus** | Showing Net Profit vs. Net Loss accurately in the Balance Sheet Equity section, closing the Capital T-account, and solving for **missing Net Profit, Drawings, or Opening Capital** |
+| **Learning Outcome** | Demonstrate exactly how Net Profit, Net Loss, Additional Capital, and Drawings alter Owner’s Capital both in the Balance Sheet and in the Capital T-Account |
+
+<ObjectivesBox
+  id="poa-s5-04-obj"
+  objectives={[
+    'State the complete Owner’s Capital Equation linking Opening Capital to Closing Capital.',
+    'Show the exact presentation of a Net Profit year versus a Net Loss year in the "Financed By" section of a Balance Sheet.',
+    'Prepare a closed Capital T-Account showing transfers from the Income Statement (Net Profit or Loss) and the Drawings account.',
+    'Calculate unknown Net Profit (or Net Loss) from changes in Capital using the rearranged Capital Equation (Single-Entry / Incomplete Records preview).',
+  ]}
+/>
+
+---
+
+## 1. The Owner’s Capital Equation & T-Account Transfers
+
+<FormulaCard
+  title="The Owner’s Capital Bridge Equations"
+  onFormulaSheet={false}
+  summary="Profit and new investments grow Capital; Losses and Drawings shrink Capital."
+>
+
+**Forward Formula (Finding Closing Capital):**
+
+$$
+\text{Closing Capital} = \text{Opening Capital} + \text{Additional Capital} + \text{Net Profit} - \text{Drawings}
+$$
+
+*(If the business makes a **Net Loss**, **SUBTRACT** Net Loss instead of adding Net Profit!)*
+
+**Reverse Formula (Finding Missing Net Profit or Net Loss):**
+
+$$
+\text{Net Profit / (Loss)} = \text{Closing Capital} - \text{Opening Capital} + \text{Drawings} - \text{Additional Capital}
+$$
+
+</FormulaCard>
+
+### Double-Entry Closing Transfers Into the Capital Account
+
+| Year-End Item | Effect on Owner’s Capital | Closing Journal Entry | Side of Capital T-A/c |
+| :--- | :---: | :--- | :---: |
+| **Net Profit** | **Increases (+)** | Dr Income Statement · **Cr Capital** | **Credit (`Cr`)** |
+| **Net Loss** | **Decreases (−)** | **Dr Capital** · Cr Income Statement | **Debit (`Dr`)** |
+| **Additional Capital** | **Increases (+)** | Dr Bank/Cash/Asset · **Cr Capital** | **Credit (`Cr`)** |
+| **Drawings** *(cash or goods)* | **Decreases (−)** | **Dr Capital** · Cr Drawings | **Debit (`Dr`)** |
+
+:::warning Watch the Drawings Trap When Solving Backwards for Profit!
+Students often ask: *"Why do we **ADD** Drawings when calculating Net Profit backwards?"*
+Think logically! Suppose you started with **$50,000** and ended with **$55,000** (up +$5,000) — **EVEN THOUGH** you pulled **$8,000** out for personal living expenses! For your Capital to STILL grow by $5,000 after taking $8,000 out, your business had to earn **`$5,000 + $8,000 = $13,000`** of Net Profit!
+:::
+
+---
+
+## 2. Diagram 1: The Owner’s Capital Bridge (Profit vs. Loss)
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-5/04-capital-bridge-profit-loss-drawings.svg"
+  alt="Visual comparison of Scenario A (Profitable Year: $50,000 Opening Capital plus $18,000 Net Profit minus $7,000 Drawings equals $61,000 Closing Capital) versus Scenario B (Loss Year: $50,000 minus $6,000 Net Loss minus $7,000 Drawings equals $37,000 Closing Capital)."
+  caption="Diagram 1 (Static Reference): Notice the 'double drain' in Scenario B — when an owner keeps withdrawing personal cash during a loss-making year, Owner’s Capital erodes rapidly!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive Capital Movement Comparator
+
+<InteractiveDiagram
+  title="Interactive Comparator: Inspect All 4 Ways Capital Moves During a Year"
+  layout="compare"
+  instruction="Select any comparison below to contrast how profitable growth, net losses, drawings, and capital injections change the Balance Sheet and Capital T-Account."
+  nodes={[
+    {
+      label: 'Net Profit vs. Net Loss',
+      tag: 'Income Link',
+      detail: 'The final bottom-line figure from the Income Statement flows straight into Owner’s Capital.',
+      sideALabel: 'Net Profit Year (+$18,000)',
+      sideAText: 'ADDED to Opening Capital on the Balance Sheet and CREDITED to the Capital T-Account. Increases the owner’s financial stake in business Net Assets.',
+      sideBLabel: 'Net Loss Year (−$6,000)',
+      sideBText: 'SUBTRACTED from Opening Capital on the Balance Sheet and DEBITED to the Capital T-Account. Shrinks the owner’s stake — and if losses exceed Capital, the owner’s equity turns negative (insolvent)!',
+      examTip: 'Always double-check brackets! On a Balance Sheet, write "Less: Net Loss (6,000)" so you don’t accidentally add a loss!',
+    },
+    {
+      label: 'Drawings > Net Profit?',
+      tag: 'Silent Erosion',
+      detail: 'Can a PROFITABLE business still end the year with LOWER Closing Capital than Opening Capital?',
+      sideALabel: 'Healthy Reinvestment (Profit > Drawings)',
+      sideAText: 'Net Profit $20,000 vs. Drawings $8,000 → $12,000 profit is PLOUGHED BACK into the business, growing Capital and funding future expansion without bank loans!',
+      sideBLabel: 'Over-Drawing (Drawings > Profit)',
+      sideAText: 'Net Profit $10,000 vs. Drawings $16,000 → Capital SHRINKS by $6,000! The owner is effectively eating away original business capital, starving the business of cash.',
+      examTip: 'Examiners love asking: "Explain how Capital decreased even though the business made a Net Profit." Answer: Drawings exceeded Net Profit!',
+    },
+    {
+      label: 'Cash Drawings vs. Goods Drawings',
+      tag: 'Total Drawings',
+      detail: 'Owners sometimes withdraw business inventory (food, clothes, electronics) for family use instead of cash.',
+      sideALabel: 'Cash / Bank Drawings',
+      sideAText: 'Dr Drawings / Cr Cash or Bank. Reduces Cash/Bank on the Balance Sheet and reduces Capital via Drawings.',
+      sideBLabel: 'Goods Taken for Own Use',
+      sideAText: 'Dr Drawings / Cr Purchases (valued at COST price, never selling price!). Deducted from Purchases in the Income Statement AND included inside total Drawings deducted from Capital!',
+      examTip: 'NEVER value owner’s goods drawings at selling price — you cannot earn profit by selling goods to yourself!',
+    },
+    {
+      label: 'Solving Missing Figures Backwards',
+      tag: 'Exam Superpower',
+      detail: 'If a sole trader did not keep full journals, you can still calculate Net Profit using ONLY Assets, Liabilities, and Drawings!',
+      sideALabel: 'Step 1: Find Opening & Closing Capital',
+      sideAText: 'Use C = A − L on Jan 1 (Opening Capital) and on Dec 31 (Closing Capital).',
+      sideBLabel: 'Step 2: Apply Reverse Capital Formula',
+      sideBText: 'Net Profit = Closing Capital − Opening Capital + Drawings − Additional Capital. (A negative answer means a Net Loss!)',
+      examTip: 'Always verify your backwards answer by plugging it back into the forward formula: Open + Add + Profit − Draw = Close ✓!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Capital T-Account Presentation & Solving Missing Net Profit Backwards"
+  marks={10}
+  problem={
+    <>
+      <p>
+        <strong>Part A (5 marks):</strong> <strong>Maya’s Floral Studio</strong> began 2026 with
+        <strong> Opening Capital of $42,000</strong>. On 1 July 2026, Maya invested an additional
+        <strong> $8,000</strong> from her personal savings into the business bank account. During
+        the year, Maya withdrew <strong>$5,500</strong> in cash and took <strong>$500</strong> of
+        store goods (at cost) for family gifts. Because of road construction outside her shop, the
+        business suffered a <strong>Net Loss of $3,400</strong> for the year ended 31 December 2026.
+        Prepare Maya’s <strong>Capital T-Account</strong> balanced off on 31 December 2026.
+      </p>
+      <p>
+        <strong>Part B (5 marks):</strong> Another sole trader, <strong>Devon Repairs</strong>,
+        had Total Assets of $68,000 and Total Liabilities of $22,000 on 1 January 2026. On
+        31 December 2026, Total Assets were $84,000 and Total Liabilities were $26,000. During the
+        year, Devon introduced $4,000 additional capital and withdrew $9,500 in Drawings. Calculate
+        Devon’s <strong>Net Profit or Net Loss</strong> for 2026.
+      </p>
+    </>
+  }
+>
+
+**Part A — Maya’s Capital Account (5 marks):**
+*(Total Drawings = `$5,500 cash + $500 goods = $6,000`!)*
+
+**Dr &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Capital Account (Maya’s Floral Studio) &emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Cr**
+
+| Date | Details | $ | Date | Details | $ |
+| :--- | :--- | ---: | :--- | :--- | ---: |
+| Dec 31 | Income Statement *(Net Loss)* | 3,400 | Jan 1 | Balance b/d | 42,000 |
+| Dec 31 | Drawings *($5,500 + $500)* | 6,000 | Jul 1 | Bank *(Additional Capital)* | 8,000 |
+| **Dec 31** | **Balance c/d** | **40,600** | | | |
+| | **Total** | **50,000** | | **Total** | **50,000** |
+| | | | **Jan 1** | **Balance b/d** | **40,600** |
+
+*(Check: `$42,000 + $8,000 − $3,400 − $6,000 = $40,600` Closing Capital ✓!)*
+
+---
+
+**Part B — Finding Devon Repairs’ Net Profit Backwards (5 marks):**
+1. **Opening Capital (1 Jan):** `Assets − Liabilities` = `$68,000 − $22,000` = **$46,000** *(1 mark)*
+2. **Closing Capital (31 Dec):** `Assets − Liabilities` = `$84,000 − $26,000` = **$58,000** *(1 mark)*
+3. **Apply Reverse Capital Formula:** *(3 marks)*
+   - `Net Profit = Closing Capital − Opening Capital + Drawings − Additional Capital`
+   - `Net Profit = $58,000 − $46,000 + $9,500 − $4,000`
+   - **Net Profit = `$17,500`**!
+
+*(Forward double-check: `$46,000 + $4,000 + $17,500 − $9,500 = $58,000` ✓!)*
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Effect of Net Profit or Loss on Capital"
+  items={[
+    {
+      statement: 'A Net Loss is transferred to the CREDIT side of the owner’s Capital Account at year-end.',
+      answer: false,
+      explanation: 'Net Profit is CREDITED to Capital (increasing it); a Net Loss is DEBITED to Capital (reducing it)!',
+    },
+    {
+      statement: 'If a business makes a Net Profit of $12,000 and the owner withdraws $15,000 in Drawings (with no added capital), Closing Capital will be $3,000 LOWER than Opening Capital.',
+      answer: true,
+      explanation: 'Because Drawings ($15,000) exceeded Net Profit ($12,000), Owner’s Capital shrinks by $3,000.',
+    },
+    {
+      statement: 'When calculating Net Profit backwards from Opening and Closing Capital, Drawings must be ADDED back.',
+      answer: true,
+      explanation: 'Net Profit = Closing Capital − Opening Capital + Drawings − Additional Capital.',
+    },
+    {
+      statement: 'When an owner takes business merchandise home for personal use, Drawings should be recorded at full retail selling price.',
+      answer: false,
+      explanation: 'Goods taken for personal use are ALWAYS recorded at COST price (Dr Drawings / Cr Purchases) so the owner doesn’t invent artificial profit on themselves.',
+    },
+    {
+      statement: 'Retaining (ploughing back) Net Profit instead of withdrawing it all as Drawings increases the owner’s Capital and helps finance business growth.',
+      answer: true,
+      explanation: 'Retained profit strengthens Capital, boosts Working Capital, and funds expansion without extra bank debt.',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s5-04-project"
+  title="Mini-Project: Three-Year Capital Growth & Mystery-Profit Case Study"
+  duration="25 mins"
+  scenario="Track the 3-year Capital journey of 'Peak Fitness Studio' from launch through Year 3: Year 1 starts with $30,000 Capital, earns $14,000 Net Profit, owner withdraws $6,000 Drawings. Year 2 suffers a $4,500 Net Loss (new gym competitor opened), owner withdraws $5,500 Drawings, and invests $3,000 extra cash. Year 3 ends with Total Assets $64,000 and Total Liabilities $16,000, after owner withdrew $8,000 Drawings (no new capital added) — find Year 3’s mystery Net Profit!"
+  steps={[
+    'Build a 3-Year Capital Bridge Table showing Opening Capital, Additional Capital, Net Profit/(Loss), Drawings, and Closing Capital for Year 1, Year 2, and Year 3 (remember: Year 1’s Closing Capital becomes Year 2’s Opening Capital!).',
+    'Calculate Year 3’s Closing Capital using C = A − L, then solve backwards to uncover Year 3’s exact Net Profit!',
+    'Draw the Year 2 Capital T-Account cleanly (showing the Net Loss and Drawings on the Debit side and the $3,000 cash injection on the Credit side).',
+    'Write a 2-sentence Business Advisor comment comparing Year 2’s "double drain" against Year 3’s rebound.',
+  ]}
+  deliverables={[
+    'Complete 3-Year Capital Bridge Table',
+    'Solved Year 3 Mystery Net Profit calculation with forward proof',
+    'Balanced Year 2 Capital T-Account + 2-sentence Advisor commentary',
+  ]}
+  rubric={[
+    'Year 1 Closing Capital = $38,000 ($30,000 + $14,000 − $6,000).',
+    'Year 2 Closing Capital = $31,000 ($38,000 + $3,000 − $4,500 − $5,500).',
+    'Year 3 Closing Capital = $48,000 ($64,000 − $16,000) → Year 3 Net Profit = $48,000 − $31,000 + $8,000 = $25,000!',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **Forward:** `Closing Capital = Opening Capital + Additional Capital + Net Profit (or − Net Loss) − Drawings`.
+- **Reverse (Missing Profit):** `Net Profit = Closing Capital − Opening Capital + Drawings − Additional Capital`.
+- **Capital T-Account:** **Credit** increases (Opening `b/d`, Added Capital, **Net Profit**); **Debit** decreases (**Net Loss**, **Drawings**)!
+:::

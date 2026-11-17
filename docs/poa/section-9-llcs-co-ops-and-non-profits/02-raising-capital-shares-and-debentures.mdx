@@ -1,0 +1,224 @@
+---
+id: raising-capital-shares-and-debentures
+title: "9.2 Raising Capital: Shares (Ordinary vs. Preference) and Debentures"
+sidebar_label: "9.2 Shares & Debentures"
+sidebar_position: 2
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 9"
+  section="LLCs, Co-ops & Non-Profits — Limited Liability Companies"
+  code="POA-S9-02"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="25 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+Companies raise long-term financing from **two fundamentally different worlds**: **Share Capital (Ownership / Equity)** — split into **Ordinary Shares** and **Preference Shares** — and **Debentures (Long-Term Loans / Debt)**. Mixing up a Preference Dividend with Debenture Interest is one of the costliest mistakes on POA exams: **Debenture Interest MUST be paid in the Income Statement even if the company makes a LOSS**, whereas **Dividends are ONLY paid out of profits in the Appropriation Account**!
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | **Ordinary Shares** vs. **Preference Shares** *(Cumulative vs. Non-Cumulative)* vs. **Debentures**, plus the **Share Capital Ladder** (`Authorized → Issued → Called-Up → Paid-Up`) |
+| **Exam Focus** | Knowing the exact **Payment Priority Order** (`1. Debenture Holders → 2. Preference Shareholders → 3. Ordinary Shareholders`) and ALWAYS calculating dividends on **ISSUED** (never Authorized!) Share Capital |
+| **Learning Outcome** | Compare Ordinary Shares, Preference Shares, and Debentures accurately and calculate interest and dividend entitlements in both profit and loss years |
+
+<ObjectivesBox
+  id="poa-s9-02-obj"
+  objectives={[
+    'Distinguish clearly among Ordinary Shares, Preference Shares, and Debentures across status, voting rights, return type, and liquidation priority.',
+    'Explain Cumulative vs. Non-Cumulative Preference Shares and Participating vs. Redeemable Preference Shares.',
+    'Define Authorized, Issued, Called-Up, and Paid-Up Share Capital accurately.',
+    'Apply the exact payment priority order to compute Debenture Interest, Preference Dividends, and Ordinary Dividends in profit and loss scenarios.',
+  ]}
+/>
+
+---
+
+## 1. Three-Way Comparison: Ordinary Shares vs. Preference Shares vs. Debentures
+
+| Feature | Ordinary Shares *(Equity)* | Preference Shares *(Equity)* | Debentures *(Long-Term Debt)* |
+| :--- | :--- | :--- | :--- |
+| **Legal Status** | **True Owners** (residual risk-takers) | **Priority Owners** | **External Creditors (Lenders!)** |
+| **Voting Rights at AGM** | **YES** *(usually 1 share = 1 vote)* | **Usually NO** *(unless dividends in arrears)* | **NO** |
+| **Type of Return** | **Variable Dividend** *(decided by Directors)* | **Fixed `%` Dividend** *(e.g. `6%` Pref)* | **Fixed `%` Interest** *(e.g. `8%` Deb)* |
+| **Must Be Paid in a Loss Year?** | **NO** (`$0` dividend) | **NO** *(carried forward ONLY if Cumulative!)* | **YES — LEGALLY MANDATORY!** |
+| **Where Return Appears** | **Appropriation Account** | **Appropriation Account** | **Income Statement (Operating Expense!)** |
+| **Balance Sheet Section** | **Shareholders’ Equity** | **Shareholders’ Equity** | **Non-Current Liabilities** |
+| **Priority on Liquidation** | **3rd (LAST!)** | **2nd** *(before Ordinary)* | **1st (FIRST!)** *(often secured on assets!)* |
+
+### Cumulative vs. Non-Cumulative Preference Shares
+- **Cumulative Preference Shares:** If the company earns too little profit to pay the fixed `%` Preference Dividend this year, the unpaid amount **accumulates as arrears** and MUST be paid in full in future profitable years **before Ordinary Shareholders receive a single cent**!
+- **Non-Cumulative Preference Shares:** If a dividend is skipped in a bad year, it is **lost forever** and does NOT carry forward.
+
+### The Share Capital Ladder (Never Confuse Authorized vs. Issued!)
+1. **Authorized (Registered / Nominal) Capital:** The **maximum legal ceiling** of share capital the company is permitted to issue under its Memorandum of Association *(shown as a **memo only** — NEVER added into Balance Sheet totals!)*
+2. **Issued Share Capital:** The portion of Authorized Capital **actually sold/allotted** to investors *(entered in the ledger — **all dividends are calculated on ISSUED capital!**)*
+3. **Called-Up Capital:** The amount per issued share the company has formally asked shareholders to pay so far.
+4. **Paid-Up Capital:** The actual cash received by the company from shareholders *(Called-Up minus any unpaid Calls in Arrears)*.
+
+---
+
+## 2. Diagram 1: Ordinary vs. Preference vs. Debentures Comparison
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-9/02-ordinary-vs-preference-vs-debentures.svg"
+  alt="Three-column comparison of Ordinary Shares, Preference Shares, and Debentures covering legal status, voting rights, return type, financial statement placement, and liquidation priority, plus the Share Capital Ladder."
+  caption="Diagram 1 (Static Reference): Memorize the strict 1–2–3 payment waterfall — Debentures FIRST (Income Statement Expense), Preference Shares SECOND, Ordinary Shares THIRD!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive Financing-Choice Explorer
+
+<InteractiveDiagram
+  title="Interactive Hub: Tap Each Financing Instrument to Test Real Corporate Scenarios"
+  layout="hub"
+  centerLabel="Capital Mix"
+  centerSublabel="Equity vs. Debt"
+  instruction="Select any financing decision around the hub to see how CFOs and examiners evaluate it."
+  nodes={[
+    {
+      label: 'Why Issue Ordinary Shares?',
+      tag: 'Permanent Equity',
+      tone: 'positive',
+      detail: 'Ordinary shares NEVER have to be repaid and carry ZERO mandatory annual interest — giving the company maximum breathing room during tough years!',
+      example: 'In a recession year, Directors can set the Ordinary Dividend to $0 legally without risking bankruptcy.',
+      examTip: 'Trade-off: Issuing new Ordinary Shares gives away voting rights and dilutes existing owners’ control!',
+    },
+    {
+      label: 'Why Issue Preference Shares?',
+      tag: 'Keep Control!',
+      tone: 'positive',
+      detail: 'Attract conservative investors who want predictable fixed income (e.g., 6% p.a.) WITHOUT giving away AGM voting power — and still avoid mandatory interest payments in a loss year!',
+      example: 'Remember: 6% Preference Dividend is ALWAYS calculated on ISSUED Preference Capital (e.g., 6% × $60,000 = $3,600), NEVER on Authorized Capital!',
+      examTip: 'Even though Preference Shares have a fixed %, they are still SHARE CAPITAL (Equity), NOT a liability!',
+    },
+    {
+      label: 'Why Issue Debentures?',
+      tag: 'Fixed Debt',
+      tone: 'warning',
+      detail: 'Debentures let a company raise big long-term cash WITHOUT diluting shareholder ownership — and Debenture Interest is tax-deductible before Corporation Tax!',
+      example: 'Risk: 8% Debentures ($50,000) force a mandatory $4,000 cash interest payment every single year — even if Operating Profit drops to $3,000!',
+      examTip: 'Debenture holders are CREDITORS (Non-Current Liabilities) and can seize secured assets if the company defaults on interest!',
+    },
+    {
+      label: 'Authorized vs. Issued Trap',
+      tag: '#1 Paper 1 Error!',
+      tone: 'warning',
+      detail: 'Exam questions almost ALWAYS state BOTH Authorized Capital (e.g. $200k) AND Issued Capital (e.g. $120k). Which one do you multiply by 10% for dividends?',
+      example: 'ALWAYS multiply by ISSUED Capital ($120k × 10% = $12,000)! Authorized Capital is ONLY an upper legal limit — unissued shares have no owners to pay!',
+      examTip: 'Cross out "Authorized" lightly when computing dividends so your calculator never grabs the wrong figure!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Payment Priority Waterfall in a Good Year vs. a Tough Year (IslandSolar Ltd)"
+  marks={12}
+  problem={
+    <>
+      <p>
+        <strong>Scenario:</strong> <strong>IslandSolar Ltd</strong> has the following capital and
+        debt structure:
+      </p>
+      <ul>
+        <li><strong>Authorized Share Capital:</strong> 200,000 Ordinary Shares of `$1.00` each (`$200,000`); 50,000 `6%` Cumulative Preference Shares of `$2.00` each (`$100,000`).</li>
+        <li><strong>Issued &amp; Paid-Up Share Capital:</strong> 120,000 Ordinary Shares (`$120,000`); 30,000 `6%` Cumulative Preference Shares (`$60,000`).</li>
+        <li><strong>Long-Term Debt:</strong> `$50,000` of <strong>`8%` Debentures (2035)</strong>.</li>
+      </ul>
+      <ol>
+        <li><strong>Good Year (2026):</strong> Operating Profit <em>before Debenture Interest</em> is <strong>$34,000</strong>, and the Board declares a <strong>10% Ordinary Dividend</strong>. Calculate (a) Debenture Interest, (b) Net Profit after Interest, (c) Preference Dividend, (d) Ordinary Dividend, and (e) Profit Retained. <em>[7 marks]</em></li>
+        <li><strong>Tough Year (2027):</strong> Suppose Operating Profit <em>before Debenture Interest</em> drops to only <strong>$3,000</strong>. Explain the exact legal treatment of Debenture Interest, Cumulative Preference Dividends, and Ordinary Dividends. <em>[5 marks]</em></li>
+      </ol>
+    </>
+  }
+>
+
+### 1. Good Year (2026) — Exact Payment Waterfall *(7 marks)*
+*(Always calculate on **ISSUED** Share Capital — NEVER Authorized Capital!)*
+1. **(a) Debenture Interest *(Paid FIRST — Income Statement Expense)*:** `8% × $50,000` = **`$4,000`** *(1.5 marks)*
+2. **(b) Net Profit after Debenture Interest:** `$34,000 − $4,000` = **`$30,000`** *(1 mark)*
+3. **(c) `6%` Preference Dividend *(Paid SECOND — Appropriation)*:** `6% × $60,000` *(ISSUED!)* = **`$3,600`** *(1.5 marks)*
+4. **(d) `10%` Ordinary Dividend *(Paid THIRD — Appropriation)*:** `10% × $120,000` *(ISSUED!)* = **`$12,000`** *(1.5 marks)*
+5. **(e) Profit Retained in the Company:** `$30,000 − $3,600 − $12,000` = **`$14,400`** *(1.5 marks)*
+
+### 2. Tough Year (2027 — Operating Profit `$3,000` Only) *(5 marks)*
+- **Debenture Interest (`$4,000`):** **MUST STILL BE PAID IN FULL!** Because Debenture holders are creditors, charging `$4,000` produces a **Net Loss of `($1,000)`** (`$3,000 − $4,000`) *(2 marks)*.
+- **Cumulative Preference Dividend (`$3,600`):** **Cannot be paid** out of a loss year (`$0` paid in 2027), **BUT** because the shares are **Cumulative**, the unpaid **`$3,600`** accumulates as **dividend arrears** and must be paid FIRST in 2028 (alongside 2028’s `$3,600` = `$7,200` total) before Ordinary shareholders get anything *(2 marks)*.
+- **Ordinary Dividend:** **`$0`** — Ordinary shareholders absorb the residual risk *(1 mark)*.
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Shares vs. Debentures"
+  items={[
+    {
+      statement: 'Debenture holders are long-term creditors of the company, NOT owners, and do NOT hold voting rights at the Annual General Meeting.',
+      answer: true,
+      explanation: 'Correct — Debentures represent borrowed long-term debt (Non-Current Liabilities), not ownership equity.',
+    },
+    {
+      statement: 'Dividends on Ordinary and Preference Shares are calculated as a percentage of AUTHORIZED Share Capital.',
+      answer: false,
+      explanation: 'NEVER! Dividends are ALWAYS calculated on ISSUED (paid-up) Share Capital — you cannot pay dividends on unissued shares!',
+    },
+    {
+      statement: 'Debenture Interest must be paid even in a year when the company makes an operating loss.',
+      answer: true,
+      explanation: 'Yes — interest on Debentures is a contractual finance expense deducted in the Income Statement regardless of profit.',
+    },
+    {
+      statement: 'If a company skips a dividend on Cumulative Preference Shares during a loss year, those shareholders permanently lose their right to that missed dividend.',
+      answer: false,
+      explanation: 'That is NON-Cumulative! CUMULATIVE Preference shareholders carry missed dividends forward as arrears to be paid first in future profitable years.',
+    },
+    {
+      statement: 'Ordinary shareholders receive their dividends LAST, yet typically enjoy voting rights and the highest upside in profitable boom years.',
+      answer: true,
+      explanation: 'Spot on! Ordinary shares carry the highest residual risk and the highest potential reward plus voting control.',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s9-02-project"
+  title="Mini-Project: Capital Structure & Payout Calculator for OceanWind Energy PLC"
+  duration="20 mins"
+  scenario="OceanWind Energy PLC has: Authorized Capital — 500,000 Ordinary Shares ($1 par = $500,000) & 100,000 5% Preference Shares ($2 par = $200,000); Issued & Paid-Up Capital — 300,000 Ordinary Shares ($300,000) & 60,000 5% Preference Shares ($120,000); Long-Term Debt — $80,000 of 10% Debentures. In 2026, Operating Profit BEFORE Debenture Interest is $58,000, and the Board proposes an 8% Ordinary Dividend."
+  steps={[
+    'Build a neat Capital Structure Summary separating Authorized (memo!), Issued Equity, and Non-Current Debt.',
+    'Calculate step-by-step in strict 1–2–3 priority order: (1) 10% Debenture Interest, (2) Net Profit after Interest, (3) 5% Preference Dividend, (4) 8% Ordinary Dividend, and (5) Retained Profit.',
+    'Explain in 2 sentences why an investor seeking steady low-risk income might prefer 10% Debentures over Ordinary Shares, while a growth investor prefers Ordinary Shares.',
+  ]}
+  deliverables={[
+    'Capital Structure Summary Table (Authorized vs. Issued vs. Debt)',
+    '5-Step Payment Waterfall Calculation for 2026',
+    '2-sentence Investor Profile Comparison',
+  ]}
+  rubric={[
+    'Debenture Interest = 10% × $80,000 = $8,000 → Net Profit after Interest = $50,000 ($58,000 − $8,000).',
+    'Preference Dividend = 5% × $120,000 (ISSUED, not $200k!) = $6,000; Ordinary Dividend = 8% × $300,000 (ISSUED, not $500k!) = $24,000.',
+    'Profit Retained in company = $50,000 − $6,000 − $24,000 = $20,000 exact!',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **Priority Order:** **1. Debenture Interest (`IS Expense`)** → **2. Preference Dividend (`Approp.`)** → **3. Ordinary Dividend (`Approp.`)**!
+- ALWAYS multiply dividend `%` by **ISSUED** Share Capital — **NEVER Authorized Capital**!
+:::

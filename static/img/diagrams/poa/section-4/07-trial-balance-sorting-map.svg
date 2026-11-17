@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 420" fill="none" role="img" aria-label="Trial Balance Debit and Credit Sorting Blueprint">
+  <rect width="820" height="420" rx="12" fill="#1B365D"/>
+  <rect x="14" y="14" width="792" height="392" rx="10" stroke="#2D507C" stroke-width="1.2"/>
+
+  <!-- Header -->
+  <text x="34" y="46" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="18" font-weight="700">Trial Balance Sorting Map: Debit Column vs. Credit Column</text>
+  <text x="34" y="66" fill="#9DD9CB" font-family="monospace" font-size="11.5">LIST EVERY CLOSING LEDGER BALANCE (b/d) — TOTAL DEBITS MUST EQUAL TOTAL CREDITS</text>
+
+  <!-- Left Column: DEBIT -->
+  <rect x="34" y="88" width="368" height="244" rx="10" fill="#122440" stroke="#6BC4B0" stroke-width="2"/>
+  <rect x="34" y="88" width="368" height="36" rx="9" fill="#4E8577"/>
+  <text x="218" y="111" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="12" font-weight="800">DEBIT COLUMN (D · E · A · D)</text>
+
+  <g font-family="system-ui, sans-serif" font-size="11.5">
+    <text x="52" y="146" fill="#6BC4B0" font-weight="800">1. ALL ASSETS</text>
+    <text x="52" y="164" fill="#DCE8F2">Premises, Vans, Equipment, Opening Inventory,</text>
+    <text x="52" y="180" fill="#DCE8F2">Trade Receivables (Debtors), Bank (Dr), Cash</text>
+
+    <text x="52" y="206" fill="#6BC4B0" font-weight="800">2. ALL EXPENSES &amp; PURCHASES</text>
+    <text x="52" y="224" fill="#DCE8F2">Purchases, Carriage In/Out, Rent, Wages,</text>
+    <text x="52" y="240" fill="#DCE8F2">Electricity, Bad Debts, <tspan font-weight="700" fill="#F5A352">Discount Allowed</tspan></text>
+
+    <text x="52" y="266" fill="#6BC4B0" font-weight="800">3. DRAWINGS &amp; RETURNS INWARDS</text>
+    <text x="52" y="284" fill="#DCE8F2">Drawings, <tspan font-weight="700" fill="#F5A352">Returns Inwards (Sales Returns)</tspan></text>
+  </g>
+  <rect x="52" y="298" width="332" height="24" rx="5" fill="#1B365D"/>
+  <text x="218" y="314" text-anchor="middle" fill="#9DD9CB" font-family="monospace" font-size="10" font-weight="700">Example Debit Total: $125,000</text>
+
+  <!-- Right Column: CREDIT -->
+  <rect x="418" y="88" width="368" height="244" rx="10" fill="#122440" stroke="#F5A352" stroke-width="2"/>
+  <rect x="418" y="88" width="368" height="36" rx="9" fill="#C84E24"/>
+  <text x="602" y="111" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="12" font-weight="800">CREDIT COLUMN (C · L · I · C)</text>
+
+  <g font-family="system-ui, sans-serif" font-size="11.5">
+    <text x="436" y="146" fill="#F5A352" font-weight="800">1. ALL LIABILITIES</text>
+    <text x="436" y="164" fill="#DCE8F2">Trade Payables (Creditors), Bank Loan, Mortgage,</text>
+    <text x="436" y="180" fill="#DCE8F2"><tspan font-weight="700" fill="#F5A352">Bank Overdraft</tspan>, Provisions (Depr. &amp; Doubtful)</text>
+
+    <text x="436" y="206" fill="#F5A352" font-weight="800">2. ALL INCOME &amp; REVENUES</text>
+    <text x="436" y="224" fill="#DCE8F2">Sales Revenue, Rent Received, Commission</text>
+    <text x="436" y="240" fill="#DCE8F2">Received, <tspan font-weight="700" fill="#6BC4B0">Discount Received</tspan></text>
+
+    <text x="436" y="266" fill="#F5A352" font-weight="800">3. CAPITAL &amp; RETURNS OUTWARDS</text>
+    <text x="436" y="284" fill="#DCE8F2">Owner’s Capital, <tspan font-weight="700" fill="#6BC4B0">Returns Outwards (Purch. Ret.)</tspan></text>
+  </g>
+  <rect x="436" y="298" width="332" height="24" rx="5" fill="#1B365D"/>
+  <text x="602" y="314" text-anchor="middle" fill="#F5A352" font-family="monospace" font-size="10" font-weight="700">Example Credit Total: $125,000 ✓</text>
+
+  <!-- Bottom Trap Box -->
+  <rect x="34" y="346" width="752" height="46" rx="9" fill="#122440" stroke="#F5A352" stroke-width="1.3"/>
+  <text x="410" y="366" text-anchor="middle" fill="#F5A352" font-family="monospace" font-size="10.5" font-weight="700">HEADING &amp; INVENTORY TRAP:</text>
+  <text x="410" y="383" text-anchor="middle" fill="#F4F7FA" font-family="system-ui, sans-serif" font-size="11">Title: <tspan fill="#6BC4B0" font-weight="700">“Trial Balance as at [Date]”</tspan>  ·  <tspan fill="#F5A352" font-weight="700">Opening Inventory</tspan> goes INSIDE the Trial Balance (Dr); <tspan fill="#9DD9CB" font-weight="700">Closing Inventory</tspan> sits as a NOTE below!</text>
+</svg>

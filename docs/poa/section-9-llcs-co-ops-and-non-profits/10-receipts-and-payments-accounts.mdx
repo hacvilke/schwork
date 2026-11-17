@@ -1,0 +1,231 @@
+---
+id: receipts-and-payments-accounts
+title: "9.10 Preparing Receipts and Payments Accounts"
+sidebar_label: "9.10 Receipts & Payments"
+sidebar_position: 10
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 9"
+  section="LLCs, Co-ops & Non-Profits — Non-Profit Organizations"
+  code="POA-S9-10"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="20 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+Every club’s Honorary Treasurer begins the year-end accounting process with a **Receipts and Payments Account** — which is literally a **summarized Cash Book** for the entire year! It follows **STRICT CASH-BASIS ACCOUNTING**: if cash actually moved into or out of the club’s tin or bank account during the year *(whether Capital or Revenue, whether for 2025, 2026, or 2027!)*, it goes IN; if NO cash moved *(Depreciation, Accrued Expenses, Unpaid Subscriptions)*, it stays **100% OUT**!
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | Constructing a **Receipts and Payments Account** (`Dr = Opening Cash + ALL Cash In`, `Cr = ALL Cash Out + Closing Cash c/d`) and contrasting it cleanly against the **Income and Expenditure Account** |
+| **Exam Focus** | NEVER putting **Depreciation**, **Accruals**, or **Prepayments** inside Receipts &amp; Payments, ALWAYS including **Capital purchases/sales** if paid/received in cash, and explaining why **Closing Cash ≠ Annual Surplus** |
+| **Learning Outcome** | Prepare a balanced Receipts and Payments Account and explain its exact differences from an Income and Expenditure Account |
+
+<ObjectivesBox
+  id="poa-s9-10-obj"
+  objectives={[
+    'Define a Receipts and Payments Account and explain its relationship to the Cash Book.',
+    'Prepare an accurately formatted Receipts and Payments Account showing Opening and Closing Cash/Bank balances (including Overdrafts when applicable).',
+    'Contrast the Receipts and Payments Account (Cash Basis) with the Income and Expenditure Account (Accrual Basis) across five key dimensions.',
+    'Explain clearly why a positive Closing Cash balance does NOT automatically mean the club made an operating Surplus.',
+  ]}
+/>
+
+---
+
+## 1. Receipts & Payments Account vs. Income & Expenditure Account *(Exam Gold!)*
+
+| Feature | Receipts &amp; Payments Account | Income &amp; Expenditure Account |
+| :--- | :--- | :--- |
+| **Accounting Basis** | **CASH BASIS** *(actual money received/paid ONLY!)* | **ACCRUAL BASIS** *(earned income &amp; incurred expenses!)* |
+| **Nature of Account** | **Real Account** *(Summary of Cash Book)* | **Nominal Account** *(Non-profit Income Statement)* |
+| **Opening &amp; Closing Balances** | Starts with **Opening Cash/Bank**; ends with **Closing Cash/Bank** | **NO** Opening/Closing cash balances! |
+| **Capital vs. Revenue Items** | Includes **BOTH Capital AND Revenue** cash flows *(e.g. buying new equipment!)* | **REVENUE items ONLY!** *(Excludes Capital asset purchases!)* |
+| **Time Period Covered** | Includes cash for **PAST, CURRENT, AND FUTURE** years! | Strictly **CURRENT YEAR ONLY!** *(Adjusted for accruals/prepayments!)* |
+| **Non-Cash Items *(Depr.)*** | **EXCLUDED!** *(Zero depreciation or bad debts!)* | **INCLUDED!** *(Charges annual depreciation &amp; provisions!)* |
+| **Final Balancing Figure** | **Closing Cash / Bank Balance** *(or Bank Overdraft!)* | **Surplus** or **Deficit** *(transferred to Accumulated Fund!)* |
+
+---
+
+## 2. Diagram 1: Receipts & Payments vs. Income & Expenditure Side-by-Side
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-9/10-receipts-payments-vs-income-expenditure.svg"
+  alt="Two-panel comparison contrasting the cash-basis Receipts and Payments Account (Debit Receipts, Credit Payments, Closing Cash) against the accrual-basis Income and Expenditure Account (Revenue items only, Depreciation included, Surplus or Deficit)."
+  caption="Diagram 1 (Static Reference): Memorize the bottom warning — NEVER include Depreciation or Accrued Expenses inside a Receipts & Payments Account, and NEVER put Capital Asset purchases inside Income & Expenditure!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive Cash-vs-Accrual Filter Game
+
+<InteractiveDiagram
+  title="Interactive Comparator: Does This Club Item Go Into Receipts & Payments or Income & Expenditure?"
+  layout="compare"
+  instruction="Tap any of the 4 classic exam items below to see how BOTH accounts handle it!"
+  nodes={[
+    {
+      label: 'Bought New Court Equipment ($5,500 Cash)',
+      tag: 'Capital Payment',
+      detail: 'The club paid $5,500 cash for new tennis nets and court rollers.',
+      sideALabel: 'Receipts & Payments A/c',
+      sideAText: 'YES — CREDIT $5,500! Because real cash left the club’s bank account this year, it MUST appear on the Payments (Cr) side!',
+      sideBLabel: 'Income & Expenditure A/c',
+      sideBText: 'NO — EXCLUDED! Buying a Non-Current Asset is Capital Expenditure → goes to the Balance Sheet (ONLY its annual Depreciation hits I&E)!',
+      examTip: 'This is the #1 test of whether a student understands Capital vs. Revenue in Non-Profits!',
+    },
+    {
+      label: 'Depreciation of Equipment ($900)',
+      tag: 'Non-Cash Charge',
+      detail: 'Club policy depreciates court equipment by $900 for the year.',
+      sideALabel: 'Receipts & Payments A/c',
+      sideAText: 'NO — EXCLUDED! Nobody writes a cheque to "Depreciation" — zero cash left the bank!',
+      sideBLabel: 'Income & Expenditure A/c',
+      sideBText: 'YES — EXPENDITURE $900! Accrual accounting matches the wear-and-tear cost of using equipment to the current year!',
+      examTip: 'Putting Depreciation inside a Receipts & Payments Account is an instant error on Paper 1 and Paper 2!',
+    },
+    {
+      label: 'Subscriptions Paid in Advance for 2027 ($1,000)',
+      tag: 'Future Year Cash',
+      detail: 'Eager members paid $1,000 in December 2026 toward their 2027 annual dues.',
+      sideALabel: 'Receipts & Payments A/c',
+      sideAText: 'YES — DEBIT $1,000! Cash arrived in the club’s bank in 2026, so R&P records ALL $16,400 collected regardless of year!',
+      sideBLabel: 'Income & Expenditure A/c',
+      sideBText: 'NO — SUBTRACTED OUT! The $1,000 belongs to 2027 → removed from 2026 income and parked in Current Liabilities (Subscriptions in Advance)!',
+      examTip: 'Remember: R&P cares WHEN cash moved; I&E cares WHICH year the income/expense belongs to!',
+    },
+    {
+      label: 'Unpaid Electricity Bill on 31 Dec ($350)',
+      tag: 'Accrued Expense',
+      detail: 'December’s $350 electricity bill arrived on 31 Dec and will be paid in January 2027.',
+      sideALabel: 'Receipts & Payments A/c',
+      sideAText: 'NO — EXCLUDED! No cash left the bank during 2026!',
+      sideBLabel: 'Income & Expenditure A/c',
+      sideBText: 'YES — ADDED TO ELECTRICITY EXPENSE (+$350) AND listed as Accrued Expense under Current Liabilities on the Balance Sheet!',
+      examTip: 'Because R&P ignores unpaid bills AND capital purchases, a club can have $6,000 in the Bank yet actually suffer a Deficit (or vice versa)!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Preparing a Receipts & Payments Account & Diagnosing Cash vs. Surplus (Harborview Tennis Club)"
+  marks={12}
+  problem={
+    <>
+      <p>
+        <strong>Scenario:</strong> The Honorary Treasurer of <strong>Harborview Tennis Club</strong>
+        provides the following cash summary for the year ended <strong>31 December 2026</strong>:
+      </p>
+      <ul>
+        <li><strong>Opening Bank Balance (1 Jan 2026):</strong> <strong>$4,200</strong></li>
+        <li><strong>Cash Received during 2026:</strong> Member Subscriptions collected **`$16,400`** *(includes `$600` for 2025 arrears, `$14,800` for 2026, and `$1,000` prepaid for 2027!)*; Annual Fundraising Dinner tickets **`$4,800`**; General Donations **`$2,600`**; Cash proceeds from selling an old tennis ball machine **`$1,000`**.</li>
+        <li><strong>Cash Paid during 2026:</strong> Court Rent **`$7,200`** *(includes `$800` prepaid for Jan 2027)*; Groundsman’s Wages **`$6,400`**; Fundraising Dinner Catering **`$2,100`**; Purchase of NEW Tennis Nets &amp; Court Equipment **`$5,500`**; Electricity &amp; Water **`$1,800`**.</li>
+        <li><em>Additional Note:</em> Annual depreciation on equipment was estimated at <strong>$1,200</strong>, and <strong>$300</strong> of electricity remained unpaid on 31 December 2026.</li>
+      </ul>
+      <ol>
+        <li>Prepare Harborview Tennis Club’s <strong>Receipts and Payments Account</strong> for the year ended 31 December 2026, showing the exact <strong>Closing Bank Balance</strong>. <em>[8 marks]</em></li>
+        <li>Identify <strong>four adjustments</strong> from the data above that explain why this Receipts &amp; Payments Account CANNOT be used directly to measure the club’s 2026 Surplus. <em>[4 marks]</em></li>
+      </ol>
+    </>
+  }
+>
+
+### 1. Harborview Tennis Club — Receipts and Payments Account *(Year ended 31 December 2026 — 8 marks)*
+*(Notice: ALL actual cash inflows and outflows go in — Depreciation `$1,200` and unpaid electricity `$300` are **100% EXCLUDED** because NO cash moved!)*
+
+| Dr — Receipts | $ | Cr — Payments | $ |
+| :--- | ---: | :--- | ---: |
+| Balance b/d *(Opening Bank, 1 Jan)* | 4,200 | Court Rent | 7,200 |
+| Member Subscriptions *(all years cash)* | 16,400 | Groundsman’s Wages | 6,400 |
+| Fundraising Dinner Tickets | 4,800 | Fundraising Dinner Catering | 2,100 |
+| General Donations | 2,600 | **Purchase of New Court Equipment** | **5,500** |
+| **Sale of Old Ball Machine *(proceeds)*** | **1,000** | Electricity &amp; Water | 1,800 |
+| | | **Balance c/d *(Closing Bank, 31 Dec)*** | **6,000** |
+| **Total** | **$29,000** | **Total** | **$29,000** |
+| Balance b/d *(1 Jan 2027)* | 6,000 | | |
+
+*(Check: Total Receipts + Open Bank = `$4,200 + $16,400 + $4,800 + $2,600 + $1,000 = $29,000`; Total Payments = `$7,200 + $6,400 + $2,100 + $5,500 + $1,800 = $23,000` → **Closing Bank = `$6,000`** exact ✓!)*
+
+### 2. Four Reasons Closing Bank (`$6,000`) Does NOT Measure 2026 Surplus *(4 marks — 1 mark each)*
+1. **Mixes Capital with Revenue:** Buying `$5,500` of new equipment and receiving `$1,000` from selling the old ball machine are **Capital items** (Balance Sheet/Disposal), NOT annual operating income/expenditure!
+2. **Mixes Multiple Years’ Subscriptions:** The `$16,400` includes `$600` earned in 2025 and `$1,000` prepaid for 2027 — ONLY `$14,800` (+ any unpaid 2026 arrears) belongs to 2026!
+3. **Ignores Prepayments &amp; Accruals:** Court Rent includes `$800` prepaid for 2027 (must be deducted), while `$300` of unpaid December electricity (must be added) is missing!
+4. **Omits Non-Cash Expenses:** Equipment Depreciation (`$1,200`) is omitted from R&amp;P yet MUST be charged in Income &amp; Expenditure!
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Receipts & Payments Accounts"
+  items={[
+    {
+      statement: 'A Receipts and Payments Account is prepared strictly on the Cash Basis and functions as a summarized Cash Book for the entire year.',
+      answer: true,
+      explanation: 'Correct! Every single cash inflow (Dr) and cash outflow (Cr) goes in — nothing non-cash enters!',
+    },
+    {
+      statement: 'Annual Depreciation on clubhouse furniture must be entered on the Credit (Payments) side of the Receipts and Payments Account.',
+      answer: false,
+      explanation: 'NEVER! Depreciation is a non-cash accounting adjustment — it appears ONLY in the Income & Expenditure Account, NEVER in Receipts & Payments!',
+    },
+    {
+      statement: 'Cash spent buying a brand-new mower (Capital Expenditure) MUST be included on the Payments side of the Receipts and Payments Account.',
+      answer: true,
+      explanation: 'Yes — because real cash left the club’s bank account! (It is later excluded when preparing Income & Expenditure.)',
+    },
+    {
+      statement: 'If a club starts the year with a Bank Overdraft, the opening balance is entered on the Credit side of the Receipts and Payments Account.',
+      answer: true,
+      explanation: 'Spot on! Just like a Cash Book, a positive Bank balance opens on the Debit side, while a Bank Overdraft (liability) opens on the Credit side!',
+    },
+    {
+      statement: 'The closing balance of a Receipts and Payments Account represents the club’s Surplus or Deficit for the year.',
+      answer: false,
+      explanation: 'No! The closing balance of R&P is purely the club’s Closing Cash / Bank balance — ONLY the Income & Expenditure Account calculates Surplus or Deficit!',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s9-10-project"
+  title="Mini-Project: Receipts & Payments Account for Kingston Chess & Debate Club"
+  duration="20 mins"
+  scenario="Prepare the Receipts and Payments Account for 'Kingston Chess & Debate Club' for the year ended 31 December 2026 from the Treasurer’s cash notes: Opening Cash in Bank (1 Jan) = $1,500. Cash Inflows: Subscriptions collected (all years) $8,400; Inter-School Tournament Entry Fees $2,600; Alumni Donations $1,500. Cash Outflows: Hall Rental $3,600; Tournament Trophies & Catering $1,800; Purchase of Digital Chess Clocks (Capital!) $2,200; Admin & Printing $1,400. Footnote: Depreciation on Chess Clocks for 2026 is $440, and $200 of Hall Rental is still owing on 31 Dec."
+  steps={[
+    'Draw a neat two-sided T-account for the Receipts and Payments Account (Dr Receipts | Cr Payments) with a proper full heading.',
+    'Enter Opening Bank and ALL genuine cash receipts and payments — purposefully EXCLUDING the two non-cash/accrual footnote items!',
+    'Balance the account cleanly to find Closing Bank c/d (31 Dec 2026) and bring down Balance b/d for 1 Jan 2027.',
+    'Write a 2-sentence Treasurer’s Note explaining why the $440 Depreciation and $200 Unpaid Rent were left out of R&P, and where they WILL appear instead!',
+  ]}
+  deliverables={[
+    'Balanced Receipts and Payments Account for Kingston Chess & Debate Club',
+    'Exact Closing Bank balance carried and brought down',
+    '2-sentence Treasurer’s Note on the excluded footnote items',
+  ]}
+  rubric={[
+    'Debit Side total = $1,500 + $8,400 + $2,600 + $1,500 = $14,000; Credit Side payments = $3,600 + $1,800 + $2,200 + $1,400 = $9,000.',
+    'Exact Closing Bank Balance c/d = $5,000 ($14,000 − $9,000) brought down on Debit side for 1 Jan 2027!',
+    'Digital Chess Clocks ($2,200) INCLUDED in R&P; Depreciation ($440) and Unpaid Rent ($200) EXCLUDED from R&P and flagged for the Income & Expenditure Account!',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **Receipts &amp; Payments = Cash Book Summary:** ALL cash in/out (**Capital + Revenue**, **any year**); **ZERO** Depreciation or Accruals!
+- **Closing Balance of R&amp;P** = **Closing Cash / Bank** (NEVER Surplus!).
+:::

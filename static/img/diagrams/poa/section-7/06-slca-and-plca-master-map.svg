@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 510" role="img" aria-label="Side-by-side master map of Sales Ledger Control Account and Purchases Ledger Control Account showing every Debit and Credit item plus excluded trap items">
+  <defs>
+    <style>
+      .title { font: 700 20px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .sub { font: 500 13px system-ui, -apple-system, sans-serif; fill: #4A5560; }
+      .hdr { font: 700 14px system-ui, -apple-system, sans-serif; fill: #FCFBF8; }
+      .h3 { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .body { font: 500 11.8px system-ui, -apple-system, sans-serif; fill: #222222; }
+      .sage { font: 700 12px system-ui, -apple-system, sans-serif; fill: #2E6359; }
+      .coral { font: 700 12px system-ui, -apple-system, sans-serif; fill: #C84E24; }
+    </style>
+  </defs>
+
+  <rect width="920" height="510" rx="14" fill="#F8F6F1" stroke="#CEDCD6" stroke-width="1.5"/>
+  <text x="32" y="38" class="title">Sales Ledger (SLCA) &amp; Purchases Ledger (PLCA) Master Cheat Map</text>
+  <text x="32" y="58" class="sub">SLCA behaves like a Giant Debtor (Asset: Dr increases, Cr decreases) · PLCA behaves like a Giant Creditor (Liability: Cr increases, Dr decreases)!</text>
+
+  <!-- Left: SLCA -->
+  <rect x="32" y="76" width="418" height="332" rx="11" fill="#FCFBF8" stroke="#2E6359" stroke-width="1.8"/>
+  <rect x="32" y="76" width="418" height="36" rx="10" fill="#2E6359"/>
+  <text x="241" y="99" text-anchor="middle" class="hdr">Sales Ledger Control A/c (Total Debtors · Asset)</text>
+  <line x1="241" y1="112" x2="241" y2="396" stroke="#2E6359" stroke-width="1.4"/>
+
+  <text x="44" y="132" class="sage">Dr (+ Increases Owed to Us)</text>
+  <text x="252" y="132" class="coral">Cr (− Reduces Owed to Us)</text>
+  <line x1="42" y1="140" x2="440" y2="140" stroke="#CEDCD6"/>
+
+  <text x="44" y="160" class="body">• Opening Dr Bal b/d</text>
+  <text x="44" y="182" class="body">• Credit Sales (Sales Jnl)</text>
+  <text x="44" y="204" class="body">• Dishonored Cheques</text>
+  <text x="44" y="226" class="body">• Interest Charged on Overdue</text>
+  <text x="44" y="248" class="body">• Cash Refunds to Customers</text>
+  <text x="44" y="270" class="body">• Closing Cr Bal c/d *(minor)*</text>
+
+  <text x="252" y="160" class="body">• Opening Cr Bal b/d *(minor)*</text>
+  <text x="252" y="182" class="body">• Cash/Cheques from Debtors</text>
+  <text x="252" y="204" class="body">• Returns Inwards (Sales Ret.)</text>
+  <text x="252" y="226" class="body">• Discount Allowed</text>
+  <text x="252" y="248" class="body">• Bad Debts Written Off</text>
+  <text x="252" y="270" class="body">• Contra / Set-Off to PLCA</text>
+  <text x="252" y="294" class="h3">• Closing Dr Bal c/d (MAIN!)</text>
+
+  <rect x="44" y="346" width="394" height="48" rx="7" fill="#EBF2EF"/>
+  <text x="241" y="366" text-anchor="middle" class="sage">Normal Closing Balance = DEBIT b/d (Trade Receivables)</text>
+  <text x="241" y="384" text-anchor="middle" class="body">Minor Credit b/d = Customer overpaid or returned goods after paying</text>
+
+  <!-- Right: PLCA -->
+  <rect x="470" y="76" width="418" height="332" rx="11" fill="#FCFBF8" stroke="#1B365D" stroke-width="1.8"/>
+  <rect x="470" y="76" width="418" height="36" rx="10" fill="#1B365D"/>
+  <text x="679" y="99" text-anchor="middle" class="hdr">Purchases Ledger Control A/c (Total Creditors · Liab.)</text>
+  <line x1="679" y1="112" x2="679" y2="396" stroke="#1B365D" stroke-width="1.4"/>
+
+  <text x="482" y="132" class="coral">Dr (− Reduces Owed by Us)</text>
+  <text x="690" y="132" class="sage">Cr (+ Increases Owed by Us)</text>
+  <line x1="480" y1="140" x2="878" y2="140" stroke="#CEDCD6"/>
+
+  <text x="482" y="160" class="body">• Opening Dr Bal b/d *(minor)*</text>
+  <text x="482" y="182" class="body">• Cash/Cheques Paid Suppliers</text>
+  <text x="482" y="204" class="body">• Returns Outwards (Purch Ret.)</text>
+  <text x="482" y="226" class="body">• Discount Received</text>
+  <text x="482" y="248" class="body">• Contra / Set-Off from SLCA</text>
+  <text x="482" y="274" class="h3">• Closing Cr Bal c/d (MAIN!)</text>
+
+  <text x="690" y="160" class="body">• Opening Cr Bal b/d</text>
+  <text x="690" y="182" class="body">• Credit Purchases (Purch Jnl)</text>
+  <text x="690" y="204" class="body">• Interest Charged by Suppliers</text>
+  <text x="690" y="226" class="body">• Cash Refunds from Suppliers</text>
+  <text x="690" y="248" class="body">• Closing Dr Bal c/d *(minor)*</text>
+
+  <rect x="482" y="346" width="394" height="48" rx="7" fill="#EBF2EF"/>
+  <text x="679" y="366" text-anchor="middle" class="h3">Normal Closing Balance = CREDIT b/d (Trade Payables)</text>
+  <text x="679" y="384" text-anchor="middle" class="body">Minor Debit b/d = We overpaid supplier or returned goods after paying</text>
+
+  <!-- Bottom Exam Trap Banner -->
+  <rect x="32" y="424" width="856" height="68" rx="10" fill="#C84E24"/>
+  <text x="460" y="449" text-anchor="middle" class="hdr">⚠ NEVER ENTER THESE 4 EXAM TRAP ITEMS INTO CONTROL ACCOUNTS!</text>
+  <text x="460" y="472" text-anchor="middle" style="font: 600 12.5px system-ui; fill: #FCFBF8;">1. Cash Sales   ·   2. Cash Purchases   ·   3. Provision for Doubtful Debts   ·   4. Trade Discounts (already deducted on invoice!)</text>
+</svg>

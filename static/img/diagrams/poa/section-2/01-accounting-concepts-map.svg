@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 430" fill="none" role="img" aria-label="Framework of Core Accounting Concepts and Conventions">
+  <rect width="820" height="430" rx="12" fill="#1B365D"/>
+  <rect x="14" y="14" width="792" height="402" rx="10" stroke="#2D507C" stroke-width="1.2"/>
+
+  <!-- Header -->
+  <text x="34" y="46" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="18" font-weight="700">Core Accounting Concepts &amp; Conventions</text>
+  <text x="34" y="66" fill="#9DD9CB" font-family="monospace" font-size="11.5">THE RULES THAT KEEP FINANCIAL REPORTS CONSISTENT, FAIR &amp; COMPARABLE</text>
+
+  <!-- Group 1: Boundary & Continuity -->
+  <rect x="34" y="88" width="240" height="270" rx="10" fill="#122440" stroke="#4E8577" stroke-width="1.6"/>
+  <rect x="34" y="88" width="240" height="32" rx="10" fill="#4E8577"/>
+  <text x="154" y="109" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="11.5" font-weight="700">1. SCOPE &amp; CONTINUITY</text>
+
+  <rect x="48" y="134" width="212" height="64" rx="8" fill="#1B365D" stroke="#6BC4B0" stroke-width="1.2"/>
+  <text x="60" y="154" fill="#6BC4B0" font-family="system-ui, sans-serif" font-size="12.5" font-weight="700">Business Entity</text>
+  <text x="60" y="172" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="10.5">Business records stay strictly</text>
+  <text x="60" y="186" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="10.5">separate from owner’s personal life.</text>
+
+  <rect x="48" y="210" width="212" height="64" rx="8" fill="#1B365D" stroke="#6BC4B0" stroke-width="1.2"/>
+  <text x="60" y="230" fill="#6BC4B0" font-family="system-ui, sans-serif" font-size="12.5" font-weight="700">Going Concern</text>
+  <text x="60" y="248" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="10.5">Assumes the business keeps trading</text>
+  <text x="60" y="262" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="10.5">into the foreseeable future.</text>
+
+  <rect x="48" y="286" width="212" height="58" rx="8" fill="#1B365D" stroke="#6BC4B0" stroke-width="1.2"/>
+  <text x="60" y="306" fill="#6BC4B0" font-family="system-ui, sans-serif" font-size="12.5" font-weight="700">Money Measurement</text>
+  <text x="60" y="324" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="10.5">Only items measurable in currency</text>
+  <text x="60" y="337" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="10.5">enter the books (not morale).</text>
+
+  <!-- Group 2: Timing & Measurement -->
+  <rect x="290" y="88" width="240" height="270" rx="10" fill="#122440" stroke="#F5A352" stroke-width="1.6"/>
+  <rect x="290" y="88" width="240" height="32" rx="10" fill="#C84E24"/>
+  <text x="410" y="109" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="11.5" font-weight="700">2. MEASUREMENT &amp; TIMING</text>
+
+  <rect x="304" y="134" width="212" height="64" rx="8" fill="#1B365D" stroke="#F5A352" stroke-width="1.2"/>
+  <text x="316" y="154" fill="#F5A352" font-family="system-ui, sans-serif" font-size="12.5" font-weight="700">Accrual / Matching</text>
+  <text x="316" y="172" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="10.5">Match revenue earned &amp; expenses</text>
+  <text x="316" y="186" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="10.5">incurred to the same period.</text>
+
+  <rect x="304" y="210" width="212" height="64" rx="8" fill="#1B365D" stroke="#F5A352" stroke-width="1.2"/>
+  <text x="316" y="230" fill="#F5A352" font-family="system-ui, sans-serif" font-size="12.5" font-weight="700">Historical Cost</text>
+  <text x="316" y="248" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="10.5">Record assets at original invoice</text>
+  <text x="316" y="262" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="10.5">purchase price (verifiable fact).</text>
+
+  <rect x="304" y="286" width="212" height="58" rx="8" fill="#1B365D" stroke="#F5A352" stroke-width="1.2"/>
+  <text x="316" y="306" fill="#F5A352" font-family="system-ui, sans-serif" font-size="12.5" font-weight="700">Dual Aspect</text>
+  <text x="316" y="324" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="10.5">Every transaction has two equal</text>
+  <text x="316" y="337" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="10.5">sides: Debit = Credit.</text>
+
+  <!-- Group 3: Judgement & Consistency -->
+  <rect x="546" y="88" width="240" height="270" rx="10" fill="#122440" stroke="#8CC4B4" stroke-width="1.6"/>
+  <rect x="546" y="88" width="240" height="32" rx="10" fill="#2E6359"/>
+  <text x="666" y="109" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="11.5" font-weight="700">3. JUDGEMENT &amp; QUALITY</text>
+
+  <rect x="560" y="134" width="212" height="64" rx="8" fill="#1B365D" stroke="#8CC4B4" stroke-width="1.2"/>
+  <text x="572" y="154" fill="#9DD9CB" font-family="system-ui, sans-serif" font-size="12.5" font-weight="700">Prudence (Conservatism)</text>
+  <text x="572" y="172" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="10.5">Never overstate profit/assets;</text>
+  <text x="572" y="186" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="10.5">provide early for expected losses.</text>
+
+  <rect x="560" y="210" width="212" height="64" rx="8" fill="#1B365D" stroke="#8CC4B4" stroke-width="1.2"/>
+  <text x="572" y="230" fill="#9DD9CB" font-family="system-ui, sans-serif" font-size="12.5" font-weight="700">Consistency</text>
+  <text x="572" y="248" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="10.5">Apply the same methods across</text>
+  <text x="572" y="262" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="10.5">years for fair comparisons.</text>
+
+  <rect x="560" y="286" width="212" height="58" rx="8" fill="#1B365D" stroke="#8CC4B4" stroke-width="1.2"/>
+  <text x="572" y="306" fill="#9DD9CB" font-family="system-ui, sans-serif" font-size="12.5" font-weight="700">Materiality</text>
+  <text x="572" y="324" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="10.5">Focus strict treatment on amounts</text>
+  <text x="572" y="337" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="10.5">large enough to sway decisions.</text>
+
+  <!-- Footer Banner -->
+  <rect x="34" y="370" width="752" height="32" rx="8" fill="#122440" stroke="#6BC4B0" stroke-width="1.2"/>
+  <text x="410" y="391" text-anchor="middle" fill="#F4F7FA" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Together these concepts guarantee a <tspan fill="#F5A352" font-weight="800">True &amp; Fair View</tspan> across every accounting period.</text>
+</svg>

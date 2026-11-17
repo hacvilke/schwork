@@ -1,0 +1,254 @@
+---
+id: preparing-source-documents
+title: "3.2 How to Prepare Source Documents (Invoices, Credit Notes, Receipts)"
+sidebar_label: "3.2 Source Documents"
+sidebar_position: 2
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 3"
+  section="Books of Original Entry — Documents & Subsidiary Books"
+  code="POA-S3-02"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="25 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+Under the **Objectivity (Verifiability)** principle, no transaction can enter the accounting books on hearsay alone. **Source documents** — such as **Invoices, Credit Notes, Debit Notes, Official Receipts, Cheque Counterfoils, Bank Deposit Slips, and Petty Cash Vouchers** — provide dated, numbered, verifiable proof of every dollar earned, owed, returned, or paid.
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | Purpose, essential fields, and exact calculation layout of **Invoices, Credit Notes, Debit Notes, Official Receipts, and Vouchers** |
+| **Exam Focus** | Completing a **partially filled Invoice or Credit Note** accurately (multiplying Qty × Price, subtracting Trade Discount, computing Net Total) |
+| **Learning Outcome** | Prepare accurate Invoices, Credit Notes, and Receipts and explain the legal/accounting role of every document |
+
+<ObjectivesBox
+  id="poa-s3-02-obj"
+  objectives={[
+    'Explain why source documents are essential for accuracy, internal control, and audit trails.',
+    'Identify the key parts of an Invoice (issuer letterhead, buyer name, invoice #, date, terms, line items, trade discount, net total, E. & O.E.).',
+    'Distinguish clearly between a Credit Note, a Debit Note, an Official Receipt, and a Statement of Account.',
+    'Prepare accurate Invoices, Credit Notes, and Official Receipts from raw transaction facts.',
+  ]}
+/>
+
+---
+
+## 1. Essential Source Documents & Their Roles
+
+| Source Document | Who Issues It? | Purpose | Key Details Included |
+| :--- | :--- | :--- | :--- |
+| **Invoice** | **Seller** → Buyer | Requests payment for goods/services sold on **credit** | Seller letterhead, Buyer name, Invoice #, Date, Payment Terms (`2/10, n/30`), Qty × Unit Price, Less Trade Discount, **Net Total**, `E. & O.E.` |
+| **Credit Note** | **Seller** → Buyer | **Reduces** the amount the buyer owes (due to returned goods, damaged items, or an invoice overcharge) | Printed often in red/distinct header, Credit Note #, Original Invoice #, Reason for return/allowance, Net reduction amount |
+| **Debit Note** | **Buyer** → Seller *(or Seller → Buyer)* | Buyer requests a Credit Note for returned/damaged goods; OR Seller increases buyer’s bill for an **undercharge** | Debit Note #, Reference Invoice #, Item details, Reason for adjustment |
+| **Official Receipt** | **Payee** (Receiver) → Payer | Written proof that **cash or cheque payment** was received | Receipt #, Date, Payer’s name, Amount in **both words and figures**, Payment method (Cash/Cheque #), Signature |
+| **Cheque Counterfoil (Stub)** | Retained by **Payer** | Payer’s permanent stub record of a cheque written from the business bank account | Cheque #, Date, Payee name, Purpose, Amount |
+| **Bank Pay-In (Deposit) Slip** | Stamped by **Bank** | Proves cash/cheques were deposited into the business bank account | Account #, Date, Cash & Cheque breakdown, Total Deposit, Teller stamp |
+| **Petty Cash Voucher** | Prepared by **Petty Cashier** | Authorizes and proves a small cash payout from the petty cash box | Voucher #, Date, Description of expense, Amount, Recipient & Supervisor signatures |
+
+:::note What Does "E. & O.E." Mean — And What About a Statement of Account?
+- **`E. & O.E.`** stands for **"Errors and Omissions Excepted"** — it reserves the seller’s legal right to correct honest arithmetic mistakes found later on an invoice.
+- A **Statement of Account** is a monthly summary sent by a seller listing opening balance, all invoices, credit notes, payments, and closing amount owed. It is a **reminder/reconciliation document** — NOT a source document for recording new sales!
+:::
+
+---
+
+## 2. Diagram 1: Anatomy of Essential Business Source Documents
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-3/02-source-documents-anatomy.svg"
+  alt="Annotated sample Invoice showing seller letterhead, buyer details, invoice number, terms 2/10 net 30, line items, 10% trade discount deduction, Net Amount Due ($900), and E. & O.E., alongside summary cards for Credit Notes, Official Receipts, Debit Notes, and Vouchers."
+  caption="Diagram 1 (Static Reference): Every single field on an invoice matters — especially subtracting Trade Discount BEFORE arriving at the Net Amount recorded in the Day Books!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive Source Document Inspector
+
+<InteractiveDiagram
+  title="Interactive Inspector: Tap Each Source Document to Check Rules & Pitfalls"
+  layout="hub"
+  centerLabel="Source Docs"
+  centerSublabel="Audit Evidence"
+  instruction="Select any source document below to see who creates it, what triggers it, and which Book of Original Entry it feeds."
+  nodes={[
+    {
+      label: 'Sales / Purchase Invoice',
+      tag: 'Credit Trade',
+      tone: 'positive',
+      detail: 'One exact same piece of paper is a SALES Invoice to the seller (who issues it) and a PURCHASE Invoice to the buyer (who receives it)!',
+      example: 'Apex Wholesale sells $1,000 list price less 10% trade discount = $900 Net. Apex logs $900 in Sales Journal; Sunrise Grocery logs $900 in Purchases Journal.',
+      examTip: 'Always verify Qty × Unit Price line by line AND subtract any Trade Discount before totaling!',
+    },
+    {
+      label: 'Credit Note',
+      tag: 'Reduces Debt',
+      tone: 'warning',
+      detail: 'Why is it called a "Credit" Note? Because the seller is telling the buyer: "We have CREDITED your account in our books — meaning you now owe us LESS!"',
+      example: 'If Sunrise Grocery returns 2 cases of juice ($40 each = $80 list) from an invoice that had 10% trade discount, the Credit Note MUST also deduct 10% trade discount ($80 − $8 = $72)!',
+      examTip: 'CRITICAL TRAP: When goods are returned from a discounted invoice, ALWAYS apply the SAME Trade Discount % on the Credit Note!',
+    },
+    {
+      label: 'Debit Note',
+      tag: 'Request / Extra',
+      tone: 'neutral',
+      detail: 'Most commonly sent by the BUYER when returning faulty goods to request a Credit Note. Can also be sent by a SELLER to add an undercharged amount to a buyer’s bill.',
+      example: 'Sunrise Grocery sends Debit Note #DN-05 to Apex noting 2 spoiled cases returned; Apex inspects them and replies with official Credit Note #CN-12.',
+      examTip: 'Accountants normally wait for the official CREDIT NOTE before posting the return into Returns Journals.',
+    },
+    {
+      label: 'Official Receipt',
+      tag: 'Cash Proof',
+      tone: 'positive',
+      detail: 'Pre-numbered receipts prevent cash skimming and prove settlement of either a cash sale or a credit customer paying off an earlier invoice.',
+      example: 'Receipt #R-205: Received from Sunrise Grocery the sum of Eight Hundred Eighty-Two Dollars ($882.00) in full settlement of INV-1042 less 2% cash discount.',
+      examTip: 'Pre-numbered sequential receipts are a vital internal control — missing numbers immediately alert auditors!',
+    },
+    {
+      label: 'Petty Cash Voucher',
+      tag: 'Minor Cash',
+      tone: 'positive',
+      detail: 'Even tiny $6 cash payouts need written authorization. Each voucher attaches the shop till receipt (where available) and gets signed by the person receiving the cash.',
+      example: 'PCV #14 | Date: May 18 | Paid to: M. Grant | For: Office envelopes & tape | Amount: $18.50 | Approved by: Supervisor.',
+      examTip: 'Petty Cash Vouchers are recorded chronologically into the Petty Cash Book.',
+    },
+    {
+      label: 'Statement of Account',
+      tag: 'Summary Only',
+      tone: 'warning',
+      detail: 'Sent monthly by a supplier showing Opening Balance + Invoices − Credit Notes − Payments = Closing Amount Due.',
+      example: 'Used by the buyer’s clerk to verify that the supplier’s records match the buyer’s Purchases Ledger account.',
+      examTip: 'EXAM TRAP: Never record a Statement of Account as a new purchase — its individual invoices were ALREADY recorded!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Preparing a Complete Invoice & Matching Credit Note (With Trade Discount)"
+  marks={10}
+  problem={
+    <>
+      <p>
+        <strong>Scenario:</strong> On <strong>8 March 2026</strong>, <strong>Caribbean Office
+        Supply Ltd.</strong> sold the following items on credit (Invoice #<strong>INV-312</strong>,
+        Terms: <code>2/10, Net 30</code>) to <strong>BrightStart Academy</strong> with a
+        <strong> 15% Trade Discount</strong>:
+      </p>
+      <ul>
+        <li>10 Whiteboards @ $80 each</li>
+        <li>20 Packs Dry-Erase Markers @ $10 each</li>
+      </ul>
+      <p>
+        On <strong>11 March 2026</strong>, BrightStart Academy returned <strong>2 cracked
+        Whiteboards</strong> and Caribbean Office Supply issued <strong>Credit Note #CN-44</strong>.
+      </p>
+      <ol>
+        <li>Prepare <strong>Invoice #INV-312</strong> showing the Gross Total, Trade Discount, and Net Amount Due. <em>[6 marks]</em></li>
+        <li>Calculate and present the net value of <strong>Credit Note #CN-44</strong>. <em>[4 marks]</em></li>
+      </ol>
+    </>
+  }
+>
+
+**1. Invoice #INV-312 (6 marks):**
+
+> **CARIBBEAN OFFICE SUPPLY LTD.** — *INVOICE*
+> **To:** BrightStart Academy &nbsp;|&nbsp; **Invoice #:** INV-312 &nbsp;|&nbsp; **Date:** 8 March 2026 &nbsp;|&nbsp; **Terms:** 2/10, Net 30 *(1 mark)*
+
+| Qty | Description | Unit Price ($) | Amount ($) |
+| :---: | :--- | ---: | ---: |
+| 10 | Whiteboards | 80.00 | 800.00 |
+| 20 | Packs Dry-Erase Markers | 10.00 | 200.00 |
+| | **Gross Total (List Price)** *(1 mark)* | | **1,000.00** |
+| | Less: 15% Trade Discount *(15% × $1,000)* *(2 marks)* | | (150.00) |
+| | **Net Amount Payable** *(1 mark)* | | **$850.00** |
+
+*E. & O.E.* *(1 mark)*
+
+---
+
+**2. Credit Note #CN-44 dated 11 March 2026 (4 marks):**
+- Gross value of 2 returned whiteboards: `2 × $80.00` = **$160.00** *(1 mark)*
+- **Less: 15% Trade Discount** *(must match original invoice!)*: `15% × $160.00` = **($24.00)** *(2 marks)*
+- **Net Credit Note Amount:** `$160.00 − $24.00` = **$136.00** *(1 mark)*
+
+*(Check: BrightStart Academy originally owed $850.00; after Credit Note #CN-44 of $136.00, BrightStart now owes `$850 − $136 = $714.00` — which equals 8 remaining whiteboards × $68 net ($544) + 20 marker packs × $8.50 net ($170) = **$714.00** ✓!)*
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Preparing Source Documents"
+  items={[
+    {
+      statement: 'When a buyer returns goods from an invoice that included a 10% trade discount, the Credit Note is calculated at full list price without subtracting the 10% trade discount.',
+      answer: false,
+      explanation: 'You MUST deduct the exact same 10% trade discount on the Credit Note — otherwise the seller would refund MORE than the buyer was originally charged!',
+    },
+    {
+      statement: 'A Credit Note is issued by the seller to reduce the amount owed by a credit customer.',
+      answer: true,
+      explanation: 'Issuing a Credit Note confirms that the seller has credited (reduced) the buyer’s account for returned goods or an overcharge.',
+    },
+    {
+      statement: 'A monthly Statement of Account should be entered into the Purchases Journal as a brand-new purchase.',
+      answer: false,
+      explanation: 'A Statement of Account is strictly a summary/reconciliation reminder of invoices already recorded — entering it again would double-count purchases!',
+    },
+    {
+      statement: 'On an Official Receipt, writing the amount in BOTH words and figures helps prevent alteration and fraud.',
+      answer: true,
+      explanation: 'Writing both "$450.00" and "Four Hundred Fifty Dollars Only" makes it far harder to tamper with the number later.',
+    },
+    {
+      statement: 'E. & O.E. on an invoice means "Errors and Omissions Excepted", allowing the seller to correct accidental billing mistakes later.',
+      answer: true,
+      explanation: 'E. & O.E. is a standard commercial clause protecting the seller’s right to issue a corrective Credit or Debit Note if a clerical error is discovered.',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s3-02-project"
+  title="Mini-Project: Design a Complete 3-Document Trade Packet"
+  duration="30 mins"
+  scenario="You run 'Metro Tech Wholesalers'. On 4 July 2026, you sell on credit (20% Trade Discount, Terms: 5/10, Net 30) to 'Campus Electronics': 5 Wireless Keyboards @ $60 each and 10 USB-C Hubs @ $40 each. On 6 July, Campus Electronics returns 1 faulty Wireless Keyboard. On 10 July, Campus Electronics pays the remaining balance in full by cheque (earning the 5% early cash discount!)."
+  steps={[
+    'Draft Document 1 — Sales Invoice #INV-501 (4 July): include Seller letterhead, Buyer details, Date, Terms, itemized table, Gross Total, 20% Trade Discount, Net Amount Due, and E. & O.E.',
+    'Draft Document 2 — Credit Note #CN-88 (6 July): show the 1 returned Wireless Keyboard LESS the exact same 20% Trade Discount to get the Net Credit Note total.',
+    'Calculate the remaining net debt owed on 10 July (Invoice Net − Credit Note Net), then deduct the 5% prompt-payment Cash Discount to find the exact Cheque Amount received.',
+    'Draft Document 3 — Official Receipt #R-902 (10 July): show the payer, exact cheque amount in BOTH words and figures, Cash Discount allowed, and authorized signature line.',
+  ]}
+  deliverables={[
+    'Completed Invoice #INV-501 (Gross $700, 20% Trade Disc $140, Net $560)',
+    'Completed Credit Note #CN-88 (Gross $60, 20% Trade Disc $12, Net $48)',
+    'Completed Official Receipt #R-902 (Balance $512, 5% Cash Disc $25.60, Cheque Paid $486.40)',
+  ]}
+  rubric={[
+    'Every required field (document #, date, issuer, recipient, E. & O.E., words & figures on receipt) appears cleanly.',
+    'The 20% Trade Discount is properly deducted on BOTH the Invoice AND the Credit Note.',
+    'The 5% Cash Discount is applied only to the remaining balance AFTER the return ($512 × 5% = $25.60 → paid $486.40).',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **Invoice** = Credit sale/purchase (subtract **Trade Discount** to get Net Total).
+- **Credit Note** = Seller reduces buyer’s debt (ALWAYS subtract the **same Trade Discount %** if one was given on the invoice!).
+- **Receipt** = Proof of cash/cheque payment (words + figures + pre-numbered).
+- **Statement of Account** = Monthly checkup ONLY — **never** record as a new entry!
+:::

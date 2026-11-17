@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 480" width="920" height="480" role="img" aria-label="Visual Comparison of FIFO First-In First-Out, LIFO Last-In First-Out, and AVCO Weighted Average Cost Inventory Valuation Methods">
+  <defs>
+    <style>
+      .bg { fill: #F8F6F1; }
+      .card { fill: #FCFBF8; stroke: #CEDCD6; stroke-width: 2; rx: 12; }
+      .navy { fill: #1B365D; rx: 10; }
+      .sage { fill: #2E6359; rx: 10; }
+      .coral { fill: #C84E24; rx: 10; }
+      .b1 { fill: #DCE8E3; stroke: #4E8577; stroke-width: 1.5; rx: 6; }
+      .b2 { fill: #E7EEF7; stroke: #1B365D; stroke-width: 1.5; rx: 6; }
+      .b3 { fill: #FDE9DC; stroke: #C84E24; stroke-width: 1.5; rx: 6; }
+      .title { font-family: system-ui, -apple-system, sans-serif; font-size: 21px; font-weight: 800; fill: #1B365D; }
+      .subtitle { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; fill: #4A5560; }
+      .w-title { font-family: system-ui, -apple-system, sans-serif; font-size: 15px; font-weight: 800; fill: #FFFFFF; }
+      .w-sub { font-family: system-ui, -apple-system, sans-serif; font-size: 11.5px; fill: #EBF2EF; }
+      .label { font-family: system-ui, -apple-system, sans-serif; font-size: 12.5px; font-weight: 800; fill: #1B365D; }
+      .body { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; fill: #222222; }
+      .coral-txt { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; font-weight: 800; fill: #C84E24; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="920" height="480"/>
+  <text x="460" y="34" text-anchor="middle" class="title">How Inventory Costs Flow: FIFO vs. LIFO vs. AVCO</text>
+  <text x="460" y="54" text-anchor="middle" class="subtitle">Same 3 batches bought as prices rise ($10 → $12 → $14) — completely different costs leave FIRST and stay in CLOSING STOCK!</text>
+
+  <!-- Column 1: FIFO -->
+  <rect class="card" x="24" y="76" width="280" height="328"/>
+  <rect class="navy" x="36" y="88" width="256" height="50"/>
+  <text x="164" y="109" text-anchor="middle" class="w-title">FIFO (First-In, First-Out)</text>
+  <text x="164" y="127" text-anchor="middle" class="w-sub">OLDEST costs sold first!</text>
+
+  <rect class="b1" x="48" y="152" width="232" height="38"/>
+  <text x="164" y="175" text-anchor="middle" class="label">Batch 1 (Oldest: $10) → SOLD 1st!</text>
+
+  <rect class="b2" x="48" y="198" width="232" height="38"/>
+  <text x="164" y="221" text-anchor="middle" class="body">Batch 2 (Middle: $12) → SOLD 2nd</text>
+
+  <rect class="b3" x="48" y="244" width="232" height="38"/>
+  <text x="164" y="267" text-anchor="middle" class="coral-txt">Batch 3 (Newest: $14) → CLOSING!</text>
+
+  <text x="44" y="310" class="label">Closing Stock Value:</text>
+  <text x="44" y="328" class="body">Newest prices ($14) — realistic BS!</text>
+  <text x="44" y="352" class="label">Best For &amp; IFRS Status:</text>
+  <text x="44" y="370" class="body">Perishables (milk, food, medicine).</text>
+  <text x="44" y="388" class="coral-txt">✓ Permitted under IAS 2 / IFRS!</text>
+
+  <!-- Column 2: LIFO -->
+  <rect class="card" x="320" y="76" width="280" height="328"/>
+  <rect class="coral" x="332" y="88" width="256" height="50"/>
+  <text x="460" y="109" text-anchor="middle" class="w-title">LIFO (Last-In, First-Out)</text>
+  <text x="460" y="127" text-anchor="middle" class="w-sub">NEWEST costs sold first!</text>
+
+  <rect class="b3" x="344" y="152" width="232" height="38"/>
+  <text x="460" y="175" text-anchor="middle" class="coral-txt">Batch 3 (Newest: $14) → SOLD 1st!</text>
+
+  <rect class="b2" x="344" y="198" width="232" height="38"/>
+  <text x="460" y="221" text-anchor="middle" class="body">Batch 2 (Middle: $12) → SOLD 2nd</text>
+
+  <rect class="b1" x="344" y="244" width="232" height="38"/>
+  <text x="460" y="267" text-anchor="middle" class="label">Batch 1 (Oldest: $10) → CLOSING!</text>
+
+  <text x="340" y="310" class="label">Closing Stock Value:</text>
+  <text x="340" y="328" class="body">Oldest prices ($10) — outdated BS!</text>
+  <text x="340" y="352" class="label">Best For &amp; IFRS Status:</text>
+  <text x="340" y="370" class="body">Bulk piles (coal, gravel, sand).</text>
+  <text x="340" y="388" class="coral-txt">✗ NOT permitted under IAS 2 / IFRS!</text>
+
+  <!-- Column 3: AVCO -->
+  <rect class="card" x="616" y="76" width="280" height="328"/>
+  <rect class="sage" x="628" y="88" width="256" height="50"/>
+  <text x="756" y="109" text-anchor="middle" class="w-title">AVCO (Weighted Average)</text>
+  <text x="756" y="127" text-anchor="middle" class="w-sub">Blends ALL batches into 1 price!</text>
+
+  <rect class="b2" x="640" y="152" width="232" height="84"/>
+  <text x="756" y="176" text-anchor="middle" class="label">Total Cost of Stock Available</text>
+  <line x1="658" y1="186" x2="854" y2="186" stroke="#1B365D" stroke-width="2"/>
+  <text x="756" y="206" text-anchor="middle" class="label">Total Units Available</text>
+  <text x="756" y="226" text-anchor="middle" class="coral-txt">= Weighted Average Unit Cost!</text>
+
+  <rect class="b1" x="640" y="246" width="232" height="36"/>
+  <text x="756" y="268" text-anchor="middle" class="body">Smooth middle cost (~$12.00)!</text>
+
+  <text x="636" y="310" class="label">Closing Stock Value:</text>
+  <text x="636" y="328" class="body">Smoothed blended average price!</text>
+  <text x="636" y="352" class="label">Best For &amp; IFRS Status:</text>
+  <text x="636" y="370" class="body">Mixed fuels, grain, paint, liquids.</text>
+  <text x="636" y="388" class="coral-txt">✓ Permitted under IAS 2 / IFRS!</text>
+
+  <!-- Bottom Prudence / IAS 2 Banner -->
+  <rect class="navy" x="24" y="418" width="872" height="48"/>
+  <text x="460" y="438" text-anchor="middle" class="w-title">GOLDEN IAS 2 VALUATION RULE (PRUDENCE CONCEPT)</text>
+  <text x="460" y="456" text-anchor="middle" class="w-sub">Closing Inventory is ALWAYS valued at the LOWER OF COST AND NET REALIZABLE VALUE (NRV = Selling Price − Costs to Complete/Sell)!</text>
+</svg>

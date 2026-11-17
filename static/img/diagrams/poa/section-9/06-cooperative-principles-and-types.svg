@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" role="img" aria-label="Core democratic principles and four major types of Co-operative Societies: Credit Unions, Consumer, Producer, and Agricultural Co-ops">
+  <defs>
+    <style>
+      .title { font: 700 20px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .sub { font: 500 13px system-ui, -apple-system, sans-serif; fill: #4A5560; }
+      .hdr { font: 700 14px system-ui, -apple-system, sans-serif; fill: #FCFBF8; }
+      .h3 { font: 700 13px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .body { font: 500 12px system-ui, -apple-system, sans-serif; fill: #222222; }
+      .sage { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #2E6359; }
+      .coral { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #C84E24; }
+    </style>
+  </defs>
+
+  <rect width="920" height="460" rx="14" fill="#F8F6F1" stroke="#CEDCD6" stroke-width="1.5"/>
+  <text x="32" y="38" class="title">Co-operative Societies: Democratic Principles &amp; 4 Major Types</text>
+  <text x="32" y="58" class="sub">Owned and democratically controlled by their own members to serve member welfare — NOT to maximize outside shareholder profits!</text>
+
+  <!-- Top Strip: 5 Core Rochdale / ICA Principles -->
+  <rect x="32" y="76" width="856" height="122" rx="11" fill="#FCFBF8" stroke="#1B365D" stroke-width="1.7"/>
+  <rect x="32" y="76" width="856" height="32" rx="10" fill="#1B365D"/>
+  <text x="460" y="97" text-anchor="middle" class="hdr">5 Core Co-operative Principles (Know All 5 for Paper 1 &amp; Paper 2!)</text>
+
+  <text x="50" y="132" class="sage">1. Voluntary &amp; Open Membership:</text>
+  <text x="274" y="132" class="body">Anyone meeting criteria may join/leave freely without discrimination</text>
+  <text x="50" y="154" class="coral">2. Democratic Control (1 Member = 1 Vote!):</text>
+  <text x="338" y="154" class="body">Unlike an LLC (1 share = 1 vote), EVERY member gets ONE vote regardless of shares held!</text>
+  <text x="50" y="176" class="h3">3. Limited Return on Share Capital   ·   4. Patronage Refunds (Surplus shared by usage!)   ·   5. Member Education &amp; Community Care</text>
+
+  <!-- 4 Types of Co-operatives -->
+  <text x="32" y="226" class="h3">Four Major Types of Co-operative Societies:</text>
+
+  <rect x="32" y="238" width="202" height="156" rx="10" fill="#FCFBF8" stroke="#2E6359" stroke-width="1.6"/>
+  <rect x="32" y="238" width="202" height="32" rx="9" fill="#2E6359"/>
+  <text x="133" y="259" text-anchor="middle" class="hdr">1. Credit Unions</text>
+  <text x="46" y="290" class="body">Financial co-ops pooling</text>
+  <text x="46" y="307" class="body">member savings to grant</text>
+  <text x="46" y="324" class="body">low-interest loans &amp;</text>
+  <text x="46" y="341" class="body">encourage thrift!</text>
+  <text x="46" y="376" class="sage">e.g. Teachers Credit Union</text>
+
+  <rect x="250" y="238" width="202" height="156" rx="10" fill="#FCFBF8" stroke="#1B365D" stroke-width="1.6"/>
+  <rect x="250" y="238" width="202" height="32" rx="9" fill="#1B365D"/>
+  <text x="351" y="259" text-anchor="middle" class="hdr">2. Consumer Co-ops</text>
+  <text x="264" y="290" class="body">Retail grocery/supply</text>
+  <text x="264" y="307" class="body">stores buying in bulk to</text>
+  <text x="264" y="324" class="body">sell quality goods at fair</text>
+  <text x="264" y="341" class="body">prices to members.</text>
+  <text x="264" y="376" class="h3">Pays patronage rebates!</text>
+
+  <rect x="468" y="238" width="202" height="156" rx="10" fill="#FCFBF8" stroke="#4E8577" stroke-width="1.6"/>
+  <rect x="468" y="238" width="202" height="32" rx="9" fill="#4E8577"/>
+  <text x="569" y="259" text-anchor="middle" class="hdr">3. Producer / Agri Co-ops</text>
+  <text x="482" y="290" class="body">Farmers, fishers &amp; crafters</text>
+  <text x="482" y="307" class="body">pooling equipment, seeds,</text>
+  <text x="482" y="324" class="body">storage &amp; marketing to get</text>
+  <text x="482" y="341" class="body">stronger export prices.</text>
+  <text x="482" y="376" class="sage">e.g. Coffee Growers Co-op</text>
+
+  <rect x="686" y="238" width="202" height="156" rx="10" fill="#FCFBF8" stroke="#C84E24" stroke-width="1.6"/>
+  <rect x="686" y="238" width="202" height="32" rx="9" fill="#C84E24"/>
+  <text x="787" y="259" text-anchor="middle" class="hdr">4. Service / Housing</text>
+  <text x="700" y="290" class="body">Provides affordable</text>
+  <text x="700" y="307" class="body">housing, transport, utility,</text>
+  <text x="700" y="324" class="body">or childcare services</text>
+  <text x="700" y="341" class="body">directly to members.</text>
+  <text x="700" y="376" class="coral">e.g. Housing Co-op Society</text>
+
+  <!-- Bottom Key Difference Strip -->
+  <rect x="32" y="410" width="856" height="36" rx="8" fill="#2E6359"/>
+  <text x="460" y="433" text-anchor="middle" style="font: 700 12.5px system-ui; fill: #FCFBF8;">Co-op vs. LLC Golden Contrast: Co-ops use "1 Member = 1 Vote" &amp; call profit "SURPLUS"  |  LLCs use "1 Share = 1 Vote" &amp; seek max profit!</text>
+</svg>

@@ -1,0 +1,239 @@
+---
+id: balancing-the-cash-book
+title: "3.6 Balancing the Cash Book (Bank and Cash Columns)"
+sidebar_label: "3.6 Balancing the Cash Book"
+sidebar_position: 6
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 3"
+  section="Books of Original Entry — Cash Books"
+  code="POA-S3-06"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="30 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+The **Cash Book** is the heartbeat of daily business accounting — tracking every dollar flowing into or out of both the **Cash Register (Cash column)** and the **Business Bank Account (Bank column)**, plus **Cash Discounts** in a Three-Column Cash Book. Because Cash and Bank live side by side on the exact same page, you also meet one of POA’s signature moves: the **Contra Entry (`C`)**!
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | Entering receipts (**Debit**) and payments (**Credit**), recording **Contra Entries (`C`)**, totaling (NOT balancing!) **Discount columns**, and balancing **Cash** & **Bank** columns (`c/d` → `b/d`) |
+| **Exam Focus** | Drawing up and balancing a complete **2-Column or 3-Column Cash Book** with opening balances (including overdrafts), cash discounts, and contra entries |
+| **Learning Outcome** | Prepare, complete, and accurately balance a Three-Column Cash Book from a month of business transactions |
+
+<ObjectivesBox
+  id="poa-s3-06-obj"
+  objectives={[
+    'Distinguish between a Two-Column Cash Book (Cash + Bank) and a Three-Column Cash Book (Discount + Cash + Bank).',
+    'Record all cash/bank receipts on the Debit (left) side and payments on the Credit (right) side accurately.',
+    'Identify and record Contra Entries (marked "C") when cash is banked or withdrawn from the bank for office use.',
+    'Balance the Cash and Bank columns properly using Balance c/d and Balance b/d, while totaling (never balancing) the Discount columns.',
+  ]}
+/>
+
+---
+
+## 1. Golden Rules of the Three-Column Cash Book
+
+1. **Left Side = Debit (Dr) = ALL RECEIPTS** (Money coming IN + **Discount Allowed**).
+2. **Right Side = Credit (Cr) = ALL PAYMENTS** (Money going OUT + **Discount Received**).
+3. **Contra Entries (`C`)** occur ONLY when cash moves **between the business’s own Cash box and its own Bank account**:
+   - **Banking Cash** (taking cash from till and depositing it into the bank):
+     - **Dr Bank** (Details: `Cash`, Folio: **`C`**) — Bank increases!
+     - **Cr Cash** (Details: `Bank`, Folio: **`C`**) — Cash decreases!
+   - **Withdrawing Cash from Bank for Office Use** (NOT personal drawings!):
+     - **Dr Cash** (Details: `Bank`, Folio: **`C`**) — Cash increases!
+     - **Cr Bank** (Details: `Cash`, Folio: **`C`**) — Bank decreases!
+   - *(Trap Alert: Owner withdrawing bank money for **personal use** is **Drawings** — Cr Bank only, **NOT** a Contra Entry!)*
+4. **Discount Columns Are TOTALED ONLY — NEVER Balanced!**
+   - Simply add down the Debit Discount Allowed column and transfer its total to the **Debit** of Discount Allowed A/c.
+   - Simply add down the Credit Discount Received column and transfer its total to the **Credit** of Discount Received A/c.
+5. **Cash & Bank Columns Are Balanced Independently:**
+   - Find the larger total of the Cash column, write the balancing difference on the shorter side as **`Balance c/d`**, draw totals on both sides, then bring **`Balance b/d`** down on the opposite side for Day 1 of the next month. Repeat independently for the Bank column!
+
+---
+
+## 2. Diagram 1: Anatomy of a Balanced Three-Column Cash Book
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-3/06-three-column-cash-book-map.svg"
+  alt="Complete annotated Three-Column Cash Book showing Receipts on Debit side, Payments on Credit side, a highlighted Contra Entry marked C on June 15, totaled Discount columns, balanced Cash and Bank columns with Balance c/d and Jul 1 Balance b/d, and three summary rule cards."
+  caption="Diagram 1 (Static Reference): Notice how Jun 15 'Cash banked $600' enters BOTH sides with folio 'C' — Bank goes up on the Debit side and Cash goes down on the Credit side!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive 5-Step Cash Book Balancing Guide
+
+<InteractiveDiagram
+  title="Interactive Workflow: Master All 5 Steps to Balance Any Cash Book Perfectly"
+  layout="flow"
+  instruction="Click Steps 1 through 5 to walk through the exact sequence examiners use to award full marks on Cash Book questions."
+  nodes={[
+    {
+      label: '1. Enter Opening b/d',
+      tag: 'Day 1',
+      tone: 'positive',
+      detail: 'Start on Day 1 with opening Cash and Bank balances. Opening Cash is ALWAYS on the Debit side. Opening Bank is on the Debit side if positive — or on the CREDIT side if the business starts with a Bank Overdraft!',
+      example: 'May 1: Cash $300 (Dr Cash); Bank Overdraft $450 (Cr Bank — Details: Balance b/d).',
+      examTip: 'Read the opening sentence slowly! Putting an opening Bank Overdraft on the Debit side ruins the entire Bank column.',
+    },
+    {
+      label: '2. Log Receipts & Payments',
+      tag: 'Dr vs. Cr',
+      tone: 'positive',
+      detail: 'Every inflow (cash sales, cheques from debtors, loans received, capital added) enters Debit. Every outflow (cash purchases, rent, wages, cheques to creditors, drawings) enters Credit.',
+      example: 'Received cheque $950 from R. Ali after allowing $50 cash discount → Dr side: Details "R. Ali", Disc Allowed $50, Bank $950.',
+      examTip: 'Always double-check whether money moved via CASH or CHEQUE/BANK TRANSFER so it lands in the right column!',
+    },
+    {
+      label: '3. Record Contra (C)',
+      tag: 'Both Sides',
+      tone: 'warning',
+      detail: 'Whenever money moves between Cash and Bank within the business, make TWO entries right inside the Cash Book and write "C" in the Folio column on both sides.',
+      example: 'Withdrew $400 from Bank for office cash till → Dr Cash $400 (Details: Bank, F: C) AND Cr Bank $400 (Details: Cash, F: C).',
+      examTip: 'Notice the Details word is ALWAYS the opposite column name: in the Bank column write "Cash", and in the Cash column write "Bank"!',
+    },
+    {
+      label: '4. Total Discounts Only',
+      tag: 'No c/d!',
+      tone: 'warning',
+      detail: 'Never try to make Discount Allowed equal Discount Received! They are two completely separate General Ledger accounts (one Expense, one Income). Just sum each column straight down.',
+      example: 'Debit Discount Allowed sums to $75; Credit Discount Received sums to $40. Both numbers sit cleanly on the Totals row as-is.',
+      examTip: 'Trying to insert a "Balance c/d" in a Discount column is one of the top mistakes in POA exams!',
+    },
+    {
+      label: '5. Balance Cash & Bank',
+      tag: 'c/d → b/d',
+      tone: 'positive',
+      detail: 'For Cash: subtract Cr total from Dr total → write Balance c/d on Cr side → bring Balance b/d down on Dr side next month. For Bank: compare Dr vs. Cr — if Dr > Cr, b/d is Dr (Asset); if Cr > Dr, b/d is Cr (Overdraft!).',
+      example: 'Bank Dr total = $4,200; Bank Cr total = $3,100 → write Balance c/d $1,100 on Cr side → totals $4,200 = $4,200 → next month Dr Balance b/d $1,100.',
+      examTip: 'NEVER skip the final "1st of Next Month · Balance b/d" row — it usually carries 2 easy marks!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Preparing & Balancing a Complete Three-Column Cash Book"
+  marks={14}
+  problem={
+    <>
+      <p>
+        <strong>Question:</strong> Prepare and balance the <strong>Three-Column Cash Book</strong>
+        of <strong>BlueWave Retailers</strong> for <strong>April 2026</strong>, bringing down the
+        balances on <strong>1 May 2026</strong>:
+      </p>
+      <ul>
+        <li><strong>Apr 1:</strong> Opening balances — Cash $400; Bank $2,200.</li>
+        <li><strong>Apr 3:</strong> Cash sales $900.</li>
+        <li><strong>Apr 6:</strong> Paid monthly rent by cheque, $750.</li>
+        <li><strong>Apr 10:</strong> Received a cheque from customer M. Gomez for $960 in full settlement of her $1,000 debt (cash discount $40).</li>
+        <li><strong>Apr 14:</strong> Paid supplier Apex Supply by cheque $760 after deducting $40 cash discount (debt settled: $800).</li>
+        <li><strong>Apr 18:</strong> Deposited $600 of shop cash into the business bank account.</li>
+        <li><strong>Apr 22:</strong> Bought goods for immediate cash, $250.</li>
+        <li><strong>Apr 25:</strong> Withdrew $300 cash from the bank for office till use.</li>
+        <li><strong>Apr 28:</strong> Owner withdrew $500 by cheque for personal use (Drawings).</li>
+      </ul>
+    </>
+  }
+>
+
+**BlueWave Retailers — Three-Column Cash Book (April 2026)**
+
+| Date | Details (Dr) | F | Disc. All. ($) | Cash ($) | Bank ($) | Date | Details (Cr) | F | Disc. Rec. ($) | Cash ($) | Bank ($) |
+| :--- | :--- | :-: | ---: | ---: | ---: | :--- | :--- | :-: | ---: | ---: | ---: |
+| Apr 1 | Balance b/d | | | 400 | 2,200 | Apr 6 | Rent | | | | 750 |
+| Apr 3 | Sales | | | 900 | | Apr 14 | Apex Supply | | 40 | | 760 |
+| Apr 10 | M. Gomez | | 40 | | 960 | Apr 18 | Bank *(cash banked)* | **C** | | 600 | |
+| Apr 18 | Cash *(cash banked)* | **C** | | | 600 | Apr 22 | Purchases | | | 250 | |
+| Apr 25 | Bank *(office cash)* | **C** | | 300 | | Apr 25 | Cash *(office cash)* | **C** | | | 300 |
+| | | | | | | Apr 28 | Drawings | | | | 500 |
+| | | | | | | **Apr 30** | **Balance c/d** | | | **750** | **1,450** |
+| | **Totals** | | **40** | **1,600** | **3,760** | | **Totals** | | **40** | **1,600** | **3,760** |
+| **May 1** | **Balance b/d** | | | **750** | **1,450** | | | | | | |
+
+**Step-by-Step Arithmetic Check:**
+- **Cash Column:** Dr total = `$400 + $900 + $300 = $1,600`; Cr items = `$600 + $250 = $850` → **Balance c/d = `$1,600 − $850 = $750`** → May 1 **Dr Balance b/d = $750** ✓.
+- **Bank Column:** Dr total = `$2,200 + $960 + $600 = $3,760`; Cr items = `$750 + $760 + $300 + $500 = $2,310` → **Balance c/d = `$3,760 − $2,310 = $1,450`** → May 1 **Dr Balance b/d = $1,450** ✓.
+- **Contra Entries Checked:** Apr 18 ($600 cash banked) and Apr 25 ($300 withdrawn for office use) both appear on BOTH sides with **`C`**. Apr 28 Drawings ($500) is **NOT** a contra entry — it affects only Cr Bank!
+- **Discounts Checked:** Discount Allowed totaled = **$40**; Discount Received totaled = **$40** (both simply summed, never balanced).
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Balancing the Cash Book"
+  items={[
+    {
+      statement: 'When the owner withdraws $400 from the business bank account for personal family spending, it is recorded as a Contra Entry (C) in the Cash Book.',
+      answer: false,
+      explanation: 'Personal withdrawals are Drawings (Cr Bank only, Dr Drawings A/c) — NOT a Contra Entry! Only transfers between business Cash and business Bank are Contra Entries.',
+    },
+    {
+      statement: 'The Discount Allowed and Discount Received columns in a Three-Column Cash Book should be balanced using Balance c/d just like the Cash and Bank columns.',
+      answer: false,
+      explanation: 'Discount columns are NEVER balanced — they are simply totaled down and transferred to the Discount Allowed (Dr) and Discount Received (Cr) accounts.',
+    },
+    {
+      statement: 'Depositing $500 from the shop cash register into the business bank account is recorded on the Debit Bank column and the Credit Cash column with folio "C".',
+      answer: true,
+      explanation: 'Bank increases (Debit Bank, Details: Cash, C) while Cash decreases (Credit Cash, Details: Bank, C).',
+    },
+    {
+      statement: 'If a business begins the month with a Bank Overdraft of $600, "Balance b/d $600" is entered on the Credit side of the Bank column.',
+      answer: true,
+      explanation: 'A Bank Overdraft is a liability (money owed to the bank), so its opening Balance b/d belongs on the Credit side of the Bank column.',
+    },
+    {
+      statement: 'Paying $1,200 cash for inventory purchases is recorded on the Credit side of the Cash column.',
+      answer: true,
+      explanation: 'Cash is flowing OUT of the business, so all cash payments go on the Credit (right) side of the Cash column.',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s3-06-project"
+  title="Mini-Project: Build & Balance a Three-Column Cash Book (With Overdraft Twist!)"
+  duration="30–35 mins"
+  scenario="You are the cashier at 'Harbor Fresh Market' for August 2026. Prepare a complete, ruled Three-Column Cash Book from these 8 August entries (watch out — the month starts with a Bank Overdraft!): Aug 1 Opening Cash $350 (Dr), Opening Bank Overdraft $500 (Cr); Aug 4 Cash sales $1,100; Aug 7 Banked $800 of shop cash; Aug 11 Received cheque $1,425 from Hotel Palms after allowing $75 cash discount; Aug 15 Paid supplier TropiFarm by cheque $950 after receiving $50 cash discount; Aug 19 Paid wages in cash $300; Aug 24 Withdrew $200 from bank for cash till; Aug 29 Paid electricity by cheque $250."
+  steps={[
+    'Rule up a neat Three-Column Cash Book with Debit (Date, Details, F, Disc. All., Cash, Bank) and Credit (Date, Details, F, Disc. Rec., Cash, Bank) sides.',
+    'Enter Day 1 carefully: put Cash $350 on the DEBIT side and Bank Overdraft $500 on the CREDIT side!',
+    'Record all 7 remaining transactions — flagging BOTH Contra Entries (Aug 7 and Aug 24) with bold "C" markers in the Folio column.',
+    'Total both Discount columns (do NOT balance them!), balance the Cash and Bank columns independently on Aug 31, and bring down both Sept 1 Opening Balances (b/d) — noting whether Harbor Fresh escaped its Bank Overdraft!',
+  ]}
+  deliverables={[
+    'A complete, ruled Three-Column Cash Book for August 2026',
+    'Verified totals for Discount Allowed ($75) and Discount Received ($50)',
+    'Balanced Sept 1 Balances b/d for both Cash and Bank + 1-sentence overdraft check',
+  ]}
+  rubric={[
+    'Opening Bank Overdraft ($500) is accurately placed on the Credit side on Aug 1.',
+    'Both Contra Entries (Aug 7 $800 banked; Aug 24 $200 withdrawn for till) appear on BOTH sides with folio "C".',
+    'Cash Balance b/d on Sept 1 = $550 (Dr) [Dr: 350+1,100+200=1,650; Cr: 800+300=1,100], and Bank Balance b/d on Sept 1 = $325 (Dr — positive! Overdraft eliminated!) [Dr: 800+1,425=2,225; Cr: 500+950+200+250=1,900].',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **Dr = Receipts + Discount Allowed**; **Cr = Payments + Discount Received**.
+- **Contra Entry (`C`)** = ONLY transfers between your own Cash & Bank (NEVER personal Drawings!).
+- **Discount Columns** = **TOTAL ONLY** (never balance!).
+- Always finish with **Day 1 of next month `Balance b/d`** below the double-underlined totals!
+:::

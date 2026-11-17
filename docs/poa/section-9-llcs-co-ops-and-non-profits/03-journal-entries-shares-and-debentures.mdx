@@ -1,0 +1,256 @@
+---
+id: journal-entries-shares-and-debentures
+title: "9.3 Journal Entries for Issue of Shares and Debentures"
+sidebar_label: "9.3 Issuing Shares & Debentures"
+sidebar_position: 3
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 9"
+  section="LLCs, Co-ops & Non-Profits — Limited Liability Companies"
+  code="POA-S9-03"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="20 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+Recording the issue of **Ordinary Shares**, **Preference Shares**, and **Debentures** in the General Journal is refreshingly clean once you memorize ONE golden law: **Share Capital Accounts are ALWAYS credited at PAR (Nominal) value!** If investors pay MORE than par value *(say `$2.60` for a `$2.00` share)*, the extra `$0.60` per share is credited separately to a **Capital Reserve** called **Share Premium**!
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | Journal &amp; Ledger entries for issuing **Shares at Par**, **Shares at a Premium** (`Share Premium`), **Debentures**, and **Accrued/Paid Debenture Interest** |
+| **Exam Focus** | Never journalizing **Authorized Capital**, splitting **Par Value vs. Share Premium** cleanly, and recording the **2-step Application Account** flow when requested |
+| **Learning Outcome** | Prepare accurate General Journal entries, ledger accounts, and Balance Sheet equity extracts for any share or debenture issue |
+
+<ObjectivesBox
+  id="poa-s9-03-obj"
+  objectives={[
+    'Write General Journal entries for issuing Ordinary Shares and Preference Shares at par value (both direct and via Application accounts).',
+    'Calculate and record Share Premium accurately when shares are issued above nominal (par) value.',
+    'Write General Journal entries for issuing Debentures and for recording both paid and accrued Debenture Interest.',
+    'Confirm that Authorized Share Capital requires NO double-entry journal posting.',
+  ]}
+/>
+
+---
+
+## 1. The Four Core Capital-Raising Journal Templates
+
+<FormulaCard
+  title="Share & Debenture Issue Journal Templates (Memorize All 4!)"
+  onFormulaSheet={false}
+  summary="Bank receives FULL cash collected; Share Capital gets ONLY Par Value; any excess above Par goes to Share Premium!"
+>
+
+| Transaction | Debit (`Dr`) | Credit (`Cr`) |
+| :--- | :--- | :--- |
+| **1. Shares Issued at PAR** *(Direct)* | `Bank` *(Shares × Par)* | `Ordinary (or Preference) Share Capital` *(Shares × Par)* |
+| **2. Shares Issued at PAR** *(2-Step via Application)* | (a) `Bank`<br/>(b) `Share Application` | (a) `Share Application`<br/>(b) `Ordinary / Pref Share Capital` |
+| **3. Shares Issued at a PREMIUM** *(e.g. `$2.00` par sold at `$2.60`)* | `Bank` *(Shares × Issue Price `$2.60`)* | `Ordinary Share Capital` *(Shares × Par `$2.00`)*<br/>**`Share Premium`** *(Shares × `$0.60` excess!)* |
+| **4. Issuing Debentures** *(e.g. `$60,000` `8%` Debentures)* | `Bank` *(`$60,000`)* | **`8% Debentures`** *(`$60,000` — Non-Current Liability!)* |
+
+</FormulaCard>
+
+### What Is Share Premium & Can It Pay Dividends?
+- **Share Premium** is the extra cash above nominal (par) value paid by investors who eagerly want shares in a strong, reputable company.
+- It is classified as a **Capital Reserve** (inside Shareholders’ Equity on the Balance Sheet) — and by law it **CANNOT be distributed to shareholders as cash dividends**! *(It can be used to issue bonus shares or write off preliminary/share-issue expenses.)*
+
+---
+
+## 2. Diagram 1: Share & Debenture Issue Journal Entries Blueprint
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-9/03-share-and-debenture-issue-entries.svg"
+  alt="Three-panel reference guide illustrating General Journal entries for issuing shares at par, issuing shares at a premium (splitting par and Share Premium), and issuing Debentures plus annual Debenture Interest."
+  caption="Diagram 1 (Static Reference): Watch the bottom navy warning banner — NEVER write a journal entry for Authorized Share Capital; ONLY record shares actually ISSUED!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive Share & Debenture Posting Flow
+
+<InteractiveDiagram
+  title="Interactive Flow: Trace Cash From Investor Subscription Straight to the Balance Sheet"
+  layout="flow"
+  instruction="Click Steps 1 to 4 to follow how share and debenture issues flow through the Journal, Ledgers, and Balance Sheet."
+  nodes={[
+    {
+      label: '1. Skip Authorized Capital',
+      tag: 'Memo Only!',
+      tone: 'warning',
+      detail: 'When a company registers Authorized Capital of 200,000 shares @ $2 ($400,000), ZERO cash has changed hands! Make NO journal entry — simply record it as a memo note.',
+      example: 'Authorized Capital appears at the top of "Financed By" on the Balance Sheet with a double-underline underneath so it is NOT added!',
+      examTip: 'Writing "Dr Bank / Cr Authorized Capital" is an instant exam error — only ISSUED shares enter double-entry!',
+    },
+    {
+      label: '2. Split Issue Price = Par + Premium',
+      tag: 'Exact Math',
+      tone: 'neutral',
+      detail: 'If 25,000 $2.00 shares are sold at $2.60: Cash received = 25,000 × $2.60 = $65,000 (Dr Bank); Par Value = 25,000 × $2.00 = $50,000 (Cr Ord Share Cap); Premium = 25,000 × $0.60 = $15,000 (Cr Share Premium)!',
+      example: 'Check Dr = Cr: $65,000 Dr = $50,000 + $15,000 = $65,000 Cr ✓!',
+      examTip: 'Remember: Ordinary Share Capital & Preference Share Capital MUST have their own separate ledger accounts — never merge them!',
+    },
+    {
+      label: '3. Record Debentures & Interest',
+      tag: 'Debt Liability',
+      tone: 'neutral',
+      detail: 'Issuing $60,000 of 8% Debentures → Dr Bank $60,000 / Cr 8% Debentures $60,000. Always include the interest percentage (e.g. "8% Debentures") in the account title!',
+      example: 'If half-year interest ($2,400) was paid and half ($2,400) is owing on 31 Dec: Dr Debenture Interest $4,800 / Cr Bank $2,400 / Cr Accrued Debenture Interest $2,400!',
+      examTip: 'Full annual Debenture Interest ($4,800) hits the Income Statement; the unpaid $2,400 sits in Current Liabilities!',
+    },
+    {
+      label: '4. Present on Balance Sheet',
+      tag: 'Equity vs. Debt',
+      tone: 'positive',
+      detail: 'On the Balance Sheet: Bank increases under Current Assets; Ordinary Cap + Preference Cap + Share Premium sit under Shareholders’ Equity; 8% Debentures sit separately under Non-Current Liabilities!',
+      example: 'Assets (+$265,000 Bank) = Equity ($150k Ord + $40k Pref + $15k Prem = $205k) + Non-Current Debt ($60k Debentures) = $265,000 ✓!',
+      examTip: 'Never place Debentures inside Shareholders’ Funds — Debentures are ALWAYS a Non-Current Liability!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="General Journal Entries & Balance Sheet Extract for Full Corporate Capital Raising"
+  marks={14}
+  problem={
+    <>
+      <p>
+        <strong>Scenario:</strong> On <strong>1 January 2026</strong>, <strong>HarborCraft
+        Manufacturing Ltd</strong> was incorporated with an <strong>Authorized Share Capital</strong>
+        of 200,000 Ordinary Shares of `$2.00` each (`$400,000`) and 50,000 `6%` Preference Shares
+        of `$2.00` each (`$100,000`). During 2026, it completed these financing transactions (all paid in full on application):
+      </p>
+      <ol>
+        <li><strong>Jan 2:</strong> Issued <strong>50,000 Ordinary Shares</strong> (`$2.00` par) at <strong>par (`$2.00`)</strong> for cash.</li>
+        <li><strong>Jan 5:</strong> Issued <strong>20,000 `6%` Preference Shares</strong> (`$2.00` par) at <strong>par (`$2.00`)</strong> for cash.</li>
+        <li><strong>Jan 10:</strong> Issued <strong>`$60,000` of `8%` Debentures (2036)</strong> at par for cash.</li>
+        <li><strong>July 1:</strong> Issued a further <strong>25,000 Ordinary Shares</strong> (`$2.00` par) at <strong>`$2.60` per share</strong> (at a premium of `$0.60` per share!).</li>
+        <li><strong>Dec 31:</strong> Paid the first half-year’s Debenture Interest (`$2,400`) by cheque; the second half-year (`$2,400`) remained accrued at year-end.</li>
+      </ol>
+      <p>
+        <strong>Required:</strong> (a) Write the <strong>General Journal entries</strong> (with narrations) for all five transactions <em>[10 marks]</em>; (b) Prepare the <strong>Financed By</strong> Balance Sheet extract as at 31 December 2026 <em>[4 marks]</em>.
+      </p>
+    </>
+  }
+>
+
+### (a) HarborCraft Manufacturing Ltd — General Journal *(10 marks)*
+*(Note: No journal entry is made for Authorized Share Capital!)*
+
+| Date | Details &amp; Narration | Dr ($) | Cr ($) |
+| :--- | :--- | ---: | ---: |
+| **Jan 2** | Bank | 100,000 | |
+| | &nbsp;&nbsp;&nbsp;&nbsp;Ordinary Share Capital *(`50,000 × $2.00`)* | | 100,000 |
+| | *Being issue of 50,000 Ordinary Shares of $2.00 each at par for cash.* | | |
+| **Jan 5** | Bank | 40,000 | |
+| | &nbsp;&nbsp;&nbsp;&nbsp;6% Preference Share Capital *(`20,000 × $2.00`)* | | 40,000 |
+| | *Being issue of 20,000 6% Preference Shares of $2.00 each at par for cash.* | | |
+| **Jan 10** | Bank | 60,000 | |
+| | &nbsp;&nbsp;&nbsp;&nbsp;8% Debentures (2036) | | 60,000 |
+| | *Being issue of $60,000 8% Debentures at par for cash.* | | |
+| **Jul 1** | Bank *(`25,000 × $2.60`)* | 65,000 | |
+| | &nbsp;&nbsp;&nbsp;&nbsp;Ordinary Share Capital *(`25,000 × $2.00 par`)* | | 50,000 |
+| | &nbsp;&nbsp;&nbsp;&nbsp;**Share Premium** *(`25,000 × $0.60 premium`)* | | **15,000** |
+| | *Being issue of 25,000 Ordinary Shares of $2.00 par at $2.60 per share.* | | |
+| **Dec 31** | Debenture Interest Expense *(`8% × $60,000`)* | 4,800 | |
+| | &nbsp;&nbsp;&nbsp;&nbsp;Bank *(1st half paid)* | | 2,400 |
+| | &nbsp;&nbsp;&nbsp;&nbsp;Accrued Debenture Interest *(2nd half owing)* | | 2,400 |
+| | *Being full-year 8% Debenture Interest paid ($2,400) and accrued ($2,400).* | | |
+
+---
+
+### (b) Balance Sheet Extract ("Financed By") as at 31 December 2026 *(4 marks)*
+
+| Financed By | $ | $ |
+| :--- | ---: | ---: |
+| **Authorized Share Capital *(Memo Only — Not Added!)*** | | |
+| 200,000 Ordinary Shares @ $2.00 (`$400,000`) + 50,000 6% Pref @ $2.00 (`$100,000`) | | *500,000* |
+| | | ═══ |
+| **Issued &amp; Paid-Up Share Capital** | | |
+| 75,000 Ordinary Shares @ $2.00 *(`$100k + $50k`)* | 150,000 | |
+| 20,000 6% Preference Shares @ $2.00 | 40,000 | **190,000** |
+| **Capital Reserves** | | |
+| Share Premium | | **15,000** |
+| **Shareholders’ Funds (Total Equity)** | | **205,000** |
+| **Non-Current Liabilities** | | |
+| 8% Debentures (2036) | | **60,000** |
+| **Total Long-Term Capital Raised** | | **$265,000** |
+
+*(Check: Total Bank Cash Raised = `$100,000 + $40,000 + $60,000 + $65,000 = $265,000` exact ✓! Accrued Debenture Interest `$2,400` sits separately under Current Liabilities!)*
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Share & Debenture Journal Entries"
+  items={[
+    {
+      statement: 'When 10,000 Ordinary Shares of $1.00 par value are issued at $1.40 per share, Ordinary Share Capital is credited with $14,000.',
+      answer: false,
+      explanation: 'Ordinary Share Capital is ALWAYS credited at PAR value ($10,000) — the extra $4,000 ($0.40 × 10,000) MUST be credited to Share Premium!',
+    },
+    {
+      statement: 'Authorized Share Capital must be debited to Bank and credited to Share Capital on the day the company receives its Certificate of Incorporation.',
+      answer: false,
+      explanation: 'NEVER! Authorized Capital is only a legal limit (no cash moved) — journal entries are made ONLY when shares are actually ISSUED!',
+    },
+    {
+      statement: 'Share Premium is classified as a Capital Reserve inside Shareholders’ Equity and cannot be distributed as cash dividends.',
+      answer: true,
+      explanation: 'Correct! Share Premium is a statutory Capital Reserve protected from cash dividend payouts.',
+    },
+    {
+      statement: 'Issuing $50,000 of 9% Debentures for cash is recorded by Debiting Bank $50,000 and Crediting 9% Debentures $50,000.',
+      answer: true,
+      explanation: 'Yes — cash (Asset) rises on the Debit side and 9% Debentures (Non-Current Liability) rises on the Credit side!',
+    },
+    {
+      statement: 'Any Debenture Interest owing (unpaid) at year-end must still be included in the Income Statement expense and shown as a Current Liability on the Balance Sheet.',
+      answer: true,
+      explanation: 'Spot on — standard Accrual Concept! Charge full 12 months in the Income Statement and record the unpaid part under Current Liabilities.',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s9-03-project"
+  title="Mini-Project: Share & Debenture Launch Journal for Caribbean Solar Ltd"
+  duration="20 mins"
+  scenario="Caribbean Solar Ltd registered Authorized Capital of $250,000 (150,000 Ordinary Shares @ $1.00 + 50,000 7% Preference Shares @ $2.00). On 1 Jan 2026 it raised $100,000 total cash via three issues: (1) Issued 40,000 Ordinary Shares ($1.00 par) at $1.25 per share; (2) Issued 10,000 7% Preference Shares ($2.00 par) at par; (3) Issued $30,000 of 9% Debentures at par. By 31 December 2026, half of the annual Debenture Interest was paid by cheque and half remained accrued."
+  steps={[
+    'Write all 4 General Journal entries (with narrations!) covering the 3 capital issues and the year-end Debenture Interest entry.',
+    'Open mini T-accounts for Bank (capital receipts), Ordinary Share Capital, Share Premium, 7% Preference Share Capital, and 9% Debentures.',
+    'Prepare a neat "Financed By" Balance Sheet extract showing Authorized Capital (double-underlined memo!), Issued Capital, Capital Reserves, and Non-Current Liabilities.',
+  ]}
+  deliverables={[
+    '4 General Journal entries with exam-grade narrations',
+    '5 mini Ledger T-accounts confirming $100,000 cash raised',
+    'Formatted "Financed By" Balance Sheet extract',
+  ]}
+  rubric={[
+    'Entry 1 (Premium): Dr Bank $50,000 / Cr Ordinary Share Capital $40,000 / Cr Share Premium $10,000. Entry 2: Dr Bank $20,000 / Cr 7% Pref Share Capital $20,000. Entry 3: Dr Bank $30,000 / Cr 9% Debentures $30,000.',
+    'Entry 4 (Interest): Full 9% × $30,000 = $2,700 → Dr Debenture Interest $2,700 / Cr Bank $1,350 / Cr Accrued Debenture Interest $1,350.',
+    'Financed By Extract: Authorized $250,000 (memo only); Shareholders’ Funds = $70,000 ($40k Ord + $20k Pref + $10k Share Premium) + Non-Current Liability $30,000 9% Debentures = $100,000 total capital raised!',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **Share Capital A/c** = **ALWAYS Par Value**; excess above Par = **`Share Premium`** (Capital Reserve).
+- **NEVER** journalize **Authorized Capital**!
+- **Debentures** = **Non-Current Liability**; full-year **Debenture Interest** = **Income Statement Expense**!
+:::

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 420" fill="none" role="img" aria-label="Manual Accounting Versus Computerized Cloud Accounting Pipeline">
+  <rect width="820" height="420" rx="12" fill="#1B365D"/>
+  <rect x="14" y="14" width="792" height="392" rx="10" stroke="#2D507C" stroke-width="1.2"/>
+
+  <!-- Header -->
+  <text x="34" y="46" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="18" font-weight="700">Impact of Technology: Manual vs. Computerized Accounting</text>
+  <text x="34" y="66" fill="#9DD9CB" font-family="monospace" font-size="11.5">SAME ACCOUNTING RULES — MASSIVE LEAP IN SPEED, AUTOMATION &amp; CONTROLS</text>
+
+  <!-- Left Panel: Manual -->
+  <rect x="34" y="90" width="350" height="296" rx="10" fill="#122440" stroke="#C84E24" stroke-width="1.7"/>
+  <rect x="34" y="90" width="350" height="36" rx="10" fill="#C84E24"/>
+  <text x="209" y="113" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="13.5" font-weight="800">Manual Paper-Based System</text>
+
+  <g font-family="system-ui, sans-serif">
+    <rect x="52" y="142" width="314" height="38" rx="7" fill="#1B365D" stroke="#4D3E4A"/>
+    <text x="66" y="160" fill="#F5A352" font-size="11.5" font-weight="700">1. Paper Invoices &amp; Handwritten Journals</text>
+    <text x="66" y="173" fill="#BFD4E4" font-size="10">Slow entry; high risk of addition &amp; transposition errors</text>
+
+    <rect x="52" y="192" width="314" height="38" rx="7" fill="#1B365D" stroke="#4D3E4A"/>
+    <text x="66" y="210" fill="#F5A352" font-size="11.5" font-weight="700">2. Manual Posting to T-Account Ledgers</text>
+    <text x="66" y="223" fill="#BFD4E4" font-size="10">Every Debit and Credit copied line-by-line by hand</text>
+
+    <rect x="52" y="242" width="314" height="38" rx="7" fill="#1B365D" stroke="#4D3E4A"/>
+    <text x="66" y="260" fill="#F5A352" font-size="11.5" font-weight="700">3. Periodic Trial Balance &amp; Statements</text>
+    <text x="66" y="273" fill="#BFD4E4" font-size="10">Reports often delayed days/weeks after month-end</text>
+
+    <rect x="52" y="294" width="314" height="74" rx="7" fill="#2A1D24" stroke="#C84E24" stroke-width="1.2"/>
+    <text x="66" y="314" fill="#F5A352" font-family="monospace" font-size="10.5" font-weight="700">KEY TRADEOFFS</text>
+    <text x="66" y="332" fill="#FDEFDF" font-size="10.5">✓ Low upfront software cost; easy for tiny cash shops</text>
+    <text x="66" y="349" fill="#FDEFDF" font-size="10.5">✕ Prone to fire/loss, slow search, hard to scale</text>
+  </g>
+
+  <!-- Center Transition Arrow -->
+  <path d="M392 238 H426" stroke="#F5A352" stroke-width="3" stroke-linecap="round"/>
+  <path d="M419 230 L430 238 L419 246" fill="none" stroke="#F5A352" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Right Panel: Computerized -->
+  <rect x="436" y="90" width="350" height="296" rx="10" fill="#122440" stroke="#6BC4B0" stroke-width="1.8"/>
+  <rect x="436" y="90" width="350" height="36" rx="10" fill="#4E8577"/>
+  <text x="611" y="113" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="13.5" font-weight="800">Computerized &amp; Cloud System</text>
+
+  <g font-family="system-ui, sans-serif">
+    <rect x="454" y="142" width="314" height="38" rx="7" fill="#1B365D" stroke="#4E8577"/>
+    <text x="468" y="160" fill="#6BC4B0" font-size="11.5" font-weight="700">1. Barcode / POS / Bank Feed Capture</text>
+    <text x="468" y="173" fill="#DCE8F2" font-size="10">Transactions import automatically with validation checks</text>
+
+    <rect x="454" y="192" width="314" height="38" rx="7" fill="#1B365D" stroke="#4E8577"/>
+    <text x="468" y="210" fill="#6BC4B0" font-size="11.5" font-weight="700">2. Instant Automated Double-Entry Posting</text>
+    <text x="468" y="223" fill="#DCE8F2" font-size="10">Software updates ledgers, stock &amp; customer balances live</text>
+
+    <rect x="454" y="242" width="314" height="38" rx="7" fill="#1B365D" stroke="#4E8577"/>
+    <text x="468" y="260" fill="#6BC4B0" font-size="11.5" font-weight="700">3. One-Click Real-Time Statements &amp; KPIs</text>
+    <text x="468" y="273" fill="#DCE8F2" font-size="10">Trial Balance, Profit &amp; Loss, and tax returns anytime</text>
+
+    <rect x="454" y="294" width="314" height="74" rx="7" fill="#132F34" stroke="#6BC4B0" stroke-width="1.2"/>
+    <text x="468" y="314" fill="#9DD9CB" font-family="monospace" font-size="10.5" font-weight="700">NEW RISKS TO MANAGE</text>
+    <text x="468" y="332" fill="#EBF2EF" font-size="10.5">✓ Cloud backups, audit trails &amp; role passwords</text>
+    <text x="468" y="349" fill="#F5A352" font-size="10.5">⚠ Cyber threats, power outages, "Garbage In, Garbage Out"</text>
+  </g>
+</svg>

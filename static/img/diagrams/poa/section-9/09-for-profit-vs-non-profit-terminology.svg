@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 450" role="img" aria-label="Side-by-side translation guide mapping For-Profit Business accounting terms to exact Non-Profit Club and Society terminology">
+  <defs>
+    <style>
+      .title { font: 700 20px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .sub { font: 500 13px system-ui, -apple-system, sans-serif; fill: #4A5560; }
+      .hdr { font: 700 14px system-ui, -apple-system, sans-serif; fill: #FCFBF8; }
+      .h3 { font: 700 13px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .body { font: 500 12px system-ui, -apple-system, sans-serif; fill: #222222; }
+      .sage { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #2E6359; }
+      .coral { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #C84E24; }
+    </style>
+  </defs>
+
+  <rect width="920" height="450" rx="14" fill="#F8F6F1" stroke="#CEDCD6" stroke-width="1.5"/>
+  <text x="32" y="38" class="title">Non-Profit Organizations: Instant For-Profit → Non-Profit Translation Map</text>
+  <text x="32" y="58" class="sub">Sports clubs, charities, churches &amp; civic societies exist to serve members/community (NOT earn private profit) — so 6 core accounting terms change names!</text>
+
+  <!-- Table Header -->
+  <rect x="32" y="78" width="856" height="36" rx="8" fill="#1B365D"/>
+  <text x="52" y="101" class="hdr">For-Profit Trading Business</text>
+  <text x="336" y="101" class="hdr">Non-Profit Club / Society (USE THESE!)</text>
+  <text x="646" y="101" class="hdr">Quick Purpose</text>
+
+  <!-- Row 1 -->
+  <rect x="32" y="118" width="856" height="42" rx="5" fill="#FCFBF8" stroke="#CEDCD6"/>
+  <text x="52" y="144" class="body">Cash Book (Summary)</text>
+  <text x="336" y="144" class="sage">Receipts and Payments Account</text>
+  <text x="646" y="144" class="body">Cash basis: ALL cash in &amp; out</text>
+
+  <!-- Row 2 -->
+  <rect x="32" y="164" width="856" height="42" rx="5" fill="#EBF2EF" stroke="#CEDCD6"/>
+  <text x="52" y="190" class="body">Income Statement (Profit &amp; Loss)</text>
+  <text x="336" y="190" class="sage">Income and Expenditure Account</text>
+  <text x="646" y="190" class="body">Accrual basis: Revenue items ONLY</text>
+
+  <!-- Row 3 -->
+  <rect x="32" y="210" width="856" height="42" rx="5" fill="#FCFBF8" stroke="#CEDCD6"/>
+  <text x="52" y="236" class="body">Net Profit</text>
+  <text x="336" y="236" class="sage">Surplus (Excess of Income over Exp.)</text>
+  <text x="646" y="236" class="body">Added to Accumulated Fund</text>
+
+  <!-- Row 4 -->
+  <rect x="32" y="256" width="856" height="42" rx="5" fill="#EBF2EF" stroke="#CEDCD6"/>
+  <text x="52" y="282" class="body">Net Loss</text>
+  <text x="336" y="282" class="coral">Deficit (Excess of Exp. over Income)</text>
+  <text x="646" y="282" class="body">Subtracted from Accumulated Fund</text>
+
+  <!-- Row 5 -->
+  <rect x="32" y="302" width="856" height="42" rx="5" fill="#FCFBF8" stroke="#CEDCD6"/>
+  <text x="52" y="328" class="body">Owner's Capital</text>
+  <text x="336" y="328" class="h3">Accumulated Fund (Opening A − L)</text>
+  <text x="646" y="328" class="body">Collective net worth (no Drawings!)</text>
+
+  <!-- Row 6 -->
+  <rect x="32" y="348" width="856" height="42" rx="5" fill="#EBF2EF" stroke="#CEDCD6"/>
+  <text x="52" y="374" class="body">Main Revenue (Sales)</text>
+  <text x="336" y="374" class="h3">Subscriptions, Donations &amp; Fundraisers</text>
+  <text x="646" y="374" class="body">Plus Bar / Cafe / Dance Profit!</text>
+
+  <!-- Bottom Exam Warning -->
+  <rect x="32" y="404" width="856" height="34" rx="8" fill="#C84E24"/>
+  <text x="460" y="426" text-anchor="middle" style="font: 700 12.5px system-ui; fill: #FCFBF8;">Exam Presentation Rule: NEVER write "Net Profit" or "Capital" on a Club question — ALWAYS write "Surplus / Deficit" and "Accumulated Fund"!</text>
+</svg>

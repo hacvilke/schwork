@@ -1,0 +1,260 @@
+---
+id: trade-and-cash-discounts
+title: "3.5 Distinguishing Between Trade and Cash Discounts"
+sidebar_label: "3.5 Trade vs. Cash Discounts"
+sidebar_position: 5
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 3"
+  section="Books of Original Entry — Cash Books"
+  code="POA-S3-05"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="20 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+Businesses offer two very different kinds of price reductions — and mixing them up causes instant ledger errors! A **Trade Discount** is a bulk or wholesale markdown subtracted **right on the invoice** and **NEVER entered into any ledger account**. A **Cash Discount** is a reward for paying a credit bill **early**, and it **IS recorded** inside the **Cash Book** and **Income Statement** as either **Discount Allowed** (expense) or **Discount Received** (income).
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | **Trade Discount** (bulk/trade deduction, never in ledger) vs. **Cash Discount** (prompt-payment reward, recorded in Cash Book & Income Statement) |
+| **Exam Focus** | Applying Trade Discount **FIRST**, subtracting any returns, and ONLY THEN calculating Cash Discount on the net balance paid |
+| **Learning Outcome** | Contrast Trade and Cash Discounts accurately, compute multi-step discounted settlements, and classify Discount Allowed vs. Discount Received |
+
+<ObjectivesBox
+  id="poa-s3-05-obj"
+  objectives={[
+    'Define Trade Discount and Cash Discount and explain the business purpose of each.',
+    'Explain why Trade Discounts are NOT recorded in the double-entry books whereas Cash Discounts ARE recorded.',
+    'Distinguish clearly between Discount Allowed (expense to seller) and Discount Received (income to buyer).',
+    'Calculate exact invoice amounts, return values, cash discounts, and final cash payments when both discounts apply.',
+  ]}
+/>
+
+---
+
+## 1. Side-by-Side Comparison & Exact Calculation Sequence
+
+| Feature | Trade Discount | Cash Discount |
+| :--- | :--- | :--- |
+| **Why Is It Given?** | Encourage **bulk orders** or allow retailers a profit margin off catalog prices | Encourage credit customers to **pay promptly** (improves seller’s cash flow & cuts bad debts) |
+| **When Is It Deducted?** | **Immediately** on the Invoice (and Credit Note if goods are returned) | **Later**, ONLY if the buyer pays within the agreed credit discount window (e.g. `2/10, Net 30`) |
+| **Shown in Ledger Accounts?** | **NO — NEVER** recorded in any ledger or Cash Book column | **YES** — entered in the **Discount columns of the 3-Column Cash Book** and transferred to the Income Statement |
+| **Effect on Seller’s Profit** | Reduces Net Sales indirectly (because sales are recorded at net price) | Recorded as **Discount Allowed** → **Operating Expense** (reduces Net Profit) |
+| **Effect on Buyer’s Profit** | Reduces Cost of Purchases indirectly (purchases entered at net price) | Recorded as **Discount Received** → **Other Income** (increases Net Profit) |
+
+<FormulaCard
+  title="Exact Order of Discount Calculations (Trade First, Cash Second!)"
+  onFormulaSheet={false}
+  summary="Never add Trade % + Cash % together! Always deduct Trade Discount first, then apply Cash Discount to the remaining balance."
+>
+
+$$
+\text{Net Invoice Price} = \text{List Price} - (\text{Trade Discount \%} \times \text{List Price})
+$$
+
+$$
+\text{Balance Owing After Returns} = \text{Net Invoice Price} - \text{Net Credit Notes}
+$$
+
+$$
+\text{Cash Discount} = \text{Cash Discount \%} \times \text{Balance Owing}
+$$
+
+$$
+\text{Cash Paid} = \text{Balance Owing} - \text{Cash Discount}
+$$
+
+</FormulaCard>
+
+:::warning Never Add the Two Percentages Together!
+If List Price = **$1,000**, Trade Discount = **20%**, and Cash Discount = **5%**, the total discount is **NOT** 25% ($250)!
+- Step 1: Trade Discount = `20% × $1,000 = $200` → Net Invoice = **$800**.
+- Step 2: Cash Discount = `5% × $800 = $40` → Cash Paid = **$760** (total saving = **$240**, NOT $250!).
+:::
+
+---
+
+## 2. Diagram 1: Trade Discount vs. Cash Discount Waterfall
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-3/05-trade-vs-cash-discount-flow.svg"
+  alt="Four-stage waterfall converting $1,000 Catalog List Price minus 20% Trade Discount into $800 Net Invoice (entered in Day Book), minus 5% Cash Discount ($40 recorded in Cash Book) into $760 Cash Paid, with side-by-side rule summary cards."
+  caption="Diagram 1 (Static Reference): Follow the numbers left to right — $200 Trade Discount stays ONLY on the invoice, while $40 Cash Discount enters the Cash Book and Income Statement."
+/>
+
+---
+
+## 3. Diagram 2: Interactive Trade vs. Cash Discount Comparator
+
+<InteractiveDiagram
+  title="Interactive Comparator: Spot Every Exam Difference Between Both Discounts"
+  layout="compare"
+  instruction="Select any test point below to compare Trade Discount against Cash Discount and catch classic exam traps."
+  nodes={[
+    {
+      label: 'Where It Appears',
+      tag: 'Books of Entry',
+      detail: 'Students frequently lose marks by trying to create a "Trade Discount Account" in the ledger!',
+      sideALabel: 'Trade Discount',
+      sideAText: 'Appears ONLY on the paper/digital Invoice and Credit Note. NEVER appears in the Sales Journal, Purchases Journal, Cash Book, Trial Balance, or Income Statement.',
+      sideBLabel: 'Cash Discount',
+      sideBText: 'Appears in the 3-Column Cash Book (Discount Allowed on Debit side; Discount Received on Credit side), then totals transfer to the General Ledger and Income Statement.',
+      examTip: 'Rule: If a Trial Balance asks for "Discounts", those figures are ALWAYS Cash Discounts!',
+    },
+    {
+      label: 'Seller vs. Buyer Naming',
+      tag: 'Income Statement',
+      detail: 'Cash discounts carry two mirror names depending on whether you are giving the discount or earning it.',
+      sideALabel: 'Discount Allowed (Seller)',
+      sideAText: 'Given BY us TO credit customers who pay early. Recorded on the DEBIT side of our Cash Book alongside cash receipts. Treated as an EXPENSE in our Income Statement.',
+      sideBLabel: 'Discount Received (Buyer)',
+      sideBText: 'Given TO us BY credit suppliers when we pay early. Recorded on the CREDIT side of our Cash Book alongside cash payments. Treated as OTHER INCOME in our Income Statement.',
+      examTip: 'Easy pairing: Discount ALLOWED sits on the DEBIT (Receipts) side; Discount RECEIVED sits on the CREDIT (Payments) side!',
+    },
+    {
+      label: 'Reading Terms: "2/10, Net 30"',
+      tag: 'Invoice Code',
+      detail: 'Invoices often print shorthand credit terms like "2/10, n/30" or "5% 7 days, net 30".',
+      sideALabel: 'If Paid Within 10 Days',
+      sideAText: 'The buyer earns a 2% Cash Discount off the net balance owed and pays only 98% in cash/cheque — settling 100% of the debt.',
+      sideBLabel: 'If Paid on Day 11 to Day 30',
+      sideBText: 'The prompt-payment window has expired! Cash Discount = $0, so the buyer must pay 100% of the net invoice amount by Day 30.',
+      examTip: 'Always check the exact dates between Invoice Date and Payment Date before awarding a Cash Discount!',
+    },
+    {
+      label: 'Effect of Goods Returned',
+      tag: 'Multi-Step Math',
+      detail: 'What if the buyer returns faulty items BEFORE paying the invoice early?',
+      sideALabel: 'Step 1: Deduct Trade Discount on Return',
+      sideAText: 'Calculate the returned goods net of the original Trade Discount and subtract that Credit Note from the Net Invoice.',
+      sideBLabel: 'Step 2: Apply Cash Discount to Remainder',
+      sideBText: 'Calculate the Cash Discount percentage ONLY on the remaining net balance actually owed — NEVER on goods that were sent back!',
+      examTip: 'Order of operations: List → (− Trade Disc) → (− Net Returns) → (− Cash Disc) → Cash Paid!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Calculating Multi-Step Trade Discount, Returns, Cash Discount & Ledger Entries"
+  marks={10}
+  problem={
+    <>
+      <p>
+        <strong>Scenario:</strong> On <strong>4 May 2026</strong>, <strong>Pacific Wholesalers</strong>
+        sold goods with a catalog list price of <strong>$4,000</strong> on credit to
+        <strong> Vista Hardware</strong>, offering a <strong>15% Trade Discount</strong> and
+        payment terms of <strong>5/10, Net 30</strong>.
+      </p>
+      <p>
+        On <strong>7 May 2026</strong>, Vista Hardware returned damaged goods with a catalog list
+        price of <strong>$400</strong>. On <strong>12 May 2026</strong>, Vista Hardware settled
+        its remaining account in full by cheque.
+      </p>
+      <ol>
+        <li>Calculate the <strong>Net Invoice Amount</strong> recorded on 4 May. <em>[2 marks]</em></li>
+        <li>Calculate the <strong>Net Credit Note Amount</strong> recorded on 7 May. <em>[2 marks]</em></li>
+        <li>Verify whether Vista qualifies for the 5% Cash Discount on 12 May, then calculate the <strong>Cash Discount</strong> and the <strong>Cheque Amount paid</strong>. <em>[4 marks]</em></li>
+        <li>State how the Cash Discount is classified in the Income Statement of (a) <strong>Pacific Wholesalers</strong> and (b) <strong>Vista Hardware</strong>. <em>[2 marks]</em></li>
+      </ol>
+    </>
+  }
+>
+
+**1. Net Invoice Amount on 4 May (2 marks):**
+- Catalog List Price = $4,000
+- Less: 15% Trade Discount (`15% × $4,000`) = **$600** *(1 mark)*
+- **Net Invoice Amount** = `$4,000 − $600` = **$3,400** *(1 mark)*
+
+**2. Net Credit Note Amount on 7 May (2 marks):**
+- List price of returned goods = $400
+- Less: 15% Trade Discount (`15% × $400`) = **$60** *(1 mark)*
+- **Net Credit Note Amount** = `$400 − $60` = **$340** *(1 mark)*
+
+**3. Qualification, Cash Discount & Cheque Paid on 12 May (4 marks):**
+- Days elapsed from 4 May to 12 May = **8 days** (within the 10-day window!) → **YES, Vista qualifies for the 5% Cash Discount** *(1 mark)*.
+- Remaining Net Balance Owing = `$3,400 − $340` = **$3,060** *(1 mark)*.
+- **Cash Discount** = `5% × $3,060` = **$153** *(1 mark)*.
+- **Cheque Amount Paid** = `$3,060 − $153` = **$2,907** *(1 mark)*.
+
+**4. Income Statement Classification of the $153 Cash Discount (2 marks):**
+- **(a) Pacific Wholesalers (Seller):** **Discount Allowed ($153)** — shown as an **Operating Expense** *(1 mark)*.
+- **(b) Vista Hardware (Buyer):** **Discount Received ($153)** — shown as **Other Income** *(added to Gross Profit)* *(1 mark)*.
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Trade vs. Cash Discounts"
+  items={[
+    {
+      statement: 'A Trade Discount is recorded in the Discount Allowed column of the seller’s Three-Column Cash Book.',
+      answer: false,
+      explanation: 'Trade Discounts are NEVER entered into the Cash Book or any ledger account — only Cash Discounts go into the Cash Book discount columns.',
+    },
+    {
+      statement: 'When a buyer receives both a 10% Trade Discount and a 5% Cash Discount on a $1,000 catalog item, the final cash paid is $850.',
+      answer: false,
+      explanation: 'Never add 10% + 5%! First subtract 10% Trade Discount ($1,000 − $100 = $900), then subtract 5% Cash Discount on $900 ($900 − $45 = $855).',
+    },
+    {
+      statement: 'Discount Allowed is an expense to the seller, whereas Discount Received is income to the buyer.',
+      answer: true,
+      explanation: 'Giving a cash discount reduces what the seller collects (expense); receiving a cash discount reduces what the buyer has to pay (income).',
+    },
+    {
+      statement: 'Terms of "3/10, Net 30" mean the customer gets a 3% cash discount if the invoice is paid within 10 days.',
+      answer: true,
+      explanation: 'The first number is the cash discount % (3%), the second is the discount period in days (10 days), and Net 30 is the full credit due date.',
+    },
+    {
+      statement: 'If a customer pays on Day 15 for an invoice with terms "2/10, Net 30", no cash discount is allowed.',
+      answer: true,
+      explanation: 'Day 15 is past the 10-day prompt-payment window, so the customer must pay 100% of the net invoice balance.',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s3-05-project"
+  title="Mini-Project: Discount Decision & Pricing Audit Sheet"
+  duration="25–30 mins"
+  scenario="Your small sports retail shop ('Pulse Athletics') is ordering $5,000 list price of running shoes from two competing wholesalers: Supplier A offers a 20% Trade Discount with terms 2/10, Net 30; Supplier B offers a 15% Trade Discount with terms 5/10, Net 30. Your owner thinks Supplier B is better because '5% is bigger than 2%' — prove mathematically which supplier is truly cheaper!"
+  steps={[
+    'Calculate the Net Invoice Amount (amount recorded in the Purchases Journal) for Supplier A and for Supplier B.',
+    'Assuming you pay on Day 8 (within 10 days), calculate the exact Cash Discount Received and Final Cheque Paid for BOTH Supplier A and Supplier B.',
+    'Assuming instead that cash is tight and you pay on Day 25 (missing the 10-day window), state the exact Final Cheque Paid to BOTH suppliers.',
+    'Write a 3-sentence Financial Advice Note telling your owner which supplier wins in BOTH scenarios and explaining the accounting difference between the Trade Discount and Cash Discount on your books.',
+  ]}
+  deliverables={[
+    'Side-by-side Calculation Table comparing Supplier A vs. Supplier B (Day 8 vs. Day 25 payment)',
+    'Exact Purchases Journal figure and Discount Received figure for each supplier',
+    '3-sentence Financial Recommendation to the store owner',
+  ]}
+  rubric={[
+    'Supplier A Day 8 math is exact: Net Invoice = $4,000; 2% Cash Disc = $80; Cheque Paid = $3,920.',
+    'Supplier B Day 8 math is exact: Net Invoice = $4,250; 5% Cash Disc = $212.50; Cheque Paid = $4,037.50 (Supplier A STILL saves $117.50!).',
+    'Clearly explains that Trade Discount is excluded from ledgers while Cash Discount is recorded as Discount Received (Other Income).',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **Trade Discount** = Bulk reduction → deducted **FIRST** on Invoice & Credit Note → **NEVER** in ledger.
+- **Cash Discount** = Prompt-payment reward → deducted **SECOND** on remaining net balance → **YES** in 3-Column Cash Book (**Discount Allowed** = Dr / Expense; **Discount Received** = Cr / Income).
+:::

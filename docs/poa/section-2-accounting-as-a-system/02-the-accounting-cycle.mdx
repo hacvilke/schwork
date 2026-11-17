@@ -1,0 +1,241 @@
+---
+id: the-accounting-cycle
+title: "2.2 The Accounting Cycle Diagram Explained"
+sidebar_label: "2.2 The Accounting Cycle"
+sidebar_position: 2
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 2"
+  section="Accounting as a System — Concepts & Cycles"
+  code="POA-S2-02"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="20 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+Accounting is not a random pile of paperwork done once a year — it is an **ordered, repeating loop** called the **Accounting Cycle**. Every single business transaction follows the same exact pathway from a raw **source document** (like a sales invoice) through journals, ledgers, a trial balance, and year-end adjustments, all the way to the **financial statements** — and then loops back to start the next financial year!
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | The **6-stage repeating sequence** of the accounting cycle from source documents to final financial statements |
+| **Exam Focus** | Placing stages in the **exact chronological order** and knowing the purpose of each step |
+| **Learning Outcome** | Trace any business transaction cleanly through every stage of the accounting cycle |
+
+<ObjectivesBox
+  id="poa-s2-02-obj"
+  objectives={[
+    'Define the accounting cycle and explain why it is a continuous loop across accounting periods.',
+    'List all stages of the accounting cycle in exact chronological order.',
+    'Explain what happens at each stage (Source Documents, Books of Original Entry, Ledgers, Trial Balance, Adjustments, Financial Statements & Closing).',
+    'Connect the accounting cycle directly to the upcoming syllabus sections (Sections 3 through 6).',
+  ]}
+/>
+
+---
+
+## 1. The Six Core Stages of the Accounting Cycle
+
+Notice how the accounting cycle is literally the **blueprint of the entire Principles of Accounts course**:
+
+| Stage | What Happens Here? | Key Records Created | Where You Study It Next |
+| :--- | :--- | :--- | :--- |
+| **1. Source Documents** | Business transactions occur and generate verifiable written or digital proof | Sales invoices, purchase invoices, receipts, credit notes, cheque counterfoils | Section 3 (Topic 3.2) |
+| **2. Books of Original Entry** | Transactions are first recorded chronologically by type in specialized day books/journals | Sales Journal, Purchases Journal, Returns Books, Cash Book, Petty Cash Book, General Journal | Section 3 (Topics 3.1–3.8) |
+| **3. Posting to Ledgers** | Entries from day books are classified and posted into individual double-entry T-accounts | General Ledger, Sales Ledger (receivables), Purchases Ledger (payables) | Section 4 (Topics 4.1–4.6) |
+| **4. Trial Balance** | At period-end, all ledger balances are listed in Debit and Credit columns to test arithmetical accuracy | Unadjusted Trial Balance (Total Debits = Total Credits) | Section 4 (Topics 4.7–4.8) |
+| **5. Year-End Adjustments** | Accounts are updated for accruals, prepayments, bad/doubtful debts, and depreciation | Adjusting Journal Entries & Adjusted Trial Balance | Section 6 (Topics 6.1–6.7) |
+| **6. Financial Statements & Closing** | Final reports are prepared, temporary income/expense accounts are closed to profit, and permanent balances carry forward (`b/d`) to Year 2 | Income Statement, Balance Sheet, Post-Closing Balances | Section 5 (Topics 5.1–5.7) |
+
+:::note Why Is It Called a "Cycle"?
+At the end of Stage 6, **temporary accounts** (Sales, Purchases, Rent, Wages) are closed to zero to calculate profit for the year, while **permanent accounts** (Cash, Buildings, Equipment, Payables, Capital) carry their closing balances (`c/d`) forward as the **opening balances (`b/d`)** of the brand-new period — restarting the loop smoothly!
+:::
+
+---
+
+## 2. Diagram 1: The Continuous Accounting Cycle Wheel
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-2/02-accounting-cycle-wheel.svg"
+  alt="Six-stage continuous loop diagram showing Step 1 Source Documents, Step 2 Books of Original Entry, Step 3 Post to Ledgers, Step 4 Trial Balance, Step 5 Adjustments, and Step 6 Final Statements looping back via Opening Balances b/d."
+  caption="Diagram 1 (Static Reference): Every transaction moves clockwise through the six stages; closing Balance Sheet balances become next year’s Opening Balances (b/d)."
+/>
+
+---
+
+## 3. Diagram 2: Interactive Transaction Tracker Through the Cycle
+
+<InteractiveDiagram
+  title="Interactive Pipeline: Follow One $1,200 Credit Sale Across All 6 Stages"
+  layout="flow"
+  instruction="Click each stage from 1 to 6 to watch how a single credit sale of office chairs ($1,200 to Apex Studio on May 10) travels through the entire accounting system."
+  nodes={[
+    {
+      label: '1. Source Document',
+      tag: 'Proof',
+      tone: 'positive',
+      detail: 'Your store ships 6 office chairs to Apex Studio on 30-day credit and issues Sales Invoice #408 for $1,200. This document is the legal proof that the transaction happened.',
+      example: 'Invoice #408 shows Date (May 10), Buyer (Apex Studio), Quantity (6 chairs @ $200), Total ($1,200), and Payment Terms (Net 30).',
+      examTip: 'No valid source document = NO entry in the accounting system (Verifiability principle).',
+    },
+    {
+      label: '2. Book of Entry',
+      tag: 'Journalize',
+      tone: 'positive',
+      detail: 'Because it is a credit sale of goods, the clerk records Invoice #408 chronologically in the Sales Day Book (Sales Journal) — NOT the Cash Book.',
+      example: 'Sales Journal row: May 10 | Apex Studio | Inv #408 | $1,200.',
+      examTip: 'Remember: Cash sales go to the Cash Book; CREDIT sales of goods go to the Sales Journal.',
+    },
+    {
+      label: '3. Post to Ledgers',
+      tag: 'Classify',
+      tone: 'positive',
+      detail: 'The entry is posted using double-entry: Debit Apex Studio’s personal account ($1,200) in the Sales Ledger, and at month-end Credit the Sales Account in the General Ledger.',
+      example: 'Debit: Apex Studio A/c $1,200 (now owes us $1,200) · Credit: Sales A/c $1,200 (revenue increased).',
+      examTip: 'Ledgers group all transactions for ONE customer or ONE expense together so you can read the balance instantly.',
+    },
+    {
+      label: '4. Trial Balance',
+      tag: 'Check Math',
+      tone: 'neutral',
+      detail: 'At year-end, all ledger balances are extracted into two columns. Apex Studio’s $1,200 sits on the Debit side (Asset) and Sales sits on the Credit side (Income) — keeping Debits = Credits.',
+      example: 'Trial Balance excerpt: Trade Receivables (Dr $1,200) ... Sales Revenue (Cr $1,200). Totals match!',
+      examTip: 'A Trial Balance catches single-sided posting errors, though it cannot catch every error (you will learn why in Section 7).',
+    },
+    {
+      label: '5. Adjustments',
+      tag: 'Year-End',
+      tone: 'warning',
+      detail: 'Before printing final reports, the accountant checks if any year-end adjustments apply (for instance, setting aside a 5% provision for doubtful debts on unpaid credit customers).',
+      example: 'Adjusting entry updates receivables allowance, unpaid bills (accruals), and annual equipment depreciation.',
+      examTip: 'Adjustments ensure the final statements obey the Accrual and Prudence concepts.',
+    },
+    {
+      label: '6. Final Statements',
+      tag: 'Report & Close',
+      tone: 'positive',
+      detail: 'The $1,200 sale flows into Sales Revenue on the Income Statement (measuring profit), and if Apex Studio still owes $1,200 at Dec 31, it appears under Current Assets on the Balance Sheet.',
+      example: 'Sales account closes to the Income Statement; Apex Studio’s $1,200 balance carries forward (`b/d`) to Jan 1 next year.',
+      examTip: 'Income & Expense accounts reset to $0 each year; Asset, Liability & Capital balances roll forward.',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Ordering & Explaining Jumbled Stages of the Accounting Cycle"
+  marks={8}
+  problem={
+    <>
+      <p>
+        <strong>Question:</strong> A new accounting intern wrote down the steps of the accounting
+        cycle on sticky notes, but dropped them on the floor in the wrong order:
+      </p>
+      <ul>
+        <li><strong>A.</strong> Prepare the Income Statement and Balance Sheet</li>
+        <li><strong>B.</strong> Post transactions to the General and Subsidiary Ledgers</li>
+        <li><strong>C.</strong> Collect and verify Sales Invoices and Receipts</li>
+        <li><strong>D.</strong> Extract a Trial Balance to test arithmetical accuracy</li>
+        <li><strong>E.</strong> Record daily entries into Books of Original Entry</li>
+        <li><strong>F.</strong> Make year-end adjustments for accruals and depreciation</li>
+      </ul>
+      <ol>
+        <li>Arrange letters <strong>A to F</strong> in the <strong>exact chronological order</strong> of the accounting cycle. <em>[3 marks]</em></li>
+        <li>Explain why <strong>Step E</strong> must happen before <strong>Step B</strong>. <em>[2 marks]</em></li>
+        <li>State <strong>one reason</strong> why <strong>Step D</strong> (Trial Balance) is prepared before <strong>Step A</strong> (Financial Statements). <em>[3 marks]</em></li>
+      </ol>
+    </>
+  }
+>
+
+**1. Exact Chronological Order (3 marks — ½ mark per step in position):**
+- **C → E → B → D → F → A**
+  1. **C** — Collect and verify Source Documents
+  2. **E** — Record daily entries into Books of Original Entry
+  3. **B** — Post transactions to the Ledgers
+  4. **D** — Extract a Trial Balance
+  5. **F** — Make year-end adjustments
+  6. **A** — Prepare the Income Statement and Balance Sheet
+
+**2. Why Books of Original Entry (E) come before Ledgers (B) (2 marks):**
+- Books of Original Entry provide a **chronological first record** grouped by transaction type (credit sales, credit purchases, cash) *(1 mark)*. Summarizing totals in day books first prevents cluttering the General Ledger with hundreds of individual daily invoices *(1 mark)*.
+
+**3. Why the Trial Balance (D) is prepared before Financial Statements (A) (3 marks):**
+- The Trial Balance verifies that **total Debit balances equal total Credit balances**, catching arithmetical or one-sided posting errors early *(1 mark)*.
+- It also gathers **every account balance onto one single summary sheet** *(1 mark)*, making it much faster and cleaner to draft accurate Income Statements and Balance Sheets without flipping through every ledger page *(1 mark)*.
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: The Accounting Cycle"
+  items={[
+    {
+      statement: 'Transactions are posted directly to the Trial Balance before being entered into the Books of Original Entry.',
+      answer: false,
+      explanation: 'The correct order is Source Documents → Books of Original Entry → Ledgers → Trial Balance.',
+    },
+    {
+      statement: 'Source documents such as invoices and receipts are the starting trigger of the accounting cycle.',
+      answer: true,
+      explanation: 'Every accounting record begins with objective written or digital evidence proving a transaction occurred.',
+    },
+    {
+      statement: 'Year-end adjustments (like accruals and depreciation) take place after preparing the initial Trial Balance and before finalizing the Financial Statements.',
+      answer: true,
+      explanation: 'Adjustments update unadjusted ledger balances so the final Income Statement and Balance Sheet show accurate period profit and balances.',
+    },
+    {
+      statement: 'At the end of the financial year, Asset and Liability balances are erased to zero just like Sales and Rent.',
+      answer: false,
+      explanation: 'Only temporary accounts (income, expenses, drawings) close to zero; permanent Balance Sheet accounts (Assets, Liabilities, Capital) carry forward into the new year.',
+    },
+    {
+      statement: 'In computerized accounting software, the accounting cycle steps still exist logically even though posting and trial balance generation happen automatically.',
+      answer: true,
+      explanation: 'Software automates posting and reporting instantaneously, but transactions still flow from source inputs → journals → ledgers → trial balance → statements.',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s2-02-project"
+  title="Mini-Project: Trace a Real Business Week Through the Accounting Cycle"
+  duration="25–30 mins"
+  scenario="Imagine you just launched 'Campus Print Hub', a small student print-and-bind shop. During your first week, four transactions happened: (1) You invested $2,000 cash to open the shop, (2) You bought $600 of paper on credit from PaperPro Ltd, (3) You printed 50 flyers for $150 cash, and (4) You paid $100 cash for electricity."
+  steps={[
+    'Draw a clean 6-box visual flow chart of the Accounting Cycle on one sheet (or digital slide) showing the loop back to Period 2.',
+    'For each of the 4 Campus Print Hub transactions, write down: (a) the exact Source Document generated (e.g., bank slip, purchase invoice, cash receipt), and (b) which Book of Original Entry receives it first.',
+    'List the individual Ledger Account names that would be opened in Stage 3 (hint: Capital, Cash, Purchases, PaperPro Ltd, Sales, Electricity).',
+    'Write a short 3-sentence "Closing Note" explaining which of those 6 accounts reset to zero at year-end and which carry forward (`b/d`) to next year.',
+  ]}
+  deliverables={[
+    'A hand-drawn or digital 6-stage Accounting Cycle visual loop',
+    'A 4-row Transaction Routing Table (Transaction → Source Doc → Book of Entry → Ledger Accounts)',
+    'A short Temporary vs. Permanent Accounts closing explanation',
+  ]}
+  rubric={[
+    'All 6 stages appear in exact chronological order with accurate directional arrows.',
+    'Every transaction is matched to the right source document and Book of Original Entry.',
+    'Clearly distinguishes temporary accounts (closed to profit) from permanent accounts (carried forward b/d).',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- Memorize the 6-letter chain **S-B-L-T-A-F**: **S**ource documents → **B**ooks of original entry → **L**edgers → **T**rial balance → **A**djustments → **F**inal statements.
+- Always remember the loop: **Closing balances (`c/d`)** of Assets, Liabilities, and Capital become next year’s **Opening balances (`b/d`)**!
+:::

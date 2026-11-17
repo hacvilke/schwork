@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 500" role="img" aria-label="Four-quadrant cheat sheet for Accrued Expense, Prepaid Expense, Accrued Revenue, and Unearned Revenue">
+  <defs>
+    <style>
+      .title { font: 700 20px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .sub { font: 500 13px system-ui, -apple-system, sans-serif; fill: #4A5560; }
+      .qtitle { font: 700 15px system-ui, -apple-system, sans-serif; fill: #FCFBF8; }
+      .label { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .body { font: 500 12.5px system-ui, -apple-system, sans-serif; fill: #222222; }
+      .sage { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #2E6359; }
+      .coral { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #C84E24; }
+      .mono { font: 700 12px ui-monospace, SFMono-Regular, monospace; fill: #122440; }
+    </style>
+  </defs>
+
+  <rect width="920" height="500" rx="14" fill="#F8F6F1" stroke="#CEDCD6" stroke-width="1.5"/>
+  <text x="32" y="38" class="title">The 4-Quadrant Accruals &amp; Prepayments Master Map</text>
+  <text x="32" y="58" class="sub">Every year-end accrual or prepayment affects BOTH the Income Statement AND the Current section of the Balance Sheet.</text>
+
+  <!-- Q1: Accrued Expense -->
+  <rect x="32" y="78" width="418" height="184" rx="11" fill="#FCFBF8" stroke="#C84E24" stroke-width="1.6"/>
+  <rect x="32" y="78" width="418" height="36" rx="10" fill="#C84E24"/>
+  <text x="50" y="101" class="qtitle">1. Accrued Expense (Expense Owing / Due)</text>
+  <text x="50" y="135" class="body">Used this year, NOT paid yet (e.g. Dec electricity bill unpaid).</text>
+  <text x="50" y="159" class="label">Income Statement:</text>
+  <text x="176" y="159" class="coral">ADD to Expense paid</text>
+  <text x="50" y="182" class="label">Balance Sheet:</text>
+  <text x="154" y="182" class="coral">Current Liability (Credit Bal c/d)</text>
+  <rect x="48" y="198" width="386" height="48" rx="7" fill="#FFF3EE" stroke="#C84E24" stroke-width="1"/>
+  <text x="60" y="217" class="mono">Dr Expense A/c .............. $X</text>
+  <text x="60" y="236" class="mono">   Cr Accrued Expense A/c ...... $X</text>
+
+  <!-- Q2: Prepaid Expense -->
+  <rect x="470" y="78" width="418" height="184" rx="11" fill="#FCFBF8" stroke="#2E6359" stroke-width="1.6"/>
+  <rect x="470" y="78" width="418" height="36" rx="10" fill="#2E6359"/>
+  <text x="488" y="101" class="qtitle">2. Prepaid Expense (Paid in Advance)</text>
+  <text x="488" y="135" class="body">Paid this year, benefits NEXT year (e.g. 3 mos advance insurance).</text>
+  <text x="488" y="159" class="label">Income Statement:</text>
+  <text x="614" y="159" class="sage">SUBTRACT from Expense paid</text>
+  <text x="488" y="182" class="label">Balance Sheet:</text>
+  <text x="592" y="182" class="sage">Current Asset (Debit Bal c/d)</text>
+  <rect x="486" y="198" width="386" height="48" rx="7" fill="#EBF2EF" stroke="#4E8577" stroke-width="1"/>
+  <text x="498" y="217" class="mono">Dr Prepaid Expense A/c ...... $X</text>
+  <text x="498" y="236" class="mono">   Cr Expense A/c .............. $X</text>
+
+  <!-- Q3: Accrued Revenue -->
+  <rect x="32" y="280" width="418" height="184" rx="11" fill="#FCFBF8" stroke="#1B365D" stroke-width="1.6"/>
+  <rect x="32" y="280" width="418" height="36" rx="10" fill="#1B365D"/>
+  <text x="50" y="303" class="qtitle">3. Accrued Revenue (Income Owing / Receivable)</text>
+  <text x="50" y="337" class="body">Earned this year, NOT received yet (e.g. tenant owes Dec rent).</text>
+  <text x="50" y="361" class="label">Income Statement:</text>
+  <text x="176" y="361" class="sage">ADD to Revenue received</text>
+  <text x="50" y="384" class="label">Balance Sheet:</text>
+  <text x="154" y="384" class="sage">Current Asset (Debit Bal c/d)</text>
+  <rect x="48" y="400" width="386" height="48" rx="7" fill="#EBF2EF" stroke="#1B365D" stroke-width="1"/>
+  <text x="60" y="419" class="mono">Dr Accrued Revenue A/c ...... $X</text>
+  <text x="60" y="438" class="mono">   Cr Revenue A/c .............. $X</text>
+
+  <!-- Q4: Prepaid / Unearned Revenue -->
+  <rect x="470" y="280" width="418" height="184" rx="11" fill="#FCFBF8" stroke="#4E8577" stroke-width="1.6"/>
+  <rect x="470" y="280" width="418" height="36" rx="10" fill="#4E8577"/>
+  <text x="488" y="303" class="qtitle">4. Unearned Revenue (Received in Advance)</text>
+  <text x="488" y="337" class="body">Cash received now, service owed NEXT year (e.g. Jan rent paid early).</text>
+  <text x="488" y="361" class="label">Income Statement:</text>
+  <text x="614" y="361" class="coral">SUBTRACT from Revenue received</text>
+  <text x="488" y="384" class="label">Balance Sheet:</text>
+  <text x="592" y="384" class="coral">Current Liability (Credit Bal c/d)</text>
+  <rect x="486" y="400" width="386" height="48" rx="7" fill="#FFF3EE" stroke="#C84E24" stroke-width="1"/>
+  <text x="498" y="419" class="mono">Dr Revenue A/c .............. $X</text>
+  <text x="498" y="438" class="mono">   Cr Unearned Revenue A/c ..... $X</text>
+
+  <!-- Footer Memory Cue -->
+  <text x="460" y="487" text-anchor="middle" class="label">Memory Anchor:  ALL "Accrued" (Owing) = ADD to Income Stmt  |  ALL "Prepaid / Advance" = SUBTRACT from Income Stmt!</text>
+</svg>

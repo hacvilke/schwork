@@ -1,0 +1,276 @@
+---
+id: calculating-annual-depreciation
+title: "6.4 Calculating Annual Depreciation (Straight Line vs. Reducing Balance)"
+sidebar_label: "6.4 Calculating Depreciation"
+sidebar_position: 4
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 6"
+  section="Accounting Adjustments — Bad Debts & Depreciation"
+  code="POA-S6-04"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="25 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+When a bakery buys a **$40,000 delivery van** that will run for **5 years**, charging all $40,000 as an expense in Year 1 would crush Year 1 profit and make Years 2–5 look artificially free! **Depreciation** applies the **Matching Concept** by systematically spreading the cost of a Non-Current Asset across the years it helps earn revenue. Crucially, **depreciation is a NON-CASH expense** — it does NOT set aside a cash pile to buy a new van!
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | **Causes of Depreciation**, **Straight-Line Method** (`Cost` basis), **Reducing-Balance Method** (`NBV` basis), and **Pro-Rata (Monthly)** depreciation for mid-year purchases |
+| **Exam Focus** | Computing multi-year depreciation schedules without mixing up `Cost` vs. `Net Book Value`, applying `Residual (Scrap) Value`, and choosing the right method for each asset |
+| **Learning Outcome** | Define depreciation accurately, list its causes, and calculate annual depreciation cleanly using both Straight-Line and Reducing-Balance methods |
+
+<ObjectivesBox
+  id="poa-s6-04-obj"
+  objectives={[
+    'Define depreciation accurately and state four main causes (wear and tear, obsolescence, passage of time, depletion).',
+    'Calculate annual depreciation using the Straight-Line Method (both formula with scrap value and percentage of cost).',
+    'Calculate annual depreciation over multiple years using the Reducing-Balance (Diminishing Balance) Method.',
+    'Explain which assets suit each method and calculate pro-rata monthly depreciation when an asset is bought mid-year.',
+  ]}
+/>
+
+---
+
+## 1. What Is Depreciation & Why Does It Happen?
+
+**Depreciation** is the **systematic allocation of the depreciable cost of a tangible Non-Current Asset over its estimated useful economic life** *(also described as the loss in value of a fixed asset through use or time)*.
+
+### Four Main Causes of Depreciation
+1. **Physical Wear and Tear:** Daily use, friction, weather, and rust gradually wear down machinery, vehicles, and furniture.
+2. **Obsolescence (Economic Factor):** New technology or changing customer tastes make older computers, phones, or software outdated before they physically break!
+3. **Passage of Time:** Leases, patents, and copyrights expire automatically after a fixed number of years even if barely used.
+4. **Depletion:** Natural resource assets (quarries, mines, oil wells, timberlands) lose value as raw materials are extracted.
+
+*(Note: **Freehold Land** normally does **NOT** depreciate because it has an unlimited useful life!)*
+
+---
+
+## 2. The Two Core Depreciation Formulas
+
+<FormulaCard
+  title="Straight-Line vs. Reducing-Balance Depreciation Formulas"
+  onFormulaSheet={false}
+  summary="Straight-Line charges an EQUAL dollar amount every year; Reducing-Balance applies a fixed % to the shrinking Net Book Value."
+>
+
+### Method 1: Straight-Line (Fixed Instalment) Method
+
+$$
+\text{Annual Depreciation} = \frac{\text{Original Cost} - \text{Estimated Scrap (Residual) Value}}{\text{Estimated Useful Life (Years)}}
+$$
+
+*Or when given a fixed percentage rate on Cost:*
+
+$$
+\text{Annual Depreciation} = \text{Rate \%} \times \text{Original Cost}
+$$
+
+### Method 2: Reducing-Balance (Diminishing Balance) Method
+
+$$
+\text{Annual Depreciation} = \text{Rate \%} \times \text{Net Book Value (at start of year)}
+$$
+
+where:
+
+$$
+\text{Net Book Value (NBV)} = \text{Original Cost} - \text{Accumulated Depreciation to Date}
+$$
+
+</FormulaCard>
+
+### Pro-Rata Rule (Mid-Year Purchases!)
+Watch the policy statement in exam questions!
+- **"Pro-rata (month-by-month) basis":** Multiply annual depreciation by `Months Owned ÷ 12`. *(Example: Asset bought **1 July** for a **31 Dec** year-end = `6/12` of a full year!)*
+- **"Full year’s depreciation in year of purchase, none in year of sale":** Charge a full `12/12` year even if bought in October!
+
+---
+
+## 3. Diagram 1: Straight-Line vs. Reducing-Balance Chart
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-6/04-straight-line-vs-reducing-balance.svg"
+  alt="Side-by-side 4-year bar charts comparing Straight-Line depreciation ($4,000 every year) against Reducing-Balance depreciation ($5,000, $3,750, $2,813, $2,109) on a $20,000 delivery van."
+  caption="Diagram 1 (Static Reference): Straight-Line produces flat equal bars every year; Reducing-Balance front-loads heavy depreciation in early years when vehicles lose market value fastest!"
+/>
+
+---
+
+## 4. Diagram 2: Interactive Method Selector & Exam Trap Comparator
+
+<InteractiveDiagram
+  title="Interactive Comparator: Straight-Line vs. Reducing-Balance — Every Difference Explained"
+  layout="compare"
+  instruction="Tap any dimension below to contrast Straight-Line against Reducing-Balance side by side."
+  nodes={[
+    {
+      label: 'Calculation Base',
+      tag: 'Core Rule',
+      detail: 'The #1 mistake in exams is multiplying the percentage by the WRONG base in Year 2!',
+      sideALabel: 'Straight-Line Method',
+      sideAText: 'ALWAYS multiplies the % by the ORIGINAL COST (or uses (Cost − Scrap) ÷ Years). The dollar expense NEVER changes from Year 1 to Year 5!',
+      sideBLabel: 'Reducing-Balance Method',
+      sideBText: 'ALWAYS multiplies the % by the CURRENT NET BOOK VALUE (Cost − Prior Accum. Depr.). Year 2’s depreciation is ALWAYS smaller than Year 1’s!',
+      examTip: 'Circle the phrase "on cost" (Straight-Line) vs. "on net book value / reducing balance" before touching your calculator!',
+    },
+    {
+      label: 'Effect on Total Annual Asset Cost',
+      tag: 'Repair Matching',
+      detail: 'Think about how repair bills behave as a delivery truck ages from Year 1 to Year 5.',
+      sideALabel: 'Straight-Line Method',
+      sideAText: 'Equal depreciation every year — works cleanly when repair costs stay modest and steady (e.g., office desks, shop shelving, buildings).',
+      sideBLabel: 'Reducing-Balance Method',
+      sideBText: 'High depreciation + low repairs in Year 1; low depreciation + higher repairs in Year 5 → keeps TOTAL annual vehicle cost (Depr. + Repairs) nicely balanced!',
+      examTip: 'That "Depreciation + Repairs balancing effect" is a guaranteed 2-mark Paper 2 explanation for WHY firms pick Reducing-Balance for vehicles!',
+    },
+    {
+      label: 'Reaching Zero NBV',
+      tag: 'Scrap Value',
+      detail: 'Can an asset’s Net Book Value ever hit exactly $0 under each method?',
+      sideALabel: 'Straight-Line Method',
+      sideAText: 'YES — reaches exact Residual Value (or $0 if no scrap value) neatly at the end of its estimated useful life.',
+      sideBLabel: 'Reducing-Balance Method',
+      sideBText: 'NO — mathematically, NBV approaches $0 forever without hitting $0, automatically leaving a small residual scrap value.',
+      examTip: 'Under Reducing-Balance, NEVER subtract scrap value before multiplying by the percentage!',
+    },
+    {
+      label: 'Consistency Concept',
+      tag: 'Audit Rule',
+      detail: 'Can an owner switch from Reducing-Balance to Straight-Line in Year 2 just to make profit look higher?',
+      sideALabel: '✕ Switching Arbitrarily',
+      sideAText: 'Violates the Consistency Concept — distorts profit comparisons across years and misleads banks/investors!',
+      sideBLabel: '✓ Consistent Policy',
+      sideBText: 'Once chosen for an asset class, use the SAME method and rate every year (disclose clearly if a genuine change is ever required).',
+      examTip: 'Remember: Depreciation does NOT create a cash fund — it is purely a bookkeeping allocation of historical cost!',
+    },
+  ]}
+/>
+
+---
+
+## 5. Worked Example
+
+<WorkedExample
+  title="3-Year Depreciation Schedules (Straight-Line, Reducing-Balance & Mid-Year Pro-Rata)"
+  marks={12}
+  problem={
+    <>
+      <p>
+        <strong>Scenario:</strong> On <strong>1 January 2024</strong>, <strong>Island Express Delivery</strong>
+        purchased two Non-Current Assets (financial year ends 31 December):
+      </p>
+      <ul>
+        <li><strong>Office Equipment:</strong> Cost $16,000; Estimated Scrap Value $1,000; Estimated Useful Life 5 years (<strong>Straight-Line Method</strong>).</li>
+        <li><strong>Delivery Van:</strong> Cost $40,000; depreciated at <strong>20% per annum (Reducing-Balance Method)</strong>.</li>
+      </ul>
+      <p>
+        Additionally, on <strong>1 July 2026</strong>, the business bought a new <strong>Computer System for $12,000</strong>
+        (depreciated at <strong>25% straight-line on a pro-rata monthly basis</strong>).
+      </p>
+      <ol>
+        <li>Prepare a 3-year schedule (2024–2026) showing Annual Depreciation, Accumulated Depreciation, and Closing NBV for the <strong>Office Equipment</strong>. <em>[4 marks]</em></li>
+        <li>Prepare a 3-year schedule (2024–2026) for the <strong>Delivery Van</strong>. <em>[6 marks]</em></li>
+        <li>Calculate the 2026 depreciation charge for the <strong>Computer System</strong> bought on 1 July 2026. <em>[2 marks]</em></li>
+      </ol>
+    </>
+  }
+>
+
+**1. Office Equipment — Straight-Line Method (4 marks):**
+- Annual Depreciation = `($16,000 − $1,000) ÷ 5 years` = **$3,000 per year** *(1 mark)*
+
+| Year | Original Cost ($) | Annual Depr. ($) | Accum. Depr. ($) | Closing NBV ($) |
+| :--- | ---: | ---: | ---: | ---: |
+| **2024** | 16,000 | 3,000 | 3,000 | **13,000** |
+| **2025** | 16,000 | 3,000 | 6,000 | **10,000** |
+| **2026** | 16,000 | 3,000 | 9,000 | **7,000** |
+
+**2. Delivery Van — Reducing-Balance at 20% (6 marks):**
+
+| Year | Opening NBV ($) | Calculation (`20% × NBV`) | Annual Depr. ($) | Accum. Depr. ($) | Closing NBV ($) |
+| :--- | ---: | :--- | ---: | ---: | ---: |
+| **2024** | 40,000 | `20% × $40,000` | **8,000** | 8,000 | **32,000** |
+| **2025** | 32,000 | `20% × $32,000` | **6,400** | 14,400 | **25,600** |
+| **2026** | 25,600 | `20% × $25,600` | **5,120** | 19,520 | **20,480** |
+
+**3. Mid-Year Computer System — Pro-Rata Straight-Line (2 marks):**
+- Owned from **1 July 2026 to 31 December 2026** = **6 months** (`6/12` of a year).
+- 2026 Depreciation = `$12,000 × 25% × (6 ÷ 12)` = `$3,000 × 0.5` = **$1,500** *(2 marks)*.
+- *(Total 2026 Depreciation Expense across all 3 assets = `$3,000 + $5,120 + $1,500` = **$9,620**!)*
+
+</WorkedExample>
+
+---
+
+## 6. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Calculating Annual Depreciation"
+  items={[
+    {
+      statement: 'Depreciation sets aside cash in a special bank account so the business can buy a replacement asset later.',
+      answer: false,
+      explanation: 'Classic myth! Depreciation is a NON-CASH accounting expense that spreads historical asset cost over its useful life — zero cash moves into a bank account.',
+    },
+    {
+      statement: 'Under the Straight-Line Method, an asset costing $22,000 with a $2,000 scrap value and 4-year useful life has annual depreciation of $5,000.',
+      answer: true,
+      explanation: '($22,000 − $2,000) ÷ 4 years = $20,000 ÷ 4 = $5,000 every year!',
+    },
+    {
+      statement: 'Under the Reducing-Balance Method, Year 2 depreciation is calculated by multiplying the rate by the ORIGINAL COST of the asset.',
+      answer: false,
+      explanation: 'Reducing-Balance ALWAYS multiplies the percentage rate by the NET BOOK VALUE (Cost − Accumulated Depreciation), NOT Original Cost!',
+    },
+    {
+      statement: 'The Reducing-Balance Method is especially suitable for delivery vans and machinery because it matches higher early depreciation with lower early repair bills.',
+      answer: true,
+      explanation: 'Yes! As depreciation falls in later years and repair costs rise, total annual running cost stays relatively steady.',
+    },
+    {
+      statement: 'Freehold Land is normally depreciated at 10% per year on a Straight-Line basis.',
+      answer: false,
+      explanation: 'Freehold Land has an unlimited useful life and normally appreciates rather than wears out, so it is NOT depreciated!',
+    },
+  ]}
+/>
+
+---
+
+## 7. Student Project
+
+<StudentProject
+  id="poa-s6-04-project"
+  title="Mini-Project: Choosing the Best Depreciation Policy for PalmBreeze Bakery"
+  duration="25 mins"
+  scenario="PalmBreeze Bakery just bought a commercial rotary oven for $25,000 (estimated useful life 4 years, expected scrap value $3,000). The owner asks you to compare TWO policies side-by-side over all 4 years: Policy A — Straight-Line Method using (Cost − Scrap) ÷ 4; Policy B — Reducing-Balance Method at 30% per annum on NBV."
+  steps={[
+    'Build a 4-year depreciation table for Policy A (Straight-Line) showing Annual Depr., Accum. Depr., and Closing NBV each year.',
+    'Build a 4-year depreciation table for Policy B (30% Reducing-Balance) showing Annual Depr., Accum. Depr., and Closing NBV each year (round to nearest cent if needed).',
+    'Compare Year 1 profit impact vs. Year 4 profit impact under both policies.',
+    'Write a 3-sentence recommendation explaining which method you advise for a heavy commercial oven (citing early efficiency, repair bills, and the Consistency Concept!).',
+  ]}
+  deliverables={[
+    'Complete 4-year schedules for Policy A (Straight-Line) and Policy B (30% Reducing-Balance)',
+    'Year 1 vs. Year 4 profit-impact comparison note',
+    '3-sentence Policy Recommendation referencing Consistency',
+  ]}
+  rubric={[
+    'Policy A (Straight-Line) exact figures: $5,500 every year → NBVs: Yr 1 $19,500; Yr 2 $14,000; Yr 3 $8,500; Yr 4 $3,000 (exact scrap value!).',
+    'Policy B (30% Reducing-Balance) exact figures: Yr 1 Depr $7,500 (NBV $17,500); Yr 2 Depr $5,250 (NBV $12,250); Yr 3 Depr $3,675 (NBV $8,575); Yr 4 Depr $2,572.50 (NBV $6,002.50).',
+    'Recommendation clearly explains trade-off (Policy B lowers Year 1 profit by $2,000 more than Policy A, but balances rising oven repairs in Years 3–4) and stresses staying consistent once chosen.',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **Straight-Line** = `(Cost − Scrap) ÷ Useful Life` (or `% × Original Cost`) → **equal every year**.
+- **Reducing-Balance** = `% × Net Book Value` → **shrinks every year**.
+- Always check for **mid-year purchase dates** (`months ÷ 12`) and never depreciate **Freehold Land**!
+:::

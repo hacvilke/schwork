@@ -1,0 +1,263 @@
+---
+id: dividends-and-reserves-appropriation
+title: "9.4 Calculating Dividends and Appropriating Profits (Dividends vs. Reserves)"
+sidebar_label: "9.4 Dividends & Reserves"
+sidebar_position: 4
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 9"
+  section="LLCs, Co-ops & Non-Profits — Limited Liability Companies"
+  code="POA-S9-04"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="25 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+At the end of a profitable year, a company’s Board of Directors faces one big decision: **how much Net Profit should be PAID OUT to shareholders as Dividends, and how much should be PLOWED BACK into the company as Reserves (General Reserve & Retained Earnings)?** You show that exact split in the **Company Profit and Loss Appropriation Account** — right after deducting Debenture Interest and Corporation Tax!
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | **LLC Appropriation Account**, **Interim vs. Final (Proposed) Dividends**, **Revenue Reserves vs. Capital Reserves**, and **Retained Earnings b/f → c/f** |
+| **Exam Focus** | Computing `%` and cents-per-share dividends on **ISSUED capital**, distinguishing **Interim Paid** *(Approp. ONLY)* from **Proposed Unpaid** *(Approp. + Current Liability!)*, and subtracting Debenture Interest &amp; Tax **BEFORE** Appropriation |
+| **Learning Outcome** | Calculate Preference and Ordinary Dividends accurately and construct a complete Limited Liability Company Appropriation Account |
+
+<ObjectivesBox
+  id="poa-s9-04-obj"
+  objectives={[
+    'Calculate Preference and Ordinary Dividends accurately using both percentage-of-capital and cents-per-share methods.',
+    'Distinguish clearly between Interim Dividends (already paid) and Final Proposed Dividends (payable after AGM → Current Liability).',
+    'Distinguish Revenue Reserves (distributable) from Capital Reserves (non-distributable) and explain why companies build a General Reserve.',
+    'Construct a complete vertical Limited Liability Company Profit and Loss Appropriation Account.',
+  ]}
+/>
+
+---
+
+## 1. Calculating Dividends & Distinguishing Interim vs. Proposed
+
+<FormulaCard
+  title="Two Dividend Calculation Formulas (Always Use ISSUED Shares!)"
+  onFormulaSheet={false}
+  summary="Read whether the dividend is quoted as a PERCENTAGE (%) or as CENTS PER SHARE ($0.XX)!"
+>
+
+$$
+\text{Percentage Dividend} = \text{Rate \%} \times \text{Issued Share Capital (\$)}
+$$
+
+$$
+\text{Per-Share Dividend} = \text{Dividend per Share (\$)} \times \text{Number of Issued Shares}
+$$
+
+</FormulaCard>
+
+### Interim Dividend vs. Final Proposed Dividend (Crucial Balance Sheet Rule!)
+
+| Dividend Type | When Decided &amp; Paid | Appropriation Account? | Balance Sheet Current Liability? |
+| :--- | :--- | :---: | :---: |
+| **Interim Dividend** | Paid **mid-year** in cash *(already inside Trial Balance!)* | **YES** *(deducted)* | **NO!** *(Already paid out of Bank!)* |
+| **Final (Proposed) Dividend** | Recommended at **year-end** *(in Additional Notes — still unpaid!)* | **YES** *(deducted)* | **YES — Current Liability!** *(Owed to shareholders!)* |
+
+### Revenue Reserves vs. Capital Reserves (Paper 1 &amp; Paper 2 Favorite!)
+
+| Type of Reserve | How Created | Can Pay Cash Dividends? | Classic Examples |
+| :--- | :--- | :---: | :--- |
+| **Revenue Reserves** | Plowed back out of **trading profits** (via Appropriation Account) | **YES** *(distributable!)* | **General Reserve**, **Retained Earnings (Unappropriated Profit)**, Foreign Exchange / Expansion Reserve |
+| **Capital Reserves** | Created from **non-trading capital gains** (NOT trading profits!) | **NO — Forbidden by Law!** | **Share Premium**, **Revaluation Reserve** (revaluing Premises upward) |
+
+**Why transfer profit to a General Reserve?**
+1. **Funds future expansion** (buying new factories/equipment) **without borrowing** or paying bank loan interest.
+2. **Protects Working Capital** by keeping cash inside the company instead of paying 100% of profit out as dividends.
+3. **Provides a rainy-day buffer** to keep dividends smooth or absorb losses in future economic downturns!
+
+---
+
+## 2. Diagram 1: LLC Appropriation Account & Dividend Waterfall
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-9/04-llc-appropriation-and-dividends-flow.svg"
+  alt="Waterfall diagram tracing Net Profit after Debenture Interest and Tax plus Retained Earnings b/f minus General Reserve Transfer, Preference Dividends, Interim Ordinary Dividends, and Proposed Final Dividends to Retained Earnings c/f."
+  caption="Diagram 1 (Static Reference): Check the right box every time — INTERIM dividends are already paid (Approp. only), while PROPOSED dividends sit in BOTH Appropriation AND Current Liabilities!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive LLC Appropriation & Reserves Explorer
+
+<InteractiveDiagram
+  title="Interactive Hub: Tap Each Item to Confirm Its Exact Statement Placement"
+  layout="hub"
+  centerLabel="LLC Profits"
+  centerSublabel="IS vs. Approp."
+  instruction="Select any of the 4 frequently confused corporate items below to confirm whether it hits the Income Statement, Appropriation Account, or Balance Sheet."
+  nodes={[
+    {
+      label: 'Debenture Interest & Tax',
+      tag: 'BEFORE Approp.!',
+      tone: 'warning',
+      detail: 'Debenture Interest is a Finance Expense in the Income Statement, and Corporation Tax is deducted RIGHT AFTER Profit before Tax — BOTH happen BEFORE Net Profit enters the Appropriation Account!',
+      example: 'Operating Profit $82,000 − Debenture Interest $4,000 = $78,000 − Corporation Tax $13,000 = $65,000 Net Profit After Tax!',
+      examTip: 'NEVER put Debenture Interest or Directors’ Fees inside the Appropriation Account — both are Income Statement expenses!',
+    },
+    {
+      label: 'Retained Earnings b/f → c/f',
+      tag: 'Carries Forward',
+      tone: 'positive',
+      detail: 'Unappropriated profits left over from last year ("Retained Earnings b/f") are ADDED to this year’s Net Profit to create Total Profit Available for Appropriation!',
+      example: 'Net Profit $65,000 + Retained Earnings b/f $18,000 = $83,000 Available − $39,000 Appropriations = $44,000 Retained Earnings c/f (goes to Balance Sheet Equity!).',
+      examTip: 'Remember: Retained Earnings is a REVENUE RESERVE — never put it under Liabilities!',
+    },
+    {
+      label: 'Transfer to General Reserve',
+      tag: 'Not a Cash Outflow!',
+      tone: 'neutral',
+      detail: 'Transferring $15,000 to General Reserve simply moves $15,000 from Retained Earnings into a labeled savings bucket inside Equity — ZERO cash leaves the Bank!',
+      example: 'Opening General Reserve ($20,000) + Transfer ($15,000) = Closing General Reserve ($35,000) on the Balance Sheet!',
+      examTip: 'Classic mistake: putting ONLY the $15,000 transfer on the Balance Sheet and forgetting to ADD it to Opening General Reserve ($20,000)!',
+    },
+    {
+      label: 'Half-Paid Preference Dividend',
+      tag: 'Check Remaining!',
+      tone: 'warning',
+      detail: 'If Issued 6% Preference Capital is $100,000, the FULL annual Preference Dividend is $6,000. If the Trial Balance shows "$3,000 Interim Preference Dividend Paid", ONLY the remaining $3,000 is Proposed!',
+      example: 'Appropriation shows BOTH ($3,000 Interim + $3,000 Final Proposed = $6,000 total); Balance Sheet Current Liabilities shows ONLY the unpaid $3,000!',
+      examTip: 'Always subtract any Preference Interim already paid from the full annual % before calculating Proposed Preference Dividend!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Calculating Dividends & Preparing a Full LLC Profit and Loss Appropriation Account"
+  marks={12}
+  problem={
+    <>
+      <p>
+        <strong>Scenario:</strong> <strong>Kingston Tech Distributors Ltd</strong> has the
+        following data for the year ended <strong>31 December 2026</strong>:
+      </p>
+      <ul>
+        <li><strong>Issued Share Capital:</strong> 150,000 Ordinary Shares @ `$1.00` (`$150,000`); 50,000 `6%` Preference Shares @ `$2.00` (`$100,000`).</li>
+        <li><strong>Long-Term Debt:</strong> `$50,000` of `8%` Debentures (half-year interest `$2,000` already paid; second half `$2,000` still owing).</li>
+        <li><strong>Operating Profit (BEFORE Debenture Interest &amp; Tax):</strong> <strong>$82,000</strong>.</li>
+        <li><strong>Corporation Tax for 2026 (unpaid at year-end):</strong> <strong>$13,000</strong>.</li>
+        <li><strong>Opening Balances (1 Jan 2026):</strong> Retained Earnings `$18,000`; General Reserve `$20,000`.</li>
+        <li><strong>Dividends &amp; Reserves:</strong>
+          (a) Transfer <strong>$15,000</strong> to General Reserve;
+          (b) Half-year Interim Preference Dividend (`$3,000`) was paid mid-year — propose the remaining half-year Preference Dividend;
+          (c) Interim Ordinary Dividend of <strong>`$0.04` per share</strong> was paid mid-year; Directors now propose a <strong>Final Ordinary Dividend of `8%`</strong>.
+        </li>
+      </ul>
+      <ol>
+        <li>Calculate <strong>Net Profit After Interest &amp; Tax</strong> and prepare the vertical <strong>Profit and Loss Appropriation Account</strong> for 2026. <em>[9 marks]</em></li>
+        <li>State the exact <strong>Closing General Reserve</strong>, <strong>Closing Retained Earnings</strong>, and <strong>Current Liabilities</strong> arising from these items on 31 December 2026. <em>[3 marks]</em></li>
+      </ol>
+    </>
+  }
+>
+
+### 1. Kingston Tech Distributors Ltd — Profit & Loss Appropriation Account *(9 marks)*
+*Pre-Appropriation Check:*
+- Full-year Debenture Interest = `8% × $50,000` = **`$4,000`** *(deducted in Income Statement!)*
+- Profit before Tax = `$82,000 − $4,000` = **`$78,000`**
+- Less: Corporation Tax = `($13,000)` → **Net Profit After Tax = `$65,000`** *(2 marks)*
+
+**Profit and Loss Appropriation Account for the year ended 31 December 2026** *(7 marks)*
+
+| Details | $ | $ | $ |
+| :--- | ---: | ---: | ---: |
+| **Net Profit After Tax for the Year** | | | **65,000** |
+| **Add: Retained Earnings Brought Forward (1 Jan)** | | | **18,000** |
+| *Total Profit Available for Appropriation* | | | *83,000* |
+| **Less: Appropriations** | | | |
+| Transfer to General Reserve | | 15,000 | |
+| *6% Preference Dividend (`6% × $100,000 = $6,000`):* | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;Interim Paid | 3,000 | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;Final Proposed *(unpaid)* | 3,000 | 6,000 | |
+| *Ordinary Dividend:* | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;Interim Paid *(`$0.04 × 150,000 shares`)* | 6,000 | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;Final Proposed *(`8% × $150,000`)* | 12,000 | 18,000 | **(39,000)** |
+| **Retained Earnings Carried Forward (31 Dec)** | | | **$44,000** |
+
+### 2. Year-End Balance Sheet Impacts *(3 marks — 1 mark each)*
+- **Closing General Reserve *(Revenue Reserve)*:** `$20,000 opening + $15,000 transfer` = **`$35,000`**.
+- **Closing Retained Earnings *(Revenue Reserve)*:** **`$44,000`**.
+- **Current Liabilities Created *(Unpaid Items ONLY!)*:** Accrued Debenture Interest `$2,000` + Corporation Tax Payable `$13,000` + Proposed Preference Dividend `$3,000` + Proposed Ordinary Dividend `$12,000` = **`$30,000`** *(Interim dividends `$3,000` &amp; `$6,000` were already paid — NOT liabilities!)*.
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Corporate Dividends & Reserves"
+  items={[
+    {
+      statement: 'Interim Dividends already paid during the year are deducted in the Appropriation Account AND listed as Current Liabilities on the Balance Sheet.',
+      answer: false,
+      explanation: 'Interim dividends are ALREADY PAID in cash — they go ONLY in the Appropriation Account (NEVER under Current Liabilities)! Only PROPOSED (unpaid) dividends go in Current Liabilities!',
+    },
+    {
+      statement: 'Transferring $10,000 to a General Reserve causes $10,000 of cash to leave the company’s bank account.',
+      answer: false,
+      explanation: 'False! A transfer to General Reserve is purely an internal equity reclassification keeping profits inside the business — zero cash leaves the bank!',
+    },
+    {
+      statement: 'General Reserve and Retained Earnings are Revenue Reserves that may legally be used to pay cash dividends.',
+      answer: true,
+      explanation: 'Yes — Revenue Reserves originate from trading profits and are legally distributable, unlike Capital Reserves (such as Share Premium).',
+    },
+    {
+      statement: 'If a company has 100,000 Issued Ordinary Shares of $1.00 each and pays an Interim Dividend of $0.05 per share, the total Interim Dividend is $5,000.',
+      answer: true,
+      explanation: '$0.05 × 100,000 shares = $5,000!',
+    },
+    {
+      statement: 'Debenture Interest and Directors’ Fees are charged in the Income Statement BEFORE Net Profit is transferred to the Appropriation Account.',
+      answer: true,
+      explanation: 'Spot on! Only Dividends and Reserve Transfers appear inside the Company Appropriation Account.',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s9-04-project"
+  title="Mini-Project: Appropriation Account & Liability Check for CoralBay Foods Ltd"
+  duration="20 mins"
+  scenario="CoralBay Foods Ltd has Issued Share Capital of 100,000 Ordinary Shares ($1 par = $100,000) and 40,000 5% Preference Shares ($1 par = $40,000), plus $40,000 of 10% Debentures (interest unpaid at year-end). Operating Profit BEFORE Debenture Interest & Tax = $54,000; Corporation Tax (unpaid) = $10,000; Opening Retained Earnings = $12,000; Opening General Reserve = $15,000. During the year, an Interim Ordinary Dividend of $0.05 per share was paid. At year-end, Directors propose: (a) $10,000 transfer to General Reserve, (b) full 5% Preference Dividend, and (c) Final Ordinary Dividend of 7%."
+  steps={[
+    'Calculate full-year Debenture Interest (10% × $40k), Profit before Tax, and Net Profit After Tax.',
+    'Calculate Interim Ordinary Dividend ($0.05 × 100,000), Proposed 5% Preference Dividend, and Final Proposed 7% Ordinary Dividend.',
+    'Prepare the complete vertical Profit and Loss Appropriation Account for CoralBay Foods Ltd for 2026.',
+    'List exact Balance Sheet figures for: Closing General Reserve, Closing Retained Earnings, and Total Current Liabilities arising from these adjustments.',
+  ]}
+  deliverables={[
+    'Pre-Appropriation Profit & Dividend Workings Box',
+    'Formatted LLC Profit & Loss Appropriation Account',
+    'Balance Sheet Reserves & Current Liabilities Summary',
+  ]}
+  rubric={[
+    'Net Profit After Tax = $54,000 − $4,000 Debenture Interest − $10,000 Tax = $40,000 (+ $12,000 b/f = $52,000 Available).',
+    'Appropriations = $10,000 General Reserve + $2,000 Proposed Pref Div + $5,000 Interim Ord Div + $7,000 Final Proposed Ord Div = $24,000 → Closing Retained Earnings = $28,000!',
+    'Balance Sheet figures: Closing General Reserve = $25,000 ($15k + $10k); Closing Retained Earnings = $28,000; Current Liabilities created = $4,000 Accrued Debenture Int. + $10,000 Tax + $2,000 Proposed Pref Div + $7,000 Proposed Ord Div = $23,000!',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **Before Appropriation:** Deduct **Debenture Interest** &amp; **Corporation Tax** in the Income Statement!
+- **Inside Appropriation:** `Net Profit + Retained b/f − Reserve Transfer − Pref Div − Ord Div = Retained c/f`.
+- **Interim** = Approp. ONLY; **Proposed** = Approp. **AND** Current Liability!
+:::

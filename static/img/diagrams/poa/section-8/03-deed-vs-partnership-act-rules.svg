@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 470" role="img" aria-label="Comparison between custom clauses in a Written Partnership Agreement vs automatic default rules under the Partnership Act when no agreement exists">
+  <defs>
+    <style>
+      .title { font: 700 20px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .sub { font: 500 13px system-ui, -apple-system, sans-serif; fill: #4A5560; }
+      .hdr { font: 700 14px system-ui, -apple-system, sans-serif; fill: #FCFBF8; }
+      .h3 { font: 700 12.8px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .body { font: 500 12px system-ui, -apple-system, sans-serif; fill: #222222; }
+      .sage { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #2E6359; }
+      .coral { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #C84E24; }
+    </style>
+  </defs>
+
+  <rect width="920" height="470" rx="14" fill="#F8F6F1" stroke="#CEDCD6" stroke-width="1.5"/>
+  <text x="32" y="38" class="title">Partnership Agreement (Deed) vs. Partnership Act Default Rules</text>
+  <text x="32" y="58" class="sub">If partners do NOT sign a written Partnership Agreement (or stay silent on a point), the Partnership Act defaults apply AUTOMATICALLY!</text>
+
+  <!-- Table Header -->
+  <rect x="32" y="78" width="856" height="36" rx="8" fill="#1B365D"/>
+  <text x="50" y="101" class="hdr">Key Financial Clause</text>
+  <text x="304" y="101" class="hdr">With a Written Partnership Agreement</text>
+  <text x="614" y="101" class="hdr">NO Agreement (Partnership Act Rule!)</text>
+
+  <!-- Row 1 -->
+  <rect x="32" y="118" width="856" height="46" rx="5" fill="#FCFBF8" stroke="#CEDCD6"/>
+  <text x="50" y="146" class="h3">1. Profit &amp; Loss Sharing</text>
+  <text x="304" y="146" class="body">Any agreed ratio (e.g. 3:2 or Capital ratio)</text>
+  <text x="614" y="146" class="coral">SHARED EQUALLY (50/50 — even if Capital differs!)</text>
+
+  <!-- Row 2 -->
+  <rect x="32" y="168" width="856" height="46" rx="5" fill="#EBF2EF" stroke="#CEDCD6"/>
+  <text x="50" y="196" class="h3">2. Interest on Capital</text>
+  <text x="304" y="196" class="body">Agreed % rate (e.g. 5% or 10% p.a.)</text>
+  <text x="614" y="196" class="coral">NONE (0% Interest on Capital!)</text>
+
+  <!-- Row 3 -->
+  <rect x="32" y="218" width="856" height="46" rx="5" fill="#FCFBF8" stroke="#CEDCD6"/>
+  <text x="50" y="246" class="h3">3. Partner Salaries</text>
+  <text x="304" y="246" class="body">Agreed annual salary for active partner(s)</text>
+  <text x="614" y="246" class="coral">NONE ($0 Salary for working partners!)</text>
+
+  <!-- Row 4 -->
+  <rect x="32" y="268" width="856" height="46" rx="5" fill="#EBF2EF" stroke="#CEDCD6"/>
+  <text x="50" y="296" class="h3">4. Interest on Drawings</text>
+  <text x="304" y="296" class="body">Agreed % penalty to deter heavy drawings</text>
+  <text x="614" y="296" class="coral">NONE (0% Interest charged on Drawings!)</text>
+
+  <!-- Row 5 -->
+  <rect x="32" y="318" width="856" height="52" rx="5" fill="#FFF3EE" stroke="#C84E24" stroke-width="1.4"/>
+  <text x="50" y="342" class="h3">5. Interest on Partner's</text>
+  <text x="50" y="359" class="h3">LOAN (Above Capital)</text>
+  <text x="304" y="350" class="body">Agreed loan interest rate (e.g. 8% p.a.)</text>
+  <text x="614" y="342" class="sage">5% PER ANNUM AUTOMATICALLY!</text>
+  <text x="614" y="359" class="body">(Charged in Income Stmt, NOT Appropriation!)</text>
+
+  <!-- Bottom Trap Box -->
+  <rect x="32" y="388" width="856" height="64" rx="10" fill="#2E6359"/>
+  <text x="54" y="413" class="hdr">★ #1 Paper 1 &amp; Paper 2 Distinction: Interest on Partner's LOAN vs. Interest on CAPITAL</text>
+  <text x="54" y="436" style="font: 500 12.2px system-ui; fill: #FCFBF8;">Interest on a Partner's LOAN = Operating Expense in the INCOME STATEMENT (paid even in a loss year!)  |  Interest on CAPITAL = Profit share in APPROPRIATION A/c!</text>
+</svg>

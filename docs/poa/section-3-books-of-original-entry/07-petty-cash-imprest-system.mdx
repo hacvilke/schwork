@@ -1,0 +1,252 @@
+---
+id: petty-cash-imprest-system
+title: "3.7 Balancing the Petty Cash Book Using the Imprest System"
+sidebar_label: "3.7 Petty Cash & Imprest System"
+sidebar_position: 7
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 3"
+  section="Books of Original Entry — Cash Books"
+  code="POA-S3-07"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="25 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+Writing a bank cheque — or cluttering the main Cash Book — every time someone buys $4 of postage stamps, $7 of bus fare, or $12 of office cleaning spray would waste hours! Instead, businesses keep a locked **Petty Cash Box** managed by a junior cashier using the **Imprest System**: start each period with a **fixed cash float** (say $200), pay small expenses against signed vouchers, and at period-end top up **the exact amount spent** so the float returns right back to $200!
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | Analytical **Petty Cash Book** columns, the **Imprest System** float restoration formula, and monthly General Ledger posting |
+| **Exam Focus** | Completing and balancing an **Analytical Petty Cash Book**, calculating the exact **imprest reimbursement**, and cross-casting (verifying Total Payments = sum of all Analysis columns) |
+| **Learning Outcome** | Construct and balance an analytical Petty Cash Book under the Imprest System and explain its internal control benefits |
+
+<ObjectivesBox
+  id="poa-s3-07-obj"
+  objectives={[
+    'Define Petty Cash and explain why businesses keep a separate Petty Cash Book alongside the main Cash Book.',
+    'Explain how the Imprest System works (Fixed Float = Cash Remaining + Vouchers Spent).',
+    'Prepare and balance an Analytical Petty Cash Book with expense analysis columns (e.g., Postage, Stationery, Travelling, Cleaning, Ledger).',
+    'Calculate the exact reimbursement (top-up) required to restore the imprest float and post analysis totals to the General Ledger.',
+  ]}
+/>
+
+---
+
+## 1. How the Imprest System Works
+
+Under the **Imprest System**, the Chief Cashier gives the Petty Cashier a **fixed starting float** (called the **Imprest Amount**, e.g. **$200**).
+
+<FormulaCard
+  title="The Imprest System Check & Restoration Formulas"
+  onFormulaSheet={false}
+  summary="At any moment, cash left in the tin plus signed vouchers equals the fixed float — and reimbursement always equals exact total spent."
+>
+
+$$
+\text{Imprest Float} = \text{Cash Remaining in Box (Balance c/d)} + \text{Total Vouchers Spent}
+$$
+
+$$
+\text{Reimbursement (Top-Up)} = \text{Total Payments Made During Period} = \text{Imprest Float} - \text{Balance c/d}
+$$
+
+</FormulaCard>
+
+### Four Strong Internal Control Advantages of the Imprest System
+1. **Instant Theft/Error Check:** A supervisor can open the petty cash box on any random afternoon — `Cash on hand + Signed Vouchers` MUST equal the exact Imprest Float!
+2. **Caps Maximum Cash Risk:** Because the box only ever holds a modest fixed float (e.g., $150–$300), maximum possible cash loss is strictly limited.
+3. **Keeps the Main Cash Book Clean:** Hundreds of tiny receipts stay inside the Petty Cash Book; only **one reimbursement entry** per month appears in the main Cash Book.
+4. **Fast General Ledger Posting:** Analysis columns sort expenses automatically (Postage, Travel, Stationery, etc.) so **one monthly total per column** posts straight to the Debit of each expense account!
+
+:::note What Goes in the "Ledger" Analysis Column?
+Sometimes a tiny payment settles a **credit supplier’s personal account** (e.g. paying $18 cash to clear a small stationery creditor, *J. Marks*) rather than a regular cash expense. That payment goes in the rightmost **Ledger Accounts** column and is posted directly to the Debit of *J. Marks* in the Purchases Ledger!
+:::
+
+---
+
+## 2. Diagram 1: The Imprest Petty Cash System Cycle
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-3/07-imprest-petty-cash-cycle.svg"
+  alt="Four-stage Imprest System cycle illustrating a $200 fixed float minus $145 vouchers spent leaving $55 Balance c/d, followed by a $145 reimbursement restoring the float to $200, with an internal control summary box."
+  caption="Diagram 1 (Static Reference): Notice how every single cycle restores the box back to the exact $200 Imprest Float — never blindly handing out another $200!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive 5-Step Petty Cash Balancing Walkthrough
+
+<InteractiveDiagram
+  title="Interactive Workflow: Master All 5 Steps of an Analytical Petty Cash Book"
+  layout="flow"
+  instruction="Tap Steps 1 through 5 to see how every column adds, cross-checks, balances, and restores the float."
+  nodes={[
+    {
+      label: '1. Receipts Column',
+      tag: 'Float In',
+      tone: 'positive',
+      detail: 'The far-left "Receipts ($)" column acts as the DEBIT side of the Petty Cash Book. Enter the starting float (or Balance b/d + Reimbursement) on Day 1.',
+      example: 'May 1 | Details: Cash / Bank (Imprest Float) | Receipts: $200.',
+      examTip: 'Remember: Receipts is on the FAR LEFT of Details; Total Payments and all Analysis Columns sit to the RIGHT!',
+    },
+    {
+      label: '2. Log Every Voucher',
+      tag: 'Double Record',
+      tone: 'positive',
+      detail: 'For every Petty Cash Voucher paid out, write the amount TWICE on the same row: once in the "Total Payments ($)" column AND once in the matching Analysis column (Postage, Travel, Stationery, Cleaning, or Ledger).',
+      example: 'May 4 | Bus fare | Voucher #01 | Total Payments: $12 | Travelling: $12.',
+      examTip: 'Never forget to enter the amount in BOTH "Total Payments" AND the right Analysis column — missing one breaks your cross-check!',
+    },
+    {
+      label: '3. Cross-Cast Totals',
+      tag: 'Self-Check!',
+      tone: 'warning',
+      detail: 'At period-end, sum the Total Payments column AND sum every individual Analysis column. Check horizontally: the sum of ALL Analysis column totals MUST equal Total Payments!',
+      example: 'Postage $25 + Stationery $40 + Travel $50 + Cleaning $30 = $145 = Total Payments ($145) ✓!',
+      examTip: 'Cross-casting catches 100% of column-addition slips right inside the exam room!',
+    },
+    {
+      label: '4. Balance c/d & b/d',
+      tag: 'Cash Left',
+      tone: 'positive',
+      detail: 'Subtract Total Payments from Total Receipts. Write that cash left over in the Total Payments column as "Balance c/d", rule matching totals on both sides, then carry "Balance b/d" into Receipts on Day 1 of the next period.',
+      example: 'Receipts $200 − Payments $145 = Balance c/d $55 → June 1 Receipts: Balance b/d $55.',
+      examTip: 'Balance c/d goes ONLY in the Total Payments column — NEVER inside any expense analysis column!',
+    },
+    {
+      label: '5. Reimburse Float',
+      tag: 'Restore!',
+      tone: 'warning',
+      detail: 'On Day 1 of the new period (or end of current period), the Chief Cashier gives the Petty Cashier the EXACT amount spent ($145). Enter it in Receipts right below Balance b/d so $55 + $145 = $200!',
+      example: 'June 1: Balance b/d $55 + Cash/Bank Reimbursement $145 = $200 restored float!',
+      examTip: 'Double-entry for reimbursement: Cr Main Cash Book (Cash/Bank) $145 · Dr Petty Cash Book (Receipts) $145.',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Preparing & Balancing an Analytical Petty Cash Book Under the Imprest System"
+  marks={12}
+  problem={
+    <>
+      <p>
+        <strong>Question:</strong> <strong>Sunbeam Dental Clinic</strong> operates a Petty Cash
+        Book on the Imprest System with a weekly float of <strong>$150</strong>. Record the
+        following transactions for the week ended <strong>7 March 2026</strong> using analysis
+        columns for <strong>Postage, Stationery, Travelling,</strong> and <strong>Cleaning</strong>.
+        Balance the book on 7 March and show the <strong>imprest restoration on 8 March 2026</strong>:
+      </p>
+      <ul>
+        <li><strong>Mar 1:</strong> Received imprest float from Chief Cashier, $150.</li>
+        <li><strong>Mar 2:</strong> Bought postage stamps (PCV #01), $14.</li>
+        <li><strong>Mar 3:</strong> Paid taxi fare for urgent lab delivery (PCV #02), $26.</li>
+        <li><strong>Mar 4:</strong> Bought printer paper &amp; pens (PCV #03), $32.</li>
+        <li><strong>Mar 5:</strong> Paid office cleaner wages (PCV #04), $35.</li>
+        <li><strong>Mar 6:</strong> Paid courier postage for patient forms (PCV #05), $11.</li>
+        <li><strong>Mar 7:</strong> Bought desk folders &amp; staples (PCV #06), $12.</li>
+      </ul>
+    </>
+  }
+>
+
+**Sunbeam Dental Clinic — Analytical Petty Cash Book (Week Ended 7 March 2026)**
+
+| Receipts ($) | Date | Details | PCV # | Total Payments ($) | Postage ($) | Stationery ($) | Travelling ($) | Cleaning ($) |
+| ---: | :--- | :--- | :---: | ---: | ---: | ---: | ---: | ---: |
+| 150 | Mar 1 | Cash (Imprest Float) | | | | | | |
+| | Mar 2 | Postage stamps | 01 | 14 | 14 | | | |
+| | Mar 3 | Taxi fare (lab delivery) | 02 | 26 | | | 26 | |
+| | Mar 4 | Printer paper &amp; pens | 03 | 32 | | 32 | | |
+| | Mar 5 | Office cleaner | 04 | 35 | | | | 35 |
+| | Mar 6 | Courier postage | 05 | 11 | 11 | | | |
+| | Mar 7 | Desk folders &amp; staples | 06 | 12 | | 12 | | |
+| | | **Total Expenses** | | **130** | **25** | **44** | **26** | **35** |
+| | Mar 7 | Balance c/d | | 20 | | | | |
+| **150** | | **Totals** | | **150** | | | | |
+| **20** | **Mar 8** | **Balance b/d** | | | | | | |
+| **130** | **Mar 8** | **Cash (Reimbursement)** | | | | | | |
+
+**Verification & General Ledger Postings:**
+1. **Cross-Cast Check:** `$25 (Postage) + $44 (Stationery) + $26 (Travelling) + $35 (Cleaning) = $130` = Total Payments (**$130**) ✓!
+2. **Imprest Restoration Check:** Cash left (`$20`) + Reimbursement (`$130`) = **$150 Fixed Float** ✓!
+3. **General Ledger Postings (Mar 7):** Debit Postage A/c **$25**, Debit Stationery A/c **$44**, Debit Travelling A/c **$26**, Debit Cleaning A/c **$35** *(total Debits = $130, matching the $130 Credit in the Petty Cash Book!)*.
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Petty Cash & the Imprest System"
+  items={[
+    {
+      statement: 'If a petty cash float is $250 and the petty cashier spends $185 during the month, the reimbursement needed to restore the float is $65.',
+      answer: false,
+      explanation: '$65 is the cash STILL IN THE BOX (Balance c/d)! To restore the float back to $250, the Chief Cashier must reimburse the exact amount SPENT — $185 ($65 + $185 = $250).',
+    },
+    {
+      statement: 'Under the Imprest System, Cash Remaining in the Petty Cash Box plus Signed Vouchers Paid should always equal the fixed Imprest Float.',
+      answer: true,
+      explanation: 'Any difference between (Cash on Hand + Signed Vouchers) and the Imprest Float immediately exposes a shortage, error, or missing voucher.',
+    },
+    {
+      statement: 'The horizontal sum of all Analysis Column totals in a Petty Cash Book must equal the Total Payments column.',
+      answer: true,
+      explanation: 'Cross-casting checks that every voucher amount entered in Total Payments was properly distributed into one of the analysis columns.',
+    },
+    {
+      statement: 'Each individual $5 postage voucher in the Petty Cash Book must be posted separately one by one to the Postage Account in the General Ledger.',
+      answer: false,
+      explanation: 'One big benefit of analysis columns is posting only the SINGLE periodic column total (e.g. $25) to the Debit of Postage Account at period-end.',
+    },
+    {
+      statement: 'Paying $4,500 to buy a new company delivery van should be recorded in the Petty Cash Book.',
+      answer: false,
+      explanation: 'Petty Cash is strictly for minor everyday cash expenses; large capital purchases go through the main Cash Book (if paid immediately) or General Journal (if on credit).',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s3-07-project"
+  title="Mini-Project: Run a 1-Week Imprest Petty Cash Box for a School Office"
+  duration="25–30 mins"
+  scenario="You have been appointed Petty Cashier for 'Horizon Youth Academy' with a fixed weekly Imprest Float of $200. During Week 1 of October 2026, you pay out 7 small vouchers: Oct 2 Bus tokens for messenger $18; Oct 2 Window cleaning supplies $22; Oct 3 Envelopes & sticky notes $19; Oct 4 Express mail stamps $16; Oct 5 Milk & tea for staff room $15; Oct 6 Printer ink cartridge $42; Oct 7 Settled tiny credit balance owed to QuickPrint Stationers (Ledger Account!) $28."
+  steps={[
+    'Rule up a complete Analytical Petty Cash Book with Receipts, Date, Details, PCV #, Total Payments, and 5 Analysis columns: Postage, Stationery, Travelling, Sundry/Cleaning, and Ledger Accounts.',
+    'Record the Oct 1 Imprest Float ($200) and all 7 vouchers accurately (watch Oct 7 — QuickPrint Stationers goes in the Ledger Accounts column!).',
+    'Cross-cast all 5 analysis columns to confirm they sum exactly to Total Payments.',
+    'Balance the book on Oct 7 (Balance c/d), bring down Balance b/d on Oct 8, enter the exact Reimbursement needed to restore $200, and list the exact General Ledger & Purchases Ledger postings.',
+  ]}
+  deliverables={[
+    'A fully ruled & balanced Analytical Petty Cash Book for Week 1',
+    'A Cross-Cast & Imprest Verification Box',
+    'A short Ledger Posting Summary separating General Ledger expenses from QuickPrint Stationers (Purchases Ledger)',
+  ]}
+  rubric={[
+    'Cross-cast math is exact: Postage $16 + Stationery $61 ($19+$42) + Travelling $18 + Sundry/Cleaning $37 ($22+$15) + Ledger $28 = $160 Total Payments.',
+    'Balance c/d on Oct 7 = $40 ($200 − $160); Oct 8 Reimbursement = $160 restoring the float to $200 ($40 + $160).',
+    'Oct 7 payment ($28) is properly isolated in the Ledger Accounts column and posted to Debit QuickPrint Stationers in the Purchases Ledger.',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **Reimbursement = Total Amount SPENT** (NEVER equal to Balance c/d!).
+- Always **cross-cast** (`Sum of Analysis Columns = Total Payments`) before balancing!
+- Post **column totals** to the **DEBIT** of each expense account in the General Ledger, and **individual items** in the **Ledger** column to the Debit of each supplier in the Purchases Ledger.
+:::

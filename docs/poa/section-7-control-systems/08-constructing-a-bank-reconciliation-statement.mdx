@@ -1,0 +1,282 @@
+---
+id: constructing-a-bank-reconciliation-statement
+title: "7.8 Constructing a Bank Reconciliation Statement (Adjusted Cash Book Method)"
+sidebar_label: "7.8 Bank Reconciliation Statement"
+sidebar_position: 8
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 7"
+  section="Control Systems — Control Accounts & Bank Reconciliation"
+  code="POA-S7-08"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="30 min"
+  difficulty="Exam Mastery"
+/>
+
+:::info Essential Understanding
+Everything from Lesson 7.7 now comes together into one of the **cleanest, most rewarding Paper 2 questions on the entire syllabus**! Using the **2-Stage Adjusted Cash Book Method**, you FIRST bring your Cash Book completely up to date (giving you the **exact Bank figure for your Balance Sheet!**), and SECOND write a short **4-line Bank Reconciliation Statement** that hits the Bank Statement balance **to the exact dollar** — even when the business has a **Bank Overdraft**!
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | **Stage 1: Adjusted (Updated) Cash Book** + **Stage 2: Bank Reconciliation Statement** for BOTH **positive balances** and **bank overdrafts** (including **Cash Book errors**) |
+| **Exam Focus** | Using the **Negative-Number Overdraft Shortcut** so you NEVER flip signs on overdraft questions, and knowing that the **Adjusted Cash Book Balance** is the true Balance Sheet bank figure! |
+| **Learning Outcome** | Construct a complete Adjusted Cash Book and Bank Reconciliation Statement accurately for both favorable and overdrawn bank accounts |
+
+<ObjectivesBox
+  id="poa-s7-08-obj"
+  objectives={[
+    'Construct Stage 1 (the Adjusted / Updated Cash Book — Bank Column) incorporating bank omissions and Cash Book errors.',
+    'Construct Stage 2 (the Bank Reconciliation Statement) starting from the Adjusted Cash Book balance to agree with the Bank Statement balance.',
+    'Reconcile an overdrawn bank account accurately without sign confusion using the Signed-Number Method.',
+    'Identify which bank figure belongs on the Balance Sheet (Current Asset vs. Current Liability) and explain two benefits of monthly bank reconciliations.',
+  ]}
+/>
+
+---
+
+## 1. The 2-Stage Adjusted Cash Book Method (Memorize Both Templates!)
+
+### Stage 1: Adjusted Cash Book (Bank Column Only)
+1. Start with the unadjusted `Balance b/d` (**Debit** if positive cash; **Credit** if Bank Overdraft!).
+2. **Debit** missing bank receipts *(Credit Transfers, Dividends, Bank Interest, Cash Book receipt understatements)*.
+3. **Credit** missing bank payments *(Bank Charges, Overdraft Interest, Standing Orders, Direct Debits, Dishonored Cheques, Cash Book payment understatements)*.
+4. Balance off to obtain the **Adjusted Cash Book `Balance c/d` → `Balance b/d`** — **THIS is the exact Bank figure reported on the Balance Sheet!**
+
+### Stage 2: Bank Reconciliation Statement (as at Month-End)
+
+<FormulaCard
+  title="Universal Bank Reconciliation Formula (Works for BOTH Positive Cash AND Overdrafts!)"
+  onFormulaSheet={false}
+  summary="Treat a Positive Balance as (+) and an Overdraft as (−) — then the EXACT SAME formula works 100% of the time!"
+>
+
+$$
+\text{Balance per Adjusted Cash Book} \; (+ \text{ if Dr}, \; - \text{ if Cr Overdraft})
+$$
+
+$$
++\; \text{Unpresented Cheques} \quad -\; \text{Uncredited Deposits (Late Lodgements)}
+$$
+
+$$
+=\; \text{Balance per Bank Statement} \; (+ \text{ if Cr}, \; - \text{ if Dr Overdraft})
+$$
+
+</FormulaCard>
+
+*(Note: If a question ever asks you to start from the **Bank Statement Balance** and work backward to the Adjusted Cash Book, simply reverse the two signs: **`− Unpresented Cheques`** and **`+ Uncredited Deposits`**!)*
+
+### Why Do Businesses Reconcile Their Bank Account Every Month?
+1. **Detects bank errors &amp; Cash Book errors early** (while disputes can still be corrected!).
+2. **Deters cash theft &amp; cheque fraud** (missing deposits or unauthorized cheques stand out immediately!).
+3. **Identifies stale unpresented cheques** *(usually cheques uncashed for &gt; 6 months)* and bounced customer cheques quickly so credit control can act.
+4. **Supplies the true updated Bank Balance** required for the Balance Sheet!
+
+---
+
+## 2. Diagram 1: The 2-Stage Bank Reconciliation Blueprint
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-7/08-two-stage-bank-reconciliation-flow.svg"
+  alt="Two-stage flow diagram illustrating Stage 1 Adjusted Cash Book (producing the Balance Sheet bank figure) flowing directly into Stage 2 Bank Reconciliation Statement, plus the negative-number Bank Overdraft shortcut."
+  caption="Diagram 1 (Static Reference): Never forget the #1 Paper 1 question — 'Which bank figure appears on the Balance Sheet?' ALWAYS the ADJUSTED CASH BOOK BALANCE ($4,300), NEVER the Bank Statement balance!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive 4-Step Reconciliation & Error-Fix Workflow
+
+<InteractiveDiagram
+  title="Interactive Flow: Master Every Detail (Including Cash Book Errors & Overdrafts!)"
+  layout="flow"
+  instruction="Click through Steps 1 to 4 to learn how top scorers handle Cash Book errors and Overdrafts with zero sign mistakes."
+  nodes={[
+    {
+      label: '1. Open Adjusted Cash Book',
+      tag: 'Check Dr vs. Cr!',
+      tone: 'neutral',
+      detail: 'Read carefully: "Cash Book Debit balance $5,840" starts on the DEBIT side. "Cash Book Overdraft (Credit balance) $1,200" starts on the CREDIT side!',
+      example: 'Positive cash = Asset (Dr b/d); Bank Overdraft = Current Liability (Cr b/d)!',
+      examTip: 'Never ignore the word "overdrawn" or "(Cr)" — putting an overdraft b/d on the wrong side doubles the error!',
+    },
+    {
+      label: '2. Fix Omissions & CB Errors',
+      tag: 'Stage 1',
+      tone: 'warning',
+      detail: 'Post all Bank Statement items missing from Cash Book PLUS any Cash Book mistakes! E.g., if a $430 cheque paid to a supplier was wrongly entered as $340 in Cash Book, Credit the extra $90 ($430 − $340) in Adjusted Cash Book!',
+      example: 'If a $500 payment was entered as $590 (too high by $90), DEBIT $90 back into the Adjusted Cash Book!',
+      examTip: 'ONLY Cash Book errors go in Stage 1; if the BANK itself made an error (e.g., debited another customer’s cheque to us), put it ONLY in Stage 2!',
+    },
+    {
+      label: '3. Build 4-Line BRS',
+      tag: 'Stage 2',
+      tone: 'positive',
+      detail: 'Start with Adjusted Cash Book Balance (in brackets if Overdraft!), ADD Unpresented Cheques (list each cheque number cleanly!), and SUBTRACT Late Lodgements (Uncredited Deposits).',
+      example: 'Positive: $5,950 + $1,390 − $920 = $6,420 Cr!  Overdraft: ($1,450) + $820 − $470 = ($1,100) Dr Overdraft!',
+      examTip: 'Always check your final number against the Bank Statement figure printed in the exam paper — matching it proves 100% accuracy!',
+    },
+    {
+      label: '4. Balance Sheet Placement',
+      tag: 'Final Check',
+      tone: 'positive',
+      detail: 'Take the Stage 1 Adjusted Cash Book Balance straight to the Balance Sheet: Debit balance → Current Asset ("Cash at Bank"); Credit balance → Current Liability ("Bank Overdraft")!',
+      example: 'HarborTech’s Balance Sheet shows Current Asset: Bank $5,950 (NOT unadjusted $5,840 and NOT Bank Statement $6,420!).',
+      examTip: 'Remember why: Unpresented cheques & late lodgements ALREADY happened legally in December — the Adjusted Cash Book reflects true year-end reality!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example (Part A: Positive Balance + CB Error · Part B: Overdraft Proof!)
+
+<WorkedExample
+  title="Complete 2-Stage Bank Reconciliation (Positive Balance With Error + Overdraft Mini-Check)"
+  marks={16}
+  problem={
+    <>
+      <p>
+        <strong>Part A — Positive Balance With Cash Book Error (12 marks):</strong> On
+        <strong> 31 December 2026</strong>, <strong>HarborTech Electronics</strong> had an unadjusted
+        <strong> Cash Book Debit balance of $5,840</strong>, while its Bank Statement showed a
+        <strong> Credit balance of $6,420</strong>. Checking both records revealed:
+      </p>
+      <ol>
+        <li>Credit transfer from customer M. Gomez on Bank Statement only: <strong>$960</strong>.</li>
+        <li>Dividend received directly by bank: <strong>$240</strong>.</li>
+        <li>Bank charges on Bank Statement only: <strong>$85</strong>.</li>
+        <li>Standing order for shop rent paid by bank: <strong>$600</strong>.</li>
+        <li>Dishonored cheque from customer K. Reid: <strong>$315</strong>.</li>
+        <li>A cheque paid to supplier Apex Ltd for <strong>$430</strong> was wrongly entered in the Cash Book Credit column as <strong>$340</strong>.</li>
+        <li>Unpresented cheques at 31 December: Cheque #412 ($880) and Cheque #419 ($510).</li>
+        <li>Cash/cheques deposited on 31 December not yet credited by bank: <strong>$920</strong>.</li>
+      </ol>
+      <p>
+        Prepare HarborTech’s <strong>Adjusted Cash Book</strong> and <strong>Bank Reconciliation
+        Statement as at 31 December 2026</strong>.
+      </p>
+      <p>
+        <strong>Part B — Bank Overdraft Mini-Check (4 marks):</strong> Another branch has an
+        <strong> Adjusted Cash Book Overdraft (Credit balance) of $1,450</strong>, Unpresented
+        Cheques of <strong>$820</strong>, and Uncredited Deposits of <strong>$470</strong>. Prepare
+        its Bank Reconciliation Statement to find the Bank Statement balance!
+      </p>
+    </>
+  }
+>
+
+### Part A — Stage 1: HarborTech Electronics — Adjusted Cash Book (Bank Column) *(7 marks)*
+
+| Date (Dr) | Details | $ | Date (Cr) | Details | $ |
+| :--- | :--- | ---: | :--- | :--- | ---: |
+| Dec 31 | Balance b/d *(unadjusted)* | 5,840 | Dec 31 | Bank Charges | 85 |
+| Dec 31 | M. Gomez *(Credit Transfer)* | 960 | Dec 31 | Rent *(Standing Order)* | 600 |
+| Dec 31 | Dividend Received | 240 | Dec 31 | K. Reid *(Dishonored Chq)* | 315 |
+| | | | Dec 31 | Apex Ltd *(CB error `$430−$340`)* | 90 |
+| | | | Dec 31 | **Adjusted Balance c/d** | **5,950** |
+| | | **$7,040** | | | **$7,040** |
+| Jan 1, 2027 | **Adjusted Balance b/d *(BS!)*** | **5,950** | | | |
+
+---
+
+### Part A — Stage 2: Bank Reconciliation Statement as at 31 December 2026 *(5 marks)*
+
+| Details | $ | $ |
+| :--- | ---: | ---: |
+| **Balance per Adjusted Cash Book (Debit)** | | **5,950** |
+| **Add: Unpresented Cheques** | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;Cheque #412 | 880 | |
+| &nbsp;&nbsp;&nbsp;&nbsp;Cheque #419 | 510 | **1,390** |
+| | | **7,340** |
+| **Less: Uncredited Deposits (Late Lodgement)** | | **(920)** |
+| **Balance per Bank Statement (Credit)** | | **$6,420 ✓** |
+
+*(Exact match with Bank Statement Credit balance `$6,420`! Balance Sheet Current Asset Bank = **`$5,950`**!)*
+
+---
+
+### Part B — Bank Overdraft Reconciliation Statement *(Signed-Number Method — 4 marks)*
+
+| Details | $ |
+| :--- | ---: |
+| **Overdraft per Adjusted Cash Book (Credit Balance)** | **(1,450)** |
+| Add: Unpresented Cheques | +820 |
+| | **(630)** |
+| Less: Uncredited Deposits | (470) |
+| **Overdraft per Bank Statement (Debit Balance)** | **($1,100)** |
+
+*(Check: `−$1,450 + $820 − $470 = −$1,100` → **`$1,100` Overdraft (Debit balance)** on the Bank Statement!)*
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Constructing Bank Reconciliation Statements"
+  items={[
+    {
+      statement: 'When preparing a Balance Sheet at year-end, the Bank figure entered under Current Assets (or Current Liabilities) is the ADJUSTED Cash Book Balance, NOT the Bank Statement Balance.',
+      answer: true,
+      explanation: '100% True! The Adjusted Cash Book reflects all legally issued cheques and deposits already made up to 31 December.',
+    },
+    {
+      statement: 'If a cheque paid to a supplier for $540 was mistakenly entered in the Cash Book Credit column as $450, the business should CREDIT $90 in the Adjusted Cash Book.',
+      answer: true,
+      explanation: 'Yes — the Credit column was $90 too small ($540 − $450 = $90), so Credit an extra $90 in Stage 1!',
+    },
+    {
+      statement: 'When reconciling an Overdraft using signed numbers, an Adjusted Cash Book Overdraft of ($1,000) plus Unpresented Cheques of $600 minus Late Lodgements of $300 gives a Bank Statement Overdraft of ($700).',
+      answer: true,
+      explanation: 'Exact math: −$1,000 + $600 − $300 = −$700 ($700 Overdraft per Bank Statement)!',
+    },
+    {
+      statement: 'Bank Charges and Standing Orders should be listed on the Bank Reconciliation Statement instead of the Adjusted Cash Book.',
+      answer: false,
+      explanation: 'Wrong stage! Bank Charges and Standing Orders are ALREADY on the Bank Statement, so they MUST be credited in Stage 1 (the Adjusted Cash Book)!',
+    },
+    {
+      statement: 'Performing monthly Bank Reconciliations helps detect unauthorized cheques, cash-skimming fraud, and bank recording errors quickly.',
+      answer: true,
+      explanation: 'Yes — monthly bank reconciliation is one of the strongest everyday internal cash controls any business can run!',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s7-08-project"
+  title="Section 7 Capstone Project: Overdraft Bank Reconciliation for CrestWave Auto"
+  duration="25 mins"
+  scenario="On 31 December 2026, CrestWave Auto’s unadjusted Cash Book showed a BANK OVERDRAFT (Credit Balance) of $1,200, while its Bank Statement showed a Debit (Overdraft) Balance of $560. Checking both records revealed: (1) Customer direct credit transfer on Bank Statement only: $950; (2) Bank overdraft interest & charges: $140; (3) Direct debit for garage electricity: $310; (4) Dishonored cheque from credit customer: $200; (5) Unpresented cheques: Cheque #201 ($640) and Cheque #205 ($480); (6) Late lodgement deposited 31 Dec not yet on Bank Statement: $780. Construct the full 2-Stage Overdraft Reconciliation!"
+  steps={[
+    'Draw Stage 1 (Adjusted Cash Book — Bank Column) opening with "Dec 31 Balance b/d $1,200" on the CREDIT side (Overdraft!).',
+    'Post all 4 Stage-1 bank items to their exact Debit or Credit side and solve for the Adjusted Cash Book Overdraft Balance b/d on 1 January 2027.',
+    'Draw Stage 2 (Bank Reconciliation Statement as at 31 December 2026) using the signed-number format: Adjusted Overdraft + Unpresented Cheques − Late Lodgement.',
+    'Confirm you hit the exact Bank Statement Overdraft ($560 Dr) AND state which Bank Overdraft figure appears under Current Liabilities on CrestWave Auto’s Balance Sheet!',
+  ]}
+  deliverables={[
+    'Complete Stage 1 Adjusted Cash Book (Overdraft) with 1 Jan 2027 Bal b/d',
+    'Complete Stage 2 Bank Reconciliation Statement matching $560 Overdraft',
+    '1-line Balance Sheet Current Liabilities placement statement',
+  ]}
+  rubric={[
+    'Stage 1 Adjusted Cash Book: Credit side = $1,200 (b/d) + $140 + $310 + $200 = $1,850; Debit side = $950 (Credit Transfer) → Adjusted Closing Credit Balance (Overdraft) = $900!',
+    'Stage 2 Bank Reconciliation Statement: Adjusted CB Overdraft ($900) + Unpresented Cheques $1,120 ($640 + $480) = +$220 − Late Lodgement ($780) = ($560) Overdraft per Bank Statement ✓!',
+    'Balance Sheet placement: Current Liabilities → Bank Overdraft = $900 (the Adjusted Cash Book figure!).',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **Stage 1 (Adjusted Cash Book):** Fixes omissions &amp; Cash Book errors → produces the **Balance Sheet Bank figure**!
+- **Stage 2 (BRS):** **`Adjusted CB (+ / −) + Unpresented Cheques − Uncredited Deposits = Bank Statement (+ / −)`**!
+- Congratulations — you have conquered **Section 7 (Control Systems)** and passed the **halfway mark** of the entire Principles of Accounts syllabus! Next up: **Section 8 (Accounting for Partnerships)**!
+:::

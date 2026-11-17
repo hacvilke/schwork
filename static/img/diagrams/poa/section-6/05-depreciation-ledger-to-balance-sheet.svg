@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 470" role="img" aria-label="Flow from Original Asset Account and Provision for Depreciation Ledger Account to Income Statement and Balance Sheet">
+  <defs>
+    <style>
+      .title { font: 700 20px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .sub { font: 500 13px system-ui, -apple-system, sans-serif; fill: #4A5560; }
+      .hdr { font: 700 14px system-ui, -apple-system, sans-serif; fill: #FCFBF8; }
+      .h3 { font: 700 13.5px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .body { font: 500 12px system-ui, -apple-system, sans-serif; fill: #222222; }
+      .mono { font: 700 11.5px ui-monospace, SFMono-Regular, monospace; fill: #122440; }
+      .sage { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #2E6359; }
+      .coral { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #C84E24; }
+    </style>
+  </defs>
+
+  <rect width="920" height="470" rx="14" fill="#F8F6F1" stroke="#CEDCD6" stroke-width="1.5"/>
+  <text x="32" y="38" class="title">How Depreciation Flows From Ledger Accounts to Financial Statements</text>
+  <text x="32" y="58" class="sub">Machine Cost = $30,000 | Annual Straight-Line Depr. (10%) = $3,000 | Showing Year 2 (Opening Accum. Depr. = $3,000).</text>
+
+  <!-- Left Column: Two Ledger Accounts -->
+  <!-- Asset A/c -->
+  <rect x="32" y="80" width="404" height="134" rx="10" fill="#FCFBF8" stroke="#1B365D" stroke-width="1.6"/>
+  <rect x="32" y="80" width="404" height="32" rx="9" fill="#1B365D"/>
+  <text x="234" y="101" text-anchor="middle" class="hdr">Machinery Account (ALWAYS stays at Cost!)</text>
+  <line x1="234" y1="112" x2="234" y2="206" stroke="#1B365D" stroke-width="1.3"/>
+  <text x="44" y="131" class="h3">Dr</text>
+  <text x="246" y="131" class="h3">Cr</text>
+  <text x="44" y="152" class="mono">Jan 1 Bal b/d   $30,000</text>
+  <text x="246" y="152" class="mono">Dec 31 Bal c/d  $30,000</text>
+  <text x="44" y="192" class="sage">Historical Cost untouched!</text>
+
+  <!-- Provision for Depreciation A/c -->
+  <rect x="32" y="232" width="404" height="162" rx="10" fill="#FCFBF8" stroke="#C84E24" stroke-width="1.6"/>
+  <rect x="32" y="232" width="404" height="32" rx="9" fill="#C84E24"/>
+  <text x="234" y="253" text-anchor="middle" class="hdr">Provision for Depreciation A/c (Contra-Asset · Cr)</text>
+  <line x1="234" y1="264" x2="234" y2="386" stroke="#C84E24" stroke-width="1.3"/>
+  <text x="44" y="283" class="h3">Dr</text>
+  <text x="246" y="283" class="h3">Cr</text>
+  <text x="246" y="303" class="mono">Jan 1  Bal b/d   $3,000</text>
+  <text x="246" y="322" class="coral">Dec 31 Inc Stmt  $3,000</text>
+  <text x="44" y="344" class="mono">Dec 31 Bal c/d  $6,000</text>
+  <line x1="44" y1="354" x2="424" y2="354" stroke="#4A5560" stroke-width="1"/>
+  <text x="140" y="372" class="mono">$6,000</text>
+  <text x="342" y="372" class="mono">$6,000</text>
+
+  <!-- Arrows -->
+  <line x1="436" y1="146" x2="478" y2="270" stroke="#1B365D" stroke-width="2" stroke-dasharray="5,4"/>
+  <polygon points="473,270 482,276 483,265" fill="#1B365D"/>
+  <line x1="436" y1="316" x2="478" y2="148" stroke="#C84E24" stroke-width="2.2"/>
+  <polygon points="472,149 480,141 483,152" fill="#C84E24"/>
+  <line x1="436" y1="344" x2="478" y2="310" stroke="#2E6359" stroke-width="2.2"/>
+  <polygon points="472,306 483,306 478,316" fill="#2E6359"/>
+
+  <!-- Right Top: Income Statement Extract -->
+  <rect x="484" y="80" width="404" height="134" rx="10" fill="#FCFBF8" stroke="#C84E24" stroke-width="1.6"/>
+  <rect x="484" y="80" width="404" height="32" rx="9" fill="#C84E24"/>
+  <text x="686" y="101" text-anchor="middle" class="hdr">Income Statement Extract (Year 2 ONLY!)</text>
+  <text x="502" y="135" class="h3">Less: Operating Expenses</text>
+  <text x="502" y="159" class="body">Depreciation — Machinery (Year 2 charge)</text>
+  <text x="868" y="159" text-anchor="end" class="coral">$3,000</text>
+  <rect x="500" y="174" width="372" height="28" rx="6" fill="#FFF3EE"/>
+  <text x="686" y="192" text-anchor="middle" class="coral">ONLY this year's $3,000 charge enters the Income Statement!</text>
+
+  <!-- Right Bottom: Balance Sheet Extract -->
+  <rect x="484" y="232" width="404" height="162" rx="10" fill="#FCFBF8" stroke="#2E6359" stroke-width="1.8"/>
+  <rect x="484" y="232" width="404" height="32" rx="9" fill="#2E6359"/>
+  <text x="686" y="253" text-anchor="middle" class="hdr">Balance Sheet Extract (As at End of Year 2)</text>
+  <text x="502" y="284" class="h3">Non-Current Assets</text>
+  <text x="656" y="284" text-anchor="end" class="h3">Cost</text>
+  <text x="768" y="284" text-anchor="end" class="h3">Accum. Depr.</text>
+  <text x="868" y="284" text-anchor="end" class="h3">NBV</text>
+  <line x1="502" y1="292" x2="870" y2="292" stroke="#CEDCD6" stroke-width="1.2"/>
+  <text x="502" y="316" class="body">Machinery</text>
+  <text x="656" y="316" text-anchor="end" class="mono">$30,000</text>
+  <text x="768" y="316" text-anchor="end" class="coral">($6,000)</text>
+  <text x="868" y="316" text-anchor="end" class="sage">$24,000</text>
+  <rect x="500" y="336" width="372" height="44" rx="7" fill="#EBF2EF"/>
+  <text x="686" y="355" text-anchor="middle" class="sage">TOTAL Accumulated Depreciation ($3k Yr1 + $3k Yr2 = $6k)</text>
+  <text x="686" y="372" text-anchor="middle" class="body">is subtracted from Cost to show Net Book Value ($24,000)!</text>
+
+  <!-- Bottom Journal Entry Banner -->
+  <rect x="32" y="410" width="856" height="42" rx="9" fill="#1B365D"/>
+  <text x="460" y="436" text-anchor="middle" style="font: 700 13px ui-monospace, monospace; fill: #FCFBF8;">Annual Adjusting Entry:  Dr Income Statement (Depreciation Expense) $3,000   /   Cr Provision for Depreciation $3,000</text>
+</svg>

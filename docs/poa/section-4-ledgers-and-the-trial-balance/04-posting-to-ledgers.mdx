@@ -1,0 +1,279 @@
+---
+id: posting-to-ledgers
+title: "4.4 Posting from Books of Entry to General and Subsidiary Ledgers"
+sidebar_label: "4.4 Posting to Ledgers"
+sidebar_position: 4
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 4"
+  section="Ledgers and the Trial Balance — The Ledger System"
+  code="POA-S4-04"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="25 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+Once transactions are recorded chronologically inside the **Books of Original Entry** (Section 3), they must be transferred — or **posted** — into their permanent home inside the **Ledgers**. Rather than cramming 1,000 accounts into one giant book, businesses divide the ledger into three clean volumes: the **Sales Ledger** (credit customers), the **Purchases Ledger** (credit suppliers), and the **General Ledger** (everything else)!
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | **Division of the Ledger** (**Sales Ledger**, **Purchases Ledger**, **General Ledger**) + exact posting rules from every Book of Original Entry |
+| **Exam Focus** | Posting complete entries from Day Books, Cash Books, and the General Journal into the **exact right ledger** without losing double-entry balance |
+| **Learning Outcome** | Classify accounts into the right ledger volume and post a full set of Day Book and Cash Book entries into Sales, Purchases, and General Ledgers |
+
+<ObjectivesBox
+  id="poa-s4-04-obj"
+  objectives={[
+    'Define "posting" and explain why businesses divide the ledger into Subsidiary Ledgers and the General Ledger.',
+    'Identify exactly which accounts live inside the Sales Ledger, Purchases Ledger, and General Ledger (plus Private Ledger).',
+    'Post individual entries and monthly totals accurately from Sales, Purchases, Returns, Cash, Petty Cash, and General Journals.',
+    'Verify that every posting maintains complete double-entry equality (Total Debits = Total Credits).',
+  ]}
+/>
+
+---
+
+## 1. Division of the Ledger — Which Account Lives Where?
+
+| Ledger Name | Type | Exact Accounts Kept Inside | Why Keep It Separate? |
+| :--- | :---: | :--- | :--- |
+| **Sales Ledger (SL)** *(Debtors Ledger)* | Subsidiary | Personal accounts of all **credit customers (Trade Receivables)** | Lets credit-control clerks check who owes money and send monthly statements fast |
+| **Purchases Ledger (PL)** *(Creditors Ledger)* | Subsidiary | Personal accounts of all **credit suppliers (Trade Payables)** | Lets accounts-payable clerks verify supplier bills and pay on time for cash discounts |
+| **General Ledger (GL)** *(Nominal/Main Ledger)* | Main Ledger | All **Real accounts** (Buildings, Vans, Equipment), all **Nominal accounts** (Sales, Purchases, Returns, Rent, Wages, Discounts), plus **Capital, Drawings, & Bank Loans** | Holds the master balances used to prepare the Income Statement and Balance Sheet |
+| *(Cash Book)* | *Dual Role* | Acts as BOTH a Book of Prime Entry AND the **Cash & Bank Ledger accounts** | Keeps high-volume cash/bank entries out of the General Ledger |
+
+*(Note: Some businesses also keep a locked **Private Ledger** for highly confidential accounts such as Capital, Drawings, and Director Salaries.)*
+
+### Complete Posting Cheat Table (From Every Book of Original Entry)
+
+| Source Book | Daily Individual Postings | Month-End Total Posting |
+| :--- | :--- | :--- |
+| **Sales Journal** | **Dr** each Customer (SL) | **Cr** Sales A/c (GL) |
+| **Purchases Journal** | **Cr** each Supplier (PL) | **Dr** Purchases A/c (GL) |
+| **Returns Inwards Journal** | **Cr** each Customer (SL) | **Dr** Returns Inwards A/c (GL) |
+| **Returns Outwards Journal** | **Dr** each Supplier (PL) | **Cr** Returns Outwards A/c (GL) |
+| **Cash Book (Debit — Receipts)** | **Cr** the opposite account named (Customer in SL, Sales in GL, Capital in GL) — *skip Contra `C`!* | **Dr** Discount Allowed A/c (GL) *(total of Disc. All. col)* |
+| **Cash Book (Credit — Payments)** | **Dr** the opposite account named (Supplier in PL, Rent/Wages/Equipment in GL) — *skip Contra `C`!* | **Cr** Discount Received A/c (GL) *(total of Disc. Rec. col)* |
+| **General Journal** | **Dr** the named Debit A/c · **Cr** the named Credit A/c (exact as journalized) | *(Each journal entry posts individually)* |
+
+---
+
+## 2. Diagram 1: Posting Flow Into the Three Ledgers
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-4/04-three-ledgers-posting-map.svg"
+  alt="System flow showing Books of Original Entry (Sales/Returns Inwards, Purchases/Returns Outwards, Cash/Petty Cash, General Journal) feeding individual personal entries into the Sales Ledger and Purchases Ledger and periodic totals/impersonal entries into the General Ledger."
+  caption="Diagram 1 (Static Reference): Solid lines show daily personal postings; dashed lines show monthly totals rolling into the General Ledger!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive 5-Step Ledger Posting Pipeline
+
+<InteractiveDiagram
+  title="Interactive Pipeline: Follow the 5 Steps to Post Any Month of Day Books Without Errors"
+  layout="flow"
+  instruction="Walk through Steps 1 to 5 to see how a bookkeeper posts a full month of credit books and Cash Book entries into all three ledgers seamlessly."
+  nodes={[
+    {
+      label: '1. Post Credit Sales & Returns In',
+      tag: 'SL + GL',
+      tone: 'positive',
+      detail: 'Take every row in the Sales Journal and DEBIT that customer in the Sales Ledger. Take every row in Returns Inwards and CREDIT that customer in the Sales Ledger. At month-end, post the single Sales total (Cr) and Returns Inwards total (Dr) to the General Ledger.',
+      example: 'Sales Journal has K. Brown $800 + L. Reid $1,200 = $2,000 → Dr K. Brown $800 (SL), Dr L. Reid $1,200 (SL), Cr Sales A/c $2,000 (GL).',
+      examTip: 'Remember: Total Debits ($800 + $1,200) MUST equal the single Credit ($2,000)!',
+    },
+    {
+      label: '2. Post Credit Purchases & Ret. Out',
+      tag: 'PL + GL',
+      tone: 'positive',
+      detail: 'Take every row in the Purchases Journal and CREDIT that supplier in the Purchases Ledger. Take every row in Returns Outwards and DEBIT that supplier. Post the monthly Purchases total (Dr) and Returns Outwards total (Cr) to the General Ledger.',
+      example: 'Purchases Journal totals $1,700 across two suppliers → Cr each supplier in PL; Dr Purchases A/c $1,700 in GL.',
+      examTip: 'Never post individual credit purchases one by one into the Purchases Account — post the ONE monthly total!',
+    },
+    {
+      label: '3. Post Cash Book Receipts (Dr)',
+      tag: 'Opposite Cr',
+      tone: 'warning',
+      detail: 'Because the Cash Book ALREADY holds the Debit entry (Cash/Bank went up), every item on the Debit side of the Cash Book is posted to the CREDIT side of the named account (EXCEPT Balance b/d and Contra "C" entries!).',
+      example: 'Cash Book Dr shows "K. Brown: Disc All $40, Bank $760" → Credit K. Brown’s account in Sales Ledger with Bank $760 AND Discount Allowed $40 (= $800 total cleared!).',
+      examTip: 'DON’T FORGET THE DISCOUNT! When posting a discounted customer receipt to the Sales Ledger, Credit the customer for BOTH Bank AND Discount Allowed!',
+    },
+    {
+      label: '4. Post Cash Book Payments (Cr)',
+      tag: 'Opposite Dr',
+      tone: 'warning',
+      detail: 'Because the Cash Book ALREADY holds the Credit entry (Cash/Bank went down), every payment on the Credit side posts to the DEBIT side of the named account (skipping Balance c/d and Contra "C" entries!).',
+      example: 'Cash Book Cr shows "Rent $700" and "Apex Supply: Disc Rec $30, Bank $570" → Dr Rent A/c $700 (GL); Dr Apex Supply $570 (Bank) + $30 (Disc Rec) in PL.',
+      examTip: 'Skip Contra Entries (C)! Why? Because BOTH the Debit and Credit halves of a Contra Entry were already completed inside the Cash Book!',
+    },
+    {
+      label: '5. Post Discount Totals & Gen. Journal',
+      tag: 'Final Check',
+      tone: 'positive',
+      detail: 'Post the Cash Book Discount Allowed column total to DEBIT Discount Allowed A/c (GL), and Discount Received column total to CREDIT Discount Received A/c (GL). Finally, post every General Journal entry line-by-line.',
+      example: 'General Journal: Dr Delivery Van $14,000 / Cr AutoCity Motors $14,000 → posted directly to General Ledger (and AutoCity A/c).',
+      examTip: 'Insert folio numbers (SJ1, PJ1, CB1, GJ1) as you post each line so you never accidentally post an entry twice!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Posting Extracts from Day Books & Cash Book Into All Three Ledgers"
+  marks={12}
+  problem={
+    <>
+      <p>
+        <strong>Scenario:</strong> You are given the following May 2026 summary books of
+        <strong> Reef Electronics</strong>:
+      </p>
+      <ul>
+        <li><strong>Sales Journal:</strong> May 4 — <em>J. Mason</em> $1,000; May 16 — <em>S. Hall</em> $600; <strong>Monthly Total = $1,600</strong>.</li>
+        <li><strong>Purchases Journal:</strong> May 2 — <em>Volt Wholesale</em> $1,400; <strong>Monthly Total = $1,400</strong>.</li>
+        <li><strong>Returns Inwards Journal:</strong> May 8 — <em>J. Mason</em> $100; <strong>Monthly Total = $100</strong>.</li>
+        <li><strong>Cash Book (Debit side):</strong> May 20 — <em>J. Mason</em>: Discount Allowed $45, Bank $855.</li>
+        <li><strong>Cash Book (Credit side):</strong> May 25 — <em>Volt Wholesale</em>: Discount Received $70, Bank $1,330; May 28 — <em>Rent</em>: Bank $500.</li>
+      </ul>
+      <p>
+        Post these entries clearly into the <strong>Sales Ledger</strong>,
+        <strong> Purchases Ledger</strong>, and <strong>General Ledger</strong> (showing every
+        T-account cleanly grouped by ledger). <em>[12 marks]</em>
+      </p>
+    </>
+  }
+>
+
+### A. Sales Ledger *(Personal Accounts of Customers — 4 marks)*
+
+**J. Mason Account**
+
+| Dr Date | Details | $ | Cr Date | Details | $ |
+| :--- | :--- | ---: | :--- | :--- | ---: |
+| May 4 | Sales | 1,000 | May 8 | Returns Inwards | 100 |
+| | | | May 20 | Bank | 855 |
+| | | | May 20 | Discount Allowed | 45 |
+| | **Total** | **1,000** | | **Total** | **1,000** |
+
+*(J. Mason’s $1,000 debt is completely settled to $0!)*
+
+**S. Hall Account**
+
+| Dr Date | Details | $ | Cr Date | Details | $ |
+| :--- | :--- | ---: | :--- | :--- | ---: |
+| May 16 | Sales | 600 | May 31 | Balance c/d | 600 |
+| **Jun 1** | **Balance b/d** | **600** | | | |
+
+---
+
+### B. Purchases Ledger *(Personal Account of Supplier — 2 marks)*
+
+**Volt Wholesale Account**
+
+| Dr Date | Details | $ | Cr Date | Details | $ |
+| :--- | :--- | ---: | :--- | :--- | ---: |
+| May 25 | Bank | 1,330 | May 2 | Purchases | 1,400 |
+| May 25 | Discount Received | 70 | | | |
+| | **Total** | **1,400** | | **Total** | **1,400** |
+
+---
+
+### C. General Ledger *(Impersonal Accounts — 6 marks)*
+
+**Sales Account**
+- Cr May 31: Total Credit Sales (`Sales Journal`) = **$1,600**
+
+**Purchases Account**
+- Dr May 31: Total Credit Purchases (`Purchases Journal`) = **$1,400**
+
+**Returns Inwards Account**
+- Dr May 31: Total Returns Inwards (`Returns Inwards Journal`) = **$100**
+
+**Discount Allowed Account**
+- Dr May 31: Total Discount Allowed (`Cash Book`) = **$45**
+
+**Discount Received Account**
+- Cr May 31: Total Discount Received (`Cash Book`) = **$70**
+
+**Rent Account**
+- Dr May 28: Bank (`Cash Book`) = **$500**
+
+*(Double-entry proof across ALL accounts including Cash Book Bank net Cr $975: Debits = S. Hall $600 + Purchases $1,400 + Returns In $100 + Disc All $45 + Rent $500 = **$2,645**; Credits = Sales $1,600 + Disc Rec $70 + Net Bank Credit ($1,330+$500−$855 = $975) = **$2,645** ✓!)*
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Posting to General & Subsidiary Ledgers"
+  items={[
+    {
+      statement: 'When posting a Contra Entry (C) from the Cash Book, you must post it a second time into the General Ledger.',
+      answer: false,
+      explanation: 'Contra entries are NEVER posted out of the Cash Book because BOTH the Debit and Credit halves were already completed between the Cash and Bank columns inside the Cash Book!',
+    },
+    {
+      statement: 'The personal accounts of credit customers (Trade Receivables) are kept inside the Sales Ledger.',
+      answer: true,
+      explanation: 'The Sales Ledger (Debtors Ledger) holds the individual personal accounts of every credit customer.',
+    },
+    {
+      statement: 'When a customer settles a $500 account by paying $480 cheque after a $20 cash discount, you credit the customer’s account with BOTH $480 (Bank) and $20 (Discount Allowed).',
+      answer: true,
+      explanation: 'Crediting both $480 and $20 reduces the customer’s balance by the full $500 so their account clears accurately to $0.',
+    },
+    {
+      statement: 'Rent Expense, Machinery, and Sales Accounts all belong inside the Purchases Ledger.',
+      answer: false,
+      explanation: 'Rent Expense, Machinery, and Sales are impersonal accounts belonging in the GENERAL Ledger — the Purchases Ledger holds ONLY credit suppliers’ personal accounts!',
+    },
+    {
+      statement: 'Every payment listed on the Credit side of the Cash Book (other than Contra entries and Balance c/d) is posted to the DEBIT side of the named ledger account.',
+      answer: true,
+      explanation: 'Since the Cash Book holds the Credit half (cash/bank going out), posting to the DEBIT side of the named account completes the double entry!',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s4-04-project"
+  title="Mini-Project: Full Three-Ledger Posting Pack for a Small Retailer"
+  duration="30–35 mins"
+  scenario="Complete the full posting cycle for 'Breeze Footwear' for July 2026 from these prime book totals: Sales Journal: Jul 3 N. Campbell $700, Jul 14 P. Singh $500 (Total $1,200); Purchases Journal: Jul 2 StepUp Ltd $900, Jul 12 SoleCraft $600 (Total $1,500); Returns Outwards Journal: Jul 10 StepUp Ltd $100 (Total $100); Cash Book Dr: Jul 18 N. Campbell (Disc All $35, Bank $665), Jul 22 Cash Sales $400; Cash Book Cr: Jul 20 StepUp Ltd (Disc Rec $40, Bank $760), Jul 25 Wages (Cash $350), Jul 28 Banked Cash (Contra C: $200)."
+  steps={[
+    'Divide your page clearly into three labeled ledger zones: (1) Sales Ledger, (2) Purchases Ledger, and (3) General Ledger.',
+    'Post every customer entry into the Sales Ledger (N. Campbell and P. Singh) and every supplier entry into the Purchases Ledger (StepUp Ltd and SoleCraft).',
+    'Post all monthly totals and impersonal Cash Book lines into the General Ledger (Sales — including BOTH credit sales AND cash sales!, Purchases, Returns Outwards, Wages, Discount Allowed, Discount Received) — and intentionally SKIP the Jul 28 Contra Entry!',
+    'Add a 3-line Verification Note confirming: (a) which two personal accounts cleared cleanly to $0, (b) why Jul 28 Contra was skipped, and (c) the total balance sitting in Sales Account ($1,600 Cr!).',
+  ]}
+  deliverables={[
+    'Complete Sales Ledger T-accounts (N. Campbell = $0; P. Singh = $500 Dr)',
+    'Complete Purchases Ledger T-accounts (StepUp Ltd = $0; SoleCraft = $600 Cr)',
+    'Complete General Ledger T-accounts + 3-line Verification Note',
+  ]}
+  rubric={[
+    'Sales Account accurately combines BOTH the Sales Journal total ($1,200 Cr) AND the Jul 22 Cash Sales ($400 Cr) = $1,600 Cr.',
+    'N. Campbell ($700 Dr vs. $665+$35 Cr) and StepUp Ltd ($900 Cr vs. $100+$760+$40 Dr) both balance cleanly to $0.',
+    'The Jul 28 Contra Entry ($200) is NOT double-posted into the General Ledger.',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **Sales Ledger** = Credit Customers ONLY; **Purchases Ledger** = Credit Suppliers ONLY; **General Ledger** = Everything else!
+- **Cash Book Posting Mirror Rule:** Cash Book **Dr** posts to Ledger **Cr**; Cash Book **Cr** posts to Ledger **Dr** (always skip **Contra `C`**!).
+- Remember to post **both** the cash/bank payment AND the cash discount to clear a customer or supplier’s account completely!
+:::

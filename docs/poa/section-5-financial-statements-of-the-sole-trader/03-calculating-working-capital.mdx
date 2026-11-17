@@ -1,0 +1,262 @@
+---
+id: calculating-working-capital
+title: "5.3 Calculating and Showing Working Capital"
+sidebar_label: "5.3 Working Capital"
+sidebar_position: 3
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 5"
+  section="Financial Statements of the Sole-Trader — Preparation"
+  code="POA-S5-03"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="20 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+A business can own a $500,000 building and still collapse next Tuesday if it lacks cash to pay staff wages and electricity bills! **Working Capital** (also called *Net Current Assets* or *Circulating Capital*) is the **short-term financial cushion** left over after subtracting Current Liabilities from Current Assets — measuring how smoothly the business can fund its everyday trading cycle.
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | Calculating **Working Capital (`Current Assets − Current Liabilities`)**, displaying it inside the Vertical Balance Sheet, and tracing how transactions change it |
+| **Exam Focus** | Knowing WHICH transactions **increase**, **decrease**, or leave Working Capital **unchanged** (classic Paper 1 & Paper 2 favorite!) |
+| **Learning Outcome** | Compute Working Capital accurately, interpret positive vs. negative Working Capital, and analyze transaction effects on Working Capital |
+
+<ObjectivesBox
+  id="poa-s5-03-obj"
+  objectives={[
+    'Define Working Capital (Net Current Assets) and explain the Working Capital Cash Operating Cycle.',
+    'Calculate Working Capital cleanly and display it accurately inside a Vertical Classified Balance Sheet.',
+    'Determine whether specific business transactions INCREASE, DECREASE, or have NO EFFECT on Working Capital.',
+    'Explain the dangers of both too little Working Capital (deficit/insolvency) and too much idle Working Capital, plus ways to improve it.',
+  ]}
+/>
+
+---
+
+## 1. The Working Capital Formula & Transaction Effect Rules
+
+<FormulaCard
+  title="Working Capital (Net Current Assets)"
+  onFormulaSheet={false}
+  summary="Short-term resources available to run day-to-day operations after covering short-term debts."
+>
+
+$$
+\text{Working Capital} = \text{Current Assets} - \text{Current Liabilities}
+$$
+
+- If **Current Assets > Current Liabilities** → **Positive Working Capital** (healthy short-term cushion).
+- If **Current Liabilities > Current Assets** → **Working Capital Deficit / Negative Working Capital** (severe liquidity warning!).
+
+</FormulaCard>
+
+### The Golden Shortcut: How Transactions Change Working Capital!
+Watch this effortless trick! A transaction changes Working Capital **ONLY if it touches ONE Current item (`CA` or `CL`) and ONE Non-Current/Capital item**! If it touches **TWO Current items** by the same amount, **Working Capital stays UNCHANGED!**
+
+| Business Transaction | Effect on CA | Effect on CL | **Net Effect on Working Capital (`CA − CL`)** |
+| :--- | :---: | :---: | :---: |
+| **1. Owner invests $10,000 cash** | Cash +$10,000 | — | **INCREASES by +$10,000** |
+| **2. Take out a 5-year Bank Loan ($15,000)** | Bank +$15,000 | — *(Non-Current!)* | **INCREASES by +$15,000** |
+| **3. Sell old delivery van for $6,000 cash** | Bank +$6,000 | — *(NCA ↓)* | **INCREASES by +$6,000** |
+| **4. Sell stock costing $800 for $1,200 cash** | Cash +$1,200 / Stock −$800 | — | **INCREASES by +$400** *(the Gross Profit!)* |
+| **5. Buy new $12,000 van paying by cheque** | Bank −$12,000 | — *(NCA ↑)* | **DECREASES by −$12,000** |
+| **6. Owner withdraws $2,000 cash (Drawings)** | Bank −$2,000 | — *(Capital ↓)* | **DECREASES by −$2,000** |
+| **7. Pay $1,500 cheque to Trade Payable** | Bank −$1,500 | Payables −$1,500 | **NO CHANGE ($0)!** *(`−1,500 − (−1,500) = 0`)* |
+| **8. Collect $900 cash from Trade Receivable** | Cash +$900 / Rec. −$900 | — | **NO CHANGE ($0)!** *(Swap inside CA!)* |
+| **9. Buy $3,000 stock on 30-day credit** | Stock +$3,000 | Payables +$3,000 | **NO CHANGE ($0)!** *(`+3,000 − (+3,000) = 0`)* |
+
+---
+
+## 2. Diagram 1: Working Capital Formula & Operating Cash Cycle
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-5/03-working-capital-cycle-and-formula.svg"
+  alt="Diagram showing Working Capital formula ($28,000 CA minus $12,000 CL equals $16,000), the four-step Working Capital Cash Cycle (Cash to Inventory to Credit Sales to Receivables back to Cash), and Positive Working Capital vs. Working Capital Deficit warning cards."
+  caption="Diagram 1 (Static Reference): Speeding up the cycle — selling stock faster and collecting receivables sooner — turns trapped assets back into spendable cash!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive Working Capital Health & Impact Comparator
+
+<InteractiveDiagram
+  title="Interactive Comparator: Test Healthy vs. Troubled Working Capital Scenarios"
+  layout="compare"
+  instruction="Select any scenario below to compare what helps Working Capital versus what quietly drains it — or leaves it unchanged."
+  nodes={[
+    {
+      label: 'Positive vs. Negative WC',
+      tag: 'Liquidity Health',
+      detail: 'Working Capital tells banks and suppliers immediately whether the firm can survive the next 12 months smoothly.',
+      sideALabel: 'Healthy Positive WC (CA > CL)',
+      sideAText: 'Suppliers get paid on time (earning cash discounts), wages never bounce, and unexpected expenses or slow sales weeks are absorbed calmly.',
+      sideBLabel: 'Working Capital Deficit (CL > CA)',
+      sideBText: 'Even if the shop is profitable on paper, unpaid bills pile up, suppliers freeze credit deliveries, and overdraft fees soar — risking forced bankruptcy!',
+      examTip: 'Wait — can Working Capital be TOO high? YES! Huge idle cash or dusty unsold stock earns 0% return and wastes business resources.',
+    },
+    {
+      label: 'Buying Fixed Asset: Cash vs. Long Loan',
+      tag: 'Financing Choice',
+      detail: 'Suppose a bakery needs a $20,000 delivery van — compare paying from its bank balance vs. financing with a 5-year loan!',
+      sideALabel: 'Pay $20,000 From Bank (Cash)',
+      sideAText: 'Bank (Current Asset) plunges by $20,000 while Vans (Non-Current Asset) rises — instantly SLASHING Working Capital by $20,000!',
+      sideBLabel: 'Finance With 5-Year Bank Loan',
+      sideBText: 'Vans (+$20,000 NCA) and 5-Year Loan (+$20,000 NCL) leave BOTH Current Assets and Current Liabilities untouched — Working Capital stays 100% protected!',
+      examTip: 'Golden Business Rule: Finance long-term Fixed Assets with long-term funds (loans/capital) — NEVER drain Working Capital!',
+    },
+    {
+      label: 'Paying Creditors & Collecting Debtors',
+      tag: 'No-Change Trap!',
+      detail: 'Examiners love asking: "If a business pays $2,000 to Trade Payables, does Working Capital increase or decrease?"',
+      sideALabel: 'Pay $2,000 to Trade Payable',
+      sideAText: 'Bank (CA) drops −$2,000 AND Payables (CL) drop −$2,000 → Working Capital change = (−2,000) − (−2,000) = $0 (NO CHANGE!).',
+      sideBLabel: 'Collect $2,000 From Trade Receivable',
+      sideBText: 'Cash (CA) rises +$2,000 AND Receivables (CA) drop −$2,000 → Total CA unchanged → Working Capital change = $0 (NO CHANGE!).',
+      examTip: 'Even though collecting cash from a debtor doesn’t change TOTAL Working Capital, it DOES make Working Capital far more LIQUID (cash ready to spend)!',
+    },
+    {
+      label: 'How to Fix a Working Capital Deficit',
+      tag: 'Management Fixes',
+      detail: 'When Working Capital turns negative, owners need concrete ways to inject net short-term funds.',
+      sideALabel: 'Boost Current Assets / Equity',
+      sideAText: 'Owner introduces fresh Capital, sells unused Non-Current Assets for cash, sells inventory at a profit, or lowers personal Drawings.',
+      sideBLabel: 'Convert Short-Term Debt to Long-Term',
+      sideBText: 'Replace a demanding Bank Overdraft (Current Liability) with a 5-Year Bank Loan (Non-Current Liability) — immediately shrinking CL and boosting Working Capital!',
+      examTip: 'Always state AT LEAST TWO specific ways to increase Working Capital on Paper 2!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Calculating Working Capital & Tracing Five Transaction Impacts"
+  marks={10}
+  problem={
+    <>
+      <p>
+        <strong>Part A (5 marks):</strong> Extract ONLY the relevant items from the following list
+        of <strong>Tropical Blooms Florist</strong> as at 31 December 2026 and show the
+        <strong> Working Capital section</strong> exactly as it appears on a Vertical Balance Sheet:
+      </p>
+      <ul>
+        <li>Delivery Van (NBV): $14,000 &nbsp;|&nbsp; Closing Inventory: $6,500 &nbsp;|&nbsp; Trade Receivables: $4,200</li>
+        <li>Prepaid Rent: $800 &nbsp;|&nbsp; Cash in Hand: $500 &nbsp;|&nbsp; Trade Payables: $5,400</li>
+        <li>Bank Overdraft: $2,100 &nbsp;|&nbsp; Accrued Wages: $500 &nbsp;|&nbsp; 4-Year Bank Loan: $10,000</li>
+      </ul>
+      <p>
+        <strong>Part B (5 marks):</strong> Starting from your Working Capital figure in Part A,
+        state the exact effect (<strong>Increase, Decrease, or No Change</strong> + dollar amount)
+        of each independent transaction below:
+      </p>
+      <ol>
+        <li>The owner invests an extra $3,000 cash into the business.</li>
+        <li>The florist buys $1,200 of flowerpots on 30-day credit from a supplier.</li>
+        <li>The florist buys a $2,500 display fridge paying immediately by cash.</li>
+        <li>A credit customer pays $1,000 cash to settle an old invoice.</li>
+        <li>The florist takes out a 3-year $5,000 bank loan deposited directly into the bank.</li>
+      </ol>
+    </>
+  }
+>
+
+**Part A — Working Capital Section of Vertical Balance Sheet (5 marks):**
+*(Exclude Delivery Van [NCA] and 4-Year Bank Loan [NCL]!)*
+
+| Current Assets &amp; Current Liabilities | $ | $ |
+| :--- | ---: | ---: |
+| **Current Assets** *(2 marks)* | | |
+| Closing Inventory | 6,500 | |
+| Trade Receivables | 4,200 | |
+| Prepaid Rent | 800 | |
+| Cash in Hand | 500 | **12,000** |
+| **Less: Current Liabilities** *(2 marks)* | | |
+| Trade Payables | 5,400 | |
+| Bank Overdraft | 2,100 | |
+| Accrued Wages | 500 | **(8,000)** |
+| **Working Capital (Net Current Assets)** *(1 mark)* | | **$4,000** |
+
+---
+
+**Part B — Independent Effects on Working Capital (5 marks — 1 mark each):**
+1. **Owner invests $3,000 cash:** **Increases by +$3,000** *(Cash CA +$3,000; Capital ↑)* → `$7,000`
+2. **Bought $1,200 stock on 30-day credit:** **No Change ($0)** *(Inventory CA +$1,200 and Payables CL +$1,200 cancel out)* → `$4,000`
+3. **Bought $2,500 display fridge for cash:** **Decreases by −$2,500** *(Cash CA −$2,500; Fridge is NCA)* → `$1,500`
+4. **Customer pays $1,000 cash on account:** **No Change ($0)** *(Cash CA +$1,000 and Receivables CA −$1,000 swap within CA)* → `$4,000`
+5. **Took 3-year $5,000 bank loan:** **Increases by +$5,000** *(Bank CA +$5,000; 3-Year Loan is NCL, not CL!)* → `$9,000`
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Working Capital"
+  items={[
+    {
+      statement: 'Paying $1,500 by cheque to settle a Trade Payable reduces Working Capital by $1,500.',
+      answer: false,
+      explanation: 'Paying a Trade Payable reduces Current Assets (Bank −$1,500) AND reduces Current Liabilities (Payables −$1,500) equally — so Working Capital stays UNCHANGED!',
+    },
+    {
+      statement: 'Buying a $10,000 delivery van using business cash immediately decreases Working Capital by $10,000.',
+      answer: true,
+      explanation: 'Cash (a Current Asset) drops by $10,000 while the delivery van is a Non-Current Asset, so Working Capital falls by $10,000.',
+    },
+    {
+      statement: 'Converting a $5,000 Bank Overdraft into a 5-Year Bank Loan increases Working Capital by $5,000.',
+      answer: true,
+      explanation: 'Bank Overdraft (Current Liability) drops by $5,000 while the 5-Year Loan is a Non-Current Liability — immediately boosting Working Capital by +$5,000!',
+    },
+    {
+      statement: 'A business with Current Assets of $18,000 and Current Liabilities of $22,000 has a Working Capital deficit of $4,000.',
+      answer: true,
+      explanation: 'Working Capital = $18,000 − $22,000 = −$4,000 (a deficit), warning of short-term cash trouble.',
+    },
+    {
+      statement: 'A 10-year Mortgage on business premises should be subtracted when calculating Working Capital.',
+      answer: false,
+      explanation: 'Only CURRENT Liabilities (due within 12 months) are subtracted to compute Working Capital — a 10-year Mortgage is a Non-Current Liability!',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s5-03-project"
+  title="Mini-Project: Working Capital Rescue Plan for a Struggling Café"
+  duration="25 mins"
+  scenario="'Harbor Espresso Café' earned $12,000 Net Profit this year, yet its manager is panicking because cheques are bouncing! Its Dec 31 short-term balances are: Closing Inventory $2,200; Trade Receivables $1,300; Cash $500; Trade Payables $4,100; Bank Overdraft $3,400; Accrued Electricity $500. Why? Because the owner used $8,000 of bank cash to buy a luxury coffee roaster and took $9,000 in personal drawings!"
+  steps={[
+    'Draw the Working Capital section of Harbor Espresso Café’s Balance Sheet and compute its exact Working Capital (or Deficit!).',
+    'Explain in 2–3 sentences HOW a café that earned $12,000 Net Profit ended up with a severe Working Capital deficit (connect directly to the $8,000 roaster and $9,000 drawings!).',
+    'Design a 4-point Working Capital Rescue Plan showing 4 concrete steps that will turn Working Capital positive by at least +$6,000 (e.g., refinancing the overdraft into a 3-year loan, owner injecting capital, cutting drawings, selling unused equipment).',
+    'Recalculate the projected Working Capital AFTER your Rescue Plan to prove the café is safely back in positive territory!',
+  ]}
+  deliverables={[
+    'Current Working Capital Deficit Table showing −$4,000 ($4,000 CA − $8,000 CL)',
+    '2–3 sentence Diagnosis explaining the Profit vs. Working Capital paradox',
+    'A 4-Point Rescue Plan + Recomputed Positive Working Capital Table',
+  ]}
+  rubric={[
+    'Initial Working Capital is calculated accurately: CA = $4,000 ($2,200+$1,300+$500) − CL = $8,000 ($4,100+$3,400+$500) = −$4,000 Deficit.',
+    'Diagnosis accurately notes that buying fixed assets with cash and excessive drawings directly drain Current Assets.',
+    'Rescue Plan actions genuinely increase Working Capital (not "no-change" swaps like paying creditors with cash!).',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **`Working Capital = Current Assets − Current Liabilities`** (also called *Net Current Assets*).
+- **Quick Effect Test:** Both halves Current (e.g., cash from debtor, pay creditor, credit stock purchase) = **NO CHANGE**! One Current + one Non-Current/Capital = **CHANGES Working Capital**!
+:::

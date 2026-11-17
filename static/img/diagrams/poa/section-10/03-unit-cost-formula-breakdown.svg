@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" width="920" height="460" role="img" aria-label="Unit Cost of Production Formula Breakdown showing Total Production Cost divided by Units Produced and Fixed versus Variable Unit Cost Behavior">
+  <defs>
+    <style>
+      .bg { fill: #F8F6F1; }
+      .card { fill: #FCFBF8; stroke: #CEDCD6; stroke-width: 2; rx: 12; }
+      .navy { fill: #1B365D; rx: 10; }
+      .sage { fill: #2E6359; rx: 10; }
+      .coral { fill: #C84E24; rx: 10; }
+      .mint { fill: #EBF2EF; stroke: #4E8577; stroke-width: 1.5; rx: 8; }
+      .amber { fill: #FEF3E2; stroke: #F5A352; stroke-width: 1.5; rx: 8; }
+      .title { font-family: system-ui, -apple-system, sans-serif; font-size: 21px; font-weight: 800; fill: #1B365D; }
+      .subtitle { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; fill: #4A5560; }
+      .w-big { font-family: system-ui, -apple-system, sans-serif; font-size: 18px; font-weight: 800; fill: #FFFFFF; }
+      .w-title { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; font-weight: 800; fill: #FFFFFF; }
+      .w-sub { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; fill: #EBF2EF; }
+      .label { font-family: system-ui, -apple-system, sans-serif; font-size: 13.5px; font-weight: 800; fill: #1B365D; }
+      .body { font-family: system-ui, -apple-system, sans-serif; font-size: 12.5px; fill: #222222; }
+      .coral-txt { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; font-weight: 800; fill: #C84E24; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="920" height="460"/>
+  <text x="460" y="34" text-anchor="middle" class="title">Calculating Unit Cost of Items Produced &amp; Cost Behavior</text>
+  <text x="460" y="54" text-anchor="middle" class="subtitle">Divide Total Cost of Production by Total Good Units Completed — then split into Direct Cost per Unit + Overhead per Unit!</text>
+
+  <!-- Main Formula Hero Card -->
+  <rect class="navy" x="40" y="72" width="840" height="92"/>
+  <text x="460" y="102" text-anchor="middle" class="w-big">Unit Cost of Production  =  Total Cost of Production  ÷  Total Units Produced</text>
+  <text x="460" y="128" text-anchor="middle" class="w-sub">Example:  $180,000 Total Cost of Production  ÷  15,000 Shoes Completed  =  $12.00 per Pair!</text>
+  <text x="460" y="150" text-anchor="middle" class="w-sub">Breakdown:  Raw Materials ($5.00)  +  Direct Labor ($4.00)  +  Factory Overheads ($3.00)  =  $12.00 / unit</text>
+
+  <!-- Left Card: 3 Cost Layers per Unit -->
+  <rect class="card" x="40" y="184" width="405" height="248"/>
+  <rect class="sage" x="54" y="196" width="377" height="40"/>
+  <text x="242" y="221" text-anchor="middle" class="w-title">WHY MANAGERS TRACK UNIT COST</text>
+
+  <rect class="mint" x="56" y="248" width="373" height="50"/>
+  <text x="70" y="268" class="label">1. Pricing Decisions (Avoid Selling at a Loss!)</text>
+  <text x="70" y="287" class="body">Know the floor ($12.00) before adding profit markup!</text>
+
+  <rect class="mint" x="56" y="308" width="373" height="50"/>
+  <text x="70" y="328" class="label">2. Valuing Closing Finished Goods Stock</text>
+  <text x="70" y="347" class="body">2,000 unsold pairs × $12.00 = $24,000 Closing Stock!</text>
+
+  <rect class="mint" x="56" y="368" width="373" height="50"/>
+  <text x="70" y="388" class="label">3. Make-vs-Buy Comparison</text>
+  <text x="70" y="407" class="body">Compare internal cost ($12.00) vs. external supplier quote!</text>
+
+  <!-- Right Card: Volume & Economies of Scale Effect -->
+  <rect class="card" x="475" y="184" width="405" height="248"/>
+  <rect class="coral" x="489" y="196" width="377" height="40"/>
+  <text x="677" y="221" text-anchor="middle" class="w-title">ECONOMIES OF SCALE: AS OUTPUT RISES...</text>
+
+  <rect class="amber" x="491" y="248" width="373" height="72"/>
+  <text x="505" y="269" class="coral-txt">Variable Cost per Unit → STAYS CONSTANT!</text>
+  <text x="505" y="288" class="body">Raw material ($5/pair) + piece-rate labor ($4/pair) = $9</text>
+  <text x="505" y="306" class="body">whether you make 10,000 OR 20,000 pairs!</text>
+
+  <rect class="mint" x="491" y="330" width="373" height="88"/>
+  <text x="505" y="351" class="label">Fixed Factory Overhead per Unit → DROPS!</text>
+  <text x="505" y="370" class="body">$45,000 Fixed Factory Rent spread over:</text>
+  <text x="505" y="389" class="body">• 10,000 units → $4.50/unit  (Total = $13.50/unit)</text>
+  <text x="505" y="407" class="coral-txt">• 20,000 units → $2.25/unit  (Total = $11.25/unit ↓!)</text>
+</svg>

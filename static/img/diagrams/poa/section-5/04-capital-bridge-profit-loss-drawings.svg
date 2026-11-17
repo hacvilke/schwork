@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 420" fill="none" role="img" aria-label="How Net Profit, Net Loss, Additional Capital, and Drawings Change Owner’s Capital">
+  <rect width="820" height="420" rx="12" fill="#1B365D"/>
+  <rect x="14" y="14" width="792" height="392" rx="10" stroke="#2D507C" stroke-width="1.2"/>
+
+  <!-- Header -->
+  <text x="34" y="46" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="18" font-weight="700">The Owner’s Capital Bridge: Profit vs. Loss &amp; Drawings</text>
+  <text x="34" y="66" fill="#9DD9CB" font-family="monospace" font-size="11.5">CLOSING CAPITAL  =  OPENING CAPITAL  +  ADDED CAPITAL  +  NET PROFIT (OR − NET LOSS)  −  DRAWINGS</text>
+
+  <!-- Scenario A: Profitable Year -->
+  <rect x="34" y="88" width="752" height="134" rx="10" fill="#122440" stroke="#6BC4B0" stroke-width="1.8"/>
+  <text x="52" y="112" fill="#6BC4B0" font-family="monospace" font-size="11" font-weight="800">SCENARIO A · PROFITABLE YEAR (OWNER’S NET WORTH GROWS!)</text>
+
+  <rect x="52" y="128" width="144" height="72" rx="8" fill="#1B365D" stroke="#8CC4B4"/>
+  <text x="124" y="150" text-anchor="middle" fill="#A5C0D6" font-family="monospace" font-size="9.5">OPENING CAPITAL</text>
+  <text x="124" y="178" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="18" font-weight="800">$50,000</text>
+
+  <text x="218" y="170" text-anchor="middle" fill="#6BC4B0" font-family="system-ui, sans-serif" font-size="22" font-weight="800">+</text>
+
+  <rect x="240" y="128" width="152" height="72" rx="8" fill="#132F34" stroke="#6BC4B0" stroke-width="1.6"/>
+  <text x="316" y="150" text-anchor="middle" fill="#6BC4B0" font-family="monospace" font-size="9.5" font-weight="700">NET PROFIT (+)</text>
+  <text x="316" y="178" text-anchor="middle" fill="#6BC4B0" font-family="system-ui, sans-serif" font-size="18" font-weight="800">+$18,000</text>
+
+  <text x="414" y="170" text-anchor="middle" fill="#F5A352" font-family="system-ui, sans-serif" font-size="22" font-weight="800">−</text>
+
+  <rect x="436" y="128" width="144" height="72" rx="8" fill="#2A1D24" stroke="#F5A352"/>
+  <text x="508" y="150" text-anchor="middle" fill="#F5A352" font-family="monospace" font-size="9.5" font-weight="700">DRAWINGS (−)</text>
+  <text x="508" y="178" text-anchor="middle" fill="#F5A352" font-family="system-ui, sans-serif" font-size="18" font-weight="800">−$7,000</text>
+
+  <text x="602" y="170" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="22" font-weight="800">=</text>
+
+  <rect x="624" y="128" width="144" height="72" rx="8" fill="#4E8577"/>
+  <text x="696" y="150" text-anchor="middle" fill="#EBF2EF" font-family="monospace" font-size="9.5" font-weight="700">CLOSING CAPITAL</text>
+  <text x="696" y="178" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="19" font-weight="800">$61,000 ↑</text>
+
+  <!-- Scenario B: Loss Year -->
+  <rect x="34" y="242" width="752" height="146" rx="10" fill="#122440" stroke="#C84E24" stroke-width="1.8"/>
+  <text x="52" y="266" fill="#F5A352" font-family="monospace" font-size="11" font-weight="800">SCENARIO B · NET LOSS YEAR (DOUBLE DRAIN ON OWNER’S CAPITAL!)</text>
+
+  <rect x="52" y="282" width="144" height="72" rx="8" fill="#1B365D" stroke="#8CC4B4"/>
+  <text x="124" y="304" text-anchor="middle" fill="#A5C0D6" font-family="monospace" font-size="9.5">OPENING CAPITAL</text>
+  <text x="124" y="332" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="18" font-weight="800">$50,000</text>
+
+  <text x="218" y="324" text-anchor="middle" fill="#C84E24" font-family="system-ui, sans-serif" font-size="22" font-weight="800">−</text>
+
+  <rect x="240" y="282" width="152" height="72" rx="8" fill="#2A1D24" stroke="#C84E24" stroke-width="1.6"/>
+  <text x="316" y="304" text-anchor="middle" fill="#F5A352" font-family="monospace" font-size="9.5" font-weight="700">NET LOSS (−)</text>
+  <text x="316" y="332" text-anchor="middle" fill="#F5A352" font-family="system-ui, sans-serif" font-size="18" font-weight="800">−$6,000</text>
+
+  <text x="414" y="324" text-anchor="middle" fill="#C84E24" font-family="system-ui, sans-serif" font-size="22" font-weight="800">−</text>
+
+  <rect x="436" y="282" width="144" height="72" rx="8" fill="#2A1D24" stroke="#F5A352"/>
+  <text x="508" y="304" text-anchor="middle" fill="#F5A352" font-family="monospace" font-size="9.5" font-weight="700">DRAWINGS (−)</text>
+  <text x="508" y="332" text-anchor="middle" fill="#F5A352" font-family="system-ui, sans-serif" font-size="18" font-weight="800">−$7,000</text>
+
+  <text x="602" y="324" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="22" font-weight="800">=</text>
+
+  <rect x="624" y="282" width="144" height="72" rx="8" fill="#C84E24"/>
+  <text x="696" y="304" text-anchor="middle" fill="#FDEFDF" font-family="monospace" font-size="9.5" font-weight="700">CLOSING CAPITAL</text>
+  <text x="696" y="332" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="19" font-weight="800">$37,000 ↓</text>
+
+  <text x="410" y="376" text-anchor="middle" fill="#9DD9CB" font-family="system-ui, sans-serif" font-size="11">Tip: If Closing Capital &gt; Opening Capital even with Drawings, you can solve backwards: <tspan fill="#F5A352" font-weight="700">Net Profit = Closing Cap − Opening Cap + Drawings − Added Cap</tspan>!</text>
+</svg>

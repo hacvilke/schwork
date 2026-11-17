@@ -1,0 +1,251 @@
+---
+id: prepayments-and-accruals-entries
+title: "6.2 Journal Entries and Ledger Accounts for Prepayments and Accruals"
+sidebar_label: "6.2 Prepayments & Accruals Ledgers"
+sidebar_position: 2
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 6"
+  section="Accounting Adjustments — Accruals & Prepayments"
+  code="POA-S6-02"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="30 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+Once you understand the Accrual Concept, examiners expect you to **write the General Journal entries** and **construct the Expense and Revenue T-Accounts** — complete with **opening balances (`Bal b/d`)**, **cash paid/received (`Bank`)**, **year-end transfers to the Income Statement**, and **closing balances (`Bal c/d` → `Bal b/d`)**! Master the 4 quadrants once, and every single ledger question becomes automatic.
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | Double-entry journal entries &amp; full T-accounts for **Accrued Expenses**, **Prepaid Expenses**, **Accrued Revenues**, and **Unearned (Prepaid) Revenues** |
+| **Exam Focus** | Knowing WHICH side `Bal b/d` starts on (Asset = Debit `b/d`; Liability = Credit `b/d`), computing the exact transfer to the **Income Statement**, and bringing down the new year’s opening balance cleanly |
+| **Learning Outcome** | Record journal entries and close off Expense and Revenue ledger accounts accurately when BOTH opening and closing accruals/prepayments exist |
+
+<ObjectivesBox
+  id="poa-s6-02-obj"
+  objectives={[
+    'Write year-end adjusting Journal Entries for Accrued Expenses, Prepaid Expenses, Accrued Revenues, and Unearned Revenues.',
+    'Determine which side opening (Jan 1) and closing (Dec 31) balances sit on inside any Expense or Revenue T-account.',
+    'Balance off Expense and Revenue ledger accounts to find the exact transfer figure to the Income Statement.',
+    'Classify every closing balance accurately as a Current Asset or Current Liability on the Balance Sheet.',
+  ]}
+/>
+
+---
+
+## 1. The Master Side-Placement Cheat Table (Never Guess Again!)
+
+Remember ONE unbreakable rule from Section 2 &amp; Section 4:
+- Every **Asset** starts the year with a **DEBIT `Bal b/d`** *(so its closing `Bal c/d` sits on the **Credit** side!)*
+- Every **Liability** starts the year with a **CREDIT `Bal b/d`** *(so its closing `Bal c/d` sits on the **Debit** side!)*
+
+| Adjustment Type | Asset or Liability? | Opening `Bal b/d` (Jan 1) | Closing `Bal c/d` (Dec 31) | Balance Sheet Placement |
+| :--- | :---: | :---: | :---: | :---: |
+| **Accrued Expense** *(owing)* | **Current Liability** | **Credit** | **Debit** *(b/d Cr next yr)* | **Current Liability** |
+| **Prepaid Expense** *(advance)* | **Current Asset** | **Debit** | **Credit** *(b/d Dr next yr)* | **Current Asset** |
+| **Accrued Revenue** *(owing to us)* | **Current Asset** | **Debit** | **Credit** *(b/d Dr next yr)* | **Current Asset** |
+| **Unearned Revenue** *(paid early to us)* | **Current Liability** | **Credit** | **Debit** *(b/d Cr next yr)* | **Current Liability** |
+
+<FormulaCard
+  title="Quick Formula Check for Any Expense or Revenue Ledger Account"
+  onFormulaSheet={false}
+  summary="Always double-check your T-account Income Statement transfer with this 1-line mental math!"
+>
+
+$$
+\text{Expense to Income Stmt} = \text{Cash Paid} - \text{Opening Accrual} + \text{Closing Accrual} + \text{Opening Prepayment} - \text{Closing Prepayment}
+$$
+
+$$
+\text{Revenue to Income Stmt} = \text{Cash Received} - \text{Opening Accrued Rev.} + \text{Closing Accrued Rev.} + \text{Opening Unearned Rev.} - \text{Closing Unearned Rev.}
+$$
+
+</FormulaCard>
+
+---
+
+## 2. Diagram 1: The 4-Quadrant Accruals & Prepayments Master Map
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-6/02-accruals-prepayments-4-quadrant.svg"
+  alt="Four-quadrant guide showing Income Statement impact, Balance Sheet classification, and General Journal entry for Accrued Expense, Prepaid Expense, Accrued Revenue, and Unearned Revenue."
+  caption="Diagram 1 (Static Reference): Keep this 4-quadrant map in your head — ALL Accrued items ADD to the Income Statement, and ALL Prepaid/Advance items SUBTRACT!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive 4-Step T-Account Builder Workflow
+
+<InteractiveDiagram
+  title="Interactive Flow: Follow These 4 Steps to Build ANY Accrual/Prepayment Ledger Account"
+  layout="flow"
+  instruction="Click each step from 1 to 4 to lock in the foolproof procedure examiners grade on Paper 2."
+  nodes={[
+    {
+      label: '1. Post Opening Bal b/d',
+      tag: 'Jan 1',
+      tone: 'neutral',
+      detail: 'Ask: Was the Jan 1 balance an Asset or a Liability? Prepaid Expense & Accrued Revenue are ASSETS → put Bal b/d on DEBIT! Accrued Expense & Unearned Revenue are LIABILITIES → put Bal b/d on CREDIT!',
+      example: 'Electricity owing on Jan 1 ($450) = Liability → Credit side: "Jan 1 Bal b/d (Accrued) $450".',
+      examTip: 'Getting the Jan 1 opening side right guarantees your final Income Statement transfer will be exact!',
+    },
+    {
+      label: '2. Post Cash / Bank',
+      tag: 'During Year',
+      tone: 'neutral',
+      detail: 'Expenses paid go on the DEBIT side ("Bank / Cash") because expenses increase with Debits. Revenues received go on the CREDIT side ("Bank / Cash") because revenues increase with Credits.',
+      example: 'Paid $4,650 electricity via cheque → Dr Electricity A/c "Bank $4,650". Received $6,200 tenant rent → Cr Rent Receivable A/c "Bank $6,200".',
+      examTip: 'Never put Bank on the wrong side — Expense paid = ALWAYS Dr; Revenue received = ALWAYS Cr!',
+    },
+    {
+      label: '3. Post Closing Bal c/d',
+      tag: 'Dec 31',
+      tone: 'warning',
+      detail: 'Put Dec 31 Closing Bal c/d on the OPPOSITE side from where Jan 1 next year’s Bal b/d belongs! So Closing Accrual (Liability → Cr b/d next yr) gets "Bal c/d" on DEBIT; Closing Prepayment (Asset → Dr b/d next yr) gets "Bal c/d" on CREDIT!',
+      example: 'Electricity owing on 31 Dec ($600) → Dr side: "Dec 31 Bal c/d $600" → then bring down on Cr side: "Jan 1 Bal b/d $600"!',
+      examTip: 'Always write the Jan 1 next-year "Bal b/d" BELOW the double lines — that extra line often carries a full mark!',
+    },
+    {
+      label: '4. Find Income Stmt Transfer',
+      tag: 'Missing Figure',
+      tone: 'positive',
+      detail: 'The balancing figure needed to make Dr = Cr is your transfer to the Income Statement! For Expense accounts it sits on the CREDIT side ("Dec 31 Income Statement"); for Revenue accounts it sits on the DEBIT side ("Dec 31 Income Statement").',
+      example: 'Electricity Dr total = $4,650 + $600 = $5,250; Cr has $450 b/d → Missing figure on Cr = "Dec 31 Income Statement $4,800"!',
+      examTip: 'Double-check with intuition: $4,650 paid − $450 (last yr) + $600 (this yr owing) = $4,800 ✓!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Constructing Three Complete Ledger Accounts (Accrued Expense, Prepaid Expense & Revenue)"
+  marks={14}
+  problem={
+    <>
+      <p>
+        <strong>Scenario:</strong> From the records of <strong>Kingston Auto Parts</strong> for
+        the year ended <strong>31 December 2026</strong>, construct the following three ledger
+        accounts showing opening balances, Bank entries, the year-end transfer to the
+        <strong> Income Statement</strong>, and closing balances brought down to <strong>1 January 2027</strong>:
+      </p>
+      <ol>
+        <li><strong>Electricity Account:</strong> Owing on 1 Jan 2026: $450; Paid by cheque during 2026: $4,650; Owing on 31 Dec 2026: $600. <em>[4 marks]</em></li>
+        <li><strong>Insurance Account:</strong> Prepaid on 1 Jan 2026: $800; Paid by cheque during 2026: $3,600; Prepaid on 31 Dec 2026: $900. <em>[4 marks]</em></li>
+        <li><strong>Rent Receivable Account (Revenue):</strong> Received in advance on 1 Jan 2026: $500; Received via Bank during 2026: $6,200; Owing by tenant on 31 Dec 2026: $300. <em>[4 marks]</em></li>
+        <li>State where EACH 31 Dec 2026 closing balance appears on the Balance Sheet. <em>[2 marks]</em></li>
+      </ol>
+    </>
+  }
+>
+
+### 1. Electricity Account *(Accrued Expense — 4 marks)*
+
+| Date (Dr) | Details | $ | Date (Cr) | Details | $ |
+| :--- | :--- | ---: | :--- | :--- | ---: |
+| 2026 | Bank *(cheques paid)* | 4,650 | Jan 1, 2026 | Balance b/d *(Accrued)* | 450 |
+| Dec 31 | Balance c/d *(Accrued)* | 600 | Dec 31 | **Income Statement** | **4,800** |
+| | | **5,250** | | | **5,250** |
+| | | | Jan 1, 2027 | Balance b/d *(Liability)* | 600 |
+
+### 2. Insurance Account *(Prepaid Expense — 4 marks)*
+
+| Date (Dr) | Details | $ | Date (Cr) | Details | $ |
+| :--- | :--- | ---: | :--- | :--- | ---: |
+| Jan 1, 2026 | Balance b/d *(Prepaid)* | 800 | Dec 31, 2026 | **Income Statement** | **3,500** |
+| 2026 | Bank *(cheques paid)* | 3,600 | Dec 31 | Balance c/d *(Prepaid)* | 900 |
+| | | **4,400** | | | **4,400** |
+| Jan 1, 2027 | Balance b/d *(Asset)* | 900 | | | |
+
+### 3. Rent Receivable Account *(Revenue Account — 4 marks)*
+
+| Date (Dr) | Details | $ | Date (Cr) | Details | $ |
+| :--- | :--- | ---: | :--- | :--- | ---: |
+| Dec 31, 2026 | **Income Statement** | **7,000** | Jan 1, 2026 | Balance b/d *(Advance)* | 500 |
+| | | | 2026 | Bank *(rent received)* | 6,200 |
+| | | | Dec 31 | Balance c/d *(Owing)* | 300 |
+| | | **7,000** | | | **7,000** |
+| Jan 1, 2027 | Balance b/d *(Asset)* | 300 | | | |
+
+*(Quick logic check on Rent Receivable: $500 prepaid by tenant for 2026 + $6,200 received during 2026 + $300 still owed by tenant for Dec 2026 = **$7,000** total rent earned in 2026!)*
+
+### 4. Balance Sheet Classification on 31 December 2026 *(2 marks)*
+- **Current Assets:** Prepaid Insurance **$900**; Accrued Rent Receivable **$300** *(both have **Debit** `Bal b/d` on Jan 1, 2027!)* *(1 mark)*.
+- **Current Liabilities:** Accrued Electricity **$600** *(has a **Credit** `Bal b/d` on Jan 1, 2027!)* *(1 mark)*.
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Prepayments & Accruals Ledger Accounts"
+  items={[
+    {
+      statement: 'An opening Prepaid Expense balance on 1 January is entered on the DEBIT side of the Expense account.',
+      answer: true,
+      explanation: 'A Prepaid Expense is a Current Asset — and all Assets start with a Debit Balance b/d!',
+    },
+    {
+      statement: 'An opening Accrued Expense balance on 1 January is entered on the DEBIT side of the Expense account.',
+      answer: false,
+      explanation: 'An Accrued Expense is a Current Liability, so its opening Balance b/d on 1 January sits on the CREDIT side!',
+    },
+    {
+      statement: 'If $5,000 cash was paid for Wages, Opening Accrued Wages was $400, and Closing Accrued Wages is $700, the Wages Expense transferred to the Income Statement is $5,300.',
+      answer: true,
+      explanation: 'Subtract last year’s $400 and add this year’s unpaid $700: $5,000 − $400 + $700 = $5,300!',
+    },
+    {
+      statement: 'Rent Received in Advance at 31 December appears as a Current Asset on the landlord’s Balance Sheet.',
+      answer: false,
+      explanation: 'Cash received BEFORE providing the rental period creates an obligation to the tenant — so Unearned Revenue is a CURRENT LIABILITY (Credit Bal b/d)!',
+    },
+    {
+      statement: 'In a Revenue ledger account (such as Commission Receivable), the year-end closing transfer to the Income Statement is posted on the DEBIT side of the Revenue account.',
+      answer: true,
+      explanation: 'Yes! You Debit the Revenue account and Credit the Income Statement to close the earned revenue into profit.',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s6-02-project"
+  title="Mini-Project: Closing Three Adjustment Ledgers for Bayside Fitness Club"
+  duration="25 mins"
+  scenario="Prepare the 2026 General Journal closing entries AND three balanced T-accounts (bringing down 1 Jan 2027 balances!) for 'Bayside Fitness Club' using these facts: (1) Wages A/c: Accrued 1 Jan $1,200; Paid by Bank $28,400; Accrued 31 Dec $1,600. (2) Rates & Taxes A/c: Prepaid 1 Jan $400; Paid by Bank $2,500; Prepaid 31 Dec $500. (3) Commission Receivable A/c: Accrued (owing to club) 1 Jan $350; Received by Bank $4,850; Received in Advance 31 Dec $200."
+  steps={[
+    'Draw clean T-accounts for Wages, Rates & Taxes, and Commission Receivable.',
+    'Plot Jan 1 Bal b/d on the exact Asset (Dr) or Liability (Cr) side, then enter Bank payments (Dr for expenses) or receipts (Cr for revenue).',
+    'Plot Dec 31 Bal c/d, solve for the Income Statement balancing transfer in all three accounts, double-underline totals, and bring down Jan 1, 2027 Bal b/d.',
+    'Write a 2-line Balance Sheet extract listing the Current Assets and Current Liabilities created at 31 December 2026.',
+  ]}
+  deliverables={[
+    '3 complete balanced T-accounts with 1 Jan 2027 Bal b/d shown cleanly',
+    'Adjusting/Closing Journal Entries for the three Income Statement transfers',
+    'Balance Sheet extract classifying every closing balance',
+  ]}
+  rubric={[
+    'Wages A/c: Transfer to Income Statement = $28,800 (T-account totals $30,000; Jan 1, 2027 Cr Bal b/d $1,600 → Current Liability).',
+    'Rates & Taxes A/c: Transfer to Income Statement = $2,400 (T-account totals $2,900; Jan 1, 2027 Dr Bal b/d $500 → Current Asset).',
+    'Commission Receivable A/c: Transfer to Income Statement = $4,300 ($4,850 − $350 − $200; T-account totals $4,850; Jan 1, 2027 Cr Bal b/d $200 → Current Liability).',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **Asset = Dr `b/d`** (*Prepaid Expense* &amp; *Accrued Revenue*).
+- **Liability = Cr `b/d`** (*Accrued Expense* &amp; *Unearned Revenue*).
+- Always bring down **1 Jan next-year `Bal b/d`** below the total lines!
+:::

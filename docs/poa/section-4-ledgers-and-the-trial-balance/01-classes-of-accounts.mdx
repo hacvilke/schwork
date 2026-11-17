@@ -1,0 +1,225 @@
+---
+id: classes-of-accounts
+title: "4.1 Classes of Accounts: Nominal, Real, and Personal"
+sidebar_label: "4.1 Classes of Accounts"
+sidebar_position: 1
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 4"
+  section="Ledgers and the Trial Balance — The Ledger System"
+  code="POA-S4-01"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="20 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+Before you can enter a single number into a ledger, you must know **what kind of account** you are holding! Every account in the entire accounting system fits cleanly into **three classic classes** — **Personal** (people & firms), **Real** (tangible/intangible property & assets), and **Nominal** (income, expenses, gains, & losses). Knowing an account’s class immediately tells you its Debit/Credit rule, which ledger holds it, and whether it belongs on the Income Statement or Balance Sheet!
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | Splitting all accounts into **Personal** vs. **Impersonal** (**Real** and **Nominal**) — and mapping them to the 5 modern account families |
+| **Exam Focus** | Classifying tricky accounts accurately (e.g., *Bank*, *Capital*, *Drawings*, *Purchases*, *Machinery*, *Discount Allowed*) |
+| **Learning Outcome** | Classify any business account accurately into Personal, Real, or Nominal and explain how its class controls its year-end treatment |
+
+<ObjectivesBox
+  id="poa-s4-01-obj"
+  objectives={[
+    'Distinguish between Personal Accounts and Impersonal Accounts (Real and Nominal).',
+    'Define Personal, Real, and Nominal accounts with clear business examples.',
+    'Classify classic exam edge cases accurately (including Capital, Drawings, Bank, Purchases, Sales, and Inventory).',
+    'Connect each account class to its permanent (Balance Sheet) vs. temporary (Income Statement) year-end destiny.',
+  ]}
+/>
+
+---
+
+## 1. The Three Classes of Accounts Master Reference
+
+All ledger accounts divide first into **Personal** and **Impersonal**, and Impersonal splits into **Real** and **Nominal**:
+
+| Account Class | What It Represents | Classic Examples | Year-End Treatment |
+| :--- | :--- | :--- | :--- |
+| **1. Personal Accounts** | Accounts of **people, businesses, lenders, and the owner** | Credit Customers / Trade Receivables (*K. Brown, Apex Mart*), Credit Suppliers / Trade Payables (*Prime Wholesale*), Bank Loan Lender, **Capital**, **Drawings**, Bank *(institution)* | **Permanent** — balanced (`c/d` → `b/d`) and reported on the **Balance Sheet** *(Drawings closes into Capital)* |
+| **2. Real Accounts** *(Impersonal)* | Accounts of **assets and property** — things the business owns (tangible or intangible) | Land & Buildings (Premises), Machinery, Motor Vehicles, Fixtures & Fittings, Office Equipment, **Cash**, **Inventory**, Goodwill | **Permanent** — balanced (`c/d` → `b/d`) and reported on the **Balance Sheet** |
+| **3. Nominal Accounts** *(Impersonal)* | Accounts of **revenues, expenses, gains, and losses** (exist in name for ONE period to measure profit) | **Sales, Purchases, Returns Inwards, Returns Outwards**, Rent, Wages, Electricity, Insurance, Bad Debts, Discount Allowed, Discount Received, Commission Received | **Temporary** — **closed** at year-end to the **Income Statement** (reset to $0 for Year 2!) |
+
+:::note Two Classic Edge Cases Examiners Love Testing!
+1. **Why are `Capital` and `Drawings` Personal Accounts?** Because they represent the **Owner’s** personal financial relationship with the separate business entity!
+2. **Where does `Bank` fit?** In traditional strict classification, **Bank** is an artificial **Personal Account** (the bank is a legal institution holding your money or lending you an overdraft), whereas physical **Cash** is a **Real Account**. Under modern 5-family classification, both Cash and positive Bank are simply **Assets**!
+:::
+
+---
+
+## 2. Diagram 1: Account Classification Tree
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-4/01-classes-of-accounts-tree.svg"
+  alt="Hierarchy tree splitting All Ledger Accounts into Personal Accounts (Debtors, Creditors, Capital, Drawings) and Impersonal Accounts, which further divide into Real Accounts (Property and Assets) and Nominal Accounts (Income, Expenses, Gains, Losses)."
+  caption="Diagram 1 (Static Reference): Real and Personal accounts carry forward to the Balance Sheet; Nominal accounts exist for one year to calculate Net Profit in the Income Statement."
+/>
+
+---
+
+## 3. Diagram 2: Interactive Account Classifier Hub
+
+<InteractiveDiagram
+  title="Interactive Hub: Tap Each Account Class & Family to Inspect Examples & Traps"
+  layout="hub"
+  centerLabel="Account Classes"
+  centerSublabel="Personal · Real · Nominal"
+  instruction="Select any node around the hub to verify exactly how each class behaves and spot the trickiest exam items."
+  nodes={[
+    {
+      label: 'Personal Accounts',
+      tag: 'People & Firms',
+      tone: 'positive',
+      detail: 'Tracks money owed TO us by named customers (Debtors), money owed BY us to named suppliers/lenders (Creditors), and the Owner’s stake (Capital & Drawings).',
+      example: 'D. Reid (Debtor), Metro Distributors Ltd. (Creditor), Capital A/c, Drawings A/c, National Commercial Bank.',
+      examTip: 'Spotting a person’s name, a company name, Capital, or Drawings? That is ALWAYS a Personal Account!',
+    },
+    {
+      label: 'Real Accounts',
+      tag: 'Assets & Property',
+      tone: 'positive',
+      detail: 'Tracks physical possessions you can see/touch (Premises, Vans, Machinery, Cash, Stock) plus intangible property rights (Patents, Trademarks, Goodwill).',
+      example: 'Delivery Van ($24,000), Shop Fittings ($8,000), Cash in Hand ($600), Closing Inventory ($9,200).',
+      examTip: 'Remember: Purchases A/c is NOMINAL (cost of buying goods to resell), while Equipment/Machinery A/c is REAL (long-term property)!',
+    },
+    {
+      label: 'Nominal Accounts',
+      tag: 'Income & Expense',
+      tone: 'warning',
+      detail: 'Tracks all revenues earned and operating costs incurred during ONE accounting year so we can compute Gross Profit and Net Profit cleanly.',
+      example: 'Sales, Purchases, Returns Inwards/Outwards, Carriage Inwards, Salaries, Rent Expense, Rent Received, Discount Allowed, Discount Received.',
+      examTip: 'Notice the pair! "Rent Expense" AND "Rent Received" are BOTH Nominal Accounts (one is an expense, the other is income)!',
+    },
+    {
+      label: 'Modern 5-Family Map',
+      tag: 'Quick Bridge',
+      tone: 'neutral',
+      detail: 'Modern accounting also groups accounts into 5 families: Assets, Liabilities, Capital (Equity), Revenue (Income), and Expenses. Every one maps neatly to Personal, Real, and Nominal!',
+      example: 'Assets = Real (+ Debtors); Liabilities & Capital = Personal; Revenues & Expenses = Nominal.',
+      examTip: 'Use BOTH lenses together: Personal/Real/Nominal for classification questions, and DEAD CLIC (next lesson!) for Debit/Credit speed!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Classifying Ten Ledger Accounts Into Personal, Real, or Nominal"
+  marks={10}
+  problem={
+    <>
+      <p>
+        <strong>Question:</strong> Classify each of the following ten ledger accounts from the
+        books of <strong>Crestline Traders</strong> as <strong>Personal</strong>,
+        <strong> Real</strong>, or <strong>Nominal</strong>, AND state whether it is reported
+        on the <strong>Income Statement</strong> or <strong>Balance Sheet</strong>.
+        <em>[1 mark each = 10 marks]</em>
+      </p>
+      <ol>
+        <li>Delivery Van</li>
+        <li>Electricity Expense</li>
+        <li>T. Baptiste (Credit Customer)</li>
+        <li>Sales Revenue</li>
+        <li>Owner’s Capital</li>
+        <li>Cash in Hand</li>
+        <li>Purchases</li>
+        <li>Island Wholesale Ltd. (Credit Supplier)</li>
+        <li>Discount Received</li>
+        <li>Fixtures &amp; Fittings</li>
+      </ol>
+    </>
+  }
+>
+
+| # | Ledger Account | Account Class | Financial Statement |
+| :-: | :--- | :---: | :---: |
+| 1 | **Delivery Van** | **Real** *(Tangible asset)* | Balance Sheet |
+| 2 | **Electricity Expense** | **Nominal** *(Expense)* | Income Statement |
+| 3 | **T. Baptiste (Credit Customer)** | **Personal** *(Debtor)* | Balance Sheet |
+| 4 | **Sales Revenue** | **Nominal** *(Revenue)* | Income Statement |
+| 5 | **Owner’s Capital** | **Personal** *(Owner’s equity)* | Balance Sheet |
+| 6 | **Cash in Hand** | **Real** *(Cash asset)* | Balance Sheet |
+| 7 | **Purchases** | **Nominal** *(Cost of goods bought)* | Income Statement |
+| 8 | **Island Wholesale Ltd. (Supplier)** | **Personal** *(Creditor)* | Balance Sheet |
+| 9 | **Discount Received** | **Nominal** *(Other income)* | Income Statement |
+| 10 | **Fixtures &amp; Fittings** | **Real** *(Tangible asset)* | Balance Sheet |
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Classes of Accounts"
+  items={[
+    {
+      statement: 'Machinery and Premises are examples of Nominal Accounts.',
+      answer: false,
+      explanation: 'Machinery and Premises are tangible business property — making them REAL Accounts, NOT Nominal Accounts.',
+    },
+    {
+      statement: 'Capital and Drawings are classified as Personal Accounts because they represent the owner’s stake and withdrawals.',
+      answer: true,
+      explanation: 'Because the business is accounted for separately from its owner, Capital and Drawings record the owner’s personal financial account with the business.',
+    },
+    {
+      statement: 'Nominal Accounts record income, expenses, gains, and losses and are closed to the Income Statement at year-end.',
+      answer: true,
+      explanation: 'Nominal accounts are temporary profit-measurement accounts that close to the Income Statement and reset to zero each year.',
+    },
+    {
+      statement: 'Discount Allowed and Discount Received are Personal Accounts because they involve customers and suppliers.',
+      answer: false,
+      explanation: 'Discount Allowed (expense) and Discount Received (income) are NOMINAL Accounts — only the customer’s or supplier’s named account is Personal.',
+    },
+    {
+      statement: 'Real and Nominal Accounts together make up the category called Impersonal Accounts.',
+      answer: true,
+      explanation: 'Ledger accounts divide into Personal Accounts (people/firms) and Impersonal Accounts (Real + Nominal).',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s4-01-project"
+  title="Mini-Project: Build a 15-Account Chart of Accounts for Your Dream Business"
+  duration="25–30 mins"
+  scenario="Every real computerized accounting package (QuickBooks, Xero, Sage) starts by building a 'Chart of Accounts' — a numbered directory of every ledger account the business uses. Design a starter 15-account Chart of Accounts for a business of your choice (e.g., an eco-bakery, sneaker shop, or graphic design studio)."
+  steps={[
+    'Choose your business name and set up a 5-column table: Account Code (e.g. 101–505), Account Name, Classic Class (Personal / Real / Nominal), Modern Family (Asset / Liability / Capital / Revenue / Expense), and Final Report (Income Statement or Balance Sheet).',
+    'Include exactly 5 Real Accounts (e.g., Cash, Equipment, Vehicles, Furniture, Inventory), 5 Personal Accounts (e.g., 2 named Debtors, 1 named Creditor, Capital, Drawings), and 5 Nominal Accounts (e.g., Sales, Purchases, Rent, Wages, Discount Allowed).',
+    'Double-check that every Real & Personal account maps to the Balance Sheet (with Drawings adjusting Capital) and every Nominal account maps to the Income Statement.',
+    'Write a short 2-sentence explanation of why separating Nominal accounts from Real accounts is essential before calculating annual Net Profit.',
+  ]}
+  deliverables={[
+    'A clean 15-row numbered Chart of Accounts table',
+    'Accurate dual tagging (Personal/Real/Nominal + Modern 5 Families)',
+    'A 2-sentence explanation of Real vs. Nominal profit impact',
+  ]}
+  rubric={[
+    'All 15 accounts are accurately classified across Personal (5), Real (5), and Nominal (5) with zero misclassified edge cases.',
+    'Every Nominal account links to the Income Statement; every Real/Personal account links to the Balance Sheet.',
+    'Account names are concrete, realistic, and tailored to one coherent business.',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **Personal** = Named people, firms, debtors, creditors, **Capital**, **Drawings**, Bank.
+- **Real** = Physical/intangible **Assets** (Buildings, Vans, Equipment, Cash, Inventory).
+- **Nominal** = **Income & Expenses** (Sales, Purchases, Returns, Rent, Wages, Discounts) → closed to **Income Statement**!
+:::

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 430" fill="none" role="img" aria-label="Classification Tree of Accounting Accounts into Personal and Impersonal (Real and Nominal)">
+  <rect width="820" height="430" rx="12" fill="#1B365D"/>
+  <rect x="14" y="14" width="792" height="402" rx="10" stroke="#2D507C" stroke-width="1.2"/>
+
+  <!-- Header -->
+  <text x="34" y="46" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="18" font-weight="700">The Three Classes of Accounts: Personal, Real &amp; Nominal</text>
+  <text x="34" y="66" fill="#9DD9CB" font-family="monospace" font-size="11.5">HOW EVERY LEDGER ACCOUNT IN A BUSINESS IS CLASSIFIED</text>
+
+  <!-- Root Node -->
+  <rect x="290" y="84" width="240" height="38" rx="9" fill="#F5A352"/>
+  <text x="410" y="108" text-anchor="middle" fill="#122440" font-family="system-ui, sans-serif" font-size="13.5" font-weight="800">ALL LEDGER ACCOUNTS</text>
+
+  <!-- Connectors Root -> 2 branches -->
+  <path d="M410 122 V140 H156 V158" stroke="#6BC4B0" stroke-width="2.2"/>
+  <path d="M410 122 V140 H540 V158" stroke="#F5A352" stroke-width="2.2"/>
+
+  <!-- Left Branch: Personal Accounts -->
+  <rect x="34" y="158" width="244" height="236" rx="10" fill="#122440" stroke="#6BC4B0" stroke-width="1.8"/>
+  <rect x="34" y="158" width="244" height="32" rx="9" fill="#4E8577"/>
+  <text x="156" y="179" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="11.5" font-weight="800">1. PERSONAL ACCOUNTS</text>
+  <text x="48" y="210" fill="#9DD9CB" font-family="monospace" font-size="10" font-weight="700">PEOPLE, FIRMS &amp; OWNER</text>
+  <text x="48" y="232" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="11.5">• <tspan font-weight="700" fill="#FFFFFF">Debtors (Receivables):</tspan></text>
+  <text x="58" y="248" fill="#A5C0D6" font-family="system-ui, sans-serif" font-size="10.5">Customers who owe us (K. Brown)</text>
+  <text x="48" y="272" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="11.5">• <tspan font-weight="700" fill="#FFFFFF">Creditors (Payables):</tspan></text>
+  <text x="58" y="288" fill="#A5C0D6" font-family="system-ui, sans-serif" font-size="10.5">Suppliers we owe (Apex Wholesale)</text>
+  <text x="48" y="312" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="11.5">• <tspan font-weight="700" fill="#FFFFFF">Owner’s Accounts:</tspan></text>
+  <text x="58" y="328" fill="#A5C0D6" font-family="system-ui, sans-serif" font-size="10.5">Capital A/c &amp; Drawings A/c</text>
+  <rect x="48" y="346" width="216" height="34" rx="6" fill="#1B365D" stroke="#6BC4B0"/>
+  <text x="156" y="367" text-anchor="middle" fill="#6BC4B0" font-family="monospace" font-size="10" font-weight="700">Sales, Purchases &amp; General Ledger</text>
+
+  <!-- Right Parent: Impersonal Accounts -->
+  <rect x="424" y="158" width="232" height="32" rx="8" fill="#122440" stroke="#F5A352" stroke-width="1.6"/>
+  <text x="540" y="179" text-anchor="middle" fill="#F5A352" font-family="monospace" font-size="11" font-weight="800">IMPERSONAL ACCOUNTS</text>
+
+  <!-- Split Impersonal -> Real & Nominal -->
+  <path d="M540 190 V206 H414 V222" stroke="#8CC4B4" stroke-width="2"/>
+  <path d="M540 190 V206 H668 V222" stroke="#F5A352" stroke-width="2"/>
+
+  <!-- Real Accounts -->
+  <rect x="296" y="222" width="236" height="172" rx="10" fill="#122440" stroke="#8CC4B4" stroke-width="1.8"/>
+  <rect x="296" y="222" width="236" height="30" rx="9" fill="#2E6359"/>
+  <text x="414" y="241" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="11" font-weight="800">2. REAL ACCOUNTS</text>
+  <text x="310" y="270" fill="#9DD9CB" font-family="monospace" font-size="10" font-weight="700">PROPERTY &amp; ASSETS</text>
+  <text x="310" y="292" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="11">• Land, Premises, Machinery</text>
+  <text x="310" y="311" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="11">• Motor Vehicles, Fixtures</text>
+  <text x="310" y="330" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="11">• Cash, Bank, Inventory</text>
+  <rect x="310" y="346" width="208" height="34" rx="6" fill="#1B365D" stroke="#8CC4B4"/>
+  <text x="414" y="367" text-anchor="middle" fill="#9DD9CB" font-family="monospace" font-size="9.5" font-weight="700">PERMANENT → Balance Sheet (b/d)</text>
+
+  <!-- Nominal Accounts -->
+  <rect x="550" y="222" width="236" height="172" rx="10" fill="#122440" stroke="#F5A352" stroke-width="1.8"/>
+  <rect x="550" y="222" width="236" height="30" rx="9" fill="#C84E24"/>
+  <text x="668" y="241" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="11" font-weight="800">3. NOMINAL ACCOUNTS</text>
+  <text x="564" y="270" fill="#F5A352" font-family="monospace" font-size="10" font-weight="700">INCOME, EXPENSES &amp; GAINS</text>
+  <text x="564" y="292" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="11">• Sales, Purchases, Returns</text>
+  <text x="564" y="311" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="11">• Rent, Wages, Electricity</text>
+  <text x="564" y="330" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="11">• Discounts, Commission Rec’d</text>
+  <rect x="564" y="346" width="208" height="34" rx="6" fill="#1B365D" stroke="#F5A352"/>
+  <text x="668" y="367" text-anchor="middle" fill="#F5A352" font-family="monospace" font-size="9.5" font-weight="700">TEMPORARY → Closed to Income Stmt</text>
+</svg>

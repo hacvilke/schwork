@@ -1,0 +1,234 @@
+---
+id: methods-of-payment-banking
+title: "11.1 Methods of Payment: Cheques, Standing Orders, EFTPOS, Direct Deposit"
+sidebar_label: "11.1 Methods of Payment"
+sidebar_position: 1
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 11"
+  section="Accounting for the Entrepreneur — Payments & Software"
+  code="POA-S11-01"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="20 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+Running a modern startup means moving money safely in and out of your business bank account every single day — paying rent, settling fluctuating utility bills, collecting customer card taps at the counter, and paying staff without keeping dangerous piles of physical cash on site! Choosing the right banking payment method — **Cheques, Standing Orders, Direct Debits, EFTPOS, Direct Deposit, or Wire Transfers** — protects cash flow, cuts bank fees, and strengthens internal control!
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | **6 Business Payment Rails** (Cheques, Standing Orders, Direct Debits, EFTPOS, Direct Deposit / Credit Transfer, Online &amp; SWIFT Wire Transfers) |
+| **Exam Focus** | Instantly contrasting **Standing Order** *(payer-initiated, FIXED amount!)* vs. **Direct Debit** *(payee-initiated, VARIABLE amount!)*, explaining **EFTPOS merchant fees**, and picking the best method for real business scenarios |
+| **Learning Outcome** | Distinguish among paper and electronic payment methods and recommend the safest, most cost-effective banking method for any entrepreneurial payment |
+
+<ObjectivesBox
+  id="poa-s11-01-obj"
+  objectives={[
+    'Define and explain the working of Cheques, Standing Orders, Direct Debits, EFTPOS, Direct Deposit (EFT), and Wire Transfers.',
+    'Contrast a Standing Order against a Direct Debit accurately across who initiates the payment and whether the amount is fixed or variable.',
+    'Evaluate the advantages, security controls, and costs (such as merchant fees or bounce risk) of each payment rail.',
+    'Select the most suitable payment method for common entrepreneurial transactions (rent, electricity, payroll, retail counter sales, overseas imports).',
+  ]}
+/>
+
+---
+
+## 1. Six Essential Business Payment Methods Compared
+
+| Payment Method | Initiated By | Fixed or Variable? | Best Entrepreneurial Use | Key Caution / Cost |
+| :--- | :--- | :--- | :--- | :--- |
+| **Cheque** *(Paper)* | Payer *(Drawer)* | Any amount written | Formal supplier bills &amp; dual-signature internal control | Slow clearing (`3–5` days), dishonored/NSF bounce risk, cheque-printing cost |
+| **Standing Order** | **Payer** instructs own bank | **FIXED** same sum every period | Monthly shop **rent**, fixed **loan repayments**, fixed **insurance** | Must manually update bank instruction if rent changes! |
+| **Direct Debit** | **Payee** pulls via customer mandate | **VARIABLE** amounts each bill | Fluctuating **electricity**, **water**, **phone/internet** bills | Must monitor bank balance so variable spikes never trigger overdraft fees! |
+| **EFTPOS** *(Debit/Credit Card Terminal)* | Customer taps/swipes at POS | Exact purchase total | **Retail checkout** (shops, cafés, salons, pharmacies) | Bank charges **merchant processing fee** (typically `1.5%–3.5%` on card sales)! |
+| **Direct Deposit *(EFT / ACH)*** | Payer pushes batch electronically | Exact amount each run | **Employee payroll**, local vendor batches, government taxes | Verify bank account numbers carefully — wrong transfers are hard to reverse! |
+| **Wire Transfer *(SWIFT)*** | Payer’s bank wires globally | Any international sum | Paying **overseas suppliers** for imported stock/machinery | Higher flat wire fee (`$25–$50`) + foreign exchange spread! |
+
+---
+
+## 2. Diagram 1: Entrepreneur’s Payment Methods Toolkit
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-11/01-methods-of-payment-matrix.svg"
+  alt="Six-card comparison matrix detailing Cheques, Standing Orders, Direct Debits, EFTPOS, Direct Deposit, and Online/Wire Transfers, anchored by the Standing Order versus Direct Debit contrast."
+  caption="Diagram 1 (Static Reference): Memorize the bottom navy box — Standing Order = PAYER + FIXED amount; Direct Debit = PAYEE + VARIABLE amount!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive Payment-Rail Selector
+
+<InteractiveDiagram
+  title="Interactive Comparator: Choosing Between Closely Confused Payment Methods"
+  layout="compare"
+  instruction="Tap any payment pair below to lock in the exact exam distinction."
+  nodes={[
+    {
+      label: 'Standing Order vs. Direct Debit',
+      tag: '#1 Exam Pair!',
+      detail: 'Both pay recurring bills automatically without writing monthly cheques — so what is the exact difference?',
+      sideALabel: 'Standing Order',
+      sideAText: 'YOU (the payer) tell your bank to push the EXACT SAME FIXED sum on a fixed date (e.g. $1,500 Rent on the 1st of every month)!',
+      sideBLabel: 'Direct Debit',
+      sideBText: 'You sign a mandate letting the SUPPLIER (payee) pull DIFFERENT variable sums each month as usage changes (e.g. $420 Electricity in Jan, $510 in Feb)!',
+      examTip: 'Quick memory hook: STANDING Order = sum STANDS STILL (fixed); Direct DEBIT = utility DEBITS whatever the meter reads!',
+    },
+    {
+      label: 'Direct Deposit (Payroll) vs. Cash Pay Packets',
+      tag: 'Staff Safety',
+      detail: 'Paying 20 employees every Friday afternoon.',
+      sideALabel: 'Direct Deposit (EFT)',
+      sideAText: 'Zero robbery risk, no counting coins into envelopes, instant electronic bank proof, and funds arrive cleanly on payday morning!',
+      sideBLabel: 'Cash Pay Envelopes',
+      sideBText: 'High theft risk moving cash from bank to office, slow manual counting errors, and easy payroll disputes without signed receipts!',
+      examTip: 'Remember: Direct Deposit still requires giving each employee a clear Payslip showing Gross Pay, Deductions & Net Pay!',
+    },
+    {
+      label: 'EFTPOS Debit/Credit Cards vs. Paper Cheques',
+      tag: 'Retail Checkout',
+      detail: 'A customer buys $250 of bakery cakes at the counter.',
+      sideALabel: 'EFTPOS Card Tap',
+      sideAText: 'Instant bank authorization (zero bounce risk!), faster queue, attracts tourists & impulse buyers — cost is a small 2%–3% merchant fee.',
+      sideBLabel: 'Personal Cheque',
+      sideBText: 'Zero merchant fee, YET risks bouncing days later (NSF / Dishonored Cheque!) after the customer already ate the cakes!',
+      examTip: 'Accounting entry for EFTPOS fee: Dr Bank (Net cash) + Dr Bank/Merchant Charges (Fee) / Cr Sales (FULL Gross Sales)!',
+    },
+    {
+      label: 'Local Online Transfer vs. SWIFT Wire Transfer',
+      tag: 'Domestic vs. Global',
+      detail: 'Paying a local Kingston flour distributor vs. a Miami oven manufacturer.',
+      sideALabel: 'Local Online / ACH Transfer',
+      sideAText: 'Cheap (often $0–$2) and settles in hours across local domestic banks!',
+      sideBLabel: 'International SWIFT Wire',
+      sideBText: 'Handles cross-border foreign currency (USD/EUR/GBP) safely for imports — costs higher bank wire & FX conversion fees.',
+      examTip: 'Always match international import invoices to SWIFT Wire Transfer (or Letter of Credit for huge shipments)!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Selecting Payment Methods & Recording EFTPOS Merchant Fees (BlueBay Artisan Bakery)"
+  marks={10}
+  problem={
+    <>
+      <p>
+        <strong>Part A (Method Matching — 6 marks):</strong> Recommend the <strong>single most
+        appropriate payment method</strong> for each of <strong>BlueBay Artisan Bakery’s</strong>
+        six routine payments, giving a concise reason:
+      </p>
+      <ol>
+        <li>Paying fixed monthly bakery rent of <strong>$1,800</strong> on the 1st of every month.</li>
+        <li>Paying monthly electricity bills that range from <strong>$600 to $950</strong> depending on oven usage.</li>
+        <li>Paying weekly net wages safely to <strong>14 bakery staff</strong>.</li>
+        <li>Accepting fast checkout payments from walk-in shoppers carrying debit/credit cards.</li>
+        <li>Settling an urgent <strong>US$8,000</strong> invoice for a commercial oven shipped from overseas.</li>
+        <li>Paying a local contractor <strong>$3,200</strong> where BOTH co-owners must co-sign to approve disbursement.</li>
+      </ol>
+      <p>
+        <strong>Part B (EFTPOS Accounting — 4 marks):</strong> During March 2026, BlueBay recorded
+        <strong>$18,000</strong> in EFTPOS card sales. The bank deducts a <strong>2.5% merchant
+        processing fee</strong> before depositing net funds into the bakery’s bank account. Calculate
+        the merchant fee and net bank deposit, and write the <strong>General Journal entry</strong>!
+      </p>
+    </>
+  }
+>
+
+### Part A: Optimal Payment Method Selection *(6 marks — 1 mark each)*
+1. **Standing Order:** Fixed `$1,800` monthly sum initiated automatically by the bakery on the 1st.
+2. **Direct Debit:** Electricity fluctuates monthly (`$600–$950`), so the utility pulls the exact billed amount via mandate.
+3. **Direct Deposit *(EFT / Bank Credit Transfer)*:** Transfers net pay safely and simultaneously to all 14 staff bank accounts without cash-handling theft risk.
+4. **EFTPOS *(Card Terminal)*:** Authorizes debit/credit cards instantly at the counter with zero dishonored-cheque risk.
+5. **International Wire Transfer *(SWIFT)*:** Transfers foreign currency securely across borders to the overseas manufacturer.
+6. **Crossed Cheque *(Dual-Signature)*:** Provides formal paper authorization requiring both co-owners’ signatures before funds clear.
+
+### Part B: EFTPOS Merchant Fee Calculation & Journal Entry *(4 marks)*
+- **Merchant Processing Fee:** `2.5% × $18,000` = **`$450`** *(1 mark)*
+- **Net Cash Credited to Bank:** `$18,000 − $450` = **`$17,550`** *(1 mark)*
+
+| General Journal | Dr ($) | Cr ($) |
+| :--- | ---: | ---: |
+| Bank *(Net EFTPOS Settlement)* | 17,550 | |
+| Merchant / Bank Processing Fees *(Expense)* | 450 | |
+| &nbsp;&nbsp;&nbsp;&nbsp;Sales *(FULL Gross Card Sales!)* | | 18,000 |
+| *Being March EFTPOS card sales less 2.5% merchant fee.* | | |
+
+*(Notice: ALWAYS credit Sales with the FULL `$18,000` and expense the `$450` bank fee separately — never bury the fee by recording Sales as `$17,550`!)*
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Business Payment Methods"
+  items={[
+    {
+      statement: 'A Standing Order is best suited for paying fluctuating monthly electricity bills that change every billing cycle.',
+      answer: false,
+      explanation: 'False! Standing Orders pay a FIXED identical sum every period — use a DIRECT DEBIT for variable utility bills!',
+    },
+    {
+      statement: 'Paying employees via Direct Deposit eliminates the security risk of transporting large amounts of physical cash for payday.',
+      answer: true,
+      explanation: 'Correct — Direct Deposit pushes net pay straight from the employer’s bank to staff accounts safely with a clean electronic trail!',
+    },
+    {
+      statement: 'EFTPOS stands for Electronic Funds Transfer at Point of Sale and allows customers to pay using Debit or Credit cards at checkout.',
+      answer: true,
+      explanation: 'Yes — fast authorization, higher retail convenience, and zero NSF cheque bounce risk!',
+    },
+    {
+      statement: 'If a café makes $10,000 in card sales with a 2% EFTPOS merchant fee ($200), the café should record Sales Revenue as only $9,800.',
+      answer: false,
+      explanation: 'Record FULL Sales Revenue ($10,000 Cr), Bank ($9,800 Dr), and Merchant/Bank Fees Expense ($200 Dr) separately!',
+    },
+    {
+      statement: 'A Direct Debit is initiated by the PAYEE (supplier) after receiving written authorization from the customer.',
+      answer: true,
+      explanation: 'Spot on! Standing Order = initiated by PAYER (fixed); Direct Debit = initiated by PAYEE (variable)!',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s11-01-project"
+  title="Mini-Project: Banking & Payment Policy for IslandBrew Coffee Café"
+  duration="20 mins"
+  scenario="You are launching 'IslandBrew Coffee Café' with 6 baristas, fixed shop rent ($1,400/mo), variable water & power bills ($350–$600/mo), counter customers paying mainly by card, a local milk distributor paid weekly, and a Colombian coffee bean exporter paid in USD. During Month 1, EFTPOS card sales totaled $12,000 with a 2.0% merchant fee."
+  steps={[
+    'Build a 6-row Payment Policy Table matching each café transaction to its ideal payment rail and stating 1 clear control/benefit.',
+    'Explain in 2 crisp sentences why mixing up Standing Order vs. Direct Debit on the electricity bill would cause payment failures.',
+    'Calculate Month 1 EFTPOS Merchant Fee and Net Bank Deposit on $12,000 card sales (2.0% fee) and write the exact 3-line General Journal entry!',
+  ]}
+  deliverables={[
+    '6-row Payment Policy Table for IslandBrew Coffee Café',
+    '2-sentence Standing Order vs. Direct Debit explanation',
+    'EFTPOS Calculation & 3-line General Journal Entry',
+  ]}
+  rubric={[
+    'Matches cleanly: Rent → Standing Order; Utilities → Direct Debit; 6 Baristas → Direct Deposit; Counter Sales → EFTPOS; Local Milk → Online Transfer/Cheque; Colombian Beans → SWIFT Wire Transfer.',
+    'Explains clearly that a Standing Order sends one rigid fixed amount, risking underpayment (disconnection) or overpayment whenever electricity fluctuates.',
+    'Exact EFTPOS entry: Dr Bank $11,760 + Dr Merchant Fees $240 (2% × $12,000) / Cr Sales $12,000!',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **Standing Order** = **Payer-initiated**, **FIXED** amount (`Rent, Loan`).
+- **Direct Debit** = **Payee-initiated**, **VARIABLE** amount (`Electricity, Water`).
+- **EFTPOS Entry:** `Dr Bank (Net) + Dr Merchant Fees / Cr Sales (FULL Gross)`!
+:::

@@ -13,9 +13,11 @@ import {
   ExtraPractice,
   FormulaCard,
   FormulaHint,
+  InteractiveDiagram,
   InteractiveGraph,
   ObjectivesBox,
   QuickCheck,
+  StudentProject,
   SyllabusHeader,
   TrueFalseQuiz,
   WorkedExample,
@@ -46,4 +48,6 @@ export default {
   ExtraPractice,
   InteractiveGraph,
   DiagramFigure,
+  InteractiveDiagram,
+  StudentProject,
 };

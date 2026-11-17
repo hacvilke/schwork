@@ -1,0 +1,264 @@
+---
+id: profitability-and-efficiency-ratios
+title: "5.5 Using Ratios to Determine Business Profitability (Gross %, Net %, Stock Turnover)"
+sidebar_label: "5.5 Profitability Ratios"
+sidebar_position: 5
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 5"
+  section="Financial Statements of the Sole-Trader — Analysis"
+  code="POA-S5-05"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="25 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+Raw profit dollars alone can fool you! Suppose Shop A earns **$20,000 Net Profit** on **$100,000 Sales** while Shop B earns **$25,000 Net Profit** on **$500,000 Sales** — Shop A actually keeps **20 cents per dollar** (20% margin) whereas Shop B only keeps **5 cents per dollar** (5% margin)! **Profitability and efficiency ratios** turn raw Income Statement figures into sharp, comparable yardsticks across years and competitors.
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | **Gross Profit Margin (`GP %`)**, **Mark-Up**, **Net Profit Margin (`NP %`)**, and **Rate of Stock (Inventory) Turnover** |
+| **Exam Focus** | Choosing the exact right denominator (`Net Sales` vs. `COGS` vs. `Average Stock`), using the right **unit** (`%` vs. `times`), and interpreting changes across years |
+| **Learning Outcome** | Compute all four profitability & inventory-efficiency ratios accurately and explain what each figure reveals about business performance |
+
+<ObjectivesBox
+  id="poa-s5-05-obj"
+  objectives={[
+    'Define and calculate Gross Profit Percentage (Margin) and distinguish it sharply from Mark-Up.',
+    'Calculate Net Profit Percentage (Margin) and use the gap between GP % and NP % to evaluate expense control.',
+    'Calculate Average Inventory and Rate of Inventory (Stock) Turnover (in "times per year" and days held).',
+    'Interpret changes in profitability and stock turnover across two accounting periods or two competing businesses.',
+  ]}
+/>
+
+---
+
+## 1. The Four Profitability & Stock Efficiency Formulas
+
+<FormulaCard
+  title="Profitability & Stock Turnover Formulas (Memorize All 4!)"
+  onFormulaSheet={false}
+  summary="Margin divides by Net Sales; Mark-Up divides by Cost of Goods Sold; Stock Turnover divides COGS by Average Inventory."
+>
+
+$$
+\text{Gross Profit Margin (GP \%)} = \frac{\text{Gross Profit}}{\text{Net Sales}} \times 100
+$$
+
+$$
+\text{Mark-Up (\%)} = \frac{\text{Gross Profit}}{\text{Cost of Goods Sold}} \times 100
+$$
+
+$$
+\text{Net Profit Margin (NP \%)} = \frac{\text{Net Profit}}{\text{Net Sales}} \times 100
+$$
+
+$$
+\text{Rate of Stock Turnover} = \frac{\text{Cost of Goods Sold}}{\text{Average Inventory}} \quad \text{(times per year)}
+$$
+
+where:
+
+$$
+\text{Average Inventory} = \frac{\text{Opening Inventory} + \text{Closing Inventory}}{2}
+$$
+
+</FormulaCard>
+
+### Unit & Formula Trap Checklist
+
+| Ratio | Correct Unit | #1 Classic Mistake to Avoid |
+| :--- | :---: | :--- |
+| **Gross Profit Margin** | **Percentage (`%`)** | Dividing by Gross Sales instead of **Net Sales** *(always subtract Returns Inwards first!)* |
+| **Mark-Up** | **Percentage (`%`)** | Confusing Margin (÷ Sales) with Mark-Up (÷ Cost of Goods Sold)! |
+| **Net Profit Margin** | **Percentage (`%`)** | Using Gross Profit instead of **Net Profit** in the numerator |
+| **Rate of Stock Turnover** | **Times** *(e.g. `6.4 times`)* | Dividing **Sales** instead of **Cost of Goods Sold** by Average Inventory — Stock is valued at COST, so the numerator MUST be **COGS**! |
+
+---
+
+## 2. Diagram 1: Profitability & Efficiency Ratios Formula Dashboard
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-5/05-profitability-ratios-dashboard.svg"
+  alt="Four-card dashboard detailing Gross Profit Margin, Mark-Up, Net Profit Margin, and Rate of Stock Turnover with exact formulas, units, and diagnostic meanings."
+  caption="Diagram 1 (Static Reference): Notice the instant diagnostic trick — comparing Gross Profit % against Net Profit % immediately exposes whether a profit drop came from trading costs or overhead expenses!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive Profitability Ratios Diagnostic Hub
+
+<InteractiveDiagram
+  title="Interactive Hub: Tap Each Ratio to Master What Moves It Up or Down"
+  layout="hub"
+  centerLabel="Profit Ratios"
+  centerSublabel="Income Stmt KPIs"
+  instruction="Select any of the 4 ratios around the hub to explore what a high vs. low score means and how examiners test it."
+  nodes={[
+    {
+      label: 'Gross Profit Margin',
+      tag: 'GP ÷ Net Sales',
+      tone: 'positive',
+      detail: 'Shows how many cents of Gross Profit the store keeps out of every $1.00 of Net Sales BEFORE paying operating expenses like rent or wages.',
+      example: 'GP = $48,000, Net Sales = $120,000 → GP % = (48,000 ÷ 120,000) × 100 = 40% (keeps 40¢ gross profit per $1 sold).',
+      examTip: 'A falling GP % signals rising supplier purchase prices, cutting selling prices to clear stock, or inventory theft/damage.',
+    },
+    {
+      label: 'Mark-Up',
+      tag: 'GP ÷ COGS',
+      tone: 'neutral',
+      detail: 'Shows the percentage profit tacked ON TOP of purchase cost when setting the shelf price. Mark-Up is ALWAYS higher than Margin for the same profitable item!',
+      example: 'Buy jacket for $80 (COGS), sell for $100 (Sales) → GP = $20. Mark-Up = 20 ÷ 80 = 25%; Margin = 20 ÷ 100 = 20%!',
+      examTip: 'Quick fraction link: 1/4 Mark-Up (25%) = 1/5 Margin (20%); 1/3 Mark-Up (33.3%) = 1/4 Margin (25%)!',
+    },
+    {
+      label: 'Net Profit Margin',
+      tag: 'NP ÷ Net Sales',
+      tone: 'warning',
+      detail: 'Shows how many cents of FINAL Net Profit stay with the owner per $1.00 of Net Sales AFTER paying every operating expense.',
+      example: 'NP = $18,000, Net Sales = $120,000 → NP % = (18,000 ÷ 120,000) × 100 = 15%. Overhead expense ratio = GP % (40%) − NP % (15%) = 25%!',
+      examTip: 'If GP % stayed steady at 40% while NP % fell from 18% to 10%, the culprit is 100% rising OPERATING EXPENSES!',
+    },
+    {
+      label: 'Stock Turnover',
+      tag: 'COGS ÷ Avg Stock',
+      tone: 'positive',
+      detail: 'Counts how many times per year the store completely sells through and replaces its average inventory. Supermarkets turn stock 15–30×/yr; luxury jewelry shops turn 1–3×/yr.',
+      example: 'COGS = $72,000; Opening Stock = $10,000; Closing Stock = $14,000 → Avg Stock = $12,000 → Turnover = $72,000 ÷ $12,000 = 6 times (every ~61 days).',
+      examTip: 'ALWAYS write "times" (never "%" or "$") after Stock Turnover! And if only Closing Stock is given, use Closing Stock as the denominator.',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Calculating & Comparing Profitability and Stock Turnover Across Two Years"
+  marks={12}
+  problem={
+    <>
+      <p>
+        <strong>Scenario:</strong> The summarized Income Statement figures for
+        <strong> SunCoast Electronics</strong> across two years are shown below:
+      </p>
+      <table>
+        <thead>
+          <tr><th>Item</th><th>2025 ($)</th><th>2026 ($)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Net Sales</td><td>160,000</td><td>200,000</td></tr>
+          <tr><td>Opening Inventory</td><td>18,000</td><td>22,000</td></tr>
+          <tr><td>Net Purchases</td><td>100,000</td><td>132,000</td></tr>
+          <tr><td>Closing Inventory</td><td>22,000</td><td>26,000</td></tr>
+          <tr><td>Operating Expenses</td><td>32,000</td><td>46,000</td></tr>
+        </tbody>
+      </table>
+      <ol>
+        <li>Calculate <strong>Cost of Goods Sold</strong>, <strong>Gross Profit</strong>, and <strong>Net Profit</strong> for both 2025 and 2026. <em>[4 marks]</em></li>
+        <li>Calculate to 1 decimal place for BOTH years: (a) <strong>Gross Profit Margin (%)</strong>, (b) <strong>Mark-Up (%)</strong>, (c) <strong>Net Profit Margin (%)</strong>, and (d) <strong>Rate of Stock Turnover (times)</strong>. <em>[6 marks]</em></li>
+        <li>State <strong>two sharp observations</strong> comparing 2026 performance against 2025. <em>[2 marks]</em></li>
+      </ol>
+    </>
+  }
+>
+
+**1. Core Profit Figures (4 marks):**
+- **2025:**
+  - `COGS` = `$18,000 + $100,000 − $22,000` = **$96,000**
+  - `Gross Profit` = `$160,000 − $96,000` = **$64,000**
+  - `Net Profit` = `$64,000 − $32,000` = **$32,000**
+- **2026:**
+  - `COGS` = `$22,000 + $132,000 − $26,000` = **$128,000**
+  - `Gross Profit` = `$200,000 − $128,000` = **$72,000**
+  - `Net Profit` = `$72,000 − $46,000` = **$26,000**
+
+**2. Ratios Table (6 marks):**
+- *Average Inventory:* 2025 = `($18,000 + $22,000) ÷ 2 = $20,000`; 2026 = `($22,000 + $26,000) ÷ 2 = $24,000`.
+
+| Ratio | 2025 Calculation &amp; Result | 2026 Calculation &amp; Result | Trend |
+| :--- | :--- | :--- | :---: |
+| **(a) Gross Profit Margin** | `(64,000 ÷ 160,000) × 100` = **40.0%** | `(72,000 ÷ 200,000) × 100` = **36.0%** | **↓ Fell 4.0%** |
+| **(b) Mark-Up** | `(64,000 ÷ 96,000) × 100` = **66.7%** | `(72,000 ÷ 128,000) × 100` = **56.3%** | **↓ Fell 10.4%** |
+| **(c) Net Profit Margin** | `(32,000 ÷ 160,000) × 100` = **20.0%** | `(26,000 ÷ 200,000) × 100` = **13.0%** | **↓ Fell 7.0%** |
+| **(d) Stock Turnover** | `96,000 ÷ 20,000` = **4.8 times** | `128,000 ÷ 24,000` = **5.3 times** | **↑ Improved** |
+
+**3. Two Sharp Observations (2 marks):**
+1. **Higher sales masked weaker profit efficiency:** Even though Net Sales jumped by $40,000 (+25%) and Stock Turnover sped up from `4.8` to `5.3 times` (likely due to lowering prices), **Gross Profit Margin fell from 40% to 36%** *(1 mark)*.
+2. **Operating expenses surged faster than sales:** Net Profit Margin dropped sharply from **20.0% down to 13.0%** — Expenses ate 23% of sales in 2026 (`36% − 13%`) compared to 20% in 2025 (`40% − 20%`), reducing final Net Profit dollars by $6,000 *(1 mark)*.
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Profitability & Stock Efficiency Ratios"
+  items={[
+    {
+      statement: 'Gross Profit Margin is calculated by dividing Gross Profit by Cost of Goods Sold and multiplying by 100.',
+      answer: false,
+      explanation: 'Gross Profit ÷ Cost of Goods Sold is MARK-UP! Gross Profit MARGIN divides Gross Profit by NET SALES!',
+    },
+    {
+      statement: 'Rate of Stock Turnover uses Cost of Goods Sold (NOT Sales Revenue) in the numerator.',
+      answer: true,
+      explanation: 'Because Average Inventory is valued at COST, the numerator must also be at COST (Cost of Goods Sold) for a fair comparison.',
+    },
+    {
+      statement: 'If a store’s Gross Profit Margin stayed constant at 35%, while its Net Profit Margin fell from 15% to 8%, the primary problem is rising Operating Expenses.',
+      answer: true,
+      explanation: 'The gap between Gross Profit % and Net Profit % measures Operating Expenses as a % of sales — a widening gap proves overhead expenses grew out of control.',
+    },
+    {
+      statement: 'Rate of Stock Turnover should be expressed as a percentage (%).',
+      answer: false,
+      explanation: 'Stock Turnover is ALWAYS expressed in "times" (e.g., 6.5 times per year) — never as a percentage!',
+    },
+    {
+      statement: 'For any profitable product, the Mark-Up percentage is always higher than the Gross Profit Margin percentage.',
+      answer: true,
+      explanation: 'Because Cost of Goods Sold is smaller than Net Sales, dividing the same Gross Profit by a smaller denominator (COGS) produces a larger percentage.',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s5-05-project"
+  title="Mini-Project: Two-Shop Profitability Face-Off"
+  duration="25 mins"
+  scenario="Two rival clothing shops on the same street ask you to benchmark their 2026 results: 'TrendLine Boutique' recorded Net Sales $150,000, Opening Stock $12,000, Net Purchases $92,000, Closing Stock $14,000, and Expenses $36,000. 'ValueWear Outlet' recorded Net Sales $240,000, Opening Stock $18,000, Net Purchases $170,000, Closing Stock $20,000, and Expenses $48,000. Which shop is truly performing better?"
+  steps={[
+    'Compute COGS, Gross Profit, Net Profit, and Average Inventory for BOTH TrendLine Boutique and ValueWear Outlet.',
+    'Calculate all 4 ratios (GP Margin %, Mark-Up %, NP Margin %, and Stock Turnover in times) side by side in a clean Benchmark Table.',
+    'Compare the two business models in 2–3 sentences (notice how one is a higher-margin boutique while the other is a faster-turnover discount outlet!).',
+    'Name 1 specific strength and 1 specific area to improve for EACH shop.',
+  ]}
+  deliverables={[
+    'Side-by-side Profit & Ratios Benchmark Table for both shops',
+    '2–3 sentence Business Model Comparison',
+    '1 Strength + 1 Improvement Point for TrendLine and for ValueWear',
+  ]}
+  rubric={[
+    'TrendLine Boutique exact figures: COGS $90,000; GP $60,000 (40.0% margin, 66.7% mark-up); NP $24,000 (16.0% margin); Avg Stock $13,000 → Turnover 6.9 times.',
+    'ValueWear Outlet exact figures: COGS $168,000; GP $72,000 (30.0% margin, 42.9% mark-up); NP $24,000 (10.0% margin); Avg Stock $19,000 → Turnover 8.8 times.',
+    'Analysis accurately notes that BOTH earned identical $24,000 Net Profit — TrendLine via stronger margins (40% GP / 16% NP), ValueWear via higher sales volume & faster stock turnover (8.8×)!',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **Margin** = `GP ÷ Net Sales × 100` (`%`); **Mark-Up** = `GP ÷ COGS × 100` (`%`).
+- **Net Profit Margin** = `NP ÷ Net Sales × 100` (`%`).
+- **Stock Turnover** = `COGS ÷ Average Inventory` (**`times`** — NEVER `%`!).
+:::

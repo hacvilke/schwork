@@ -1,0 +1,258 @@
+---
+id: sales-and-purchases-books
+title: "3.4 Recording Transactions in Sales and Purchases Books"
+sidebar_label: "3.4 Sales & Purchases Books"
+sidebar_position: 4
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 3"
+  section="Books of Original Entry — Documents & Subsidiary Books"
+  code="POA-S3-04"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="25 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+The **Sales Journal**, **Purchases Journal**, **Returns Inwards Journal**, and **Returns Outwards Journal** are the workhorses of credit trading. Instead of making clunky individual ledger entries for every single invoice, you log each net credit invoice neatly in one line, post daily to each customer or supplier’s personal account, and post **one single monthly total** to the General Ledger!
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | Standard column layout, filtering rules, net trade-discount math, and exact month-end ledger transfers for **Sales, Purchases, and Returns Journals** |
+| **Exam Focus** | Building complete Sales, Purchases, Returns Inwards, and Returns Outwards Journals from a mixed list of transactions (while filtering out cash & asset traps!) |
+| **Learning Outcome** | Record credit trading transactions accurately in all four day books and state the exact double-entry postings to subsidiary and general ledgers |
+
+<ObjectivesBox
+  id="poa-s3-04-obj"
+  objectives={[
+    'Draw up standard columnar formats for the Sales Journal, Purchases Journal, Returns Inwards Journal, and Returns Outwards Journal.',
+    'Filter a mixed transaction list to include ONLY eligible credit trading entries and exclude cash sales, cash purchases, and fixed-asset credit deals.',
+    'Calculate net invoice amounts accurately (including Trade Discounts) before entering them into the Day Books.',
+    'State the exact posting rules from all four journals into the Sales Ledger, Purchases Ledger, and General Ledger.',
+  ]}
+/>
+
+---
+
+## 1. Exact Format & Posting Rules of All Four Day Books
+
+Every credit trading journal shares the exact same clean 5-column layout:
+`Date | Details (Customer or Supplier Name) | Invoice / Credit Note # | Folio | Amount ($)`
+
+*(When an invoice has multiple items or trade discounts, a **Details / Subtotal column** can sit right beside the **Total / Net Amount column** to show your math cleanly.)*
+
+### Master Posting Reference Table
+
+| Day Book | Individual Row Posting (Daily) | Month-End Total Posting (General Ledger) |
+| :--- | :--- | :--- |
+| **Sales Journal** | **DEBIT** each Customer’s A/c in the **Sales Ledger** | **CREDIT** Sales Account *(Transfer to Sales A/c)* |
+| **Purchases Journal** | **CREDIT** each Supplier’s A/c in the **Purchases Ledger** | **DEBIT** Purchases Account *(Transfer to Purchases A/c)* |
+| **Returns Inwards Journal** | **CREDIT** each Customer’s A/c in the **Sales Ledger** | **DEBIT** Returns Inwards Account |
+| **Returns Outwards Journal** | **DEBIT** each Supplier’s A/c in the **Purchases Ledger** | **CREDIT** Returns Outwards Account |
+
+:::warning The Three Things You MUST Filter OUT of Sales & Purchases Journals
+Before writing a single line, cross out these three common exam decoys:
+1. **Cash Sales & Cash Purchases** → belong in the **Cash Book**, NEVER in the Sales or Purchases Journals.
+2. **Credit Purchases/Sales of Non-Current Assets** (e.g. buying a van or selling old office shelving on credit) → belong in the **General Journal**.
+3. **Trade Discounts** → subtract them FIRST so only the **Net Amount** enters the Total column!
+:::
+
+---
+
+## 2. Diagram 1: Day Books to Subsidiary & General Ledgers Flow
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-3/04-day-books-to-ledger-flow.svg"
+  alt="Diagram showing a Sales Journal totaling $2,500 posting daily Debits to individual Sales Ledger customers and one monthly Credit to Sales Account, beside a Purchases Journal totaling $2,000 posting daily Credits to Purchases Ledger suppliers and one monthly Debit to Purchases Account."
+  caption="Diagram 1 (Static Reference): Notice how double-entry stays 100% balanced — the sum of all individual Debits in the Sales Ledger ($800 + $1,200 + $500 = $2,500) equals the single Credit ($2,500) posted to the Sales Account!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive Sales vs. Purchases Journal Comparator
+
+<InteractiveDiagram
+  title="Interactive Comparator: Side-by-Side Rules for Sales vs. Purchases Books"
+  layout="compare"
+  instruction="Select any feature below to compare the Sales & Returns Inwards side directly against the Purchases & Returns Outwards side."
+  nodes={[
+    {
+      label: 'Primary Day Books',
+      tag: 'Core Trade',
+      detail: 'Both books track ONLY credit movement of trading goods (inventory bought for resale), entered strictly at net invoice value.',
+      sideALabel: 'Sales Journal',
+      sideAText: 'Lists credit customers (Trade Receivables) from Sales Invoices issued by us. Month-end line reads: "Transfer to Sales Account (Cr)".',
+      sideBLabel: 'Purchases Journal',
+      sideBText: 'Lists credit suppliers (Trade Payables) from Purchase Invoices received by us. Month-end line reads: "Transfer to Purchases Account (Dr)".',
+      examTip: 'Never forget the closing total line ("May 31 · Transfer to Sales A/c" or "Transfer to Purchases A/c") — it earns a dedicated mark!',
+    },
+    {
+      label: 'Returns Day Books',
+      tag: 'Reversals',
+      detail: 'Returns reverse part of an earlier credit invoice when goods arrive damaged, faulty, or wrong-spec.',
+      sideALabel: 'Returns Inwards Journal',
+      sideAText: 'Goods coming BACK IN from credit customers (from Credit Notes we issued). Credits each customer (reducing what they owe us) and Debits Returns Inwards A/c.',
+      sideBLabel: 'Returns Outwards Journal',
+      sideBText: 'Goods going BACK OUT to credit suppliers (from Credit Notes suppliers sent us). Debits each supplier (reducing what we owe them) and Credits Returns Outwards A/c.',
+      examTip: 'Memory hook: Inwards = customers send back IN (reduces Sales); Outwards = we send back OUT (reduces Purchases).',
+    },
+    {
+      label: 'Folio Column Codes',
+      tag: 'Cross-Reference',
+      detail: 'The Folio column links each row in the Day Book to the exact ledger page where it was posted — creating an instant audit trail.',
+      sideALabel: 'Sales & Returns Inwards Folios',
+      sideAText: 'Individual rows use "SL" (Sales Ledger, e.g. SL1, SL2); the monthly total line uses "GL" (General Ledger — Sales A/c or Returns Inwards A/c).',
+      sideBLabel: 'Purchases & Returns Outwards Folios',
+      sideBText: 'Individual rows use "PL" (Purchases Ledger, e.g. PL1, PL2); the monthly total line uses "GL" (General Ledger — Purchases A/c or Returns Outwards A/c).',
+      examTip: 'Even when page numbers aren’t given in an exam question, writing "SL", "PL", and "GL" in the Folio column shows mastery!',
+    },
+    {
+      label: 'What Stays OUT',
+      tag: 'Filter Rules',
+      detail: 'Examiners deliberately mix 1 or 2 ineligible transactions into Day Book questions to test your discipline.',
+      sideALabel: 'Excluded from Sales Journal',
+      sideAText: 'Cash sales (Cash Book), selling an old delivery van on credit (General Journal), and customer payments settling past debts (Cash Book).',
+      sideBLabel: 'Excluded from Purchases Journal',
+      sideBText: 'Cash purchases (Cash Book), buying store shelving or computers on credit (General Journal), and paying rent or wages (Cash Book).',
+      examTip: 'Always read EVERY transaction twice and cross out cash items and fixed assets before drawing your journals!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Preparing Sales, Purchases & Returns Journals from a Mixed Transaction List"
+  marks={12}
+  problem={
+    <>
+      <p>
+        <strong>Question:</strong> Enter the eligible transactions of <strong>Coral Fashion
+        Store</strong> for <strong>June 2026</strong> into the <strong>Sales Journal</strong>,
+        <strong> Purchases Journal</strong>, <strong>Returns Inwards Journal</strong>, and
+        <strong> Returns Outwards Journal</strong>. Ignore any transactions that do not belong
+        in these four books:
+      </p>
+      <ul>
+        <li><strong>June 2:</strong> Bought goods on credit from Vogue Wholesale, list price $2,000 less 10% trade discount (Inv #401).</li>
+        <li><strong>June 5:</strong> Sold goods on credit to D. Clarke for $900 (Inv #210).</li>
+        <li><strong>June 8:</strong> Sold goods for cash to walk-in customers, $650.</li>
+        <li><strong>June 11:</strong> Bought a new store display counter on credit from ShopFitters Ltd., $1,500.</li>
+        <li><strong>June 14:</strong> Returned damaged dresses to Vogue Wholesale, list price $300 less 10% trade discount (CN #12).</li>
+        <li><strong>June 18:</strong> Bought goods on credit from Metro Apparel for $1,100 (Inv #519).</li>
+        <li><strong>June 22:</strong> Sold goods on credit to L. Reid, list price $1,200 less 15% trade discount (Inv #211).</li>
+        <li><strong>June 26:</strong> D. Clarke returned faulty shirts worth $120 (CN #08).</li>
+      </ul>
+    </>
+  }
+>
+
+*(First filter out the two decoys: **June 8 Cash Sales ($650)** → Cash Book; **June 11 Display Counter on credit ($1,500)** → General Journal!)*
+
+**1. Sales Journal** *(3 marks)*
+
+| Date | Details | Inv # | Folio | Amount ($) |
+| :--- | :--- | :---: | :---: | ---: |
+| June 5 | D. Clarke | 210 | SL | 900 |
+| June 22 | L. Reid *($1,200 − 15% of $1,200 = $1,200 − $180)* | 211 | SL | 1,020 |
+| **June 30** | **Transfer to Sales Account (Cr)** | | **GL** | **1,920** |
+
+**2. Purchases Journal** *(3 marks)*
+
+| Date | Details | Inv # | Folio | Amount ($) |
+| :--- | :--- | :---: | :---: | ---: |
+| June 2 | Vogue Wholesale *($2,000 − 10% of $2,000 = $2,000 − $200)* | 401 | PL | 1,800 |
+| June 18 | Metro Apparel | 519 | PL | 1,100 |
+| **June 30** | **Transfer to Purchases Account (Dr)** | | **GL** | **2,900** |
+
+**3. Returns Inwards Journal** *(3 marks)*
+
+| Date | Details | CN # | Folio | Amount ($) |
+| :--- | :--- | :---: | :---: | ---: |
+| June 26 | D. Clarke | 08 | SL | 120 |
+| **June 30** | **Transfer to Returns Inwards Account (Dr)** | | **GL** | **120** |
+
+**4. Returns Outwards Journal** *(3 marks)*
+
+| Date | Details | CN # | Folio | Amount ($) |
+| :--- | :--- | :---: | :---: | ---: |
+| June 14 | Vogue Wholesale *($300 − 10% of $300 = $300 − $30)* | 12 | PL | 270 |
+| **June 30** | **Transfer to Returns Outwards Account (Cr)** | | **GL** | **270** |
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Sales and Purchases Books"
+  items={[
+    {
+      statement: 'The monthly total of the Sales Journal is posted to the CREDIT side of the Sales Account in the General Ledger.',
+      answer: true,
+      explanation: 'Individual credit customers are DEBITED daily in the Sales Ledger, and the monthly total is CREDITED to the Sales Account in the General Ledger.',
+    },
+    {
+      statement: 'A business’s credit purchase of a new delivery truck is recorded in the Purchases Journal.',
+      answer: false,
+      explanation: 'Non-Current Assets bought on credit go into the General Journal — NEVER the Purchases Journal (which is strictly for resale inventory).',
+    },
+    {
+      statement: 'The monthly total of the Returns Outwards Journal is CREDITED to the Returns Outwards Account.',
+      answer: true,
+      explanation: 'Individual suppliers are DEBITED (reducing what we owe them) and the monthly total is CREDITED to Returns Outwards Account.',
+    },
+    {
+      statement: 'When recording a credit sale that includes a 10% Trade Discount, the full list price before discount is entered into the Sales Journal.',
+      answer: false,
+      explanation: 'Trade Discount is always deducted first — only the NET invoice amount enters the Sales Journal.',
+    },
+    {
+      statement: 'Each individual customer listed in the Sales Journal is DEBITED in the Sales Ledger.',
+      answer: true,
+      explanation: 'Debiting each customer’s personal account increases their Trade Receivable balance (showing how much they owe the business).',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s3-04-project"
+  title="Mini-Project: Monthly Day-Books Packet for a Sporting Goods Wholesaler"
+  duration="30 mins"
+  scenario="You are managing the July 2026 credit trading books for 'Summit Athletics Supply'. Prepare all four credit trading journals (Sales, Purchases, Returns Inwards, Returns Outwards) and a 1-box Posting Summary from these 8 July events: Jul 3 Bought 40 gym mats on credit from FitPro @ $25 less 20% trade discount; Jul 6 Sold 15 mats on credit to Star Gym @ $40; Jul 9 Sold 10 mats for $400 cash; Jul 12 Returned 5 damaged mats to FitPro (remember the 20% trade discount!); Jul 16 Bought a $950 office computer on credit from TechHub; Jul 20 Bought 20 kettlebells on credit from IronWorks @ $30 net; Jul 24 Sold 10 kettlebells on credit to Coast Fitness @ $50 less 10% trade discount; Jul 28 Star Gym returned 2 mats."
+  steps={[
+    'Scan all 8 events and circle the 2 decoy transactions that do NOT belong in these four journals (label which book each decoy belongs in instead!).',
+    'Compute the exact Net Amount for every eligible invoice and credit note (showing your Trade Discount subtraction clearly).',
+    'Rule up and complete all four journals cleanly with Date, Details, Folio, Amount ($), and the July 31 "Transfer to ... Account" closing total line.',
+    'Write a 4-line "General Ledger Posting Summary" stating the exact Debit or Credit posted on July 31 for Sales, Purchases, Returns Inwards, and Returns Outwards.',
+  ]}
+  deliverables={[
+    'Identification of the 2 excluded decoys (Jul 9 Cash Sale → Cash Book; Jul 16 Computer → General Journal)',
+    'All four ruled & totaled Day Books for July 2026',
+    '4-line Month-End General Ledger Posting Summary',
+  ]}
+  rubric={[
+    'Decoys are excluded cleanly without contaminating the Sales or Purchases totals.',
+    'Totals match accurately: Sales Journal = $1,050 ($600 + $450); Purchases Journal = $1,400 ($800 + $600); Returns Inwards = $80; Returns Outwards = $100 ($125 − 20%).',
+    'Debit/Credit transfer directions in the General Ledger Posting Summary are 100% accurate.',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **Sales Journal** → Dr Customers (SL) / **Cr Sales A/c (GL)**.
+- **Purchases Journal** → Cr Suppliers (PL) / **Dr Purchases A/c (GL)**.
+- **Returns Inwards** → Cr Customers (SL) / **Dr Returns Inwards A/c (GL)**.
+- **Returns Outwards** → Dr Suppliers (PL) / **Cr Returns Outwards A/c (GL)**.
+- **Always filter out Cash Sales, Cash Purchases, and Credit Fixed Assets!**
+:::

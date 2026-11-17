@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" role="img" aria-label="Bridge explaining why the Cash Book bank balance differs from the Bank Statement balance: Cash Book omissions vs Timing Differences">
+  <defs>
+    <style>
+      .title { font: 700 20px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .sub { font: 500 13px system-ui, -apple-system, sans-serif; fill: #4A5560; }
+      .hdr { font: 700 14px system-ui, -apple-system, sans-serif; fill: #FCFBF8; }
+      .h3 { font: 700 13px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .body { font: 500 12px system-ui, -apple-system, sans-serif; fill: #222222; }
+      .sage { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #2E6359; }
+      .coral { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #C84E24; }
+    </style>
+  </defs>
+
+  <rect width="920" height="460" rx="14" fill="#F8F6F1" stroke="#CEDCD6" stroke-width="1.5"/>
+  <text x="32" y="38" class="title">Why Cash Book Balance ≠ Bank Statement Balance (The Two Causes)</text>
+  <text x="32" y="58" class="sub">Remember the Mirror Rule: A DEPOSIT is a DEBIT in your Cash Book, but a CREDIT on the Bank Statement!</text>
+
+  <!-- Left Card: Bank Knows, We Didn't (Update Cash Book!) -->
+  <rect x="32" y="80" width="418" height="292" rx="11" fill="#FCFBF8" stroke="#1B365D" stroke-width="1.8"/>
+  <rect x="32" y="80" width="418" height="38" rx="10" fill="#1B365D"/>
+  <text x="241" y="104" text-anchor="middle" class="hdr">Cause 1: Items on Bank Stmt NOT Yet in Cash Book</text>
+  <text x="50" y="138" class="sage">FIX: Update the ADJUSTED CASH BOOK!</text>
+
+  <rect x="48" y="150" width="386" height="90" rx="7" fill="#EBF2EF"/>
+  <text x="60" y="170" class="sage">Put on DEBIT side of Adjusted Cash Book (+ Cash):</text>
+  <text x="60" y="190" class="body">• Credit Transfers / Direct Deposits from customers</text>
+  <text x="60" y="208" class="body">• Dividends &amp; Bank Interest Received directly</text>
+  <text x="60" y="226" class="body">• Cash Book error where a receipt was understated</text>
+
+  <rect x="48" y="250" width="386" height="106" rx="7" fill="#FFF3EE"/>
+  <text x="60" y="270" class="coral">Put on CREDIT side of Adjusted Cash Book (− Cash):</text>
+  <text x="60" y="290" class="body">• Bank Charges &amp; Overdraft Interest</text>
+  <text x="60" y="308" class="body">• Standing Orders (fixed auto-pay e.g. rent/loan)</text>
+  <text x="60" y="326" class="body">• Direct Debits (variable auto-pay e.g. electricity)</text>
+  <text x="60" y="344" class="body">• Dishonored (NSF / Bounced) Customer Cheques</text>
+
+  <!-- Right Card: We Know, Bank Doesn't Yet (Reconciliation Statement!) -->
+  <rect x="470" y="80" width="418" height="292" rx="11" fill="#FCFBF8" stroke="#2E6359" stroke-width="1.8"/>
+  <rect x="470" y="80" width="418" height="38" rx="10" fill="#2E6359"/>
+  <text x="679" y="104" text-anchor="middle" class="hdr">Cause 2: Timing Differences (In Cash Book, Not Bank)</text>
+  <text x="488" y="138" class="h3">FIX: Put ONLY on the BANK RECONCILIATION STMT!</text>
+
+  <rect x="486" y="150" width="386" height="96" rx="7" fill="#EBF2EF" stroke="#4E8577"/>
+  <text x="498" y="172" class="sage">1. Unpresented Cheques (Outstanding Cheques)</text>
+  <text x="498" y="192" class="body">Cheques WE wrote &amp; credited in Cash Book, but the</text>
+  <text x="498" y="209" class="body">supplier has NOT cashed them at the bank yet.</text>
+  <text x="498" y="232" class="h3">→ ADD to Adjusted Cash Book Balance!</text>
+
+  <rect x="486" y="256" width="386" height="100" rx="7" fill="#FFF3EE" stroke="#C84E24"/>
+  <text x="498" y="278" class="coral">2. Late Lodgements (Deposits in Transit)</text>
+  <text x="498" y="298" class="body">Cash/cheques WE deposited &amp; debited in Cash Book,</text>
+  <text x="498" y="315" class="body">still clearing — NOT yet credited by the bank!</text>
+  <text x="498" y="338" class="h3">→ SUBTRACT from Adjusted Cash Book Balance!</text>
+
+  <!-- Bottom Mirror Perspective Strip -->
+  <rect x="32" y="390" width="856" height="52" rx="9" fill="#1B365D"/>
+  <text x="460" y="412" text-anchor="middle" class="hdr">The Bank Statement Mirror Rule (Never Get Confused by Dr/Cr on a Bank Statement!)</text>
+  <text x="460" y="432" text-anchor="middle" style="font: 500 12.2px system-ui; fill: #EBF2EF;">Positive Bank Balance:  Cash Book = DEBIT  |  Bank Statement = CREDIT     ·     Bank Overdraft:  Cash Book = CREDIT  |  Bank Statement = DEBIT!</text>
+</svg>

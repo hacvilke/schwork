@@ -16,3 +16,5 @@ export {default as ExplainActivity} from './ExplainActivity';
 export {default as ExtraPractice} from './ExtraPractice';
 export {default as InteractiveGraph} from './InteractiveGraph';
 export {default as DiagramFigure} from './DiagramFigure';
+export {default as InteractiveDiagram} from './InteractiveDiagram';
+export {default as StudentProject} from './StudentProject';

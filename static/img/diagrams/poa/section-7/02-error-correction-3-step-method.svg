@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 450" role="img" aria-label="Three-step method for writing error correction journal entries: Wrong Entry Done, Right Entry Needed, Correcting Journal Entry">
+  <defs>
+    <style>
+      .title { font: 700 20px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .sub { font: 500 13px system-ui, -apple-system, sans-serif; fill: #4A5560; }
+      .hdr { font: 700 14px system-ui, -apple-system, sans-serif; fill: #FCFBF8; }
+      .h3 { font: 700 13px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .mono { font: 700 12px ui-monospace, SFMono-Regular, monospace; fill: #122440; }
+      .body { font: 500 12px system-ui, -apple-system, sans-serif; fill: #222222; }
+      .sage { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #2E6359; }
+      .coral { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #C84E24; }
+    </style>
+  </defs>
+
+  <rect width="920" height="450" rx="14" fill="#F8F6F1" stroke="#CEDCD6" stroke-width="1.5"/>
+  <text x="32" y="38" class="title">The Foolproof 3-Step Method for Error-Correction Journal Entries</text>
+  <text x="32" y="58" class="sub">Never guess correcting entries in your head — run these 3 quick steps and get 100% accuracy every single time!</text>
+
+  <!-- Step 1 -->
+  <rect x="32" y="82" width="268" height="254" rx="11" fill="#FCFBF8" stroke="#C84E24" stroke-width="1.6"/>
+  <rect x="32" y="82" width="268" height="36" rx="10" fill="#C84E24"/>
+  <text x="166" y="105" text-anchor="middle" class="hdr">STEP 1: What Was DONE? (Wrong)</text>
+  <text x="48" y="138" class="h3">Example A (Error of Principle):</text>
+  <text x="48" y="156" class="body">Bought Machine $4,000 by cheque,</text>
+  <text x="48" y="172" class="body">wrongly debited to Repairs.</text>
+  <rect x="46" y="186" width="240" height="52" rx="7" fill="#FFF3EE" stroke="#C84E24"/>
+  <text x="58" y="206" class="mono">Dr Repairs ........... $4,000</text>
+  <text x="58" y="226" class="mono">   Cr Bank ........... $4,000 ✓</text>
+
+  <text x="48" y="262" class="h3">Example B (Reversal of Entries):</text>
+  <text x="48" y="280" class="body">Paid $500 cash to creditor K. Ali,</text>
+  <text x="48" y="296" class="body">posted upside down:</text>
+  <text x="48" y="318" class="coral">Dr Cash $500 / Cr K. Ali $500</text>
+
+  <!-- Arrow -->
+  <line x1="300" y1="208" x2="320" y2="208" stroke="#1B365D" stroke-width="2.5"/>
+  <polygon points="316,201 328,208 316,215" fill="#1B365D"/>
+
+  <!-- Step 2 -->
+  <rect x="326" y="82" width="268" height="254" rx="11" fill="#FCFBF8" stroke="#1B365D" stroke-width="1.6"/>
+  <rect x="326" y="82" width="268" height="36" rx="10" fill="#1B365D"/>
+  <text x="460" y="105" text-anchor="middle" class="hdr">STEP 2: What SHOULD Be Done?</text>
+  <text x="342" y="138" class="h3">Example A (Correct Double Entry):</text>
+  <text x="342" y="156" class="body">Bank Cr $4,000 is ALREADY right!</text>
+  <text x="342" y="172" class="body">Machinery needed the Debit:</text>
+  <rect x="340" y="186" width="240" height="52" rx="7" fill="#EBF2EF" stroke="#1B365D"/>
+  <text x="352" y="206" class="mono">Dr Machinery ......... $4,000</text>
+  <text x="352" y="226" class="mono">   Cr Bank ........... $4,000 ✓</text>
+
+  <text x="342" y="262" class="h3">Example B (Correct Double Entry):</text>
+  <text x="342" y="280" class="body">We should have debited K. Ali</text>
+  <text x="342" y="296" class="body">and credited Cash $500:</text>
+  <text x="342" y="318" class="sage">Dr K. Ali $500 / Cr Cash $500</text>
+
+  <!-- Arrow -->
+  <line x1="594" y1="208" x2="614" y2="208" stroke="#1B365D" stroke-width="2.5"/>
+  <polygon points="610,201 622,208 610,215" fill="#1B365D"/>
+
+  <!-- Step 3 -->
+  <rect x="620" y="82" width="268" height="254" rx="11" fill="#FCFBF8" stroke="#2E6359" stroke-width="1.8"/>
+  <rect x="620" y="82" width="268" height="36" rx="10" fill="#2E6359"/>
+  <text x="754" y="105" text-anchor="middle" class="hdr">STEP 3: Correcting Journal Entry</text>
+  <text x="636" y="138" class="sage">Cancel WRONG + Record RIGHT!</text>
+  <text x="636" y="156" class="body">Example A: Leave Bank alone; cancel</text>
+  <text x="636" y="172" class="body">Repairs (Cr) &amp; add Machinery (Dr):</text>
+  <rect x="634" y="186" width="240" height="52" rx="7" fill="#EBF2EF" stroke="#2E6359" stroke-width="1.3"/>
+  <text x="646" y="206" class="mono">Dr Machinery ......... $4,000</text>
+  <text x="646" y="226" class="mono">   Cr Repairs ........ $4,000</text>
+
+  <text x="636" y="262" class="sage">Example B (2× Amount Rule!):</text>
+  <text x="636" y="280" class="body">$500 cancels wrong + $500 records</text>
+  <text x="636" y="296" class="body">right = $1,000 total!</text>
+  <text x="636" y="318" class="mono">Dr K. Ali $1,000 / Cr Cash $1,000</text>
+
+  <!-- Bottom Rule -->
+  <rect x="32" y="356" width="856" height="74" rx="10" fill="#1B365D"/>
+  <text x="54" y="382" class="hdr">Single-Sided Error Shortcut (When Only ONE Account Is Wrong):</text>
+  <text x="54" y="405" style="font: 600 12.5px ui-monospace, monospace; fill: #F5A352;">Fix the ONE broken account on its needed side  →  Put "Suspense Account" on the OPPOSITE side!</text>
+  <text x="54" y="423" style="font: 500 12px system-ui; fill: #EBF2EF;">Example: Sales Book undercast by $250 → Dr Suspense $250  /  Cr Sales $250 (Always write a clear narration!)</text>
+</svg>

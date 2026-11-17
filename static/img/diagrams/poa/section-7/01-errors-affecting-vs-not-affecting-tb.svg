@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 480" role="img" aria-label="Classification of accounting errors into those NOT affecting Trial Balance agreement vs those AFFECTING Trial Balance agreement">
+  <defs>
+    <style>
+      .title { font: 700 20px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .sub { font: 500 13px system-ui, -apple-system, sans-serif; fill: #4A5560; }
+      .hdr { font: 700 14.5px system-ui, -apple-system, sans-serif; fill: #FCFBF8; }
+      .h3 { font: 700 13px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .body { font: 500 12px system-ui, -apple-system, sans-serif; fill: #222222; }
+      .sage { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #2E6359; }
+      .coral { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #C84E24; }
+    </style>
+  </defs>
+
+  <rect width="920" height="480" rx="14" fill="#F8F6F1" stroke="#CEDCD6" stroke-width="1.5"/>
+  <text x="32" y="38" class="title">The Two Families of Accounting Errors</text>
+  <text x="32" y="58" class="sub">Remember: A balanced Trial Balance proves Debit = Credit — it does NOT prove the books are error-free!</text>
+
+  <!-- Left Panel: NOT Affecting TB (6 Classic Errors - COPCOR) -->
+  <rect x="32" y="78" width="418" height="328" rx="11" fill="#FCFBF8" stroke="#1B365D" stroke-width="1.8"/>
+  <rect x="32" y="78" width="418" height="38" rx="10" fill="#1B365D"/>
+  <text x="241" y="102" text-anchor="middle" class="hdr">Group A: Do NOT Affect Trial Balance (NO Suspense!)</text>
+  <text x="50" y="135" class="sage">Dr STILL equals Cr — Memorize "COPCOR" (6 Types):</text>
+
+  <rect x="48" y="146" width="386" height="36" rx="6" fill="#EBF2EF"/>
+  <text x="60" y="162" class="h3">1. Commission</text>
+  <text x="166" y="162" class="body">Wrong personal A/c (same class): A. Brown vs B. Brown</text>
+  <text x="60" y="176" class="body">Same Debit/Credit side &amp; same class (both Debtors)</text>
+
+  <rect x="48" y="188" width="386" height="34" rx="6" fill="#F8F6F1" stroke="#CEDCD6"/>
+  <text x="60" y="209" class="h3">2. Omission</text>
+  <text x="166" y="209" class="body">Transaction COMPLETELY left out of BOTH sides</text>
+
+  <rect x="48" y="228" width="386" height="36" rx="6" fill="#EBF2EF"/>
+  <text x="60" y="244" class="h3">3. Principle</text>
+  <text x="166" y="244" class="body">Wrong CLASS of A/c: Motor Van (Asset) put in Repairs (Exp)</text>
+  <text x="60" y="258" class="body">Violates accounting rules (Capital vs Revenue!)</text>
+
+  <rect x="48" y="270" width="386" height="34" rx="6" fill="#F8F6F1" stroke="#CEDCD6"/>
+  <text x="60" y="291" class="h3">4. Compensating</text>
+  <text x="166" y="291" class="body">Two unrelated errors accidentally cancel out ($100 Dr &amp; Cr)</text>
+
+  <rect x="48" y="310" width="386" height="34" rx="6" fill="#EBF2EF"/>
+  <text x="60" y="331" class="h3">5. Original Entry</text>
+  <text x="166" y="331" class="body">Wrong amount on BOTH sides ($450 written as $540 Dr &amp; Cr)</text>
+
+  <rect x="48" y="350" width="386" height="36" rx="6" fill="#F8F6F1" stroke="#CEDCD6"/>
+  <text x="60" y="366" class="h3">6. Reversal of Entries</text>
+  <text x="195" y="366" class="body">Correct accounts &amp; amount, FLIPPED sides!</text>
+  <text x="60" y="380" class="coral">Fix requires DOUBLE the amount (2 × $X)!</text>
+
+  <!-- Right Panel: AFFECTING TB (Suspense Needed!) -->
+  <rect x="470" y="78" width="418" height="328" rx="11" fill="#FCFBF8" stroke="#C84E24" stroke-width="1.8"/>
+  <rect x="470" y="78" width="418" height="38" rx="10" fill="#C84E24"/>
+  <text x="679" y="102" text-anchor="middle" class="hdr">Group B: DO Affect Trial Balance (USE Suspense!)</text>
+  <text x="488" y="135" class="coral">Dr ≠ Cr — Trial Balance FAILS to Agree:</text>
+
+  <rect x="486" y="146" width="386" height="44" rx="6" fill="#FFF3EE"/>
+  <text x="498" y="165" class="h3">1. Single-Sided Entry (Partial Omission)</text>
+  <text x="498" y="182" class="body">Posted Debit only — forgot the matching Credit (or vice versa)</text>
+
+  <rect x="486" y="198" width="386" height="44" rx="6" fill="#F8F6F1" stroke="#CEDCD6"/>
+  <text x="498" y="217" class="h3">2. Casting (Addition) Error</text>
+  <text x="498" y="234" class="body">Sales Book or Purchases Book undercast / overcast by $100</text>
+
+  <rect x="486" y="250" width="386" height="44" rx="6" fill="#FFF3EE"/>
+  <text x="498" y="269" class="h3">3. Transposition on ONE Side Only</text>
+  <text x="498" y="286" class="body">Debited $720 to Cash, but Credited $270 to Debtor ($450 gap!)</text>
+
+  <rect x="486" y="302" width="386" height="44" rx="6" fill="#F8F6F1" stroke="#CEDCD6"/>
+  <text x="498" y="321" class="h3">4. Posting BOTH Sides as Debit (or Both Credit)</text>
+  <text x="498" y="338" class="body">Debited Bank $300 AND Debited Debtor $300 → Cr short $600!</text>
+
+  <rect x="486" y="354" width="386" height="36" rx="6" fill="#FFF3EE"/>
+  <text x="498" y="376" class="h3">5. Omitting an Account Balance from the Trial Balance</text>
+
+  <!-- Bottom Banner -->
+  <rect x="32" y="420" width="856" height="44" rx="9" fill="#2E6359"/>
+  <text x="460" y="447" text-anchor="middle" style="font: 700 13px system-ui; fill: #FCFBF8;">Exam Golden Rule: Group A errors NEVER use the Suspense Account  |  Group B errors ALWAYS use the Suspense Account!</text>
+</svg>

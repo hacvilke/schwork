@@ -1,0 +1,246 @@
+---
+id: methods-of-sharing-profit-or-loss
+title: "8.5 Methods of Sharing Profit/Loss (Capital Ratio, Fixed Ratio, Equal)"
+sidebar_label: "8.5 Profit & Loss Sharing Methods"
+sidebar_position: 5
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 8"
+  section="Accounting for Partnerships — Capital & Appropriation"
+  code="POA-S8-05"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="20 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+Once a partnership calculates its **Residual Profit** *(after deducting Interest on Capital and Partner Salaries, and adding Interest on Drawings)*, how do the partners divide what’s left? Three core methods dominate accounting exams: **Equal Sharing**, **Fixed Agreed Ratio (or Percentages)**, and **Capital Ratio**. And watch out for the favorite Paper 2 twist — **what happens when Salaries + Interest on Capital EXCEED Net Profit, creating a Residual LOSS?!**
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | Splitting Residual Profit (or Residual Loss!) via **Equal Split**, **Fixed Agreed Ratio / Percentages**, or **Capital Ratio** |
+| **Exam Focus** | Simplifying Capital Ratios cleanly (e.g. `$60k : $40k : $20k` → `3 : 2 : 1`), verifying partner shares sum to `100%` of the pool, and handling a **Residual Loss** accurately! |
+| **Learning Outcome** | Calculate each partner’s exact share of Residual Profit or Residual Loss under every syllabus profit-sharing method |
+
+<ObjectivesBox
+  id="poa-s8-05-obj"
+  objectives={[
+    'Calculate partner shares of Residual Profit using Equal Sharing, Fixed Ratios/Percentages, and Capital Ratios.',
+    'Simplify raw partner Capital balances cleanly into lowest-terms fractions before multiplying.',
+    'Handle a Residual Loss (when Net Profit is smaller than Interest on Capital plus Partner Salaries) accurately.',
+    'Evaluate which profit-sharing method is fairest given partners’ relative capital investments and working hours.',
+  ]}
+/>
+
+---
+
+## 1. The Three Syllabus Profit-Sharing Methods
+
+<FormulaCard
+  title="Universal Partner Share Formula"
+  onFormulaSheet={false}
+  summary="Always sum the ratio parts first — then check that all partners' dollar shares add up to the exact Residual Profit or Loss!"
+>
+
+$$
+\text{Partner’s Share} = \frac{\text{Partner’s Ratio Parts}}{\text{Total Ratio Parts}} \times \text{Residual Profit (or Residual Loss)}
+$$
+
+</FormulaCard>
+
+| Method | How It Works | Best Used When… | Quick Example (`$36,000` Pool) |
+| :--- | :--- | :--- | :--- |
+| **1. Equal Sharing** | Divide evenly by number of partners (`÷ 2`, `÷ 3`, etc.) | **Default under Partnership Act** when no deed exists, OR when partners contribute equal effort &amp; capital | 3 partners: `$36,000 ÷ 3` = **`$12,000` each** |
+| **2. Fixed Agreed Ratio / %** | Split by custom ratio *(e.g. `5 : 3 : 1` or `50% : 35% : 15%`)* stated in the Partnership Deed | One partner brings senior expertise, key clients, or longer working hours | `5 : 3 : 1` (9 parts): `$20,000` / `$12,000` / `$4,000` |
+| **3. Capital Ratio** | Split strictly in proportion to each partner’s **Fixed Capital Account balance** | Capital investment is the main driver of business earnings *(e.g. property/equipment firms)* | `$60k : $40k : $20k` = `3 : 2 : 1` (6 parts): `$18,000` / `$12,000` / `$6,000` |
+
+### The "Residual Loss" Rule (Top-Band Paper 2 Skill!)
+Suppose a partnership earns **`$15,000` Net Profit**, yet the Partnership Agreement awards **`$12,000` Interest on Capital** plus **`$9,000` Partner Salary** = **`$21,000` total appropriations**:
+- **Do you cancel the Salary or Interest on Capital?** **NO!** *(Unless the deed explicitly says otherwise!)*
+- You STILL credit the full `$12,000` Interest on Capital and `$9,000` Salary, leaving a **Residual LOSS of `($6,000)`** (`$15,000 − $21,000`).
+- That **`($6,000)` Residual Loss** is then **split in the EXACT SAME profit-sharing ratio** and **DEBITED** to each partner’s Current Account!
+
+---
+
+## 2. Diagram 1: Comparing All Three Profit-Sharing Methods
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-8/05-profit-sharing-ratios-visual.svg"
+  alt="Visual stacked-bar comparison of Equal Split (1:1:1), Fixed Ratio (5:3:1), and Capital Ratio ($60k:$40k:$20k = 3:2:1) dividing a $36,000 Residual Profit pool among three partners."
+  caption="Diagram 1 (Static Reference): Always run the 3-second Total Check at the end — the individual shares MUST add back to $36,000 exact!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive Ratio & Residual-Loss Explorer
+
+<InteractiveDiagram
+  title="Interactive Hub: Tap Each Profit-Splitting Scenario to Master Exam Calculations"
+  layout="hub"
+  centerLabel="Profit Splits"
+  centerSublabel="Ratio Mastery"
+  instruction="Select any scenario around the hub to test your fraction math and avoid classic ratio traps."
+  nodes={[
+    {
+      label: 'Simplifying Capital Ratios',
+      tag: 'Cancel Zeros!',
+      tone: 'neutral',
+      detail: 'Given Capitals $60,000 : $40,000 : $20,000, strip trailing zeros first (60 : 40 : 20), then divide by the greatest common factor (20) → 3 : 2 : 1 (Total = 6 parts)!',
+      example: 'Capitals $75,000 and $25,000 → 75 : 25 → divide by 25 → 3 : 1 (Total = 4 parts: 75% and 25%)!',
+      examTip: 'Always use FIXED Opening Capital (NOT Current Accounts!) when a question says "in the ratio of their Capital Accounts"!',
+    },
+    {
+      label: 'Converting Fractions to Ratios',
+      tag: 'Common Denominator',
+      detail: 'Sometimes a deed states fractions like "Maya 1/2, Devon 1/3, Priya 1/6". Convert to a common denominator (6) → 3/6 : 2/6 : 1/6 = 3 : 2 : 1!',
+      tone: 'neutral',
+      example: 'Check that the fractions add up to exactly 1 whole: 1/2 + 1/3 + 1/6 = 3/6 + 2/6 + 1/6 = 6/6 = 1 ✓!',
+      examTip: 'Never multiply by decimals like 0.33 (which causes rounding errors!) — ALWAYS multiply by the exact fraction (1/3)!',
+    },
+    {
+      label: 'Mid-Year Ratio Change',
+      tag: 'Split Time First!',
+      tone: 'warning',
+      detail: 'If partners change their ratio on 1 July from 1:1 to 3:2, split the year’s profit into 6 months (Jan–Jun) at 1:1 and 6 months (Jul–Dec) at 3:2!',
+      example: 'Profit $20,000 earned evenly: First 6 mos ($10k) → $5k / $5k; Second 6 mos ($10k) → $6k / $4k; Year totals = $11k / $9k!',
+      examTip: 'Check dates carefully whenever a new partner joins or a deed changes mid-year!',
+    },
+    {
+      label: 'Residual Loss (Profit < Approp.)',
+      tag: 'Debit Current A/c!',
+      tone: 'warning',
+      detail: 'When Net Profit ($15k) is smaller than Interest on Capital + Salaries ($21k), Residual Balance is NEGATIVE ($6,000 Loss) — split in the exact same ratio!',
+      example: 'Total net awards STILL equal exact Net Profit: Maya (+$6k − $3k = +$3k) + Devon (+$4k − $2k = +$2k) + Priya (+$11k − $1k = +$10k) = $15,000 ✓!',
+      examTip: 'Remember: Share of Residual PROFIT goes on CREDIT of Current A/c; Share of Residual LOSS goes on DEBIT of Current A/c!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Comparing 4 Profit-Sharing Methods + Handling a Residual Loss Year"
+  marks={12}
+  problem={
+    <>
+      <p>
+        <strong>Scenario:</strong> Three partners — <strong>Maya</strong> (Capital $60,000),
+        <strong> Devon</strong> (Capital $40,000), and <strong>Priya</strong> (Capital $20,000) —
+        operate a retail design partnership.
+      </p>
+      <p>
+        <strong>Part A (8 marks):</strong> In 2026, Residual Profit is <strong>$36,000</strong>.
+        Calculate each partner’s share under ALL four methods: (1) <strong>Equal Split</strong>,
+        (2) <strong>Fixed Ratio `5 : 3 : 1`</strong>, (3) <strong>Capital Ratio</strong>, and
+        (4) <strong>Percentages `50% : 35% : 15%`</strong>.
+      </p>
+      <p>
+        <strong>Part B — Residual Loss Case (4 marks):</strong> Suppose in a slower year, Net Profit
+        is only <strong>$15,000</strong>, while the Partnership Deed grants <strong>10% Interest on
+        Capital</strong> to all partners plus a <strong>$9,000 Salary</strong> to Priya, with residual
+        profits/losses shared in their <strong>Capital Ratio</strong>. Calculate each partner’s share
+        of the Residual Loss AND each partner’s final net total earned!
+      </p>
+    </>
+  }
+>
+
+### Part A: Comparing 4 Profit-Sharing Methods on `$36,000` Residual Profit *(8 marks — 2 marks each)*
+
+| Method | Ratio / Fractions | Maya ($) | Devon ($) | Priya ($) | Total Check |
+| :--- | :---: | ---: | ---: | ---: | ---: |
+| **1. Equal Split** | `1/3 : 1/3 : 1/3` | 12,000 | 12,000 | 12,000 | **$36,000 ✓** |
+| **2. Fixed Ratio (`5:3:1`)** | `5/9 : 3/9 : 1/9` | 20,000 | 12,000 | 4,000 | **$36,000 ✓** |
+| **3. Capital Ratio** *(`$60k:$40k:$20k`)* | `3/6 : 2/6 : 1/6` | 18,000 | 12,000 | 6,000 | **$36,000 ✓** |
+| **4. Percentages** | `50% : 35% : 15%` | 18,000 | 12,600 | 5,400 | **$36,000 ✓** |
+
+---
+
+### Part B: Handling a Residual Loss (`Net Profit = $15,000` — 4 marks)
+1. **Total Priority Appropriations:**
+   - Interest on Capital (`10%`): Maya `$6,000` + Devon `$4,000` + Priya `$2,000` = **`$12,000`**
+   - Partner Salary (Priya): **`$9,000`**
+   - *Total Appropriations* = `$12,000 + $9,000` = **`$21,000`** *(1 mark)*
+2. **Residual Loss:** `$15,000 Net Profit − $21,000 Appropriations` = **`($6,000)` Residual Loss** *(1 mark)*
+3. **Share of Residual Loss (`3 : 2 : 1` Capital Ratio — DEBITED to Current Accounts):**
+   - Maya (`3/6 × −$6,000`) = **`($3,000)`**; Devon (`2/6`) = **`($2,000)`**; Priya (`1/6`) = **`($1,000)`** *(1 mark)*
+4. **Final Net Total Credited to Each Partner *(Proof Check — 1 mark)*:**
+   - **Maya:** `$6,000 − $3,000` = **`+$3,000`**
+   - **Devon:** `$4,000 − $2,000` = **`+$2,000`**
+   - **Priya:** `$2,000 + $9,000 − $1,000` = **`+$10,000`**
+   - *Grand Total:* `$3,000 + $2,000 + $10,000` = **`$15,000`** *(matches Net Profit exactly!)*
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Partnership Profit & Loss Sharing Methods"
+  items={[
+    {
+      statement: 'If Partner A has Fixed Capital $75,000 and Partner B has Fixed Capital $25,000, their simplified Capital Ratio is 3 : 1.',
+      answer: true,
+      explanation: '$75,000 : $25,000 simplifies by dividing both sides by $25,000 to 3 : 1 (3/4 and 1/4)!',
+    },
+    {
+      statement: 'When a partnership incurs a Residual Loss because Partner Salaries and Interest on Capital exceed Net Profit, the Residual Loss is shared in the exact same profit-sharing ratio.',
+      answer: true,
+      explanation: 'Yes — unless the Partnership Agreement specifies a separate loss-sharing ratio, losses follow the identical profit-sharing ratio.',
+    },
+    {
+      statement: 'If a Partnership Agreement fails to mention a profit-sharing ratio, Residual Profit must be divided in the Capital Ratio.',
+      answer: false,
+      explanation: 'Under the Partnership Act, silence on profit sharing ALWAYS defaults to EQUAL sharing (NOT the Capital Ratio)!',
+    },
+    {
+      statement: 'A partner’s Share of Residual Loss is CREDITED to their Current Account.',
+      answer: false,
+      explanation: 'A Share of Residual PROFIT is Credited; a Share of Residual LOSS reduces the partner’s equity so it is DEBITED to their Current Account!',
+    },
+    {
+      statement: 'When sharing profits in the Capital Ratio, you use partners’ Fixed Capital Account balances rather than their Current Account balances.',
+      answer: true,
+      explanation: 'Correct — permanent Fixed Capital balances define the Capital Ratio (unless the deed states otherwise).',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s8-05-project"
+  title="Mini-Project: Profit-Sharing Policy Analysis for Horizon Builders"
+  duration="20 mins"
+  scenario="Three partners launched 'Horizon Builders': K. Grant (Capital $50,000, semi-retired advisor), S. Ali (Capital $30,000, active project manager), and L. Brooks (Capital $20,000, full-time site supervisor). They expect Residual Profit of $45,000 in 2026 — and also want to know how a bad-weather year with a ($9,000) Residual Loss would hit each partner!"
+  steps={[
+    'Calculate each partner’s share of the $45,000 Residual Profit under THREE methods: (a) Equal Split, (b) Capital Ratio, and (c) Fixed Ratio 4 : 3 : 2.',
+    'Arrange all three options in a clean side-by-side Comparison Table verifying every row sums to $45,000.',
+    'Calculate each partner’s share of a ($9,000) Residual Loss under the Fixed Ratio 4 : 3 : 2.',
+    'Write a 3-sentence Fairness Recommendation advising which method best balances Grant’s larger capital against Ali & Brooks’s full-time site work (hint: pair a ratio with Interest on Capital & Salaries!).',
+  ]}
+  deliverables={[
+    '3-Method Profit-Sharing Comparison Table ($45,000 pool)',
+    '($9,000) Residual Loss Allocation Table (4 : 3 : 2)',
+    '3-sentence Fairness Recommendation',
+  ]}
+  rubric={[
+    'Equal Split: $15,000 each ($45,000 total). Capital Ratio ($50k:$30k:$20k = 5:3:2): Grant $22,500, Ali $13,500, Brooks $9,000 ($45,000 total).',
+    'Fixed Ratio (4:3:2 = 9 parts): Grant $20,000, Ali $15,000, Brooks $10,000 ($45,000 total).',
+    'Residual Loss ($9,000) under 4:3:2: Grant ($4,000), Ali ($3,000), Brooks ($2,000) — debited to each partner’s Current Account!',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- Always simplify Capital Ratios cleanly (`$60k:$40k:$20k` → **`3:2:1`**) and verify shares sum to `100%`!
+- **Residual Profit** → **Credit** Current Account; **Residual Loss** → **Debit** Current Account!
+:::

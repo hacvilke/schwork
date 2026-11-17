@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 420" fill="none" role="img" aria-label="Working Capital Formula and Daily Cash Operating Cycle Diagram">
+  <rect width="820" height="420" rx="12" fill="#1B365D"/>
+  <rect x="14" y="14" width="792" height="392" rx="10" stroke="#2D507C" stroke-width="1.2"/>
+
+  <!-- Header -->
+  <text x="34" y="46" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="18" font-weight="700">Working Capital: The Lifeblood of Daily Operations</text>
+  <text x="34" y="66" fill="#9DD9CB" font-family="monospace" font-size="11.5">WORKING CAPITAL (NET CURRENT ASSETS)  =  CURRENT ASSETS  −  CURRENT LIABILITIES</text>
+
+  <!-- Formula Banner -->
+  <rect x="34" y="88" width="752" height="62" rx="10" fill="#122440" stroke="#6BC4B0" stroke-width="1.8"/>
+  <text x="176" y="114" text-anchor="middle" fill="#6BC4B0" font-family="monospace" font-size="11" font-weight="700">CURRENT ASSETS</text>
+  <text x="176" y="135" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="18" font-weight="800">$28,000</text>
+
+  <text x="310" y="128" text-anchor="middle" fill="#F5A352" font-family="system-ui, sans-serif" font-size="24" font-weight="800">−</text>
+
+  <text x="444" y="114" text-anchor="middle" fill="#F5A352" font-family="monospace" font-size="11" font-weight="700">CURRENT LIABILITIES</text>
+  <text x="444" y="135" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="18" font-weight="800">$12,000</text>
+
+  <text x="572" y="128" text-anchor="middle" fill="#F5A352" font-family="system-ui, sans-serif" font-size="24" font-weight="800">=</text>
+
+  <text x="688" y="114" text-anchor="middle" fill="#9DD9CB" font-family="monospace" font-size="11" font-weight="700">WORKING CAPITAL</text>
+  <text x="688" y="135" text-anchor="middle" fill="#6BC4B0" font-family="system-ui, sans-serif" font-size="20" font-weight="800">$16,000 ✓</text>
+
+  <!-- Left: Working Capital Cycle -->
+  <rect x="34" y="170" width="406" height="218" rx="10" fill="#122440" stroke="#8CC4B4" stroke-width="1.6"/>
+  <text x="237" y="194" text-anchor="middle" fill="#9DD9CB" font-family="monospace" font-size="11" font-weight="700">THE WORKING CAPITAL CASH CYCLE</text>
+
+  <rect x="172" y="210" width="130" height="38" rx="8" fill="#4E8577"/>
+  <text x="237" y="233" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12" font-weight="800">1. CASH / BANK</text>
+
+  <rect x="294" y="276" width="128" height="38" rx="8" fill="#1B365D" stroke="#6BC4B0" stroke-width="1.5"/>
+  <text x="358" y="299" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="11.5" font-weight="700">2. INVENTORY</text>
+
+  <rect x="172" y="336" width="130" height="38" rx="8" fill="#1B365D" stroke="#F5A352" stroke-width="1.5"/>
+  <text x="237" y="359" text-anchor="middle" fill="#F5A352" font-family="system-ui, sans-serif" font-size="11.5" font-weight="700">3. CREDIT SALES</text>
+
+  <rect x="52" y="276" width="128" height="38" rx="8" fill="#1B365D" stroke="#6BC4B0" stroke-width="1.5"/>
+  <text x="116" y="299" text-anchor="middle" fill="#9DD9CB" font-family="system-ui, sans-serif" font-size="11.5" font-weight="700">4. RECEIVABLES</text>
+
+  <!-- Cycle Arrows -->
+  <path d="M306 230 H358 V270" stroke="#F5A352" stroke-width="2" fill="none"/>
+  <path d="M353 265 L358 273 L363 265" stroke="#F5A352" stroke-width="2" fill="none"/>
+  <path d="M358 316 V355 H306" stroke="#F5A352" stroke-width="2" fill="none"/>
+  <path d="M312 350 L304 355 L312 360" stroke="#F5A352" stroke-width="2" fill="none"/>
+  <path d="M170 355 H116 V318" stroke="#6BC4B0" stroke-width="2" fill="none"/>
+  <path d="M111 324 L116 316 L121 324" stroke="#6BC4B0" stroke-width="2" fill="none"/>
+  <path d="M116 274 V230 H168" stroke="#6BC4B0" stroke-width="2" fill="none"/>
+  <path d="M162 225 L170 230 L162 235" stroke="#6BC4B0" stroke-width="2" fill="none"/>
+
+  <!-- Right: Positive vs Negative Working Capital -->
+  <rect x="458" y="170" width="328" height="102" rx="10" fill="#132F34" stroke="#6BC4B0" stroke-width="1.6"/>
+  <text x="474" y="194" fill="#6BC4B0" font-family="monospace" font-size="11" font-weight="800">✓ POSITIVE WORKING CAPITAL (CA &gt; CL)</text>
+  <text x="474" y="216" fill="#F4F7FA" font-family="system-ui, sans-serif" font-size="11">• Pays wages, rent &amp; suppliers comfortably on time</text>
+  <text x="474" y="235" fill="#F4F7FA" font-family="system-ui, sans-serif" font-size="11">• Earns early-payment cash discounts</text>
+  <text x="474" y="254" fill="#9DD9CB" font-family="system-ui, sans-serif" font-size="10.5">• Buffers sudden dips in monthly sales</text>
+
+  <rect x="458" y="286" width="328" height="102" rx="10" fill="#2A1D24" stroke="#C84E24" stroke-width="1.6"/>
+  <text x="474" y="310" fill="#F5A352" font-family="monospace" font-size="11" font-weight="800">✕ WORKING CAPITAL DEFICIT (CL &gt; CA)</text>
+  <text x="474" y="332" fill="#FDEFDF" font-family="system-ui, sans-serif" font-size="11">• Struggles to pay urgent short-term bills</text>
+  <text x="474" y="351" fill="#FDEFDF" font-family="system-ui, sans-serif" font-size="11">• Relies on expensive bank overdrafts</text>
+  <text x="474" y="370" fill="#F5A352" font-family="system-ui, sans-serif" font-size="10.5">• High risk of insolvency — even if profitable!</text>
+</svg>

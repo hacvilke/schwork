@@ -1,0 +1,242 @@
+---
+id: calculating-unit-cost-of-production
+title: "10.3 Calculating Unit Cost of Items Produced"
+sidebar_label: "10.3 Unit Cost of Production"
+sidebar_position: 3
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 10"
+  section="Manufacturing & Inventory Control — Manufacturing Accounts"
+  code="POA-S10-03"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="20 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+Knowing your factory spent **`$180,000`** this year is only half the story — you CANNOT price a pair of shoes or value unsold Closing Finished Goods until you divide by total good units completed to find the **Unit Cost of Production (`$180,000 ÷ 15,000 = $12.00/pair`)**! Even better, splitting Unit Cost into **Variable Direct Cost per unit** *(stays flat!)* and **Fixed Overhead per unit** *(shrinks as volume grows!)* reveals the hidden power of **economies of scale**!
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | **Unit Cost of Production** (`Total Cost of Production ÷ Good Units Completed`), **Cost Component Breakdown per Unit**, **Closing Finished Goods Valuation**, and **Fixed vs. Variable Unit Cost Behavior** |
+| **Exam Focus** | Dividing strictly by **COMPLETED good units** *(not units sold and not unfinished WIP!)*, valuing Closing Finished Goods at Unit Production Cost, and evaluating **Make-vs-Buy** decisions |
+| **Learning Outcome** | Calculate unit production costs accurately, value closing finished inventory, and analyze how production volume affects unit cost |
+
+<ObjectivesBox
+  id="poa-s10-03-obj"
+  objectives={[
+    'Calculate Unit Cost of Production by dividing Cost of Production by total good units manufactured.',
+    'Break Unit Cost into Raw Materials per unit, Direct Labor per unit, and Factory Overheads per unit.',
+    'Use Unit Cost of Production to value Closing Inventory of Finished Goods accurately.',
+    'Explain how rising output lowers Fixed Factory Overhead per unit (economies of scale) and evaluate Make-vs-Buy quotes.',
+  ]}
+/>
+
+---
+
+## 1. The Unit Cost Formula & Three Real-World Uses
+
+<FormulaCard
+  title="Unit Cost of Production & Closing Stock Formula"
+  onFormulaSheet={false}
+  summary="Always divide by GOOD UNITS PRODUCED (never units sold!)"
+>
+
+$$
+\text{Unit Cost of Production} = \frac{\text{Total Cost of Production}}{\text{Total Number of Good Units Produced}}
+$$
+
+$$
+\text{Closing Finished Goods Value} = \text{Unsold Units on Hand} \times \text{Unit Cost of Production}
+$$
+
+</FormulaCard>
+
+### Why Divide by Units PRODUCED — Not Units SOLD?
+- Suppose a factory **produced `15,000` pairs of shoes** for `$180,000`, and **sold `13,000` pairs** *(leaving `2,000` pairs in Closing Finished Goods)*.
+- That `$180,000` built **ALL `15,000` pairs** (both the `13,000` sold AND the `2,000` sitting on shelves!) → True Unit Cost = `$180,000 ÷ 15,000` = **`$12.00/pair`**!
+- Dividing by `13,000` units sold (`$13.85/pair`) would falsely pretend the `2,000` unsold pairs cost `$0` to make!
+
+### Fixed vs. Variable Cost Behavior When Output Changes
+- **Variable Direct Costs** *(Direct Materials + piece-rate Direct Labor)* rise in total as you make more units, so their **cost per unit stays CONSTANT** *(e.g. `$9.00/pair` at any volume)*.
+- **Fixed Factory Overheads** *(Factory Rent, Supervisor Salary, Straight-Line Machinery Depreciation)* stay constant in total — so as production rises, **Fixed Overhead per unit FALLS** *(spreading the same `$45,000` rent over more pairs → **Economies of Scale**!)*!
+
+---
+
+## 2. Diagram 1: Unit Cost Formula & Economies of Scale Breakdown
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-10/03-unit-cost-formula-breakdown.svg"
+  alt="Visual breakdown of the Unit Cost of Production formula ($180,000 divided by 15,000 units equals $12.00 per unit), three managerial uses of unit cost, and how fixed overhead per unit falls as output doubles."
+  caption="Diagram 1 (Static Reference): Watch the right panel closely — Variable Cost per unit stays locked at $9.00, while Fixed Factory Overhead per unit cuts in HALF when volume doubles!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive Unit-Cost Decision Lab
+
+<InteractiveDiagram
+  title="Interactive Hub: Tap Each Managerial Question to Apply Unit Costing Like a CFO"
+  layout="hub"
+  centerLabel="Unit Cost"
+  centerSublabel="$12.00 / Unit"
+  instruction="Select any business question below to see how Unit Cost drives real factory decisions."
+  nodes={[
+    {
+      label: 'Units Produced vs. Units Sold',
+      tag: 'Denominator Rule!',
+      tone: 'warning',
+      detail: 'If Cost of Production is $180,000, units produced = 15,000, and units sold = 13,000, which denominator do you use?',
+      example: 'ALWAYS divide by 15,000 UNITS PRODUCED → $180,000 ÷ 15,000 = $12.00/pair! Then value the 2,000 unsold pairs at $12.00 = $24,000!',
+      examTip: 'Remember: Cost of Goods Sold (COGS) = 13,000 sold × $12.00 = $156,000; Closing Stock = 2,000 × $12.00 = $24,000 ($156k + $24k = $180k ✓)!',
+    },
+    {
+      label: 'What About Defective / Spoiled Units?',
+      tag: 'Good Output Only',
+      tone: 'warning',
+      detail: 'If a bakery mixes dough for 1,050 loaves costing $2,000, and 50 loaves burn in the oven (normal wastage, $0 scrap value), how many units absorb the $2,000?',
+      example: 'Only the 1,000 GOOD saleable loaves! Unit Cost = $2,000 ÷ 1,000 = $2.00 per good loaf (if burnt scraps sold for $100, ($2,000 − $100) ÷ 1,000 = $1.90)!',
+      examTip: 'Subtract any scrap proceeds from total cost BEFORE dividing by good units completed!',
+    },
+    {
+      label: 'Volume Jumps 15,000 → 25,000',
+      tag: 'Scale Savings!',
+      tone: 'positive',
+      detail: 'With $9.00 Variable Cost/unit and $45,000 Fixed Factory Overhead, scaling to 25,000 pairs brings Total Cost to ($9 × 25k) + $45k = $270,000!',
+      example: 'New Unit Cost = $270,000 ÷ 25,000 = $10.80/pair — a $1.20/pair cost drop purely from spreading Fixed Overheads thinner!',
+      examTip: 'This explains why factories chase high capacity utilization: idle machines still generate fixed rent and depreciation!',
+    },
+    {
+      label: 'Make In-House vs. Buy Outside',
+      tag: 'Strategic Choice',
+      tone: 'neutral',
+      detail: 'An outside supplier offers identical shoes at $11.50/pair. At 25,000 pairs (our cost $10.80), making in-house wins easily! What about at 15,000 pairs (our cost $12.00)?',
+      example: 'CAREFUL! Even if you outsource at $11.50, you STILL pay $45,000 Fixed Factory Rent if the lease continues — so compare $11.50 supplier quote against our $9.00 avoidable variable cost first!',
+      examTip: 'Mentioning BOTH unit cost AND non-financial factors (quality control, reliable supply, staff jobs) wins top evaluation marks!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Unit Cost Breakdown, Closing Stock Valuation & Volume Expansion (SunStep Footwear Factory)"
+  marks={12}
+  problem={
+    <>
+      <p>
+        <strong>Scenario:</strong> During 2026, <strong>SunStep Footwear Factory</strong>
+        completed <strong>15,000 good pairs</strong> of running shoes (selling <strong>13,000
+        pairs</strong> and holding <strong>2,000 pairs</strong> in Closing Finished Goods on 31 Dec).
+        Its Manufacturing Account showed:
+      </p>
+      <ul>
+        <li>Raw Materials Consumed *(100% variable)*: <strong>$75,000</strong></li>
+        <li>Direct Labor *(100% variable)*: <strong>$60,000</strong></li>
+        <li>Factory Overheads *(100% fixed — rent, supervisor, depreciation)*: <strong>$45,000</strong></li>
+        <li><strong>Total Cost of Production:</strong> <strong>$180,000</strong></li>
+      </ul>
+      <ol>
+        <li>Calculate the <strong>Unit Cost of Production</strong> for 2026, showing a neat breakdown into Raw Materials per pair, Direct Labor per pair, Prime Cost per pair, and Factory Overhead per pair. <em>[4 marks]</em></li>
+        <li>Calculate the value of <strong>Closing Finished Goods Inventory</strong> (`2,000` pairs) on 31 December 2026. <em>[2 marks]</em></li>
+        <li><strong>2027 Expansion Forecast:</strong> Management plans to boost output to <strong>25,000 pairs</strong> next year (variable cost per pair and `$45,000` fixed overheads stay unchanged). Calculate the <strong>new Total Cost of Production</strong> and <strong>new Unit Cost per pair</strong>, and compare it against an overseas supplier’s quote of <strong>$11.50 per pair</strong>! <em>[6 marks]</em></li>
+      </ol>
+    </>
+  }
+>
+
+### 1. 2026 Unit Cost Breakdown (`15,000` Good Pairs Produced) *(4 marks)*
+| Cost Component | Total Cost ($) | ÷ 15,000 Pairs | Unit Cost ($/pair) |
+| :--- | ---: | :---: | ---: |
+| Raw Materials Consumed | 75,000 | ÷ 15,000 | $5.00 |
+| Direct Labor | 60,000 | ÷ 15,000 | $4.00 |
+| **Prime Cost per Pair** | **135,000** | ÷ 15,000 | **$9.00** |
+| Factory Overheads *(Fixed)* | 45,000 | ÷ 15,000 | $3.00 |
+| **Total Unit Cost of Production** | **$180,000** | ÷ 15,000 | **$12.00** |
+
+### 2. Value of Closing Finished Goods Inventory *(2 marks)*
+- Unsold completed pairs on hand: `2,000 pairs`
+- Closing Finished Goods Valuation: `2,000 × $12.00` = **`$24,000`** *(note: COGS for 13,000 sold pairs = `$156,000`; `$156k + $24k = $180k` ✓!)*.
+
+### 3. 2027 Expansion to `25,000` Pairs & Supplier Comparison *(6 marks)*
+- **Variable Direct Costs (`25,000` pairs × `$9.00/pair`):** **`$225,000`** *(1.5 marks)*
+- **Fixed Factory Overheads *(unchanged)*:** **`$45,000`** *(1 mark)*
+- **Projected 2027 Total Cost of Production:** `$225,000 + $45,000` = **`$270,000`** *(1 mark)*
+- **New 2027 Unit Cost of Production:** `$270,000 ÷ 25,000` = **`$10.80` per pair** *(Variable `$9.00` + Fixed `$1.80` — a **`$1.20/pair` drop** via economies of scale!)* *(1.5 marks)*
+- **Comparison vs. `$11.50` Supplier Quote:** At `25,000` pairs, manufacturing in-house (`$10.80`) is **`$0.70/pair` cheaper** than buying externally (`$11.50`) — saving **`$17,500`** (`25,000 × $0.70`) while maintaining full quality control! *(1 mark)*
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Calculating Unit Cost of Production"
+  items={[
+    {
+      statement: 'To calculate Unit Cost of Production, you divide Total Cost of Production by the number of units SOLD during the year.',
+      answer: false,
+      explanation: 'NEVER divide by units sold! Always divide by the total number of GOOD UNITS PRODUCED (completed) during the year!',
+    },
+    {
+      statement: 'If Total Cost of Production is $90,000 for 6,000 completed units and 500 units remain unsold at year-end, Closing Finished Goods is valued at $7,500.',
+      answer: true,
+      explanation: 'Unit Cost = $90,000 ÷ 6,000 = $15.00/unit → 500 unsold units × $15.00 = $7,500 exact!',
+    },
+    {
+      statement: 'As a factory increases production volume within existing plant capacity, Fixed Factory Overhead per unit decreases.',
+      answer: true,
+      explanation: 'Yes — spreading the same total Fixed Factory Overhead across more units lowers the fixed cost per unit (economies of scale)!',
+    },
+    {
+      statement: 'Variable Direct Material cost per unit usually cuts in half automatically whenever production output doubles.',
+      answer: false,
+      explanation: 'Variable Direct Cost per unit stays roughly CONSTANT (double the shoes requires double the leather!) — it is FIXED Overhead per unit that cuts in half!',
+    },
+    {
+      statement: 'Office Administration and Advertising expenses are included inside Total Cost of Production when valuing Closing Finished Goods.',
+      answer: false,
+      explanation: 'False! Closing Finished Goods is valued strictly at manufacturing/production cost — selling and admin costs are period expenses, never inventoried!',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s10-03-project"
+  title="Mini-Project: Unit Cost & Scale-Up Report for PureSpring Bottled Water"
+  duration="20 mins"
+  scenario="PureSpring Bottled Water produced 20,000 cases of water in 2026 (selling 17,000 cases and keeping 3,000 cases in Closing Stock). Its 2026 production costs were: Raw Materials (bottles, caps, labels — variable) $60,000; Direct Labor (variable) $40,000; Fixed Factory Overheads (plant rent, machinery depreciation, supervisor) $40,000. Management wants to know what happens to unit cost if output doubles to 40,000 cases next year while fixed overheads stay at $40,000!"
+  steps={[
+    'Build a 2026 Unit Cost Breakdown Table (20,000 cases) showing RM/case, DL/case, Prime Cost/case, Fixed Overhead/case, and Total Unit Cost/case.',
+    'Calculate the exact value of Closing Finished Goods (3,000 unsold cases) and Cost of Goods Sold (17,000 sold cases) — prove they sum back to $140,000!',
+    'Forecast the 2027 Total Cost and New Unit Cost at 40,000 cases, highlighting exact savings per case.',
+    'Advise in 2 sentences whether PureSpring should accept a wholesale supermarket contract offering $6.80/case at the 40,000-case volume.',
+  ]}
+  deliverables={[
+    '2026 Unit Cost Breakdown Table + Closing Stock / COGS Proof',
+    '2027 Scale-Up Cost Table (40,000 cases)',
+    '2-sentence Wholesale Contract Recommendation',
+  ]}
+  rubric={[
+    '2026 Unit Cost = $140,000 ÷ 20,000 = $7.00/case ($3.00 RM + $2.00 DL = $5.00 Prime/variable + $2.00 Fixed Overhead).',
+    'Closing Stock = 3,000 × $7.00 = $21,000; COGS = 17,000 × $7.00 = $119,000 ($21k + $119k = $140k ✓!).',
+    '2027 at 40,000 cases: Variable ($5 × 40k = $200,000) + Fixed ($40,000) = $240,000 → New Unit Cost = $6.00/case ($1.00/case drop!) → Selling at $6.80/case yields $0.80/case gross profit (note: verify office/delivery expenses fit inside $0.80)!',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **Unit Cost** = `Total Cost of Production ÷ Good Units PRODUCED` *(NEVER divide by units sold!)*.
+- **Closing Finished Goods** = `Unsold Completed Units × Unit Cost of Production`.
+- **Higher Output** → Variable cost/unit stays **flat**; Fixed Overhead/unit **drops**!
+:::

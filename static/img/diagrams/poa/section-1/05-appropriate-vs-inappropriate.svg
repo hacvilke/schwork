@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 420" fill="none" role="img" aria-label="Appropriate vs Inappropriate Application of Accounting Principles">
+  <rect width="820" height="420" rx="12" fill="#1B365D"/>
+  <rect x="14" y="14" width="792" height="392" rx="10" stroke="#2D507C" stroke-width="1.2"/>
+
+  <text x="34" y="46" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="18" font-weight="700">Appropriate vs. Inappropriate Application of Accounting Principles</text>
+  <text x="34" y="66" fill="#9DD9CB" font-family="monospace" font-size="11.5">HOW APPLYING OR BENDING THE RULES CHANGES FINANCIAL STATEMENTS</text>
+
+  <!-- Starting Input Box -->
+  <rect x="34" y="182" width="150" height="92" rx="10" fill="#122440" stroke="#9DD9CB" stroke-width="1.8"/>
+  <text x="109" y="216" text-anchor="middle" fill="#9DD9CB" font-family="monospace" font-size="11" font-weight="700">BUSINESS</text>
+  <text x="109" y="236" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="13.5" font-weight="700">TRANSACTIONS</text>
+  <text x="109" y="256" text-anchor="middle" fill="#BFD4E4" font-family="system-ui, sans-serif" font-size="10">Sales, expenses, assets</text>
+
+  <!-- Branch Lines -->
+  <path d="M184 210 C220 210, 215 148, 252 148" stroke="#6BC4B0" stroke-width="2.6" fill="none"/>
+  <path d="M184 246 C220 246, 215 308, 252 308" stroke="#F07152" stroke-width="2.6" fill="none"/>
+
+  <!-- Top Path: Appropriate -->
+  <rect x="252" y="92" width="332" height="122" rx="10" fill="#122440" stroke="#6BC4B0" stroke-width="2"/>
+  <rect x="252" y="92" width="332" height="30" rx="10" fill="#2E6359"/>
+  <text x="268" y="112" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12.5" font-weight="700">✓ APPROPRIATE APPLICATION</text>
+  <g font-family="system-ui, sans-serif" font-size="11" fill="#E2EDF5">
+    <text x="268" y="142">• Separate Entity: Personal bills recorded as Drawings</text>
+    <text x="268" y="162">• Prudence: Anticipated losses &amp; bad debts provided for</text>
+    <text x="268" y="182">• Accrual &amp; Consistency: Same depreciation method kept</text>
+    <text x="268" y="202">• Source Documents: Every entry backed by proof</text>
+  </g>
+
+  <path d="M584 152 H616" stroke="#6BC4B0" stroke-width="2.6"/>
+  <path d="M610 146 L619 152 L610 158" fill="none" stroke="#6BC4B0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="622" y="108" width="164" height="90" rx="10" fill="#2E6359" stroke="#9DD9CB" stroke-width="1.6"/>
+  <text x="704" y="138" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12.5" font-weight="800">✓ TRUE &amp; FAIR</text>
+  <text x="704" y="158" text-anchor="middle" fill="#E6F5F0" font-family="system-ui, sans-serif" font-size="10.5">Reliable profit figures,</text>
+  <text x="704" y="173" text-anchor="middle" fill="#E6F5F0" font-family="system-ui, sans-serif" font-size="10.5">fair tax &amp; lender trust</text>
+
+  <!-- Bottom Path: Inappropriate -->
+  <rect x="252" y="246" width="332" height="136" rx="10" fill="#122440" stroke="#F07152" stroke-width="2"/>
+  <rect x="252" y="246" width="332" height="30" rx="10" fill="#B83227"/>
+  <text x="268" y="266" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12.5" font-weight="700">✕ INAPPROPRIATE APPLICATION</text>
+  <g font-family="system-ui, sans-serif" font-size="11" fill="#FDECEB">
+    <text x="268" y="296">• Mixing personal rent or holidays as business expense</text>
+    <text x="268" y="316">• Recording unconfirmed credit sales early to inflate profit</text>
+    <text x="268" y="336">• Switching depreciation methods just to look profitable</text>
+    <text x="268" y="356">• Hiding unpaid bills (omitting liabilities / accruals)</text>
+  </g>
+
+  <path d="M584 314 H616" stroke="#F07152" stroke-width="2.6"/>
+  <path d="M610 308 L619 314 L610 320" fill="none" stroke="#F07152" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="622" y="268" width="164" height="92" rx="10" fill="#B83227" stroke="#F5A352" stroke-width="1.6"/>
+  <text x="704" y="298" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="12.5" font-weight="800">✕ MISLEADING</text>
+  <text x="704" y="318" text-anchor="middle" fill="#FDECEB" font-family="system-ui, sans-serif" font-size="10.5">Distorted statements,</text>
+  <text x="704" y="333" text-anchor="middle" fill="#FDECEB" font-family="system-ui, sans-serif" font-size="10.5">audit flags &amp; penalties</text>
+</svg>

@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" role="img" aria-label="Decision tree distinguishing Capital Expenditure from Revenue Expenditure and showing profit distortion if misclassified">
+  <defs>
+    <style>
+      .title { font: 700 20px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .sub { font: 500 13px system-ui, -apple-system, sans-serif; fill: #4A5560; }
+      .hdr { font: 700 14.5px system-ui, -apple-system, sans-serif; fill: #FCFBF8; }
+      .h3 { font: 700 13.5px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .body { font: 500 12.2px system-ui, -apple-system, sans-serif; fill: #222222; }
+      .sage { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #2E6359; }
+      .coral { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #C84E24; }
+    </style>
+  </defs>
+
+  <rect width="920" height="460" rx="14" fill="#F8F6F1" stroke="#CEDCD6" stroke-width="1.5"/>
+  <text x="32" y="38" class="title">Capital Expenditure vs. Revenue Expenditure Decision Tree</text>
+  <text x="32" y="58" class="sub">Ask ONE decisive test question before recording any business spending — getting it wrong distorts BOTH Profit and Assets!</text>
+
+  <!-- Top Decision Box -->
+  <rect x="200" y="76" width="520" height="54" rx="10" fill="#1B365D"/>
+  <text x="460" y="99" text-anchor="middle" class="hdr">DECISION TEST: Does this spending acquire, install, or PERMANENTLY</text>
+  <text x="460" y="119" text-anchor="middle" class="hdr">improve/extend the earning power of a Non-Current Asset (&gt; 1 year)?</text>
+
+  <!-- Branch Lines -->
+  <line x1="330" y1="130" x2="238" y2="162" stroke="#2E6359" stroke-width="2.5"/>
+  <line x1="590" y1="130" x2="682" y2="162" stroke="#C84E24" stroke-width="2.5"/>
+  <rect x="225" y="138" width="52" height="20" rx="10" fill="#2E6359"/>
+  <text x="251" y="152" text-anchor="middle" style="font:700 11.5px system-ui; fill:#FCFBF8;">YES</text>
+  <rect x="642" y="138" width="48" height="20" rx="10" fill="#C84E24"/>
+  <text x="666" y="152" text-anchor="middle" style="font:700 11.5px system-ui; fill:#FCFBF8;">NO</text>
+
+  <!-- Left Card: Capital Expenditure -->
+  <rect x="32" y="166" width="414" height="206" rx="11" fill="#FCFBF8" stroke="#2E6359" stroke-width="1.8"/>
+  <rect x="32" y="166" width="414" height="34" rx="10" fill="#2E6359"/>
+  <text x="239" y="188" text-anchor="middle" class="hdr">CAPITAL EXPENDITURE → Balance Sheet (NCA)</text>
+  <text x="50" y="220" class="sage">Long-term benefit (&gt; 1 year) · Non-recurring</text>
+  <text x="50" y="242" class="body">• Buying premises, delivery vans, machinery, computers</text>
+  <text x="50" y="261" class="body">• Legal fees, stamp duty &amp; delivery/installation of NEW asset</text>
+  <text x="50" y="280" class="body">• Adding a brand-new warehouse wing or AC system</text>
+  <text x="50" y="299" class="body">• Upgrading an old engine to double capacity/life</text>
+  <rect x="48" y="314" width="382" height="44" rx="7" fill="#EBF2EF"/>
+  <text x="60" y="333" class="h3">Misclassified as Revenue Expense?</text>
+  <text x="60" y="350" class="coral">Expenses TOO HIGH → Profit &amp; Non-Current Assets UNDERSTATED!</text>
+
+  <!-- Right Card: Revenue Expenditure -->
+  <rect x="474" y="166" width="414" height="206" rx="11" fill="#FCFBF8" stroke="#C84E24" stroke-width="1.8"/>
+  <rect x="474" y="166" width="414" height="34" rx="10" fill="#C84E24"/>
+  <text x="681" y="188" text-anchor="middle" class="hdr">REVENUE EXPENDITURE → Income Statement</text>
+  <text x="492" y="220" class="coral">Day-to-day running &amp; maintenance (&lt; 1 year) · Recurring</text>
+  <text x="492" y="242" class="body">• Buying goods for resale (Purchases) &amp; staff wages</text>
+  <text x="492" y="261" class="body">• Petrol/fuel, road license &amp; annual van insurance</text>
+  <text x="492" y="280" class="body">• Repainting existing walls or replacing broken glass/tires</text>
+  <text x="492" y="299" class="body">• Servicing &amp; repairs that merely RESTORE normal condition</text>
+  <rect x="490" y="314" width="382" height="44" rx="7" fill="#FFF3EE"/>
+  <text x="502" y="333" class="h3">Misclassified as Capital Asset?</text>
+  <text x="502" y="350" class="coral">Expenses TOO LOW → Profit &amp; Non-Current Assets OVERSTATED!</text>
+
+  <!-- Bottom Capital vs Revenue Receipts Strip -->
+  <rect x="32" y="390" width="856" height="52" rx="9" fill="#1B365D"/>
+  <text x="460" y="412" text-anchor="middle" class="hdr">Same Logic Applies to RECEIPTS!</text>
+  <text x="460" y="432" text-anchor="middle" style="font: 500 12.2px system-ui; fill: #EBF2EF;">Capital Receipts (Owner's Capital, Bank Loan, Sale of Old Van) → Balance Sheet  |  Revenue Receipts (Sales, Rent/Comm. Earned) → Income Stmt</text>
+</svg>

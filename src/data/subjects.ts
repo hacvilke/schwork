@@ -159,6 +159,13 @@ export const SUBJECTS: SubjectEntry[] = [
       'Mechanics, thermal physics & kinetic theory, waves & optics, electricity & magnetism, and atomic & nuclear physics.',
   },
   {
+    id: 'poa',
+    name: 'Principles of Accounts (POA)',
+    docPath: '/docs/poa',
+    summary:
+      'Financial recording, double-entry bookkeeping, trial balances, sole trader, partnership, company, co-operative, non-profit, manufacturing, inventory, and payroll accounting.',
+  },
+  {
     id: 'pob',
     name: 'Principles of Business (POB)',
     docPath: '/docs/pob',

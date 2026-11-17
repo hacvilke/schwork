@@ -1,0 +1,240 @@
+---
+id: inventory-valuation-fifo-lifo-avco
+title: "10.6 Methods of Inventory Valuation: FIFO, LIFO, and AVCO"
+sidebar_label: "10.6 FIFO, LIFO & AVCO"
+sidebar_position: 6
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 10"
+  section="Manufacturing & Inventory Control — Inventory Valuation"
+  code="POA-S10-06"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="20 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+When a store buys identical bags of flour or bottles of motor oil at **different purchase prices** throughout the year (`$10`, then `$12`, then `$14`), how do you decide the dollar cost of the units still sitting on shelves on 31 December? Accountants apply one of three **Cost-Flow Assumptions** — **FIFO *(First-In, First-Out)***, **LIFO *(Last-In, First-Out)***, or **AVCO *(Weighted Average Cost)*** — always subject to the supreme Prudence rule of **IAS 2: value Closing Inventory at the LOWER of Cost and Net Realizable Value (NRV)**!
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | **FIFO**, **LIFO**, and **AVCO** cost-flow methods, **Perpetual vs. Periodic** inventory tracking, and **IAS 2 Lower of Cost and Net Realizable Value (NRV)** |
+| **Exam Focus** | Comparing FIFO, LIFO, and AVCO clearly (including why **LIFO is prohibited under IAS 2 / IFRS**!), matching each method to the right industry, and calculating **NRV write-downs** |
+| **Learning Outcome** | Explain FIFO, LIFO, and AVCO valuation methods and apply the IAS 2 Lower of Cost and NRV rule accurately |
+
+<ObjectivesBox
+  id="poa-s10-06-obj"
+  objectives={[
+    'Define FIFO (First-In, First-Out), LIFO (Last-In, First-Out), and AVCO (Weighted Average Cost) clearly.',
+    'Compare the advantages, disadvantages, ideal industries, and IFRS (IAS 2) acceptability of FIFO, LIFO, and AVCO.',
+    'Distinguish between Perpetual and Periodic inventory control systems.',
+    'Apply the IAS 2 Prudence Rule to value Closing Inventory at the Lower of Cost and Net Realizable Value (NRV).',
+  ]}
+/>
+
+---
+
+## 1. Comparing the Three Inventory Valuation Methods
+
+| Feature | FIFO *(First-In, First-Out)* | LIFO *(Last-In, First-Out)* | AVCO *(Weighted Average)* |
+| :--- | :--- | :--- | :--- |
+| **Cost-Flow Assumption** | **OLDEST** stock bought is sold/issued FIRST | **NEWEST** stock bought is sold/issued FIRST | All batches blended into ONE **weighted average unit cost** |
+| **What Remains in Closing Stock?** | **NEWEST** purchases *(realistic, up-to-date Balance Sheet value!)* | **OLDEST** purchases *(outdated Balance Sheet value!)* | Smoothed **middle average** cost |
+| **Best Physical Fit** | **Perishables &amp; dated goods** *(milk, groceries, medicine, fashion)* | **Bulk stacked piles** *(coal, gravel, sand — top layer scooped first)* | **Mixed / liquid commodities** *(petrol tanks, grain silos, paint)* |
+| **Permitted by IAS 2 / IFRS?** | **YES ✓** | **NO ✗** *(Banned under IFRS!)* | **YES ✓** |
+
+### Perpetual vs. Periodic Inventory Control
+- **Perpetual Inventory System:** Continuously updates stock quantities and costs **after EVERY purchase and EVERY sale/issue** using a Stock Ledger Card or barcode/POS software — gives real-time theft/shrinkage visibility!
+- **Periodic Inventory System:** Counts physical stock **only at the end of the period** (e.g., 31 December stocktake) and computes COGS once (`Opening Stock + Purchases − Closing Stock`).
+
+### The Golden IAS 2 Rule: Lower of Cost and Net Realizable Value (NRV)
+Applying the **Prudence Concept** *(never overstate assets or profits!)*, Closing Inventory must be valued item-by-item at the **LOWER of**:
+1. **Historical Cost:** Purchase price + Carriage Inwards + conversion costs to bring stock to its current location and condition.
+2. **Net Realizable Value (NRV):**
+   $$\text{NRV} = \text{Estimated Selling Price} - \text{Estimated Costs to Complete, Repair, or Sell}$$
+*(If goods become damaged, spoiled, or obsolete so NRV falls BELOW Cost, you MUST write inventory down immediately to NRV!)*
+
+---
+
+## 2. Diagram 1: How Inventory Costs Flow (FIFO vs. LIFO vs. AVCO)
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-10/06-fifo-lifo-avco-flow.svg"
+  alt="Three-column visual diagram contrasting FIFO (oldest sold first, newest in closing), LIFO (newest sold first, oldest in closing), and AVCO (blended weighted average), plus the IAS 2 Lower of Cost and NRV rule."
+  caption="Diagram 1 (Static Reference): Memorize the IFRS status in every column — FIFO and AVCO are permitted under IAS 2, while LIFO is NOT permitted under IAS 2 / IFRS!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive Valuation Method & NRV Explorer
+
+<InteractiveDiagram
+  title="Interactive Hub: Tap Each Scenario to Choose the Right Valuation Rule"
+  layout="hub"
+  centerLabel="IAS 2 Rules"
+  centerSublabel="Valuation Choice"
+  instruction="Select any inventory policy question below to sharpen your conceptual mastery for Paper 1 & Paper 2."
+  nodes={[
+    {
+      label: 'Cost Flow vs. Physical Flow',
+      tag: 'Key Insight!',
+      tone: 'neutral',
+      detail: 'Your accounting cost-flow method does NOT have to match how warehouse staff physically lift boxes — though matching them makes intuitive sense!',
+      example: 'A hardware store can physically hand customers whichever wrench sits in front while still valuing inventory cleanly under FIFO or AVCO!',
+      examTip: 'Never write that "FIFO forces staff to sell old stock physically" — FIFO is an ACCOUNTING cost assumption (even though supermarkets rotate stock FIFO physically too)!',
+    },
+    {
+      label: 'Why Does IFRS (IAS 2) Ban LIFO?',
+      tag: 'Exam Classic!',
+      tone: 'warning',
+      detail: 'Under LIFO, the oldest purchase prices (sometimes from years ago!) remain stuck in Closing Inventory forever — distorting the Balance Sheet with wildly outdated asset values!',
+      example: 'Imagine showing 2018 steel prices as a Current Asset on a 2026 Balance Sheet — investors would have no idea what the warehouse stock is actually worth!',
+      examTip: 'State BOTH reasons: (1) LIFO understates Closing Inventory on the Balance Sheet during inflation, and (2) rarely reflects the actual physical flow of goods!',
+    },
+    {
+      label: 'Why Must NRV Be Tested Item-by-Item?',
+      tag: 'Prudence Rule',
+      tone: 'warning',
+      detail: 'If Laptops have Cost $500 / NRV $620 (+$120 unrealized gain) and Damaged Sneakers have Cost $80 / NRV $55 (−$25 loss), NEVER let the laptop gain hide the sneaker loss!',
+      example: 'Laptops stay at Cost ($500 — NEVER mark stock UP above cost!), while Damaged Sneakers write DOWN to NRV ($55)!',
+      examTip: 'Remember: Lower of Cost and NRV is applied LINE-BY-LINE (never on the combined warehouse total)!',
+    },
+    {
+      label: 'What Belongs Inside Inventory "Cost"?',
+      tag: 'Include vs. Exclude',
+      tone: 'positive',
+      detail: 'Cost includes Purchase Price (net of trade discounts) + Import Duties + Carriage INWARDS! It EXCLUDES Carriage Outwards, Storage Rent for finished goods, and Selling Expenses!',
+      example: 'Bought shoes for $40 + $3 import duty + $2 carriage inwards = $45 Inventory Cost ($4 carriage outwards to buyers is a Selling Expense!).',
+      examTip: 'IAS 2 defines Cost as all costs necessary to bring inventory to its PRESENT LOCATION AND CONDITION!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Choosing Valuation Methods & Applying IAS 2 Lower of Cost and NRV"
+  marks={10}
+  problem={
+    <>
+      <p>
+        <strong>Part A (Method Selection — 3 marks):</strong> Recommend the most appropriate
+        inventory valuation method (<strong>FIFO</strong> or <strong>AVCO</strong>) for each
+        business, giving one concise reason: (1) A fresh bakery and dairy distributor; (2) A
+        gasoline station mixing fresh fuel deliveries into one underground storage tank; (3)
+        Explain why a Caribbean public company reporting under IFRS cannot adopt <strong>LIFO</strong>.
+      </p>
+      <p>
+        <strong>Part B (IAS 2 Lower of Cost and NRV — 7 marks):</strong> On <strong>31 December
+        2026</strong>, <strong>PortRoyal Outfitters</strong> holds three closing inventory lines:
+      </p>
+      <table>
+        <thead>
+          <tr><th>Product Line</th><th>Units</th><th>Unit Cost ($)</th><th>Est. Selling Price ($)</th><th>Est. Repair / Selling Cost ($)</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>A. Travel Backpacks</td><td>10</td><td>500</td><td>650</td><td>30</td></tr>
+          <tr><td>B. Water-Damaged Sneakers</td><td>20</td><td>80</td><td>65</td><td>10</td></tr>
+          <tr><td>C. Outdated Phone Cases</td><td>50</td><td>15</td><td>12</td><td>2</td></tr>
+        </tbody>
+      </table>
+      <p>
+        Calculate the <strong>NRV per unit</strong>, the <strong>exact Closing Inventory value</strong>
+        for each line and in total under IAS 2, and the total <strong>inventory write-down</strong>!
+      </p>
+    </>
+  }
+>
+
+### Part A: Method Selection & IFRS Rule *(3 marks — 1 mark each)*
+1. **Fresh Bakery &amp; Dairy Distributor → `FIFO`:** Mirrors perishable physical rotation (oldest items sold first before expiry) and leaves up-to-date Closing Stock values.
+2. **Gasoline Station Underground Tank → `AVCO`:** Once new fuel pours into the tank, old and new fuel physically mingle indistinguishably — blending costs into a weighted average matches reality seamlessly.
+3. **Why No `LIFO` under IFRS:** IAS 2 prohibits LIFO because it leaves outdated historical purchase prices on the Balance Sheet and allows manipulation of reported profits through purchase timing.
+
+### Part B: IAS 2 Lower of Cost and NRV Schedule *(7 marks)*
+
+| Product Line | Units | Unit Cost | Unit NRV *(Sell − Costs)* | Lower of Cost / NRV | Total Value ($) |
+| :--- | ---: | ---: | ---: | ---: | ---: |
+| **A. Travel Backpacks** | 10 | `$500` | `$650 − $30 = $620` | **`$500`** *(Cost)* | **5,000** |
+| **B. Water-Damaged Sneakers** | 20 | `$80` | `$65 − $10 = $55` | **`$55`** *(NRV ↓)* | **1,100** |
+| **C. Outdated Phone Cases** | 50 | `$15` | `$12 − $2 = $10` | **`$10`** *(NRV ↓)* | **500** |
+| **Total Closing Inventory *(IAS 2)*** | | | | | **$6,600** |
+
+- **Total Historical Cost:** `(10 × $500) + (20 × $80) + (50 × $15)` = `$5,000 + $1,600 + $750` = **`$7,350`**
+- **Total Inventory Write-Down *(Prudence Loss recognized immediately)*:** `$7,350 − $6,600` = **`$750`** (`$500` on Sneakers + `$250` on Phone Cases)! *(Notice: Backpacks are NEVER marked up to `$620` — Prudence forbids recognizing unrealized gains!)*
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: FIFO, LIFO, AVCO & IAS 2"
+  items={[
+    {
+      statement: 'Under FIFO (First-In, First-Out), the units remaining in Closing Inventory are valued at the MOST RECENT purchase prices.',
+      answer: true,
+      explanation: 'Correct! Because the oldest units are assumed sold first, the newest batches remain on hand at year-end!',
+    },
+    {
+      statement: 'Both FIFO and LIFO are permitted under International Accounting Standard 2 (IAS 2 / IFRS).',
+      answer: false,
+      explanation: 'False! IAS 2 permits FIFO and AVCO — LIFO is explicitly PROHIBITED under IFRS!',
+    },
+    {
+      statement: 'If an item has a Cost of $100 and a Net Realizable Value of $140, IAS 2 requires you to value it on the Balance Sheet at $140.',
+      answer: false,
+      explanation: 'NEVER mark inventory UP above Cost! IAS 2 requires the LOWER of Cost ($100) and NRV ($140) → value strictly at $100!',
+    },
+    {
+      statement: 'Net Realizable Value (NRV) equals Estimated Selling Price minus estimated costs needed to complete, repair, or sell the item.',
+      answer: true,
+      explanation: 'Spot on — NRV measures the net cash the business realistically expects to collect from selling that stock.',
+    },
+    {
+      statement: 'A Perpetual Inventory System updates stock balances continuously after every purchase and every sale/issue.',
+      answer: true,
+      explanation: 'Yes — whereas a Periodic system determines Closing Inventory only via a physical stocktake at period-end.',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s10-06-project"
+  title="Mini-Project: Year-End IAS 2 Valuation Audit for IslandTech Electronics"
+  duration="20 mins"
+  scenario="IslandTech Electronics’ warehouse count on 31 December 2026 shows three inventory items: (1) Product X — Wireless Headsets: 15 units, Cost $120 each, Est. Selling Price $150, Selling Commission $10; (2) Product Y — Damaged-Box Speakers: 20 units, Cost $60 each, Est. Selling Price $52, Repackaging Cost $7; (3) Product Z — Clearance Charging Cables: 40 units, Cost $10 each, Est. Selling Price $9, Packaging/Selling Cost $1. The owner asks why he can’t just average everything together at Historical Cost ($3,400) and forget NRV!"
+  steps={[
+    'Build a complete 6-column IAS 2 Inventory Valuation Table computing Unit NRV, Lower of Cost & NRV per unit, and Line Value for Products X, Y, and Z.',
+    'Calculate Total Historical Cost, Total IAS 2 Closing Inventory Value, and the exact dollar Write-Down.',
+    'Write a 2-sentence explanation citing the Prudence Concept explaining why Product X’s $300 unrealized profit CANNOT offset the $380 loss on Products Y and Z.',
+  ]}
+  deliverables={[
+    '6-column IAS 2 Lower of Cost & NRV Schedule for IslandTech Electronics',
+    'Total Historical Cost vs. Total IAS 2 Value & Write-Down Calculation',
+    '2-sentence Prudence Concept Memo to the Owner',
+  ]}
+  rubric={[
+    'Exact NRVs: Product X = $140 ($150 − $10) → Lower = $120 Cost ($1,800); Product Y = $45 ($52 − $7) → Lower = $45 NRV ($900); Product Z = $8 ($9 − $1) → Lower = $8 NRV ($320).',
+    'Total IAS 2 Closing Inventory = $1,800 + $900 + $320 = $3,020 (vs. Total Cost $3,400 → exact Write-Down = $380!).',
+    'Memo accurately invokes the Prudence Concept (anticipate foreseeable losses immediately; never recognize unrealized gains before sale)!',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **FIFO** = Oldest sold first → **Newest** in Closing Stock (**IFRS ✓**).
+- **LIFO** = Newest sold first → **Oldest** in Closing Stock (**IFRS ✗**).
+- **AVCO** = Blended **weighted average** cost (**IFRS ✓**).
+- **IAS 2 Golden Rule:** **Lower of Cost and NRV** *(evaluated item-by-item!)*!
+:::

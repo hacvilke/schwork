@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 450" role="img" aria-label="Advantages and disadvantages of establishing a partnership compared to remaining a sole trader">
+  <defs>
+    <style>
+      .title { font: 700 20px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .sub { font: 500 13px system-ui, -apple-system, sans-serif; fill: #4A5560; }
+      .hdr { font: 700 14.5px system-ui, -apple-system, sans-serif; fill: #FCFBF8; }
+      .h3 { font: 700 13px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .body { font: 500 12px system-ui, -apple-system, sans-serif; fill: #222222; }
+      .sage { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #2E6359; }
+      .coral { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #C84E24; }
+    </style>
+  </defs>
+
+  <rect width="920" height="450" rx="14" fill="#F8F6F1" stroke="#CEDCD6" stroke-width="1.5"/>
+  <text x="32" y="38" class="title">Why Establish a Partnership? Strategic Gains vs. Real Trade-Offs</text>
+  <text x="32" y="58" class="sub">When a growing sole trader teams up with partners, resources multiply — alongside shared profits and mutual risk.</text>
+
+  <!-- Left: Why Form a Partnership (Advantages) -->
+  <rect x="32" y="80" width="418" height="292" rx="11" fill="#FCFBF8" stroke="#2E6359" stroke-width="1.8"/>
+  <rect x="32" y="80" width="418" height="38" rx="10" fill="#2E6359"/>
+  <text x="241" y="104" text-anchor="middle" class="hdr">✓ 5 Core Reasons to Form a Partnership</text>
+
+  <rect x="48" y="132" width="386" height="40" rx="6" fill="#EBF2EF"/>
+  <text x="60" y="149" class="sage">1. Larger Capital Pool &amp; Easier Borrowing</text>
+  <text x="60" y="165" class="body">Combine savings + assets of 2–20 owners to fund expansion</text>
+
+  <rect x="48" y="178" width="386" height="40" rx="6" fill="#F8F6F1" stroke="#CEDCD6"/>
+  <text x="60" y="195" class="h3">2. Complementary Skills &amp; Specialization</text>
+  <text x="60" y="211" class="body">E.g. Partner A runs sales/design while Partner B runs finance</text>
+
+  <rect x="48" y="224" width="386" height="40" rx="6" fill="#EBF2EF"/>
+  <text x="60" y="241" class="sage">3. Shared Workload, Holidays &amp; Decision-Making</text>
+  <text x="60" y="257" class="body">Business stays open smoothly when one partner is sick/away</text>
+
+  <rect x="48" y="270" width="386" height="40" rx="6" fill="#F8F6F1" stroke="#CEDCD6"/>
+  <text x="60" y="287" class="h3">4. Shared Business Losses &amp; Risk</text>
+  <text x="60" y="303" class="body">Downturns are absorbed across multiple partners, not one person</text>
+
+  <rect x="48" y="316" width="386" height="40" rx="6" fill="#EBF2EF"/>
+  <text x="60" y="333" class="sage">5. Simple &amp; Private vs. Limited Companies</text>
+  <text x="60" y="349" class="body">Low setup cost; financial accounts stay confidential (not public!)</text>
+
+  <!-- Right: Risks / Disadvantages -->
+  <rect x="470" y="80" width="418" height="292" rx="11" fill="#FCFBF8" stroke="#C84E24" stroke-width="1.8"/>
+  <rect x="470" y="80" width="418" height="38" rx="10" fill="#C84E24"/>
+  <text x="679" y="104" text-anchor="middle" class="hdr">⚠ 5 Key Risks &amp; Disadvantages to Weigh</text>
+
+  <rect x="486" y="132" width="386" height="40" rx="6" fill="#FFF3EE"/>
+  <text x="498" y="149" class="coral">1. Unlimited Joint &amp; Several Liability</text>
+  <text x="498" y="165" class="body">Personal assets of general partners can be seized for firm debts</text>
+
+  <rect x="486" y="178" width="386" height="40" rx="6" fill="#F8F6F1" stroke="#CEDCD6"/>
+  <text x="498" y="195" class="h3">2. Shared Profits (No Longer 100% Yours)</text>
+  <text x="498" y="211" class="body">Profits must be split even if one partner feels they worked harder</text>
+
+  <rect x="486" y="224" width="386" height="40" rx="6" fill="#FFF3EE"/>
+  <text x="498" y="241" class="coral">3. Risk of Disagreements &amp; Slower Decisions</text>
+  <text x="498" y="257" class="body">Clashes over reinvestment, hiring, or Drawings can stall growth</text>
+
+  <rect x="486" y="270" width="386" height="40" rx="6" fill="#F8F6F1" stroke="#CEDCD6"/>
+  <text x="498" y="287" class="h3">4. Bound by Another Partner's Mistakes</text>
+  <text x="498" y="303" class="body">Mutual agency means one partner's bad contract binds ALL partners</text>
+
+  <rect x="486" y="316" width="386" height="40" rx="6" fill="#FFF3EE"/>
+  <text x="498" y="333" class="coral">5. Instability on Death or Withdrawal</text>
+  <text x="498" y="349" class="body">Must revalue assets/goodwill or dissolve if a partner leaves</text>
+
+  <!-- Bottom Bridge -->
+  <rect x="32" y="390" width="856" height="44" rx="9" fill="#1B365D"/>
+  <text x="460" y="417" text-anchor="middle" style="font: 700 13px system-ui; fill: #FCFBF8;">How Smart Partners Reduce Risks #2, #3 &amp; #5: Sign a Detailed Written PARTNERSHIP AGREEMENT (Lesson 8.3)!</text>
+</svg>

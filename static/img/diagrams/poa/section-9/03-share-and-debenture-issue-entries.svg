@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 450" role="img" aria-label="Double-entry journal entries for issuing Ordinary Shares at par, issuing shares at a premium, and issuing Debentures">
+  <defs>
+    <style>
+      .title { font: 700 20px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .sub { font: 500 13px system-ui, -apple-system, sans-serif; fill: #4A5560; }
+      .hdr { font: 700 14px system-ui, -apple-system, sans-serif; fill: #FCFBF8; }
+      .h3 { font: 700 13px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .mono { font: 700 11.8px ui-monospace, SFMono-Regular, monospace; fill: #122440; }
+      .body { font: 500 12px system-ui, -apple-system, sans-serif; fill: #222222; }
+      .sage { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #2E6359; }
+      .coral { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #C84E24; }
+    </style>
+  </defs>
+
+  <rect width="920" height="450" rx="14" fill="#F8F6F1" stroke="#CEDCD6" stroke-width="1.5"/>
+  <text x="32" y="38" class="title">Journal Entries for Issuing Shares (at Par &amp; at Premium) and Debentures</text>
+  <text x="32" y="58" class="sub">Golden Rule: Share Capital is ALWAYS credited at PAR (Nominal) value — any extra amount above par goes to SHARE PREMIUM (Capital Reserve)!</text>
+
+  <!-- Card 1: Issue at Par -->
+  <rect x="32" y="80" width="272" height="278" rx="11" fill="#FCFBF8" stroke="#1B365D" stroke-width="1.7"/>
+  <rect x="32" y="80" width="272" height="36" rx="10" fill="#1B365D"/>
+  <text x="168" y="103" text-anchor="middle" class="hdr">1. Shares Issued at PAR</text>
+  <text x="48" y="138" class="h3">Example:</text>
+  <text x="48" y="156" class="body">Issued 50,000 Ordinary Shares</text>
+  <text x="48" y="172" class="body">of $2.00 par at $2.00 each.</text>
+  <text x="48" y="196" class="sage">Cash = 50,000 × $2 = $100,000</text>
+  <rect x="46" y="212" width="244" height="62" rx="7" fill="#EBF2EF" stroke="#1B365D"/>
+  <text x="56" y="234" class="mono">Dr Bank ............ $100,000</text>
+  <text x="56" y="256" class="mono">   Cr Ord Share Cap  $100,000</text>
+  <text x="48" y="300" class="body">Via Application A/c (2-step):</text>
+  <text x="48" y="318" class="body">1) Dr Bank / Cr Application</text>
+  <text x="48" y="336" class="body">2) Dr Application / Cr Share Cap</text>
+
+  <!-- Card 2: Issue at Premium -->
+  <rect x="324" y="80" width="272" height="278" rx="11" fill="#FCFBF8" stroke="#2E6359" stroke-width="1.8"/>
+  <rect x="324" y="80" width="272" height="36" rx="10" fill="#2E6359"/>
+  <text x="460" y="103" text-anchor="middle" class="hdr">2. Shares Issued at PREMIUM</text>
+  <text x="340" y="138" class="h3">Example:</text>
+  <text x="340" y="156" class="body">Issued 20,000 Ordinary Shares</text>
+  <text x="340" y="172" class="body">of $2.00 par at $2.50 ($0.50 prem).</text>
+  <text x="340" y="196" class="sage">Cash = 20,000 × $2.50 = $50,000</text>
+  <rect x="338" y="212" width="244" height="80" rx="7" fill="#EBF2EF" stroke="#2E6359"/>
+  <text x="348" y="233" class="mono">Dr Bank ............ $50,000</text>
+  <text x="348" y="253" class="mono">   Cr Ord Share Cap  $40,000</text>
+  <text x="348" y="273" class="sage">   Cr Share Premium  $10,000</text>
+  <text x="340" y="314" class="h3">Share Premium = Capital Reserve</text>
+  <text x="340" y="332" class="body">(Cannot be paid as cash dividends!)</text>
+
+  <!-- Card 3: Issue Debentures -->
+  <rect x="616" y="80" width="272" height="278" rx="11" fill="#FCFBF8" stroke="#C84E24" stroke-width="1.7"/>
+  <rect x="616" y="80" width="272" height="36" rx="10" fill="#C84E24"/>
+  <text x="752" y="103" text-anchor="middle" class="hdr">3. Issuing Debentures (Debt)</text>
+  <text x="632" y="138" class="h3">Example:</text>
+  <text x="632" y="156" class="body">Issued $60,000 of 8% Debentures</text>
+  <text x="632" y="172" class="body">(repayable in 2036) for cash.</text>
+  <text x="632" y="196" class="coral">Creates a Non-Current Liability!</text>
+  <rect x="630" y="212" width="244" height="62" rx="7" fill="#FFF3EE" stroke="#C84E24"/>
+  <text x="640" y="234" class="mono">Dr Bank ............ $60,000</text>
+  <text x="640" y="256" class="mono">   Cr 8% Debentures  $60,000</text>
+  <text x="632" y="300" class="h3">Annual Interest Entry ($4,800):</text>
+  <text x="632" y="318" class="mono">Dr Debenture Interest  $4,800</text>
+  <text x="632" y="336" class="mono">   Cr Bank / Accrued   $4,800</text>
+
+  <!-- Bottom Authorized Warning -->
+  <rect x="32" y="376" width="856" height="54" rx="9" fill="#1B365D"/>
+  <text x="460" y="399" text-anchor="middle" class="hdr">⚠ Exam Trap: NEVER Journalize AUTHORIZED Share Capital!</text>
+  <text x="460" y="419" text-anchor="middle" style="font: 500 12.2px system-ui; fill: #EBF2EF;">Authorized Share Capital is only a legal upper limit — double-entry journal entries ONLY record SHARES ACTUALLY ISSUED &amp; SUBSCRIBED!</text>
+</svg>

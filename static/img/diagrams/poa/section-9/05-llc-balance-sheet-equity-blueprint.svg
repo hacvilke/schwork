@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" role="img" aria-label="Blueprint of a Limited Liability Company Balance Sheet highlighting the Financed By section: Authorized Capital memo, Issued Share Capital, Reserves, and Debentures">
+  <defs>
+    <style>
+      .title { font: 700 20px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .sub { font: 500 13px system-ui, -apple-system, sans-serif; fill: #4A5560; }
+      .hdr { font: 700 14px system-ui, -apple-system, sans-serif; fill: #FCFBF8; }
+      .h3 { font: 700 13px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .mono { font: 700 11.8px ui-monospace, SFMono-Regular, monospace; fill: #122440; }
+      .body { font: 500 12px system-ui, -apple-system, sans-serif; fill: #222222; }
+      .sage { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #2E6359; }
+      .coral { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #C84E24; }
+    </style>
+  </defs>
+
+  <rect width="920" height="460" rx="14" fill="#F8F6F1" stroke="#CEDCD6" stroke-width="1.5"/>
+  <text x="32" y="38" class="title">Limited Liability Company Balance Sheet Blueprint</text>
+  <text x="32" y="58" class="sub">Top Half stays familiar (watch Proposed Dividends &amp; Accrued Debenture Interest under CL!) · Financed By shows Share Capital, Reserves &amp; Debentures.</text>
+
+  <!-- Left: Top Half -->
+  <rect x="32" y="80" width="370" height="298" rx="11" fill="#FCFBF8" stroke="#4E8577" stroke-width="1.7"/>
+  <rect x="32" y="80" width="370" height="36" rx="10" fill="#4E8577"/>
+  <text x="217" y="103" text-anchor="middle" class="hdr">TOP HALF: Net Assets Employed</text>
+
+  <text x="48" y="142" class="h3">Non-Current Assets (NBV)</text>
+  <text x="384" y="142" text-anchor="end" class="mono">$310,000</text>
+  <text x="48" y="164" class="body">Premises, Plant, Vehicles (Cost − Depr.)</text>
+  <line x1="48" y1="176" x2="384" y2="176" stroke="#CEDCD6"/>
+
+  <text x="48" y="200" class="body">Current Assets (Stock, Net AR, Bank)</text>
+  <text x="384" y="200" text-anchor="end" class="mono">118,000</text>
+  <text x="48" y="224" class="coral">Less: Current Liabilities</text>
+  <text x="384" y="224" text-anchor="end" class="coral">(48,000)</text>
+  <text x="56" y="244" class="body">• Payables + Accrued Debenture Int.</text>
+  <text x="56" y="261" class="body">• Proposed Dividends + Corp. Tax Due</text>
+  <text x="48" y="290" class="sage">Working Capital</text>
+  <text x="384" y="290" text-anchor="end" class="sage">70,000</text>
+  <line x1="48" y1="304" x2="384" y2="304" stroke="#1B365D" stroke-width="1.5"/>
+  <text x="48" y="330" class="h3">TOTAL NET ASSETS</text>
+  <text x="384" y="330" text-anchor="end" class="h3">$380,000</text>
+  <line x1="48" y1="338" x2="384" y2="338" stroke="#1B365D" stroke-width="2.2"/>
+
+  <!-- Equals Badge -->
+  <circle cx="428" cy="228" r="20" fill="#C84E24"/>
+  <text x="428" y="235" text-anchor="middle" style="font:700 22px system-ui; fill:#FCFBF8;">=</text>
+
+  <!-- Right: Financed By -->
+  <rect x="454" y="80" width="434" height="298" rx="11" fill="#FCFBF8" stroke="#1B365D" stroke-width="1.9"/>
+  <rect x="454" y="80" width="434" height="36" rx="10" fill="#1B365D"/>
+  <text x="671" y="103" text-anchor="middle" class="hdr">FINANCED BY (Company Equity &amp; Debt)</text>
+
+  <rect x="470" y="126" width="402" height="34" rx="6" fill="#FFF3EE"/>
+  <text x="480" y="147" class="coral">Authorized Capital: $500,000 (Double-underlined MEMO!)</text>
+
+  <text x="470" y="182" class="h3">Issued &amp; Paid-Up Share Capital</text>
+  <text x="482" y="200" class="body">Ordinary ($150k) + 6% Preference ($50k)</text>
+  <text x="870" y="200" text-anchor="end" class="mono">200,000</text>
+
+  <text x="470" y="226" class="h3">Reserves (Capital + Revenue)</text>
+  <text x="482" y="244" class="body">Share Premium ($25k) + General Res. ($45k)</text>
+  <text x="482" y="261" class="body">+ Retained Earnings c/f ($50k)</text>
+  <text x="870" y="253" text-anchor="end" class="mono">120,000</text>
+  <text x="470" y="283" class="sage">Shareholders' Funds (Equity = $320,000)</text>
+
+  <text x="470" y="308" class="h3">Non-Current Liabilities</text>
+  <text x="482" y="326" class="body">8% Debentures (2035)</text>
+  <text x="870" y="326" text-anchor="end" class="mono">60,000</text>
+
+  <line x1="470" y1="336" x2="870" y2="336" stroke="#1B365D" stroke-width="1.5"/>
+  <text x="470" y="358" class="h3">TOTAL CAPITAL EMPLOYED</text>
+  <text x="870" y="358" text-anchor="end" class="sage">$380,000 ✓</text>
+  <line x1="470" y1="366" x2="870" y2="366" stroke="#1B365D" stroke-width="2.2"/>
+
+  <!-- Bottom Crucial Rule -->
+  <rect x="32" y="394" width="856" height="48" rx="9" fill="#2E6359"/>
+  <text x="460" y="415" text-anchor="middle" class="hdr">Watch Two Classic LLC Balance Sheet Traps:</text>
+  <text x="460" y="434" text-anchor="middle" style="font: 500 12.2px system-ui; fill: #FCFBF8;">1. NEVER add Authorized Capital into the totals (rule double line right under it!)  ·  2. ADD this year's General Reserve transfer to Opening General Reserve!</text>
+</svg>

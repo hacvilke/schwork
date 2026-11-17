@@ -1,0 +1,280 @@
+---
+id: income-statement-sole-traders
+title: "5.1 Drawing Up the Income Statement for Sole Traders"
+sidebar_label: "5.1 Sole-Trader Income Statement"
+sidebar_position: 1
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 5"
+  section="Financial Statements of the Sole-Trader — Preparation"
+  code="POA-S5-01"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="30 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+The **Income Statement** (formerly called the *Trading and Profit & Loss Account*) is the financial scoreboard of a trading sole trader. Presented in clean **vertical 3-column format**, it answers two vital questions in exact sequence: first, *"How much **Gross Profit** did we earn strictly from buying and reselling goods?"* and second, *"After adding other income and paying all operating expenses, what is our bottom-line **Net Profit** (or Net Loss)?"*
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | Two-part vertical Income Statement (**Trading Section** → Gross Profit; **Profit & Loss Section** → Net Profit), exact **Cost of Goods Sold (COGS)** math, and **Carriage Inwards vs. Carriage Outwards** placement |
+| **Exam Focus** | Constructing a spotless vertical Sole-Trader Income Statement from a Trial Balance + Closing Inventory note without accidentally mixing in Balance Sheet items! |
+| **Learning Outcome** | Draft a properly titled, arithmetically exact vertical Income Statement for any trading sole trader |
+
+<ObjectivesBox
+  id="poa-s5-01-obj"
+  objectives={[
+    'Write the exact required 2-line heading ("Income Statement for the year ended [Date]").',
+    'Calculate Net Sales, Net Purchases, Cost of Goods Available for Sale, Cost of Goods Sold (COGS), and Gross Profit accurately.',
+    'Place Carriage Inwards (Trading Section), Carriage Outwards (Expenses), Discount Allowed (Expenses), and Discount Received (Other Income) in their exact slots.',
+    'Filter out Balance Sheet items (Assets, Liabilities, Capital, Drawings) so ONLY revenues and expenses enter the Income Statement.',
+  ]}
+/>
+
+---
+
+## 1. Exact Vertical Income Statement Formulas & Tricky Placements
+
+<FormulaCard
+  title="Master Income Statement Equations"
+  onFormulaSheet={false}
+  summary="Compute Net Sales and Cost of Goods Sold first to find Gross Profit, then add Other Income and subtract Operating Expenses."
+>
+
+$$
+\text{Net Sales (Turnover)} = \text{Sales} - \text{Returns Inwards}
+$$
+
+$$
+\text{Net Purchases} = \text{Purchases} - \text{Returns Outwards} + \text{Carriage Inwards}
+$$
+
+$$
+\text{Cost of Goods Sold (COGS)} = \text{Opening Inventory} + \text{Net Purchases} - \text{Closing Inventory}
+$$
+
+$$
+\text{Gross Profit} = \text{Net Sales} - \text{Cost of Goods Sold}
+$$
+
+$$
+\text{Net Profit} = \text{Gross Profit} + \text{Other Income} - \text{Operating Expenses}
+$$
+
+</FormulaCard>
+
+### The Four Classic Exam Traps Inside an Income Statement
+
+| Tricky Item | Exact Income Statement Slot | Why? |
+| :--- | :--- | :--- |
+| **Carriage Inwards** | **Trading Section** — added directly to Purchases inside COGS! | Transport paid to bring stock IN is part of the direct cost of acquiring goods for sale |
+| **Carriage Outwards** | **Profit & Loss Section** — listed under **Operating Expenses**! | Shipping goods OUT to customers is a selling/distribution overhead, NOT a buying cost |
+| **Discount Received** | **Add: Other Income** *(directly below Gross Profit)* | Prompt-payment reward earned from suppliers increases overall profit |
+| **Discount Allowed** | **Less: Operating Expenses** | Prompt-payment allowance given to customers is a selling/finance cost |
+
+:::warning Never Put Drawings or Trade Receivables in an Income Statement!
+When drafting an Income Statement from a full Trial Balance, **leave out** every Balance Sheet account (Premises, Equipment, Debtors, Creditors, Bank, Cash, Loans, Capital, and Drawings)! Note one rare special adjustment: if the owner **took goods for personal use**, you deduct those **Goods for Own Use (Drawings)** from **Purchases** inside the Trading Section (and add them to Drawings on the Balance Sheet)!
+:::
+
+---
+
+## 2. Diagram 1: The Sole-Trader Two-Part Income Statement Waterfall
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-5/01-income-statement-waterfall.svg"
+  alt="Two-part waterfall diagram showing Part 1 Trading Section (Net Sales minus Cost of Goods Sold equals Gross Profit) flowing directly into Part 2 Profit and Loss Section (Gross Profit plus Other Income minus Operating Expenses equals Net Profit)."
+  caption="Diagram 1 (Static Reference): Memorize this exact top-to-bottom sequence — every line flows logically into the next until Net Profit drops into Owner’s Capital!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive 5-Stage Income Statement Builder
+
+<InteractiveDiagram
+  title="Interactive Flow: Step Through All 5 Blocks of a Vertical Income Statement"
+  layout="flow"
+  instruction="Click Blocks 1 to 5 to inspect how each subtotal is constructed and which figures live inside each column."
+  nodes={[
+    {
+      label: '1. Net Sales',
+      tag: 'Top Line',
+      tone: 'positive',
+      detail: 'Start at the very top with Sales Revenue and immediately subtract Returns Inwards (Sales Returns) to get Net Sales (also called Turnover).',
+      example: 'Sales $92,000 − Returns Inwards $2,000 = Net Sales $90,000 (placed in the rightmost column).',
+      examTip: 'Always check the heading first: "[Business Name] — Income Statement for the year ended 31 December 20XX"!',
+    },
+    {
+      label: '2. Cost of Goods Sold',
+      tag: 'Trading Cost',
+      tone: 'warning',
+      detail: 'Start with Opening Inventory (1 Jan), add Purchases, subtract Returns Outwards (and any goods taken by owner), add Carriage Inwards to get Cost of Goods Available for Sale, then SUBTRACT Closing Inventory (31 Dec)!',
+      example: 'Open Stock $8,000 + (Purch $55,000 − Ret Out $1,500 + Carr In $1,000 = $54,500) = $62,500 Available − Close Stock $9,500 = COGS $53,000.',
+      examTip: 'Never forget to SUBTRACT Closing Inventory — unsold goods sitting on shelves on Dec 31 were NOT sold this year!',
+    },
+    {
+      label: '3. Gross Profit',
+      tag: 'Trading Result',
+      tone: 'positive',
+      detail: 'Subtract Cost of Goods Sold from Net Sales. If Net Sales > COGS you earn a Gross Profit; if COGS > Net Sales you suffer a Gross Loss (shown in brackets).',
+      example: 'Net Sales $90,000 − COGS $53,000 = Gross Profit $37,000.',
+      examTip: 'Gross Profit tests strictly how well you buy and price merchandise — before counting rent, wages, or electricity!',
+    },
+    {
+      label: '4. Add: Other Income',
+      tag: 'Non-Trading +',
+      tone: 'positive',
+      detail: 'Directly below Gross Profit, add any non-trading revenues earned during the year: Discount Received, Rent Received, Commission Received, or Interest Received.',
+      example: 'Gross Profit $37,000 + Discount Received $600 + Commission Received $400 = Total Income $38,000.',
+      examTip: 'If a question has NO other income items, simply skip straight from Gross Profit to "Less: Operating Expenses"!',
+    },
+    {
+      label: '5. Less: Expenses → Net Profit',
+      tag: 'Bottom Line',
+      tone: 'warning',
+      detail: 'List all operating expenses in the middle column (Wages, Rent, Utilities, Insurance, Carriage Outwards, Discount Allowed, Bad Debts, Advertising), sum them into Total Expenses in the right column, and subtract to find Net Profit!',
+      example: 'Total Income $38,000 − Total Expenses $23,500 = Net Profit $14,500 (double-underlined!).',
+      examTip: 'If Total Expenses exceed Total Income, label the final line "NET LOSS" in brackets — it reduces Capital on the Balance Sheet!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Preparing a Complete Sole-Trader Vertical Income Statement From a Trial Balance"
+  marks={14}
+  problem={
+    <>
+      <p>
+        <strong>Question:</strong> The following balances were extracted from the Trial Balance of
+        <strong> OceanBreeze Traders</strong> as at <strong>31 December 2026</strong>:
+      </p>
+      <ul>
+        <li>Sales: $124,000 &nbsp;|&nbsp; Returns Inwards: $4,000 &nbsp;|&nbsp; Purchases: $72,000</li>
+        <li>Returns Outwards: $2,500 &nbsp;|&nbsp; Carriage Inwards: $1,500 &nbsp;|&nbsp; Opening Inventory (1 Jan): $11,000</li>
+        <li>Discount Received: $800 &nbsp;|&nbsp; Commission Received: $1,200</li>
+        <li>Wages &amp; Salaries: $18,400 &nbsp;|&nbsp; Shop Rent: $9,600 &nbsp;|&nbsp; Electricity &amp; Water: $3,100</li>
+        <li>Carriage Outwards: $1,900 &nbsp;|&nbsp; Discount Allowed: $950 &nbsp;|&nbsp; General Office Expenses: $2,050</li>
+        <li><em>Extra balances also on Trial Balance:</em> Delivery Van $25,000; Capital $60,000; Drawings $7,000.</li>
+        <li><strong>Note:</strong> Closing Inventory at 31 December 2026 was valued at <strong>$14,000</strong>.</li>
+      </ul>
+      <p>
+        Prepare the vertical <strong>Income Statement of OceanBreeze Traders for the year ended
+        31 December 2026</strong>. <em>[14 marks]</em>
+      </p>
+    </>
+  }
+>
+
+*(First skip the 3 Balance Sheet decoys: Delivery Van, Capital, and Drawings do NOT belong on an Income Statement!)*
+
+**OceanBreeze Traders**
+**Income Statement for the year ended 31 December 2026** *(1 mark for exact 2-line heading)*
+
+| Details | $ | $ | $ |
+| :--- | ---: | ---: | ---: |
+| Sales | | | 124,000 |
+| Less: Returns Inwards | | | (4,000) |
+| **Net Sales (Turnover)** *(1 mark)* | | | **120,000** |
+| **Less: Cost of Goods Sold** | | | |
+| Opening Inventory (1 Jan 2026) | | 11,000 | |
+| Purchases | 72,000 | | |
+| Less: Returns Outwards | (2,500) | | |
+| | 69,500 | | |
+| Add: Carriage Inwards | 1,500 | 71,000 | |
+| *Cost of Goods Available for Sale* | | *82,000* | |
+| Less: Closing Inventory (31 Dec 2026) | | (14,000) | |
+| **Cost of Goods Sold** *(4 marks)* | | | **(68,000)** |
+| **Gross Profit** *(1 mark)* | | | **52,000** |
+| **Add: Other Income** *(2 marks)* | | | |
+| Discount Received | | 800 | |
+| Commission Received | | 1,200 | 2,000 |
+| | | | **54,000** |
+| **Less: Operating Expenses** *(4 marks)* | | | |
+| Wages &amp; Salaries | | 18,400 | |
+| Shop Rent | | 9,600 | |
+| Electricity &amp; Water | | 3,100 | |
+| Carriage Outwards | | 1,900 | |
+| Discount Allowed | | 950 | |
+| General Office Expenses | | 2,050 | **(36,000)** |
+| **Net Profit for the Year** *(1 mark)* | | | **$18,000** |
+
+*(Verification: Net Sales $120,000 − COGS $68,000 = Gross Profit $52,000; + Other Income $2,000 = $54,000; − Total Expenses `18,400+9,600+3,100+1,900+950+2,050 = $36,000` = **Net Profit $18,000** ✓!)*
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Sole-Trader Income Statements"
+  items={[
+    {
+      statement: 'Carriage Outwards is added to Purchases inside the Trading Section when calculating Cost of Goods Sold.',
+      answer: false,
+      explanation: 'Carriage INWARDS is added to Purchases in Cost of Goods Sold; Carriage OUTWARDS is a selling expense listed under Operating Expenses!',
+    },
+    {
+      statement: 'Closing Inventory is subtracted from Cost of Goods Available for Sale to arrive at Cost of Goods Sold.',
+      answer: true,
+      explanation: 'Closing Inventory represents unsold stock still sitting on shelves at year-end, so it must be deducted to find the cost of goods ACTUALLY SOLD.',
+    },
+    {
+      statement: 'Owner’s Drawings are listed as an Operating Expense in the Income Statement.',
+      answer: false,
+      explanation: 'Drawings are personal withdrawals by the owner (NOT a business operating cost) — they are deducted from Capital on the Balance Sheet!',
+    },
+    {
+      statement: 'Discount Received is added directly below Gross Profit as Other Income.',
+      answer: true,
+      explanation: 'Discount Received from suppliers increases overall Net Profit and sits in the "Add: Other Income" section.',
+    },
+    {
+      statement: 'If Cost of Goods Sold is larger than Net Sales, the business makes a Gross Loss.',
+      answer: true,
+      explanation: 'Gross Profit / (Loss) = Net Sales − COGS; when COGS > Net Sales, the negative result is a Gross Loss.',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s5-01-project"
+  title="Mini-Project: Year-End Income Statement for a Local Bookshop"
+  duration="30 mins"
+  scenario="Prepare the complete vertical Income Statement for 'PageTurner Books' for the year ended 31 December 2026 from these balances (careful — 3 Balance Sheet decoys are mixed in!): Sales $88,500; Returns Inwards $1,500; Opening Inventory $9,200; Purchases $51,000; Returns Outwards $1,200; Carriage Inwards $900; Closing Inventory $10,900; Rent Received from sublet $2,400; Discount Received $500; Staff Wages $15,600; Shop Rent $7,200; Advertising $1,800; Carriage Outwards $850; Discount Allowed $450; Insurance $1,100; Decoys: Shop Shelves $14,000, Trade Payables $4,500, Drawings $5,000."
+  steps={[
+    'Cross out the 3 Balance Sheet decoys first and note next to each one where it actually belongs.',
+    'Compute Net Sales, Net Purchases (including Carriage Inwards!), Cost of Goods Available for Sale, COGS, and Gross Profit cleanly.',
+    'List Other Income and all Operating Expenses in a neat 3-column vertical Income Statement with exact heading "PageTurner Books — Income Statement for the year ended 31 December 2026".',
+    'Double-underline the final Net Profit and write a 1-sentence owner’s takeaway comparing Gross Profit against Net Profit.',
+  ]}
+  deliverables={[
+    'List of 3 excluded Balance Sheet decoys with their proper classifications',
+    'A complete, properly titled 3-column Vertical Income Statement for PageTurner Books',
+    '1-sentence Executive Profit Summary',
+  ]}
+  rubric={[
+    'Net Sales = $87,000; COGS = $49,000 ($9,200 + [$51,000 − $1,200 + $900 = $50,700] − $10,900); Gross Profit = $38,000.',
+    'Other Income = $2,900 ($2,400 + $500) → Total Income = $40,900; Operating Expenses = $27,000 ($15,600+$7,200+$1,800+$850+$450+$1,100).',
+    'Final Net Profit = $13,900 ($40,900 − $27,000) cleanly double-underlined with zero Balance Sheet decoys included.',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **Heading:** Always write **`Income Statement for the year ended [Date]`**!
+- **Carriage Inwards** → add to Purchases (Trading Section); **Carriage Outwards** → Operating Expenses!
+- **Discount Received** → Add below Gross Profit; **Discount Allowed** → Operating Expenses!
+- Never mix **Drawings, Assets, or Liabilities** into an Income Statement!
+:::

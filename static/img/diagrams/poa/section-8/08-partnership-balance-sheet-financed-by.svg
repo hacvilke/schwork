@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" role="img" aria-label="Structural blueprint of a Partnership Balance Sheet highlighting the Financed By section with Fixed Capital, Current Accounts including debit overdrawn brackets, and Partner Loan">
+  <defs>
+    <style>
+      .title { font: 700 20px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .sub { font: 500 13px system-ui, -apple-system, sans-serif; fill: #4A5560; }
+      .hdr { font: 700 14px system-ui, -apple-system, sans-serif; fill: #FCFBF8; }
+      .h3 { font: 700 13px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .mono { font: 700 11.8px ui-monospace, SFMono-Regular, monospace; fill: #122440; }
+      .body { font: 500 12px system-ui, -apple-system, sans-serif; fill: #222222; }
+      .sage { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #2E6359; }
+      .coral { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #C84E24; }
+    </style>
+  </defs>
+
+  <rect width="920" height="460" rx="14" fill="#F8F6F1" stroke="#CEDCD6" stroke-width="1.5"/>
+  <text x="32" y="38" class="title">Partnership Balance Sheet Blueprint: Identical Top Half, Upgraded "Financed By"</text>
+  <text x="32" y="58" class="sub">Good news! Non-Current Assets, Current Assets, Current Liabilities &amp; Working Capital work 100% identically to a Sole Trader!</text>
+
+  <!-- Left: Top Half (Identical to Sole Trader) -->
+  <rect x="32" y="80" width="376" height="296" rx="11" fill="#FCFBF8" stroke="#4E8577" stroke-width="1.6"/>
+  <rect x="32" y="80" width="376" height="36" rx="10" fill="#4E8577"/>
+  <text x="220" y="103" text-anchor="middle" class="hdr">TOP HALF (Same as Sole Trader!)</text>
+
+  <text x="50" y="142" class="h3">Non-Current Assets (Cost − Accum. Depr.)</text>
+  <text x="390" y="142" text-anchor="end" class="mono">$115,000</text>
+  <line x1="50" y1="154" x2="390" y2="154" stroke="#CEDCD6"/>
+
+  <text x="50" y="180" class="body">Current Assets (Stock, Net AR, Bank)</text>
+  <text x="390" y="180" text-anchor="end" class="mono">42,000</text>
+  <text x="50" y="204" class="body">Less: Current Liabilities</text>
+  <text x="390" y="204" text-anchor="end" class="coral">(17,000)</text>
+  <text x="50" y="232" class="sage">Working Capital</text>
+  <text x="390" y="232" text-anchor="end" class="sage">25,000</text>
+  <line x1="50" y1="246" x2="390" y2="246" stroke="#1B365D" stroke-width="1.5"/>
+  <text x="50" y="272" class="h3">TOTAL NET ASSETS</text>
+  <text x="390" y="272" text-anchor="end" class="h3">$140,000</text>
+  <line x1="50" y1="280" x2="390" y2="280" stroke="#1B365D" stroke-width="2.2"/>
+
+  <rect x="48" y="298" width="344" height="60" rx="7" fill="#EBF2EF"/>
+  <text x="60" y="319" class="sage">Remember Loan Interest Owed to Partner:</text>
+  <text x="60" y="337" class="body">If unpaid, either Cr Partner's Current A/c OR list</text>
+  <text x="60" y="352" class="body">under Current Liabilities (never BOTH!)</text>
+
+  <!-- Equals Badge -->
+  <circle cx="434" cy="228" r="20" fill="#C84E24"/>
+  <text x="434" y="235" text-anchor="middle" style="font:700 22px system-ui; fill:#FCFBF8;">=</text>
+
+  <!-- Right: Financed By (Partnership Specific!) -->
+  <rect x="460" y="80" width="428" height="296" rx="11" fill="#FCFBF8" stroke="#1B365D" stroke-width="1.9"/>
+  <rect x="460" y="80" width="428" height="36" rx="10" fill="#1B365D"/>
+  <text x="674" y="103" text-anchor="middle" class="hdr">FINANCED BY (Partnership Specific!)</text>
+
+  <text x="478" y="138" class="h3">Capital Accounts (Fixed)</text>
+  <text x="490" y="158" class="body">Partner A: $60,000   |   Partner B: $40,000</text>
+  <text x="870" y="158" text-anchor="end" class="mono">100,000</text>
+
+  <text x="478" y="186" class="h3">Current Accounts (Closing Balances)</text>
+  <text x="490" y="206" class="sage">Partner A (Credit Bal): +$18,000</text>
+  <text x="490" y="226" class="coral">Partner B (Debit Overdrawn!): ($3,000)</text>
+  <text x="870" y="216" text-anchor="end" class="mono">15,000</text>
+
+  <text x="478" y="254" class="h3">Non-Current Liabilities</text>
+  <text x="490" y="274" class="body">Loan from Partner A (8%): $10,000</text>
+  <text x="490" y="294" class="body">5-Year Bank Loan: $15,000</text>
+  <text x="870" y="284" text-anchor="end" class="mono">25,000</text>
+
+  <line x1="478" y1="312" x2="870" y2="312" stroke="#1B365D" stroke-width="1.5"/>
+  <text x="478" y="336" class="h3">TOTAL CAPITAL EMPLOYED</text>
+  <text x="870" y="336" text-anchor="end" class="sage">$140,000 ✓</text>
+  <line x1="478" y1="344" x2="870" y2="344" stroke="#1B365D" stroke-width="2.2"/>
+
+  <!-- Bottom Crucial Rule -->
+  <rect x="32" y="394" width="856" height="48" rx="9" fill="#2E6359"/>
+  <text x="460" y="415" text-anchor="middle" class="hdr">Watch Two High-Mark Partnership Balance Sheet Rules:</text>
+  <text x="460" y="434" text-anchor="middle" style="font: 500 12.2px system-ui; fill: #FCFBF8;">1. A DEBIT Current Account balance is SUBTRACTED in brackets ($3,000)  ·  2. A Partner's LOAN sits under NON-CURRENT LIABILITIES (NOT Capital)!</text>
+</svg>

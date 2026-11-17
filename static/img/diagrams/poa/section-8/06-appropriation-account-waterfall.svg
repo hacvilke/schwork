@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 480" role="img" aria-label="Step-by-step vertical waterfall of a Partnership Profit and Loss Appropriation Account from Net Profit to Residual Profit split">
+  <defs>
+    <style>
+      .title { font: 700 20px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .sub { font: 500 13px system-ui, -apple-system, sans-serif; fill: #4A5560; }
+      .hdr { font: 700 14px system-ui, -apple-system, sans-serif; fill: #FCFBF8; }
+      .h3 { font: 700 13px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .mono { font: 700 12px ui-monospace, SFMono-Regular, monospace; fill: #122440; }
+      .body { font: 500 12px system-ui, -apple-system, sans-serif; fill: #222222; }
+      .sage { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #2E6359; }
+      .coral { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #C84E24; }
+    </style>
+  </defs>
+
+  <rect width="920" height="480" rx="14" fill="#F8F6F1" stroke="#CEDCD6" stroke-width="1.5"/>
+  <text x="32" y="38" class="title">Partnership Profit &amp; Loss Appropriation Account Waterfall</text>
+  <text x="32" y="58" class="sub">Prepared RIGHT BELOW the Income Statement to distribute Net Profit fairly among partners according to the Partnership Agreement.</text>
+
+  <!-- Main Vertical Waterfall -->
+  <!-- Step 1: Net Profit -->
+  <rect x="44" y="82" width="520" height="48" rx="9" fill="#1B365D"/>
+  <text x="64" y="111" class="hdr">1. START: Net Profit for the Year (from Income Statement)</text>
+  <text x="546" y="111" text-anchor="end" style="font:700 15px ui-monospace, monospace; fill:#F5A352;">$54,000</text>
+
+  <!-- Step 2: ADD Interest on Drawings -->
+  <rect x="44" y="142" width="520" height="58" rx="9" fill="#EBF2EF" stroke="#2E6359" stroke-width="1.6"/>
+  <text x="64" y="166" class="sage">2. ADD: Interest on Drawings (Penalty PAID BY Partners → Pool UP!)</text>
+  <text x="64" y="186" class="body">   Partner A ($600) + Partner B ($400) = +$1,000  →  Total Pool = $55,000</text>
+  <text x="546" y="176" text-anchor="end" class="sage">+$1,000</text>
+
+  <!-- Step 3: LESS Appropriations -->
+  <rect x="44" y="212" width="520" height="92" rx="9" fill="#FFF3EE" stroke="#C84E24" stroke-width="1.6"/>
+  <text x="64" y="236" class="coral">3. LESS: Priority Appropriations (Pool DOWN!)</text>
+  <text x="64" y="258" class="body">• Interest on Capital:  A ($4,000) + B ($3,000) = ($7,000)</text>
+  <text x="64" y="278" class="body">• Partner Salaries:  Partner B ($12,000)</text>
+  <text x="64" y="295" class="body">• Partner Commission / Bonus (if any):  $0</text>
+  <text x="546" y="266" text-anchor="end" class="coral">($19,000)</text>
+
+  <!-- Step 4: Residual Profit -->
+  <rect x="44" y="316" width="520" height="82" rx="9" fill="#FCFBF8" stroke="#2E6359" stroke-width="2"/>
+  <text x="64" y="340" class="h3">4. RESIDUAL PROFIT TO SHARE ($55,000 − $19,000 = $36,000)</text>
+  <text x="64" y="362" class="sage">   Split in Agreed Ratio (e.g. 3 : 2) → Transferred to Current Accounts:</text>
+  <text x="64" y="382" class="mono">   Partner A (3/5): $21,600   |   Partner B (2/5): $14,400</text>
+  <text x="546" y="340" text-anchor="end" class="sage">$36,000</text>
+
+  <!-- Right Side: Exam Trap Callout Box -->
+  <rect x="590" y="82" width="298" height="316" rx="11" fill="#FCFBF8" stroke="#C84E24" stroke-width="1.8"/>
+  <rect x="590" y="82" width="298" height="36" rx="10" fill="#C84E24"/>
+  <text x="739" y="105" text-anchor="middle" class="hdr">⚠ 3 Classic Appropriation Traps!</text>
+
+  <text x="606" y="142" class="coral">TRAP 1: Drawings Itself!</text>
+  <text x="606" y="160" class="body">NEVER put Drawings in Appropriation!</text>
+  <text x="606" y="176" class="body">ONLY Interest on Drawings goes here!</text>
+  <text x="606" y="192" class="sage">(Drawings goes straight to Current A/c)</text>
+
+  <line x1="606" y1="206" x2="872" y2="206" stroke="#CEDCD6"/>
+
+  <text x="606" y="228" class="coral">TRAP 2: Interest on Partner's LOAN!</text>
+  <text x="606" y="246" class="body">NEVER put Loan Interest in Appropriation!</text>
+  <text x="606" y="262" class="body">Deduct it as an Expense in the</text>
+  <text x="606" y="278" class="sage">INCOME STATEMENT BEFORE Net Profit!</text>
+
+  <line x1="606" y1="292" x2="872" y2="292" stroke="#CEDCD6"/>
+
+  <text x="606" y="314" class="coral">TRAP 3: Double-Entry Direction!</text>
+  <text x="606" y="332" class="body">Whatever is ADDED here (Int. on Dr.)</text>
+  <text x="606" y="348" class="body">is DEBITED to Current A/c; whatever</text>
+  <text x="606" y="364" class="sage">is DEDUCTED here is CREDITED to Current!</text>
+
+  <!-- Bottom Sign Check -->
+  <rect x="32" y="416" width="856" height="44" rx="9" fill="#2E6359"/>
+  <text x="460" y="443" text-anchor="middle" style="font: 700 12.8px system-ui; fill: #FCFBF8;">Final Total Proof: Interest on Capital ($7k) + Salary ($12k) + Profit Shares ($36k) − Int. on Drawings ($1k) = Net Profit ($54k) ✓!</text>
+</svg>

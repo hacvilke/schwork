@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 430" fill="none" role="img" aria-label="Posting Flow from Books of Original Entry into Sales, Purchases, and General Ledgers">
+  <rect width="820" height="430" rx="12" fill="#1B365D"/>
+  <rect x="14" y="14" width="792" height="402" rx="10" stroke="#2D507C" stroke-width="1.2"/>
+
+  <!-- Header -->
+  <text x="34" y="46" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="18" font-weight="700">Division of the Ledger: Posting From Books of Entry</text>
+  <text x="34" y="66" fill="#9DD9CB" font-family="monospace" font-size="11.5">HOW PRIME BOOKS SPLIT CLEANLY INTO SUBSIDIARY LEDGERS AND THE GENERAL LEDGER</text>
+
+  <!-- Top Row: Books of Original Entry -->
+  <text x="34" y="92" fill="#F5A352" font-family="monospace" font-size="10.5" font-weight="700">STAGE 2 · BOOKS OF ORIGINAL ENTRY</text>
+
+  <rect x="34" y="102" width="176" height="58" rx="8" fill="#122440" stroke="#6BC4B0" stroke-width="1.5"/>
+  <text x="122" y="124" text-anchor="middle" fill="#6BC4B0" font-family="system-ui, sans-serif" font-size="11.5" font-weight="700">Sales &amp; Ret. Inwards</text>
+  <text x="122" y="144" text-anchor="middle" fill="#A5C0D6" font-family="system-ui, sans-serif" font-size="10">Credit customer trade</text>
+
+  <rect x="226" y="102" width="176" height="58" rx="8" fill="#122440" stroke="#F5A352" stroke-width="1.5"/>
+  <text x="314" y="124" text-anchor="middle" fill="#F5A352" font-family="system-ui, sans-serif" font-size="11.5" font-weight="700">Purchases &amp; Ret. Out</text>
+  <text x="314" y="144" text-anchor="middle" fill="#A5C0D6" font-family="system-ui, sans-serif" font-size="10">Credit supplier trade</text>
+
+  <rect x="418" y="102" width="176" height="58" rx="8" fill="#122440" stroke="#8CC4B4" stroke-width="1.5"/>
+  <text x="506" y="124" text-anchor="middle" fill="#9DD9CB" font-family="system-ui, sans-serif" font-size="11.5" font-weight="700">Cash &amp; Petty Cash</text>
+  <text x="506" y="144" text-anchor="middle" fill="#A5C0D6" font-family="system-ui, sans-serif" font-size="10">Receipts, payments, disc.</text>
+
+  <rect x="610" y="102" width="176" height="58" rx="8" fill="#122440" stroke="#6BC4B0" stroke-width="1.5"/>
+  <text x="698" y="124" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="11.5" font-weight="700">General Journal</text>
+  <text x="698" y="144" text-anchor="middle" fill="#A5C0D6" font-family="system-ui, sans-serif" font-size="10">Assets, errors, opening</text>
+
+  <!-- Routing Arrows -->
+  <path d="M122 162 V216" stroke="#6BC4B0" stroke-width="2.2"/>
+  <path d="M116 210 L122 219 L128 210" fill="none" stroke="#6BC4B0" stroke-width="2"/>
+
+  <path d="M314 162 L390 216" stroke="#F5A352" stroke-width="2.2"/>
+  <path d="M383 216 L392 218 L389 209" fill="none" stroke="#F5A352" stroke-width="2"/>
+
+  <!-- Totals to General Ledger -->
+  <path d="M166 162 L630 216" stroke="#6BC4B0" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <path d="M358 162 L650 216" stroke="#F5A352" stroke-width="1.5" stroke-dasharray="5 4"/>
+  <path d="M506 162 L668 216" stroke="#9DD9CB" stroke-width="2"/>
+  <path d="M698 162 V216" stroke="#FFFFFF" stroke-width="2.2"/>
+  <path d="M692 210 L698 219 L704 210" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+
+  <!-- Bottom Row: The Three Ledgers -->
+  <text x="34" y="210" fill="#6BC4B0" font-family="monospace" font-size="10.5" font-weight="700">STAGE 3 · THE THREE LEDGERS</text>
+
+  <!-- Sales Ledger -->
+  <rect x="34" y="224" width="234" height="168" rx="10" fill="#122440" stroke="#6BC4B0" stroke-width="1.8"/>
+  <rect x="34" y="224" width="234" height="32" rx="9" fill="#4E8577"/>
+  <text x="151" y="245" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="11" font-weight="800">SALES LEDGER (SL)</text>
+  <text x="48" y="274" fill="#9DD9CB" font-family="monospace" font-size="9.5" font-weight="700">SUBSIDIARY · DEBTORS</text>
+  <text x="48" y="295" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="11">• Personal accounts of credit</text>
+  <text x="48" y="310" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="11">  customers (Trade Receivables)</text>
+  <text x="48" y="332" fill="#A5C0D6" font-family="system-ui, sans-serif" font-size="10.5">• Dr: Credit Sales</text>
+  <text x="48" y="348" fill="#A5C0D6" font-family="system-ui, sans-serif" font-size="10.5">• Cr: Cash/Cheque paid, Disc.</text>
+  <text x="48" y="363" fill="#A5C0D6" font-family="system-ui, sans-serif" font-size="10.5">  Allowed, Returns Inwards</text>
+  <text x="48" y="382" fill="#6BC4B0" font-family="monospace" font-size="9.5">Normal Balance: DEBIT</text>
+
+  <!-- Purchases Ledger -->
+  <rect x="292" y="224" width="234" height="168" rx="10" fill="#122440" stroke="#F5A352" stroke-width="1.8"/>
+  <rect x="292" y="224" width="234" height="32" rx="9" fill="#C84E24"/>
+  <text x="409" y="245" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="11" font-weight="800">PURCHASES LEDGER (PL)</text>
+  <text x="306" y="274" fill="#F5A352" font-family="monospace" font-size="9.5" font-weight="700">SUBSIDIARY · CREDITORS</text>
+  <text x="306" y="295" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="11">• Personal accounts of credit</text>
+  <text x="306" y="310" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="11">  suppliers (Trade Payables)</text>
+  <text x="306" y="332" fill="#A5C0D6" font-family="system-ui, sans-serif" font-size="10.5">• Cr: Credit Purchases</text>
+  <text x="306" y="348" fill="#A5C0D6" font-family="system-ui, sans-serif" font-size="10.5">• Dr: Cash/Cheque paid, Disc.</text>
+  <text x="306" y="363" fill="#A5C0D6" font-family="system-ui, sans-serif" font-size="10.5">  Received, Returns Outwards</text>
+  <text x="306" y="382" fill="#F5A352" font-family="monospace" font-size="9.5">Normal Balance: CREDIT</text>
+
+  <!-- General Ledger -->
+  <rect x="550" y="224" width="236" height="168" rx="10" fill="#122440" stroke="#8CC4B4" stroke-width="1.8"/>
+  <rect x="550" y="224" width="236" height="32" rx="9" fill="#2E6359"/>
+  <text x="668" y="245" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="11" font-weight="800">GENERAL LEDGER (GL)</text>
+  <text x="564" y="274" fill="#9DD9CB" font-family="monospace" font-size="9.5" font-weight="700">REAL, NOMINAL &amp; CAPITAL</text>
+  <text x="564" y="295" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="11">• All Impersonal Accounts:</text>
+  <text x="564" y="311" fill="#A5C0D6" font-family="system-ui, sans-serif" font-size="10.5">  Sales, Purchases, Returns,</text>
+  <text x="564" y="327" fill="#A5C0D6" font-family="system-ui, sans-serif" font-size="10.5">  Rent, Wages, Vans, Machinery</text>
+  <text x="564" y="346" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="11">• Plus Owner’s Capital, Drawings</text>
+  <text x="564" y="362" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="11">  &amp; Long-Term Bank Loans</text>
+  <text x="564" y="382" fill="#9DD9CB" font-family="monospace" font-size="9.5">Master Ledger for Trial Balance</text>
+</svg>

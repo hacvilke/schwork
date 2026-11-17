@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 420" fill="none" role="img" aria-label="Flow from Sales and Purchases Journals to Subsidiary and General Ledgers">
+  <rect width="820" height="420" rx="12" fill="#1B365D"/>
+  <rect x="14" y="14" width="792" height="392" rx="10" stroke="#2D507C" stroke-width="1.2"/>
+
+  <!-- Header -->
+  <text x="34" y="46" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="18" font-weight="700">Recording &amp; Posting: Sales Journal &amp; Purchases Journal Flow</text>
+  <text x="34" y="66" fill="#9DD9CB" font-family="monospace" font-size="11.5">INDIVIDUAL ROWS POST DAILY TO PERSONAL ACCOUNTS · MONTHLY TOTAL POSTS ONCE TO GENERAL LEDGER</text>
+
+  <!-- Left Side: Sales Journal -->
+  <rect x="34" y="88" width="364" height="176" rx="10" fill="#122440" stroke="#6BC4B0" stroke-width="1.8"/>
+  <rect x="34" y="88" width="364" height="30" rx="10" fill="#4E8577"/>
+  <text x="216" y="108" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="11" font-weight="700">SALES JOURNAL (CREDIT SALES ONLY)</text>
+
+  <g font-family="monospace" font-size="10">
+    <text x="46" y="136" fill="#9DD9CB" font-weight="700">Date   Customer         Inv#   Folio   Amount</text>
+    <line x1="44" y1="143" x2="388" y2="143" stroke="#2D507C"/>
+    <text x="46" y="160" fill="#DCE8F2">May 02  K. Brown         101    SL1     $800</text>
+    <text x="46" y="179" fill="#DCE8F2">May 11  Apex Mart        102    SL2   $1,200</text>
+    <text x="46" y="198" fill="#DCE8F2">May 24  J. Patel         103    SL3     $500</text>
+    <line x1="44" y1="210" x2="388" y2="210" stroke="#6BC4B0"/>
+    <text x="46" y="228" fill="#F5A352" font-weight="700">May 31  Transfer to Sales A/c   GL4   $2,500</text>
+    <text x="46" y="250" fill="#A5C0D6" font-family="system-ui, sans-serif" font-size="10">✓ Net of Trade Discount  ✕ No cash sales / no fixed assets</text>
+  </g>
+
+  <!-- Arrows down from Sales Journal -->
+  <path d="M126 266 V296" stroke="#6BC4B0" stroke-width="2.2"/>
+  <path d="M120 290 L126 299 L132 290" fill="none" stroke="#6BC4B0" stroke-width="2" stroke-linecap="round"/>
+  <path d="M306 266 V296" stroke="#F5A352" stroke-width="2.2"/>
+  <path d="M300 290 L306 299 L312 290" fill="none" stroke="#F5A352" stroke-width="2" stroke-linecap="round"/>
+
+  <rect x="34" y="302" width="176" height="86" rx="8" fill="#122440" stroke="#6BC4B0" stroke-width="1.4"/>
+  <text x="122" y="322" text-anchor="middle" fill="#6BC4B0" font-family="monospace" font-size="10" font-weight="700">SALES LEDGER (DAILY)</text>
+  <text x="122" y="342" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="11" font-weight="700">DEBIT Each Customer</text>
+  <text x="122" y="360" text-anchor="middle" fill="#BFD4E4" font-family="system-ui, sans-serif" font-size="10">K. Brown $800 · Apex $1,200</text>
+  <text x="122" y="375" text-anchor="middle" fill="#BFD4E4" font-family="system-ui, sans-serif" font-size="10">J. Patel $500</text>
+
+  <rect x="222" y="302" width="176" height="86" rx="8" fill="#122440" stroke="#F5A352" stroke-width="1.4"/>
+  <text x="310" y="322" text-anchor="middle" fill="#F5A352" font-family="monospace" font-size="10" font-weight="700">GENERAL LEDGER (END)</text>
+  <text x="310" y="342" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="11" font-weight="700">CREDIT Sales A/c</text>
+  <text x="310" y="362" text-anchor="middle" fill="#F5A352" font-family="system-ui, sans-serif" font-size="12" font-weight="800">1 Single Total: $2,500</text>
+  <text x="310" y="378" text-anchor="middle" fill="#A5C0D6" font-family="system-ui, sans-serif" font-size="9.5">Saves ledger clutter!</text>
+
+  <!-- Right Side: Purchases Journal -->
+  <rect x="422" y="88" width="364" height="176" rx="10" fill="#122440" stroke="#F5A352" stroke-width="1.8"/>
+  <rect x="422" y="88" width="364" height="30" rx="10" fill="#C84E24"/>
+  <text x="604" y="108" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="11" font-weight="700">PURCHASES JOURNAL (CREDIT STOCK ONLY)</text>
+
+  <g font-family="monospace" font-size="10">
+    <text x="434" y="136" fill="#F5A352" font-weight="700">Date   Supplier         Inv#   Folio   Amount</text>
+    <line x1="432" y1="143" x2="776" y2="143" stroke="#2D507C"/>
+    <text x="434" y="160" fill="#DCE8F2">May 04  Prime Goods      881    PL1     $950</text>
+    <text x="434" y="179" fill="#DCE8F2">May 15  Island Supply    904    PL2     $650</text>
+    <text x="434" y="198" fill="#DCE8F2">May 28  Metro Imports    919    PL3     $400</text>
+    <line x1="432" y1="210" x2="776" y2="210" stroke="#F5A352"/>
+    <text x="434" y="228" fill="#6BC4B0" font-weight="700">May 31  Transfer to Purchases   GL7   $2,000</text>
+    <text x="434" y="250" fill="#A5C0D6" font-family="system-ui, sans-serif" font-size="10">✓ Goods for resale only  ✕ No cash purchases / no vans</text>
+  </g>
+
+  <!-- Arrows down from Purchases Journal -->
+  <path d="M514 266 V296" stroke="#F5A352" stroke-width="2.2"/>
+  <path d="M508 290 L514 299 L520 290" fill="none" stroke="#F5A352" stroke-width="2" stroke-linecap="round"/>
+  <path d="M694 266 V296" stroke="#6BC4B0" stroke-width="2.2"/>
+  <path d="M688 290 L694 299 L700 290" fill="none" stroke="#6BC4B0" stroke-width="2" stroke-linecap="round"/>
+
+  <rect x="422" y="302" width="176" height="86" rx="8" fill="#122440" stroke="#F5A352" stroke-width="1.4"/>
+  <text x="510" y="322" text-anchor="middle" fill="#F5A352" font-family="monospace" font-size="10" font-weight="700">PURCHASES LEDGER</text>
+  <text x="510" y="342" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="11" font-weight="700">CREDIT Each Supplier</text>
+  <text x="510" y="360" text-anchor="middle" fill="#BFD4E4" font-family="system-ui, sans-serif" font-size="10">Prime $950 · Island $650</text>
+  <text x="510" y="375" text-anchor="middle" fill="#BFD4E4" font-family="system-ui, sans-serif" font-size="10">Metro $400</text>
+
+  <rect x="610" y="302" width="176" height="86" rx="8" fill="#122440" stroke="#6BC4B0" stroke-width="1.4"/>
+  <text x="698" y="322" text-anchor="middle" fill="#6BC4B0" font-family="monospace" font-size="10" font-weight="700">GENERAL LEDGER (END)</text>
+  <text x="698" y="342" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="11" font-weight="700">DEBIT Purchases A/c</text>
+  <text x="698" y="362" text-anchor="middle" fill="#6BC4B0" font-family="system-ui, sans-serif" font-size="12" font-weight="800">1 Single Total: $2,000</text>
+  <text x="698" y="378" text-anchor="middle" fill="#A5C0D6" font-family="system-ui, sans-serif" font-size="9.5">Double entry balanced!</text>
+</svg>

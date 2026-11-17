@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 430" fill="none" role="img" aria-label="Ratio Analysis Diagnosis to Management Action Decision Matrix">
+  <rect width="820" height="430" rx="12" fill="#1B365D"/>
+  <rect x="14" y="14" width="792" height="402" rx="10" stroke="#2D507C" stroke-width="1.2"/>
+
+  <!-- Header -->
+  <text x="34" y="46" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="18" font-weight="700">From Ratio Diagnosis to Smart Business Recommendations</text>
+  <text x="34" y="66" fill="#9DD9CB" font-family="monospace" font-size="11.5">SPOT THE WEAK SIGNAL → IDENTIFY THE ROOT CAUSE → RECOMMEND SPECIFIC ACTIONS</text>
+
+  <!-- Column Headers -->
+  <rect x="34" y="88" width="218" height="30" rx="7" fill="#C84E24"/>
+  <text x="143" y="108" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="11" font-weight="800">WARNING SIGNAL</text>
+
+  <rect x="264" y="88" width="224" height="30" rx="7" fill="#2E6359"/>
+  <text x="376" y="108" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="11" font-weight="800">LIKELY ROOT CAUSE</text>
+
+  <rect x="500" y="88" width="286" height="30" rx="7" fill="#4E8577"/>
+  <text x="643" y="108" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="11" font-weight="800">CONCRETE ACTION PLAN</text>
+
+  <!-- Row 1: Falling GP % -->
+  <rect x="34" y="128" width="218" height="56" rx="8" fill="#122440" stroke="#F5A352"/>
+  <text x="48" y="150" fill="#F5A352" font-family="system-ui, sans-serif" font-size="12" font-weight="800">Falling Gross Profit %</text>
+  <text x="48" y="168" fill="#BFD4E4" font-family="system-ui, sans-serif" font-size="10">e.g. dropped 40% → 28%</text>
+
+  <rect x="264" y="128" width="224" height="56" rx="8" fill="#122440" stroke="#4E8577"/>
+  <text x="276" y="149" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="10.5">Supplier prices rose, heavy price</text>
+  <text x="276" y="166" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="10.5">cutting, or stock theft/spoilage</text>
+
+  <rect x="500" y="128" width="286" height="56" rx="8" fill="#132F34" stroke="#6BC4B0"/>
+  <text x="512" y="149" fill="#6BC4B0" font-family="system-ui, sans-serif" font-size="10.5" font-weight="700">• Negotiate cheaper bulk suppliers</text>
+  <text x="512" y="166" fill="#EBF2EF" font-family="system-ui, sans-serif" font-size="10.5">• Review selling mark-ups &amp; tighten stock security</text>
+
+  <!-- Row 2: Falling NP % (while GP % stable) -->
+  <rect x="34" y="194" width="218" height="56" rx="8" fill="#122440" stroke="#F5A352"/>
+  <text x="48" y="216" fill="#F5A352" font-family="system-ui, sans-serif" font-size="12" font-weight="800">Low Net Profit %</text>
+  <text x="48" y="234" fill="#BFD4E4" font-family="system-ui, sans-serif" font-size="10">GP % steady, NP % fell sharply</text>
+
+  <rect x="264" y="194" width="224" height="56" rx="8" fill="#122440" stroke="#4E8577"/>
+  <text x="276" y="215" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="10.5">Runaway operating overheads</text>
+  <text x="276" y="232" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="10.5">(wages, rent, utilities, bad debts)</text>
+
+  <rect x="500" y="194" width="286" height="56" rx="8" fill="#132F34" stroke="#6BC4B0"/>
+  <text x="512" y="215" fill="#6BC4B0" font-family="system-ui, sans-serif" font-size="10.5" font-weight="700">• Audit &amp; cut wasteful overheads / energy bills</text>
+  <text x="512" y="232" fill="#EBF2EF" font-family="system-ui, sans-serif" font-size="10.5">• Tighten credit screening to reduce bad debts</text>
+
+  <!-- Row 3: Slow Stock Turnover -->
+  <rect x="34" y="260" width="218" height="56" rx="8" fill="#122440" stroke="#F5A352"/>
+  <text x="48" y="282" fill="#F5A352" font-family="system-ui, sans-serif" font-size="12" font-weight="800">Slow Stock Turnover</text>
+  <text x="48" y="300" fill="#BFD4E4" font-family="system-ui, sans-serif" font-size="10">e.g. fell from 8× → 3× / yr</text>
+
+  <rect x="264" y="260" width="224" height="56" rx="8" fill="#122440" stroke="#4E8577"/>
+  <text x="276" y="281" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="10.5">Over-buying slow/outdated goods</text>
+  <text x="276" y="298" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="10.5">or weak marketing demand</text>
+
+  <rect x="500" y="260" width="286" height="56" rx="8" fill="#132F34" stroke="#6BC4B0"/>
+  <text x="512" y="281" fill="#6BC4B0" font-family="system-ui, sans-serif" font-size="10.5" font-weight="700">• Run clearance sales on slow-moving lines</text>
+  <text x="512" y="298" fill="#EBF2EF" font-family="system-ui, sans-serif" font-size="10.5">• Order smaller, more frequent batches (lean stock)</text>
+
+  <!-- Row 4: Weak Acid Test (< 1:1) -->
+  <rect x="34" y="326" width="218" height="62" rx="8" fill="#122440" stroke="#C84E24" stroke-width="1.6"/>
+  <text x="48" y="348" fill="#F5A352" font-family="system-ui, sans-serif" font-size="12" font-weight="800">Weak Acid-Test (&lt; 1:1)</text>
+  <text x="48" y="366" fill="#BFD4E4" font-family="system-ui, sans-serif" font-size="10">Current 2.1:1 vs. Acid 0.6:1</text>
+
+  <rect x="264" y="326" width="224" height="62" rx="8" fill="#122440" stroke="#4E8577"/>
+  <text x="276" y="347" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="10.5">Cash trapped in excessive stock,</text>
+  <text x="276" y="364" fill="#DCE8F2" font-family="system-ui, sans-serif" font-size="10.5">slow debtors, or high drawings</text>
+
+  <rect x="500" y="326" width="286" height="62" rx="8" fill="#132F34" stroke="#6BC4B0"/>
+  <text x="512" y="346" fill="#6BC4B0" font-family="system-ui, sans-serif" font-size="10.5" font-weight="700">• Chase overdue receivables (offer 2% cash disc.)</text>
+  <text x="512" y="362" fill="#EBF2EF" font-family="system-ui, sans-serif" font-size="10.5">• Cut owner drawings / inject capital / convert</text>
+  <text x="512" y="377" fill="#EBF2EF" font-family="system-ui, sans-serif" font-size="10.5">  short-term overdraft into long-term loan</text>
+</svg>

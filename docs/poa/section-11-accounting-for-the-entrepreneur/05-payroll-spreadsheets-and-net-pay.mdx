@@ -1,0 +1,254 @@
+---
+id: payroll-spreadsheets-and-net-pay
+title: "11.5 Preparing Spreadsheets for Net Pay After Deductions"
+sidebar_label: "11.5 Payroll Spreadsheets & Net Pay"
+sidebar_position: 5
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 11"
+  section="Accounting for the Entrepreneur — Payroll Accounting"
+  code="POA-S11-05"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="25 min"
+  difficulty="Exam Mastery"
+/>
+
+:::info Essential Understanding
+Once you know every worker’s **Gross Pay**, you assemble the entire team into a **Payroll Spreadsheet Register** — subtracting **Statutory Deductions** (`PAYE`, `NIS`) and **Voluntary Deductions** (`Credit Union`, `Health Plan`, `Union Dues`) to compute exact **Net Pay (Take-Home Pay)**! Every payroll spreadsheet gives you an ironclad **Cross-Cast Check** (`Total Gross − Total Deductions = Total Net Pay`) AND feeds directly into ONE crisp **General Journal Payroll Entry**!
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | Building a **Payroll Spreadsheet Register** with exact **Excel Formulas** (`=B3+C3`, `=MAX(0,(D3-600)*30%)`, `=D3*3%`, `=SUM(E3:G3)`, `=D3-H3`), **Cross-Casting**, and the **Payroll General Journal Entry** |
+| **Exam Focus** | Computing **Taxable Income (`Gross − Tax-Free Allowance`)** BEFORE multiplying by the PAYE `%`, cross-casting column totals, and ALWAYS debiting **GROSS Pay** (never Net Pay!) to `Wages & Salaries Expense` |
+| **Learning Outcome** | Construct an accurate multi-employee Payroll Spreadsheet with spreadsheet formulas, verify cross-cast totals, and record the resulting General Journal entry |
+
+<ObjectivesBox
+  id="poa-s11-05-obj"
+  objectives={[
+    'Calculate Taxable Income accurately by subtracting tax-free allowances from Gross Pay before applying the PAYE tax rate.',
+    'Design a multi-employee Payroll Spreadsheet Register using exact spreadsheet formulas (=SUM, =MAX, cell references).',
+    'Verify payroll arithmetic using both vertical column sums and horizontal cross-casting (Total Gross − Total Deductions = Total Net Pay).',
+    'Prepare the General Journal entry transferring Payroll Register totals into Wages Expense, Payroll Liabilities, and Bank.',
+  ]}
+/>
+
+---
+
+## 1. Exact Payroll Formulas & General Journal Law
+
+<FormulaCard
+  title="Payroll Spreadsheet & Taxable Income Formulas"
+  onFormulaSheet={false}
+  summary="Never charge PAYE on the tax-free allowance — subtract the threshold FIRST!"
+>
+
+$$
+\text{Gross Pay} = \text{Basic Pay} + \text{Overtime / Bonus / Commission}
+$$
+
+$$
+\text{Taxable Income} = \max\left(0,\; \text{Gross Pay} - \text{Tax-Free Threshold}\right) \quad\Longrightarrow\quad \text{PAYE} = \text{Taxable Income} \times \text{Tax Rate \%}
+$$
+
+$$
+\textbf{Net Pay (Take-Home Pay)} = \text{Gross Pay} - \text{Total Deductions (Statutory + Voluntary)}
+$$
+
+</FormulaCard>
+
+### The #1 Payroll Accounting Rule (Journal Entry From Row Totals!)
+When you post the Payroll Register Totals into the **General Journal**:
+- **`Dr` Wages &amp; Salaries Expense** = **TOTAL GROSS PAY (`$3,000`)** *(The FULL cost of employing staff — NEVER Net Pay!)*
+- **`Cr` PAYE Tax Payable** *(Current Liability until paid to Tax Office!)* = **`$360`**
+- **`Cr` NIS Payable** *(Current Liability until paid to NIS!)* = **`$90`**
+- **`Cr` Voluntary Deductions / Credit Union Payable** *(Current Liability!)* = **`$150`**
+- **`Cr` Bank *(or Wages Payable)*** = **TOTAL NET PAY (`$2,400`)** *(Actual cash transferred to staff!)*
+- **Check:** `$3,000 Dr` = `$360 + $90 + $150 + $2,400 = $3,000 Cr` ✓!
+
+---
+
+## 2. Diagram 1: Payroll Spreadsheet Register & Exact Excel Formulas
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-11/05-payroll-spreadsheet-register.svg"
+  alt="Complete Payroll Spreadsheet Register displaying columns A through I with exact Excel formulas, three employees, cross-cast totals row, and the resulting General Journal entry."
+  caption="Diagram 1 (Static Reference): Memorize the formula strip in Row 2 AND the bottom navy journal rule — Dr Wages Expense ALWAYS gets GROSS Pay ($3,000), while Cr Bank gets NET Pay ($2,400)!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive 4-Step Payroll Spreadsheet Builder
+
+<InteractiveDiagram
+  title="Interactive Flow: Build & Verify Any Payroll Spreadsheet in 4 Exact Steps"
+  layout="flow"
+  instruction="Click Steps 1 to 4 to trace cell formulas, cross-casting, and General Ledger posting cleanly."
+  nodes={[
+    {
+      label: '1. Compute Gross Pay (Col D)',
+      tag: '=B3+C3',
+      tone: 'neutral',
+      detail: 'Enter each worker’s verified Basic Pay (Col B) and Overtime/Commission (Col C), then write "=B3+C3" in Col D (Gross Pay) and copy down!',
+      example: 'A. Brown: $800 + $200 = $1,000; M. Clarke: $1,200 + $0 = $1,200; T. Reid: $640 + $160 = $800 → Total Gross = $3,000!',
+      examTip: 'Always use dynamic cell references (=B3+C3) rather than hard-typing numbers so changes update automatically!',
+    },
+    {
+      label: '2. Apply Tax Threshold & NIS (Cols E–F)',
+      tag: 'Taxable Pay First!',
+      tone: 'warning',
+      detail: 'With a $600 weekly tax-free allowance and 30% PAYE on excess: "=MAX(0,(D3-600)*30%)" guarantees workers earning ≤$600 NEVER get a negative tax!',
+      example: 'A. Brown: ($1,000−$600)×30% = $120; M. Clarke: ($1,200−$600)×30% = $180; T. Reid: ($800−$600)×30% = $60! NIS (=D3*3%): $30, $36, $24!',
+      examTip: 'Using MAX(0, ...) or IF(D3>600, (D3-600)*30%, 0) earns instant praise on computerized accounting questions!',
+    },
+    {
+      label: '3. Sum Deductions & Find Net Pay (Cols H–I)',
+      tag: 'Cross-Cast Proof!',
+      tone: 'positive',
+      detail: 'Add all deductions horizontally ("=SUM(E3:G3)") in Col H, then subtract from Gross ("=D3-H3") in Col I for Net Pay! Finally sum every column vertically ("=SUM(B3:B5)") in Row 6!',
+      example: 'Cross-Cast Proof on Row 6: Total Gross ($3,000) − Total Deductions ($360 + $90 + $150 = $600) = Total Net Pay ($2,400) ✓!',
+      examTip: 'ALWAYS run the Row 6 cross-cast before moving on — it catches 100% of column addition mistakes instantly!',
+    },
+    {
+      label: '4. Post Row 6 to General Journal',
+      tag: 'Double Entry ✓',
+      tone: 'positive',
+      detail: 'Debit Wages & Salaries Expense with TOTAL GROSS ($3,000); Credit each Deduction Payable ($360, $90, $150) as Current Liabilities; Credit Bank with TOTAL NET PAY ($2,400)!',
+      example: 'Later when you remit taxes to government: Dr PAYE Payable $360 + Dr NIS Payable $90 / Cr Bank $450 — clearing the liabilities to $0!',
+      examTip: 'NEVER debit Net Pay ($2,400) to Wages Expense — the $600 withheld is still part of employee wages, simply diverted to government/credit union on their behalf!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Building a Complete Payroll Spreadsheet, Formulas & Journal Entries (HarborCraft Services)"
+  marks={14}
+  problem={
+    <>
+      <p>
+        <strong>Scenario:</strong> <strong>HarborCraft Services</strong> employs three weekly
+        staff. Statutory rules are: <strong>Tax-Free Allowance = $600/week</strong>;
+        <strong>PAYE Income Tax = 30%</strong> on weekly Gross Pay <em>above `$600`</em>;
+        <strong>NIS = 3% of total Gross Pay</strong>. Employee data for Week 12:
+      </p>
+      <ul>
+        <li><strong>Row 3 — A. Brown:</strong> Basic `$800`; Overtime `$200`; Voluntary Credit Union `$50`.</li>
+        <li><strong>Row 4 — M. Clarke:</strong> Basic `$1,200`; Overtime `$0`; Voluntary Health &amp; Union `$84`.</li>
+        <li><strong>Row 5 — T. Reid:</strong> Basic `$640`; Overtime `$160`; Voluntary Union Dues `$16`.</li>
+      </ul>
+      <ol>
+        <li>Prepare the complete <strong>Payroll Spreadsheet Register</strong> (Cols A–I, Rows 3–6) including the <strong>Cross-Cast Proof</strong>. <em>[8 marks]</em></li>
+        <li>Write the exact <strong>spreadsheet formulas</strong> required in Row 3 cells <code>D3</code>, <code>E3</code>, <code>F3</code>, <code>H3</code>, <code>I3</code>, and Total cell <code>I6</code>. <em>[3 marks]</em></li>
+        <li>Prepare the <strong>General Journal entry</strong> to record Week 12’s payroll paid via Direct Deposit. <em>[3 marks]</em></li>
+      </ol>
+    </>
+  }
+>
+
+### 1. HarborCraft Services — Weekly Payroll Spreadsheet Register *(8 marks)*
+
+| Row / Employee (`A`) | Basic (`B`) | OT (`C`) | **Gross (`D`)** | PAYE (`E`) | NIS (`F`) | Vol. (`G`) | **Tot. Ded (`H`)** | **Net Pay (`I`)** |
+| :--- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| **3 · A. Brown** | 800 | 200 | **1,000** | 120 | 30 | 50 | **200** | **800** |
+| **4 · M. Clarke** | 1,200 | 0 | **1,200** | 180 | 36 | 84 | **300** | **900** |
+| **5 · T. Reid** | 640 | 160 | **800** | 60 | 24 | 16 | **100** | **700** |
+| **6 · TOTALS** | **$2,640** | **$360** | **$3,000** | **$360** | **$90** | **$150** | **$600** | **$2,400** |
+
+- *PAYE Workings (`30%` on excess above `$600`):* A. Brown `30% × $400 = $120`; M. Clarke `30% × $600 = $180`; T. Reid `30% × $200 = $60`.
+- **Cross-Cast Verification:** Vertical Gross (`$3,000`) − Vertical Deductions (`$360 + $90 + $150 = $600`) = **`$2,400`** = Vertical Net Pay (`$800 + $900 + $700 = $2,400`) ✓!
+
+### 2. Exact Spreadsheet Formulas *(3 marks — 0.5 mark each)*
+- `D3` *(Gross Pay)*: `=B3+C3`
+- `E3` *(PAYE with threshold protection)*: `=MAX(0,(D3-600)*0.30)` *(or `=IF(D3>600,(D3-600)*0.30,0)`)*
+- `F3` *(NIS at 3%)*: `=D3*0.03`
+- `H3` *(Total Deductions)*: `=SUM(E3:G3)`
+- `I3` *(Net Pay)*: `=D3-H3`
+- `I6` *(Total Net Pay)*: `=SUM(I3:I5)`
+
+### 3. General Journal Entry for Week 12 Payroll *(3 marks)*
+
+| Details &amp; Narration | Dr ($) | Cr ($) |
+| :--- | ---: | ---: |
+| Wages &amp; Salaries Expense *(GROSS Payroll!)* | 3,000 | |
+| &nbsp;&nbsp;&nbsp;&nbsp;PAYE Income Tax Payable | | 360 |
+| &nbsp;&nbsp;&nbsp;&nbsp;NIS Payable | | 90 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Voluntary Deductions Payable *(Credit Union / Health / Union)* | | 150 |
+| &nbsp;&nbsp;&nbsp;&nbsp;Bank *(Direct Deposit — NET Pay)* | | 2,400 |
+| *Being Week 12 payroll expense, statutory &amp; voluntary liabilities, and net pay disbursed.* | | |
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Payroll Spreadsheets & Net Pay"
+  items={[
+    {
+      statement: 'When posting the Payroll Register totals to the General Journal, Wages & Salaries Expense is debited with TOTAL GROSS PAY, not Net Pay.',
+      answer: true,
+      explanation: 'Correct! Total Gross Pay is the true wage cost — deductions withheld are credited to Liability accounts until remitted, and Bank is credited with Net Pay!',
+    },
+    {
+      statement: 'If weekly Gross Pay is $500 and the weekly tax-free allowance is $600 (with 25% PAYE on excess), the employee pays $0 PAYE Income Tax.',
+      answer: true,
+      explanation: 'Yes — since $500 is below the $600 tax-free threshold, Taxable Income is $0 and PAYE = $0 (protected by =MAX(0, ...))!',
+    },
+    {
+      statement: 'In a payroll spreadsheet, Total Deductions is computed by subtracting Voluntary Deductions from Statutory Deductions.',
+      answer: false,
+      explanation: 'ADD them together (=SUM(E3:G3))! Both Statutory AND Voluntary deductions reduce Gross Pay to arrive at Net Pay!',
+    },
+    {
+      statement: 'Cross-casting checks that Vertical Total Gross Pay minus Vertical Total Deductions equals Vertical Total Net Pay.',
+      answer: true,
+      explanation: 'Spot on! Cross-casting verifies both horizontal row math and vertical column sums simultaneously!',
+    },
+    {
+      statement: 'Withheld PAYE Income Tax and NIS stay on the employer’s Balance Sheet as Current Assets until sent to the government.',
+      answer: false,
+      explanation: 'They are CURRENT LIABILITIES (owed to government authorities — NOT assets of the employer)!',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s11-05-project"
+  title="Mini-Project: Weekly Payroll Spreadsheet & Journal Entry for CoralBay Café"
+  duration="25 mins"
+  scenario="Prepare the complete Weekly Payroll Spreadsheet (Cols A–I, Rows 3–6) for 'CoralBay Café'. Statutory Rules: Weekly Tax-Free Allowance = $500; PAYE = 20% on Gross Pay ABOVE $500; NIS = 3% of total Gross Pay. Staff Data: (Row 3) L. Thomas — Basic $700, OT $100, Voluntary Credit Union $36; (Row 4) J. Henry — Basic $900, OT $100, Voluntary Health Plan $50; (Row 5) P. Dixon — Basic $500, OT $0, Voluntary Staff Club $25."
+  steps={[
+    'Build the complete 9-column Payroll Spreadsheet Register (Cols A–I) and total every money column in Row 6.',
+    'Write exact Excel formulas for Row 3 (D3, E3 using =MAX(0,...), F3, H3, I3) and prove that P. Dixon’s PAYE equals $0 cleanly!',
+    'Perform the Row 6 Cross-Cast Proof (Total Gross − Total Deductions = Total Net Pay).',
+    'Write the complete balanced General Journal entry recording CoralBay Café’s weekly payroll paid by Direct Deposit.',
+  ]}
+  deliverables={[
+    'Complete 9-column Payroll Spreadsheet Register for CoralBay Café',
+    'Row 3 Excel Formula Key + Cross-Cast Verification',
+    'Balanced General Journal Payroll Entry',
+  ]}
+  rubric={[
+    'Row values exact: L. Thomas (Gross $800, PAYE $60, NIS $24, Vol $36 → Ded $120 → Net $680); J. Henry (Gross $1,000, PAYE $100, NIS $30, Vol $50 → Ded $180 → Net $820); P. Dixon (Gross $500, PAYE $0, NIS $15, Vol $25 → Ded $40 → Net $460).',
+    'Row 6 Totals & Cross-Cast exact: Basic $2,100 + OT $200 = Gross $2,300; PAYE $160 + NIS $69 + Vol $111 = Tot Ded $340; Net Pay = $1,960 ($2,300 − $340 = $1,960 ✓!).',
+    'General Journal exact: Dr Wages Expense $2,300 / Cr PAYE Payable $160 / Cr NIS Payable $69 / Cr Voluntary Deductions Payable $111 / Cr Bank $1,960!',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **Taxable Income** = `MAX(0, Gross Pay − Tax-Free Threshold)` → THEN multiply by PAYE `%`!
+- **Cross-Cast Proof:** `Total Gross − Total Deductions = Total Net Pay`.
+- **Journal Rule:** `Dr Wages Expense` = **GROSS PAY**; `Cr Bank` = **NET PAY**; all deductions = **Current Liabilities**!
+:::

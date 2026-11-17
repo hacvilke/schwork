@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 440" fill="none" role="img" aria-label="The Six-Stage Continuous Accounting Cycle Diagram">
+  <rect width="820" height="440" rx="12" fill="#1B365D"/>
+  <rect x="14" y="14" width="792" height="412" rx="10" stroke="#2D507C" stroke-width="1.2"/>
+
+  <!-- Header -->
+  <text x="34" y="46" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="18" font-weight="700">The Continuous Accounting Cycle</text>
+  <text x="34" y="66" fill="#9DD9CB" font-family="monospace" font-size="11.5">REPEATED EVERY ACCOUNTING PERIOD FROM SOURCE DOCUMENTS TO FINAL REPORTS</text>
+
+  <!-- Center Hub -->
+  <circle cx="410" cy="246" r="64" fill="#122440" stroke="#F5A352" stroke-width="2.4"/>
+  <text x="410" y="238" text-anchor="middle" fill="#F5A352" font-family="monospace" font-size="11" font-weight="700">ACCOUNTING</text>
+  <text x="410" y="256" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-size="15" font-weight="800">CYCLE</text>
+  <text x="410" y="274" text-anchor="middle" fill="#9DD9CB" font-family="system-ui, sans-serif" font-size="10">Repeats Yearly</text>
+
+  <!-- Connector ring (dashed) -->
+  <ellipse cx="410" cy="246" rx="224" ry="122" stroke="#4E8577" stroke-width="1.8" stroke-dasharray="6 5"/>
+
+  <!-- Stage 1 (Top Left) -->
+  <rect x="44" y="92" width="218" height="72" rx="10" fill="#122440" stroke="#6BC4B0" stroke-width="1.8"/>
+  <rect x="44" y="92" width="218" height="22" rx="10" fill="#4E8577"/>
+  <text x="153" y="107" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="10.5" font-weight="700">STEP 1 · SOURCE DOCUMENTS</text>
+  <text x="153" y="132" text-anchor="middle" fill="#F4F7FA" font-family="system-ui, sans-serif" font-size="11.5" font-weight="600">Verify Business Events</text>
+  <text x="153" y="150" text-anchor="middle" fill="#A5C0D6" font-family="system-ui, sans-serif" font-size="10">Invoices, receipts, credit notes</text>
+
+  <!-- Arrow 1->2 -->
+  <path d="M266 128 H302" stroke="#F5A352" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M296 122 L305 128 L296 134" fill="none" stroke="#F5A352" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Stage 2 (Top Center) -->
+  <rect x="308" y="92" width="204" height="72" rx="10" fill="#122440" stroke="#6BC4B0" stroke-width="1.8"/>
+  <rect x="308" y="92" width="204" height="22" rx="10" fill="#4E8577"/>
+  <text x="410" y="107" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="10.5" font-weight="700">STEP 2 · BOOKS OF ENTRY</text>
+  <text x="410" y="132" text-anchor="middle" fill="#F4F7FA" font-family="system-ui, sans-serif" font-size="11.5" font-weight="600">Record Chronologically</text>
+  <text x="410" y="150" text-anchor="middle" fill="#A5C0D6" font-family="system-ui, sans-serif" font-size="10">Journals, Cash &amp; Day Books</text>
+
+  <!-- Arrow 2->3 -->
+  <path d="M516 128 H552" stroke="#F5A352" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M546 122 L555 128 L546 134" fill="none" stroke="#F5A352" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Stage 3 (Top Right) -->
+  <rect x="558" y="92" width="218" height="72" rx="10" fill="#122440" stroke="#6BC4B0" stroke-width="1.8"/>
+  <rect x="558" y="92" width="218" height="22" rx="10" fill="#4E8577"/>
+  <text x="667" y="107" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="10.5" font-weight="700">STEP 3 · POST TO LEDGERS</text>
+  <text x="667" y="132" text-anchor="middle" fill="#F4F7FA" font-family="system-ui, sans-serif" font-size="11.5" font-weight="600">Classify by T-Account</text>
+  <text x="667" y="150" text-anchor="middle" fill="#A5C0D6" font-family="system-ui, sans-serif" font-size="10">General, Sales &amp; Purchases Ledgers</text>
+
+  <!-- Arrow 3->4 (Down Right) -->
+  <path d="M667 168 V316" stroke="#F5A352" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M661 310 L667 319 L673 310" fill="none" stroke="#F5A352" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Stage 4 (Bottom Right) -->
+  <rect x="558" y="324" width="218" height="72" rx="10" fill="#122440" stroke="#F5A352" stroke-width="1.8"/>
+  <rect x="558" y="324" width="218" height="22" rx="10" fill="#2E6359"/>
+  <text x="667" y="339" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="10.5" font-weight="700">STEP 4 · TRIAL BALANCE</text>
+  <text x="667" y="364" text-anchor="middle" fill="#F4F7FA" font-family="system-ui, sans-serif" font-size="11.5" font-weight="600">Check Debit = Credit</text>
+  <text x="667" y="382" text-anchor="middle" fill="#A5C0D6" font-family="system-ui, sans-serif" font-size="10">List all closing ledger balances</text>
+
+  <!-- Arrow 4->5 (Bottom Right -> Center) -->
+  <path d="M554 360 H518" stroke="#F5A352" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M524 354 L515 360 L524 366" fill="none" stroke="#F5A352" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Stage 5 (Bottom Center) -->
+  <rect x="308" y="324" width="204" height="72" rx="10" fill="#122440" stroke="#F5A352" stroke-width="1.8"/>
+  <rect x="308" y="324" width="204" height="22" rx="10" fill="#C84E24"/>
+  <text x="410" y="339" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="10.5" font-weight="700">STEP 5 · ADJUSTMENTS</text>
+  <text x="410" y="364" text-anchor="middle" fill="#F4F7FA" font-family="system-ui, sans-serif" font-size="11.5" font-weight="600">Update Year-End Items</text>
+  <text x="410" y="382" text-anchor="middle" fill="#FDEFDF" font-family="system-ui, sans-serif" font-size="10">Accruals, prepayments, depreciation</text>
+
+  <!-- Arrow 5->6 (Bottom Center -> Left) -->
+  <path d="M304 360 H268" stroke="#F5A352" stroke-width="2.4" stroke-linecap="round"/>
+  <path d="M274 354 L265 360 L274 366" fill="none" stroke="#F5A352" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Stage 6 (Bottom Left) -->
+  <rect x="44" y="324" width="218" height="72" rx="10" fill="#122440" stroke="#F5A352" stroke-width="2"/>
+  <rect x="44" y="324" width="218" height="22" rx="10" fill="#C84E24"/>
+  <text x="153" y="339" text-anchor="middle" fill="#FFFFFF" font-family="monospace" font-size="10.5" font-weight="700">STEP 6 · FINAL STATEMENTS</text>
+  <text x="153" y="364" text-anchor="middle" fill="#F4F7FA" font-family="system-ui, sans-serif" font-size="11.5" font-weight="600">Report &amp; Close Books</text>
+  <text x="153" y="382" text-anchor="middle" fill="#FDEFDF" font-family="system-ui, sans-serif" font-size="10">Income Statement, Balance Sheet</text>
+
+  <!-- Arrow 6->1 (Up Left — Cycle Loops!) -->
+  <path d="M153 320 V172" stroke="#6BC4B0" stroke-width="2.4" stroke-dasharray="5 4" stroke-linecap="round"/>
+  <path d="M147 178 L153 169 L159 178" fill="none" stroke="#6BC4B0" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="64" y="232" width="178" height="28" rx="6" fill="#122440" stroke="#6BC4B0" stroke-width="1.2"/>
+  <text x="153" y="250" text-anchor="middle" fill="#9DD9CB" font-family="monospace" font-size="10" font-weight="700">OPENING BALANCES b/d</text>
+</svg>

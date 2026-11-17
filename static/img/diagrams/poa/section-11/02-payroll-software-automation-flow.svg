@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" width="920" height="460" role="img" aria-label="Computerized Payroll and Accounting Software Automation Pipeline showing Input, Processing in QuickBooks or Sage 50, and Automated Outputs">
+  <defs>
+    <style>
+      .bg { fill: #F8F6F1; }
+      .card { fill: #FCFBF8; stroke: #CEDCD6; stroke-width: 2; rx: 12; }
+      .navy { fill: #1B365D; rx: 10; }
+      .sage { fill: #2E6359; rx: 10; }
+      .coral { fill: #C84E24; rx: 10; }
+      .mint { fill: #EBF2EF; stroke: #4E8577; stroke-width: 1.5; rx: 8; }
+      .amber { fill: #FEF3E2; stroke: #F5A352; stroke-width: 1.5; rx: 8; }
+      .title { font-family: system-ui, -apple-system, sans-serif; font-size: 21px; font-weight: 800; fill: #1B365D; }
+      .subtitle { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; fill: #4A5560; }
+      .w-title { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; font-weight: 800; fill: #FFFFFF; }
+      .w-sub { font-family: system-ui, -apple-system, sans-serif; font-size: 11.5px; fill: #EBF2EF; }
+      .label { font-family: system-ui, -apple-system, sans-serif; font-size: 12.5px; font-weight: 800; fill: #1B365D; }
+      .body { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; fill: #222222; }
+      .coral-txt { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; font-weight: 800; fill: #C84E24; }
+      .arrow { stroke: #C84E24; stroke-width: 3; fill: none; marker-end: url(#ar11); }
+    </style>
+    <marker id="ar11" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+      <path d="M 0 1 L 10 5 L 0 9 z" fill="#C84E24"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="920" height="460"/>
+  <text x="460" y="34" text-anchor="middle" class="title">How Accounting &amp; Payroll Software Automates Payday</text>
+  <text x="460" y="54" text-anchor="middle" class="subtitle">From QuickBooks, Sage 50 (Peachtree), Xero, and Wave — one verified hours input drives payslips, taxes, and ledgers automatically!</text>
+
+  <!-- Stage 1: Inputs -->
+  <rect class="card" x="24" y="76" width="266" height="290"/>
+  <rect class="navy" x="36" y="88" width="242" height="44"/>
+  <text x="157" y="108" text-anchor="middle" class="w-title">1. MASTER &amp; PERIOD INPUTS</text>
+  <text x="157" y="124" text-anchor="middle" class="w-sub">Clean data IN (Avoid GIGO!)</text>
+
+  <rect class="mint" x="38" y="146" width="238" height="62"/>
+  <text x="50" y="166" class="label">Employee Master File</text>
+  <text x="50" y="184" class="body">Pay rate, tax ID (TRN), NIS #, bank</text>
+  <text x="50" y="199" class="body">routing, authorized voluntary deductions</text>
+
+  <rect class="mint" x="38" y="218" width="238" height="62"/>
+  <text x="50" y="238" class="label">Period Time &amp; Sales Data</text>
+  <text x="50" y="256" class="body">Regular hours, overtime hours, sick/</text>
+  <text x="50" y="271" class="body">vacation leave, sales commissions</text>
+
+  <rect class="amber" x="38" y="290" width="238" height="62"/>
+  <text x="50" y="310" class="coral-txt">Updated Tax &amp; NIS Tables</text>
+  <text x="50" y="328" class="body">Current statutory thresholds &amp; % rates</text>
+  <text x="50" y="343" class="body">loaded before running payroll!</text>
+
+  <line class="arrow" x1="290" y1="220" x2="322" y2="220"/>
+
+  <!-- Stage 2: Software Engine -->
+  <rect class="card" x="326" y="76" width="268" height="290"/>
+  <rect class="sage" x="338" y="88" width="244" height="44"/>
+  <text x="460" y="108" text-anchor="middle" class="w-title">2. SOFTWARE PROCESSING</text>
+  <text x="460" y="124" text-anchor="middle" class="w-sub">QuickBooks · Sage 50 · Xero · Excel</text>
+
+  <text x="344" y="160" class="label">Automated Calculations:</text>
+  <text x="344" y="182" class="body">• Gross Pay (Regular + 1.5× / 2× OT)</text>
+  <text x="344" y="204" class="body">• Statutory Taxes (PAYE, NIS, NHT)</text>
+  <text x="344" y="226" class="body">• Voluntary Deductions (Union, Loan)</text>
+  <text x="344" y="248" class="body">• Exact Net Pay &amp; Year-to-Date Totals</text>
+  <line x1="344" y1="264" x2="576" y2="264" stroke="#CEDCD6" stroke-width="1.5"/>
+  <text x="344" y="286" class="coral-txt">Built-In Security Controls:</text>
+  <text x="344" y="306" class="body">• Role-based passwords &amp; encryption</text>
+  <text x="344" y="325" class="body">• Automated cloud backups</text>
+  <text x="344" y="344" class="body">• Full timestamped Audit Trail!</text>
+
+  <line class="arrow" x1="594" y1="220" x2="626" y2="220"/>
+
+  <!-- Stage 3: Outputs -->
+  <rect class="card" x="630" y="76" width="266" height="290"/>
+  <rect class="coral" x="642" y="88" width="242" height="44"/>
+  <text x="763" y="108" text-anchor="middle" class="w-title">3. INSTANT OUTPUTS</text>
+  <text x="763" y="124" text-anchor="middle" class="w-sub">Zero manual re-typing!</text>
+
+  <rect class="mint" x="644" y="146" width="238" height="44"/>
+  <text x="656" y="165" class="label">E-Payslips &amp; Direct Deposit File</text>
+  <text x="656" y="182" class="body">Bank batch file pays all staff cleanly!</text>
+
+  <rect class="mint" x="644" y="198" width="238" height="44"/>
+  <text x="656" y="217" class="label">Payroll Register &amp; YTD Summaries</text>
+  <text x="656" y="234" class="body">Complete management cost reports</text>
+
+  <rect class="mint" x="644" y="250" width="238" height="44"/>
+  <text x="656" y="269" class="label">Government Statutory Returns</text>
+  <text x="656" y="286" class="body">Ready-to-file PAYE &amp; NIS schedules</text>
+
+  <rect class="amber" x="644" y="302" width="238" height="50"/>
+  <text x="656" y="322" class="coral-txt">Auto-Posted General Ledger!</text>
+  <text x="656" y="340" class="body">Dr Wages Exp / Cr Bank &amp; Payables</text>
+
+  <!-- Bottom Banner -->
+  <rect class="navy" x="24" y="384" width="872" height="58"/>
+  <text x="460" y="408" text-anchor="middle" class="w-title">ACCOUNTING SOFTWARE vs. SPREADSHEETS (EXCEL / GOOGLE SHEETS)</text>
+  <text x="460" y="428" text-anchor="middle" class="w-sub">Dedicated Software (QuickBooks / Sage 50) auto-updates tax tables &amp; ledgers; Spreadsheets are cheap &amp; flexible yet prone to formula errors!</text>
+</svg>

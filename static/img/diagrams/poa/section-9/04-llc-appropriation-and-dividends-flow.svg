@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 470" role="img" aria-label="Flowchart of a Limited Liability Company Profit and Loss Appropriation Account showing Net Profit, Retained Earnings b/f, Transfers to Reserves, Preference Dividends, Ordinary Dividends, and Retained Earnings c/f">
+  <defs>
+    <style>
+      .title { font: 700 20px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .sub { font: 500 13px system-ui, -apple-system, sans-serif; fill: #4A5560; }
+      .hdr { font: 700 14px system-ui, -apple-system, sans-serif; fill: #FCFBF8; }
+      .h3 { font: 700 13px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .mono { font: 700 11.8px ui-monospace, SFMono-Regular, monospace; fill: #122440; }
+      .body { font: 500 12px system-ui, -apple-system, sans-serif; fill: #222222; }
+      .sage { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #2E6359; }
+      .coral { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #C84E24; }
+    </style>
+  </defs>
+
+  <rect width="920" height="470" rx="14" fill="#F8F6F1" stroke="#CEDCD6" stroke-width="1.5"/>
+  <text x="32" y="38" class="title">Limited Liability Company Appropriation Account &amp; Dividend Waterfall</text>
+  <text x="32" y="58" class="sub">Remember: Debenture Interest &amp; Corporation Tax are deducted BEFORE Appropriation — Preference Dividends &amp; Reserves happen INSIDE Appropriation!</text>
+
+  <!-- Left: Waterfall -->
+  <rect x="32" y="78" width="530" height="46" rx="8" fill="#1B365D"/>
+  <text x="50" y="106" class="hdr">1. Net Profit for Year (AFTER Debenture Interest &amp; Tax)</text>
+  <text x="546" y="106" text-anchor="end" style="font:700 14px ui-monospace; fill:#F5A352;">$65,000</text>
+
+  <rect x="32" y="134" width="530" height="46" rx="8" fill="#EBF2EF" stroke="#2E6359" stroke-width="1.5"/>
+  <text x="50" y="162" class="sage">2. ADD: Retained Earnings Brought Forward (from last year)</text>
+  <text x="546" y="162" text-anchor="end" class="sage">+$18,000</text>
+
+  <rect x="32" y="190" width="530" height="132" rx="8" fill="#FFF3EE" stroke="#C84E24" stroke-width="1.5"/>
+  <text x="50" y="213" class="coral">3. LESS: Appropriations (Total Available = $83,000)</text>
+  <text x="50" y="236" class="body">• Transfer to General Reserve (plowed back into firm)</text>
+  <text x="546" y="236" text-anchor="end" class="mono">($15,000)</text>
+  <text x="50" y="258" class="body">• Preference Dividend (Paid + Proposed — FIXED %!)</text>
+  <text x="546" y="258" text-anchor="end" class="mono">($6,000)</text>
+  <text x="50" y="280" class="body">• Ordinary Dividend — Interim Paid (mid-year)</text>
+  <text x="546" y="280" text-anchor="end" class="mono">($8,000)</text>
+  <text x="50" y="302" class="body">• Ordinary Dividend — Final Proposed (year-end)</text>
+  <text x="546" y="302" text-anchor="end" class="mono">($12,000)</text>
+
+  <rect x="32" y="332" width="530" height="54" rx="8" fill="#2E6359"/>
+  <text x="50" y="356" class="hdr">4. Retained Earnings Carried Forward (to Balance Sheet!)</text>
+  <text x="50" y="375" style="font:500 11.8px system-ui; fill:#EBF2EF;">$83,000 − $41,000 total appropriations = $42,000 (Revenue Reserve)</text>
+  <text x="546" y="365" text-anchor="end" style="font:700 15px ui-monospace; fill:#FCFBF8;">$42,000</text>
+
+  <!-- Right Side: Dividend Formula & Interim vs Proposed Box -->
+  <rect x="586" y="78" width="302" height="308" rx="11" fill="#FCFBF8" stroke="#1B365D" stroke-width="1.8"/>
+  <rect x="586" y="78" width="302" height="36" rx="10" fill="#1B365D"/>
+  <text x="737" y="101" text-anchor="middle" class="hdr">Dividend Math &amp; Balance Sheet Link</text>
+
+  <text x="602" y="138" class="h3">Formula 1 — Percentage Dividend:</text>
+  <text x="602" y="156" class="mono">% Rate × ISSUED Share Capital ($)</text>
+  <text x="602" y="174" class="body">e.g. 6% × $100,000 Pref Cap = $6,000</text>
+  <text x="602" y="191" class="coral">NEVER multiply by Authorized Cap!</text>
+
+  <line x1="602" y1="204" x2="872" y2="204" stroke="#CEDCD6"/>
+
+  <text x="602" y="226" class="h3">Formula 2 — Cents-Per-Share:</text>
+  <text x="602" y="244" class="mono">$ per share × Number of Issued Shares</text>
+  <text x="602" y="262" class="body">e.g. $0.10 × 120,000 shares = $12,000</text>
+
+  <line x1="602" y1="276" x2="872" y2="276" stroke="#CEDCD6"/>
+
+  <text x="602" y="298" class="sage">Interim vs. Proposed Dividends:</text>
+  <text x="602" y="317" class="body">• INTERIM = ALREADY PAID in cash</text>
+  <text x="612" y="333" class="body">(Approp. A/c ONLY — not a Liability!)</text>
+  <text x="602" y="353" class="coral">• PROPOSED = UNPAID at year-end</text>
+  <text x="612" y="369" class="coral">(Approp. A/c + Current Liability!)</text>
+
+  <!-- Bottom Reserves Comparison -->
+  <rect x="32" y="402" width="856" height="50" rx="9" fill="#EBF2EF" stroke="#4E8577" stroke-width="1.4"/>
+  <text x="460" y="423" text-anchor="middle" class="h3">Revenue Reserves vs. Capital Reserves (Paper 1 &amp; Paper 2 Favorite!)</text>
+  <text x="460" y="441" text-anchor="middle" class="body">Revenue Reserves (General Reserve, Retained Earnings) CAN pay dividends  |  Capital Reserves (Share Premium, Revaluation Reserve) CANNOT pay cash dividends!</text>
+</svg>

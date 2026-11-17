@@ -1,0 +1,233 @@
+---
+id: partners-current-accounts
+title: "8.7 Preparing Partners' Current Accounts (Salaries, Interest, Drawings)"
+sidebar_label: "8.7 Partners' Current Accounts"
+sidebar_position: 7
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 8"
+  section="Accounting for Partnerships — Capital & Appropriation"
+  code="POA-S8-07"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="25 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+Under the **Fixed Capital System**, every partner’s yearly financial story lives inside their **Current Account**! Rather than drawing separate T-accounts across two pages, examiners love the **columnar (side-by-side) Partners’ Current Accounts** format — putting Partner A and Partner B side by side on the Debit and Credit halves so you can post directly from the Appropriation Account in half the time and spot an **overdrawn partner (Debit balance)** at a glance!
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | **Columnar Partners’ Current Accounts**: **Credit = Rewards Earned (`+`)**, **Debit = Drawings &amp; Penalties (`−`)**, plus handling **Opening &amp; Closing DEBIT (Overdrawn) Balances** and **Paid vs. Unpaid Salaries/Loan Interest** |
+| **Exam Focus** | Never flipping Debit vs. Credit sides, handling an overdrawn partner whose Debit side exceeds their Credit side, and bringing down `Jan 1 Bal b/d` on the exact right side! |
+| **Learning Outcome** | Construct accurate columnar Partners’ Current Accounts with both Credit and Debit (overdrawn) balances brought down cleanly |
+
+<ObjectivesBox
+  id="poa-s8-07-obj"
+  objectives={[
+    'Identify every Credit item (Interest on Capital, Partner Salary, Share of Profit, unpaid Loan Interest) and every Debit item (Drawings, Interest on Drawings, Share of Loss) in a Partner’s Current Account.',
+    'Construct columnar (side-by-side) Partners’ Current Accounts cleanly from an Appropriation Account and opening balances.',
+    'Balance off an overdrawn Partner’s Current Account (where Debits exceed Credits) and explain what a Debit Balance b/d means.',
+    'Handle partially paid Partner Salaries and unpaid Partner Loan Interest accurately without double-counting.',
+  ]}
+/>
+
+---
+
+## 1. Credit vs. Debit Side Logic (Remember: Current Account = Equity!)
+
+Because a Partner’s Current Account represents **undrawn profits owed by the firm to the partner** (Owners’ Equity → normal **Credit** balance):
+- Anything that **INCREASES** what the partnership owes the partner → **CREDIT (`+`)**!
+- Anything that **DECREASES** what the partnership owes the partner → **DEBIT (`−`)**!
+
+| DEBIT Side (`−` Taken Out / Owed by Partner) | CREDIT Side (`+` Earned by Partner) |
+| :--- | :--- |
+| • Opening `Balance b/d` *(ONLY if partner started **OVERDRAWN**!)* | • Opening `Balance b/d` *(Normal positive undrawn profit)* |
+| • **Drawings** *(Cash OR Goods taken for personal use)* | • **Interest on Capital** *(from Appropriation A/c)* |
+| • **Interest on Drawings** *(from Appropriation A/c)* | • **Partner’s Salary** *(unpaid portion — see note below!)* |
+| • **Share of Residual LOSS** *(if Appropriations &gt; Profit)* | • **Share of Residual PROFIT** *(from Appropriation A/c)* |
+| • *Closing `Balance c/d`* *(when Cr &gt; Dr → normal positive Cr b/d!)* | • **Unpaid Interest on Partner’s Loan** *(if left in Current A/c)* |
+| | • *Closing `Balance c/d`* *(when Dr &gt; Cr → **OVERDRAWN Dr b/d**!)* |
+
+### Exam Pro Tip: Watch Out for "Partner’s Salary Already Paid in Cash"!
+Check the wording carefully:
+- **Case A — Salary NOT yet paid in cash *(most common)*:** Credit the **FULL** Partner Salary to the partner’s Current Account!
+- **Case B — Salary ALREADY withdrawn in cash** *(e.g. Partner took `$4,000` of a `$12,000` salary by cheque)*:
+  - Either Credit ONLY the **unpaid `$8,000`** to Current A/c *(if the `$4,000` was posted `Dr Partner Salary / Cr Bank`)*, **OR** Credit the full `$12,000` AND include the `$4,000` inside Drawings on the Debit side *(net `+$8,000` — identical closing balance!)*!
+
+---
+
+## 2. Diagram 1: Partners' Current Accounts Anatomy
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-8/07-partners-current-account-anatomy.svg"
+  alt="Columnar Partners Current Account diagram displaying every Debit deduction and Credit reward item plus the green guide explaining Credit vs Debit (overdrawn) closing balances."
+  caption="Diagram 1 (Static Reference): Check each partner’s column INDEPENDENTLY — Partner A can finish with a Credit Bal b/d while Partner B finishes OVERDRAWN with a Debit Bal b/d in the exact same table!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive Current Account Troubleshooting Hub
+
+<InteractiveDiagram
+  title="Interactive Hub: Tap Any Current Account Challenge to Solve It Cleanly on Paper 2"
+  layout="hub"
+  centerLabel="Current A/cs"
+  centerSublabel="Columnar Mastery"
+  instruction="Select any of the 4 classic exam challenges around the hub to verify the exact T-account mechanics."
+  nodes={[
+    {
+      label: 'Opening DEBIT Balance',
+      tag: 'Started Overdrawn!',
+      tone: 'warning',
+      detail: 'If a Trial Balance lists "Current Account — Liam: $1,200 (Dr)", DO NOT put it on the Credit side with Maya’s opening balance! Put Maya’s $2,500 on Cr and Liam’s $1,200 on Dr!',
+      example: 'Debit column: "Jan 1 Balance b/d — Maya: — | Liam: $1,200". Credit column: "Jan 1 Balance b/d — Maya: $2,500 | Liam: —".',
+      examTip: 'Always check whether each partner’s opening Current Balance sits in the Debit or Credit column of the Trial Balance!',
+    },
+    {
+      label: 'Closing DEBIT Balance',
+      tag: 'Ended Overdrawn!',
+      tone: 'warning',
+      detail: 'When a partner’s Debit total ($12,750) is LARGER than their Credit total ($10,500), the balancing "Dec 31 Balance c/d $2,250" goes on the SHORTER CREDIT side — then brings down as "Jan 1 Balance b/d $2,250" on the DEBIT side!',
+      example: 'Means Liam withdrew $2,250 MORE than his cumulative profit/interest entitlement — he temporarily owes the partnership $2,250!',
+      examTip: 'On the Balance Sheet (Lesson 8.8), a Debit Current Balance is SUBTRACTED in brackets: ($2,250)!',
+    },
+    {
+      label: 'Unpaid Loan Interest',
+      tag: 'Check Policy!',
+      tone: 'neutral',
+      detail: 'Remember: Interest on a Partner’s Loan was deducted in the Income Statement (NOT Appropriation). If NOT yet paid in cash, exams normally instruct you to CREDIT it to the lender-partner’s Current Account!',
+      example: 'Dr Loan Interest Expense $600 / Cr Current Account — Maya $600!',
+      examTip: 'Never put Loan Interest in BOTH Current Account AND Current Liabilities — pick Current Account if instructed (or Accrued Expense if not)!',
+    },
+    {
+      label: 'Goods Taken as Drawings',
+      tag: 'Include in Drawings!',
+      tone: 'neutral',
+      detail: 'If a partner took $800 of shop inventory home for personal use (at COST), remember two effects: deduct $800 from Purchases in the Income Statement AND Debit $800 Drawings in their Current Account!',
+      example: 'Total Drawings debited to Current A/c = Cash Drawings + Goods Taken for Own Use!',
+      examTip: 'Never forget to include Goods Drawings alongside Cash Drawings in the Debit column!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Constructing Columnar Partners' Current Accounts (With BOTH Credit & Overdrawn Debit Balances!)"
+  marks={12}
+  problem={
+    <>
+      <p>
+        <strong>Scenario:</strong> Prepare the columnar <strong>Partners’ Current Accounts</strong>
+        for <strong>Maya</strong> and <strong>Liam</strong> of <strong>Emerald Motors Partnership</strong>
+        for the year ended <strong>31 December 2026</strong>, bringing down closing balances to
+        <strong> 1 January 2027</strong>:
+      </p>
+      <ul>
+        <li><strong>Opening Current Balances (1 Jan 2026):</strong> Maya <strong>$2,500 (Credit)</strong>; Liam <strong>$1,200 (Debit — Overdrawn)</strong>.</li>
+        <li><strong>Interest on Capital:</strong> Maya $4,000; Liam $2,500.</li>
+        <li><strong>Partner’s Salary (unpaid):</strong> Maya $9,000; Liam nil.</li>
+        <li><strong>Unpaid Interest on Partner’s Loan (credited to Current A/c):</strong> Maya $600.</li>
+        <li><strong>Share of Residual Profit:</strong> Maya $12,000; Liam $8,000.</li>
+        <li><strong>Drawings during 2026:</strong> Maya $14,000; Liam $11,000.</li>
+        <li><strong>Interest on Drawings:</strong> Maya $700; Liam $550.</li>
+      </ul>
+      <p>
+        <em>Also state clearly what each partner’s closing balance on 1 January 2027 means financially. [12 marks]</em>
+      </p>
+    </>
+  }
+>
+
+### Emerald Motors Partnership — Partners’ Current Accounts *(10 marks)*
+
+| Date (Dr) | Details | Maya ($) | Liam ($) | Date (Cr) | Details | Maya ($) | Liam ($) |
+| :--- | :--- | ---: | ---: | :--- | :--- | ---: | ---: |
+| Jan 1, 2026 | Balance b/d *(overdrawn)* | — | 1,200 | Jan 1, 2026 | Balance b/d | 2,500 | — |
+| Dec 31 | Drawings | 14,000 | 11,000 | Dec 31 | Interest on Capital | 4,000 | 2,500 |
+| Dec 31 | Interest on Drawings | 700 | 550 | Dec 31 | Partner’s Salary | 9,000 | — |
+| Dec 31 | **Balance c/d** *(Maya)* | **13,400** | — | Dec 31 | Loan Interest *(unpaid)* | 600 | — |
+| | | | | Dec 31 | Share of Profit | 12,000 | 8,000 |
+| | | | | Dec 31 | **Balance c/d** *(Liam)* | — | **2,250** |
+| | **Totals** | **$28,100** | **$12,750** | | **Totals** | **$28,100** | **$12,750** |
+| Jan 1, 2027 | **Balance b/d *(Overdrawn)*** | — | **2,250** | Jan 1, 2027 | **Balance b/d *(Credit)*** | **13,400** | — |
+
+### Meaning of the 1 January 2027 Closing Balances *(2 marks)*
+- **Maya (`$13,400` Credit Balance):** Maya left **`$13,400`** of undrawn earnings inside the business — the partnership owes Maya `$13,400` on top of her Fixed Capital *(ADDED on the Balance Sheet)* *(1 mark)*.
+- **Liam (`$2,250` Debit Balance):** Liam is **overdrawn by `$2,250`** because his opening debit + drawings + interest on drawings (`$12,750`) exceeded his total credits (`$10,500`) — Liam owes `$2,250` back to the firm *(SUBTRACTED in brackets on the Balance Sheet!)* *(1 mark)*.
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Partners' Current Accounts"
+  items={[
+    {
+      statement: 'Interest on Capital, Partner Salaries, and Share of Residual Profit are all entered on the CREDIT side of Partners’ Current Accounts.',
+      answer: true,
+      explanation: 'Yes — every reward that increases what the firm owes a partner is CREDITED to their Current Account!',
+    },
+    {
+      statement: 'Interest on Drawings is entered on the CREDIT side of a Partner’s Current Account because it was added to Net Profit in the Appropriation Account.',
+      answer: false,
+      explanation: 'Opposite side! Because Interest on Drawings is a penalty CHARGED to the partner (and Credited to Appropriation), it is DEBITED to the Partner’s Current Account!',
+    },
+    {
+      statement: 'A closing DEBIT Balance b/d on a Partner’s Current Account means the partner has withdrawn MORE than their accumulated profit entitlements.',
+      answer: true,
+      explanation: 'Exactly right — a Debit Current Account balance indicates an overdrawn partner!',
+    },
+    {
+      statement: 'If Partner B had an opening Debit balance of $1,000 on 1 January, that $1,000 is entered on the DEBIT side of Partner B’s Current Account.',
+      answer: true,
+      explanation: 'Yes! Opening Debit balances start on the Debit side ("Jan 1 Balance b/d").',
+    },
+    {
+      statement: 'If a partner already withdrew their entire $8,000 Partner Salary in cash during the year (posted Dr Salary / Cr Bank), you should still credit $8,000 to their Current Account without recording any cash withdrawal.',
+      answer: false,
+      explanation: 'That would double-pay the partner! If already paid in cash, only any UNPAID salary balance is credited to the Current Account (or credit full $8,000 AND debit $8,000 cash taken!).',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s8-07-project"
+  title="Mini-Project (Part 2 of 3): Partners' Current Accounts for SunCoast Architects"
+  duration="20 mins"
+  scenario="Continue your SunCoast Architects project directly from Project 8.6 (save your closing Current balances for Project 8.8!) using these opening balances and your Project 8.6 Appropriation outputs: Opening Current Balances (1 Jan 2026): C. Brown $1,800 (Credit); D. Patel $900 (Debit — Overdrawn). From Project 8.6: Interest on Capital (Brown $3,000; Patel $1,800); Unpaid Partner Salary (Patel $8,000); Unpaid 8% Loan Interest owed to Patel ($800 — credit to Patel’s Current A/c!); Share of Residual Profit (Brown $18,000; Patel $12,000); Drawings (Brown $24,000; Patel $15,000); Interest on Drawings (Brown $500; Patel $300)."
+  steps={[
+    'Rule clean side-by-side columnar Partners’ Current Accounts for C. Brown and D. Patel.',
+    'Enter 1 January 2026 opening balances carefully (Brown on CREDIT $1,800; Patel on DEBIT $900!).',
+    'Post every Credit reward (including Patel’s $800 unpaid Loan Interest!) and every Debit deduction (Drawings & Interest on Drawings).',
+    'Balance each partner’s column independently, bring down 1 January 2027 Balance b/d on the exact side, and write 2 sentences comparing how each partner’s position shifted during 2026!',
+  ]}
+  deliverables={[
+    'Completed columnar Partners’ Current Accounts for C. Brown & D. Patel with 1 Jan 2027 Bal b/d',
+    '2-sentence Year-over-Year Financial Position Comparison for Brown and Patel',
+  ]}
+  rubric={[
+    'C. Brown column: Cr total = $22,800 ($1,800 + $3,000 + $18,000); Dr total = $24,500 ($24,000 + $500) → Closing Balance = $1,700 DEBIT OVERDRAWN (Dec 31 Bal c/d on Cr; Jan 1, 2027 Bal b/d on Dr)!',
+    'D. Patel column: Cr total = $22,600 ($1,800 + $8,000 + $800 + $12,000); Dr total = $16,200 ($900 + $15,000 + $300) → Closing Balance = $6,400 CREDIT (Dec 31 Bal c/d on Dr; Jan 1, 2027 Bal b/d on Cr)!',
+    'Net Combined Current Accounts = +$6,400 − $1,700 = +$4,700 (carry this exact figure into Project 8.8!).',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **Credit Current A/c (`+`):** Int. on Capital, Salary, Share of Profit, Unpaid Loan Interest.
+- **Debit Current A/c (`−`):** Drawings, Int. on Drawings, Share of Loss.
+- Check EACH partner’s column separately — **Credit `b/d` = positive equity**; **Debit `b/d` = OVERDRAWN**!
+:::

@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 460" role="img" aria-label="Flowchart of a Co-operative Society Income Statement and Appropriation / Distribution of Net Surplus into Statutory Reserve, Education Fund, Share Dividends, Patronage Refunds, and Honoraria">
+  <defs>
+    <style>
+      .title { font: 700 20px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .sub { font: 500 13px system-ui, -apple-system, sans-serif; fill: #4A5560; }
+      .hdr { font: 700 14px system-ui, -apple-system, sans-serif; fill: #FCFBF8; }
+      .h3 { font: 700 13px system-ui, -apple-system, sans-serif; fill: #1B365D; }
+      .mono { font: 700 11.8px ui-monospace, SFMono-Regular, monospace; fill: #122440; }
+      .body { font: 500 12px system-ui, -apple-system, sans-serif; fill: #222222; }
+      .sage { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #2E6359; }
+      .coral { font: 700 12.5px system-ui, -apple-system, sans-serif; fill: #C84E24; }
+    </style>
+  </defs>
+
+  <rect width="920" height="460" rx="14" fill="#F8F6F1" stroke="#CEDCD6" stroke-width="1.5"/>
+  <text x="32" y="38" class="title">Co-operative Society Distribution of Net Surplus (Appropriation Waterfall)</text>
+  <text x="32" y="58" class="sub">Remember the exact Statutory Rule: Compute Statutory Reserve % on THIS YEAR'S Net Surplus FIRST — BEFORE adding Undistributed Surplus b/f!</text>
+
+  <!-- Main Waterfall Left -->
+  <rect x="32" y="80" width="540" height="46" rx="8" fill="#1B365D"/>
+  <text x="50" y="108" class="hdr">1. Net Surplus for the Year (from Income Statement)</text>
+  <text x="556" y="108" text-anchor="end" style="font:700 14px ui-monospace; fill:#F5A352;">$40,000</text>
+
+  <rect x="32" y="136" width="540" height="44" rx="8" fill="#EBF2EF" stroke="#2E6359" stroke-width="1.5"/>
+  <text x="50" y="163" class="sage">2. ADD: Undistributed Surplus Brought Forward (Jan 1)</text>
+  <text x="556" y="163" text-anchor="end" class="sage">+$8,000</text>
+
+  <rect x="32" y="190" width="540" height="148" rx="8" fill="#FFF3EE" stroke="#C84E24" stroke-width="1.5"/>
+  <text x="50" y="213" class="coral">3. LESS: Appropriations (Total Available = $48,000)</text>
+  <text x="50" y="236" class="h3">• Statutory Reserve (20% × $40,000 THIS yr surplus!)</text>
+  <text x="556" y="236" text-anchor="end" class="mono">($8,000)</text>
+  <text x="50" y="258" class="body">• Education / Scholarship Fund (5% × $40,000)</text>
+  <text x="556" y="258" text-anchor="end" class="mono">($2,000)</text>
+  <text x="50" y="280" class="body">• Dividend on Members' Shares (e.g. 6% × $150,000)</text>
+  <text x="556" y="280" text-anchor="end" class="mono">($9,000)</text>
+  <text x="50" y="302" class="body">• Patronage Refund (Rebate on member purchases/interest)</text>
+  <text x="556" y="302" text-anchor="end" class="mono">($12,000)</text>
+  <text x="50" y="324" class="body">• Honoraria (token appreciation paid to volunteer officers)</text>
+  <text x="556" y="324" text-anchor="end" class="mono">($3,000)</text>
+
+  <rect x="32" y="348" width="540" height="48" rx="8" fill="#2E6359"/>
+  <text x="50" y="377" class="hdr">4. Undistributed Surplus Carried Forward (to Balance Sheet!)</text>
+  <text x="556" y="377" text-anchor="end" style="font:700 15px ui-monospace; fill:#FCFBF8;">$14,000</text>
+
+  <!-- Right Side: Co-op Special Terms Box -->
+  <rect x="596" y="80" width="292" height="316" rx="11" fill="#FCFBF8" stroke="#1B365D" stroke-width="1.8"/>
+  <rect x="596" y="80" width="292" height="36" rx="10" fill="#1B365D"/>
+  <text x="742" y="103" text-anchor="middle" class="hdr">4 Unique Co-op Terms to Master</text>
+
+  <text x="612" y="140" class="coral">1. Statutory Reserve (By Law!)</text>
+  <text x="612" y="158" class="body">Mandatory % of THIS year's Net Surplus</text>
+  <text x="612" y="174" class="body">(typically 20%–25%) — NEVER include</text>
+  <text x="612" y="190" class="body">last year's b/f surplus in the base!</text>
+
+  <text x="612" y="220" class="sage">2. Patronage Refund (Bonus!)</text>
+  <text x="612" y="238" class="body">Surplus returned to members based on</text>
+  <text x="612" y="254" class="body">HOW MUCH they shopped or borrowed!</text>
+
+  <text x="612" y="284" class="h3">3. Education Fund</text>
+  <text x="612" y="302" class="body">Funds member training &amp; scholarships</text>
+
+  <text x="612" y="332" class="h3">4. Honoraria</text>
+  <text x="612" y="350" class="body">Modest gratitude payment to volunteer</text>
+  <text x="612" y="366" class="body">committee officers (if unpaid → CL!)</text>
+
+  <!-- Bottom Balance Sheet Link -->
+  <rect x="32" y="410" width="856" height="36" rx="8" fill="#EBF2EF" stroke="#4E8577"/>
+  <text x="460" y="433" text-anchor="middle" class="h3">Balance Sheet Link: Unpaid Share Dividends, Patronage Refunds &amp; Honoraria = Current Liabilities  |  Reserves + Surplus c/f = Members' Equity!</text>
+</svg>

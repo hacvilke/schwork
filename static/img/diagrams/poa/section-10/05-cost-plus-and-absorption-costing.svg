@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 920 470" width="920" height="470" role="img" aria-label="Cost-Plus Pricing and Absorption Costing Staircase showing Direct Materials, Direct Labor, Overhead Absorption Rate, Total Full Cost, and Profit Markup to Selling Price">
+  <defs>
+    <style>
+      .bg { fill: #F8F6F1; }
+      .card { fill: #FCFBF8; stroke: #CEDCD6; stroke-width: 2; rx: 12; }
+      .navy { fill: #1B365D; rx: 10; }
+      .sage { fill: #2E6359; rx: 10; }
+      .coral { fill: #C84E24; rx: 10; }
+      .mint { fill: #EBF2EF; stroke: #4E8577; stroke-width: 1.5; rx: 8; }
+      .amber { fill: #FEF3E2; stroke: #F5A352; stroke-width: 1.5; rx: 8; }
+      .title { font-family: system-ui, -apple-system, sans-serif; font-size: 21px; font-weight: 800; fill: #1B365D; }
+      .subtitle { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; fill: #4A5560; }
+      .w-title { font-family: system-ui, -apple-system, sans-serif; font-size: 14px; font-weight: 800; fill: #FFFFFF; }
+      .w-sub { font-family: system-ui, -apple-system, sans-serif; font-size: 11.5px; fill: #EBF2EF; }
+      .label { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; font-weight: 800; fill: #1B365D; }
+      .body { font-family: system-ui, -apple-system, sans-serif; font-size: 12px; fill: #222222; }
+      .coral-txt { font-family: system-ui, -apple-system, sans-serif; font-size: 13px; font-weight: 800; fill: #C84E24; }
+    </style>
+  </defs>
+
+  <rect class="bg" width="920" height="470"/>
+  <text x="460" y="34" text-anchor="middle" class="title">Absorption Costing &amp; Cost-Plus Pricing Staircase</text>
+  <text x="460" y="54" text-anchor="middle" class="subtitle">First absorb a fair slice of Factory Overheads into each job (OAR), then add Profit Markup to quote a winning Selling Price!</text>
+
+  <!-- Left Panel: Job Costing & Absorption Staircase -->
+  <rect class="card" x="26" y="74" width="442" height="314"/>
+  <rect class="navy" x="38" y="86" width="418" height="42"/>
+  <text x="247" y="112" text-anchor="middle" class="w-title">ABSORPTION COSTING + COST-PLUS BUILDUP</text>
+
+  <rect class="mint" x="42" y="140" width="410" height="42"/>
+  <text x="56" y="165" class="label">1. Direct Materials + Direct Labor</text>
+  <text x="438" y="165" text-anchor="end" class="label">= PRIME COST</text>
+
+  <rect class="mint" x="42" y="190" width="410" height="46"/>
+  <text x="56" y="210" class="label">2. + Absorbed Factory Overheads</text>
+  <text x="56" y="227" class="body">(Overhead Absorption Rate × Job Labor / Machine Hours)</text>
+
+  <rect class="sage" x="42" y="244" width="410" height="36"/>
+  <text x="56" y="267" class="w-title">3. = TOTAL FULL PRODUCTION COST</text>
+  <text x="438" y="267" text-anchor="end" class="w-sub">e.g. $400</text>
+
+  <rect class="amber" x="42" y="288" width="410" height="38"/>
+  <text x="56" y="312" class="coral-txt">4. + Profit Mark-Up (e.g. 25% of Cost = +$100)</text>
+
+  <rect class="coral" x="42" y="334" width="410" height="42"/>
+  <text x="56" y="360" class="w-title">5. = QUOTED SELLING PRICE</text>
+  <text x="438" y="360" text-anchor="end" class="w-title">$500.00</text>
+
+  <!-- Right Panel: OAR & Mark-Up vs. Margin -->
+  <rect class="card" x="488" y="74" width="406" height="314"/>
+  <rect class="sage" x="500" y="86" width="382" height="42"/>
+  <text x="691" y="112" text-anchor="middle" class="w-title">KEY FORMULAS TO MEMORIZE!</text>
+
+  <rect class="mint" x="504" y="142" width="374" height="96"/>
+  <text x="518" y="163" class="label">Overhead Absorption Rate (OAR)</text>
+  <text x="518" y="185" class="coral-txt">OAR = Budgeted Factory Overheads ÷ Budgeted Hours</text>
+  <text x="518" y="206" class="body">Example: $60,000 Overheads ÷ 4,000 Labor Hours</text>
+  <text x="518" y="225" class="label">= $15.00 absorbed per Direct Labor Hour!</text>
+
+  <rect class="amber" x="504" y="250" width="374" height="126"/>
+  <text x="518" y="271" class="coral-txt">NEVER Confuse Mark-Up vs. Margin!</text>
+  <text x="518" y="294" class="label">• Mark-Up (% of COST):</text>
+  <text x="528" y="313" class="body">25% on Cost $400 → Profit = $100 → Price = $500</text>
+  <text x="518" y="338" class="label">• Margin (% of SELLING PRICE):</text>
+  <text x="528" y="357" class="body">20% of Price $500 → Profit = $100 (25% Mark-Up!)</text>
+
+  <!-- Bottom Banner -->
+  <rect class="navy" x="26" y="404" width="868" height="50"/>
+  <text x="460" y="425" text-anchor="middle" class="w-title">COST-PLUS REALITY CHECK: COVERS ALL COSTS — BUT WATCH MARKET COMPETITION!</text>
+  <text x="460" y="443" text-anchor="middle" class="w-sub">Simple &amp; ensures full overhead recovery, yet ignores what rivals charge and gives weak incentive to cut waste!</text>
+</svg>

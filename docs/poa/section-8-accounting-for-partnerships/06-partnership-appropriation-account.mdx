@@ -1,0 +1,250 @@
+---
+id: partnership-appropriation-account
+title: "8.6 Preparing the Partnership Appropriation Account"
+sidebar_label: "8.6 Appropriation Account"
+sidebar_position: 6
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 8"
+  section="Accounting for Partnerships — Capital & Appropriation"
+  code="POA-S8-06"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="25 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+In a Sole Trader business, the Income Statement ends right at **Net Profit** because 100% belongs to one person. In a Partnership, you add one crisp extension directly underneath Net Profit called the **Profit and Loss Appropriation Account** — showing step by step how Net Profit is adjusted for **Interest on Drawings**, **Interest on Capital**, and **Partner Salaries**, before dividing the final **Residual Profit** among the partners!
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | Vertical **Profit and Loss Appropriation Account** structure (`Net Profit + Interest on Drawings − Interest on Capital − Partner Salaries = Residual Profit Split`) |
+| **Exam Focus** | **EXCLUDING Drawings itself** AND **EXCLUDING Interest on a Partner’s Loan** (which belongs in the Income Statement BEFORE Net Profit!), and calculating **pro-rata Interest on Drawings** accurately |
+| **Learning Outcome** | Prepare a clean, properly titled vertical Profit and Loss Appropriation Account from any Partnership Agreement and trial data |
+
+<ObjectivesBox
+  id="poa-s8-06-obj"
+  objectives={[
+    'Explain the exact purpose of the Profit and Loss Appropriation Account and where it sits relative to the Income Statement.',
+    'Deduct Interest on a Partner’s Loan in the Income Statement BEFORE transferring true Net Profit to the Appropriation Account.',
+    'Calculate Interest on Capital, Partner Salaries, pro-rata Interest on Drawings, and Residual Profit accurately.',
+    'Present a fully formatted vertical Profit and Loss Appropriation Account with clean subtotals and partner breakdowns.',
+  ]}
+/>
+
+---
+
+## 1. Exact Vertical Format of the Appropriation Account
+
+<FormulaCard
+  title="Profit & Loss Appropriation Account Formula (Exact Order!)"
+  onFormulaSheet={false}
+  summary="Start with Net Profit (AFTER Partner Loan Interest!), ADD Interest on Drawings, DEDUCT Interest on Capital & Salaries, then SPLIT Residual Profit!"
+>
+
+| Step | Appropriation Line | Sign | Double-Entry Counterpart |
+| :-: | :--- | :---: | :--- |
+| **1** | **Net Profit for the Year** *(after Partner’s Loan Interest!)* | Start | Transferred from Income Statement |
+| **2** | **Add: Interest on Drawings** *(Partner A + Partner B)* | **`+`** | **DEBIT** Partners’ Current Accounts |
+| **3** | **Less: Interest on Capital** *(Partner A + Partner B)* | **`−`** | **CREDIT** Partners’ Current Accounts |
+| **4** | **Less: Partner Salaries / Commission** | **`−`** | **CREDIT** Partner’s Current Account |
+| **5** | **= Residual Profit (or Loss) Shared in Ratio** *(A + B)* | **`= 0`** | **CREDIT** *(Profit)* / **DEBIT** *(Loss)* Current Accounts |
+
+</FormulaCard>
+
+### Two Things That NEVER Enter the Appropriation Account!
+1. **Drawings Itself** *(e.g. `$12,000` cash taken by a partner)* → goes **ONLY** to the Debit side of the partner’s **Current Account**! Only **Interest on Drawings** enters the Appropriation Account!
+2. **Interest on a Partner’s Loan** → deducted as an **Operating Expense in the Income Statement** BEFORE arriving at Net Profit! *(If a question gives "Profit BEFORE Loan Interest", subtract Loan Interest FIRST!)*
+
+---
+
+## 2. Diagram 1: Partnership Appropriation Account Waterfall
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-8/06-appropriation-account-waterfall.svg"
+  alt="Vertical waterfall tracing Net Profit plus Interest on Drawings minus Interest on Capital and Partner Salaries to Residual Profit split, accompanied by the 3 classic exam traps callout box."
+  caption="Diagram 1 (Static Reference): Notice the mirror-image double-entry link — Interest on Drawings is ADDED here (and Debited to Current A/cs), while Interest on Capital, Salaries & Profit Shares are DEDUCTED here (and Credited to Current A/cs)!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive 4-Step Appropriation Builder & Trap Checker
+
+<InteractiveDiagram
+  title="Interactive Flow: Follow These 4 Steps for 100% Full Marks on Appropriation Questions"
+  layout="flow"
+  instruction="Click through Steps 1 to 4 to rehearse the exact checks top scorers perform before writing a single figure."
+  nodes={[
+    {
+      label: '1. Check for Partner’s Loan!',
+      tag: 'Pre-Check!',
+      tone: 'warning',
+      detail: 'Scan the scenario for a Partner’s Loan! If the question says "Profit BEFORE charging Loan Interest = $55,200" and Partner A lent $15,000 at 8% ($1,200), subtract $1,200 FIRST so true Net Profit entering Appropriation = $54,000!',
+      example: 'If the question says "Net Profit AFTER charging all expenses including Loan Interest", do NOT subtract it a second time!',
+      examTip: 'Read the exact phrase "BEFORE" vs. "AFTER" Loan Interest twice — that single word decides 2 marks!',
+    },
+    {
+      label: '2. Add Interest on Drawings',
+      tag: 'Watch Dates!',
+      tone: 'positive',
+      detail: 'Interest on Drawings is a penalty PAID BY partners to the firm, so it INCREASES the profit pool available to distribute. Check withdrawal dates carefully for pro-rata months!',
+      example: '$12,000 drawn on 1 July at 10% p.a. (Jul–Dec = 6 months) → $12,000 × 10% × 6/12 = $600! (If no date is given, apply the flat % stated.)',
+      examTip: 'NEVER include the $12,000 Drawings principal here — ONLY the $600 Interest on Drawings!',
+    },
+    {
+      label: '3. Deduct Int. on Cap. & Salaries',
+      tag: 'Priority Rewards',
+      tone: 'neutral',
+      detail: 'Compute Interest on Capital using FIXED Capital balances (watch for mid-year capital additions too!). Then deduct agreed Partner Salaries (use the FULL annual agreed salary even if part was already paid in cash!).',
+      example: 'Alisha (10% × $60k = $6,000) + Brent (10% × $40k = $4,000) = $10,000; Brent Salary = $12,000 → Total deducted = $22,000.',
+      examTip: 'Always list EACH partner’s figure neatly in the inner column and carry the subtotal to the outer column!',
+    },
+    {
+      label: '4. Split Residual & Self-Proof!',
+      tag: 'Final Check ✓',
+      tone: 'positive',
+      detail: 'Divide the remaining Residual Profit ($33,000) strictly in the agreed ratio (3:2 → $19,800 & $13,200). Run a 5-second proof: Sum all partner credits minus Interest on Drawings — it MUST equal starting Net Profit!',
+      example: '($10,000 Int Cap + $12,000 Salary + $33,000 Shares) − $1,000 Int Dr = $54,000 exact Net Profit ✓!',
+      examTip: 'Include the full formal heading: "[Firm Name] — Profit and Loss Appropriation Account for the year ended [Date]"!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Constructing a Full Partnership Appropriation Account (With Loan Interest & Pro-Rata Drawings!)"
+  marks={12}
+  problem={
+    <>
+      <p>
+        <strong>Scenario:</strong> <strong>Alisha</strong> and <strong>Brent</strong> are partners in
+        <strong> Coral Reef Traders</strong>. For the year ended <strong>31 December 2026</strong>:
+      </p>
+      <ul>
+        <li><strong>Fixed Capital Balances:</strong> Alisha $60,000; Brent $40,000.</li>
+        <li><strong>Partner’s Loan:</strong> On 1 January 2026, Alisha lent the firm <strong>$15,000 at 8% p.a.</strong></li>
+        <li><strong>Operating Profit (BEFORE Loan Interest) for 2026:</strong> <strong>$55,200</strong>.</li>
+        <li><strong>Drawings (both withdrawn on 1 July 2026):</strong> Alisha $12,000; Brent $8,000.</li>
+        <li><strong>Partnership Agreement Terms:</strong>
+          (a) Interest on Capital at <strong>10% p.a.</strong>;
+          (b) Annual Partner Salary for Brent of <strong>$12,000</strong>;
+          (c) Interest on Drawings charged at <strong>10% p.a.</strong> (pro-rata);
+          (d) Residual profits/losses shared <strong>3 : 2</strong> (Alisha : Brent).
+        </li>
+      </ul>
+      <p>
+        <strong>Required:</strong> Calculate true Net Profit and prepare the vertical
+        <strong> Profit and Loss Appropriation Account for the year ended 31 December 2026</strong>. <em>[12 marks]</em>
+      </p>
+    </>
+  }
+>
+
+### Quick Workings *(Show Clearly!)*
+- **Interest on Alisha’s Loan *(Income Stmt Expense)*:** `8% × $15,000` = **`$1,200`** → **True Net Profit** = `$55,200 − $1,200` = **`$54,000`** *(2 marks)*
+- **Interest on Drawings *(6 months: 1 Jul – 31 Dec = `6/12`)*:**
+  - Alisha: `$12,000 × 10% × 6/12` = **`$600`**
+  - Brent: `$8,000 × 10% × 6/12` = **`$400`** *(2 marks)*
+- **Interest on Capital (`10%`):** Alisha = **`$6,000`**; Brent = **`$4,000`** *(2 marks)*
+
+---
+
+**Coral Reef Traders**
+**Profit and Loss Appropriation Account for the year ended 31 December 2026** *(1 mark)*
+
+| Details | $ | $ | $ |
+| :--- | ---: | ---: | ---: |
+| **Net Profit for the Year** *($55,200 − $1,200 Loan Int.)* | | | **54,000** |
+| **Add: Interest on Drawings** | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;Alisha *(`10% × $12,000 × 6/12`)* | | 600 | |
+| &nbsp;&nbsp;&nbsp;&nbsp;Brent *(`10% × $8,000 × 6/12`)* | | 400 | **1,000** |
+| | | | **55,000** |
+| **Less: Appropriations** | | | |
+| *Interest on Capital (`10%`):* | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;Alisha | 6,000 | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;Brent | 4,000 | 10,000 | |
+| *Partner’s Salary:* | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;Brent | | 12,000 | **(22,000)** |
+| **Residual Profit to Share** | | | **33,000** |
+| **Share of Residual Profit (`3 : 2`):** | | | |
+| &nbsp;&nbsp;&nbsp;&nbsp;Alisha *(`3/5 × $33,000`)* | | 19,800 | |
+| &nbsp;&nbsp;&nbsp;&nbsp;Brent *(`2/5 × $33,000`)* | | 13,200 | **(33,000)** |
+| | | | **—** |
+
+**Self-Proof:** Alisha Net (`$6,000 + $19,800 − $600 = $25,200`) + Brent Net (`$4,000 + $12,000 + $13,200 − $400 = $28,800`) = **`$54,000` Net Profit ✓!**
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Partnership Appropriation Account"
+  items={[
+    {
+      statement: 'Interest on Drawings is ADDED to Net Profit in the Profit and Loss Appropriation Account.',
+      answer: true,
+      explanation: 'Yes — Interest on Drawings is a penalty charged to partners that increases the distributable profit pool!',
+    },
+    {
+      statement: 'Partners’ Drawings (cash withdrawn during the year) must be deducted inside the Profit and Loss Appropriation Account.',
+      answer: false,
+      explanation: 'NEVER! Drawings itself goes ONLY to the Debit side of Partners’ Current Accounts — ONLY Interest on Drawings enters the Appropriation Account!',
+    },
+    {
+      statement: 'Interest on a Partner’s Loan must be deducted in the Income Statement BEFORE transferring Net Profit to the Appropriation Account.',
+      answer: true,
+      explanation: 'Spot on! Loan interest is a finance expense in the Income Statement, NOT an appropriation of profit.',
+    },
+    {
+      statement: 'A Partner’s Salary is deducted in the Appropriation Account, whereas regular employee wages are deducted in the Income Statement.',
+      answer: true,
+      explanation: 'Exact textbook distinction! Employee wages reduce Net Profit; Partner Salaries appropriate (distribute) Net Profit.',
+    },
+    {
+      statement: 'If Partner A withdraws $10,000 on 1 October (year-end 31 December) and Interest on Drawings is 12% per annum pro-rata, the interest charged is $300.',
+      answer: true,
+      explanation: 'Oct–Dec = 3 months (3/12 year) → $10,000 × 12% × (3/12) = $300!',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s8-06-project"
+  title="Mini-Project (Part 1 of 3): Appropriation Account for SunCoast Architects"
+  duration="20 mins"
+  scenario="Save your results from this project — you will carry them straight into Projects 8.7 and 8.8! Partners C. Brown (Fixed Capital $50,000) and D. Patel (Fixed Capital $30,000) operate 'SunCoast Architects'. On 1 Jan 2026, D. Patel lent the firm $10,000 at 8% p.a. Operating Profit BEFORE Loan Interest for 2026 was $42,800. The Partnership Agreement provides: (a) Interest on Capital 6% p.a.; (b) Annual Salary for Patel $8,000; (c) Interest on Drawings for 2026: Brown $500, Patel $300; (d) Residual profits shared 3 : 2 (Brown : Patel). Drawings during 2026 were Brown $24,000 and Patel $15,000."
+  steps={[
+    'Calculate Interest on D. Patel’s $10,000 Loan (8%) and subtract it from $42,800 to find true Net Profit.',
+    'Calculate Interest on Capital (6%) for Brown and Patel.',
+    'Construct the neatly formatted vertical Profit and Loss Appropriation Account for SunCoast Architects for the year ended 31 December 2026 (remember: EXCLUDE the $24k & $15k Drawings principal!).',
+    'Run the Self-Proof check verifying that Total Partner Credits minus Interest on Drawings equals Net Profit exact!',
+  ]}
+  deliverables={[
+    'Loan Interest & Net Profit Workings Box',
+    'Formatted 3-column Vertical Profit & Loss Appropriation Account',
+    'Verified Self-Proof calculation',
+  ]}
+  rubric={[
+    'Loan Interest = 8% × $10,000 = $800 → True Net Profit = $42,800 − $800 = $42,000.',
+    'Add Interest on Drawings $800 ($500 + $300) = $42,800; Less Interest on Capital $4,800 (Brown $3,000 + Patel $1,800) & Patel Salary $8,000 = ($12,800) → Residual Profit = $30,000!',
+    'Residual Profit split 3 : 2 → Brown $18,000 (3/5) and Patel $12,000 (2/5)! (Drawings $24,000 & $15,000 correctly excluded!)',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **Vertical Order:** `Net Profit` **`+`** `Int. on Drawings` **`−`** `Int. on Capital` **`−`** `Partner Salaries` **`=`** `Residual Split`!
+- **NEVER include** **Drawings principal** OR **Partner’s Loan Interest** inside the Appropriation Account!
+:::

@@ -1,0 +1,227 @@
+---
+id: identifying-financial-statements
+title: "2.4 Identifying Financial Statements (Income Statement, Balance Sheet, Cash Flow)"
+sidebar_label: "2.4 Financial Statements"
+sidebar_position: 4
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 2"
+  section="Accounting as a System — Balance Sheet Basics"
+  code="POA-S2-04"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="20 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+At the end of every accounting period, hundreds of daily ledger entries are distilled into a concise dashboard of **Financial Statements**. Think of the three main statements like a health checkup: the **Income Statement** is a *movie* showing profit earned over the year, the **Balance Sheet** is a *photograph* showing wealth and debts on one exact date, and the **Cash Flow Statement** tracks the actual *cash pulse* moving in and out.
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | Purpose, heading format, key components, and interconnections of the **Income Statement**, **Balance Sheet**, and **Statement of Cash Flows** |
+| **Exam Focus** | Knowing WHICH financial statement answers a specific user question + exact wording of period vs. date headings |
+| **Learning Outcome** | Identify all primary financial statements, explain what each measures, and trace how they link together |
+
+<ObjectivesBox
+  id="poa-s2-04-obj"
+  objectives={[
+    'Identify the three core financial statements: Income Statement, Balance Sheet (Statement of Financial Position), and Statement of Cash Flows.',
+    'Explain the exact purpose and main components of each financial statement.',
+    'Distinguish between period headings ("For the year ended ...") and point-in-time headings ("As at ...").',
+    'Explain why a profitable business can still run out of cash — and how the three statements link together.',
+  ]}
+/>
+
+---
+
+## 1. The Three Core Financial Statements at a Glance
+
+| Financial Statement | Formal / Modern Name | Time Heading Rule | Core Question Answered | Main Building Blocks |
+| :--- | :--- | :--- | :--- | :--- |
+| **1. Income Statement** | Statement of Profit or Loss (formerly *Trading & Profit & Loss A/c*) | **"For the year ended 31 December 20XX"** *(a time period)* | *Did the business earn a profit or make a loss during the period?* | Sales Revenue, Cost of Goods Sold, Gross Profit, Other Income, Operating Expenses, **Net Profit / (Loss)** |
+| **2. Balance Sheet** | Statement of Financial Position | **"As at 31 December 20XX"** *(one single snapshot date)* | *What does the business own, owe, and what is the owner’s net worth right now?* | Non-Current Assets, Current Assets, Current Liabilities, Non-Current Liabilities, **Owner’s Equity (Capital)** |
+| **3. Cash Flow Statement** | Statement of Cash Flows | **"For the year ended 31 December 20XX"** *(a time period)* | *Where did actual cash come from, where did it go, and how much cash is left?* | Cash Flows from **Operating**, **Investing**, and **Financing** Activities → **Closing Cash Balance** |
+
+*(Larger companies also publish a **Statement of Changes in Equity** explaining movements in share capital, reserves, and dividends across the year.)*
+
+### Crucial Insight: Profit ≠ Cash!
+Students often ask: *"If we already have an Income Statement showing Net Profit, why do we need a Cash Flow Statement?"*
+- Imagine you sell $50,000 of goods **on 60-day credit** in December. Your **Income Statement** records $50,000 revenue right away (Accrual concept), making profit look great!
+- Yet until customers actually pay, your **Cash Flow Statement** shows **$0 cash collected** — so you could still struggle to pay next Friday’s wages!
+- That is why smart managers and banks read **all three statements together**.
+
+---
+
+## 2. Diagram 1: How the Three Financial Statements Link Together
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-2/04-three-financial-statements.svg"
+  alt="Diagram showing Income Statement feeding Net Profit into Capital on the Balance Sheet, and Cash Flow Statement tying Closing Cash Balance into Current Assets on the Balance Sheet."
+  caption="Diagram 1 (Static Reference): The three statements form one connected web — Net Profit links the Income Statement to the Balance Sheet, while Closing Cash links the Cash Flow Statement to the Balance Sheet."
+/>
+
+---
+
+## 3. Diagram 2: Interactive Financial Statements Dashboard
+
+<InteractiveDiagram
+  title="Interactive Explorer: Tap Each Financial Statement to Inspect Its Role"
+  layout="hub"
+  centerLabel="Financial Reports"
+  centerSublabel="Year-End Suite"
+  instruction="Select any statement around the hub to explore what goes inside it, who reads it most closely, and how it connects to the other statements."
+  nodes={[
+    {
+      label: 'Income Statement',
+      tag: 'Performance',
+      tone: 'positive',
+      detail: 'Measures financial PERFORMANCE over a full period (month, quarter, or year). First calculates Gross Profit (Sales − Cost of Goods Sold), then adds other income and deducts operating expenses to find Net Profit.',
+      example: 'A grocery store reports Sales $180,000 − COGS $115,000 = Gross Profit $65,000; minus Rent/Wages/Utilities $41,000 = Net Profit $24,000.',
+      examTip: 'Always write the heading as "Income Statement FOR THE YEAR ENDED [Date]" — NEVER "As at"!',
+    },
+    {
+      label: 'Balance Sheet',
+      tag: 'Position',
+      tone: 'warning',
+      detail: 'Displays financial POSITION on one specific date. Lists everything the business controls (Assets), everything it owes to outsiders (Liabilities), and the owner’s residual stake (Capital/Equity).',
+      example: 'As at 31 Dec: Non-Current Assets $70,000 + Current Assets $30,000 = $100,000; financed by Capital $68,000 + Liabilities $32,000.',
+      examTip: 'Always write the heading as "Balance Sheet AS AT [Date]" — it is a frozen snapshot of one day!',
+    },
+    {
+      label: 'Cash Flow Statement',
+      tag: 'Liquidity',
+      tone: 'positive',
+      detail: 'Tracks real cash inflows and outflows grouped into three streams: Operating (daily trading), Investing (buying/selling equipment or buildings), and Financing (loans, owner capital, dividends).',
+      example: 'Operating cash +$19,000, bought new delivery van (Investing) −$15,000, bank loan repaid (Financing) −$2,000 → Net cash increase +$2,000.',
+      examTip: 'Non-cash items like Depreciation reduce Net Profit in the Income Statement but do NOT involve cash leaving the bank.',
+    },
+    {
+      label: 'Statement of Equity',
+      tag: 'Ownership Link',
+      tone: 'neutral',
+      detail: 'Bridges Opening Equity to Closing Equity by adding Net Profit (and new capital/shares) and subtracting Drawings (or Dividends). For a sole trader, this bridge usually appears right inside the Balance Sheet.',
+      example: 'Opening Capital $50,000 + Net Profit $24,000 − Drawings $6,000 = Closing Capital $68,000.',
+      examTip: 'Memorize: Closing Capital = Opening Capital + Net Profit − Drawings (or − Net Loss).',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Routing Financial Questions & Items to the Right Statement"
+  marks={10}
+  problem={
+    <>
+      <p>
+        <strong>Part A (6 marks):</strong> For each account balance below, state whether it
+        belongs on the <strong>Income Statement</strong> or the <strong>Balance Sheet</strong>:
+      </p>
+      <ol>
+        <li>Motor Vehicles ($24,000)</li>
+        <li>Sales Revenue ($95,000)</li>
+        <li>Trade Payables ($8,200)</li>
+        <li>Staff Wages Expense ($18,500)</li>
+        <li>Electricity Expense ($2,100)</li>
+        <li>Bank Loan repayable in 5 years ($15,000)</li>
+      </ol>
+      <p>
+        <strong>Part B (4 marks):</strong> A bank manager reviewing Summit Hardware’s accounts
+        asks two questions: (i) <em>"Can the store generate enough cash this year to pay monthly loan
+        installments?"</em> and (ii) <em>"What exact title wording should appear on the top of Summit’s
+        Balance Sheet dated 31 December 2026?"</em> Answer both questions clearly.
+      </p>
+    </>
+  }
+>
+
+**Part A — Classifying Items by Financial Statement (6 marks — 1 mark each):**
+1. **Motor Vehicles ($24,000):** **Balance Sheet** *(Non-Current Asset)*
+2. **Sales Revenue ($95,000):** **Income Statement** *(Revenue)*
+3. **Trade Payables ($8,200):** **Balance Sheet** *(Current Liability)*
+4. **Staff Wages Expense ($18,500):** **Income Statement** *(Operating Expense)*
+5. **Electricity Expense ($2,100):** **Income Statement** *(Operating Expense)*
+6. **Bank Loan repayable in 5 years ($15,000):** **Balance Sheet** *(Non-Current Liability)*
+
+**Part B — Answering the Bank Manager (4 marks):**
+- **(i) Which statement answers cash repayment ability? (2 marks):** The **Statement of Cash Flows** *(1 mark)* — because it tracks actual cash generated from Operating Activities (after paying suppliers and wages) rather than accrual-based paper profit *(1 mark)*.
+- **(ii) Exact Balance Sheet heading wording (2 marks):**
+  > **Summit Hardware**
+  > **Balance Sheet as at 31 December 2026**
+  *(1 mark for business name + statement title; 1 mark for using **"as at 31 December 2026"** rather than "for the year ended")*.
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Identifying Financial Statements"
+  items={[
+    {
+      statement: 'The correct heading for an Income Statement is "Income Statement as at 31 December 2026".',
+      answer: false,
+      explanation: 'An Income Statement covers an entire period, so it MUST read "for the year ended 31 December 2026". "As at" is used for the Balance Sheet.',
+    },
+    {
+      statement: 'Net Profit calculated at the bottom of the Income Statement flows into the Equity/Capital section of the Balance Sheet.',
+      answer: true,
+      explanation: 'Net Profit increases Owner’s Capital (while a Net Loss reduces Capital) on the Balance Sheet.',
+    },
+    {
+      statement: 'A business that reports a healthy Net Profit on its Income Statement can still face a cash shortage.',
+      answer: true,
+      explanation: 'If sales were made on credit and customers have not paid yet — or if large cash sums were spent buying equipment — cash can run low despite strong accounting profit.',
+    },
+    {
+      statement: 'Buying a new delivery truck for cash appears under Investing Activities on the Statement of Cash Flows.',
+      answer: true,
+      explanation: 'Purchasing or selling long-term assets (property, machinery, vehicles) belongs in Cash Flows from Investing Activities.',
+    },
+    {
+      statement: 'Trade Receivables and Closing Inventory are expenses shown on the Income Statement.',
+      answer: false,
+      explanation: 'Trade Receivables and Closing Inventory are Current Assets shown on the Balance Sheet (though Closing Inventory is also subtracted when computing Cost of Goods Sold).',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s2-04-project"
+  title="Mini-Project: Design a 1-Page Financial Statement Cheat-Sheet Poster"
+  duration="25–30 mins"
+  scenario="A friend starting a new café asks you: 'My accountant sent me three different reports — an Income Statement, a Balance Sheet, and a Cash Flow Statement — and I have no idea why there are three or how they connect!' Create a crystal-clear 1-page visual guide explaining all three reports using simple café examples."
+  steps={[
+    'Create three side-by-side panels (one for Income Statement, one for Balance Sheet, one for Cash Flow Statement) including the exact proper title wording for a café ending its year on December 31.',
+    'Sort 12 everyday café items (e.g., Espresso Machine, Coffee Sales, Milk Purchases, Unpaid Flour Bill, Barista Wages, Cash in Register, 3-Year Bank Loan, Owner’s Capital, Rent Paid, Cash Paid for New Oven, Customer Catering Receivable, Owner’s Drawings) into the right statement(s).',
+    'Draw two bright connecting arrows showing (a) Net Profit flowing from the Income Statement into Capital, and (b) Closing Cash tying the Cash Flow Statement to the Balance Sheet.',
+    'Add a short "Why Profit ≠ Cash" example box explaining how the café could earn $1,000 profit in a month yet have less cash in the bank than on Day 1.',
+  ]}
+  deliverables={[
+    'A 3-panel visual guide with exact period vs. snapshot headings',
+    'All 12 café items correctly sorted across the three statements',
+    'Two accurate inter-statement linking arrows + a "Profit ≠ Cash" callout box',
+  ]}
+  rubric={[
+    'Headings correctly use "For the year ended..." (Income & Cash Flow) vs. "As at..." (Balance Sheet).',
+    'Assets/Liabilities/Capital are placed only on the Balance Sheet; Revenues/Expenses on the Income Statement.',
+    'The "Profit ≠ Cash" explanation uses a logical real-world scenario (e.g., unpaid credit sales or buying equipment).',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **Income Statement** = *Movie of performance* → **"For the year ended ..."** → Revenue, COGS, Expenses → **Net Profit**.
+- **Balance Sheet** = *Snapshot of position* → **"As at ..."** → Assets, Liabilities, Capital.
+- **Cash Flow Statement** = *Actual cash movement* → **"For the year ended ..."** → Operating, Investing, Financing → **Closing Cash**.
+:::

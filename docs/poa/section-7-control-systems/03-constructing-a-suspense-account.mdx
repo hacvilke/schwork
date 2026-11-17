@@ -1,0 +1,235 @@
+---
+id: constructing-a-suspense-account
+title: "7.3 How to Construct a Suspense Account"
+sidebar_label: "7.3 Suspense Account"
+sidebar_position: 3
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 7"
+  section="Control Systems — Error Correction"
+  code="POA-S7-03"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="25 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+When a Trial Balance fails to balance right before a reporting deadline, accountants cannot freeze the entire business! Instead, they temporarily plug the missing difference into a holding account called the **Suspense Account** on the **SHORTER side of the Trial Balance**. As each single-sided error is discovered and corrected via the General Journal, posting the Suspense half steadily **drains the Suspense Account cleanly down to `$0`**!
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | Opening the **Suspense Account** on the **short side** of the Trial Balance, posting ONLY Suspense-linked correcting entries, and clearing the account to **`$0`** (or showing any unresolved balance on the Balance Sheet) |
+| **Exam Focus** | Never putting opening difference on the wrong side, ignoring COPCOR errors that do NOT touch Suspense, and verifying `Total Dr = Total Cr` when all errors are found |
+| **Learning Outcome** | Open, post to, and close a complete Suspense Account from any Trial Balance disagreement and list of discovered errors |
+
+<ObjectivesBox
+  id="poa-s7-03-obj"
+  objectives={[
+    'Define a Suspense Account and explain its two temporary purposes in accounting.',
+    'Determine immediately whether the opening "Difference per Trial Balance" sits on the Debit or Credit side of the Suspense Account.',
+    'Post single-sided error-correction journal entries to the Suspense Account while correctly excluding two-sided COPCOR errors.',
+    'State how any remaining unresolved Suspense balance is presented on a Balance Sheet.',
+  ]}
+/>
+
+---
+
+## 1. The Golden Rule for Opening a Suspense Account
+
+Look closely at which column of the Trial Balance is **SMALLER (SHORT)**:
+
+| Trial Balance Imbalance | Which Side Is SHORT? | Opening Line Inside Suspense A/c |
+| :--- | :---: | :--- |
+| **Total Credits &gt; Total Debits** *(e.g. Dr $98,150 vs Cr $98,600)* | **Debit is short by `$450`** | **DEBIT side:** `Difference per Trial Balance  $450` |
+| **Total Debits &gt; Total Credits** *(e.g. Dr $85,540 vs Cr $85,000)* | **Credit is short by `$540`** | **CREDIT side:** `Difference per Trial Balance  $540` |
+
+### Two Crucial Exam Rules About Suspense Accounts
+1. **When ALL errors are found:** The Debit total and Credit total of the Suspense Account **MUST be 100% equal** — the account closes automatically with **`$0` balance**! *(This is your built-in self-check on Paper 2!)*
+2. **When SOME errors are STILL NOT found by Balance Sheet date:**
+   - A remaining **Debit** balance (`Bal b/d` on Debit) is shown temporarily under **Current Assets**.
+   - A remaining **Credit** balance (`Bal b/d` on Credit) is shown temporarily under **Current Liabilities**.
+
+---
+
+## 2. Diagram 1: Anatomy of a Suspense Account
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-7/03-suspense-account-anatomy.svg"
+  alt="Visual diagram tracing an unbalanced Trial Balance ($450 Debit shortfall) into the Debit opening line of a Suspense T-account, posting correcting entries, clearing the account to $0 ($700 = $700), and noting Balance Sheet placement if unresolved."
+  caption="Diagram 1 (Static Reference): Put the Trial Balance shortfall on the SHORT side — then post each Suspense journal entry to its exact Dr/Cr side until both totals match!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive 4-Step Suspense Account Builder
+
+<InteractiveDiagram
+  title="Interactive Flow: Follow These 4 Steps to Clear Every Suspense Account to $0"
+  layout="flow"
+  instruction="Click through Steps 1 to 4 to avoid the #1 exam blunder (opening on the wrong side!)."
+  nodes={[
+    {
+      label: '1. Spot the SHORT Side',
+      tag: 'Opening Line',
+      tone: 'warning',
+      detail: 'Read the question carefully! "Debits exceeded Credits by $540" means CREDITS are short by $540 → write "Difference per Trial Balance $540" on the CREDIT side of Suspense! "Credits exceeded Debits by $390" means DEBITS are short → write $390 on the DEBIT side!',
+      example: 'Always rewrite "X exceeded Y" as "Y is SHORT" before drawing the T-account — you will NEVER flip the opening side!',
+      examTip: 'Sometimes an exam asks you to FIND the missing opening difference by posting the fixes first and taking the balancing figure!',
+    },
+    {
+      label: '2. Write Journal Fixes First',
+      tag: 'Filter COPCOR',
+      tone: 'neutral',
+      detail: 'Write all correcting General Journal entries FIRST. Any entry that does NOT contain the word "Suspense" (like Commission, Principle, or Reversal) is COMPLETELY EXCLUDED from the Suspense T-account!',
+      example: 'Dr Office Furniture $900 / Cr Stationery $900 has NO Suspense → do NOT write it in Suspense!',
+      examTip: 'Examiners deliberately mix 1–2 COPCOR errors into every Suspense question just to test if you keep them OUT of Suspense!',
+    },
+    {
+      label: '3. Post ONLY Suspense Lines',
+      tag: 'Cross-Reference',
+      tone: 'neutral',
+      detail: 'For every Journal Entry containing Suspense: if Suspense is DEBITED, post the name of the OTHER account on the DEBIT side of Suspense; if Suspense is CREDITED, post the name of the OTHER account on the CREDIT side!',
+      example: 'Dr Suspense $320 / Cr Returns Outwards $320 → Debit side of Suspense: "Returns Outwards $320".',
+      examTip: 'NEVER write the word "Suspense" inside the Suspense Account — always write the opposite account’s title!',
+    },
+    {
+      label: '4. Total & Verify $0!',
+      tag: 'Self-Check ✓',
+      tone: 'positive',
+      detail: 'Add up the Debit side and Credit side. If all errors were located, Total Dr MUST equal Total Cr with ZERO balance remaining!',
+      example: 'Dr ($320 + $600 = $920) = Cr ($540 opening + $200 + $180 = $920) → Cleared cleanly to $0 ✓!',
+      examTip: 'If your Suspense totals don’t match, check (a) opening side, (b) 2× wrong-side posting rule, and (c) whether a COPCOR error snuck in!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Correcting Journal Entries & Clearing a Suspense Account to Zero"
+  marks={14}
+  problem={
+    <>
+      <p>
+        <strong>Scenario:</strong> The Trial Balance of <strong>SunRidge Hardware</strong> on
+        <strong> 31 December 2026</strong> failed to agree: <strong>Total Debits exceeded Total Credits
+        by $540</strong>. The difference was entered in a Suspense Account. Subsequent investigation
+        revealed five errors:
+      </p>
+      <ol>
+        <li>The Sales Book total was overcast by <strong>$200</strong>.</li>
+        <li>Discount Allowed of <strong>$180</strong> was credited accurately to the customer’s account, but omitted from the Discount Allowed Account.</li>
+        <li>The Returns Outwards Book total was undercast by <strong>$320</strong>.</li>
+        <li>Cash of <strong>$300</strong> received from credit customer <strong>M. Shaw</strong> was debited accurately in the Cash Book, but wrongly posted to the <strong>Debit</strong> side of M. Shaw’s account.</li>
+        <li>A new office desk costing <strong>$900</strong> (paid by cheque) was wrongly debited to <em>Stationery</em>.</li>
+      </ol>
+      <p>
+        <strong>Required:</strong> (a) Prepare the <strong>General Journal entries</strong> (without narrations) to correct all 5 errors <em>[8 marks]</em>; (b) Construct the <strong>Suspense Account</strong> showing that it clears cleanly to $0 <em>[6 marks]</em>.
+      </p>
+    </>
+  }
+>
+
+### (a) Correcting General Journal Entries *(8 marks)*
+
+| # | Details | Dr ($) | Cr ($) | Touches Suspense? |
+| :-: | :--- | ---: | ---: | :---: |
+| **1** | Sales *(overcast → reduce Cr)* | 200 | | **YES** (Cr) |
+| | &nbsp;&nbsp;&nbsp;&nbsp;Suspense | | 200 | |
+| **2** | Discount Allowed *(omitted Dr)* | 180 | | **YES** (Cr) |
+| | &nbsp;&nbsp;&nbsp;&nbsp;Suspense | | 180 | |
+| **3** | Suspense | 320 | | **YES** (Dr) |
+| | &nbsp;&nbsp;&nbsp;&nbsp;Returns Outwards *(undercast → add Cr)* | | 320 | |
+| **4** | Suspense *(`2 × $300` wrong-side fix!)* | 600 | | **YES** (Dr) |
+| | &nbsp;&nbsp;&nbsp;&nbsp;M. Shaw *(`$300` cancels Dr + `$300` records Cr)* | | 600 | |
+| **5** | Office Furniture *(Error of Principle)* | 900 | | **NO!** |
+| | &nbsp;&nbsp;&nbsp;&nbsp;Stationery | | 900 | |
+
+---
+
+### (b) Suspense Account *(Debits exceeded Credits → Credit Side SHORT by $540! — 6 marks)*
+
+| Date (Dr) | Details | $ | Date (Cr) | Details | $ |
+| :--- | :--- | ---: | :--- | :--- | ---: |
+| Dec 31 | Returns Outwards *(Error 3)* | 320 | Dec 31 | **Difference per Trial Balance** | **540** |
+| Dec 31 | M. Shaw *(Error 4 — `2 × $300`)* | 600 | Dec 31 | Sales *(Error 1)* | 200 |
+| | | | Dec 31 | Discount Allowed *(Error 2)* | 180 |
+| | | **$920** | | | **$920** |
+
+**Self-Check Passed:** Total Dr (**$920**) = Total Cr (**$920**) → Suspense cleared to **`$0`** ✓ *(and Error 5 was rightly kept out!)*
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Constructing a Suspense Account"
+  items={[
+    {
+      statement: 'If Trial Balance Credits exceed Debits by $350, the opening entry in the Suspense Account is entered on the DEBIT side.',
+      answer: true,
+      explanation: 'Correct! Debits are SHORT by $350, so the temporary plug goes on the Debit side of the Trial Balance and Suspense Account.',
+    },
+    {
+      statement: 'Every single error discovered after drawing up an unbalanced Trial Balance must be posted to the Suspense Account.',
+      answer: false,
+      explanation: 'NEVER! Two-sided COPCOR errors (Commission, Omission, Principle, Original Entry, Reversal, Compensating) NEVER enter the Suspense Account.',
+    },
+    {
+      statement: 'If all errors affecting the Trial Balance have been discovered and properly corrected, the Suspense Account will end with a $0 balance.',
+      answer: true,
+      explanation: 'Yes — Debit totals and Credit totals become 100% equal, eliminating the temporary account completely.',
+    },
+    {
+      statement: 'An unresolved DEBIT balance still remaining in the Suspense Account at year-end is shown temporarily under Current Liabilities on the Balance Sheet.',
+      answer: false,
+      explanation: 'A remaining DEBIT balance sits temporarily under Current ASSETS (only a remaining CREDIT balance goes under Current Liabilities)!',
+    },
+    {
+      statement: 'When a $250 receipt from a debtor was entered right in the Cash Book, but wrongly DEBITED to the debtor’s account, the Suspense Account will be Debited $500.',
+      answer: true,
+      explanation: 'Yes! You must Credit the debtor $500 (2 × $250) and Debit Suspense $500.',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s7-03-project"
+  title="Mini-Project: Clearing the Suspense Account for Coral Coast Stores"
+  duration="25 mins"
+  scenario="On 31 December 2026, Coral Coast Stores’ Trial Balance Credits exceeded Debits by $390, and a Suspense Account was opened. Five errors were then discovered: (1) Purchases Book was undercast by $260; (2) A cheque for $190 received from customer P. Henry was debited accurately in the Cash Book, but wrongly DEBITED to P. Henry’s account; (3) Rent paid $860 was credited accurately in the Cash Book, but debited as $680 in the Rent Account; (4) Electricity paid $330 was credited in the Cash Book, but completely omitted from the Electricity Account; (5) A credit sale of $400 to A. Brown was posted to B. Brown."
+  steps={[
+    'Identify which side of the Trial Balance was SHORT and open the Suspense Account with "$390 Difference per Trial Balance" on that side.',
+    'Write all 5 correcting General Journal entries cleanly (tagging which 4 touch Suspense and which 1 does NOT!).',
+    'Post the 4 Suspense entries into the Suspense T-account (remember the 2× amount rule on Error 2!).',
+    'Total both sides of the Suspense Account and verify it clears cleanly to $0!',
+  ]}
+  deliverables={[
+    '5 General Journal correcting entries with narrations',
+    'Completed Suspense T-account cleared to $0',
+    '1-sentence note explaining why Error 5 was excluded from Suspense',
+  ]}
+  rubric={[
+    'Opening Suspense sits on the DEBIT side ($390) because Credits exceeded Debits.',
+    'Journal fixes: (1) Dr Purchases $260 / Cr Suspense $260; (2) Dr Suspense $380 / Cr P. Henry $380; (3) Dr Rent $180 / Cr Suspense $180; (4) Dr Electricity $330 / Cr Suspense $330; (5) Dr A. Brown $400 / Cr B. Brown $400 (NO Suspense!).',
+    'Suspense Account clears cleanly: Debit ($390 opening + $380 P. Henry = $770) = Credit ($260 Purchases + $180 Rent + $330 Electricity = $770)!',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- Put `"Difference per Trial Balance"` on the **SHORT side** of the Trial Balance!
+- **Only entries mentioning `Suspense`** ever go inside the Suspense T-account.
+- If **all** single-sided errors are found, **`Dr Total = Cr Total`** (`$0` balance)!
+:::

@@ -1,0 +1,265 @@
+---
+id: constructing-a-trial-balance
+title: "4.7 How to Construct a Trial Balance from Ledger Balances"
+sidebar_label: "4.7 Constructing a Trial Balance"
+sidebar_position: 7
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 4"
+  section="Ledgers and the Trial Balance — Trial Balance"
+  code="POA-S4-07"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="25 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+A **Trial Balance** is NOT a ledger account and NOT a financial statement — it is a **two-column summary schedule** listing every open ledger balance (`b/d`) on a specific date, with Debit balances in the left column and Credit balances in the right column. Because every transaction obeyed double-entry (`Dr = Cr`), **Total Debits MUST equal Total Credits**!
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | Sorting every single account balance into the **Debit column (`DEAD`)** or **Credit column (`CLIC`)** and verifying **Total Debits = Total Credits** |
+| **Exam Focus** | Constructing a clean Trial Balance from a scrambled list of balances — especially placing **Returns In/Out, Discounts Allowed/Received, Bank Overdraft, Carriage, Provisions, and Opening Inventory** in the exact right column! |
+| **Learning Outcome** | Construct a properly titled, balanced Trial Balance from either ledger accounts or a mixed list of balances (including finding a missing Capital figure) |
+
+<ObjectivesBox
+  id="poa-s4-07-obj"
+  objectives={[
+    'Define a Trial Balance and write its exact required 2-line heading ("Trial Balance as at [Date]").',
+    'Sort all standard ledger accounts accurately into the Debit column vs. Credit column using DEAD CLIC.',
+    'Handle classic exam tricky items properly: Returns Inwards/Outwards, Discounts Allowed/Received, Carriage Inwards/Outwards, Bank Overdraft, Provisions, and Opening vs. Closing Inventory.',
+    'Construct a complete balanced Trial Balance and solve for a missing Capital balance when required.',
+  ]}
+/>
+
+---
+
+## 1. The Master Trial Balance Sorting Table (Zero Guesswork!)
+
+Always start with the **2-line heading**:
+> **[Name of Business]**
+> **Trial Balance as at [Date]** *(e.g. 31 December 2026)*
+
+| DEBIT Column (`Dr`) — **DEAD** | CREDIT Column (`Cr`) — **CLIC** |
+| :--- | :--- |
+| **Assets:** Premises, Land, Machinery, Vehicles, Equipment, Fixtures, **Opening Inventory**, Trade Receivables (Debtors), **Bank (positive)**, Cash, Petty Cash | **Liabilities:** Trade Payables (Creditors), Bank Loan, Mortgage, **Bank Overdraft**, Accrued Expenses |
+| **Expenses & Costs:** **Purchases**, **Carriage Inwards**, **Carriage Outwards**, Rent Expense, Wages/Salaries, Electricity, Insurance, Bad Debts, **Discount Allowed** | **Income & Revenues:** **Sales**, **Discount Received**, Commission Received, Rent Received |
+| **Drawings** *(reduces Capital)* | **Owner’s Capital** *(Equity)* |
+| **Returns Inwards** *(Sales Returns — reduces Sales)* | **Returns Outwards** *(Purchases Returns — reduces Purchases)* |
+| | **Provisions** *(Provision for Depreciation & Provision for Doubtful Debts)* |
+
+:::warning The Opening vs. Closing Inventory Rule!
+- **Opening Inventory** (stock on Jan 1) sits **INSIDE** the Trial Balance in the **Debit** column.
+- **Closing Inventory** (stock counted on Dec 31) is **NEVER included inside** the regular Trial Balance totals — it is written as a **footnote underneath** (`Note: Closing Inventory at 31 Dec = $X`) because it has not been adjusted into Cost of Goods Sold yet!
+:::
+
+---
+
+## 2. Diagram 1: Trial Balance Debit vs. Credit Sorting Blueprint
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-4/07-trial-balance-sorting-map.svg"
+  alt="Two-column Trial Balance Sorting Blueprint pairing Debit items (Assets, Expenses, Purchases, Discount Allowed, Drawings, Returns Inwards) against Credit items (Liabilities, Bank Overdraft, Provisions, Income, Discount Received, Capital, Returns Outwards), plus the Opening vs. Closing Inventory note."
+  caption="Diagram 1 (Static Reference): Highlight the four orange/sage 'look-alike pairs' — Returns In/Out, Discount Allowed/Received, Bank/Overdraft, and Opening/Closing Inventory!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive Trial Balance Look-Alike Trap Comparator
+
+<InteractiveDiagram
+  title="Interactive Comparator: Master the 5 Most Confused Trial Balance Pairs!"
+  layout="compare"
+  instruction="Examiners love pairing similar-sounding account names to see who truly understands Debit vs. Credit. Tap each pair below to lock in the difference forever!"
+  nodes={[
+    {
+      label: 'Returns Inwards vs. Outwards',
+      tag: 'Pair #1',
+      detail: 'Returns ALWAYS sit on the OPPOSITE side of the account they reduce!',
+      sideALabel: 'DEBIT: Returns Inwards (Sales Returns)',
+      sideAText: 'Sales is CREDIT — so Returns Inwards (customers returning goods to us, reducing Sales) goes in the DEBIT column!',
+      sideBLabel: 'CREDIT: Returns Outwards (Purchases Returns)',
+      sideBText: 'Purchases is DEBIT — so Returns Outwards (goods we send back to suppliers, reducing Purchases) goes in the CREDIT column!',
+      examTip: 'Memory hook: Sales = Cr → Sales Returns = Dr; Purchases = Dr → Purchases Returns = Cr!',
+    },
+    {
+      label: 'Discount Allowed vs. Received',
+      tag: 'Pair #2',
+      detail: 'One costs the business money (Expense); the other saves the business money (Income).',
+      sideALabel: 'DEBIT: Discount Allowed',
+      sideAText: 'We GAVE a prompt-payment discount to customers → EXPENSE → DEBIT column!',
+      sideBLabel: 'CREDIT: Discount Received',
+      sideBText: 'Suppliers GAVE a prompt-payment discount to us → INCOME → CREDIT column!',
+      examTip: 'Allowed = Expense = Debit; Received = Income = Credit!',
+    },
+    {
+      label: 'Carriage Inwards vs. Outwards',
+      tag: 'Pair #3',
+      detail: 'Wait — trick question! Which column does EACH carriage go in?',
+      sideALabel: 'DEBIT: Carriage Inwards',
+      sideAText: 'Delivery cost we pay to bring purchased stock INTO our store → COST/EXPENSE → DEBIT column! (Added to Purchases in Trading section.)',
+      sideBLabel: 'ALSO DEBIT: Carriage Outwards!',
+      sideBText: 'Delivery cost we pay to ship sold goods OUT to customers → ALSO an EXPENSE → STILL goes in the DEBIT column! (Never put Carriage Outwards in Credit!)',
+      examTip: 'CLASSIC TRAP! BOTH Carriage Inwards AND Carriage Outwards are expenses — BOTH go in the DEBIT column!',
+    },
+    {
+      label: 'Rent Paid vs. Rent Received',
+      tag: 'Pair #4',
+      detail: 'Always read the second word carefully ("Paid/Expense" vs. "Received/Income")!',
+      sideALabel: 'DEBIT: Rent (or Rent Paid)',
+      sideAText: 'Rent paid to our landlord for using the shop → EXPENSE → DEBIT column!',
+      sideBLabel: 'CREDIT: Rent Received',
+      sideBText: 'Rent collected from a tenant subletting our spare office → INCOME → CREDIT column!',
+      examTip: 'Same rule applies to Commission Paid (Dr) vs. Commission Received (Cr), and Interest Paid (Dr) vs. Interest Received (Cr)!',
+    },
+    {
+      label: 'Bank vs. Bank Overdraft',
+      tag: 'Pair #5',
+      detail: 'Check whether the bank balance is positive cash or an overdrawn short-term debt.',
+      sideALabel: 'DEBIT: Bank (Cash at Bank)',
+      sideAText: 'Positive money deposited in our bank account → CURRENT ASSET → DEBIT column!',
+      sideBLabel: 'CREDIT: Bank Overdraft',
+      sideBText: 'Short-term debt owed to the bank → CURRENT LIABILITY → CREDIT column!',
+      examTip: 'Also check Provisions (Provision for Depreciation & Provision for Doubtful Debts) — ALL Provisions go in the CREDIT column!',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Constructing a Balanced Trial Balance & Finding Missing Capital"
+  marks={12}
+  problem={
+    <>
+      <p>
+        <strong>Question:</strong> The following scrambled ledger balances were extracted from the
+        books of <strong>PalmTree Hardware</strong> as at <strong>31 December 2026</strong>.
+        Unfortunately, the owner’s <strong>Capital</strong> figure was smudged!
+      </p>
+      <ul>
+        <li>Sales: $62,000 &nbsp;|&nbsp; Purchases: $36,000 &nbsp;|&nbsp; Opening Inventory (1 Jan): $7,500</li>
+        <li>Returns Inwards: $1,200 &nbsp;|&nbsp; Returns Outwards: $900 &nbsp;|&nbsp; Carriage Inwards: $800</li>
+        <li>Premises: $40,000 &nbsp;|&nbsp; Delivery Van: $15,000 &nbsp;|&nbsp; Trade Receivables: $6,400</li>
+        <li>Trade Payables: $5,100 &nbsp;|&nbsp; Bank Overdraft: $2,300 &nbsp;|&nbsp; Cash in Hand: $600</li>
+        <li>Wages: $9,200 &nbsp;|&nbsp; Rent Expense: $4,800 &nbsp;|&nbsp; Discount Allowed: $450 &nbsp;|&nbsp; Discount Received: $350</li>
+        <li>Drawings: $3,500 &nbsp;|&nbsp; 5-Year Bank Loan: $12,000 &nbsp;|&nbsp; <strong>Capital: ?</strong></li>
+        <li><em>Additional note: Closing Inventory at 31 Dec 2026 was valued at $8,400.</em></li>
+      </ul>
+      <p>
+        Prepare the <strong>Trial Balance of PalmTree Hardware as at 31 December 2026</strong>,
+        calculating the missing <strong>Capital</strong> balance so the Trial Balance agrees.
+        <em>[12 marks]</em>
+      </p>
+    </>
+  }
+>
+
+**PalmTree Hardware**
+**Trial Balance as at 31 December 2026** *(1 mark for exact heading)*
+
+| Account Name | Debit ($) | Credit ($) |
+| :--- | ---: | ---: |
+| Premises *(Asset)* | 40,000 | |
+| Delivery Van *(Asset)* | 15,000 | |
+| Opening Inventory *(1 Jan)* | 7,500 | |
+| Trade Receivables *(Asset)* | 6,400 | |
+| Cash in Hand *(Asset)* | 600 | |
+| Purchases *(Expense)* | 36,000 | |
+| Carriage Inwards *(Expense)* | 800 | |
+| Returns Inwards *(Reduces Sales)* | 1,200 | |
+| Wages *(Expense)* | 9,200 | |
+| Rent Expense *(Expense)* | 4,800 | |
+| Discount Allowed *(Expense)* | 450 | |
+| Drawings *(DEAD)* | 3,500 | |
+| Sales *(Income)* | | 62,000 |
+| Returns Outwards *(Reduces Purchases)* | | 900 |
+| Discount Received *(Income)* | | 350 |
+| Trade Payables *(Liability)* | | 5,100 |
+| Bank Overdraft *(Liability)* | | 2,300 |
+| 5-Year Bank Loan *(Liability)* | | 12,000 |
+| **Capital *(Missing balancing figure)*** | | **42,800** |
+| **Totals** | **125,450** | **125,450** |
+
+*Note: Closing Inventory at 31 December 2026 = $8,400 (shown as a note below — NOT added inside the Trial Balance totals!)*
+
+**Step-by-Step Missing Capital Math:**
+- Sum of all Debit balances = `40,000 + 15,000 + 7,500 + 6,400 + 600 + 36,000 + 800 + 1,200 + 9,200 + 4,800 + 450 + 3,500` = **$125,450**
+- Sum of known Credit balances = `62,000 + 900 + 350 + 5,100 + 2,300 + 12,000` = **$82,650**
+- **Missing Capital** = `$125,450 − $82,650` = **$42,800** ✓!
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Constructing a Trial Balance"
+  items={[
+    {
+      statement: 'Carriage Outwards is entered in the Credit column of the Trial Balance because goods are leaving the business.',
+      answer: false,
+      explanation: 'Classic trap! Carriage Outwards is a delivery EXPENSE paid by the business — so BOTH Carriage Inwards and Carriage Outwards go in the DEBIT column!',
+    },
+    {
+      statement: 'Closing Inventory counted on 31 December is normally shown as a note underneath the Trial Balance rather than inside the Debit or Credit totals.',
+      answer: true,
+      explanation: 'Opening Inventory sits inside the Trial Balance (Debit), while Closing Inventory is noted underneath for preparing the Income Statement and Balance Sheet.',
+    },
+    {
+      statement: 'Returns Outwards and Discount Received both belong in the Credit column of the Trial Balance.',
+      answer: true,
+      explanation: 'Returns Outwards reduces Debit Purchases (Credit) and Discount Received is Other Income (Credit).',
+    },
+    {
+      statement: 'Provision for Doubtful Debts and Provision for Depreciation are listed in the Debit column of the Trial Balance.',
+      answer: false,
+      explanation: 'All Provisions act as contra-asset accounts (reducing Receivables or Non-Current Assets) and ALWAYS belong in the CREDIT column.',
+    },
+    {
+      statement: 'A Trial Balance is dated "as at [Specific Date]" just like a Balance Sheet.',
+      answer: true,
+      explanation: 'A Trial Balance captures all ledger balances on one exact closing date, so its title is always "Trial Balance as at [Date]".',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s4-07-project"
+  title="Mini-Project: Debug a Broken Rookie Trial Balance"
+  duration="25–30 mins"
+  scenario="A nervous junior clerk drafted the Trial Balance for 'Coral Reef Bakery' as at 30 June 2026 — and it DOES NOT BALANCE! Worse, they put several accounts in the completely wrong column AND accidentally threw Closing Inventory inside the totals! Here is the clerk’s broken list: DEBITS: Sales $48,000; Equipment $26,200; Trade Receivables $4,200; Carriage Outwards $700; Returns Outwards $600; Bank Overdraft $1,500; Purchases $27,000; Wages $8,400; Closing Inventory $5,000. CREDITS: Capital $25,000; Opening Inventory $4,500; Trade Payables $3,800; Drawings $2,400; Returns Inwards $900; Rent Expense $3,600; Discount Allowed $300; Discount Received $400; Cash $1,100."
+  steps={[
+    'Audit EVERY SINGLE ONE of the 18 items in the clerk’s broken Trial Balance — mark which items are in the right column, which need to flip columns, and which single item (Closing Inventory!) must be pulled OUT into a note underneath.',
+    'Rebuild the completely corrected Trial Balance of Coral Reef Bakery as at 30 June 2026 cleanly.',
+    'Verify that Total Debits EXACTLY equal Total Credits (zero difference!).',
+    'Write a short 3-bullet "Rookie Rescue Feedback Note" explaining the top 3 sorting rules the clerk broke (e.g. DEAD CLIC, Returns/Discounts pairs, and Closing Inventory).',
+  ]}
+  deliverables={[
+    'Annotated Audit List identifying every misclassified account',
+    'Clean, Corrected & Balanced Trial Balance of Coral Reef Bakery as at 30 June 2026 (plus Closing Inventory footnote)',
+    '3-bullet Rookie Rescue Feedback Note',
+  ]}
+  rubric={[
+    'Closing Inventory ($5,000) is removed from the totals and placed cleanly as a note underneath.',
+    'Every tricky pair is placed right: Returns Inwards $900 (Dr), Returns Outwards $600 (Cr), Discount Allowed $300 (Dr), Discount Received $400 (Cr), Carriage Outwards $700 (Dr), Bank Overdraft $1,500 (Cr).',
+    'Corrected Trial Balance balances EXACTLY at $79,300 = $79,300 (Debits = $79,300; Credits = $79,300).',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- **DEAD = Debit:** Assets, Expenses, Purchases, **Carriage In & Out**, **Returns Inwards**, **Discount Allowed**, Drawings, **Opening Inventory**.
+- **CLIC = Credit:** Liabilities, **Bank Overdraft**, **Provisions**, Income, Sales, **Returns Outwards**, **Discount Received**, Capital.
+- **Closing Inventory** stays as a **note underneath** — NEVER inside the Trial Balance totals!
+:::

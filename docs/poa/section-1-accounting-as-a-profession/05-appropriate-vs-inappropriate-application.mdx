@@ -1,0 +1,247 @@
+---
+id: appropriate-vs-inappropriate-application
+title: "1.5 Appropriate vs. Inappropriate Application of Accounting Principles"
+sidebar_label: "1.5 Appropriate vs. Inappropriate"
+sidebar_position: 5
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 1"
+  section="Accounting as a Profession — Ethics & Professionalism"
+  code="POA-S1-05"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="20 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+Accounting principles exist so financial statements give a **true and fair view** that anyone can trust and compare across years. **Appropriate application** follows rules honestly even when results look modest; **inappropriate application** (often called *creative accounting* or *window dressing*) twists or ignores rules to make a business look richer, more profitable, or less indebted than it really is.
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | Spotting the difference between **appropriate** rule-following and **inappropriate** manipulation ("window dressing") |
+| **Exam Focus** | Naming which accounting principle is violated in a case study and showing how profit/assets are distorted |
+| **Learning Outcome** | Evaluate accounting treatments critically and correct inappropriate entries back to standard practice |
+
+<ObjectivesBox
+  id="poa-s1-05-obj"
+  objectives={[
+    'Distinguish between appropriate application of accounting principles and inappropriate manipulation (window dressing).',
+    'Identify how misapplying Business Entity, Prudence, Accrual, Consistency, and Verifiability distorts financial statements.',
+    'Explain the financial effect (overstated vs. understated profit, assets, or liabilities) of common inappropriate practices.',
+    'Recommend the exact corrective treatment for inappropriate accounting scenarios.',
+  ]}
+/>
+
+---
+
+## 1. Why Principles Must Be Applied Appropriately
+
+Accounting principles (which you will study in full detail in Section 2) are the **shared rules of the game**. When every business follows them faithfully:
+
+- Profit figures are **reliable** (not artificially inflated before a bank loan or deflated before tax filing).
+- Statements are **comparable** from one year to the next.
+- Assets and liabilities reflect **economic reality** rather than wishful thinking.
+
+When managers deliberately bend those rules to make results look prettier — a practice called **window dressing** or **creative accounting** — readers are misled into bad loans, bad investments, or wrong tax calculations.
+
+### Side-by-Side Comparison: Appropriate vs. Inappropriate Practices
+
+| Accounting Principle | ✓ Appropriate Application | ✕ Inappropriate Application | Distortion Caused |
+| :--- | :--- | :--- | :--- |
+| **Business Entity** | Recording the owner’s personal holiday or home rent as **Drawings** (reducing Capital) | Charging the owner’s personal groceries or vacation as a **business expense** | Business expenses **overstated**; Net Profit & taxes **understated** |
+| **Prudence (Conservatism)** | Providing for doubtful customer debts and valuing inventory at the **lower** of cost or net realizable value | Ignoring known uncollectible debts or valuing damaged stock at full selling price | Profit and Current Assets **overstated** |
+| **Accrual / Matching** | Recording all revenues earned and expenses incurred in the period — including unpaid utility bills | Delaying recording December’s unpaid electricity bill until January just to boost December profit | Expenses & Liabilities **understated**; Profit **overstated** |
+| **Consistency** | Using the same depreciation method (e.g. 10% straight line) every year unless genuinely justified and disclosed | Switching depreciation methods back and forth solely to hit a profit bonus target | Year-on-year comparisons become **misleading** |
+| **Verifiability (Objectivity)** | Recording every transaction using valid source documents (invoices, receipts, bank slips) | Estimating or inventing expense claims with no receipts or proof | Audit trail broken; risk of **hidden theft or tax fraud** |
+| **Revenue Recognition** | Recognizing sales revenue only when goods are delivered or services performed | Counting unsigned customer quotes or advance deposits as completed sales | Revenue and Net Profit **artificially inflated** |
+
+---
+
+## 2. Diagram 1: The Accounting Principles Filter
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-1/05-appropriate-vs-inappropriate.svg"
+  alt="Branching flow diagram showing raw business transactions passing either through the Appropriate Application path to True and Fair Statements or through the Inappropriate Application path to Misleading Statements."
+  caption="Diagram 1 (Static Reference): The exact same transactions produce either trustworthy statements or distorted reports depending on whether accounting principles are applied appropriately."
+/>
+
+---
+
+## 3. Diagram 2: Interactive Appropriate vs. Inappropriate Analyzer
+
+<InteractiveDiagram
+  title="Interactive Comparator: Flip Through 5 Real Accounting Scenarios"
+  layout="compare"
+  instruction="Select any accounting scenario below to compare the Appropriate Treatment (✓) directly against the Inappropriate Shortcut (✕) and see how the numbers get distorted."
+  nodes={[
+    {
+      label: 'Owner’s Personal Bills',
+      tag: 'Business Entity',
+      detail: 'A sole trader pays $1,800 from the business bank account for his daughter’s university tuition.',
+      sideALabel: '✓ Appropriate (Business Entity)',
+      sideAText: 'Debit Drawings $1,800 and Credit Bank $1,800. Drawings reduce Owner’s Capital on the Balance Sheet without distorting business profit.',
+      sideBLabel: '✕ Inappropriate Practice',
+      sideBText: 'Recording the $1,800 tuition as "Staff Training Expense" in the Income Statement. This artificially lowers Net Profit and illegally reduces tax.',
+      examTip: 'Always state BOTH the rule (Business Entity) and the fix (record as Drawings).',
+    },
+    {
+      label: 'Damaged Warehouse Stock',
+      tag: 'Prudence',
+      detail: 'Water leaks damage $4,000 of store inventory; it can now only be sold for $1,200 as clearance items.',
+      sideALabel: '✓ Appropriate (Prudence)',
+      sideAText: 'Value the damaged inventory at its lower net realizable value ($1,200) immediately, recognizing the $2,800 loss in this period.',
+      sideBLabel: '✕ Inappropriate Practice',
+      sideBText: 'Keeping the damaged stock listed at its original $4,000 cost to hide the loss. Closing Inventory, Assets, and Gross Profit are all overstated by $2,800.',
+      examTip: 'Prudence rule: Never anticipate unrealized profits, but provide immediately for all foreseeable losses.',
+    },
+    {
+      label: 'Unpaid December Electricity',
+      tag: 'Accrual / Matching',
+      detail: 'A bakery uses $650 of electricity in December, but the bill will not be paid until January 12.',
+      sideALabel: '✓ Appropriate (Accrual)',
+      sideAText: 'Include the $650 in December’s Electricity Expense and record a $650 Accrued Expense (Current Liability) on the December 31 Balance Sheet.',
+      sideBLabel: '✕ Inappropriate Practice',
+      sideBText: 'Ignoring the $650 bill until cash leaves in January. December’s profit is overstated by $650 and liabilities are understated by $650.',
+      examTip: 'Expenses belong in the period the benefit was USED — not merely when cash is paid.',
+    },
+    {
+      label: 'Switching Depreciation',
+      tag: 'Consistency',
+      detail: 'A delivery firm used 20% straight-line depreciation for 4 years, then quietly switches to a much lower charge in Year 5 before applying for a bank loan.',
+      sideALabel: '✓ Appropriate (Consistency)',
+      sideAText: 'Keep the same depreciation policy across accounting periods — or if a genuine operational change requires switching, disclose the change and financial impact openly.',
+      sideBLabel: '✕ Inappropriate Practice',
+      sideBText: 'Silently changing methods just to shrink expenses and make Year 5 profit look stronger to the bank ("window dressing").',
+      examTip: 'Consistency does NOT mean methods can never change — it means changes must be justified and clearly disclosed.',
+    },
+    {
+      label: 'Early Deposit Sales',
+      tag: 'Realization / Revenue',
+      detail: 'A catering company receives a $3,000 advance deposit on December 28 for a wedding taking place on February 14 next year.',
+      sideALabel: '✓ Appropriate (Realization)',
+      sideAText: 'Record the $3,000 as Cash (Asset) and Unearned Revenue / Customer Deposit (Current Liability) until the wedding is actually catered in February.',
+      sideBLabel: '✕ Inappropriate Practice',
+      sideBText: 'Counting the $3,000 as December Sales Revenue before delivering any food or service. This inflates this year’s profit and hides the liability owed to the client.',
+      examTip: 'Cash received in advance is a LIABILITY (you owe goods/service), NOT earned revenue yet.',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Spotting & Correcting Inappropriate Accounting Treatments"
+  marks={9}
+  problem={
+    <>
+      <p>
+        <strong>Scenario:</strong> Before applying for a business expansion loan, the owner of
+        Crestview Hardware made three adjustments to his draft accounts:
+      </p>
+      <ol>
+        <li>He included his personal family car insurance ($1,400) inside the store’s Motor Expenses.</li>
+        <li>He left out $2,200 of December staff wages that were still unpaid at December 31.</li>
+        <li>He knew a customer owing $3,500 had gone bankrupt, yet kept the full $3,500 listed as a healthy Trade Receivable so Current Assets looked higher.</li>
+      </ol>
+      <p>
+        For each adjustment: (a) state the <strong>accounting principle violated</strong>,
+        (b) state the exact effect on <strong>Net Profit</strong> (overstated or understated and by how much),
+        and (c) give the <strong>correct treatment</strong>. <em>[3 marks each = 9 marks]</em>
+      </p>
+    </>
+  }
+>
+
+1. **Adjustment 1 — Personal Car Insurance Recorded as Business Expense (3 marks):**
+   - *Principle violated:* **Business Entity Concept** *(1 mark)*.
+   - *Effect on Net Profit:* Net Profit is **understated by $1,400** (expenses overstated) *(1 mark)*.
+   - *Correct treatment:* Remove $1,400 from Motor Expenses and record it as **Drawings** (reducing Capital) *(1 mark)*.
+
+2. **Adjustment 2 — Omitting Unpaid December Wages (3 marks):**
+   - *Principle violated:* **Accrual (Matching) Concept** *(1 mark)*.
+   - *Effect on Net Profit:* Net Profit is **overstated by $2,200** (expenses and current liabilities understated) *(1 mark)*.
+   - *Correct treatment:* Add $2,200 to Wages Expense in the Income Statement and record **$2,200 Accrued Wages** as a Current Liability on the Balance Sheet *(1 mark)*.
+
+3. **Adjustment 3 — Keeping a Bankrupt Customer’s Debt as a Full Asset (3 marks):**
+   - *Principle violated:* **Prudence (Conservatism) Concept** *(1 mark)*.
+   - *Effect on Net Profit:* Net Profit is **overstated by $3,500** (and Trade Receivables/Current Assets are overstated by $3,500) *(1 mark)*.
+   - *Correct treatment:* Write off the $3,500 immediately as a **Bad Debt Expense** in the Income Statement and reduce Trade Receivables by $3,500 *(1 mark)*.
+
+*(Net check: Together, the three inappropriate entries overstated Net Profit by **+$2,200 + $3,500 − $1,400 = +$4,300**!)*
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Appropriate vs. Inappropriate Application"
+  items={[
+    {
+      statement: 'Recording an owner’s personal vacation paid from the business bank account as Drawings is an appropriate application of the Business Entity concept.',
+      answer: true,
+      explanation: 'Personal withdrawals belong in Drawings (reducing Capital), keeping personal spending completely separate from business expenses.',
+    },
+    {
+      statement: 'Window dressing is an approved accounting technique used to help small companies get bank loans faster.',
+      answer: false,
+      explanation: 'Window dressing is an inappropriate, misleading manipulation of financial statements to make a business look stronger than reality.',
+    },
+    {
+      statement: 'Omitting an unpaid year-end electricity bill understates both expenses and liabilities while overstating Net Profit.',
+      answer: true,
+      explanation: 'Leaving out a valid expense makes total expenses too low (so profit looks too high) and leaves a real unpaid debt off the Balance Sheet.',
+    },
+    {
+      statement: 'Once a company chooses a depreciation method, the Consistency principle forbids ever changing it under any circumstances.',
+      answer: false,
+      explanation: 'Consistency stops arbitrary switching to manipulate profit, but a business may change methods if genuinely justified AND clearly disclosed with its financial effect.',
+    },
+    {
+      statement: 'Recognizing a customer’s advance deposit as earned Sales Revenue before delivering any goods or service is inappropriate.',
+      answer: true,
+      explanation: 'Until goods are delivered or services performed, an advance deposit is Unearned Revenue (a liability), not completed sales revenue.',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s1-05-project"
+  title="Mini-Project: Junior Auditor’s Red-Flag Case Review"
+  duration="25–35 mins"
+  scenario="You are a junior audit assistant reviewing the draft year-end accounts of a small electronics retailer ('SparkTech Store') that reported a draft Net Profit of $30,000. During your check, you uncover four questionable practices: (1) $1,500 owner’s home internet billed as Store Utilities, (2) $4,000 of advance customer pre-orders for next year counted as this year’s sales, (3) $900 unpaid December courier bill left out, and (4) $1,600 of unsellable broken headphones still valued at cost."
+  steps={[
+    'Build a 4-row Audit Findings Table listing each questionable item, the exact accounting principle violated, and whether draft profit was overstated or understated.',
+    'Calculate SparkTech Store’s corrected Net Profit starting from the draft $30,000 figure, clearly showing each + or − adjustment.',
+    'Write a short 4–5 sentence Audit Memo to the store owner explaining WHY fixing these four items actually protects the business from bank rejection and tax penalties.',
+    'Add 2 practical internal control rules the store should adopt next year so none of these mistakes happen again.',
+  ]}
+  deliverables={[
+    'A completed 4-item Audit Findings Table',
+    'A clean Revised Net Profit Calculation showing step-by-step math',
+    'A 1-paragraph Professional Audit Memo with 2 preventive controls',
+  ]}
+  rubric={[
+    'All 4 principles (Business Entity, Revenue Recognition/Accrual, Matching/Accrual, Prudence) are accurately identified.',
+    'Direction of distortion (+ or − on Net Profit) is right for all 4 items (hint: corrected profit = $30,000 + $1,500 − $4,000 − $900 − $1,600 = $25,000).',
+    'Audit memo uses polite, objective, professional language rather than accusing or insulting the owner.',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- When analyzing any inappropriate entry, always ask **three questions**:
+  1. **Which principle** was broken?
+  2. **Which direction** were Profit, Assets, or Liabilities distorted (*overstated* vs. *understated*)?
+  3. **What is the exact corrective entry or treatment?**
+:::

@@ -1,0 +1,253 @@
+---
+id: rules-of-debit-and-credit
+title: "4.2 Rules of Debit and Credit for Each Class of Account"
+sidebar_label: "4.2 Rules of Debit & Credit"
+sidebar_position: 2
+---
+
+<SyllabusHeader
+  subject="Principles of Accounts · Section 4"
+  section="Ledgers and the Trial Balance — The Ledger System"
+  code="POA-S4-02"
+  papers={['Paper 1', 'Paper 2']}
+  studyTime="25 min"
+  difficulty="Core"
+/>
+
+:::info Essential Understanding
+**Debit (`Dr`)** simply means the **LEFT side** of an account; **Credit (`Cr`)** simply means the **RIGHT side** — nothing more mysterious! Under **Double-Entry Bookkeeping**, every single business transaction touches at least **two accounts**: one gets a **Debit** and another gets an equal **Credit**. Once you master the **DEAD CLIC** rule and the **Three Golden Rules**, you can solve EVERY journal, ledger, and adjustment question in POA!
+:::
+
+| Quick Focus | What Matters Most |
+| :--- | :--- |
+| **Key Concept** | **DEAD CLIC** (Debit increases Expenses, Assets, Drawings; Credit increases Liabilities, Income, Capital) + the **3 Classic Golden Rules** |
+| **Exam Focus** | Stating the exact **Account to Debit** and **Account to Credit** for any transaction without hesitating |
+| **Learning Outcome** | Apply the Debit and Credit rules accurately across Personal, Real, and Nominal accounts for any business event |
+
+<ObjectivesBox
+  id="poa-s4-02-obj"
+  objectives={[
+    'Explain what Debit (Dr) and Credit (Cr) mean in double-entry accounting and why Total Debits always equal Total Credits.',
+    'State the Three Classic Golden Rules for Personal, Real, and Nominal accounts.',
+    'Apply the modern DEAD CLIC rule instantaneously to determine which account increases or decreases.',
+    'Analyze any business transaction into its exact Debit entry and Credit entry.',
+  ]}
+/>
+
+---
+
+## 1. Both Ways to Master Debit & Credit (They Always Give the Same Answer!)
+
+### Method A: The Modern **DEAD CLIC** Rule *(Fastest & Most Foolproof!)*
+
+<FormulaCard
+  title="DEAD CLIC — The Instant Debit & Credit Decoder"
+  onFormulaSheet={false}
+  summary="Expenses, Assets, and Drawings go UP on Debit; Liabilities, Income, and Capital go UP on Credit!"
+>
+
+| Group | Acronym | Accounts Included | To INCREASE (+) | To DECREASE (−) | Normal Balance |
+| :--- | :---: | :--- | :---: | :---: | :---: |
+| **Debit Group** | **D · E · A · D** | **E**xpenses, **A**ssets, **D**rawings *(plus Returns Inwards)* | **DEBIT (`Dr`)** | **CREDIT (`Cr`)** | **Debit** |
+| **Credit Group** | **C · L · I · C** | **L**iabilities, **I**ncome, **C**apital *(plus Returns Outwards)* | **CREDIT (`Cr`)** | **DEBIT (`Dr`)** | **Credit** |
+
+</FormulaCard>
+
+### Method B: The Three Classic Golden Rules *(By Account Class)*
+
+| Account Class | DEBIT (`Dr`) Rule | CREDIT (`Cr`) Rule | Quick Example |
+| :--- | :--- | :--- | :--- |
+| **Personal Accounts** *(People/Firms)* | **Debit the RECEIVER** | **Credit the GIVER** | Paid $500 cash to supplier *K. Lee* → **Dr K. Lee** (receiver), Cr Cash |
+| **Real Accounts** *(Property/Assets)* | **Debit WHAT COMES IN** | **Credit WHAT GOES OUT** | Bought $4,000 equipment for cash → **Dr Equipment** (comes in), **Cr Cash** (goes out) |
+| **Nominal Accounts** *(Income/Expense)* | **Debit ALL EXPENSES & LOSSES** | **Credit ALL INCOME & GAINS** | Paid $700 rent by cheque → **Dr Rent Expense**, Cr Bank; Cash sales $900 → Dr Cash, **Cr Sales** |
+
+:::tip Why "Debit = Good / Credit = Bad" Is a Myth!
+Never think of Debit as "plus" or Credit as "minus"!
+- A **Debit** increases an **Asset** (Cash goes UP), **yet** a **Debit** decreases a **Liability** (Loan owed goes DOWN).
+- A **Credit** increases **Sales Income** (good!), **yet** a **Credit** decreases **Cash** (cash went out).
+Always check WHICH family the account belongs to (**DEAD** vs. **CLIC**) first!
+:::
+
+---
+
+## 2. Diagram 1: DEAD CLIC & Classic Golden Rules Reference
+
+<DiagramFigure
+  src="/img/diagrams/poa/section-4/02-dead-clic-debit-credit-rules.svg"
+  alt="Split visual reference card comparing DEAD (Debit increases Expenses, Assets, Drawings) against CLIC (Credit increases Liabilities, Income, Capital), paired with the Three Classic Golden Rules across the bottom."
+  caption="Diagram 1 (Static Reference): Memorize DEAD CLIC once — it unlocks Ledgers (Sec. 4), Trial Balances (Sec. 4), Adjustments (Sec. 6), and Error Corrections (Sec. 7)!"
+/>
+
+---
+
+## 3. Diagram 2: Interactive Debit vs. Credit Rule Tester
+
+<InteractiveDiagram
+  title="Interactive Comparator: Test DEAD vs. CLIC on 5 Classic Business Transactions"
+  layout="compare"
+  instruction="Select any transaction below to inspect BOTH sides of the double entry side-by-side and see WHY one account is Debited and the other is Credited."
+  nodes={[
+    {
+      label: 'Owner Invests $15,000 Cash',
+      tag: 'Asset + Capital',
+      detail: 'The owner deposits $15,000 into the business bank account to start trading.',
+      sideALabel: 'DEBIT: Bank Account ($15,000)',
+      sideAText: 'Bank is an ASSET (DEAD group) increasing by $15,000 → Debit to increase! (Golden rule: cash/money coming IN.)',
+      sideBLabel: 'CREDIT: Capital Account ($15,000)',
+      sideBText: 'Capital is in the CLIC group increasing by $15,000 → Credit to increase! (Golden rule: Owner is the GIVER.)',
+      examTip: 'Starting capital ALWAYS Debits the asset(s) brought in and Credits Capital.',
+    },
+    {
+      label: 'Bought $2,400 Goods on Credit',
+      tag: 'Expense + Liability',
+      detail: 'Purchased merchandise for resale on 30-day credit from Prime Wholesale.',
+      sideALabel: 'DEBIT: Purchases Account ($2,400)',
+      sideAText: 'Purchases is an EXPENSE/cost (Nominal · DEAD) increasing → Debit Purchases!',
+      sideBLabel: 'CREDIT: Prime Wholesale ($2,400)',
+      sideBText: 'Prime Wholesale is a LIABILITY / Creditor (Personal · CLIC) increasing — we now owe them $2,400 (Giver of goods)!',
+      examTip: 'Remember: Buy trading stock → Debit PURCHASES (never Debit "Inventory" during the year under periodic inventory!).',
+    },
+    {
+      label: 'Sold $1,600 Goods on Credit',
+      tag: 'Asset + Income',
+      detail: 'Sold goods on credit to customer M. Patel.',
+      sideALabel: 'DEBIT: M. Patel Account ($1,600)',
+      sideAText: 'M. Patel (Debtor / Trade Receivable) is an ASSET (Personal · DEAD) increasing — M. Patel is the RECEIVER of goods!',
+      sideBLabel: 'CREDIT: Sales Account ($1,600)',
+      sideBText: 'Sales is INCOME (Nominal · CLIC) increasing → Credit Sales!',
+      examTip: 'Never confuse cash sale (Dr Cash / Cr Sales) with credit sale (Dr Customer Name / Cr Sales).',
+    },
+    {
+      label: 'Paid $850 Rent by Cheque',
+      tag: 'Expense + Asset ↓',
+      detail: 'Issued a cheque from the business bank account for monthly shop rent.',
+      sideALabel: 'DEBIT: Rent Expense ($850)',
+      sideAText: 'Rent is an EXPENSE (Nominal · DEAD) increasing → Debit all expenses!',
+      sideBLabel: 'CREDIT: Bank Account ($850)',
+      sideBText: 'Bank is an ASSET (DEAD) DECREASING because money left the bank → Credit to decrease an asset!',
+      examTip: 'Notice how paying an expense by cheque touches TWO DEAD accounts — one goes UP (Dr) and one goes DOWN (Cr)!',
+    },
+    {
+      label: 'Paid $1,000 Off Bank Loan',
+      tag: 'Liability ↓ + Asset ↓',
+      detail: 'Transferred $1,000 from the business bank account to reduce a Bank Loan.',
+      sideALabel: 'DEBIT: Bank Loan Account ($1,000)',
+      sideAText: 'Bank Loan is a LIABILITY (CLIC) DECREASING because we owe $1,000 less → Debit to decrease a Liability!',
+      sideBLabel: 'CREDIT: Bank Account ($1,000)',
+      sideBText: 'Bank is an ASSET (DEAD) DECREASING → Credit to decrease an Asset!',
+      examTip: 'Paying off ANY creditor or loan ALWAYS Debits the liability and Credits Cash/Bank.',
+    },
+  ]}
+/>
+
+---
+
+## 4. Worked Example
+
+<WorkedExample
+  title="Applying Double-Entry Rules to Eight Everyday Transactions"
+  marks={16}
+  problem={
+    <>
+      <p>
+        <strong>Question:</strong> For each of the eight transactions below, complete a table
+        showing: (a) the <strong>Account to Debit</strong> (and its class), and (b) the
+        <strong> Account to Credit</strong> (and its class). <em>[2 marks each = 16 marks]</em>
+      </p>
+      <ol>
+        <li>Owner introduced $10,000 cash into the business.</li>
+        <li>Bought office furniture for $1,500 cash.</li>
+        <li>Bought goods for resale on credit from Apex Supply, $2,200.</li>
+        <li>Returned faulty goods worth $200 to Apex Supply.</li>
+        <li>Sold goods for immediate cash, $950.</li>
+        <li>Sold goods on credit to D. Grant, $1,300.</li>
+        <li>Paid $1,000 by cheque to Apex Supply on account.</li>
+        <li>Owner took $300 cash from the till for personal family spending.</li>
+      </ol>
+    </>
+  }
+>
+
+| # | Transaction Summary | Account to DEBIT (Class) | Account to CREDIT (Class) | Amount ($) |
+| :-: | :--- | :--- | :--- | ---: |
+| 1 | Owner introduced cash | **Cash** *(Real / Asset ↑)* | **Capital** *(Personal / Equity ↑)* | 10,000 |
+| 2 | Bought office furniture for cash | **Office Furniture** *(Real / Asset ↑)* | **Cash** *(Real / Asset ↓)* | 1,500 |
+| 3 | Bought goods on credit (Apex) | **Purchases** *(Nominal / Expense ↑)* | **Apex Supply** *(Personal / Liability ↑)* | 2,200 |
+| 4 | Returned goods to Apex Supply | **Apex Supply** *(Personal / Liability ↓)* | **Returns Outwards** *(Nominal / Credit)* | 200 |
+| 5 | Cash sales of goods | **Cash** *(Real / Asset ↑)* | **Sales** *(Nominal / Income ↑)* | 950 |
+| 6 | Credit sale to D. Grant | **D. Grant** *(Personal / Asset ↑)* | **Sales** *(Nominal / Income ↑)* | 1,300 |
+| 7 | Paid Apex Supply by cheque | **Apex Supply** *(Personal / Liability ↓)* | **Bank** *(Asset ↓)* | 1,000 |
+| 8 | Owner withdrew cash (Drawings) | **Drawings** *(Personal / DEAD ↑)* | **Cash** *(Real / Asset ↓)* | 300 |
+
+*(Notice #4: Returns Outwards reduces our Purchases cost, so it acts like a Credit item — while Apex Supply is Debited because we owe Apex $200 less!)*
+
+</WorkedExample>
+
+---
+
+## 5. True or False Check
+
+<TrueFalseQuiz
+  title="True or False: Rules of Debit & Credit"
+  items={[
+    {
+      statement: 'In double-entry bookkeeping, "Debit" always means an increase and "Credit" always means a decrease.',
+      answer: false,
+      explanation: 'Debit increases Assets, Expenses, and Drawings (DEAD) — but DECREASES Liabilities, Income, and Capital (CLIC)!',
+    },
+    {
+      statement: 'When a business pays $600 cash to reduce a credit supplier’s balance, the supplier’s account is DEBITED and Cash is CREDITED.',
+      answer: true,
+      explanation: 'The Liability owed to the supplier decreases (Debit Supplier — receiver of cash) and Cash decreases (Credit Cash — going out).',
+    },
+    {
+      statement: 'Returns Inwards (Sales Returns) is DEBITED when a credit customer sends damaged goods back to us.',
+      answer: true,
+      explanation: 'Returns Inwards reduces Sales revenue (so it is Debited), and the Customer’s account is Credited because they now owe us less.',
+    },
+    {
+      statement: 'Under the Classic Golden Rule for Real Accounts, you Debit what goes out and Credit what comes in.',
+      answer: false,
+      explanation: 'That is backwards! For Real Accounts (Assets), you DEBIT what comes in and CREDIT what goes out.',
+    },
+    {
+      statement: 'Receiving $400 commission income by bank transfer requires Debiting Bank and Crediting Commission Received.',
+      answer: true,
+      explanation: 'Bank (Asset) increases on the Debit side, and Commission Received (Income · Nominal) increases on the Credit side.',
+    },
+  ]}
+/>
+
+---
+
+## 6. Student Project
+
+<StudentProject
+  id="poa-s4-02-project"
+  title="Mini-Project: DEAD CLIC Double-Entry Speed Deck"
+  duration="25–30 mins"
+  scenario="Many students struggle with double-entry because they try to memorize 100 transactions instead of applying DEAD CLIC. Create a 10-card Double-Entry Practice Deck for a small café ('BeanCraft Coffee') that trains anyone to pick the exact Debit and Credit in under 10 seconds."
+  steps={[
+    'Draw a clean pocket reference card at the top showing DEAD (Dr ↑ / Cr ↓) and CLIC (Cr ↑ / Dr ↓) plus the 3 Classic Golden Rules.',
+    'Write 10 varied café transactions covering ALL 6 DEAD CLIC categories — include starting capital, buying an espresso machine on credit, buying coffee beans on credit, returning spoiled milk to a supplier, cash coffee sales, credit catering sale, customer paying by bank transfer, paying barista wages by cheque, receiving bank interest, and owner cash drawings.',
+    'For each transaction, show: (1) the two affected accounts, (2) whether each belongs to DEAD or CLIC and goes ↑ or ↓, and (3) the final Debit and Credit entry.',
+    'Test yourself (or a classmate) by covering the answers column and aiming for 10/10 in under 2 minutes!',
+  ]}
+  deliverables={[
+    'A compact DEAD CLIC + Golden Rules pocket cheat card',
+    'A 10-row Double-Entry Analysis Table for BeanCraft Coffee',
+    'Self-check verification confirming every transaction has equal Debit and Credit amounts',
+  ]}
+  rubric={[
+    'All 6 categories (Drawings, Expenses, Assets, Liabilities, Income, Capital) are exercised accurately.',
+    'Both Returns Outwards / Returns Inwards or credit-settlement logic are handled with zero reversed entries.',
+    'Explanations link each Debit/Credit cleanly back to DEAD CLIC or the Three Golden Rules.',
+  ]}
+/>
+
+---
+
+:::tip Quick Exam Checklist
+- Write **`DEAD`** (Dr ↑: **E**xpenses, **A**ssets, **D**rawings) and **`CLIC`** (Cr ↑: **L**iabilities, **I**ncome, **C**apital) in the margin of your rough sheet on exam day!
+- Double-check **Returns**: **Returns Inwards** = **Dr** (reduces Sales); **Returns Outwards** = **Cr** (reduces Purchases).
+:::
