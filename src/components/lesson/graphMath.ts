@@ -9,12 +9,12 @@ import type {CompiledMathFn} from '../../utils/mathParser';
 
 export type CurveColor = 'cyan' | 'lime' | 'softCyan' | 'coral';
 
-/** Named theme colours available for curves and plotted points. */
+/** Named theme colours available for curves and plotted points (high contrast on Deep Navy). */
 export const CURVE_COLORS: Record<CurveColor, string> = {
-  cyan: '#2BB3C0',
-  lime: '#C8FF00',
-  softCyan: '#7ADBE4',
-  coral: '#FF6B6B',
+  cyan: '#6BC4B0',
+  lime: '#F5A352',
+  softCyan: '#9DD9CB',
+  coral: '#F07152',
 };
 
 /** Fixed SVG viewBox geometry (scales responsively to any phone or desktop width). */

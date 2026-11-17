@@ -8,7 +8,7 @@ sidebar_label: Credits & Notice
 
 ## Independence & Trademark Disclaimer
 
-**Schwork** is an independent, free, student-built open-source educational resource created to help secondary school students in Jamaica revise more effectively.
+**Schwork** is an independent, free, student-built open-source educational resource created to help students revise more effectively.
 
 - Schwork is **not affiliated with, endorsed by, sponsored by, or officially connected to** the Caribbean Examinations Council (CXC®) or the Ministry of Education and Youth (Jamaica).
 - CXC® and CSEC® are registered trademarks of the Caribbean Examinations Council. Any reference to regional secondary examination syllabuses is strictly for educational context and study alignment.

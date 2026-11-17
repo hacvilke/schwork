@@ -15,7 +15,7 @@ const baseUrl =
 
 const config: Config = {
   title: 'Schwork',
-  tagline: 'Free high school study docs for Jamaica — clear notes, interactive graphs, and exam practice on phones and laptops.',
+  tagline: 'Free, clear study documentation — structured notes, interactive visuals, and exam practice on phones and laptops.',
   favicon: 'img/favicon.svg',
 
   url: siteUrl,
@@ -43,7 +43,7 @@ const config: Config = {
       tagName: 'meta',
       attributes: {
         name: 'theme-color',
-        content: '#132238',
+        content: '#1B365D',
       },
     },
     {
@@ -128,7 +128,7 @@ const config: Config = {
     docs: {
       sidebar: {
         hideable: true,
-        autoCollapseCategories: true,
+        autoCollapseCategories: false,
       },
     },
     navbar: {
@@ -151,12 +151,6 @@ const config: Config = {
           to: '/subjects',
           label: 'Subjects',
           position: 'left',
-        },
-        {
-          type: 'docSidebar',
-          sidebarId: 'poaSidebar',
-          position: 'left',
-          label: 'POA',
         },
         {
           type: 'docSidebar',
@@ -191,10 +185,6 @@ const config: Config = {
               to: '/docs/sample-lesson',
             },
             {
-              label: 'Principles of Accounts (POA)',
-              to: '/docs/poa',
-            },
-            {
               label: 'Information Technology (IT)',
               to: '/docs/it',
             },
@@ -218,7 +208,7 @@ const config: Config = {
           ],
         },
       ],
-      copyright: `Schwork · Free open-source high school study docs for Jamaica.`,
+      copyright: `Schwork · Free open-source study documentation for students.`,
     },
     prism: {
       theme: prismThemes.github,

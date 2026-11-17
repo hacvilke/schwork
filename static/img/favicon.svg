@@ -1,25 +1,22 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
-  <rect width="64" height="64" rx="14" fill="#132238"/>
-  <path d="M32 9V13M23.5 11.2L26 14M40.5 11.2L38 14" stroke="#C8FF00" stroke-width="2.4" stroke-linecap="round"/>
-  <!-- Left broken graduation cap half -->
+  <rect width="64" height="64" rx="14" fill="#1B365D"/>
+  <path d="M32 9V13M23.5 11.2L26 14M40.5 11.2L38 14" stroke="#F5A352" stroke-width="2.4" stroke-linecap="round"/>
   <g transform="rotate(-9 19 32)">
-    <path d="M9.6 30.8L20.2 34.8V42.2C15.2 41.7 11.3 39.9 9.6 37.6V30.8Z" fill="#1A8E9A"/>
-    <path d="M3.8 27.4L20.4 20.2L19.4 25.6L20.8 28.8L19.8 33.6L3.8 27.4Z" fill="#2BB3C0"/>
+    <path d="M9.6 30.8L20.2 34.8V42.2C15.2 41.7 11.3 39.9 9.6 37.6V30.8Z" fill="#3B6E61"/>
+    <path d="M3.8 27.4L20.4 20.2L19.4 25.6L20.8 28.8L19.8 33.6L3.8 27.4Z" fill="#569182"/>
   </g>
-  <!-- Right broken graduation cap half + Acid Lime tassel -->
   <g transform="rotate(9 45 32)">
-    <path d="M54.4 30.8L43.8 34.8V42.2C48.8 41.7 52.7 39.9 54.4 37.6V30.8Z" fill="#1A8E9A"/>
-    <path d="M60.2 27.4L43.6 20.2L44.6 25.6L43.2 28.8L44.2 33.6L60.2 27.4Z" fill="#2BB3C0"/>
-    <path d="M56.8 28.4C57.8 32.2 57.6 36 56.6 39.4" stroke="#C8FF00" stroke-width="2.4" stroke-linecap="round"/>
-    <path d="M54.7 41H58.5L59.5 46.2H53.7L54.7 41Z" fill="#C8FF00"/>
+    <path d="M54.4 30.8L43.8 34.8V42.2C48.8 41.7 52.7 39.9 54.4 37.6V30.8Z" fill="#3B6E61"/>
+    <path d="M60.2 27.4L43.6 20.2L44.6 25.6L43.2 28.8L44.2 33.6L60.2 27.4Z" fill="#569182"/>
+    <path d="M56.8 28.4C57.8 32.2 57.6 36 56.6 39.4" stroke="#F5A352" stroke-width="2.4" stroke-linecap="round"/>
+    <path d="M54.7 41H58.5L59.5 46.2H53.7L54.7 41Z" fill="#F5A352"/>
   </g>
-  <!-- Raised clenched fist (knuckles up) -->
-  <path d="M26 44.8V56.2C26 57.2 26.8 58 27.8 58H36.2C37.2 58 38 57.2 38 56.2V44.8H26Z" fill="#E3F3F7"/>
-  <rect x="26" y="52.6" width="12" height="2.6" rx="1.1" fill="#C8FF00"/>
-  <path d="M21.8 29.8C21.8 27 24 25 26.8 25H37.2C40 25 42.2 27 42.2 29.8V38.2C42.2 42.8 38.8 46.2 34 46.2H30C25.2 46.2 21.8 42.8 21.8 38.2V29.8Z" fill="#FFFFFF" stroke="#132238" stroke-width="1.9" stroke-linejoin="round"/>
-  <rect x="21.9" y="21.4" width="5.4" height="8.8" rx="2.7" fill="#FFFFFF" stroke="#132238" stroke-width="1.85"/>
-  <rect x="26.9" y="19.8" width="5.4" height="9.8" rx="2.7" fill="#FFFFFF" stroke="#132238" stroke-width="1.85"/>
-  <rect x="31.8" y="20.2" width="5.4" height="9.4" rx="2.7" fill="#FFFFFF" stroke="#132238" stroke-width="1.85"/>
-  <rect x="36.8" y="21.8" width="5.3" height="8.6" rx="2.65" fill="#FFFFFF" stroke="#132238" stroke-width="1.85"/>
-  <path d="M22.1 35.6V31.6C22.1 28.8 24.3 27.2 27.2 27.2H34.4C36.3 27.2 37.6 28.5 37.6 30.3C37.6 32.1 36.3 33.4 34.4 33.4H29.4C27.5 33.4 26.4 34.4 26.4 36.1V37.6" fill="#FFFFFF" stroke="#132238" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M26 44.8V56.2C26 57.2 26.8 58 27.8 58H36.2C37.2 58 38 57.2 38 56.2V44.8H26Z" fill="#EBE6DC"/>
+  <rect x="26" y="52.6" width="12" height="2.6" rx="1.1" fill="#F5A352"/>
+  <path d="M21.8 29.8C21.8 27 24 25 26.8 25H37.2C40 25 42.2 27 42.2 29.8V38.2C42.2 42.8 38.8 46.2 34 46.2H30C25.2 46.2 21.8 42.8 21.8 38.2V29.8Z" fill="#FCFBF8" stroke="#1B365D" stroke-width="1.9" stroke-linejoin="round"/>
+  <rect x="21.9" y="21.4" width="5.4" height="8.8" rx="2.7" fill="#FCFBF8" stroke="#1B365D" stroke-width="1.85"/>
+  <rect x="26.9" y="19.8" width="5.4" height="9.8" rx="2.7" fill="#FCFBF8" stroke="#1B365D" stroke-width="1.85"/>
+  <rect x="31.8" y="20.2" width="5.4" height="9.4" rx="2.7" fill="#FCFBF8" stroke="#1B365D" stroke-width="1.85"/>
+  <rect x="36.8" y="21.8" width="5.3" height="8.6" rx="2.65" fill="#FCFBF8" stroke="#1B365D" stroke-width="1.85"/>
+  <path d="M22.1 35.6V31.6C22.1 28.8 24.3 27.2 27.2 27.2H34.4C36.3 27.2 37.6 28.5 37.6 30.3C37.6 32.1 36.3 33.4 34.4 33.4H29.4C27.5 33.4 26.4 34.4 26.4 36.1V37.6" fill="#FCFBF8" stroke="#1B365D" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

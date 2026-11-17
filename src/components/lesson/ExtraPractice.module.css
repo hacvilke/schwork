@@ -1,124 +1,83 @@
-/* Styles for <ExtraPractice /> — collapsed-by-default optional practice drawer */
+/* Styles for <ExtraPractice /> — Soft Sage top bar & muted slate summary header */
 
-.drawer {
-  margin: 2rem 0 1.4rem;
-  border: 1.5px solid var(--schwork-border);
+.details {
   border-radius: 14px;
+  border: 1.5px solid var(--schwork-border);
+  border-top: 4px solid var(--schwork-sage);
   background: var(--schwork-surface);
+  margin: 1.5rem 0;
   overflow: hidden;
-  box-shadow: 0 3px 14px rgba(19, 34, 56, 0.05);
-}
-
-.trigger {
-  width: 100%;
-  min-height: 62px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 0.85rem;
-  padding: 0.9rem 1.15rem;
-  background: var(--schwork-surface-alt);
-  border: none;
-  cursor: pointer;
-  text-align: left;
-  color: inherit;
-  transition: background 0.16s ease;
-}
-
-.trigger:hover {
-  background: var(--schwork-cyan-tint);
-}
-
-.leftGroup {
-  display: flex;
-  align-items: center;
-  gap: 0.85rem;
-  min-width: 0;
-}
-
-.iconBadge {
-  flex-shrink: 0;
-  width: 38px;
-  height: 38px;
-  border-radius: 10px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--schwork-navy);
-  color: var(--schwork-lime);
-}
-
-:global(html[data-theme='dark']) .iconBadge {
-  background: #0b1524;
-  border: 1px solid rgba(43, 179, 192, 0.4);
-}
-
-.textGroup {
-  display: flex;
-  flex-direction: column;
-  gap: 0.12rem;
-  min-width: 0;
-}
-
-.eyebrow {
-  font-family: var(--ifm-font-family-monospace);
-  font-size: 0.7rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
-  color: var(--ifm-color-primary);
-}
-
-.title {
-  font-family: var(--ifm-heading-font-family);
-  font-weight: 700;
-  font-size: 1rem;
-  line-height: 1.25;
 }
 
 .summary {
-  font-size: 0.84rem;
-  opacity: 0.78;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.6rem;
+  padding: 0.9rem 1.15rem;
+  background: var(--schwork-surface-alt);
+  cursor: pointer;
+  user-select: none;
+  min-height: 52px;
 }
 
-.actionPill {
-  flex-shrink: 0;
+.summary::-webkit-details-marker {
+  display: none;
+}
+
+.summaryLeft {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.55rem;
+  font-family: var(--ifm-heading-font-family);
+  font-weight: 700;
+  font-size: 0.96rem;
+}
+
+.badge {
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 0.18rem 0.55rem;
+  border-radius: 6px;
+  background: var(--schwork-navy);
+  color: #e6f3ef;
+}
+
+.chevron {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
-  padding: 0.38rem 0.75rem;
-  border-radius: 999px;
-  background: var(--schwork-cyan-tint);
-  color: var(--ifm-color-primary);
-  font-family: var(--ifm-heading-font-family);
-  font-weight: 700;
-  font-size: 0.84rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.76rem;
+  color: var(--schwork-text-muted);
 }
 
-.content {
-  padding: 0.5rem 1.15rem 1.2rem;
-  border-top: 1px solid var(--schwork-border);
+.chevronIcon {
+  transition: transform 0.2s ease;
 }
 
-.content > :first-child {
-  margin-top: 0.9rem;
+.details[open] .chevronIcon {
+  transform: rotate(180deg);
 }
 
-.content > :last-child {
+.body {
+  padding: 1rem 1.15rem 1.15rem;
+  border-top: 1px dashed var(--schwork-border);
+  font-size: 0.94rem;
+  line-height: 1.62;
+}
+
+.body > :last-child {
   margin-bottom: 0;
 }
 
-@media (max-width: 540px) {
-  .trigger {
-    padding: 0.85rem 0.9rem;
-  }
-
-  .content {
-    padding: 0.45rem 0.85rem 1rem;
-  }
-
-  .actionPill {
-    padding: 0.32rem 0.6rem;
-    font-size: 0.8rem;
+@media (max-width: 640px) {
+  .summary,
+  .body {
+    padding-left: 0.95rem;
+    padding-right: 0.95rem;
   }
 }

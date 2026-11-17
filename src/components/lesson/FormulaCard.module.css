@@ -1,12 +1,11 @@
-/* Styles for <FormulaCard /> — highlighted key exam formula block */
+/* Styles for <FormulaCard /> — Deep Navy header + Soft Sage & Warm Coral badges */
 
 .card {
-  background: var(--schwork-surface);
-  border: 1.5px solid var(--schwork-cyan);
   border-radius: 14px;
+  border: 1.5px solid var(--schwork-border);
+  background: var(--schwork-surface);
   overflow: hidden;
   margin: 1.4rem 0;
-  box-shadow: 0 4px 16px rgba(19, 34, 56, 0.06);
 }
 
 .header {
@@ -15,14 +14,10 @@
   align-items: center;
   justify-content: space-between;
   gap: 0.5rem;
-  padding: 0.7rem 1.1rem;
+  padding: 0.7rem 1rem;
   background: var(--schwork-navy);
   color: #ffffff;
-  border-bottom: 1px solid rgba(43, 179, 192, 0.35);
-}
-
-:global(html[data-theme='dark']) .header {
-  background: #0d192b;
+  border-bottom: 2px solid var(--schwork-sage);
 }
 
 .title {
@@ -31,13 +26,13 @@
   gap: 0.45rem;
   font-family: var(--ifm-heading-font-family);
   font-weight: 700;
-  font-size: 0.96rem;
+  font-size: 0.94rem;
 }
 
 .headerActions {
-  display: flex;
-  flex-wrap: wrap;
+  display: inline-flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 0.45rem;
 }
 
@@ -45,67 +40,84 @@
   display: inline-flex;
   align-items: center;
   gap: 0.3rem;
+  padding: 0.22rem 0.58rem;
+  border-radius: 999px;
+  border: 1px solid rgba(140, 196, 180, 0.55);
+  background: rgba(78, 133, 119, 0.22);
+  color: #e6f3ef;
   font-family: var(--ifm-font-family-monospace);
   font-size: 0.72rem;
   font-weight: 700;
-  padding: 0.22rem 0.55rem;
-  border-radius: 6px;
-  border: 1px solid rgba(200, 255, 0, 0.55);
-  background: rgba(200, 255, 0, 0.14);
-  color: var(--schwork-lime);
   cursor: pointer;
-  transition: background-color 0.15s ease, color 0.15s ease;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
 }
 
 .summaryBtn:hover,
 .summaryBtn[aria-expanded='true'] {
-  background: var(--schwork-lime);
-  color: var(--schwork-navy);
+  background: var(--schwork-sage);
+  border-color: var(--schwork-sage-light);
+  color: #ffffff;
 }
 
 .summaryBar {
   display: flex;
   align-items: flex-start;
-  gap: 0.55rem;
-  padding: 0.75rem 1.1rem;
-  background: #0d192b;
-  color: #eaf3f8;
-  border-bottom: 1px solid rgba(43, 179, 192, 0.35);
-  font-size: 0.9rem;
+  gap: 0.5rem;
+  padding: 0.65rem 1rem;
+  background: var(--schwork-surface-alt);
+  border-bottom: 1px solid var(--schwork-border);
+  font-size: 0.88rem;
   line-height: 1.5;
+  color: var(--schwork-text);
 }
 
 .summaryIcon {
   flex-shrink: 0;
-  color: var(--schwork-lime);
   margin-top: 2px;
+  color: var(--schwork-sage-dark);
 }
 
+:global(html[data-theme='dark']) .summaryIcon {
+  color: var(--schwork-sage-light);
+}
+
+/* Soft Sage badge for provided formulas */
 .badgeGiven {
   font-family: var(--ifm-font-family-monospace);
-  font-size: 0.74rem;
+  font-size: 0.72rem;
   font-weight: 700;
-  padding: 0.22rem 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.2rem 0.55rem;
   border-radius: 6px;
-  background: rgba(43, 179, 192, 0.22);
-  color: var(--schwork-cyan-light);
-  border: 1px solid rgba(43, 179, 192, 0.5);
+  background: var(--schwork-sage);
+  color: #ffffff;
 }
 
+/* Warm Coral alert badge for must-memorize formulas (4.59:1 AA) */
 .badgeMemorize {
   font-family: var(--ifm-font-family-monospace);
-  font-size: 0.74rem;
+  font-size: 0.72rem;
   font-weight: 700;
-  padding: 0.22rem 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.2rem 0.55rem;
   border-radius: 6px;
-  background: var(--schwork-lime);
-  color: var(--schwork-navy);
+  background: var(--schwork-coral);
+  color: #ffffff;
 }
 
 .body {
   padding: 1rem 1.15rem;
+  font-size: 0.95rem;
 }
 
 .body > :last-child {
   margin-bottom: 0;
+}
+
+@media (max-width: 640px) {
+  .body {
+    padding: 0.85rem 0.9rem;
+  }
 }

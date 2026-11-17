@@ -9,21 +9,20 @@ export default function SubjectsPage(): React.JSX.Element {
   return (
     <Layout
       title="Subjects"
-      description="Browse Jamaican secondary school subjects on Schwork — structured study notes, interactive graphs, and exam practice.">
-      <header className={styles.hero} style={{padding: '2.4rem 0 2.6rem'}}>
+      description="Browse secondary school and university subjects on Schwork — structured study notes, interactive visuals, and exam practice.">
+      <header className={styles.heroCompact}>
         <div className={styles.heroGridBg} aria-hidden="true" />
         <div className="container" style={{position: 'relative', zIndex: 1}}>
           <div className={styles.eyebrowRow}>
-            <span className={styles.clashPill}>High School &amp; University · Jamaica</span>
-            <span className={styles.cyanPill}>Syllabus-Structured Notes</span>
+            <span className={styles.sagePill}>Secondary &amp; University Study Docs</span>
           </div>
           <h1 className={styles.heroTitle} style={{fontSize: 'clamp(1.85rem, 3.6vw, 2.7rem)'}}>
             Subjects
           </h1>
           <p className={styles.heroSubtitle} style={{marginBottom: 0}}>
-            All Jamaican secondary school subjects plus our University study track —
-            each built one subject at a time with objectives, interactive visuals,
-            worked examples, and exam practice.
+            Explore structured subjects across secondary school and higher education —
+            built one subject at a time with learning objectives, interactive visuals,
+            worked examples, and practice checks.
           </p>
         </div>
       </header>

@@ -63,6 +63,8 @@ export default function ObjectivesBox({
   };
 
   const completedCount = checkedItems.filter(Boolean).length;
+  const progressPercent =
+    objectives.length > 0 ? Math.round((completedCount / objectives.length) * 100) : 0;
 
   return (
     <section className={styles.box} aria-label={title}>
@@ -74,6 +76,20 @@ export default function ObjectivesBox({
         <span className={styles.progressBadge}>
           {completedCount}/{objectives.length} mastered
         </span>
+      </div>
+
+      {/* Soft Sage Green mastery progress bar */}
+      <div
+        className={styles.progressTrack}
+        role="progressbar"
+        aria-label="Lesson objectives progress"
+        aria-valuemin={0}
+        aria-valuemax={objectives.length}
+        aria-valuenow={completedCount}>
+        <div
+          className={styles.progressFill}
+          style={{width: `${progressPercent}%`}}
+        />
       </div>
 
       <ul className={styles.list}>

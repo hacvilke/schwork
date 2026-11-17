@@ -7,7 +7,7 @@ sidebar_position: 1
 
 # Information Technology (IT)
 
-Welcome to **Schwork Information Technology** — complete, thorough study documentation for Jamaican high school students (Grades 10–11), aligned closely with the revised high school IT curriculum.
+Welcome to **Schwork Information Technology** — complete, thorough study documentation covering the full 8-section Information Technology curriculum.
 
 Every lesson puts **deep, textbook-quality study notes**, clear comparison tables, **worked exam problems** (spread across spreadsheets, databases, IPO charts, pseudocode, trace tables, and programming), and **hover/tap formula hints** front and centre — with optional quizzes and classification drills neatly tucked inside a collapsed **Extra Practice** drawer at the bottom of each page.
 

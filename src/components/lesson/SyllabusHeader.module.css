@@ -1,88 +1,56 @@
-/* Styles for <SyllabusHeader /> — top lesson metadata card */
+/* Styles for <SyllabusHeader /> — Deep Navy header strip + Soft Sage & Warm Amber tags */
 
 .header {
-  position: relative;
-  overflow: hidden;
-  background: linear-gradient(135deg, #132238 0%, #1a3152 100%);
-  color: #f0f6fa;
-  border-radius: 14px;
-  padding: 1.15rem 1.25rem 1.15rem 1.5rem;
-  margin-bottom: 1.5rem;
-  border: 1px solid rgba(43, 179, 192, 0.35);
-  box-shadow: 0 8px 24px rgba(11, 21, 36, 0.12);
-}
-
-/* Flush vertical Acid Lime accent bar clipped cleanly by the card's border-radius */
-.header::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  width: 5px;
-  background: var(--schwork-lime);
-}
-
-.topRow {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  gap: 0.5rem;
-  margin-bottom: 0.65rem;
+  justify-content: space-between;
+  gap: 0.65rem;
+  padding: 0.8rem 1rem;
+  margin: 0.5rem 0 1.4rem;
+  border-radius: 12px;
+  background: var(--schwork-navy);
+  color: #f4f7fa;
+  border-left: 5px solid var(--schwork-sage);
 }
 
-.codePill {
-  display: inline-flex;
+.pills {
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 0.35rem;
-  font-family: var(--ifm-font-family-monospace);
+  gap: 0.45rem;
+}
+
+.subjectPill {
+  font-family: var(--ifm-heading-font-family);
   font-size: 0.78rem;
   font-weight: 700;
-  letter-spacing: 0.04em;
-  background-color: var(--schwork-lime);
-  color: var(--schwork-navy);
-  padding: 0.25rem 0.6rem;
-  border-radius: 6px;
-}
-
-.subjectTag {
-  font-family: var(--ifm-heading-font-family);
-  font-size: 0.85rem;
-  font-weight: 700;
-  color: var(--schwork-cyan-light);
   text-transform: uppercase;
-  letter-spacing: 0.05em;
-}
-
-.sectionText {
-  margin: 0 0 0.85rem;
-  font-size: 0.98rem;
-  color: #dcebf3;
-  line-height: 1.45;
-}
-
-.metaRow {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-  align-items: center;
+  letter-spacing: 0.04em;
+  padding: 0.24rem 0.6rem;
+  border-radius: 6px;
+  background: var(--schwork-sage);
+  color: #ffffff;
 }
 
 .metaPill {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
-  font-size: 0.78rem;
-  font-weight: 600;
-  padding: 0.28rem 0.65rem;
-  border-radius: 999px;
-  background: rgba(43, 179, 192, 0.16);
-  color: #d6f4f7;
-  border: 1px solid rgba(43, 179, 192, 0.35);
+  gap: 0.3rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.76rem;
+  color: #d7efe8;
+  padding: 0.22rem 0.55rem;
+  border-radius: 6px;
+  background: rgba(140, 196, 180, 0.16);
+  border: 1px solid rgba(140, 196, 180, 0.35);
 }
 
-@media (max-width: 640px) {
-  .header {
-    padding: 1rem 1rem 1rem 1.25rem;
-  }
+.timeBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--ifm-font-family-monospace);
+  font-size: 0.76rem;
+  color: var(--schwork-amber);
 }

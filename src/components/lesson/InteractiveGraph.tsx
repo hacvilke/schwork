@@ -1,5 +1,5 @@
 /**
- * Touch-friendly interactive SVG function grapher for Maths, Physics, and POA lessons.
+ * Touch-friendly interactive SVG function grapher for Maths, Physics, and STEM lessons.
  *
  * Pure coordinate and curve-sampling math lives in `./graphMath.ts` so this file
  * stays focused on user interactions (pan, zoom, sliders, trace readout) and rendering.
@@ -340,8 +340,8 @@ export default function InteractiveGraph({
             y={paddingTop}
             width={plotWidth}
             height={plotHeight}
-            fill="#132238"
-            stroke="#223b5d"
+            fill="#1B365D"
+            stroke="#2D507C"
             strokeWidth="1"
           />
 
@@ -356,13 +356,13 @@ export default function InteractiveGraph({
                   y1={paddingTop}
                   x2={svgX}
                   y2={height - paddingBottom}
-                  stroke="#1f3654"
+                  stroke="#274773"
                   strokeWidth="1"
                 />
                 <text
                   x={svgX}
                   y={height - paddingBottom + 18}
-                  fill="#8fb0c7"
+                  fill="#A5C0D6"
                   fontSize="11"
                   fontFamily="monospace"
                   textAnchor="middle">
@@ -383,13 +383,13 @@ export default function InteractiveGraph({
                   y1={svgY}
                   x2={width - paddingRight}
                   y2={svgY}
-                  stroke="#1f3654"
+                  stroke="#274773"
                   strokeWidth="1"
                 />
                 <text
                   x={paddingLeft - 8}
                   y={svgY + 4}
-                  fill="#8fb0c7"
+                  fill="#A5C0D6"
                   fontSize="11"
                   fontFamily="monospace"
                   textAnchor="end">
@@ -407,7 +407,7 @@ export default function InteractiveGraph({
                 y1={xAxisSvgY}
                 x2={width - paddingRight}
                 y2={xAxisSvgY}
-                stroke="#6b8ea8"
+                stroke="#7B9EB8"
                 strokeWidth="1.6"
               />
             )}
@@ -417,7 +417,7 @@ export default function InteractiveGraph({
                 y1={paddingTop}
                 x2={yAxisSvgX}
                 y2={height - paddingBottom}
-                stroke="#6b8ea8"
+                stroke="#7B9EB8"
                 strokeWidth="1.6"
               />
             )}
@@ -445,7 +445,7 @@ export default function InteractiveGraph({
               const colorHex = CURVE_COLORS[point.color ?? 'lime'];
               return (
                 <g key={index}>
-                  <circle cx={svgX} cy={svgY} r={5.5} fill={colorHex} stroke="#0b1524" strokeWidth="2" />
+                  <circle cx={svgX} cy={svgY} r={5.5} fill={colorHex} stroke="#122440" strokeWidth="2" />
                   {point.label && (
                     <text
                       x={svgX + 9}
@@ -468,17 +468,17 @@ export default function InteractiveGraph({
                   y1={paddingTop}
                   x2={mathToSvgX(tracedPoint.x, xRange)}
                   y2={height - paddingBottom}
-                  stroke="#C8FF00"
+                  stroke="#F5A352"
                   strokeWidth="1"
                   strokeDasharray="4 4"
-                  opacity="0.7"
+                  opacity="0.8"
                 />
                 <circle
                   cx={mathToSvgX(tracedPoint.x, xRange)}
                   cy={mathToSvgY(tracedPoint.y, yRange)}
                   r={6.5}
-                  fill="#C8FF00"
-                  stroke="#132238"
+                  fill="#F5A352"
+                  stroke="#1B365D"
                   strokeWidth="2.2"
                 />
               </g>
@@ -489,13 +489,13 @@ export default function InteractiveGraph({
           <text
             x={width - paddingRight - 4}
             y={height - 6}
-            fill="#7ADBE4"
+            fill="#9DD9CB"
             fontSize="12"
             fontWeight="700"
             textAnchor="end">
             {xLabel}
           </text>
-          <text x={paddingLeft + 6} y={paddingTop + 14} fill="#7ADBE4" fontSize="12" fontWeight="700">
+          <text x={paddingLeft + 6} y={paddingTop + 14} fill="#9DD9CB" fontSize="12" fontWeight="700">
             {yLabel}
           </text>
         </svg>

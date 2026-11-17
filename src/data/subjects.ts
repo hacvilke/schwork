@@ -1,6 +1,6 @@
 /**
- * Central subject directory for the homepage and `/subjects`.
- * Lists Jamaican high school subjects (Grades 10–11) plus one dedicated University track.
+ * Central subject directory for `/subjects`.
+ * Lists secondary school subjects plus a University study track.
  *
  * To activate a subject once its docs folder is ready:
  *   1. Change `status` from `'planned'` to `'live'`
@@ -146,17 +146,6 @@ export const SUBJECTS: SubjectEntry[] = [
   },
 
   /* ---------- Business & Tech ---------- */
-  {
-    id: 'poa',
-    name: 'Principles of Accounts (POA)',
-    shortCode: 'POA',
-    cluster: 'Business & Tech',
-    status: 'live',
-    syllabusSections: 11,
-    summary:
-      'Double-entry bookkeeping, books of original entry, ledgers, trial balance, financial statements, partnerships, companies, payroll, and ratios.',
-    docPath: '/docs/poa',
-  },
   {
     id: 'pob',
     name: 'Principles of Business (POB)',
@@ -340,7 +329,7 @@ export const SUBJECTS: SubjectEntry[] = [
     status: 'planned',
     syllabusSections: 3,
     summary:
-      'Music theory & notation, listening & appraising, composition, solo/ensemble performance, and Jamaican & Caribbean musical styles.',
+      'Music theory & notation, listening & appraising, composition, solo/ensemble performance, and Caribbean & global musical styles.',
   },
   {
     id: 'theatre-arts',
@@ -350,7 +339,7 @@ export const SUBJECTS: SubjectEntry[] = [
     status: 'planned',
     syllabusSections: 4,
     summary:
-      'Acting & improvisation, playmaking, stagecraft & lighting, Caribbean folk performance forms, and theatre critique.',
+      'Acting & improvisation, playmaking, stagecraft & lighting, folk & contemporary performance forms, and theatre critique.',
   },
   {
     id: 'physical-education',
@@ -360,7 +349,7 @@ export const SUBJECTS: SubjectEntry[] = [
     status: 'planned',
     syllabusSections: 5,
     summary:
-      'Anatomy & physiology, fitness & training principles, sports nutrition, rules & tactics, and the role of sport in Jamaican society.',
+      'Anatomy & physiology, fitness & training principles, sports nutrition, rules & tactics, and the role of sport in society.',
   },
 
   /* ---------- University ---------- */
@@ -372,6 +361,6 @@ export const SUBJECTS: SubjectEntry[] = [
     status: 'planned',
     syllabusSections: 0,
     summary:
-      'Higher-education study docs for Jamaican college and university students — calculus, linear algebra, programming, academic writing, financial accounting, microeconomics, and core degree foundations.',
+      'Higher-education study docs for college and university students — calculus, linear algebra, programming, academic writing, microeconomics, and core degree foundations.',
   },
 ];

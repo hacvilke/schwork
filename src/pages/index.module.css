@@ -1,36 +1,44 @@
 /* ==========================================================================
-   SCHWORK HOMEPAGE — PHONE-FIRST STUDY PLATFORM STYLES
+   SCHWORK HOMEPAGE & SHARED LANDING STYLES
+   Academic Palette: Deep Navy (#1B365D) + Soft Sage (#4E8577) + Warm Coral (#C84E24)
    ========================================================================== */
+
+.heroMain {
+  display: flex;
+  flex-direction: column;
+  flex: 1 0 auto;
+}
 
 .hero {
   position: relative;
   overflow: hidden;
-  background-color: #132238;
-  color: #f0f6fa;
-  padding: 3.25rem 0 3.75rem;
-  border-bottom: 4px solid #c8ff00;
+  background-color: var(--schwork-navy);
+  color: #f4f7fa;
+  padding: clamp(3.5rem, 8vh, 5.5rem) 0;
+  border-bottom: 4px solid var(--schwork-sage);
+  display: flex;
+  align-items: center;
+  flex: 1 0 auto;
+}
+
+.heroCompact {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--schwork-navy);
+  color: #f4f7fa;
+  padding: 2.5rem 0 2.75rem;
+  border-bottom: 4px solid var(--schwork-sage);
 }
 
 .heroGridBg {
   position: absolute;
   inset: 0;
   pointer-events: none;
-  opacity: 0.22;
+  opacity: 0.14;
   background-image:
-    linear-gradient(to right, rgba(43, 179, 192, 0.28) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(43, 179, 192, 0.28) 1px, transparent 1px);
+    linear-gradient(to right, rgba(140, 196, 180, 0.35) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(140, 196, 180, 0.35) 1px, transparent 1px);
   background-size: 40px 40px;
-}
-
-.heroGlow {
-  position: absolute;
-  top: -120px;
-  right: -80px;
-  width: 420px;
-  height: 420px;
-  border-radius: 999px;
-  background: radial-gradient(circle, rgba(43, 179, 192, 0.28) 0%, rgba(19, 34, 56, 0) 70%);
-  pointer-events: none;
 }
 
 .heroInner {
@@ -38,7 +46,7 @@
   z-index: 1;
   display: grid;
   grid-template-columns: 1.25fr 0.95fr;
-  gap: 2.25rem;
+  gap: 2.5rem;
   align-items: center;
 }
 
@@ -46,61 +54,63 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  margin-bottom: 1.1rem;
+  margin-bottom: 1.05rem;
 }
 
-.clashPill {
+.sagePill {
   display: inline-flex;
   align-items: center;
   gap: 0.4rem;
   font-family: var(--ifm-font-family-monospace);
   font-size: 0.78rem;
   font-weight: 700;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
-  padding: 0.34rem 0.75rem;
+  padding: 0.34rem 0.78rem;
   border-radius: 6px;
-  background-color: #c8ff00;
-  color: #132238;
+  background-color: rgba(78, 133, 119, 0.28);
+  border: 1px solid rgba(140, 196, 180, 0.55);
+  color: #d7efe8;
 }
 
 .heroTitle {
   font-family: var(--ifm-heading-font-family);
-  font-size: clamp(2rem, 4.4vw, 3.35rem);
-  line-height: 1.09;
+  font-size: clamp(2.05rem, 4.4vw, 3.35rem);
+  line-height: 1.1;
   letter-spacing: -0.03em;
   color: #ffffff;
-  margin: 0 0 1.05rem;
+  margin: 0 0 1.1rem;
 }
 
 .heroHighlight {
-  color: #c8ff00;
+  color: var(--schwork-amber);
 }
 
 .heroSubtitle {
-  font-size: 1.05rem;
-  line-height: 1.65;
-  color: #c7dfec;
+  font-size: 1.06rem;
+  line-height: 1.68;
+  color: #d4e2ec;
   max-width: 58ch;
-  margin: 0 0 1.65rem;
+  margin: 0 0 1.75rem;
 }
 
 .heroCtas {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.8rem;
+  gap: 0.85rem;
 }
 
+/* Primary Contrast Action Button — Warm Coral / Burnt Amber (#C84E24 on White = 4.59:1 AA) */
 .ctaPrimary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
   min-height: 48px;
-  padding: 0.75rem 1.35rem;
+  padding: 0.75rem 1.4rem;
   border-radius: 10px;
-  background-color: #c8ff00;
-  color: #132238 !important;
+  background-color: var(--schwork-coral);
+  color: #ffffff !important;
   font-family: var(--ifm-heading-font-family);
   font-weight: 700;
   font-size: 0.98rem;
@@ -109,20 +119,21 @@
 }
 
 .ctaPrimary:hover {
-  background-color: #d6ff40;
-  transform: translateY(-2px);
+  background-color: var(--schwork-coral-hover);
+  transform: translateY(-1px);
 }
 
+/* Secondary Harmonious Button — Soft Sage border on Deep Navy */
 .ctaSecondary {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
   min-height: 48px;
-  padding: 0.75rem 1.3rem;
+  padding: 0.75rem 1.35rem;
   border-radius: 10px;
-  border: 1.5px solid #2bb3c0;
-  background: rgba(43, 179, 192, 0.1);
+  border: 1.5px solid var(--schwork-sage-light);
+  background: rgba(78, 133, 119, 0.18);
   color: #ffffff !important;
   font-family: var(--ifm-heading-font-family);
   font-weight: 700;
@@ -132,210 +143,31 @@
 }
 
 .ctaSecondary:hover {
-  background: rgba(43, 179, 192, 0.22);
-  border-color: #7adbe4;
+  background: rgba(78, 133, 119, 0.34);
+  border-color: #b7ded3;
 }
 
-/* Animated Schwork Logo Showcase on right of hero */
+/* Clean, unencumbered logo placement — no circles, no pulsing glow */
 .heroLogoStage {
-  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 310px;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
-.logoPulseAura {
-  position: absolute;
-  width: clamp(240px, 28vw, 330px);
-  height: clamp(240px, 28vw, 330px);
-  border-radius: 999px;
-  background: radial-gradient(
-    circle,
-    rgba(200, 255, 0, 0.22) 0%,
-    rgba(43, 179, 192, 0.22) 45%,
-    rgba(19, 34, 56, 0) 72%
-  );
-  animation: heroAuraPulse 3.6s ease-in-out infinite;
-  pointer-events: none;
-}
-
-.logoOrbitRing {
-  position: absolute;
-  width: clamp(255px, 30vw, 348px);
-  height: clamp(255px, 30vw, 348px);
-  border-radius: 999px;
-  border: 1.5px dashed rgba(43, 179, 192, 0.42);
-  box-shadow: 0 0 40px rgba(43, 179, 192, 0.12);
-  animation: heroRingSpin 26s linear infinite;
-  pointer-events: none;
-}
-
-.logoOrbitRing::after {
-  content: '';
-  position: absolute;
-  top: -5px;
-  left: 50%;
-  width: 9px;
-  height: 9px;
-  margin-left: -4.5px;
-  border-radius: 999px;
-  background-color: #c8ff00;
-  box-shadow: 0 0 12px rgba(200, 255, 0, 0.85);
-}
-
-.logoFloatWrap {
-  position: relative;
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  animation: heroLogoFloat 4.2s ease-in-out infinite;
-}
-
-@keyframes heroLogoFloat {
-  0%,
-  100% {
-    transform: translateY(0px);
-  }
-  50% {
-    transform: translateY(-9px);
-  }
-}
-
-@keyframes heroAuraPulse {
-  0%,
-  100% {
-    transform: scale(0.95);
-    opacity: 0.78;
-  }
-  50% {
-    transform: scale(1.06);
-    opacity: 1;
-  }
-}
-
-@keyframes heroRingSpin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .logoPulseAura,
-  .logoOrbitRing,
-  .logoFloatWrap {
-    animation: none;
-  }
-}
-
-/* ---------- Pillars Section ---------- */
+/* ---------- Shared Section & Banner Styles (used on /subjects) ---------- */
 .section {
-  padding: 3.25rem 0;
+  padding: 3rem 0;
 }
 
-.sectionAlt {
-  padding: 3.25rem 0;
-  background: var(--schwork-surface-alt);
-  border-top: 1px solid var(--schwork-border);
-  border-bottom: 1px solid var(--schwork-border);
-}
-
-.sectionHeader {
-  max-width: 680px;
-  margin-bottom: 2rem;
-}
-
-.sectionKicker {
-  display: inline-block;
-  font-family: var(--ifm-font-family-monospace);
-  font-size: 0.76rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--ifm-color-primary);
-  margin-bottom: 0.45rem;
-}
-
-.sectionTitle {
-  font-family: var(--ifm-heading-font-family);
-  font-size: clamp(1.55rem, 3vw, 2.15rem);
-  line-height: 1.2;
-  margin: 0 0 0.6rem;
-}
-
-.sectionDesc {
-  color: var(--schwork-text-muted);
-  font-size: 0.98rem;
-  margin: 0;
-  line-height: 1.6;
-}
-
-.pillarsGrid {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 1rem;
-}
-
-.pillarCard {
-  background: var(--schwork-surface);
-  border: 1.5px solid var(--schwork-border);
-  border-radius: 14px;
-  padding: 1.2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.65rem;
-  transition: border-color 0.15s ease, transform 0.15s ease;
-}
-
-.pillarCard:hover {
-  border-color: var(--schwork-cyan);
-  transform: translateY(-2px);
-}
-
-.pillarIcon {
-  width: 42px;
-  height: 42px;
-  border-radius: 10px;
-  background: var(--schwork-navy);
-  color: #c8ff00;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-:global(html[data-theme='dark']) .pillarIcon {
-  background: #0b1524;
-  border: 1px solid rgba(200, 255, 0, 0.35);
-}
-
-.pillarTitle {
-  font-family: var(--ifm-heading-font-family);
-  font-size: 1.02rem;
-  font-weight: 700;
-  margin: 0;
-}
-
-.pillarText {
-  font-size: 0.9rem;
-  color: var(--schwork-text-muted);
-  margin: 0;
-  line-height: 1.55;
-}
-
-/* ---------- Bottom Banner ---------- */
 .workflowBanner {
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #132238 0%, #19314f 100%);
-  color: #f0f6fa;
-  border-radius: 18px;
+  background: linear-gradient(135deg, var(--schwork-navy) 0%, var(--schwork-navy-mid) 100%);
+  color: #f4f7fa;
+  border-radius: 16px;
   padding: 1.75rem 1.75rem 1.75rem 2.05rem;
-  border: 1.5px solid rgba(43, 179, 192, 0.45);
+  border: 1.5px solid rgba(140, 196, 180, 0.45);
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -343,7 +175,6 @@
   gap: 1.25rem;
 }
 
-/* Flush Acid Lime vertical bar clipped cleanly by the banner's border-radius */
 .workflowBanner::before {
   content: '';
   position: absolute;
@@ -351,7 +182,7 @@
   bottom: 0;
   left: 0;
   width: 6px;
-  background: #c8ff00;
+  background: var(--schwork-sage);
 }
 
 .workflowTitle {
@@ -362,31 +193,23 @@
 }
 
 .workflowText {
-  color: #c7dfec;
+  color: #d4e2ec;
   margin: 0;
   max-width: 60ch;
-  line-height: 1.55;
+  line-height: 1.58;
 }
 
 /* ---------- Responsive Breakpoints ---------- */
 @media (max-width: 996px) {
   .heroInner {
     grid-template-columns: 1fr;
-  }
-
-  .pillarsGrid {
-    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
 }
 
 @media (max-width: 640px) {
   .hero {
-    padding: 2.25rem 0 2.6rem;
-  }
-
-  .heroLogoStage {
-    min-height: 235px;
-    padding: 0.5rem 0 0.25rem;
+    padding: 2.5rem 0 2.75rem;
   }
 
   .heroCtas {
@@ -398,13 +221,8 @@
     width: 100%;
   }
 
-  .pillarsGrid {
-    grid-template-columns: 1fr;
-  }
-
-  .section,
-  .sectionAlt {
-    padding: 2.35rem 0;
+  .section {
+    padding: 2.25rem 0;
   }
 
   .workflowBanner {

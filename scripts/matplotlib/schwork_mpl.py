@@ -5,10 +5,10 @@ Use static Matplotlib SVGs selectively when an interactive browser graph cannot
 draw the figure cleanly (e.g. geometry congruence proofs, vector addition diagrams,
 ray optics, Physics free-body diagrams, or Integrated Science lab apparatus).
 
-All figures use Schwork's signature blueprint palette:
-  - Deep Navy (#132238) canvas — crisp in both Light & Dark mode
-  - Cool Cyan (#2BB3C0) primary geometry & axes
-  - Acid Lime (#C8FF00) clash accent for resultants, key angles, and callouts
+All figures use Schwork's academic palette:
+  - Deep Navy (#1B365D) canvas — crisp in both Light & Dark mode
+  - Soft Sage Teal (#6BC4B0) primary geometry & axes
+  - Warm Amber (#F5A352) contrast accent for resultants, key angles, and callouts
 """
 
 from pathlib import Path
@@ -16,15 +16,15 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 
 # Palette constants
-NAVY_BG = "#132238"
-NAVY_GRID = "#1F3654"
-NAVY_DARK = "#0B1524"
-CYAN = "#2BB3C0"
-CYAN_SOFT = "#7ADBE4"
-LIME = "#C8FF00"
-INK_LIGHT = "#F0F6FA"
-INK_MUTED = "#9CB4C9"
-CORAL = "#FF6B6B"
+NAVY_BG = "#1B365D"
+NAVY_GRID = "#274773"
+NAVY_DARK = "#122440"
+CYAN = "#6BC4B0"
+CYAN_SOFT = "#9DD9CB"
+LIME = "#F5A352"
+INK_LIGHT = "#F4F7FA"
+INK_MUTED = "#A5C0D6"
+CORAL = "#F07152"
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 DIAGRAMS_OUT = REPO_ROOT / "static" / "img" / "diagrams"
